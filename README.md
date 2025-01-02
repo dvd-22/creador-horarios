@@ -1,4 +1,4 @@
-##### **_Este proyecto fue creado por David Alemán y está bajo la licencia MIT. No me hago responsable de que no puedas inscribir tus materias por confiar en este horario. Revisa bien antes de inscribirte. No es un proyecto oficial de la UNAM._**
+##### **_Este proyecto fue creado por David Alemán y está bajo una licencia que se puede leer en el mismo repo. No me hago responsable de que no puedas inscribir tus materias por confiar en este horario. Revisa bien antes de inscribirte. No es un proyecto oficial de la UNAM._**
 # Creador de horarios
 
 Este proyecto fue creado durante las vacaciones 2025-1 porque me dio flojera hacer mi horario manualmente (lo que me hubiera llevado probablemente 15 minutos) y decidí invertir 3 días en hacer esta pequeña aplicación.
