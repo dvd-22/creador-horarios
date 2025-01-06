@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import ScheduleSelector from './ScheduleSelector';
+import ExportLayout from './ExportLayout';
 import ScheduleViewer from './ScheduleViewer';
 import SelectedGroupsPanel from './SelectedGroupsPanel';
 import { saveScheduleAsPng } from '../utils/scheduleUtils';
@@ -22,6 +23,7 @@ const ScheduleDisplay = () => {
     const [conflictAlert, setConflictAlert] = useState(null);
     const [currentScheduleName, setCurrentScheduleName] = useState('');
     const scheduleRef = useRef(null);
+    const exportRef = useRef(null);
 
     // Utility function to convert time string to minutes
     const timeToMinutes = (time) => {
@@ -139,11 +141,8 @@ const ScheduleDisplay = () => {
 
     const handleSaveSchedule = (name) => {
         setCurrentScheduleName(name);
-        // Delay the save to let the name render
         setTimeout(() => {
-            saveScheduleAsPng(scheduleRef, name);
-            // Optional: clear the name after saving
-            // setTimeout(() => setCurrentScheduleName(''), 100);
+            saveScheduleAsPng(exportRef, name);
         }, 100);
     };
 
@@ -172,6 +171,16 @@ const ScheduleDisplay = () => {
                 selectedGroups={selectedGroups}
                 onRemoveGroup={handleGroupSelect}
                 onSaveSchedule={handleSaveSchedule}
+            />
+            <ExportLayout
+                ref={exportRef}
+                selectedGroups={selectedGroups}
+                schedule={
+                    <ScheduleViewer
+                        selectedGroups={selectedGroups}
+                        scheduleName={currentScheduleName}
+                    />
+                }
             />
         </div>
     );

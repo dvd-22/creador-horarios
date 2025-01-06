@@ -35,7 +35,7 @@ const colorPalette = [
   'bg-green-600/50'
 ];
 
-const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '' }) => {
+const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isExport = false }) => {
   const days = ['Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'];
   const timeSlots = Array.from({ length: 18 }, (_, i) => i + 5).map(hour =>
     `${hour.toString().padStart(2, '0')}:00`
@@ -98,7 +98,6 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '' }) =>
 
   return (
     <div className="flex flex-col h-full bg-gray-900 p-4">
-      {/* Schedule Name */}
       {scheduleName && (
         <h1 className="text-2xl font-bold text-gray-100 text-center mb-6">
           {scheduleName}
@@ -146,10 +145,10 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '' }) =>
                           }}
                         >
                           <div className="flex flex-col h-full overflow-hidden">
-                            <div className="font-medium text-white truncate">
+                            <div className="font-medium text-xs leading-4 text-white truncate">
                               {slot.subject}
                             </div>
-                            <div className="text-gray-300 truncate text-xs">
+                            <div className="text-gray-300 truncate text-xs leading-tight">
                               {slot.professor}
                             </div>
                           </div>

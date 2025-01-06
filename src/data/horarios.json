@@ -12,7 +12,14 @@
             "Vi"
           ]
         },
-        "ayudantes": []
+        "ayudantes": [
+          {
+            "nombre": "Paola Berenice García Ramírez",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
       },
       "7038": {
         "grupo": "7038",
@@ -25,7 +32,8 @@
             "Vi"
           ]
         },
-        "ayudantes": []
+        "ayudantes": [],
+        "nota": null
       },
       "7040": {
         "grupo": "7040",
@@ -38,7 +46,14 @@
             "Vi"
           ]
         },
-        "ayudantes": []
+        "ayudantes": [
+          {
+            "nombre": "Rocío Garduño Díaz",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
       }
     },
     "Introducción a Ciencias de la Computación": {
@@ -69,7 +84,8 @@
               "Mi"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7032": {
         "grupo": "7032",
@@ -98,7 +114,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7034": {
         "grupo": "7034",
@@ -127,7 +144,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Estructuras Discretas": {
@@ -157,7 +175,8 @@
               "Ma"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7026": {
         "grupo": "7026",
@@ -185,7 +204,8 @@
               "Ma"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7028": {
         "grupo": "7028",
@@ -213,7 +233,8 @@
               "Ma"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Álgebra Superior I": {
@@ -237,7 +258,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4001": {
         "grupo": "4001",
@@ -259,7 +281,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4002": {
         "grupo": "4002",
@@ -281,7 +304,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4003": {
         "grupo": "4003",
@@ -303,7 +327,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4004": {
         "grupo": "4004",
@@ -325,7 +350,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4005": {
         "grupo": "4005",
@@ -347,7 +373,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4006": {
         "grupo": "4006",
@@ -369,7 +396,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4007": {
         "grupo": "4007",
@@ -391,7 +419,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4008": {
         "grupo": "4008",
@@ -413,7 +442,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     }
   },
@@ -439,7 +469,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4226": {
         "grupo": "4226",
@@ -461,7 +492,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4227": {
         "grupo": "4227",
@@ -483,7 +515,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4228": {
         "grupo": "4228",
@@ -505,7 +538,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4229": {
         "grupo": "4229",
@@ -527,7 +561,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4326": {
         "grupo": "4326",
@@ -549,7 +584,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Álgebra Superior II": {
@@ -573,7 +609,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4038": {
         "grupo": "4038",
@@ -595,7 +632,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4039": {
         "grupo": "4039",
@@ -617,7 +655,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4040": {
         "grupo": "4040",
@@ -639,12 +678,13 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4041": {
         "grupo": "4041",
         "profesor": {
-          "nombre": "Sergio Macías\n                    Álvarez",
+          "nombre": "Sergio Macías Álvarez",
           "horario": "09:00 - 10:00",
           "dias": [
             "Lu",
@@ -661,12 +701,13 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4042": {
         "grupo": "4042",
         "profesor": {
-          "nombre": "Juan José\n                    Alba González",
+          "nombre": "Juan José Alba González",
           "horario": "09:00 - 10:00",
           "dias": [
             "Lu",
@@ -683,7 +724,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4043": {
         "grupo": "4043",
@@ -705,7 +747,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4044": {
         "grupo": "4044",
@@ -727,7 +770,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4045": {
         "grupo": "4045",
@@ -749,7 +793,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4046": {
         "grupo": "4046",
@@ -771,7 +816,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4047": {
         "grupo": "4047",
@@ -793,7 +839,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4048": {
         "grupo": "4048",
@@ -815,7 +862,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4049": {
         "grupo": "4049",
@@ -837,7 +885,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4050": {
         "grupo": "4050",
@@ -859,7 +908,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4051": {
         "grupo": "4051",
@@ -881,7 +931,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4052": {
         "grupo": "4052",
@@ -903,7 +954,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4053": {
         "grupo": "4053",
@@ -925,7 +977,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4054": {
         "grupo": "4054",
@@ -947,7 +1000,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4313": {
         "grupo": "4313",
@@ -969,7 +1023,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Matemáticas para las Ciencias Aplicadas II": {
@@ -984,7 +1039,14 @@
             "Vi"
           ]
         },
-        "ayudantes": []
+        "ayudantes": [
+          {
+            "nombre": "Vivian Paulina Meléndez Carrera",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
       },
       "7054": {
         "grupo": "7054",
@@ -997,7 +1059,8 @@
             "Vi"
           ]
         },
-        "ayudantes": []
+        "ayudantes": [],
+        "nota": null
       },
       "7056": {
         "grupo": "7056",
@@ -1010,7 +1073,14 @@
             "Vi"
           ]
         },
-        "ayudantes": []
+        "ayudantes": [
+          {
+            "nombre": "José Norberto Espiritu Contreras",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
       },
       "7058": {
         "grupo": "7058",
@@ -1023,7 +1093,14 @@
             "Vi"
           ]
         },
-        "ayudantes": []
+        "ayudantes": [
+          {
+            "nombre": "Edgar Orlando Ramírez Castro",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
       },
       "7060": {
         "grupo": "7060",
@@ -1036,7 +1113,14 @@
             "Vi"
           ]
         },
-        "ayudantes": []
+        "ayudantes": [
+          {
+            "nombre": "Silvia Yoselín Hernández Basurto",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
       }
     },
     "Estructuras de Datos": {
@@ -1068,7 +1152,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7044": {
         "grupo": "7044",
@@ -1098,7 +1183,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7046": {
         "grupo": "7046",
@@ -1128,7 +1214,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7048": {
         "grupo": "7048",
@@ -1158,7 +1245,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7050": {
         "grupo": "7050",
@@ -1188,7 +1276,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     }
   },
@@ -1214,7 +1303,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "9023": {
         "grupo": "9023",
@@ -1236,7 +1326,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "9024": {
         "grupo": "9024",
@@ -1258,7 +1349,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "9025": {
         "grupo": "9025",
@@ -1280,7 +1372,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "9026": {
         "grupo": "9026",
@@ -1302,7 +1395,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "9027": {
         "grupo": "9027",
@@ -1324,7 +1418,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "9028": {
         "grupo": "9028",
@@ -1346,7 +1441,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "9029": {
         "grupo": "9029",
@@ -1368,7 +1464,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "9030": {
         "grupo": "9030",
@@ -1390,7 +1487,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "9031": {
         "grupo": "9031",
@@ -1412,7 +1510,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "9032": {
         "grupo": "9032",
@@ -1434,7 +1533,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "9308": {
         "grupo": "9308",
@@ -1456,7 +1556,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Modelado y Programación": {
@@ -1487,7 +1588,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7069": {
         "grupo": "7069",
@@ -1516,7 +1618,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Matemáticas para las Ciencias Aplicadas III": {
@@ -1531,7 +1634,8 @@
             "Vi"
           ]
         },
-        "ayudantes": []
+        "ayudantes": [],
+        "nota": null
       },
       "7064": {
         "grupo": "7064",
@@ -1544,7 +1648,8 @@
             "Vi"
           ]
         },
-        "ayudantes": []
+        "ayudantes": [],
+        "nota": null
       },
       "7066": {
         "grupo": "7066",
@@ -1557,7 +1662,14 @@
             "Vi"
           ]
         },
-        "ayudantes": []
+        "ayudantes": [
+          {
+            "nombre": "Juan Carlos Alva Pacheco",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
       }
     },
     "Álgebra Lineal I": {
@@ -1581,7 +1693,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4102": {
         "grupo": "4102",
@@ -1603,7 +1716,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4103": {
         "grupo": "4103",
@@ -1625,7 +1739,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4104": {
         "grupo": "4104",
@@ -1647,7 +1762,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4105": {
         "grupo": "4105",
@@ -1669,7 +1785,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4106": {
         "grupo": "4106",
@@ -1691,7 +1808,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4107": {
         "grupo": "4107",
@@ -1713,7 +1831,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4108": {
         "grupo": "4108",
@@ -1735,7 +1854,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4109": {
         "grupo": "4109",
@@ -1757,7 +1877,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4110": {
         "grupo": "4110",
@@ -1779,12 +1900,13 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4111": {
         "grupo": "4111",
         "profesor": {
-          "nombre": "Víctor Manuel\n                    Ávila Báez",
+          "nombre": "Víctor Manuel Ávila Báez",
           "horario": "18:00 - 19:00",
           "dias": [
             "Lu",
@@ -1801,7 +1923,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4112": {
         "grupo": "4112",
@@ -1823,7 +1946,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "4113": {
         "grupo": "4113",
@@ -1845,7 +1969,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     }
   },
@@ -1878,7 +2003,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7096": {
         "grupo": "7096",
@@ -1907,7 +2033,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7098": {
         "grupo": "7098",
@@ -1935,7 +2062,8 @@
               "Vi"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7100": {
         "grupo": "7100",
@@ -1963,7 +2091,8 @@
               "Vi"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Matemáticas para las Ciencias Aplicadas IV": {
@@ -1978,7 +2107,8 @@
             "Vi"
           ]
         },
-        "ayudantes": []
+        "ayudantes": [],
+        "nota": null
       },
       "7088": {
         "grupo": "7088",
@@ -1991,7 +2121,14 @@
             "Vi"
           ]
         },
-        "ayudantes": []
+        "ayudantes": [
+          {
+            "nombre": "Arturo Alejandro Arvizu Velazquez",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
       },
       "7090": {
         "grupo": "7090",
@@ -2004,7 +2141,14 @@
             "Vi"
           ]
         },
-        "ayudantes": []
+        "ayudantes": [
+          {
+            "nombre": "Marco Antonio Martínez Villalobos",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
       },
       "7092": {
         "grupo": "7092",
@@ -2017,7 +2161,14 @@
             "Vi"
           ]
         },
-        "ayudantes": []
+        "ayudantes": [
+          {
+            "nombre": "Gabriela Rueda de la Cruz",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
       }
     },
     "Lógica Computacional": {
@@ -2048,7 +2199,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7080": {
         "grupo": "7080",
@@ -2077,7 +2229,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7082": {
         "grupo": "7082",
@@ -2106,7 +2259,8 @@
               "Ma"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7084": {
         "grupo": "7084",
@@ -2135,7 +2289,8 @@
               "Ma"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Autómatas y Lenguajes Formales": {
@@ -2159,7 +2314,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7072": {
         "grupo": "7072",
@@ -2181,7 +2337,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7074": {
         "grupo": "7074",
@@ -2203,7 +2360,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7076": {
         "grupo": "7076",
@@ -2225,7 +2383,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     }
   },
@@ -2257,7 +2416,8 @@
               "Ma"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7114": {
         "grupo": "7114",
@@ -2285,7 +2445,8 @@
               "Ma"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Fundamentos de Bases de Datos": {
@@ -2315,7 +2476,8 @@
               "Lu"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7110": {
         "grupo": "7110",
@@ -2343,7 +2505,8 @@
               "Mi"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Computación Distribuida": {
@@ -2373,7 +2536,8 @@
               "Mi"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7107": {
         "grupo": "7107",
@@ -2401,7 +2565,8 @@
               "Lu"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Análisis de Algoritmos": {
@@ -2424,7 +2589,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7104": {
         "grupo": "7104",
@@ -2445,7 +2611,8 @@
               "Mi"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     }
   },
@@ -2478,7 +2645,8 @@
               "Lu"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7005": {
         "grupo": "7005",
@@ -2507,7 +2675,8 @@
               "Lu"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7006": {
         "grupo": "7006",
@@ -2536,7 +2705,8 @@
               "Lu"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7007": {
         "grupo": "7007",
@@ -2564,7 +2734,8 @@
               "Lu"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Inteligencia Artificial": {
@@ -2595,7 +2766,8 @@
               "Mi"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7001": {
         "grupo": "7001",
@@ -2624,7 +2796,8 @@
               "Mi"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7002": {
         "grupo": "7002",
@@ -2653,7 +2826,8 @@
               "Mi"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7003": {
         "grupo": "7003",
@@ -2681,23 +2855,23 @@
               "Mi"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Ingeniería de Software": {
       "7008": {
         "grupo": "7008",
-        "profesor": null,
+        "profesor": {
+          "nombre": "Selene Marisol Martínez Ramírez",
+          "horario": "10:00 - 11:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
         "ayudantes": [
-          {
-            "nombre": "Selene Marisol Martínez Ramírez",
-            "horario": "10:00 - 11:00",
-            "dias": [
-              "Lu",
-              "Mi",
-              "Vi"
-            ]
-          },
           {
             "nombre": "Luis Angel Rojas Espinoza",
             "horario": "10:00 - 11:00",
@@ -2713,24 +2887,24 @@
               "Ma"
             ]
           }
-        ]
+        ],
+        "nota": "El curso se impartirá en el Aula del Futuro del ICAT."
       },
       "7009": {
         "grupo": "7009",
-        "profesor": null,
+        "profesor": {
+          "nombre": "Karla Socorro García Alcántara",
+          "horario": "08:00 - 09:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
         "ayudantes": [
           {
-            "nombre": "Karla Socorro García Alcántara",
-            "horario": "10:00 - 11:00",
-            "dias": [
-              "Lu",
-              "Mi",
-              "Vi"
-            ]
-          },
-          {
             "nombre": "Ayudante aún no asignado",
-            "horario": "10:00 - 11:00",
+            "horario": "08:00 - 09:00",
             "dias": [
               "Ma",
               "Ju"
@@ -2743,7 +2917,8 @@
               "Ma"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7010": {
         "grupo": "7010",
@@ -2772,7 +2947,8 @@
               "Ma"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7011": {
         "grupo": "7011",
@@ -2800,7 +2976,8 @@
               "Ma"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     }
   },
@@ -2833,7 +3010,8 @@
               "Mi"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7013": {
         "grupo": "7013",
@@ -2861,7 +3039,8 @@
               "Lu"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Complejidad Computacional": {
@@ -2885,7 +3064,8 @@
               "Ju"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7018": {
         "grupo": "7018",
@@ -2906,7 +3086,8 @@
               "Mi"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Compiladores": {
@@ -2937,7 +3118,8 @@
               "Ma"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7016": {
         "grupo": "7016",
@@ -2965,7 +3147,8 @@
               "Mi"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     }
   },
@@ -2998,7 +3181,8 @@
               "Mi"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7123": {
         "grupo": "7123",
@@ -3027,7 +3211,8 @@
               "Mi"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7124": {
         "grupo": "7124",
@@ -3055,7 +3240,8 @@
               "Mi"
             ]
           }
-        ]
+        ],
+        "nota": null
       }
     },
     "Computación Concurrente": {
@@ -3086,7 +3272,8 @@
               "Ma"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7118": {
         "grupo": "7118",
@@ -3115,7 +3302,8 @@
               "Lu"
             ]
           }
-        ]
+        ],
+        "nota": null
       },
       "7120": {
         "grupo": "7120",
@@ -3143,7 +3331,3306 @@
               "Lu"
             ]
           }
-        ]
+        ],
+        "nota": null
+      }
+    }
+  },
+  "Optativas": {
+    "Teoría de Redes": {
+      "9148": {
+        "grupo": "9148",
+        "profesor": {
+          "nombre": "María del Carmen Hernández Ayuso",
+          "horario": "12:00 - 13:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Minerva María Romero Pérez",
+            "horario": "12:00 - 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": "Problemas básicos de redes"
+      },
+      "9309": {
+        "grupo": "9309",
+        "profesor": {
+          "nombre": "Bibiana Obregón Quintana",
+          "horario": "16:00 - 17:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Eduardo Jacobo Villegas",
+            "horario": "16:00 - 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": "El curso se impartirá de 8 a 9 hrs."
+      }
+    },
+    "Teoría de los Números II": {
+      "4292": {
+        "grupo": "4292",
+        "profesor": {
+          "nombre": "Gabriela Cervantes Piza",
+          "horario": "14:00 - 15:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "José Luis Martínez Trujillo",
+            "horario": "14:00 - 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Teoría de los Números I": {
+      "4290": {
+        "grupo": "4290",
+        "profesor": {
+          "nombre": "Octavio Baltasar Zapata Fonseca",
+          "horario": "13:00 - 14:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "13:00 - 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4291": {
+        "grupo": "4291",
+        "profesor": {
+          "nombre": "Javier Valdez Quijada",
+          "horario": "19:00 - 20:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Teresa Fátima Castellanos Hernández",
+            "horario": "19:00 - 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Teoría de los Conjuntos II": {
+      "4288": {
+        "grupo": "4288",
+        "profesor": {
+          "nombre": "Roberto Pichardo Mendoza",
+          "horario": "13:00 - 14:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Luis Ricardo López Villafán",
+            "horario": "13:00 - 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4289": {
+        "grupo": "4289",
+        "profesor": {
+          "nombre": "Osvaldo Alfonso Téllez Nieto",
+          "horario": "16:00 - 17:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Guillermo Ramón Torres Olin",
+            "horario": "16:00 - 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Teoría de los Conjuntos I": {
+      "4285": {
+        "grupo": "4285",
+        "profesor": {
+          "nombre": "Elsa Puente Vázquez",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Jorge Arturo Quiroz Cabrera",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4286": {
+        "grupo": "4286",
+        "profesor": {
+          "nombre": "Rafael Rojas Barbachano",
+          "horario": "12:00 - 13:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Rafael Rojas Barbachano",
+            "horario": "12:00 - 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4287": {
+        "grupo": "4287",
+        "profesor": {
+          "nombre": "Luis Jesús Turcio Cuevas",
+          "horario": "14:00 - 15:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "14:00 - 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Teoría de las Gráficas II": {
+      "4283": {
+        "grupo": "4283",
+        "profesor": {
+          "nombre": "María del Rocío Sánchez López",
+          "horario": "12:00 - 13:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Roxana Jiménez Jiménez",
+            "horario": "12:00 - 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4284": {
+        "grupo": "4284",
+        "profesor": {
+          "nombre": "Loiret Alejandría Dosal Trujillo",
+          "horario": "18:00 - 19:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Nicolás Benjamín Salas Hazan",
+            "horario": "18:00 - 19:00",
+            "dias": [
+              "Lu",
+              "Mi"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4325": {
+        "grupo": "4325",
+        "profesor": {
+          "nombre": "Germán Benítez Bobadilla",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Montserrat Arias Basilio",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Teoría de Gráficas": {
+      "4278": {
+        "grupo": "4278",
+        "profesor": {
+          "nombre": "Juan Carlos García Altamirano",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Daniel Pérez Melesio",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4279": {
+        "grupo": "4279",
+        "profesor": {
+          "nombre": "Narda Cordero Michel",
+          "horario": "17:00 - 18:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Liliana Flores Tamias",
+            "horario": "17:00 - 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Temas Selectos de Análisis Numérico": {
+      "9145": {
+        "grupo": "9145",
+        "profesor": {
+          "nombre": "César Carreón Otañez",
+          "horario": "17:00 - 18:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "17:00 - 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Seminario de Ciencias de la Computación B": {
+      "7144": {
+        "grupo": "7144",
+        "profesor": {
+          "nombre": "Miguel Carrillo Barajas",
+          "horario": "12:00 - 13:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "12:00 - 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": "Verificación Formal de Software"
+      },
+      "7145": {
+        "grupo": "7145",
+        "profesor": {
+          "nombre": "Víctor Mireles Chávez",
+          "horario": "08:00 - 09:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "08:00 - 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": "De texto a gráficas: procesamiento de lenguaje natural y gráficas de conocimiento."
+      },
+      "7146": {
+        "grupo": "7146",
+        "profesor": {
+          "nombre": "Germán Ernesto Zapata Ledesma",
+          "horario": "10:00 - 11:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Miguel Mireles Padilla",
+            "horario": "10:00 - 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": "Administración de proyectos"
+      },
+      "7147": {
+        "grupo": "7147",
+        "profesor": {
+          "nombre": "Anayanzi Delia Martínez Hernández",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "José Angel Arévalo Avalos",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "David Armando Silva de Paz",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": "Seminario Criptografía Avanzada:  Introducción a la Criptografía Post Cuántica"
+      },
+      "7148": {
+        "grupo": "7148",
+        "profesor": {
+          "nombre": "Gustavo De la Cruz Martínez",
+          "horario": "17:00 - 18:30",
+          "dias": [
+            "Ma",
+            "Ju"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "16:00 - 17:00",
+            "dias": [
+              "Lu",
+              "Mi"
+            ]
+          }
+        ],
+        "nota": "Inteligencia Artificial Aplicada a Videojuegos"
+      },
+      "7149": {
+        "grupo": "7149",
+        "profesor": {
+          "nombre": "Antonio Ruiz Morán",
+          "horario": "19:30 - 21:00",
+          "dias": [
+            "Ma",
+            "Ju"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "18:30 - 19:30",
+            "dias": [
+              "Lu",
+              "Mi"
+            ]
+          }
+        ],
+        "nota": "Emprendimiento de base Científica-Tecnológica"
+      },
+      "7174": {
+        "grupo": "7174",
+        "profesor": {
+          "nombre": "Manuel Cristóbal López Michelone",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": "Vida Artificial"
+      },
+      "7175": {
+        "grupo": "7175",
+        "profesor": {
+          "nombre": "Enrique Francisco Soto Astorga",
+          "horario": "17:00 - 18:30",
+          "dias": [
+            "Ma",
+            "Ju"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "16:00 - 17:00",
+            "dias": [
+              "Lu",
+              "Mi"
+            ]
+          }
+        ],
+        "nota": "Biología Relacional y Sistemas Anticipatorios"
+      },
+      "7176": {
+        "grupo": "7176",
+        "profesor": {
+          "nombre": "Jesús Iván Saavedra Martínez",
+          "horario": "08:00 - 09:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "08:00 - 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": "Desarrollo web backend"
+      },
+      "7178": {
+        "grupo": "7178",
+        "profesor": {
+          "nombre": "Oscar Hernández Constantino",
+          "horario": "15:00 - 16:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "15:00 - 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": "Optimización estocástica"
+      }
+    },
+    "Seminario de Ciencias de la Computación A": {
+      "7138": {
+        "grupo": "7138",
+        "profesor": {
+          "nombre": "José Fidel Urquiza Yllescas",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": "Introducción a los Chatbots"
+      },
+      "7139": {
+        "grupo": "7139",
+        "profesor": {
+          "nombre": "Diego Alejandro Velázquez Cervantes",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": "Lógica aplicada a cómputo distribuido"
+      },
+      "7140": {
+        "grupo": "7140",
+        "profesor": {
+          "nombre": "Gustavo Carreón Vázquez",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Marco Antonio Jiménez Limas",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "Marco Antonio Jiménez Limas",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": "Modelación y simulación computacional basada en agentes"
+      },
+      "7141": {
+        "grupo": "7141",
+        "profesor": {
+          "nombre": "Valente Vázquez Velázquez",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ana Ximena de la Cruz Olivares",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "Ricardo López López",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": "Introducción al Internet de las Cosas"
+      },
+      "7142": {
+        "grupo": "7142",
+        "profesor": {
+          "nombre": "Humberto Andrés Carrillo Calvet",
+          "horario": "13:00 - 14:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "José Luis Jiménez Andrade",
+            "horario": "13:00 - 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "Luis Fermín Martínez Manzo",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": "Neuronas y Redes Neuronales: Modelos y Aplicaciones a la Ciencia de Datos"
+      },
+      "7143": {
+        "grupo": "7143",
+        "profesor": {
+          "nombre": "Miguel Angel Pérez León",
+          "horario": "17:00 - 18:30",
+          "dias": [
+            "Lu",
+            "Mi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "16:00 - 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": "Introducción a la programación en paralelo con MPI, OpenMP y CUDA"
+      },
+      "7173": {
+        "grupo": "7173",
+        "profesor": {
+          "nombre": "Gustavo Arturo Márquez Flores",
+          "horario": "08:00 - 09:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "08:00 - 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": "Tecnología AJAX para el desarrollo de aplicaciones en Internet"
+      },
+      "7179": {
+        "grupo": "7179",
+        "profesor": {
+          "nombre": "Jaime Ayala Pérez",
+          "horario": "17:00 - 18:30",
+          "dias": [
+            "Lu",
+            "Mi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "16:00 - 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": "Internet de las Cosas"
+      }
+    },
+    "Semántica y Verificación": {
+      "7167": {
+        "grupo": "7167",
+        "profesor": {
+          "nombre": "Lourdes del Carmen González Huesca",
+          "horario": "13:00 - 14:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "13:00 - 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Robótica": {
+      "7023": {
+        "grupo": "7023",
+        "profesor": {
+          "nombre": "Luis Alberto Ramírez Bermudez",
+          "horario": "18:30 - 20:00",
+          "dias": [
+            "Ma",
+            "Ju"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "20:00 - 21:00",
+            "dias": [
+              "Lu",
+              "Mi"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Redes Neuronales": {
+      "7150": {
+        "grupo": "7150",
+        "profesor": {
+          "nombre": "Ulises Rodríguez Domínguez",
+          "horario": "18:30 - 20:00",
+          "dias": [
+            "Lu",
+            "Mi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Alejandro Valle Vivanco",
+            "horario": "20:00 - 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "7171": {
+        "grupo": "7171",
+        "profesor": {
+          "nombre": "Verónica Esther Arriola Ríos",
+          "horario": "10:00 - 11:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "10:00 - 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Reconocimiento de Patrones y Aprendizaje Automatizado": {
+      "7152": {
+        "grupo": "7152",
+        "profesor": {
+          "nombre": "Sergio Rodolfo Cruz Gómez",
+          "horario": "15:00 - 16:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "15:00 - 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "Julio César Misael Monroy González",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Realidad Virtual": {
+      "7137": {
+        "grupo": "7137",
+        "profesor": {
+          "nombre": "Pedro Xavier Contla Romero",
+          "horario": "18:30 - 20:00",
+          "dias": [
+            "Ma",
+            "Ju"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Jorge Barragán Argüero",
+            "horario": "20:00 - 21:00",
+            "dias": [
+              "Lu",
+              "Mi"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Pruebas de Software y Administración de la Configuración": {
+      "7177": {
+        "grupo": "7177",
+        "profesor": {
+          "nombre": "Luis Rey Rutiaga Robles",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Programación Lineal": {
+      "9141": {
+        "grupo": "9141",
+        "profesor": {
+          "nombre": "Samuel Martínez Bello",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Karla Ruíz de la Luz",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9142": {
+        "grupo": "9142",
+        "profesor": {
+          "nombre": "Edgar Gil Hernández Díaz",
+          "horario": "17:00 - 18:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "David Rivera Bermúdez",
+            "horario": "17:00 - 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Programación Entera": {
+      "9140": {
+        "grupo": "9140",
+        "profesor": {
+          "nombre": "Claudia Orquídea López Soto",
+          "horario": "10:00 - 11:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Nancy Ruth Bautista Márquez",
+            "horario": "10:00 - 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Programación de Dispositivos Móviles": {
+      "7136": {
+        "grupo": "7136",
+        "profesor": {
+          "nombre": "Gustavo Arturo Márquez Flores",
+          "horario": "07:00 - 08:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Cristopher Alejandro Escamilla Soto",
+            "horario": "07:00 - 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "Jesús Iván Saavedra Martínez",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
+      },
+      "7165": {
+        "grupo": "7165",
+        "profesor": {
+          "nombre": "Ana Libia Eslava Cervantes",
+          "horario": "19:00 - 20:30",
+          "dias": [
+            "Lu",
+            "Mi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "19:00 - 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "17:00 - 19:00",
+            "dias": [
+              "Ma"
+            ]
+          }
+        ],
+        "nota": "El curso se impartirá en el Aula del Futuro del ICAT"
+      }
+    },
+    "Procesos Estocásticos": {
+      "9075": {
+        "grupo": "9075",
+        "profesor": {
+          "nombre": "Ana Meda Guardiola",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Ma",
+            "Mi",
+            "Ju"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Sebastián Rosas Ayala",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Lu",
+              "Vi"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9077": {
+        "grupo": "9077",
+        "profesor": {
+          "nombre": "Daniel Cervantes Filoteo",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Frida Mariela Rosas Calva",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9079": {
+        "grupo": "9079",
+        "profesor": {
+          "nombre": "Sergio Iván López Ortega",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Rodrigo Iván Rodríguez Barrera",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9081": {
+        "grupo": "9081",
+        "profesor": {
+          "nombre": "María Asunción Begoña Fernández Fernández",
+          "horario": "12:00 - 13:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "12:00 - 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9083": {
+        "grupo": "9083",
+        "profesor": {
+          "nombre": "Hugo Villaseñor Hernández",
+          "horario": "17:00 - 18:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "17:00 - 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9085": {
+        "grupo": "9085",
+        "profesor": {
+          "nombre": "Rafael Miranda Cordero",
+          "horario": "18:00 - 19:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "18:00 - 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Proceso Digital de Imagenes": {
+      "7022": {
+        "grupo": "7022",
+        "profesor": {
+          "nombre": "Manuel Cristóbal López Michelone",
+          "horario": "08:00 - 09:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Yessica Martínez Reyes",
+            "horario": "08:00 - 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "César Hernández Solís",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Probabilidad II": {
+      "9043": {
+        "grupo": "9043",
+        "profesor": {
+          "nombre": "Fernando Guerrero Poblete",
+          "horario": "08:00 - 09:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Alexander José López Ruíz",
+            "horario": "08:00 - 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9044": {
+        "grupo": "9044",
+        "profesor": {
+          "nombre": "Daniel Cervantes Filoteo",
+          "horario": "08:00 - 09:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Alejandro Pérez Muñoz",
+            "horario": "08:00 - 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9045": {
+        "grupo": "9045",
+        "profesor": {
+          "nombre": "María Clara Fittipaldi",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9046": {
+        "grupo": "9046",
+        "profesor": {
+          "nombre": "Yuri Salazar Flores",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Luis Arturo Proudinat Pérez",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9047": {
+        "grupo": "9047",
+        "profesor": {
+          "nombre": "Sandra Palau Calderón",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9048": {
+        "grupo": "9048",
+        "profesor": {
+          "nombre": "Ana Meda Guardiola",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Ma",
+            "Mi",
+            "Ju"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Sebastián Rosas Ayala",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Lu",
+              "Vi"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9049": {
+        "grupo": "9049",
+        "profesor": {
+          "nombre": "Marco Antonio López Ortiz",
+          "horario": "14:00 - 15:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "14:00 - 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9050": {
+        "grupo": "9050",
+        "profesor": {
+          "nombre": "Orlando René Martínez Medrano",
+          "horario": "18:00 - 19:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "18:00 - 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9051": {
+        "grupo": "9051",
+        "profesor": {
+          "nombre": "Hugo Villaseñor Hernández",
+          "horario": "18:00 - 19:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "18:00 - 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9052": {
+        "grupo": "9052",
+        "profesor": {
+          "nombre": "José Julián Pavón Español",
+          "horario": "19:00 - 20:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Casandra Sofía Pejcovich",
+            "horario": "19:00 - 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9323": {
+        "grupo": "9323",
+        "profesor": {
+          "nombre": "María de los Dolores Sánchez Castañeda",
+          "horario": "08:00 - 09:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "08:00 - 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Lógica Matemática III": {
+      "4238": {
+        "grupo": "4238",
+        "profesor": {
+          "nombre": "Luis Jesús Turcio Cuevas",
+          "horario": "12:00 - 13:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "12:00 - 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Lógica Matemática II": {
+      "4235": {
+        "grupo": "4235",
+        "profesor": {
+          "nombre": "José Gabriel Ocampo Márquez",
+          "horario": "08:00 - 09:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Rocío Juárez Cuatlapantzi",
+            "horario": "08:00 - 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4236": {
+        "grupo": "4236",
+        "profesor": {
+          "nombre": "David Meza Alcántara",
+          "horario": "13:00 - 14:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Elsa Varela Ramírez",
+            "horario": "13:00 - 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4237": {
+        "grupo": "4237",
+        "profesor": {
+          "nombre": "María de la Asunción Preisser Rodríguez",
+          "horario": "16:00 - 17:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Edgar Migueles Pérez",
+            "horario": "16:00 - 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Lingüística Computacional": {
+      "7021": {
+        "grupo": "7021",
+        "profesor": {
+          "nombre": "Víctor Germán Mijangos de la Cruz",
+          "horario": "10:00 - 11:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ximena de la Luz Contreras Mendoza",
+            "horario": "10:00 - 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "Diego Alberto Barriga Martínez",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Lenguajes de Programación II": {
+      "7166": {
+        "grupo": "7166",
+        "profesor": {
+          "nombre": "Karla Ramírez Pulido",
+          "horario": "13:00 - 14:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "13:00 - 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Investigación de Operaciones": {
+      "9054": {
+        "grupo": "9054",
+        "profesor": {
+          "nombre": "Gabriela García Verde",
+          "horario": "08:00 - 09:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Andrea Zuñiga Islas",
+            "horario": "08:00 - 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9056": {
+        "grupo": "9056",
+        "profesor": {
+          "nombre": "Nilse Pamela Romero Basurto",
+          "horario": "08:00 - 09:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Jonatan Zarco Cid",
+            "horario": "08:00 - 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9058": {
+        "grupo": "9058",
+        "profesor": {
+          "nombre": "Ana Lilia Anaya Muñoz",
+          "horario": "08:00 - 09:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Yahir Solares Tenorio",
+            "horario": "08:00 - 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9060": {
+        "grupo": "9060",
+        "profesor": {
+          "nombre": "María del Carmen Hernández Ayuso",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Denise Beltrán Amaro",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9062": {
+        "grupo": "9062",
+        "profesor": {
+          "nombre": "Bibiana Obregón Quintana",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Osvaldo Emmanuel Palma Cabrera",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9064": {
+        "grupo": "9064",
+        "profesor": {
+          "nombre": "Claudia Orquídea López Soto",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Daniela Colmenares Sierra",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9066": {
+        "grupo": "9066",
+        "profesor": {
+          "nombre": "Guadalupe Villeda Gómez",
+          "horario": "18:00 - 19:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "18:00 - 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9068": {
+        "grupo": "9068",
+        "profesor": {
+          "nombre": "Edgar Gil Hernández Díaz",
+          "horario": "18:00 - 19:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Alejandra Danae Gómez Hernández",
+            "horario": "18:00 - 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9070": {
+        "grupo": "9070",
+        "profesor": {
+          "nombre": "María del Carmen Fernández García",
+          "horario": "19:00 - 20:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Uriel Pérez Rivera",
+            "horario": "19:00 - 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Graficación por Computadoras": {
+      "7020": {
+        "grupo": "7020",
+        "profesor": {
+          "nombre": "Pedro Xavier Contla Romero",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Geometría Computacional": {
+      "7019": {
+        "grupo": "7019",
+        "profesor": {
+          "nombre": "Adriana Ramírez Vigueras",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Genómica Computacional": {
+      "7135": {
+        "grupo": "7135",
+        "profesor": {
+          "nombre": "Sergio Hernández López",
+          "horario": "16:00 - 17:30",
+          "dias": [
+            "Lu",
+            "Mi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "17:30 - 18:30",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "Jazmín de Jesús Santillán Manjarrez",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Estadística II": {
+      "9237": {
+        "grupo": "9237",
+        "profesor": {
+          "nombre": "Miguel Ángel Chong Rodríguez",
+          "horario": "10:00 - 11:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "10:00 - 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9239": {
+        "grupo": "9239",
+        "profesor": {
+          "nombre": "Margarita Elvira Chávez Cano",
+          "horario": "10:00 - 11:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Claudia Yali Tello Hérnandez",
+            "horario": "10:00 - 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9241": {
+        "grupo": "9241",
+        "profesor": {
+          "nombre": "José Antonio Perusquía Cortés",
+          "horario": "10:00 - 11:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "José Daniel Vera Garfias",
+            "horario": "10:00 - 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9245": {
+        "grupo": "9245",
+        "profesor": {
+          "nombre": "Ruth Selene Fuentes García",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Aaron Mauricio Gómez Jiménez",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9247": {
+        "grupo": "9247",
+        "profesor": {
+          "nombre": "Gonzalo Pérez de la Cruz",
+          "horario": "12:00 - 13:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "12:00 - 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9251": {
+        "grupo": "9251",
+        "profesor": {
+          "nombre": "Omar de la Riva Torres",
+          "horario": "17:00 - 18:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "17:00 - 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9253": {
+        "grupo": "9253",
+        "profesor": {
+          "nombre": "Martha Angélica Montes Fonseca",
+          "horario": "17:00 - 18:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "17:00 - 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9255": {
+        "grupo": "9255",
+        "profesor": {
+          "nombre": "Omar Rodríguez Torres",
+          "horario": "18:00 - 19:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "18:00 - 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9257": {
+        "grupo": "9257",
+        "profesor": {
+          "nombre": "Francisco Sánchez Villarreal",
+          "horario": "19:00 - 20:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Santiago Lara Jiménez",
+            "horario": "19:00 - 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Estadística I": {
+      "9194": {
+        "grupo": "9194",
+        "profesor": {
+          "nombre": "Margarita Elvira Chávez Cano",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Margarita Elvira Chávez Cano",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9196": {
+        "grupo": "9196",
+        "profesor": {
+          "nombre": "José Antonio Perusquía Cortés",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Guadalupe Jiménez Villanueva",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9198": {
+        "grupo": "9198",
+        "profesor": {
+          "nombre": "Ruth Selene Fuentes García",
+          "horario": "10:00 - 11:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ixchel Alexa García Vega",
+            "horario": "10:00 - 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9200": {
+        "grupo": "9200",
+        "profesor": {
+          "nombre": "Jaime Vázquez Alamilla",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9202": {
+        "grupo": "9202",
+        "profesor": {
+          "nombre": "Valeria Montesinos Chica",
+          "horario": "16:00 - 17:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Isabel Yajaira Rojas Martinez",
+            "horario": "16:00 - 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9206": {
+        "grupo": "9206",
+        "profesor": {
+          "nombre": "Antonio Soriano Flores",
+          "horario": "19:00 - 20:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Sergio Martín Martínez Pérez",
+            "horario": "19:00 - 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9346": {
+        "grupo": "9346",
+        "profesor": {
+          "nombre": "Emiliano Geneyro Squarzon",
+          "horario": "16:00 - 17:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "16:00 - 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Diseño y Programación de Videojuegos": {
+      "7134": {
+        "grupo": "7134",
+        "profesor": {
+          "nombre": "Daniel Ruelas Milanés",
+          "horario": "12:00 - 13:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "12:00 - 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Diseño de Interfaces de Usuario": {
+      "7130": {
+        "grupo": "7130",
+        "profesor": {
+          "nombre": "Selene Marisol Martínez Ramírez",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Luis Angel Rojas Espinoza",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "César Eduardo Jardines Mendoza",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": "El curso se impartirá en el Aula del Futuro del ICAT."
+      },
+      "7132": {
+        "grupo": "7132",
+        "profesor": {
+          "nombre": "Dario Emmanuel Vázquez Ceballos",
+          "horario": "18:30 - 20:00",
+          "dias": [
+            "Lu",
+            "Mi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "María Fernanda Mendoza Castillo",
+            "horario": "20:00 - 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "Andrea Uxue Amaya Navarrete",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Computación Cuántica II": {
+      "7170": {
+        "grupo": "7170",
+        "profesor": {
+          "nombre": "Salvador Elías Venegas Andraca",
+          "horario": "19:30 - 21:00",
+          "dias": [
+            "Ma",
+            "Ju"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "18:30 - 19:30",
+            "dias": [
+              "Lu",
+              "Mi"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Computación Cuántica I": {
+      "7168": {
+        "grupo": "7168",
+        "profesor": {
+          "nombre": "María de los Ángeles Sandoval Romero",
+          "horario": "13:00 - 14:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "13:00 - 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "7169": {
+        "grupo": "7169",
+        "profesor": {
+          "nombre": "Salvador Elías Venegas Andraca",
+          "horario": "19:30 - 21:00",
+          "dias": [
+            "Lu",
+            "Mi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "18:30 - 19:30",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Análisis Numérico": {
+      "9087": {
+        "grupo": "9087",
+        "profesor": {
+          "nombre": "José Guerrero Grajeda",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "José Humberto Arcos Velasco",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9089": {
+        "grupo": "9089",
+        "profesor": {
+          "nombre": "Ursula Xiomara Iturrarán Viveros",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Juan Pablo Cordero Santiago",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9091": {
+        "grupo": "9091",
+        "profesor": {
+          "nombre": "Javier de Jesús Cortés Aguirre",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Edwin Giovany Rebollar Madariaga",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9093": {
+        "grupo": "9093",
+        "profesor": {
+          "nombre": "Guilmer Ferdinand González Flores",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9095": {
+        "grupo": "9095",
+        "profesor": {
+          "nombre": "César Carreón Otañez",
+          "horario": "16:00 - 17:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Jesús Iván Coss Calderón",
+            "horario": "16:00 - 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9097": {
+        "grupo": "9097",
+        "profesor": {
+          "nombre": "Luis Alberto Vázquez Maisón",
+          "horario": "17:00 - 18:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "17:00 - 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9099": {
+        "grupo": "9099",
+        "profesor": {
+          "nombre": "Roberto Rosas Espinosa",
+          "horario": "18:00 - 19:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "18:00 - 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "9101": {
+        "grupo": "9101",
+        "profesor": {
+          "nombre": "Mario Medina Torres",
+          "horario": "19:00 - 20:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Natalie Elizabeth Sánchez López",
+            "horario": "19:00 - 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Animación por Computadora": {
+      "7127": {
+        "grupo": "7127",
+        "profesor": {
+          "nombre": "Joel Espinosa Longi",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Jorge Barragán Argüero",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "Sergio Giovanni Bisogno Léon y Vélez",
+            "horario": "Horario no especificado",
+            "dias": null
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Análisis de Algoritmos II": {
+      "7014": {
+        "grupo": "7014",
+        "profesor": {
+          "nombre": "Jorge Urrutia Galicia",
+          "horario": "12:00 - 13:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Adriana Ramírez Vigueras",
+            "horario": "Horario no especificado",
+            "dias": null
+          },
+          {
+            "nombre": "Adrián Aguilera Moreno",
+            "horario": "12:00 - 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Algoritmos Paralelos": {
+      "7125": {
+        "grupo": "7125",
+        "profesor": {
+          "nombre": "Mario Arturo Nieto Butron",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": "El horario será de 8 a 9 hrs"
+      }
+    },
+    "Álgebra Moderna II": {
+      "4198": {
+        "grupo": "4198",
+        "profesor": {
+          "nombre": "Emilio Esteban Lluis Puebla",
+          "horario": "10:00 - 11:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Luis Adrián Nava Rosas",
+            "horario": "10:00 - 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4199": {
+        "grupo": "4199",
+        "profesor": {
+          "nombre": "Valente Santiago Vargas",
+          "horario": "12:00 - 13:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Minerva Ortíz Pérez",
+            "horario": "12:00 - 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4200": {
+        "grupo": "4200",
+        "profesor": {
+          "nombre": "Alejandro Argudín Monroy",
+          "horario": "18:00 - 19:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Juan Andrés Orozco Gutiérrez",
+            "horario": "18:00 - 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Álgebra Moderna I": {
+      "4167": {
+        "grupo": "4167",
+        "profesor": {
+          "nombre": "Hugo Alberto Rincón Mejía",
+          "horario": "07:00 - 08:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Sara Abeijón Malvaez",
+            "horario": "07:00 - 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4168": {
+        "grupo": "4168",
+        "profesor": {
+          "nombre": "Valente Santiago Vargas",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Miguel Ignacio Romero Cortés",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4169": {
+        "grupo": "4169",
+        "profesor": {
+          "nombre": "Juan Morales Rodríguez",
+          "horario": "11:00 - 12:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "José Roberto de la Vega Martínez",
+            "horario": "11:00 - 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4170": {
+        "grupo": "4170",
+        "profesor": {
+          "nombre": "Luis Jorge Sánchez Saldaña",
+          "horario": "15:00 - 16:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Marco Alejandro Corrales Avalos",
+            "horario": "15:00 - 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4171": {
+        "grupo": "4171",
+        "profesor": {
+          "nombre": "José Lino Samaniego Mendoza",
+          "horario": "19:00 - 20:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Christopher Villagra Piña",
+            "horario": "19:00 - 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4308": {
+        "grupo": "4308",
+        "profesor": {
+          "nombre": "Irving Daniel Calderón Camacho",
+          "horario": "17:00 - 18:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ana Karla García Pérez",
+            "horario": "17:00 - 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      }
+    },
+    "Álgebra Lineal II": {
+      "4124": {
+        "grupo": "4124",
+        "profesor": {
+          "nombre": "Frank Patrick Murphy Hernández",
+          "horario": "07:00 - 08:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Eduardo León Rodríguez",
+            "horario": "07:00 - 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4125": {
+        "grupo": "4125",
+        "profesor": {
+          "nombre": "Carmen Martínez Adame Isais",
+          "horario": "08:00 - 09:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "René Nicolás Quijada Romero",
+            "horario": "08:00 - 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4126": {
+        "grupo": "4126",
+        "profesor": {
+          "nombre": "Alejandro Alvarado García",
+          "horario": "08:00 - 09:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Irvin Arellano Rosas",
+            "horario": "08:00 - 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4127": {
+        "grupo": "4127",
+        "profesor": {
+          "nombre": "Leonardo Ignacio Martínez Sandoval",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Edgar Sánchez Santos",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4128": {
+        "grupo": "4128",
+        "profesor": {
+          "nombre": "Clara Eugenia Garza Hume",
+          "horario": "12:00 - 13:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Micaela Julia Raga",
+            "horario": "12:00 - 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4129": {
+        "grupo": "4129",
+        "profesor": {
+          "nombre": "Clotilde García Villa",
+          "horario": "13:00 - 14:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "13:00 - 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4130": {
+        "grupo": "4130",
+        "profesor": {
+          "nombre": "José Eduardo Simental Rodríguez",
+          "horario": "14:00 - 15:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Lenin Pavón Alvarez",
+            "horario": "14:00 - 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4131": {
+        "grupo": "4131",
+        "profesor": {
+          "nombre": "José Cruz García Zagal",
+          "horario": "16:00 - 17:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "16:00 - 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4132": {
+        "grupo": "4132",
+        "profesor": {
+          "nombre": "Daniela Mariyet Terán Guerrero",
+          "horario": "17:00 - 18:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Jaime Daniel García Argueta",
+            "horario": "17:00 - 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4133": {
+        "grupo": "4133",
+        "profesor": {
+          "nombre": "Rocío Leonel Gómez",
+          "horario": "19:00 - 20:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Luis Adrián Pedroza Rojas",
+            "horario": "19:00 - 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4134": {
+        "grupo": "4134",
+        "profesor": {
+          "nombre": "Lorena Morales Callejas",
+          "horario": "20:00 - 21:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Joel Rubalcava González",
+            "horario": "20:00 - 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4314": {
+        "grupo": "4314",
+        "profesor": {
+          "nombre": "Irvin Arellano Rosas",
+          "horario": "21:00 - 22:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "21:00 - 22:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null
+      },
+      "4338": {
+        "grupo": "4338",
+        "profesor": {
+          "nombre": "Francisco Larrión Riveroll",
+          "horario": "09:00 - 10:00",
+          "dias": [
+            "Lu",
+            "Mi",
+            "Vi"
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ayudante aún no asignado",
+            "horario": "09:00 - 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": "El curso se impartirá en el IMATE"
       }
     }
   }
