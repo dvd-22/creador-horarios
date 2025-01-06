@@ -111,11 +111,18 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
             {groupData.ayudantes.map((ayudante, index) => (
               <div key={index} className="ml-1">
                 <p className="text-gray-200 text-sm">{ayudante?.nombre}</p>
-                <p className="text-gray-400 text-xs">
-                  {ayudante?.horario} ({ayudante?.dias?.join(", ")})
-                </p>
+                {ayudante?.horario !== "Horario no especificado" && ayudante?.dias && (
+                  <p className="text-gray-400 text-xs">
+                    {ayudante?.horario} ({ayudante?.dias?.join(", ")})
+                  </p>
+                )}
               </div>
             ))}
+          </div>
+        )}
+        {groupData?.nota && (
+          <div className="border-t border-gray-700 pt-1 mt-1">
+            <p className="text-yellow-200 text-xs italic">&#x1F6C8; {groupData.nota}</p>
           </div>
         )}
       </div>

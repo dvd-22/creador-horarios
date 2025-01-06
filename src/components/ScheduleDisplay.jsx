@@ -39,22 +39,29 @@ const ScheduleDisplay = () => {
     // Check if a new group conflicts with existing selected groups
     const checkConflicts = (newGroup) => {
         const newSlots = [];
-
-        // Add professor slots
-        const profDays = newGroup.professor.dias;
-        const [profStart, profEnd] = newGroup.professor.horario.split(' - ').map(timeToMinutes);
-        profDays.forEach(day => {
-            newSlots.push({ day, start: profStart, end: profEnd });
-        });
-
-        // Add assistant slots
-        newGroup.assistants?.forEach(assistant => {
-            const [astStart, astEnd] = assistant.horario.split(' - ').map(timeToMinutes);
-            assistant.dias.forEach(day => {
-                newSlots.push({ day, start: astStart, end: astEnd });
+    
+        // Add professor slots with null checks
+        const profDays = newGroup.professor.dias || [];
+        const [profStart, profEnd] = (newGroup.professor.horario || '').split(' - ').map(timeToMinutes);
+        
+        if (profStart !== null && profEnd !== null) {
+            profDays.forEach(day => {
+                newSlots.push({ day, start: profStart, end: profEnd });
             });
+        }
+    
+        // Add assistant slots with null checks
+        newGroup.assistants?.forEach(assistant => {
+            const [astStart, astEnd] = (assistant.horario || '').split(' - ').map(timeToMinutes);
+            const assistantDays = assistant.dias || [];
+            
+            if (astStart !== null && astEnd !== null && assistantDays.length > 0) {
+                assistantDays.forEach(day => {
+                    newSlots.push({ day, start: astStart, end: astEnd });
+                });
+            }
         });
-
+    
         // Check against existing groups
         for (const existingGroup of selectedGroups) {
             // Skip if it's the same group being toggled off
@@ -63,23 +70,31 @@ const ScheduleDisplay = () => {
                 existingGroup.group === newGroup.group) {
                 continue;
             }
-
+    
             const existingSlots = [];
-
-            // Add existing professor slots
-            existingGroup.professor.dias.forEach(day => {
-                const [start, end] = existingGroup.professor.horario.split(' - ').map(timeToMinutes);
-                existingSlots.push({ day, start, end });
-            });
-
-            // Add existing assistant slots
-            existingGroup.assistants?.forEach(assistant => {
-                const [start, end] = assistant.horario.split(' - ').map(timeToMinutes);
-                assistant.dias.forEach(day => {
-                    existingSlots.push({ day, start, end });
+    
+            // Add existing professor slots with null checks
+            const existingProfDays = existingGroup.professor.dias || [];
+            const [existingProfStart, existingProfEnd] = (existingGroup.professor.horario || '').split(' - ').map(timeToMinutes);
+            
+            if (existingProfStart !== null && existingProfEnd !== null) {
+                existingProfDays.forEach(day => {
+                    existingSlots.push({ day, start: existingProfStart, end: existingProfEnd });
                 });
+            }
+    
+            // Add existing assistant slots with null checks
+            existingGroup.assistants?.forEach(assistant => {
+                const [start, end] = (assistant.horario || '').split(' - ').map(timeToMinutes);
+                const assistantDays = assistant.dias || [];
+                
+                if (start !== null && end !== null && assistantDays.length > 0) {
+                    assistantDays.forEach(day => {
+                        existingSlots.push({ day, start, end });
+                    });
+                }
             });
-
+    
             // Check for conflicts
             for (const newSlot of newSlots) {
                 for (const existingSlot of existingSlots) {
@@ -95,7 +110,7 @@ const ScheduleDisplay = () => {
                 }
             }
         }
-
+    
         return null;
     };
 

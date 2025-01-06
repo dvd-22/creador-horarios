@@ -1,11 +1,13 @@
 import React, { useMemo } from 'react';
 
 const timeToMinutes = (time) => {
+  if (!time || time === 'Horario no especificado') return null;
   const [hours, minutes] = time.split(':').map(Number);
   return hours * 60 + minutes;
 };
 
 const minutesToTime = (minutes) => {
+  if (minutes === null) return '';
   const hours = Math.floor(minutes / 60);
   const mins = minutes % 60;
   return `${hours.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}`;
@@ -53,40 +55,48 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
   }, [selectedGroups]);
 
   // Calculate all occupied time slots
+  // Calculate all occupied time slots with null checks
   const occupiedSlots = selectedGroups.flatMap(group => {
     const slots = [];
 
     // Add professor slots
-    const profDays = group.professor.dias;
-    const [profStart, profEnd] = group.professor.horario.split(' - ').map(timeToMinutes);
+    const profDays = group.professor.dias || [];
+    const [profStart, profEnd] = (group.professor.horario || '').split(' - ').map(timeToMinutes);
 
-    profDays.forEach(day => {
-      slots.push({
-        day,
-        start: profStart,
-        end: profEnd,
-        type: 'professor',
-        subject: group.subject,
-        group: group.group,
-        professor: group.professor.nombre
-      });
-    });
-
-    group.assistants?.forEach(assistant => {
-      const [astStart, astEnd] = assistant.horario.split(' - ').map(timeToMinutes);
-      assistant.dias.forEach(day => {
+    if (profStart !== null && profEnd !== null) {
+      profDays.forEach(day => {
         slots.push({
           day,
-          start: astStart,
-          end: astEnd,
-          type: 'assistant',
+          start: profStart,
+          end: profEnd,
+          type: 'professor',
           subject: group.subject,
           group: group.group,
-          professor: assistant.nombre
+          professor: group.professor.nombre
         });
       });
-    });
+    }
 
+    // Add assistant slots only if they have valid schedule and days
+    group.assistants?.forEach(assistant => {
+      const [astStart, astEnd] = (assistant.horario || '').split(' - ').map(timeToMinutes);
+      const assistantDays = assistant.dias || [];
+
+      // Only add slots if the assistant has both valid time and days
+      if (astStart !== null && astEnd !== null && assistantDays.length > 0) {
+        assistantDays.forEach(day => {
+          slots.push({
+            day,
+            start: astStart,
+            end: astEnd,
+            type: 'assistant',
+            subject: group.subject,
+            group: group.group,
+            professor: assistant.nombre
+          });
+        });
+      }
+    });
 
     return slots;
   });
