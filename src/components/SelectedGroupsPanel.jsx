@@ -75,6 +75,18 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule }) 
           </div>
         ))}
       </div>
+      
+      <div className="mt-4 text-center text-sm text-gray-400">
+        Con ♥️ por Dvd22 - {' '}
+        <a 
+          href="https://github.com/dvd-22/creador-horarios" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-blue-300"
+        >
+          Contribuye
+        </a>
+      </div>
     </div>
   );
 };

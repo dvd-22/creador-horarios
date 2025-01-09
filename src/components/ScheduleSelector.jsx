@@ -2,6 +2,18 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { ChevronDown, ChevronRight, Search } from 'lucide-react';
 import scheduleData from '../data/horarios.json';
 
+const semesterOrder = [
+  'Primer Semestre',
+  'Segundo Semestre',
+  'Tercer Semestre',
+  'Cuarto Semestre',
+  'Quinto Semestre',
+  'Sexto Semestre',
+  'Séptimo Semestre',
+  'Octavo Semestre',
+  'Optativas'
+];
+
 const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
   const [openSemesters, setOpenSemesters] = useState({});
   const [openSubjects, setOpenSubjects] = useState({});
@@ -19,6 +31,16 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
       ...prev,
       [subject]: !prev[subject]
     }));
+  };
+
+  const highlightText = (text, query) => {
+    if (!query.trim() || !text) return text;
+    const parts = text.split(new RegExp(`(${query})`, 'gi'));
+    return parts.map((part, index) => 
+      part.toLowerCase() === query.toLowerCase() ? 
+        <span key={index} className="bg-yellow-500/30 text-white">{part}</span> : 
+        part
+    );
   };
 
   const filteredScheduleData = useMemo(() => {
@@ -63,7 +85,20 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
       }
     });
 
-    return filtered;
+    // Create a new object with ordered semesters and sorted subjects
+    const orderedData = {};
+    semesterOrder.forEach(semester => {
+      if (filtered[semester]) {
+        orderedData[semester] = Object.keys(filtered[semester])
+          .sort()
+          .reduce((obj, key) => {
+            obj[key] = filtered[semester][key];
+            return obj;
+          }, {});
+      }
+    });
+
+    return orderedData;
   }, [searchQuery]);
 
   useEffect(() => {
@@ -89,28 +124,37 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
   const renderGroupCard = (group, groupData, semester, subject) => (
     <div
       key={group}
-      className={`bg-gray-800 p-2 rounded mb-2 text-sm border cursor-pointer ${selectedGroups.some(g =>
-        g.semester === semester &&
-        g.subject === subject &&
-        g.group === group
-      ) ? 'border-blue-500' : 'border-gray-700'
-        }`}
+      className={`bg-gray-800 p-2 rounded mb-2 text-sm border cursor-pointer ${
+        selectedGroups.some(g =>
+          g.semester === semester &&
+          g.subject === subject &&
+          g.group === group
+        ) ? 'border-blue-500' : 'border-gray-700'
+      }`}
       onClick={() => onGroupSelect(semester, subject, group, groupData)}
     >
-      <h4 className="font-bold text-gray-100 mb-1">Grupo {group}</h4>
+      <h4 className="font-bold text-gray-100 mb-1">
+        Grupo {highlightText(group, searchQuery)}
+      </h4>
       <div className="space-y-2">
         <div>
-          <p className="text-gray-200 text-sm">{groupData?.profesor?.nombre}</p>
-          <p className="text-gray-400 text-xs">
-            {groupData?.profesor?.horario} ({groupData?.profesor?.dias?.join(", ")})
+          <p className="text-gray-200 text-sm">
+            {highlightText(groupData?.profesor?.nombre, searchQuery)}
           </p>
+          {groupData?.profesor?.horarios?.map((schedule, index) => (
+            <p key={index} className="text-gray-400 text-xs">
+              {schedule.horario} ({schedule.dias?.join(", ")})
+            </p>
+          ))}
         </div>
         {groupData?.ayudantes && groupData.ayudantes.length > 0 && (
           <div className="border-t border-gray-700 pt-1 mt-1">
             <p className="text-gray-300 text-xs font-medium">Ayudantes:</p>
             {groupData.ayudantes.map((ayudante, index) => (
               <div key={index} className="ml-1">
-                <p className="text-gray-200 text-sm">{ayudante?.nombre}</p>
+                <p className="text-gray-200 text-sm">
+                  {highlightText(ayudante?.nombre, searchQuery)}
+                </p>
                 {ayudante?.horario !== "Horario no especificado" && ayudante?.dias && (
                   <p className="text-gray-400 text-xs">
                     {ayudante?.horario} ({ayudante?.dias?.join(", ")})
@@ -130,9 +174,9 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
   );
 
   return (
-    <div className="h-screen bg-gray-900 border-r border-gray-700 flex flex-col">
+    <div className="h-full bg-gray-900 border-r border-gray-700 flex flex-col">
       <div className="p-4 border-b border-gray-700">
-        <h1 className="text-xl font-bold text-gray-100 mb-4">Horarios por Semestre</h1>
+        <h1 className="text-xl font-bold text-gray-100 mb-4">Creador de horarios</h1>
         <div className="relative">
           <input
             type="text"
@@ -155,7 +199,9 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
                 onClick={() => toggleSemester(semester)}
                 className="w-full p-2 bg-gray-800 hover:bg-gray-700 flex items-center justify-between text-gray-100 text-sm"
               >
-                <span className="font-semibold text-left">{semester}</span>
+                <span className="font-semibold text-left">
+                  {highlightText(semester, searchQuery)}
+                </span>
                 {openSemesters[semester] ?
                   <ChevronDown size={16} className="text-gray-400 flex-shrink-0" /> :
                   <ChevronRight size={16} className="text-gray-400 flex-shrink-0" />
@@ -170,7 +216,9 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
                         onClick={() => toggleSubject(subject)}
                         className="w-full p-2 bg-gray-800 hover:bg-gray-700 flex items-center justify-between text-gray-100 text-sm"
                       >
-                        <span className="font-medium text-left pr-2">{subject}</span>
+                        <span className="font-medium text-left pr-2">
+                          {highlightText(subject, searchQuery)}
+                        </span>
                         {openSubjects[subject] ?
                           <ChevronDown size={16} className="text-gray-400 flex-shrink-0" /> :
                           <ChevronRight size={16} className="text-gray-400 flex-shrink-0" />

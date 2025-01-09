@@ -13,7 +13,6 @@ const minutesToTime = (minutes) => {
   return `${hours.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}`;
 };
 
-// Predefined color palette - 20 distinct colors with good contrast
 const colorPalette = [
   'bg-blue-700/50',
   'bg-purple-700/50',
@@ -43,7 +42,6 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
     `${hour.toString().padStart(2, '0')}:00`
   );
 
-  // Create a map of subjects to colors
   const subjectColors = useMemo(() => {
     const uniqueSubjects = [...new Set(selectedGroups.map(group => group.subject))];
     return Object.fromEntries(
@@ -54,35 +52,34 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
     );
   }, [selectedGroups]);
 
-  // Calculate all occupied time slots
-  // Calculate all occupied time slots with null checks
   const occupiedSlots = selectedGroups.flatMap(group => {
     const slots = [];
 
-    // Add professor slots
-    const profDays = group.professor.dias || [];
-    const [profStart, profEnd] = (group.professor.horario || '').split(' - ').map(timeToMinutes);
+    // Handle multiple professor schedules
+    group.professor.horarios?.forEach(schedule => {
+      const [profStart, profEnd] = (schedule.horario || '').split(' - ').map(timeToMinutes);
+      const profDays = schedule.dias || [];
 
-    if (profStart !== null && profEnd !== null) {
-      profDays.forEach(day => {
-        slots.push({
-          day,
-          start: profStart,
-          end: profEnd,
-          type: 'professor',
-          subject: group.subject,
-          group: group.group,
-          professor: group.professor.nombre
+      if (profStart !== null && profEnd !== null) {
+        profDays.forEach(day => {
+          slots.push({
+            day,
+            start: profStart,
+            end: profEnd,
+            type: 'professor',
+            subject: group.subject,
+            group: group.group,
+            professor: group.professor.nombre
+          });
         });
-      });
-    }
+      }
+    });
 
-    // Add assistant slots only if they have valid schedule and days
+    // Handle assistants (unchanged)
     group.assistants?.forEach(assistant => {
       const [astStart, astEnd] = (assistant.horario || '').split(' - ').map(timeToMinutes);
       const assistantDays = assistant.dias || [];
 
-      // Only add slots if the assistant has both valid time and days
       if (astStart !== null && astEnd !== null && assistantDays.length > 0) {
         assistantDays.forEach(day => {
           slots.push({
@@ -100,6 +97,7 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
 
     return slots;
   });
+
 
   const calculateTop = (minutes) => {
     const startOfDay = 5 * 60; // 5:00 AM in minutes

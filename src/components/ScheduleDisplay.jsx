@@ -40,17 +40,19 @@ const ScheduleDisplay = () => {
     const checkConflicts = (newGroup) => {
         const newSlots = [];
     
-        // Add professor slots with null checks
-        const profDays = newGroup.professor.dias || [];
-        const [profStart, profEnd] = (newGroup.professor.horario || '').split(' - ').map(timeToMinutes);
-        
-        if (profStart !== null && profEnd !== null) {
-            profDays.forEach(day => {
-                newSlots.push({ day, start: profStart, end: profEnd });
-            });
-        }
+        // Handle multiple professor schedules
+        newGroup.professor.horarios?.forEach(schedule => {
+            const [profStart, profEnd] = (schedule.horario || '').split(' - ').map(timeToMinutes);
+            const profDays = schedule.dias || [];
+            
+            if (profStart !== null && profEnd !== null) {
+                profDays.forEach(day => {
+                    newSlots.push({ day, start: profStart, end: profEnd });
+                });
+            }
+        });
     
-        // Add assistant slots with null checks
+        // Handle assistants (unchanged)
         newGroup.assistants?.forEach(assistant => {
             const [astStart, astEnd] = (assistant.horario || '').split(' - ').map(timeToMinutes);
             const assistantDays = assistant.dias || [];
@@ -64,7 +66,6 @@ const ScheduleDisplay = () => {
     
         // Check against existing groups
         for (const existingGroup of selectedGroups) {
-            // Skip if it's the same group being toggled off
             if (existingGroup.semester === newGroup.semester &&
                 existingGroup.subject === newGroup.subject &&
                 existingGroup.group === newGroup.group) {
@@ -73,17 +74,19 @@ const ScheduleDisplay = () => {
     
             const existingSlots = [];
     
-            // Add existing professor slots with null checks
-            const existingProfDays = existingGroup.professor.dias || [];
-            const [existingProfStart, existingProfEnd] = (existingGroup.professor.horario || '').split(' - ').map(timeToMinutes);
-            
-            if (existingProfStart !== null && existingProfEnd !== null) {
-                existingProfDays.forEach(day => {
-                    existingSlots.push({ day, start: existingProfStart, end: existingProfEnd });
-                });
-            }
+            // Handle multiple professor schedules for existing groups
+            existingGroup.professor.horarios?.forEach(schedule => {
+                const [existingProfStart, existingProfEnd] = (schedule.horario || '').split(' - ').map(timeToMinutes);
+                const existingProfDays = schedule.dias || [];
+                
+                if (existingProfStart !== null && existingProfEnd !== null) {
+                    existingProfDays.forEach(day => {
+                        existingSlots.push({ day, start: existingProfStart, end: existingProfEnd });
+                    });
+                }
+            });
     
-            // Add existing assistant slots with null checks
+            // Handle existing assistants (unchanged)
             existingGroup.assistants?.forEach(assistant => {
                 const [start, end] = (assistant.horario || '').split(' - ').map(timeToMinutes);
                 const assistantDays = assistant.dias || [];
@@ -113,15 +116,15 @@ const ScheduleDisplay = () => {
     
         return null;
     };
-
+    
+    // Update the handleGroupSelect function
     const handleGroupSelect = (semester, subject, group, groupData) => {
         const isSelected = selectedGroups.some(g =>
             g.semester === semester &&
             g.subject === subject &&
             g.group === group
         );
-
-        // If deselecting, always allow
+    
         if (isSelected) {
             setSelectedGroups(prev => prev.filter(g =>
                 !(g.semester === semester &&
@@ -131,25 +134,26 @@ const ScheduleDisplay = () => {
             setConflictAlert(null);
             return;
         }
-
-        // Check for conflicts when selecting
+    
         const newGroup = {
             semester,
             subject,
             group,
-            professor: groupData.profesor,
+            professor: {
+                ...groupData.profesor,
+                horarios: groupData.profesor.horarios || []
+            },
             assistants: groupData.ayudantes
         };
-
+    
         const conflict = checkConflicts(newGroup);
-
+    
         if (conflict) {
             const message = `No se puede agregar ${subject} (Grupo ${group}) porque se traslapa con ${conflict.conflictWith.subject} (Grupo ${conflict.conflictWith.group}).`;
             setConflictAlert(message);
             return;
         }
-
-        // If no conflicts, add the group
+    
         setSelectedGroups(prev => [...prev, newGroup]);
         setConflictAlert(null);
     };
@@ -162,7 +166,7 @@ const ScheduleDisplay = () => {
     };
 
     return (
-        <div className="flex h-screen overflow-hidden">
+        <div className="flex h-[100dvh] overflow-hidden">
             {conflictAlert && (
                 <CustomAlert
                     message={conflictAlert}
