@@ -4,6 +4,7 @@ import ExportLayout from './ExportLayout';
 import ScheduleViewer from './ScheduleViewer';
 import SelectedGroupsPanel from './SelectedGroupsPanel';
 import { saveScheduleAsPng } from '../utils/scheduleUtils';
+import SavePopup from './SavePopup';
 
 const CustomAlert = ({ message, onClose }) => (
     <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-2xl bg-red-900/50 border border-red-500 text-red-100 px-4 py-3 rounded shadow-lg">
@@ -22,6 +23,7 @@ const ScheduleDisplay = () => {
     const [selectedGroups, setSelectedGroups] = useState([]);
     const [conflictAlert, setConflictAlert] = useState(null);
     const [currentScheduleName, setCurrentScheduleName] = useState('');
+    const [showSavePopup, setShowSavePopup] = useState(false);
     const scheduleRef = useRef(null);
     const exportRef = useRef(null);
 
@@ -162,6 +164,7 @@ const ScheduleDisplay = () => {
         setCurrentScheduleName(name);
         setTimeout(() => {
             saveScheduleAsPng(exportRef, name);
+            setShowSavePopup(true); // Show popup after saving
         }, 100);
     };
 
@@ -201,6 +204,9 @@ const ScheduleDisplay = () => {
                     />
                 }
             />
+            {showSavePopup && (
+                <SavePopup onClose={() => setShowSavePopup(false)} />
+            )}
         </div>
     );
 };
