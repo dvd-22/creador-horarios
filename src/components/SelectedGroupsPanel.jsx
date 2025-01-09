@@ -34,7 +34,7 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
             description: `Profesor: ${group.professor.nombre}`,
             start: [2025, 1, 27, startHour, startMinute],
             end: [2025, 1, 27, endHour, endMinute],
-            recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[day]};UNTIL=20250210T235959Z`
+            recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[day]};UNTIL=20250523T235959Z`
           });
         });
       });
