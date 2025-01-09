@@ -15,7 +15,8 @@ const SavePopup = ({ onClose }) => {
                         página oficial de la universidad
                     </a>
                     . Este proyecto
-                    solo lo creé para facilitar la creación de horarios antes de inscribirse a la facultad.<br/><br/>
+                    solo lo creé para facilitar la creación de horarios antes de inscribirse a la facultad.<br /><br />
+                    Si guardas el archivo en ICS puedes importarlo a cualquier calendario y tener tus horarios en tu celular.<br /><br />
                     La página fue creada por mi, Dvd22. Puedes encontrar el repo&nbsp;
                     <a
                         href="https://github.com/dvd-22/creador-horarios"

@@ -24,6 +24,7 @@ const ScheduleDisplay = () => {
     const [conflictAlert, setConflictAlert] = useState(null);
     const [currentScheduleName, setCurrentScheduleName] = useState('');
     const [showSavePopup, setShowSavePopup] = useState(false);
+    const [savePopupMessage, setSavePopupMessage] = useState('');
     const scheduleRef = useRef(null);
     const exportRef = useRef(null);
 
@@ -164,7 +165,7 @@ const ScheduleDisplay = () => {
         setCurrentScheduleName(name);
         setTimeout(() => {
             saveScheduleAsPng(exportRef, name);
-            setShowSavePopup(true); // Show popup after saving
+            setShowSavePopup(true);
         }, 100);
     };
 
@@ -193,6 +194,7 @@ const ScheduleDisplay = () => {
                 selectedGroups={selectedGroups}
                 onRemoveGroup={handleGroupSelect}
                 onSaveSchedule={handleSaveSchedule}
+                setShowSavePopup={setShowSavePopup}
             />
             <ExportLayout
                 ref={exportRef}

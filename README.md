@@ -1,7 +1,7 @@
 ##### **_Este proyecto fue creado por David Alemán y está bajo una licencia que se puede leer en el mismo repo. No me hago responsable de que no puedas inscribir tus materias por confiar en este horario. Revisa bien antes de inscribirte. No es un proyecto oficial de la UNAM._**
 # Creador de horarios
 
-Este proyecto fue creado durante las vacaciones 2025-1 porque me dio flojera hacer mi horario manualmente (lo que me hubiera llevado probablemente 15 minutos) y decidí invertir 3 días en hacer esta pequeña aplicación.
+Este proyecto fue creado durante las vacaciones 2024 porque me dio flojera hacer mi horario manualmente (lo que me hubiera llevado probablemente 15 minutos) y decidí invertir 3 días en hacer esta pequeña aplicación.
 
 ## ¿Cómo funciona?
 
@@ -9,7 +9,7 @@ Los datos fueron tomados "prestados" (web scraping) de la página de la Facultad
 
 ## ¿Cómo se usa?
 
-Si estás aquí seguramente ya la usaste xd, pero en resumen, buscas las materias que quieres, y las seleccionas de la manera que más te conviene. Si alguna de las materias que quieres no está por alguna razón, puedes agregarla manualmente. Al final, puedes guardar tu horario (se guarda en el LocalStorage de tu navegador) y lo puedes editar las próximas veces que entres a la página.
+Si estás aquí seguramente ya la usaste xd, pero en resumen, buscas las materias que quieres, y las seleccionas de la manera que más te conviene. Puedes ver los horarios de las materias que seleccionaste y puedes exportar tu horario a un archivo png para que lo puedas importar a tu aplicación de calendario favorita.
 
 ## ¿Cómo contribuir?
 
