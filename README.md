@@ -9,7 +9,7 @@ Los datos fueron tomados "prestados" (web scraping) de la página de la Facultad
 
 ## ¿Cómo se usa?
 
-Si estás aquí seguramente ya la usaste xd, pero en resumen, buscas las materias que quieres, y las seleccionas de la manera que más te conviene. Puedes ver los horarios de las materias que seleccionaste y puedes exportar tu horario a un archivo png para que lo puedas importar a tu aplicación de calendario favorita.
+Si estás aquí seguramente ya la usaste xd, pero en resumen, buscas las materias que quieres, y las seleccionas de la manera que más te conviene. Puedes ver los horarios de las materias que seleccionaste y puedes exportar tu horario a un archivo PNG, o como ICS para que lo puedas importar a tu aplicación de calendario favorita.
 
 ## ¿Cómo contribuir?
 
