@@ -1,9 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { createEvents } from 'ics';
+
+// Add Google Calendar color codes
+const GOOGLE_COLORS = {
+  LAVENDER: 1,
+  SAGE: 2,
+  GRAPE: 3,
+  FLAMINGO: 4,
+  BANANA: 5,
+  TANGERINE: 6,
+  PEACOCK: 7,
+  GRAPHITE: 8,
+  BLUEBERRY: 9,
+  BASIL: 10,
+  TOMATO: 11
+};
 
 const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, setShowSavePopup }) => {
   const [isNaming, setIsNaming] = useState(false);
   const [scheduleName, setScheduleName] = useState('');
+
+  const subjectColors = useMemo(() => {
+    const uniqueSubjects = [...new Set(selectedGroups.map(group => group.subject))];
+    return Object.fromEntries(
+      uniqueSubjects.map((subject, index) => [
+        subject,
+        Object.values(GOOGLE_COLORS)[index % Object.keys(GOOGLE_COLORS).length]
+      ])
+    );
+  }, [selectedGroups]);
 
   const handleSave = () => {
     setIsNaming(true);
@@ -19,9 +44,10 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
 
   const handleExportICS = () => {
     const events = [];
+    const dayOffsets = { Lu: 0, Ma: 1, Mi: 2, Ju: 3, Vi: 4, Sa: 5 };
+    const semesterStart = new Date(2025, 0, 27);
 
     selectedGroups.forEach(group => {
-      // Handle professor's schedule
       group.professor.horarios?.forEach(schedule => {
         const [startTime, endTime] = schedule.horario.split(' - ');
         const [startHour, startMinute] = startTime.split(':').map(Number);
@@ -29,17 +55,32 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
 
         schedule.dias.forEach(day => {
           const dayMap = { Lu: 'MO', Ma: 'TU', Mi: 'WE', Ju: 'TH', Vi: 'FR', Sa: 'SA' };
+          const firstClass = new Date(semesterStart);
+          firstClass.setDate(semesterStart.getDate() + dayOffsets[day]);
+
           events.push({
-            title: `${group.subject} - Clase`,
+            start: [
+              firstClass.getFullYear(),
+              firstClass.getMonth() + 1,
+              firstClass.getDate(),
+              startHour,
+              startMinute
+            ],
+            end: [
+              firstClass.getFullYear(),
+              firstClass.getMonth() + 1,
+              firstClass.getDate(),
+              endHour,
+              endMinute
+            ],
+            title: `${group.subject}`,
             description: `Profesor: ${group.professor.nombre}`,
-            start: [2025, 1, 27, startHour, startMinute],
-            end: [2025, 1, 27, endHour, endMinute],
+            location: `Profesor`,
             recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[day]};UNTIL=20250523T235959Z`
           });
         });
       });
 
-      // Handle assistants' schedule
       group.assistants?.forEach(assistant => {
         if (assistant.horario !== "Horario no especificado" && assistant.dias) {
           const [startTime, endTime] = assistant.horario.split(' - ');
@@ -48,12 +89,28 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
 
           assistant.dias.forEach(day => {
             const dayMap = { Lu: 'MO', Ma: 'TU', Mi: 'WE', Ju: 'TH', Vi: 'FR', Sa: 'SA' };
+            const firstClass = new Date(semesterStart);
+            firstClass.setDate(semesterStart.getDate() + dayOffsets[day]);
+
             events.push({
-              title: `${group.subject} - Ayudantía`,
+              start: [
+                firstClass.getFullYear(),
+                firstClass.getMonth() + 1,
+                firstClass.getDate(),
+                startHour,
+                startMinute
+              ],
+              end: [
+                firstClass.getFullYear(),
+                firstClass.getMonth() + 1,
+                firstClass.getDate(),
+                endHour,
+                endMinute
+              ],
+              title: `${group.subject}`,
               description: `Ayudante: ${assistant.nombre}`,
-              start: [2025, 1, 27, startHour, startMinute],
-              end: [2025, 1, 27, endHour, endMinute],
-              recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[day]};UNTIL=20250210T235959Z`
+              location: `Ayudantía`,
+              recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[day]};UNTIL=20250523T235959Z`
             });
           });
         }
@@ -72,7 +129,7 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-      setShowSavePopup(true); // Show the popup after successful export
+      setShowSavePopup(true);
     });
   };
 
