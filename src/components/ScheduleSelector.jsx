@@ -220,6 +220,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full p-2 pl-8 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-500 text-sm"
+            autoComplete="off"
           />
           <Search className="absolute left-2 top-2.5 text-gray-400" size={16} />
         </div>

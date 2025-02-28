@@ -30,8 +30,28 @@ const Display = () => {
 
     // Utility function to convert time string to minutes
     const timeToMinutes = (time) => {
+        if (!time) return null;
         const [hours, minutes] = time.split(':').map(Number);
         return hours * 60 + minutes;
+    };
+
+    // Parse time string with support for both formats
+    const parseTimeString = (timeStr) => {
+        if (!timeStr || timeStr === 'Horario no especificado') return [null, null];
+
+        // Handle format "HH:MM a HH:MM"
+        if (timeStr.includes('a')) {
+            const [startTime, endTime] = timeStr.split('a').map(t => t.trim());
+            return [timeToMinutes(startTime), timeToMinutes(endTime)];
+        }
+
+        // Handle format "HH:MM - HH:MM"
+        if (timeStr.includes('-')) {
+            const [startTime, endTime] = timeStr.split('-').map(t => t.trim());
+            return [timeToMinutes(startTime), timeToMinutes(endTime)];
+        }
+
+        return [null, null];
     };
 
     // Check if two time ranges overlap
@@ -45,7 +65,7 @@ const Display = () => {
 
         // Handle multiple professor schedules
         newGroup.professor.horarios?.forEach(schedule => {
-            const [profStart, profEnd] = (schedule.horario || '').split(' - ').map(timeToMinutes);
+            const [profStart, profEnd] = parseTimeString(schedule.horario);
             const profDays = schedule.dias || [];
 
             if (profStart !== null && profEnd !== null) {
@@ -55,12 +75,14 @@ const Display = () => {
             }
         });
 
-        // Handle assistants (unchanged)
+        // Handle assistants
         newGroup.assistants?.forEach(assistant => {
-            const [astStart, astEnd] = (assistant.horario || '').split(' - ').map(timeToMinutes);
+            if (!assistant.horario || !assistant.dias || assistant.dias.length === 0) return;
+
+            const [astStart, astEnd] = parseTimeString(assistant.horario);
             const assistantDays = assistant.dias || [];
 
-            if (astStart !== null && astEnd !== null && assistantDays.length > 0) {
+            if (astStart !== null && astEnd !== null) {
                 assistantDays.forEach(day => {
                     newSlots.push({ day, start: astStart, end: astEnd });
                 });
@@ -79,7 +101,7 @@ const Display = () => {
 
             // Handle multiple professor schedules for existing groups
             existingGroup.professor.horarios?.forEach(schedule => {
-                const [existingProfStart, existingProfEnd] = (schedule.horario || '').split(' - ').map(timeToMinutes);
+                const [existingProfStart, existingProfEnd] = parseTimeString(schedule.horario);
                 const existingProfDays = schedule.dias || [];
 
                 if (existingProfStart !== null && existingProfEnd !== null) {
@@ -89,12 +111,14 @@ const Display = () => {
                 }
             });
 
-            // Handle existing assistants (unchanged)
+            // Handle existing assistants
             existingGroup.assistants?.forEach(assistant => {
-                const [start, end] = (assistant.horario || '').split(' - ').map(timeToMinutes);
+                if (!assistant.horario || !assistant.dias || assistant.dias.length === 0) return;
+
+                const [start, end] = parseTimeString(assistant.horario);
                 const assistantDays = assistant.dias || [];
 
-                if (start !== null && end !== null && assistantDays.length > 0) {
+                if (start !== null && end !== null) {
                     assistantDays.forEach(day => {
                         existingSlots.push({ day, start, end });
                     });
@@ -120,7 +144,7 @@ const Display = () => {
         return null;
     };
 
-    // Update the handleGroupSelect function
+    // Handle group selection
     const handleGroupSelect = (semester, subject, group, groupData) => {
         const isSelected = selectedGroups.some(g =>
             g.semester === semester &&
@@ -138,6 +162,13 @@ const Display = () => {
             return;
         }
 
+        // Check if there's already a group from the same subject
+        const sameSubjectGroup = selectedGroups.find(g => g.subject === subject);
+        if (sameSubjectGroup) {
+            setConflictAlert(`Ya tienes seleccionado el grupo ${sameSubjectGroup.group} de la materia ${subject}. No puedes seleccionar múltiples grupos de la misma materia.`);
+            return;
+        }
+
         const newGroup = {
             semester,
             subject,
@@ -146,7 +177,9 @@ const Display = () => {
                 ...groupData.profesor,
                 horarios: groupData.profesor.horarios || []
             },
-            assistants: groupData.ayudantes
+            assistants: groupData.ayudantes,
+            salon: groupData.salon || null,
+            modalidad: groupData.modalidad || null
         };
 
         const conflict = checkConflicts(newGroup);
@@ -203,6 +236,7 @@ const Display = () => {
                     <ScheduleViewer
                         selectedGroups={selectedGroups}
                         scheduleName={currentScheduleName}
+                        isExport={true}
                     />
                 }
             />

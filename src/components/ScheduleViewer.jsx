@@ -99,9 +99,7 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
               type: 'professor',
               subject: group.subject,
               group: group.group,
-              professor: group.professor.nombre,
-              location: group.salon || null,
-              modalidad: group.modalidad || null
+              professor: group.professor.nombre
             });
           });
         }
@@ -134,9 +132,7 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                   type: 'assistant',
                   subject: group.subject,
                   group: group.group,
-                  professor: assistant.nombre || 'Ayudante no asignado',
-                  location: group.salon || null,
-                  modalidad: group.modalidad || null
+                  professor: assistant.nombre || 'Ayudante no asignado'
                 });
               }
             }
@@ -212,16 +208,6 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                             <div className="text-gray-200 truncate text-xs leading-tight">
                               {slot.professor}
                             </div>
-                            {slot.location && (
-                              <div className="text-gray-300 text-xs leading-tight truncate">
-                                🏫 {slot.location}
-                              </div>
-                            )}
-                            {slot.modalidad && (
-                              <div className="text-gray-300 text-xs leading-tight truncate">
-                                {slot.modalidad === "Presencial" ? "👨‍🏫" : "💻"} {slot.modalidad}
-                              </div>
-                            )}
                           </div>
                         </div>
                       );

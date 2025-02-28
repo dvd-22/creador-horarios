@@ -49,7 +49,14 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
 
     selectedGroups.forEach(group => {
       group.professor.horarios?.forEach(schedule => {
-        const [startTime, endTime] = schedule.horario.split(' - ');
+        // Updated to handle "HH:MM a HH:MM" format
+        let startTime, endTime;
+        if (schedule.horario.includes('a')) {
+          [startTime, endTime] = schedule.horario.split(' a ');
+        } else {
+          [startTime, endTime] = schedule.horario.split(' - ');
+        }
+
         const [startHour, startMinute] = startTime.split(':').map(Number);
         const [endHour, endMinute] = endTime.split(':').map(Number);
 
@@ -75,45 +82,52 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
             ],
             title: `${group.subject}`,
             description: `Profesor: ${group.professor.nombre}`,
-            location: `Profesor`,
+            location: group.salon || '',
             recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[day]};UNTIL=20250523T235959Z`
           });
         });
       });
 
       group.assistants?.forEach(assistant => {
-        if (assistant.horario !== "Horario no especificado" && assistant.dias) {
-          const [startTime, endTime] = assistant.horario.split(' - ');
-          const [startHour, startMinute] = startTime.split(':').map(Number);
-          const [endHour, endMinute] = endTime.split(':').map(Number);
+        if (!assistant.horario || !assistant.dias || assistant.dias.length === 0) return;
 
-          assistant.dias.forEach(day => {
-            const dayMap = { Lu: 'MO', Ma: 'TU', Mi: 'WE', Ju: 'TH', Vi: 'FR', Sa: 'SA' };
-            const firstClass = new Date(semesterStart);
-            firstClass.setDate(semesterStart.getDate() + dayOffsets[day]);
-
-            events.push({
-              start: [
-                firstClass.getFullYear(),
-                firstClass.getMonth() + 1,
-                firstClass.getDate(),
-                startHour,
-                startMinute
-              ],
-              end: [
-                firstClass.getFullYear(),
-                firstClass.getMonth() + 1,
-                firstClass.getDate(),
-                endHour,
-                endMinute
-              ],
-              title: `${group.subject}`,
-              description: `Ayudante: ${assistant.nombre}`,
-              location: `Ayudantía`,
-              recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[day]};UNTIL=20250523T235959Z`
-            });
-          });
+        // Updated to handle "HH:MM a HH:MM" format
+        let startTime, endTime;
+        if (assistant.horario.includes('a')) {
+          [startTime, endTime] = assistant.horario.split(' a ');
+        } else {
+          [startTime, endTime] = assistant.horario.split(' - ');
         }
+
+        const [startHour, startMinute] = startTime.split(':').map(Number);
+        const [endHour, endMinute] = endTime.split(':').map(Number);
+
+        assistant.dias.forEach(day => {
+          const dayMap = { Lu: 'MO', Ma: 'TU', Mi: 'WE', Ju: 'TH', Vi: 'FR', Sa: 'SA' };
+          const firstClass = new Date(semesterStart);
+          firstClass.setDate(semesterStart.getDate() + dayOffsets[day]);
+
+          events.push({
+            start: [
+              firstClass.getFullYear(),
+              firstClass.getMonth() + 1,
+              firstClass.getDate(),
+              startHour,
+              startMinute
+            ],
+            end: [
+              firstClass.getFullYear(),
+              firstClass.getMonth() + 1,
+              firstClass.getDate(),
+              endHour,
+              endMinute
+            ],
+            title: `${group.subject}`,
+            description: `Ayudante: ${assistant.nombre || 'Ayudante no asignado'}`,
+            location: group.salon || '',
+            recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[day]};UNTIL=20250523T235959Z`
+          });
+        });
       });
     });
 
@@ -145,6 +159,7 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
               placeholder="Nombre del horario"
               className="w-full p-2 bg-gray-800 border border-gray-700 rounded text-gray-100"
               autoFocus
+              autoComplete="off"
             />
             <div className="flex space-x-2">
               <button
@@ -185,24 +200,50 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
       </div>
 
       <h3 className="text-lg font-medium text-gray-100 mb-2">Materias Seleccionadas:</h3>
-      <div className="space-y-2 overflow-y-auto flex-1">
+      <div className="space-y-3 overflow-y-auto flex-1">
         {selectedGroups.map((group, index) => (
-          <div key={index} className="flex items-center justify-between bg-gray-800 p-2 rounded">
-            <div>
-              <span className="text-gray-100">{group.subject}</span>
-              <span className="text-gray-400 ml-2">Grupo {group.group}</span>
+          <div key={index} className="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
+            <div className="p-3 bg-gray-750 border-b border-gray-700">
+              <div className="flex justify-between items-start">
+                <div>
+                  <h4 className="font-medium text-gray-100">{group.subject}</h4>
+                  <div className="flex items-center space-x-2 text-sm">
+                    <span className="text-gray-400">Grupo {group.group}</span>
+                    {group.professor.nombre && (
+                      <span className="text-gray-400">• {group.professor.nombre}</span>
+                    )}
+                  </div>
+                </div>
+                <button
+                  onClick={() => onRemoveGroup(group.semester, group.subject, group.group, {
+                    profesor: group.professor,
+                    ayudantes: group.assistants
+                  })}
+                  className="text-red-400 hover:text-red-300 text-sm px-1 -mt-1"
+                >
+                  ✕
+                </button>
+              </div>
             </div>
-            <button
-              onClick={() => onRemoveGroup(group.semester, group.subject, group.group, {
-                profesor: group.professor,
-                ayudantes: group.assistants
-              })}
-              className="text-red-400 hover:text-red-300 text-sm"
-            >
-              Eliminar
-            </button>
+            {group.salon && (
+              <div className="px-3 py-2 text-xs flex items-center text-gray-300">
+                <span className="mr-1">🏫</span>
+                <span>{group.salon}</span>
+                {group.modalidad && (
+                  <span className="ml-2">
+                    <span className="mr-1">{group.modalidad === "Presencial" ? "👨‍🏫" : "💻"}</span>
+                    {group.modalidad}
+                  </span>
+                )}
+              </div>
+            )}
           </div>
         ))}
+        {selectedGroups.length === 0 && (
+          <p className="text-gray-500 text-center text-sm italic">
+            Aún no has seleccionado materias
+          </p>
+        )}
       </div>
 
       <div className="mt-4 text-center text-sm text-gray-400">
