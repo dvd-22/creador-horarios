@@ -16,6 +16,36 @@ const GOOGLE_COLORS = {
   TOMATO: 11
 };
 
+const parseTimeString = (timeStr) => {
+  if (!timeStr || timeStr === 'Horario no especificado') return null;
+
+  // Handle format "HH:MM a HH:MM"
+  if (timeStr.includes('a')) {
+    const [startTime, endTime] = timeStr.split('a').map(t => t.trim());
+    return {
+      start: timeToMinutes(startTime),
+      end: timeToMinutes(endTime)
+    };
+  }
+
+  // Handle format "HH:MM - HH:MM"
+  if (timeStr.includes('-')) {
+    const [startTime, endTime] = timeStr.split('-').map(t => t.trim());
+    return {
+      start: timeToMinutes(startTime),
+      end: timeToMinutes(endTime)
+    };
+  }
+
+  return null;
+};
+
+const timeToMinutes = (time) => {
+  if (!time) return null;
+  const [hours, minutes] = time.split(':').map(Number);
+  return hours * 60 + minutes;
+};
+
 const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, setShowSavePopup }) => {
   const [isNaming, setIsNaming] = useState(false);
   const [scheduleName, setScheduleName] = useState('');
@@ -46,22 +76,25 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
     const events = [];
     const dayOffsets = { Lu: 0, Ma: 1, Mi: 2, Ju: 3, Vi: 4, Sa: 5 };
     const semesterStart = new Date(2025, 0, 27);
+    const dayMap = { Lu: 'MO', Ma: 'TU', Mi: 'WE', Ju: 'TH', Vi: 'FR', Sa: 'SA' };
 
     selectedGroups.forEach(group => {
+      // Process professor schedules
       group.professor.horarios?.forEach(schedule => {
-        // Updated to handle "HH:MM a HH:MM" format
-        let startTime, endTime;
-        if (schedule.horario.includes('a')) {
-          [startTime, endTime] = schedule.horario.split(' a ');
-        } else {
-          [startTime, endTime] = schedule.horario.split(' - ');
-        }
+        if (!schedule.horario || !schedule.dias || schedule.dias.length === 0) return;
 
-        const [startHour, startMinute] = startTime.split(':').map(Number);
-        const [endHour, endMinute] = endTime.split(':').map(Number);
+        // Parse time string
+        let startTime, endTime;
+        const timeRange = parseTimeString(schedule.horario);
+        if (!timeRange) return;
+
+        const { start, end } = timeRange;
+        const startHour = Math.floor(start / 60);
+        const startMinute = start % 60;
+        const endHour = Math.floor(end / 60);
+        const endMinute = end % 60;
 
         schedule.dias.forEach(day => {
-          const dayMap = { Lu: 'MO', Ma: 'TU', Mi: 'WE', Ju: 'TH', Vi: 'FR', Sa: 'SA' };
           const firstClass = new Date(semesterStart);
           firstClass.setDate(semesterStart.getDate() + dayOffsets[day]);
 
@@ -88,24 +121,44 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
         });
       });
 
-      group.assistants?.forEach(assistant => {
-        if (!assistant.horario || !assistant.dias || assistant.dias.length === 0) return;
+      // Process assistants with deduplication
+      if (group.assistants?.length) {
+        // Use a map to track unique time-day combinations
+        const assistantSlotMap = new Map();
 
-        // Updated to handle "HH:MM a HH:MM" format
-        let startTime, endTime;
-        if (assistant.horario.includes('a')) {
-          [startTime, endTime] = assistant.horario.split(' a ');
-        } else {
-          [startTime, endTime] = assistant.horario.split(' - ');
-        }
+        group.assistants.forEach(assistant => {
+          if (!assistant.horario || !assistant.dias || assistant.dias.length === 0) return;
 
-        const [startHour, startMinute] = startTime.split(':').map(Number);
-        const [endHour, endMinute] = endTime.split(':').map(Number);
+          const timeRange = parseTimeString(assistant.horario);
+          if (!timeRange) return;
 
-        assistant.dias.forEach(day => {
-          const dayMap = { Lu: 'MO', Ma: 'TU', Mi: 'WE', Ju: 'TH', Vi: 'FR', Sa: 'SA' };
+          const { start, end } = timeRange;
+
+          assistant.dias.forEach(day => {
+            // Create a unique key for this time slot and day
+            const slotKey = `${day}-${start}-${end}`;
+
+            // Only add the first assistant for each unique time slot and day
+            if (!assistantSlotMap.has(slotKey)) {
+              assistantSlotMap.set(slotKey, {
+                day,
+                start,
+                end,
+                name: assistant.nombre || 'Ayudante no asignado'
+              });
+            }
+          });
+        });
+
+        // Process the deduplicated slots
+        for (const [_, slot] of assistantSlotMap) {
+          const startHour = Math.floor(slot.start / 60);
+          const startMinute = slot.start % 60;
+          const endHour = Math.floor(slot.end / 60);
+          const endMinute = slot.end % 60;
+
           const firstClass = new Date(semesterStart);
-          firstClass.setDate(semesterStart.getDate() + dayOffsets[day]);
+          firstClass.setDate(semesterStart.getDate() + dayOffsets[slot.day]);
 
           events.push({
             start: [
@@ -123,12 +176,12 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
               endMinute
             ],
             title: `${group.subject}`,
-            description: `Ayudante: ${assistant.nombre || 'Ayudante no asignado'}`,
+            description: `Ayudante: ${slot.name}`,
             location: group.salon || '',
-            recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[day]};UNTIL=20250523T235959Z`
+            recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[slot.day]};UNTIL=20250523T235959Z`
           });
-        });
-      });
+        }
+      }
     });
 
     createEvents(events, (error, value) => {
