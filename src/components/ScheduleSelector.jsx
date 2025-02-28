@@ -36,9 +36,9 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
   const highlightText = (text, query) => {
     if (!query.trim() || !text) return text;
     const parts = text.split(new RegExp(`(${query})`, 'gi'));
-    return parts.map((part, index) => 
-      part.toLowerCase() === query.toLowerCase() ? 
-        <span key={index} className="bg-yellow-500/30 text-white">{part}</span> : 
+    return parts.map((part, index) =>
+      part.toLowerCase() === query.toLowerCase() ?
+        <span key={index} className="bg-yellow-500/30 text-white">{part}</span> :
         part
     );
   };
@@ -69,8 +69,11 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
           ) || false;
           const matchesSubject = subject.toLowerCase().includes(query);
           const matchesSemester = semester.toLowerCase().includes(query);
+          const matchesSalon = groupData?.salon?.toLowerCase()?.includes(query) || false;
+          const matchesModalidad = groupData?.modalidad?.toLowerCase()?.includes(query) || false;
 
-          if (matchesGroup || matchesProfessor || matchesAyudante || matchesSubject || matchesSemester) {
+          if (matchesGroup || matchesProfessor || matchesAyudante || matchesSubject || matchesSemester ||
+            matchesSalon || matchesModalidad) {
             filteredGroups[groupNum] = groupData;
           }
         });
@@ -124,46 +127,79 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
   const renderGroupCard = (group, groupData, semester, subject) => (
     <div
       key={group}
-      className={`bg-gray-800 p-2 rounded mb-2 text-sm border cursor-pointer ${
-        selectedGroups.some(g =>
-          g.semester === semester &&
-          g.subject === subject &&
-          g.group === group
-        ) ? 'border-blue-500' : 'border-gray-700'
-      }`}
+      className={`bg-gray-800 p-2 rounded mb-2 text-sm border cursor-pointer ${selectedGroups.some(g =>
+        g.semester === semester &&
+        g.subject === subject &&
+        g.group === group
+      ) ? 'border-blue-500' : 'border-gray-700'
+        }`}
       onClick={() => onGroupSelect(semester, subject, group, groupData)}
     >
       <h4 className="font-bold text-gray-100 mb-1">
         Grupo {highlightText(group, searchQuery)}
       </h4>
       <div className="space-y-2">
-        <div>
-          <p className="text-gray-200 text-sm">
-            {highlightText(groupData?.profesor?.nombre, searchQuery)}
-          </p>
-          {groupData?.profesor?.horarios?.map((schedule, index) => (
-            <p key={index} className="text-gray-400 text-xs">
-              {schedule.horario} ({schedule.dias?.join(", ")})
+        {/* Location and Modality Info */}
+        {(groupData?.salon || groupData?.modalidad) && (
+          <div className="flex flex-wrap gap-x-2 mb-1 text-xs">
+            {groupData?.salon && (
+              <span className="bg-gray-700 text-gray-200 px-2 py-0.5 rounded">
+                <span className="mr-1">🏫</span>
+                {highlightText(groupData.salon, searchQuery)}
+              </span>
+            )}
+            {groupData?.modalidad && (
+              <span className="bg-gray-700 text-gray-200 px-2 py-0.5 rounded">
+                <span className="mr-1">
+                  {groupData.modalidad === "Presencial" ? "👨‍🏫" : "💻"}
+                </span>
+                {highlightText(groupData.modalidad, searchQuery)}
+              </span>
+            )}
+          </div>
+        )}
+
+        {/* Professor Info */}
+        {groupData?.profesor?.nombre && (
+          <div>
+            <p className="text-gray-200 text-sm">
+              {highlightText(groupData.profesor.nombre, searchQuery)}
             </p>
-          ))}
-        </div>
+            {groupData?.profesor?.horarios?.map((schedule, index) => (
+              schedule?.horario && schedule?.dias && schedule.dias.length > 0 ? (
+                <p key={index} className="text-gray-400 text-xs">
+                  {schedule.horario} ({schedule.dias.join(", ")})
+                </p>
+              ) : null
+            ))}
+          </div>
+        )}
+
+        {/* Assistants Info */}
         {groupData?.ayudantes && groupData.ayudantes.length > 0 && (
           <div className="border-t border-gray-700 pt-1 mt-1">
             <p className="text-gray-300 text-xs font-medium">Ayudantes:</p>
             {groupData.ayudantes.map((ayudante, index) => (
-              <div key={index} className="ml-1">
-                <p className="text-gray-200 text-sm">
-                  {highlightText(ayudante?.nombre, searchQuery)}
-                </p>
-                {ayudante?.horario !== "Horario no especificado" && ayudante?.dias && (
-                  <p className="text-gray-400 text-xs">
-                    {ayudante?.horario} ({ayudante?.dias?.join(", ")})
+              // Only display assistants if they have some data to show
+              ((ayudante?.nombre || ayudante?.horario || (ayudante?.dias && ayudante.dias.length > 0)) && (
+                <div key={index} className="ml-1">
+                  {/* Show name or default text if name is null but other data exists */}
+                  <p className="text-gray-200 text-sm">
+                    {highlightText(ayudante?.nombre || "Ayudante no asignado", searchQuery)}
                   </p>
-                )}
-              </div>
+                  {/* Only show schedule if it exists and has associated days */}
+                  {ayudante?.horario && ayudante?.dias && ayudante.dias.length > 0 && (
+                    <p className="text-gray-400 text-xs">
+                      {ayudante.horario} ({ayudante.dias.join(", ")})
+                    </p>
+                  )}
+                </div>
+              ))
             ))}
           </div>
         )}
+
+        {/* Note Info */}
         {groupData?.nota && (
           <div className="border-t border-gray-700 pt-1 mt-1">
             <p className="text-yellow-200 text-xs italic">&#x1F6C8; {groupData.nota}</p>
