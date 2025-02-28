@@ -1,9 +1,9 @@
-import ScheduleDisplay from './components/ScheduleDisplay'
+import Display from './components/Display'
 
 function App() {
   return (
     <div className="w-full h-full">
-      <ScheduleDisplay />
+      <Display />
     </div>
   )
 }

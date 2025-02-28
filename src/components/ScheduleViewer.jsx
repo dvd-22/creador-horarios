@@ -1,7 +1,31 @@
 import React, { useMemo } from 'react';
 
+const parseTimeString = (timeStr) => {
+  if (!timeStr || timeStr === 'Horario no especificado') return null;
+
+  // Handle format "HH:MM a HH:MM"
+  if (timeStr.includes('a')) {
+    const [startTime, endTime] = timeStr.split('a').map(t => t.trim());
+    return {
+      start: timeToMinutes(startTime),
+      end: timeToMinutes(endTime)
+    };
+  }
+
+  // Handle format "HH:MM - HH:MM"
+  if (timeStr.includes('-')) {
+    const [startTime, endTime] = timeStr.split('-').map(t => t.trim());
+    return {
+      start: timeToMinutes(startTime),
+      end: timeToMinutes(endTime)
+    };
+  }
+
+  return null;
+};
+
 const timeToMinutes = (time) => {
-  if (!time || time === 'Horario no especificado') return null;
+  if (!time) return null;
   const [hours, minutes] = time.split(':').map(Number);
   return hours * 60 + minutes;
 };
@@ -52,52 +76,80 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
     );
   }, [selectedGroups]);
 
-  const occupiedSlots = selectedGroups.flatMap(group => {
+  const occupiedSlots = useMemo(() => {
+    // Track already processed time slots to avoid duplicates
+    const processedSlots = new Map();
     const slots = [];
 
-    // Handle multiple professor schedules
-    group.professor.horarios?.forEach(schedule => {
-      const [profStart, profEnd] = (schedule.horario || '').split(' - ').map(timeToMinutes);
-      const profDays = schedule.dias || [];
+    selectedGroups.forEach(group => {
+      // Handle multiple professor schedules
+      group.professor.horarios?.forEach(schedule => {
+        const timeRange = parseTimeString(schedule.horario);
+        if (!timeRange) return;
 
-      if (profStart !== null && profEnd !== null) {
-        profDays.forEach(day => {
-          slots.push({
-            day,
-            start: profStart,
-            end: profEnd,
-            type: 'professor',
-            subject: group.subject,
-            group: group.group,
-            professor: group.professor.nombre
+        const { start: profStart, end: profEnd } = timeRange;
+        const profDays = schedule.dias || [];
+
+        if (profStart !== null && profEnd !== null) {
+          profDays.forEach(day => {
+            slots.push({
+              day,
+              start: profStart,
+              end: profEnd,
+              type: 'professor',
+              subject: group.subject,
+              group: group.group,
+              professor: group.professor.nombre,
+              location: group.salon || null,
+              modalidad: group.modalidad || null
+            });
+          });
+        }
+      });
+
+      // Handle assistants - deduplicate by time slot and day
+      if (group.assistants?.length) {
+        // Group assistants by time slot and day
+        const assistantSlotMap = new Map();
+
+        group.assistants.forEach(assistant => {
+          if (!assistant.horario || !assistant.dias || assistant.dias.length === 0) return;
+
+          const timeRange = parseTimeString(assistant.horario);
+          if (!timeRange) return;
+
+          const { start: astStart, end: astEnd } = timeRange;
+
+          assistant.dias.forEach(day => {
+            if (astStart !== null && astEnd !== null) {
+              // Create a unique key for this time slot and day
+              const slotKey = `${day}-${astStart}-${astEnd}`;
+
+              // Only add the first assistant for each unique time slot and day
+              if (!assistantSlotMap.has(slotKey)) {
+                assistantSlotMap.set(slotKey, {
+                  day,
+                  start: astStart,
+                  end: astEnd,
+                  type: 'assistant',
+                  subject: group.subject,
+                  group: group.group,
+                  professor: assistant.nombre || 'Ayudante no asignado',
+                  location: group.salon || null,
+                  modalidad: group.modalidad || null
+                });
+              }
+            }
           });
         });
-      }
-    });
 
-    // Handle assistants (unchanged)
-    group.assistants?.forEach(assistant => {
-      const [astStart, astEnd] = (assistant.horario || '').split(' - ').map(timeToMinutes);
-      const assistantDays = assistant.dias || [];
-
-      if (astStart !== null && astEnd !== null && assistantDays.length > 0) {
-        assistantDays.forEach(day => {
-          slots.push({
-            day,
-            start: astStart,
-            end: astEnd,
-            type: 'assistant',
-            subject: group.subject,
-            group: group.group,
-            professor: assistant.nombre
-          });
-        });
+        // Add the deduplicated assistant slots
+        slots.push(...assistantSlotMap.values());
       }
     });
 
     return slots;
-  });
-
+  }, [selectedGroups]);
 
   const calculateTop = (minutes) => {
     const startOfDay = 5 * 60; // 5:00 AM in minutes
@@ -146,19 +198,30 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                       return (
                         <div
                           key={index}
-                          className={`absolute left-0 right-0 mx-1 rounded px-2 py-1 text-xs ${subjectColors[slot.subject]}`}
+                          className={`absolute left-0 right-0 mx-1 rounded px-2 py-1 text-xs ${subjectColors[slot.subject]} time-group-card`}
                           style={{
                             top: `${top}px`,
-                            height: `${height}px`
+                            height: `${height}px`,
+                            minHeight: '20px'
                           }}
                         >
                           <div className="flex flex-col h-full overflow-hidden">
                             <div className="font-medium text-xs leading-4 text-white truncate">
-                              {slot.subject}
+                              {slot.subject} ({slot.group})
                             </div>
-                            <div className="text-gray-300 truncate text-xs leading-tight">
+                            <div className="text-gray-200 truncate text-xs leading-tight">
                               {slot.professor}
                             </div>
+                            {slot.location && (
+                              <div className="text-gray-300 text-xs leading-tight truncate">
+                                🏫 {slot.location}
+                              </div>
+                            )}
+                            {slot.modalidad && (
+                              <div className="text-gray-300 text-xs leading-tight truncate">
+                                {slot.modalidad === "Presencial" ? "👨‍🏫" : "💻"} {slot.modalidad}
+                              </div>
+                            )}
                           </div>
                         </div>
                       );
