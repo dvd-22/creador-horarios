@@ -28,7 +28,10 @@ export const saveScheduleAsPng = async (scheduleRef, name, options = {}) => {
 	try {
 		const html2canvas = (await import("html2canvas")).default;
 
-		// Store original styles
+		// Store original display style
+		const originalDisplay = scheduleRef.current.style.display;
+
+		// Store original styles of time-group-card elements
 		const elements =
 			scheduleRef.current.getElementsByClassName("time-group-card");
 		const originalStyles = Array.from(elements).map((el) => ({
@@ -45,7 +48,11 @@ export const saveScheduleAsPng = async (scheduleRef, name, options = {}) => {
 			el.style.overflow = "visible";
 		});
 
+		// Make export layout visible
 		scheduleRef.current.style.display = "block";
+
+		// Ensure layout is visible during capture
+		await new Promise((resolve) => setTimeout(resolve, 50));
 
 		const canvas = await html2canvas(scheduleRef.current, {
 			backgroundColor,
@@ -54,10 +61,9 @@ export const saveScheduleAsPng = async (scheduleRef, name, options = {}) => {
 			height: 800,
 			logging: false,
 			useCORS: true,
+			allowTaint: true,
 			foreignObjectRendering: true,
 			removeContainer: false,
-			allowTaint: true,
-			letterRendering: true,
 		});
 
 		// Restore original styles
@@ -67,7 +73,8 @@ export const saveScheduleAsPng = async (scheduleRef, name, options = {}) => {
 			el.style.overflow = overflow;
 		});
 
-		scheduleRef.current.style.display = "none";
+		// Restore original display style
+		scheduleRef.current.style.display = originalDisplay;
 
 		const link = document.createElement("a");
 		const sanitizedName = sanitizeFileName(name);
