@@ -1,4 +1,9 @@
-##### **_Este proyecto fue creado por David Alemán y está bajo una licencia que se puede leer en el mismo repo. No me hago responsable de que no puedas inscribir tus materias por confiar en este horario. Revisa bien antes de inscribirte. No es un proyecto oficial de la UNAM._**
+![Static Badge](https://img.shields.io/badge/License-GPL--2.0-blue?style=for-the-badge)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/dvd-22/creador-horarios/pages%2Fpages-build-deployment?style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/dvd-22/creador-horarios)
+
+
+##### **_Este proyecto fue creado por David Alemán y está bajo una licencia que se puede leer en el mismo repo. No me hago responsable de que no puedas inscribir tus materias por confiar en esta aplicación. Revisa bien antes de inscribirte. No es un proyecto oficial de la UNAM._**
 # Creador de horarios
 
 Este proyecto fue creado durante las vacaciones 2024 porque me dio flojera hacer mi horario manualmente (lo que me hubiera llevado probablemente 15 minutos) y decidí invertir 3 días en hacer esta pequeña aplicación.
@@ -13,4 +18,4 @@ Si estás aquí seguramente ya la usaste xd, pero en resumen, buscas las materia
 
 ## ¿Cómo contribuir?
 
-Pues por ahora creo que no hay mucho que hacer, pero si quieres agregar alguna funcionalidad, puedes hacer un pull request y lo revisaré. Si encuentras algún bug, puedes reportarlo en la sección de issues. Es más probable que encuentres errores con los datos de alguna materia, ya que habían unas cosas raras en la página de la facultad, si es así, también puedes reportarlo en issues.
+Cualquier cosa que quieras hacer, es tan fácil como crear un fork, hacer tus edits, y luego una PR. Si no sabes programar o solo no quieres hacerlo, siempre puedes poner tus ideas o problemas en la sección de issues y ya veremos que onda. Todas las contribuciones se agradecen, lo hice yo, pero lo hice para todos.
