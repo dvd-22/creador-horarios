@@ -60,6 +60,11 @@ const colorPalette = [
   'bg-green-600/50'
 ];
 
+// Check if two time ranges overlap - Move this function up before it's used
+const hasTimeOverlap = (start1, end1, start2, end2) => {
+  return start1 < end2 && start2 < end1;
+};
+
 const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isExport = false }) => {
   const days = ['Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'];
   const timeSlots = Array.from({ length: 18 }, (_, i) => i + 5).map(hour =>
@@ -147,6 +152,59 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
     return slots;
   }, [selectedGroups]);
 
+  // Group overlapping slots by day
+  const groupedSlots = useMemo(() => {
+    const slotsByDay = {};
+
+    // Initialize slot groups for each day
+    days.forEach(day => {
+      slotsByDay[day] = [];
+    });
+
+    // Filter slots by day
+    occupiedSlots.forEach(slot => {
+      slotsByDay[slot.day].push(slot);
+    });
+
+    // For each day, find overlapping slots and group them
+    const result = {};
+    days.forEach(day => {
+      const daySlots = slotsByDay[day];
+      const overlapGroups = [];
+
+      // Sort slots by start time for easier grouping
+      daySlots.sort((a, b) => a.start - b.start);
+
+      // Process each slot
+      daySlots.forEach(slot => {
+        // Find an existing group that overlaps with this slot
+        let foundGroup = false;
+
+        for (const group of overlapGroups) {
+          // Check if this slot overlaps with any slot in the group
+          const overlapsWithGroup = group.some(existingSlot =>
+            hasTimeOverlap(slot.start, slot.end, existingSlot.start, existingSlot.end)
+          );
+
+          if (overlapsWithGroup) {
+            group.push(slot);
+            foundGroup = true;
+            break;
+          }
+        }
+
+        // If no overlapping group found, create a new one
+        if (!foundGroup) {
+          overlapGroups.push([slot]);
+        }
+      });
+
+      result[day] = overlapGroups;
+    });
+
+    return result;
+  }, [occupiedSlots, days]);
+
   const calculateTop = (minutes) => {
     const startOfDay = 5 * 60; // 5:00 AM in minutes
     return ((minutes - startOfDay) / 60) * 40; // 40px per hour
@@ -186,14 +244,18 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                       className="h-10 border-t border-gray-800"
                     ></div>
                   ))}
-                  {occupiedSlots
-                    .filter(slot => slot.day === day)
-                    .map((slot, index) => {
+
+                  {/* Render grouped slots */}
+                  {groupedSlots[day]?.map((group, groupIndex) => {
+                    // For single-item groups, render normally
+                    if (group.length === 1) {
+                      const slot = group[0];
                       const top = calculateTop(slot.start);
                       const height = ((slot.end - slot.start) / 60) * 40;
+
                       return (
                         <div
-                          key={index}
+                          key={`single-${groupIndex}`}
                           className={`absolute left-0 right-0 mx-1 rounded px-2 py-1 text-xs ${subjectColors[slot.subject]} time-group-card`}
                           style={{
                             top: `${top}px`,
@@ -211,7 +273,60 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                           </div>
                         </div>
                       );
-                    })}
+                    }
+
+                    // For multiple overlapping slots, create a container for them but keep individual heights
+                    // Get the earliest start time and latest end time for positioning the container
+                    const groupStart = Math.min(...group.map(slot => slot.start));
+                    const groupEnd = Math.max(...group.map(slot => slot.end));
+                    const containerTop = calculateTop(groupStart);
+                    const containerHeight = ((groupEnd - groupStart) / 60) * 40;
+                    const width = 100 / group.length; // Each slot gets equal width
+
+                    return (
+                      <div
+                        key={`group-${groupIndex}`}
+                        className="absolute left-0 right-0 mx-1 flex flex-row rounded overflow-hidden"
+                        style={{
+                          top: `${containerTop}px`,
+                          height: `${containerHeight}px`,
+                          minHeight: '20px'
+                        }}
+                      >
+                        {group.map((slot, slotIndex) => {
+                          // Calculate position relative to the group container
+                          const slotTop = calculateTop(slot.start) - containerTop;
+                          const slotHeight = ((slot.end - slot.start) / 60) * 40;
+
+                          return (
+                            <div
+                              key={`slot-${slotIndex}`}
+                              className="relative flex-1 mx-0.5"
+                            >
+                              <div
+                                className={`absolute ${subjectColors[slot.subject]} px-1 py-1 text-xs time-group-card rounded`}
+                                style={{
+                                  top: `${slotTop}px`,
+                                  height: `${slotHeight}px`,
+                                  width: '100%',
+                                  minHeight: '20px'
+                                }}
+                              >
+                                <div className="flex flex-col h-full overflow-hidden">
+                                  <div className="font-medium text-xs leading-4 text-white truncate">
+                                    {slot.subject} ({slot.group})
+                                  </div>
+                                  <div className="text-gray-200 truncate text-xs leading-tight">
+                                    {slot.professor}
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             ))}

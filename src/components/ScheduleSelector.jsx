@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { ChevronDown, ChevronRight, Search } from 'lucide-react';
-import scheduleData from '../data/horarios.json';
+import { useMajorContext } from '../contexts/MajorContext';
+import MajorSelector from './MajorSelector';
 
 const semesterOrder = [
   'Primer Semestre',
@@ -15,6 +16,7 @@ const semesterOrder = [
 ];
 
 const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
+  const { selectedMajorId, majorData } = useMajorContext();
   const [openSemesters, setOpenSemesters] = useState({});
   const [openSubjects, setOpenSubjects] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
@@ -46,16 +48,16 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
   const filteredScheduleData = useMemo(() => {
     const query = searchQuery.toLowerCase().trim();
 
-    if (!query) return scheduleData;
+    if (!query) return majorData;
 
     const filtered = {};
 
-    if (!scheduleData || typeof scheduleData !== 'object') {
-      console.error('Schedule data is not properly loaded:', scheduleData);
+    if (!majorData || typeof majorData !== 'object') {
+      console.error('Schedule data is not properly loaded:', majorData);
       return {};
     }
 
-    Object.entries(scheduleData).forEach(([semester, subjects]) => {
+    Object.entries(majorData).forEach(([semester, subjects]) => {
       const filteredSubjects = {};
 
       Object.entries(subjects).forEach(([subject, groups]) => {
@@ -102,7 +104,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
     });
 
     return orderedData;
-  }, [searchQuery]);
+  }, [searchQuery, majorData]);
 
   useEffect(() => {
     if (searchQuery.trim()) {
@@ -133,7 +135,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
         g.group === group
       ) ? 'border-blue-500' : 'border-gray-700'
         }`}
-      onClick={() => onGroupSelect(semester, subject, group, groupData)}
+      onClick={() => onGroupSelect(semester, subject, group, groupData, selectedMajorId)}
     >
       <h4 className="font-bold text-gray-100 mb-1">
         Grupo {highlightText(group, searchQuery)}
@@ -228,6 +230,9 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
           <p className="mt-2 text-sm text-gray-400">No se encontraron resultados</p>
         )}
       </div>
+
+      <MajorSelector />
+
       <div className="flex-1 overflow-y-auto">
         <div className="p-2">
           {Object.entries(filteredScheduleData || {}).map(([semester, subjects]) => (
