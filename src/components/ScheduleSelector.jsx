@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { ChevronDown, ChevronRight, Search } from 'lucide-react';
-import scheduleData from '../data/horarios.json';
+import { ChevronDown, ChevronRight, Search, ChevronUp } from 'lucide-react';
+import horario2025_2 from '../data/horario_2025-2.json';
+import horario2026_1 from '../data/horario_2026-1.json';
 
 const semesterOrder = [
   'Primer Semestre',
@@ -14,10 +15,17 @@ const semesterOrder = [
   'Optativas'
 ];
 
-const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
+const ScheduleSelector = ({ semestre, setSemestre, onGroupSelect, selectedGroups }) => {
   const [openSemesters, setOpenSemesters] = useState({});
   const [openSubjects, setOpenSubjects] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
+  const [showSemesterMenu, setShowSemesterMenu] = useState(false);
+
+  const scheduleFiles = {
+    '2025-2': horario2025_2,
+    '2026-1': horario2026_1,
+  };
+  const scheduleData = scheduleFiles[semestre] || {};
 
   const toggleSemester = (semester) => {
     setOpenSemesters(prev => ({
@@ -213,6 +221,27 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
     <div className="h-full bg-gray-900 border-r border-gray-700 flex flex-col">
       <div className="p-4 border-b border-gray-700">
         <h1 className="text-xl font-bold text-gray-100 mb-4">Creador de horarios</h1>
+        <div className="mb-3 relative">
+          <button
+            className="w-full p-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 flex items-center justify-between hover:bg-gray-700 focus:outline-none"
+            onClick={() => setShowSemesterMenu((v) => !v)}
+          >
+            <span>Elegir Semestre: <span className="font-semibold">{semestre}</span></span>
+            {showSemesterMenu ? <ChevronUp size={16} className="ml-2" /> : <ChevronDown size={16} className="ml-2" />}
+          </button>
+          {showSemesterMenu && (
+            <div className="absolute left-0 right-0 mt-2 bg-gray-800 border border-gray-700 rounded-lg shadow-lg z-10 flex flex-col">
+              <button
+                className={`p-2 text-left hover:bg-blue-600 rounded-t-lg ${semestre === '2025-2' ? 'bg-blue-700 text-white' : 'text-gray-100'}`}
+                onClick={() => { setSemestre('2025-2'); setShowSemesterMenu(false); }}
+              >2025-2</button>
+              <button
+                className={`p-2 text-left hover:bg-blue-600 rounded-b-lg ${semestre === '2026-1' ? 'bg-blue-700 text-white' : 'text-gray-100'}`}
+                onClick={() => { setSemestre('2026-1'); setShowSemesterMenu(false); }}
+              >2026-1</button>
+            </div>
+          )}
+        </div>
         <div className="relative">
           <input
             type="text"

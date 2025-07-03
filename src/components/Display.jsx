@@ -30,7 +30,7 @@ const CustomAlert = ({ message, onClose }) => (
     </div>
 );
 
-const Display = () => {
+const Display = ({ semestre, setSemestre }) => {
     const [selectedGroups, setSelectedGroups] = useState([]);
     const [conflictAlert, setConflictAlert] = useState(null);
     const [currentScheduleName, setCurrentScheduleName] = useState('');
@@ -223,6 +223,8 @@ const Display = () => {
             )}
             <div className="w-80 flex-shrink-0">
                 <ScheduleSelector
+                    semestre={semestre}
+                    setSemestre={setSemestre}
                     onGroupSelect={handleGroupSelect}
                     selectedGroups={selectedGroups}
                 />
