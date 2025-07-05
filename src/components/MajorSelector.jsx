@@ -4,14 +4,12 @@ import { CheckCircle2 } from 'lucide-react';
 
 // Function to get the correct color classes based on the major's ID
 const getMajorColorClasses = (majorId, isSelected) => {
-    // Base style for all buttons
     let baseClasses = "flex items-center px-3 py-1.5 rounded-full text-sm font-medium whitespace-nowrap ";
 
     if (!isSelected) {
         return baseClasses + "bg-gray-800 text-gray-300 hover:bg-gray-700";
     }
 
-    // Explicitly map each major to its color class
     switch (majorId) {
         case 'cs':
             return baseClasses + "bg-gray-600 text-white";
@@ -23,15 +21,15 @@ const getMajorColorClasses = (majorId, isSelected) => {
             return baseClasses + "bg-orange-500 text-white";
         case 'actuary':
             return baseClasses + "bg-blue-500 text-white";
-        case 'biology':
-            return baseClasses + "bg-green-700 text-white";
+        // case 'biology':
+        //     return baseClasses + "bg-green-700 text-white";
         default:
             return baseClasses + "bg-gray-600 text-white";
     }
 };
 
 const MajorSelector = () => {
-    const { selectedMajorId, availableMajors, changeMajor } = useMajorContext();
+    const { selectedMajorId, availableMajors, changeMajor, isLoading } = useMajorContext();
 
     return (
         <div className="border-b border-gray-700 bg-gray-850 p-2">
@@ -40,11 +38,15 @@ const MajorSelector = () => {
                     <button
                         key={major.id}
                         onClick={() => changeMajor(major.id)}
-                        className={getMajorColorClasses(major.id, selectedMajorId === major.id)}
+                        disabled={isLoading}
+                        className={`${getMajorColorClasses(major.id, selectedMajorId === major.id)} ${isLoading ? 'opacity-50 cursor-not-allowed' : ''
+                            }`}
                     >
-                        {selectedMajorId === major.id && (
+                        {selectedMajorId === major.id && isLoading ? (
+                            <div className="animate-spin rounded-full h-3 w-3 border-b-2 border-white mr-1"></div>
+                        ) : selectedMajorId === major.id ? (
                             <CheckCircle2 size={14} className="mr-1" />
-                        )}
+                        ) : null}
                         {major.name}
                     </button>
                 ))}
