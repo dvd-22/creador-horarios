@@ -51,7 +51,7 @@ const OverlapToggle = ({ checked, onChange }) => (
 const Display = () => {
     const [selectedGroups, setSelectedGroups] = useState([]);
     const [conflictAlert, setConflictAlert] = useState(null);
-    const [currentScheduleName, setCurrentScheduleName] = useState('');
+    const [scheduleTitle, setScheduleTitle] = useState('Mi horario');
     const [showSavePopup, setShowSavePopup] = useState(false);
     const [savePopupMessage, setSavePopupMessage] = useState('');
     const [allowOverlap, setAllowOverlap] = useState(false);
@@ -262,7 +262,7 @@ const Display = () => {
             return;
         }
 
-        // Add majorId to the new group object
+        // Add majorId and presentacion to the new group object
         const newGroup = {
             semester,
             subject,
@@ -274,6 +274,7 @@ const Display = () => {
             assistants: groupData.ayudantes,
             salon: groupData.salon || null,
             modalidad: groupData.modalidad || null,
+            presentacion: groupData.presentacion || null, // Add presentation link
             majorId // Store the majorId
         };
 
@@ -291,12 +292,15 @@ const Display = () => {
         setConflictAlert(null);
     };
 
-    const handleSaveSchedule = (name) => {
-        setCurrentScheduleName(name);
+    const handleSaveSchedule = (title) => {
         setTimeout(() => {
-            saveScheduleAsPng(exportRef, name);
+            saveScheduleAsPng(exportRef, title);
             setShowSavePopup(true);
         }, 100);
+    };
+
+    const handleTitleChange = (newTitle) => {
+        setScheduleTitle(newTitle);
     };
 
     // Handle toggle change
@@ -442,7 +446,6 @@ const Display = () => {
                             selectedGroups={selectedGroups}
                         />
                     </div>
-                    {/* Fixed position for the toggle at the bottom of left panel */}
                     <OverlapToggle
                         checked={allowOverlap}
                         onChange={handleToggleOverlap}
@@ -452,7 +455,7 @@ const Display = () => {
                     <ScheduleViewer
                         selectedGroups={selectedGroups}
                         onRemoveGroup={handleGroupSelect}
-                        scheduleName={currentScheduleName}
+                        scheduleName={scheduleTitle} // Pass the title to ScheduleViewer
                     />
                 </div>
                 <SelectedGroupsPanel
@@ -460,6 +463,8 @@ const Display = () => {
                     onRemoveGroup={handleGroupSelect}
                     onSaveSchedule={handleSaveSchedule}
                     setShowSavePopup={setShowSavePopup}
+                    scheduleTitle={scheduleTitle}
+                    onTitleChange={handleTitleChange}
                 />
                 <ExportLayout
                     ref={exportRef}
@@ -467,7 +472,7 @@ const Display = () => {
                     schedule={
                         <ScheduleViewer
                             selectedGroups={selectedGroups}
-                            scheduleName={currentScheduleName}
+                            scheduleName={scheduleTitle}
                             isExport={true}
                         />
                     }

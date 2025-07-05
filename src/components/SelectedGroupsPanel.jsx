@@ -1,9 +1,9 @@
 import React, { useState, useMemo } from 'react';
 import { createEvents } from 'ics';
 import { useMajorContext } from '../contexts/MajorContext';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Edit2 } from 'lucide-react';
 
-// Add Google Calendar color codes
+
 const GOOGLE_COLORS = {
   LAVENDER: 1,
   SAGE: 2,
@@ -48,29 +48,32 @@ const timeToMinutes = (time) => {
   return hours * 60 + minutes;
 };
 
-// Function to get the major color class for the indicator
+
 const getMajorColorClass = (majorId) => {
   switch (majorId) {
     case 'cs':
-      return 'bg-blue-500';
+      return 'bg-gray-600'; 
     case 'math':
       return 'bg-purple-500';
     case 'physics':
-      return 'bg-green-500';
+      return 'bg-yellow-500';
     case 'ap-math':
       return 'bg-orange-500';
+    case 'actuary':
+      return 'bg-blue-500';
     case 'biology':
       return 'bg-green-700';
     default:
-      return 'bg-blue-500';
+      return 'bg-gray-600';
   }
 };
 
-const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, setShowSavePopup }) => {
+const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, setShowSavePopup, scheduleTitle, onTitleChange }) => {
   const { availableMajors } = useMajorContext();
   const [isNaming, setIsNaming] = useState(false);
-  const [scheduleName, setScheduleName] = useState('');
-  const [isCollapsed, setIsCollapsed] = useState(false); // State to track if panel is collapsed
+  const [isEditingTitle, setIsEditingTitle] = useState(false);
+  const [tempTitle, setTempTitle] = useState(scheduleTitle);
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
   const subjectColors = useMemo(() => {
     const uniqueSubjects = [...new Set(selectedGroups.map(group => group.subject))];
@@ -83,21 +86,38 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
   }, [selectedGroups]);
 
   const handleSave = () => {
-    setIsNaming(true);
+    onSaveSchedule(scheduleTitle);
   };
 
-  const handleSaveConfirm = () => {
-    if (scheduleName.trim()) {
-      onSaveSchedule(scheduleName);
-      setIsNaming(false);
-      setScheduleName('');
+  const handleTitleEdit = () => {
+    setTempTitle(scheduleTitle);
+    setIsEditingTitle(true);
+  };
+
+  const handleTitleSave = () => {
+    if (tempTitle.trim()) {
+      onTitleChange(tempTitle.trim());
+    }
+    setIsEditingTitle(false);
+  };
+
+  const handleTitleCancel = () => {
+    setTempTitle(scheduleTitle);
+    setIsEditingTitle(false);
+  };
+
+  const handleTitleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleTitleSave();
+    } else if (e.key === 'Escape') {
+      handleTitleCancel();
     }
   };
 
   const handleExportICS = () => {
     const events = [];
     const dayOffsets = { Lu: 0, Ma: 1, Mi: 2, Ju: 3, Vi: 4, Sa: 5 };
-    const semesterStart = new Date(2025, 0, 27);
+    const semesterStart = new Date(2025, 7, 11);
     const dayMap = { Lu: 'MO', Ma: 'TU', Mi: 'WE', Ju: 'TH', Vi: 'FR', Sa: 'SA' };
 
     selectedGroups.forEach(group => {
@@ -105,8 +125,6 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
       group.professor.horarios?.forEach(schedule => {
         if (!schedule.horario || !schedule.dias || schedule.dias.length === 0) return;
 
-        // Parse time string
-        let startTime, endTime;
         const timeRange = parseTimeString(schedule.horario);
         if (!timeRange) return;
 
@@ -138,7 +156,7 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
             title: `${group.subject}`,
             description: `Profesor: ${group.professor.nombre}`,
             location: group.salon || '',
-            recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[day]};UNTIL=20250523T235959Z`
+            recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[day]};UNTIL=20251128T235959Z` 
           });
         });
       });
@@ -200,7 +218,7 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
             title: `${group.subject}`,
             description: `Ayudante: ${slot.name}`,
             location: group.salon || '',
-            recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[slot.day]};UNTIL=20250523T235959Z`
+            recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[slot.day]};UNTIL=20251128T235959Z`
           });
         }
       }
@@ -214,7 +232,7 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
       const blob = new Blob([value], { type: 'text/calendar;charset=utf-8' });
       const link = document.createElement('a');
       link.href = window.URL.createObjectURL(blob);
-      link.setAttribute('download', 'horario.ics');
+      link.setAttribute('download', `${scheduleTitle.replace(/[^a-z0-9]/gi, '_')}.ics`);
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -229,7 +247,7 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
 
   return (
     <div className={`transition-all duration-300 bg-gray-900 border-l border-gray-700 flex flex-col relative ${isCollapsed ? 'w-12' : 'w-64'}`}>
-      {/* Collapse toggle button - Fixed positioning issue */}
+
       <button
         onClick={toggleCollapse}
         className="absolute -left-4 top-4 bg-gray-800 text-gray-400 hover:text-gray-100 p-1 rounded-l-md border border-gray-700 border-r-0 z-10"
@@ -238,7 +256,6 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
         {isCollapsed ? <ChevronLeft size={14} /> : <ChevronRight size={14} />}
       </button>
 
-      {/* Show minimal UI when collapsed */}
       {isCollapsed ? (
         <div className="flex flex-col items-center py-4 space-y-4">
           <div
@@ -256,61 +273,76 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
         </div>
       ) : (
         <>
-          <div className="p-4 space-y-2">
-            {isNaming ? (
+          {/* Schedule Title Section */}
+          <div className="p-4 border-b border-gray-700">
+            {isEditingTitle ? (
               <div className="space-y-2">
                 <input
                   type="text"
-                  value={scheduleName}
-                  onChange={(e) => setScheduleName(e.target.value)}
-                  placeholder="Nombre del horario"
-                  className="w-full p-2 bg-gray-800 border border-gray-700 rounded text-gray-100"
+                  value={tempTitle}
+                  onChange={(e) => setTempTitle(e.target.value)}
+                  onKeyDown={handleTitleKeyPress}
+                  className="w-full p-2 bg-gray-800 border border-gray-600 rounded text-gray-100 text-sm focus:outline-none focus:border-blue-500"
                   autoFocus
                   autoComplete="off"
                 />
                 <div className="flex space-x-2">
                   <button
-                    onClick={handleSaveConfirm}
-                    className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded"
+                    onClick={handleTitleSave}
+                    className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded text-xs"
                   >
-                    Guardar PNG
+                    Guardar
                   </button>
                   <button
-                    onClick={() => setIsNaming(false)}
-                    className="flex-1 bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded"
+                    onClick={handleTitleCancel}
+                    className="flex-1 bg-gray-700 hover:bg-gray-600 text-white py-1 px-3 rounded text-xs"
                   >
                     Cancelar
                   </button>
                 </div>
               </div>
             ) : (
-              <div className="space-y-2">
-                <button
-                  onClick={handleSave}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded"
-                  disabled={selectedGroups.length === 0}
-                >
-                  Guardar PNG
-                </button>
-                <button
-                  onClick={handleExportICS}
-                  className="group relative w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded"
-                  disabled={selectedGroups.length === 0}
-                >
-                  Exportar ICS
-                  <span className="pointer-events-none absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs bg-gray-800 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                    Exporta a Google Calendar
-                  </span>
-                </button>
+              <div
+                className="flex items-center justify-between cursor-pointer group hover:bg-gray-800 rounded p-2 -m-2"
+                onClick={handleTitleEdit}
+              >
+                <div className="text-gray-100 font-medium text-lg group-hover:text-blue-400 transition-colors">
+                  {scheduleTitle}
+                </div>
+                <Edit2
+                  size={14}
+                  className="text-gray-400 group-hover:text-blue-400 transition-colors"
+                />
               </div>
             )}
+          </div>
+
+          {/* Action Buttons Section */}
+          <div className="p-4 space-y-2 border-b border-gray-700">
+            <button
+              onClick={handleSave}
+              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded"
+              disabled={selectedGroups.length === 0}
+            >
+              Guardar PNG
+            </button>
+            <button
+              onClick={handleExportICS}
+              className="group relative w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded"
+              disabled={selectedGroups.length === 0}
+            >
+              Exportar ICS
+              <span className="pointer-events-none absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs bg-gray-800 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+                Exporta a Google Calendar
+              </span>
+            </button>
           </div>
 
           <h3 className="text-lg font-medium text-gray-100 mb-2 px-4">Materias Seleccionadas:</h3>
           <div className="space-y-2 overflow-y-auto flex-1 px-4">
             {selectedGroups.map((group, index) => {
-              // Get major color if we know the major
-              const majorId = group.majorId || 'cs'; // Default to CS if not specified
+              // Get major color using the fixed function
+              const majorId = group.majorId || 'cs';
               const majorColorClass = getMajorColorClass(majorId);
 
               return (
@@ -318,21 +350,35 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
                   {/* Add major indicator */}
                   <div className={`h-1 w-full ${majorColorClass} rounded-t`}></div>
 
-                  <div className="flex items-center justify-between p-2">
-                    <div className="flex-1 mr-2">
-                      <span className="text-gray-100">{group.subject}</span>
-                      <span className="text-gray-400 ml-2">Grupo {group.group}</span>
+                  <div className="p-2">
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="flex-1">
+                        <span className="text-gray-100">{group.subject}</span>
+                        <span className="text-gray-400 ml-2">Grupo {group.group}</span>
+                      </div>
+                      <button
+                        onClick={() => onRemoveGroup(group.semester, group.subject, group.group, {
+                          profesor: group.professor,
+                          ayudantes: group.assistants
+                        })}
+                        className="text-red-400 hover:text-red-300 text-xs h-5 w-5 flex items-center justify-center rounded-full hover:bg-gray-700"
+                        aria-label="Eliminar materia"
+                      >
+                        ✕
+                      </button>
                     </div>
-                    <button
-                      onClick={() => onRemoveGroup(group.semester, group.subject, group.group, {
-                        profesor: group.professor,
-                        ayudantes: group.assistants
-                      })}
-                      className="text-red-400 hover:text-red-300 text-xs h-5 w-5 flex items-center justify-center rounded-full hover:bg-gray-700"
-                      aria-label="Eliminar materia"
-                    >
-                      ✕
-                    </button>
+
+                    {group.presentacion && (
+                      <div className="mt-2">
+                        <button
+                          onClick={() => window.open(group.presentacion, '_blank', 'noopener,noreferrer')}
+                          className="inline-flex items-center px-2 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
+                        >
+                          <span className="mr-1">📄</span>
+                          Presentación
+                        </button>
+                      </div>
+                    )}
                   </div>
                 </div>
               );

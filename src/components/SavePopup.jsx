@@ -7,7 +7,7 @@ const SavePopup = ({ onClose }) => {
                 <div className="text-center mb-6">
                     Te sugiero que revises fechas y demás información en la&nbsp;
                     <a
-                        href="https://www.fciencias.unam.mx/servicios-y-tramites/inscripciones/reinscripciones"
+                        href="https://www.fciencias.unam.mx/docencia/horarios/indice"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-400 hover:text-blue-300"
@@ -17,7 +17,15 @@ const SavePopup = ({ onClose }) => {
                     . Este proyecto
                     solo lo creé para facilitar la creación de horarios antes de inscribirse a la facultad.<br /><br />
                     Si guardas el archivo en ICS puedes importarlo a cualquier calendario y tener tus horarios en tu celular.<br /><br />
-                    La página fue creada por mi, Dvd22. Puedes encontrar el repo&nbsp;
+                    La página fue creada por mi, &nbsp;
+                    <a
+                        href="https://github.com/dvd-22/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-400 hover:text-blue-300"
+                    >
+                        Dvd22
+                    </a>. Puedes encontrar el repo&nbsp;
                     <a
                         href="https://github.com/dvd-22/creador-horarios"
                         target="_blank"

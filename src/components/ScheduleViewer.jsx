@@ -67,7 +67,8 @@ const hasTimeOverlap = (start1, end1, start2, end2) => {
 
 const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isExport = false }) => {
   const days = ['Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'];
-  const timeSlots = Array.from({ length: 18 }, (_, i) => i + 5).map(hour =>
+  // Change from starting at hour 5 to starting at hour 7, and reduce length from 18 to 16
+  const timeSlots = Array.from({ length: 16 }, (_, i) => i + 7).map(hour =>
     `${hour.toString().padStart(2, '0')}:00`
   );
 
@@ -206,13 +207,14 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
   }, [occupiedSlots, days]);
 
   const calculateTop = (minutes) => {
-    const startOfDay = 5 * 60; // 5:00 AM in minutes
+    const startOfDay = 7 * 60; // Change from 5:00 AM to 7:00 AM in minutes
     return ((minutes - startOfDay) / 60) * 40; // 40px per hour
   };
 
   return (
     <div className="flex flex-col h-full bg-gray-900 p-4">
-      {scheduleName && (
+      {/* Only show title in export mode */}
+      {scheduleName && isExport && (
         <h1 className="text-2xl font-bold text-gray-100 text-center mb-6">
           {scheduleName}
         </h1>

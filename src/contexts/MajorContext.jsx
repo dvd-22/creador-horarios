@@ -1,19 +1,18 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 
-// Import all major data JSONs
 import computerScienceData from '../data/ciencias-computacion.json';
 import mathematicsData from '../data/matematicas.json';
-import physicsData from '../data/matematicas.json';
-import apMathematicsData from '../data/matematicas.json';
-// import biologyData from '../data/biologia.json';
+import physicsData from '../data/fisica.json';
+import apMathematicsData from '../data/matematicas-aplicadas.json';
+import biologyData from '../data/biologia.json';
+import actuaryData from '../data/actuaria.json';
 
-// Define available majors with their info
 const AVAILABLE_MAJORS = {
     'cs': {
         id: 'cs',
         name: 'Ciencias de la Computación',
         data: computerScienceData,
-        color: 'blue-500'
+        color: 'gray-600' // Changed from 'black-200' to a valid Tailwind color
     },
     'math': {
         id: 'math',
@@ -25,7 +24,7 @@ const AVAILABLE_MAJORS = {
         id: 'physics',
         name: 'Física',
         data: physicsData,
-        color: 'green-500'
+        color: 'yellow-500'
     },
     'ap-math': {
         id: 'ap-math',
@@ -33,12 +32,18 @@ const AVAILABLE_MAJORS = {
         data: apMathematicsData,
         color: 'orange-500'
     },
-    // 'biology': {
-    //     id: 'biology',
-    //     name: 'Biología',
-    //     data: biologyData,
-    //     color: 'green-700'
-    // },
+    'actuary': {
+        id: 'actuary',
+        name: 'Actuaría',
+        data: actuaryData,
+        color: 'blue-500'
+    },
+    'biology': {
+        id: 'biology',
+        name: 'Biología',
+        data: biologyData,
+        color: 'green-700'
+    },
 };
 
 const MajorContext = createContext();

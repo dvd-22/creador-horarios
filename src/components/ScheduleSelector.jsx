@@ -177,6 +177,22 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
           </div>
         )}
 
+        {/* Presentation Button */}
+        {groupData?.presentacion && (
+          <div className="mt-2">
+            <button
+              onClick={(e) => {
+                e.stopPropagation(); // Prevent triggering group selection
+                window.open(groupData.presentacion, '_blank', 'noopener,noreferrer');
+              }}
+              className="inline-flex items-center px-2 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
+            >
+              <span className="mr-1">📄</span>
+              Presentación
+            </button>
+          </div>
+        )}
+
         {/* Assistants Info */}
         {groupData?.ayudantes && groupData.ayudantes.length > 0 && (
           <div className="border-t border-gray-700 pt-1 mt-1">
@@ -214,7 +230,6 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
   return (
     <div className="h-full bg-gray-900 border-r border-gray-700 flex flex-col">
       <div className="p-4 border-b border-gray-700">
-        <h1 className="text-xl font-bold text-gray-100 mb-4">Creador de horarios</h1>
         <div className="relative">
           <input
             type="text"
