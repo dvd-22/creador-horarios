@@ -133,7 +133,7 @@ class ProfessorRatingService {
 		);
 	}
 
-	// Get rating for a single professor - IMPROVED VERSION
+	// Get rating for a single professor - FALLBACK VERSION
 	async getProfessorRating(professorName) {
 		if (!professorName) return null;
 
@@ -145,6 +145,16 @@ class ProfessorRatingService {
 			return this.globalCache.get(professorName);
 		}
 
+		// TEMPORARY: Return null instead of trying to fetch
+		// This will show "N/A" for ratings until the function is fixed
+		console.log(
+			"Temporarily returning null for professor rating:",
+			professorName
+		);
+		return null;
+
+		// Original code commented out:
+		/*
 		// If loading promise exists, wait for it to complete
 		if (this.loadingPromise) {
 			await this.loadingPromise;
@@ -170,6 +180,7 @@ class ProfessorRatingService {
 		this.loadingPromise = null;
 
 		return this.globalCache.get(professorName) || null;
+		*/
 	}
 
 	// Get color class based on rating
