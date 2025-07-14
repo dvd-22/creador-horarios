@@ -6,6 +6,11 @@
   directory = "netlify/functions"
 
 [[redirects]]
+  from = "/creador-horarios/*"
+  to = "/creador-horarios/index.html"
+  status = 200
+
+[[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/creador-horarios/index.html"
   status = 200

@@ -5,6 +5,7 @@ import ScheduleViewer from './ScheduleViewer';
 import SelectedGroupsPanel from './SelectedGroupsPanel';
 import { saveScheduleAsPng } from '../utils/scheduleUtils';
 import SavePopup from './SavePopup';
+import { List, Calendar, Settings } from 'lucide-react';
 
 const CustomAlert = ({ message, onClose }) => (
     <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-2xl bg-red-900/50 border border-red-500 text-red-100 px-4 py-3 rounded shadow-lg">
@@ -24,6 +25,7 @@ const ScheduleDisplay = () => {
     const [conflictAlert, setConflictAlert] = useState(null);
     const [currentScheduleName, setCurrentScheduleName] = useState('');
     const [showSavePopup, setShowSavePopup] = useState(false);
+    const [activeTab, setActiveTab] = useState('courses'); // For mobile navigation
     const scheduleRef = useRef(null);
     const exportRef = useRef(null);
 
@@ -41,31 +43,31 @@ const ScheduleDisplay = () => {
     // Check if a new group conflicts with existing selected groups
     const checkConflicts = (newGroup) => {
         const newSlots = [];
-    
+
         // Handle multiple professor schedules
         newGroup.professor.horarios?.forEach(schedule => {
             const [profStart, profEnd] = (schedule.horario || '').split(' - ').map(timeToMinutes);
             const profDays = schedule.dias || [];
-            
+
             if (profStart !== null && profEnd !== null) {
                 profDays.forEach(day => {
                     newSlots.push({ day, start: profStart, end: profEnd });
                 });
             }
         });
-    
+
         // Handle assistants (unchanged)
         newGroup.assistants?.forEach(assistant => {
             const [astStart, astEnd] = (assistant.horario || '').split(' - ').map(timeToMinutes);
             const assistantDays = assistant.dias || [];
-            
+
             if (astStart !== null && astEnd !== null && assistantDays.length > 0) {
                 assistantDays.forEach(day => {
                     newSlots.push({ day, start: astStart, end: astEnd });
                 });
             }
         });
-    
+
         // Check against existing groups
         for (const existingGroup of selectedGroups) {
             if (existingGroup.semester === newGroup.semester &&
@@ -73,33 +75,33 @@ const ScheduleDisplay = () => {
                 existingGroup.group === newGroup.group) {
                 continue;
             }
-    
+
             const existingSlots = [];
-    
+
             // Handle multiple professor schedules for existing groups
             existingGroup.professor.horarios?.forEach(schedule => {
                 const [existingProfStart, existingProfEnd] = (schedule.horario || '').split(' - ').map(timeToMinutes);
                 const existingProfDays = schedule.dias || [];
-                
+
                 if (existingProfStart !== null && existingProfEnd !== null) {
                     existingProfDays.forEach(day => {
                         existingSlots.push({ day, start: existingProfStart, end: existingProfEnd });
                     });
                 }
             });
-    
+
             // Handle existing assistants (unchanged)
             existingGroup.assistants?.forEach(assistant => {
                 const [start, end] = (assistant.horario || '').split(' - ').map(timeToMinutes);
                 const assistantDays = assistant.dias || [];
-                
+
                 if (start !== null && end !== null && assistantDays.length > 0) {
                     assistantDays.forEach(day => {
                         existingSlots.push({ day, start, end });
                     });
                 }
             });
-    
+
             // Check for conflicts
             for (const newSlot of newSlots) {
                 for (const existingSlot of existingSlots) {
@@ -115,10 +117,10 @@ const ScheduleDisplay = () => {
                 }
             }
         }
-    
+
         return null;
     };
-    
+
     // Update the handleGroupSelect function
     const handleGroupSelect = (semester, subject, group, groupData) => {
         const isSelected = selectedGroups.some(g =>
@@ -126,7 +128,7 @@ const ScheduleDisplay = () => {
             g.subject === subject &&
             g.group === group
         );
-    
+
         if (isSelected) {
             setSelectedGroups(prev => prev.filter(g =>
                 !(g.semester === semester &&
@@ -136,7 +138,7 @@ const ScheduleDisplay = () => {
             setConflictAlert(null);
             return;
         }
-    
+
         const newGroup = {
             semester,
             subject,
@@ -147,15 +149,15 @@ const ScheduleDisplay = () => {
             },
             assistants: groupData.ayudantes
         };
-    
+
         const conflict = checkConflicts(newGroup);
-    
+
         if (conflict) {
             const message = `No se puede agregar ${subject} (Grupo ${group}) porque se traslapa con ${conflict.conflictWith.subject} (Grupo ${conflict.conflictWith.group}).`;
             setConflictAlert(message);
             return;
         }
-    
+
         setSelectedGroups(prev => [...prev, newGroup]);
         setConflictAlert(null);
     };
@@ -169,31 +171,106 @@ const ScheduleDisplay = () => {
     };
 
     return (
-        <div className="flex h-[100dvh] overflow-hidden">
+        <div className="h-[100dvh] overflow-hidden">
             {conflictAlert && (
                 <CustomAlert
                     message={conflictAlert}
                     onClose={() => setConflictAlert(null)}
                 />
             )}
-            <div className="w-80 flex-shrink-0">
-                <ScheduleSelector
-                    onGroupSelect={handleGroupSelect}
-                    selectedGroups={selectedGroups}
-                />
-            </div>
-            <div className="flex-1" ref={scheduleRef}>
-                <ScheduleViewer
+
+            {/* Desktop Layout */}
+            <div className="hidden lg:flex h-full">
+                <div className="w-80 flex-shrink-0">
+                    <ScheduleSelector
+                        onGroupSelect={handleGroupSelect}
+                        selectedGroups={selectedGroups}
+                    />
+                </div>
+                <div className="flex-1" ref={scheduleRef}>
+                    <ScheduleViewer
+                        selectedGroups={selectedGroups}
+                        onRemoveGroup={handleGroupSelect}
+                        scheduleName={currentScheduleName}
+                    />
+                </div>
+                <SelectedGroupsPanel
                     selectedGroups={selectedGroups}
                     onRemoveGroup={handleGroupSelect}
-                    scheduleName={currentScheduleName}
+                    onSaveSchedule={handleSaveSchedule}
                 />
             </div>
-            <SelectedGroupsPanel
-                selectedGroups={selectedGroups}
-                onRemoveGroup={handleGroupSelect}
-                onSaveSchedule={handleSaveSchedule}
-            />
+
+            {/* Mobile Layout */}
+            <div className="lg:hidden flex flex-col h-full">
+                {/* Mobile Tab Navigation */}
+                <div className="flex bg-gray-900 border-b border-gray-700">
+                    <button
+                        onClick={() => setActiveTab('courses')}
+                        className={`flex-1 flex items-center justify-center py-3 px-4 text-sm font-medium transition-colors ${activeTab === 'courses'
+                                ? 'bg-blue-600 text-white'
+                                : 'text-gray-400 hover:text-gray-200 hover:bg-gray-800'
+                            }`}
+                    >
+                        <List size={18} className="mr-2" />
+                        Materias
+                    </button>
+                    <button
+                        onClick={() => setActiveTab('schedule')}
+                        className={`flex-1 flex items-center justify-center py-3 px-4 text-sm font-medium transition-colors ${activeTab === 'schedule'
+                                ? 'bg-blue-600 text-white'
+                                : 'text-gray-400 hover:text-gray-200 hover:bg-gray-800'
+                            }`}
+                    >
+                        <Calendar size={18} className="mr-2" />
+                        Horario
+                    </button>
+                    <button
+                        onClick={() => setActiveTab('selected')}
+                        className={`flex-1 flex items-center justify-center py-3 px-4 text-sm font-medium transition-colors relative ${activeTab === 'selected'
+                                ? 'bg-blue-600 text-white'
+                                : 'text-gray-400 hover:text-gray-200 hover:bg-gray-800'
+                            }`}
+                    >
+                        <Settings size={18} className="mr-2" />
+                        Seleccionadas
+                        {selectedGroups.length > 0 && (
+                            <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                                {selectedGroups.length}
+                            </span>
+                        )}
+                    </button>
+                </div>
+
+                {/* Mobile Tab Content */}
+                <div className="flex-1 overflow-hidden">
+                    {activeTab === 'courses' && (
+                        <ScheduleSelector
+                            onGroupSelect={handleGroupSelect}
+                            selectedGroups={selectedGroups}
+                        />
+                    )}
+                    {activeTab === 'schedule' && (
+                        <div className="h-full overflow-auto" ref={scheduleRef}>
+                            <ScheduleViewer
+                                selectedGroups={selectedGroups}
+                                onRemoveGroup={handleGroupSelect}
+                                scheduleName={currentScheduleName}
+                                isMobile={true}
+                            />
+                        </div>
+                    )}
+                    {activeTab === 'selected' && (
+                        <SelectedGroupsPanel
+                            selectedGroups={selectedGroups}
+                            onRemoveGroup={handleGroupSelect}
+                            onSaveSchedule={handleSaveSchedule}
+                            isMobile={true}
+                        />
+                    )}
+                </div>
+            </div>
+
             <ExportLayout
                 ref={exportRef}
                 selectedGroups={selectedGroups}

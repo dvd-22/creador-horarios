@@ -37,8 +37,8 @@ const MajorSelector = () => {
     return (
         <div className="border-b border-gray-700 bg-gray-850">
             {/* Major Selector */}
-            <div className="p-2">
-                <div className="flex space-x-1 overflow-x-auto no-scrollbar py-1">
+            <div className="p-2 relative">
+                <div className="flex space-x-1 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 py-1">
                     {Object.values(availableMajors).map((major) => (
                         <button
                             key={major.id}
@@ -69,8 +69,8 @@ const MajorSelector = () => {
                                 onClick={() => changeStudyPlan(studyPlan.id)}
                                 disabled={isLoading}
                                 className={`px-2 py-1 rounded text-xs font-medium ${selectedStudyPlan === studyPlan.id
-                                        ? 'bg-green-600 text-white'
-                                        : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                                    ? 'bg-green-600 text-white'
+                                    : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
                                     } ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
                             >
                                 {studyPlan.name}

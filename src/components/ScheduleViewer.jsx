@@ -65,7 +65,7 @@ const hasTimeOverlap = (start1, end1, start2, end2) => {
   return start1 < end2 && start2 < end1;
 };
 
-const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isExport = false }) => {
+const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isExport = false, isMobile = false }) => {
   const days = ['Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'];
   // Change from starting at hour 5 to starting at hour 7, and reduce length from 18 to 16
   const timeSlots = Array.from({ length: 16 }, (_, i) => i + 7).map(hour =>
@@ -212,7 +212,7 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
   };
 
   return (
-    <div className="flex flex-col h-full bg-gray-900 p-4">
+    <div className={`flex flex-col h-full bg-gray-900 ${isMobile ? 'p-2' : 'p-4'}`}>
       {/* Only show title in export mode */}
       {scheduleName && isExport && (
         <h1 className="text-2xl font-bold text-gray-100 text-center mb-6">
@@ -221,13 +221,13 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
       )}
 
       <div className="flex-1 overflow-auto min-h-0">
-        <div className="relative min-w-full">
+        <div className={`relative ${isMobile ? 'min-w-[800px]' : 'min-w-full'}`}>
           <div className="grid grid-cols-7 gap-1">
             {/* Time column */}
             <div className="sticky left-0 bg-gray-900 z-10">
               <div className="h-10"></div>
               {timeSlots.map((time) => (
-                <div key={time} className="h-10 flex items-start relative -top-3 text-gray-400 text-sm">
+                <div key={time} className={`h-10 flex items-start relative -top-3 text-gray-400 ${isMobile ? 'text-xs' : 'text-sm'}`}>
                   {time}
                 </div>
               ))}
@@ -235,8 +235,8 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
 
             {/* Day columns */}
             {days.map(day => (
-              <div key={day} className="min-w-[130px]">
-                <div className="h-10 text-gray-100 font-medium flex items-center justify-center sticky top-0 bg-gray-900 z-10 border-b border-gray-700">
+              <div key={day} className={isMobile ? "min-w-[110px]" : "min-w-[130px]"}>
+                <div className={`h-10 text-gray-100 font-medium flex items-center justify-center sticky top-0 bg-gray-900 z-10 border-b border-gray-700 ${isMobile ? 'text-sm' : ''}`}>
                   {day}
                 </div>
                 <div className="relative">
@@ -258,7 +258,7 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                       return (
                         <div
                           key={`single-${groupIndex}`}
-                          className={`absolute left-0 right-0 mx-1 rounded px-2 py-1 text-xs ${subjectColors[slot.subject]} time-group-card`}
+                          className={`absolute left-0 right-0 mx-1 rounded px-2 py-1 ${isMobile ? 'text-xs' : 'text-xs'} ${subjectColors[slot.subject]} time-group-card`}
                           style={{
                             top: `${top}px`,
                             height: `${height}px`,
@@ -266,10 +266,10 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                           }}
                         >
                           <div className="flex flex-col h-full overflow-hidden">
-                            <div className="font-medium text-xs leading-4 text-white truncate">
+                            <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate`}>
                               {slot.subject} ({slot.group})
                             </div>
-                            <div className="text-gray-200 truncate text-xs leading-tight">
+                            <div className={`text-gray-200 truncate ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
                               {slot.professor}
                             </div>
                           </div>
@@ -306,7 +306,7 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                               className="relative flex-1 mx-0.5"
                             >
                               <div
-                                className={`absolute ${subjectColors[slot.subject]} px-1 py-1 text-xs time-group-card rounded`}
+                                className={`absolute ${subjectColors[slot.subject]} px-1 py-1 ${isMobile ? 'text-xs' : 'text-xs'} time-group-card rounded`}
                                 style={{
                                   top: `${slotTop}px`,
                                   height: `${slotHeight}px`,
@@ -315,10 +315,10 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                                 }}
                               >
                                 <div className="flex flex-col h-full overflow-hidden">
-                                  <div className="font-medium text-xs leading-4 text-white truncate">
+                                  <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate`}>
                                     {slot.subject} ({slot.group})
                                   </div>
-                                  <div className="text-gray-200 truncate text-xs leading-tight">
+                                  <div className={`text-gray-200 truncate ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
                                     {slot.professor}
                                   </div>
                                 </div>

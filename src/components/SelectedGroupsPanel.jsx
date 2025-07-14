@@ -69,7 +69,7 @@ const getMajorColorClass = (majorId) => {
   }
 };
 
-const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, setShowSavePopup, scheduleTitle, onTitleChange }) => {
+const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, setShowSavePopup, scheduleTitle, onTitleChange, isMobile = false }) => {
   const { availableMajors } = useMajorContext();
   const [isNaming, setIsNaming] = useState(false);
   const [isEditingTitle, setIsEditingTitle] = useState(false);
@@ -288,17 +288,22 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
   };
 
   return (
-    <div className={`transition-all duration-300 bg-gray-900 border-l border-gray-700 flex flex-col relative ${isCollapsed ? 'w-12' : 'w-64'}`}>
+    <div className={`transition-all duration-300 bg-gray-900 flex flex-col relative ${isMobile
+        ? 'h-full border-t border-gray-700'
+        : `border-l border-gray-700 ${isCollapsed ? 'w-12' : 'w-64'}`
+      }`}>
 
-      <button
-        onClick={toggleCollapse}
-        className="absolute -left-4 top-4 bg-gray-800 text-gray-400 hover:text-gray-100 p-1 rounded-l-md border border-gray-700 border-r-0 z-10"
-        aria-label={isCollapsed ? "Expand panel" : "Collapse panel"}
-      >
-        {isCollapsed ? <ChevronLeft size={14} /> : <ChevronRight size={14} />}
-      </button>
+      {!isMobile && (
+        <button
+          onClick={toggleCollapse}
+          className="absolute -left-4 top-4 bg-gray-800 text-gray-400 hover:text-gray-100 p-1 rounded-l-md border border-gray-700 border-r-0 z-10"
+          aria-label={isCollapsed ? "Expand panel" : "Collapse panel"}
+        >
+          {isCollapsed ? <ChevronLeft size={14} /> : <ChevronRight size={14} />}
+        </button>
+      )}
 
-      {isCollapsed ? (
+      {!isMobile && isCollapsed ? (
         <div className="flex flex-col items-center py-4 space-y-4">
           <div
             className="text-gray-400 text-xs"
