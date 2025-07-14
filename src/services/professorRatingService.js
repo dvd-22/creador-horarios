@@ -27,7 +27,7 @@ class ProfessorRatingService {
 	async fetchAndCacheProfessors(professorNames) {
 		try {
 			const controller = new AbortController();
-			const timeoutId = setTimeout(() => controller.abort(), 15000); // 15 second timeout
+			const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 second timeout
 
 			const response = await fetch(
 				`${this.baseUrl}/.netlify/functions/professors`,
@@ -44,6 +44,14 @@ class ProfessorRatingService {
 			clearTimeout(timeoutId);
 
 			if (!response.ok) {
+				if (response.status === 400) {
+					const errorData = await response.json().catch(() => ({}));
+					if (errorData.maxAllowed) {
+						throw new Error(
+							`Batch too large: ${professorNames.length} professors, maximum ${errorData.maxAllowed} allowed`
+						);
+					}
+				}
 				throw new Error(
 					`HTTP ${response.status}: ${response.statusText}`
 				);
@@ -71,7 +79,7 @@ class ProfessorRatingService {
 		}
 	}
 
-	// Main function to fetch professor ratings with improved logic
+	// Main function to fetch professor ratings with chunked loading
 	async fetchProfessorRatings(professorNames) {
 		if (!professorNames || professorNames.length === 0) return [];
 
@@ -82,9 +90,41 @@ class ProfessorRatingService {
 				(!this.globalCache.has(name) || !this.isCacheValid(name))
 		);
 
-		// If we have uncached professors, fetch them
+		// If we have uncached professors, fetch them in chunks
 		if (uncachedProfessors.length > 0) {
-			await this.fetchAndCacheProfessors(uncachedProfessors);
+			const CHUNK_SIZE = 50; // Process 50 professors at a time
+			const chunks = [];
+
+			for (let i = 0; i < uncachedProfessors.length; i += CHUNK_SIZE) {
+				chunks.push(uncachedProfessors.slice(i, i + CHUNK_SIZE));
+			}
+
+			console.log(
+				`Processing ${uncachedProfessors.length} professors in ${chunks.length} chunks of ${CHUNK_SIZE}`
+			);
+
+			// Process chunks sequentially to avoid overwhelming the server
+			for (let i = 0; i < chunks.length; i++) {
+				const chunk = chunks[i];
+				console.log(
+					`Processing chunk ${i + 1}/${chunks.length} (${
+						chunk.length
+					} professors)`
+				);
+
+				try {
+					await this.fetchAndCacheProfessors(chunk);
+					// Small delay between chunks to avoid rate limiting
+					if (i < chunks.length - 1) {
+						await new Promise((resolve) =>
+							setTimeout(resolve, 500)
+						);
+					}
+				} catch (error) {
+					console.warn(`Error processing chunk ${i + 1}:`, error);
+					// Continue with next chunk even if this one fails
+				}
+			}
 		}
 
 		// Return cached results for all requested professors
@@ -93,7 +133,7 @@ class ProfessorRatingService {
 		);
 	}
 
-	// Get rating for a single professor - FIXED VERSION
+	// Get rating for a single professor - IMPROVED VERSION
 	async getProfessorRating(professorName) {
 		if (!professorName) return null;
 
@@ -117,7 +157,14 @@ class ProfessorRatingService {
 			}
 		}
 
-		// Start new loading if not already cached
+		// Only start new loading if the professor wasn't included in a recent batch load
+		// Check if we have ANY cached data (even if expired) to avoid redundant requests
+		if (this.globalCache.has(professorName)) {
+			// Return cached data even if expired, rather than making a new request
+			return this.globalCache.get(professorName);
+		}
+
+		// Start new loading only if no cached data exists
 		this.loadingPromise = this.fetchAndCacheProfessors([professorName]);
 		await this.loadingPromise;
 		this.loadingPromise = null;

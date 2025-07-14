@@ -71,6 +71,9 @@ const getProfessorUrl = (firstName, lastName, id) => {
 };
 
 exports.handler = async (event, context) => {
+	// Set function timeout
+	context.callbackWaitsForEmptyEventLoop = false;
+
 	// Enable CORS
 	const headers = {
 		"Access-Control-Allow-Origin": "*",
@@ -108,16 +111,32 @@ exports.handler = async (event, context) => {
 			};
 		}
 
+		// Limit batch size to prevent timeouts
+		if (professorNames.length > 50) {
+			return {
+				statusCode: 400,
+				headers,
+				body: JSON.stringify({
+					error: "Too many professors in single request. Maximum 50 allowed.",
+					maxAllowed: 50,
+					received: professorNames.length,
+				}),
+			};
+		}
+
+		console.log(`Processing ${professorNames.length} professors`);
+
 		// Check if we have cached template data
 		const cacheKey = "misprofesores-template";
 		let template = cache.get(cacheKey);
 
 		if (!template) {
+			console.log("Fetching template from MisProfesores.com");
 			// Fetch from MisProfesores.com only if not cached
 			const response = await axios.get(
 				"https://www.misprofesores.com/escuelas/Facultad-de-Ciencias-UNAM_2842",
 				{
-					timeout: 15000, // Increased timeout
+					timeout: 10000, // 10 second timeout
 					headers: {
 						"User-Agent":
 							"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
