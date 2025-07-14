@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.10.0",
     "html2canvas": "^1.4.1",
     "ics": "^3.8.1",
     "lucide-react": "^0.469.0",
+    "node-cache": "^5.1.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

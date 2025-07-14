@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import ProfessorRating from './ProfessorRating';
 
 const ExportLayout = forwardRef(({ selectedGroups, schedule }, ref) => {
     return (
@@ -27,7 +28,13 @@ const ExportLayout = forwardRef(({ selectedGroups, schedule }, ref) => {
                                         <div className="flex items-center space-x-2 text-sm">
                                             <span className="text-gray-400">Grupo {group.group}</span>
                                             {group.professor.nombre && (
-                                                <span className="text-gray-400">• {group.professor.nombre}</span>
+                                                <>
+                                                    <span className="text-gray-400">• {group.professor.nombre}</span>
+                                                    <ProfessorRating
+                                                        professorName={group.professor.nombre}
+                                                        className="text-xs"
+                                                    />
+                                                </>
                                             )}
                                         </div>
                                     </div>

@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { createEvents } from 'ics';
 import { useMajorContext } from '../contexts/MajorContext';
 import { ChevronLeft, ChevronRight, Edit2 } from 'lucide-react';
+import ProfessorRating from './ProfessorRating';
 
 
 const GOOGLE_COLORS = {
@@ -52,7 +53,7 @@ const timeToMinutes = (time) => {
 const getMajorColorClass = (majorId) => {
   switch (majorId) {
     case 'cs':
-      return 'bg-gray-600'; 
+      return 'bg-gray-600';
     case 'math':
       return 'bg-purple-500';
     case 'physics':
@@ -153,10 +154,12 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
               endHour,
               endMinute
             ],
+            startInputType: 'local',
+            endInputType: 'local',
             title: `${group.subject}`,
             description: `Profesor: ${group.professor.nombre}`,
             location: group.salon || '',
-            recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[day]};UNTIL=20251128T235959Z` 
+            recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[day]};UNTIL=20251128T235959Z`
           });
         });
       });
@@ -215,6 +218,8 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
               endHour,
               endMinute
             ],
+            startInputType: 'local',
+            endInputType: 'local',
             title: `${group.subject}`,
             description: `Ayudante: ${slot.name}`,
             location: group.salon || '',
@@ -224,18 +229,55 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
       }
     });
 
-    createEvents(events, (error, value) => {
+    createEvents(events, {
+      productId: 'creador-horarios/ics',
+      calName: 'Horario UNAM'
+    }, (error, value) => {
       if (error) {
-        console.error(error);
+        console.error('ICS Error:', error);
+        alert('Error al generar el archivo ICS. Por favor, intenta de nuevo.');
         return;
       }
-      const blob = new Blob([value], { type: 'text/calendar;charset=utf-8' });
+
+      // Add timezone information to the ICS content manually
+      let icsContent = value;
+      if (icsContent && !icsContent.includes('VTIMEZONE')) {
+        // Insert timezone info after the calendar header
+        const lines = icsContent.split('\n');
+        const beginCalendarIndex = lines.findIndex(line => line.startsWith('BEGIN:VCALENDAR'));
+        if (beginCalendarIndex !== -1) {
+          const timezoneData = [
+            'BEGIN:VTIMEZONE',
+            'TZID:America/Mexico_City',
+            'BEGIN:STANDARD',
+            'DTSTART:20071104T020000',
+            'RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU',
+            'TZNAME:CST',
+            'TZOFFSETFROM:-0500',
+            'TZOFFSETTO:-0600',
+            'END:STANDARD',
+            'BEGIN:DAYLIGHT',
+            'DTSTART:20070401T020000',
+            'RRULE:FREQ=YEARLY;BYMONTH=4;BYDAY=1SU',
+            'TZNAME:CDT',
+            'TZOFFSETFROM:-0600',
+            'TZOFFSETTO:-0500',
+            'END:DAYLIGHT',
+            'END:VTIMEZONE'
+          ];
+          lines.splice(beginCalendarIndex + 3, 0, ...timezoneData);
+          icsContent = lines.join('\n');
+        }
+      }
+
+      const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
       const link = document.createElement('a');
       link.href = window.URL.createObjectURL(blob);
       link.setAttribute('download', `${scheduleTitle.replace(/[^a-z0-9]/gi, '_')}.ics`);
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
+      window.URL.revokeObjectURL(link.href);
       setShowSavePopup(true);
     });
   };
@@ -328,13 +370,10 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
             </button>
             <button
               onClick={handleExportICS}
-              className="group relative w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded"
+              className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded"
               disabled={selectedGroups.length === 0}
             >
               Exportar ICS
-              <span className="pointer-events-none absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-xs bg-gray-800 text-white rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-                Exporta a Google Calendar
-              </span>
             </button>
           </div>
 
@@ -355,6 +394,15 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
                       <div className="flex-1">
                         <span className="text-gray-100">{group.subject}</span>
                         <span className="text-gray-400 ml-2">Grupo {group.group}</span>
+                        {group.professor.nombre && (
+                          <div className="flex items-center gap-2 mt-1">
+                            <span className="text-gray-400 text-sm">• {group.professor.nombre}</span>
+                            <ProfessorRating
+                              professorName={group.professor.nombre}
+                              className="text-xs"
+                            />
+                          </div>
+                        )}
                       </div>
                       <button
                         onClick={() => onRemoveGroup(group.semester, group.subject, group.group, {

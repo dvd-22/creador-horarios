@@ -2,6 +2,8 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { ChevronDown, ChevronRight, Search } from 'lucide-react';
 import { useMajorContext } from '../contexts/MajorContext';
 import MajorSelector from './MajorSelector';
+import ProfessorRating from './ProfessorRating';
+import { professorRatingService } from '../services/professorRatingService';
 
 const semesterOrder = [
   'Primer Semestre',
@@ -168,6 +170,40 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
     return getOrderedData(filtered);
   }, [searchQuery, majorData]);
 
+  // Pre-load all visible professor ratings
+  useEffect(() => {
+    const loadVisibleProfessorRatings = async () => {
+      if (!filteredScheduleData || typeof filteredScheduleData !== 'object') return;
+
+      // Collect all unique professor names from visible data
+      const allProfessors = new Set();
+
+      Object.values(filteredScheduleData).forEach(subjects => {
+        if (subjects && typeof subjects === 'object') {
+          Object.values(subjects).forEach(groups => {
+            if (groups && typeof groups === 'object') {
+              Object.values(groups).forEach(groupData => {
+                if (groupData?.profesor?.nombre) {
+                  allProfessors.add(groupData.profesor.nombre);
+                }
+              });
+            }
+          });
+        }
+      });
+
+      const professorNames = Array.from(allProfessors);
+      if (professorNames.length > 0) {
+        console.log('Pre-loading ratings for professors:', professorNames);
+        // Pre-load all professor ratings in one batch
+        await professorRatingService.fetchProfessorRatings(professorNames);
+        console.log('Finished pre-loading professor ratings');
+      }
+    };
+
+    loadVisibleProfessorRatings();
+  }, [filteredScheduleData]);
+
   useEffect(() => {
     if (searchQuery.trim()) {
       const matchingSemesters = {};
@@ -226,9 +262,15 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
         {/* Professor Info */}
         {groupData?.profesor?.nombre && (
           <div>
-            <p className="text-gray-200 text-sm">
-              {highlightText(groupData.profesor.nombre, searchQuery)}
-            </p>
+            <div className="flex items-center gap-2 mb-1">
+              <p className="text-gray-200 text-sm">
+                {highlightText(groupData.profesor.nombre, searchQuery)}
+              </p>
+              <ProfessorRating
+                professorName={groupData.profesor.nombre}
+                className="text-xs"
+              />
+            </div>
             {groupData?.profesor?.horarios?.map((schedule, index) => (
               schedule?.horario && schedule?.dias && schedule.dias.length > 0 ? (
                 <p key={index} className="text-gray-400 text-xs">
