@@ -170,41 +170,8 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
     return getOrderedData(filtered);
   }, [searchQuery, majorData]);
 
-  // Pre-load all visible professor ratings - TEMPORARILY DISABLED
   useEffect(() => {
     const loadVisibleProfessorRatings = async () => {
-      // TEMPORARILY DISABLED - Professor ratings are not working on production
-      console.log('Professor ratings pre-loading is temporarily disabled');
-      return;
-
-      /* ORIGINAL CODE - TEMPORARILY COMMENTED OUT
-      if (!filteredScheduleData || typeof filteredScheduleData !== 'object') return;
-
-      // Collect all unique professor names from visible data
-      const allProfessors = new Set();
-
-      Object.values(filteredScheduleData).forEach(subjects => {
-        if (subjects && typeof subjects === 'object') {
-          Object.values(subjects).forEach(groups => {
-            if (groups && typeof groups === 'object') {
-              Object.values(groups).forEach(groupData => {
-                if (groupData?.profesor?.nombre) {
-                  allProfessors.add(groupData.profesor.nombre);
-                }
-              });
-            }
-          });
-        }
-      });
-
-      const professorNames = Array.from(allProfessors);
-      if (professorNames.length > 0) {
-        console.log('Pre-loading ratings for professors:', professorNames);
-        // Pre-load all professor ratings in one batch
-        await professorRatingService.fetchProfessorRatings(professorNames);
-        console.log('Finished pre-loading professor ratings');
-      }
-      */
     };
 
     loadVisibleProfessorRatings();
