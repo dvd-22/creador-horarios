@@ -37,12 +37,24 @@ const AVAILABLE_MAJORS = {
         dataLoader: () => import('../data/fisica-biomedica.json'),
         color: 'red-500'
     },
-    // 'biology': {
-    //     id: 'biology',
-    //     name: 'Biología',
-    //     dataLoader: () => import('../data/biologia.json'),
-    //     color: 'green-700'
-    // },
+    'biology': {
+        id: 'biology',
+        name: 'Biología',
+        color: 'green-700',
+        hasStudyPlans: true,
+        studyPlans: {
+            '1997': {
+                id: '1997',
+                name: 'Plan 1997',
+                dataLoader: () => import('../data/biologia-1997.json')
+            },
+            '2025': {
+                id: '2025',
+                name: 'Plan 2025',
+                dataLoader: () => import('../data/biologia-2025.json') 
+            }
+        }
+    }
 };
 
 const MajorContext = createContext();
@@ -51,6 +63,7 @@ export const useMajorContext = () => useContext(MajorContext);
 
 export const MajorProvider = ({ children }) => {
     const [selectedMajorId, setSelectedMajorId] = useState('cs');
+    const [selectedStudyPlan, setSelectedStudyPlan] = useState(null);
     const [majorData, setMajorData] = useState({});
     const [loadedMajors, setLoadedMajors] = useState(new Set());
     const [isLoading, setIsLoading] = useState(false);
@@ -59,12 +72,38 @@ export const MajorProvider = ({ children }) => {
     // Cache for loaded major data
     const [majorDataCache, setMajorDataCache] = useState({});
 
-    // Load major data when selected major changes
+    // Load major data when selected major or study plan changes
     useEffect(() => {
         const loadMajorData = async () => {
+            const majorConfig = AVAILABLE_MAJORS[selectedMajorId];
+            if (!majorConfig) {
+                setLoadError(`Major configuration not found for ${selectedMajorId}`);
+                return;
+            }
+
+            // Determine cache key and data loader
+            let cacheKey = selectedMajorId;
+            let dataLoader = majorConfig.dataLoader;
+
+            if (majorConfig.hasStudyPlans) {
+                const studyPlanId = selectedStudyPlan || Object.keys(majorConfig.studyPlans)[0];
+                cacheKey = `${selectedMajorId}-${studyPlanId}`;
+                dataLoader = majorConfig.studyPlans[studyPlanId]?.dataLoader;
+
+                if (!dataLoader) {
+                    setLoadError(`Study plan not found: ${studyPlanId}`);
+                    return;
+                }
+
+                // Set default study plan if none selected
+                if (!selectedStudyPlan) {
+                    setSelectedStudyPlan(studyPlanId);
+                }
+            }
+
             // If data is already cached, use it
-            if (majorDataCache[selectedMajorId]) {
-                setMajorData(majorDataCache[selectedMajorId]);
+            if (majorDataCache[cacheKey]) {
+                setMajorData(majorDataCache[cacheKey]);
                 return;
             }
 
@@ -73,24 +112,19 @@ export const MajorProvider = ({ children }) => {
             setLoadError(null);
 
             try {
-                const majorConfig = AVAILABLE_MAJORS[selectedMajorId];
-                if (!majorConfig) {
-                    throw new Error(`Major configuration not found for ${selectedMajorId}`);
-                }
-
-                const dataModule = await majorConfig.dataLoader();
+                const dataModule = await dataLoader();
                 const data = dataModule.default;
 
                 // Cache the loaded data
                 setMajorDataCache(prev => ({
                     ...prev,
-                    [selectedMajorId]: data
+                    [cacheKey]: data
                 }));
 
                 setMajorData(data);
-                setLoadedMajors(prev => new Set([...prev, selectedMajorId]));
+                setLoadedMajors(prev => new Set([...prev, cacheKey]));
             } catch (error) {
-                console.error(`Error loading data for ${selectedMajorId}:`, error);
+                console.error(`Error loading data for ${cacheKey}:`, error);
                 setLoadError(error.message);
                 setMajorData({});
             } finally {
@@ -99,20 +133,31 @@ export const MajorProvider = ({ children }) => {
         };
 
         loadMajorData();
-    }, [selectedMajorId, majorDataCache]);
+    }, [selectedMajorId, selectedStudyPlan, majorDataCache]);
 
     const changeMajor = (majorId) => {
         if (AVAILABLE_MAJORS[majorId]) {
             setSelectedMajorId(majorId);
+            // Reset study plan when changing major
+            setSelectedStudyPlan(null);
+        }
+    };
+
+    const changeStudyPlan = (studyPlanId) => {
+        const majorConfig = AVAILABLE_MAJORS[selectedMajorId];
+        if (majorConfig?.hasStudyPlans && majorConfig.studyPlans[studyPlanId]) {
+            setSelectedStudyPlan(studyPlanId);
         }
     };
 
     const value = {
         selectedMajorId,
+        selectedStudyPlan,
         currentMajor: AVAILABLE_MAJORS[selectedMajorId],
         majorData,
         availableMajors: AVAILABLE_MAJORS,
         changeMajor,
+        changeStudyPlan,
         isLoading,
         loadError,
         loadedMajors: Array.from(loadedMajors)
