@@ -1,0 +1,16 @@
+{
+    "name": "professor-ratings-scripts",
+    "version": "1.0.0",
+    "description": "Scripts to fetch professor ratings for static generation",
+    "main": "fetch-ratings.js",
+    "scripts": {
+        "extract": "node extract-professors.js",
+        "fetch": "node fetch-ratings.js",
+        "update": "npm run extract && npm run fetch"
+    },
+    "dependencies": {
+        "axios": "^1.6.0"
+    },
+    "author": "Dvd22",
+    "license": "MIT"
+}

@@ -1,0 +1,264 @@
+const axios = require("axios");
+const fs = require("fs");
+const path = require("path");
+
+// Helper functions from your existing Netlify function
+const getFirstName = (name) => {
+	if (!name) return "";
+	const arr = name.split(" ");
+	return arr[0];
+};
+
+const getLastName = (name) => {
+	if (!name) return "";
+	const arr = name.split(" ");
+	if (arr.length >= 2) {
+		return arr.slice(-2).join(" ");
+	}
+	return arr[arr.length - 1];
+};
+
+const removeSpecialChars = (name) => {
+	if (!name) return "";
+	return name
+		.normalize("NFD")
+		.replace(
+			/([^n\u0300-\u036f]|n(?!\u0303(?![\u0300-\u036f])))[\u0300-\u036f]+/gi,
+			"$1"
+		)
+		.normalize();
+};
+
+const getLastNameRegex = (name, unicode) => {
+	const removed = removeSpecialChars(name);
+	const arrAccent = unicode.split(" ");
+	const arrRemoved = removed.split(" ");
+
+	return `(${arrAccent[0]}|${arrAccent[0].toLowerCase()}|${
+		arrRemoved[0]
+	}|${arrRemoved[0].toLowerCase()}|${arrRemoved[0].toUpperCase()})[^}]*(${
+		arrAccent[1]
+	}|${arrAccent[1].toLowerCase()}|${
+		arrRemoved[1]
+	}|${arrRemoved[1].toLowerCase()}|${arrRemoved[1].toUpperCase()})`;
+};
+
+const transformSpecialChars = (string) => {
+	const specialChars = [
+		225, 233, 237, 243, 250, 193, 201, 205, 211, 218, 241,
+	];
+	let stringUnicode = "";
+
+	for (let i = 0; i < string.length; i++) {
+		const charCode = string.charCodeAt(i);
+		if (specialChars.includes(charCode)) {
+			stringUnicode += "\\\\u00" + charCode.toString(16);
+		} else {
+			stringUnicode += string[i];
+		}
+	}
+
+	return stringUnicode;
+};
+
+const getProfessorUrl = (firstName, lastName, id) => {
+	const first = removeSpecialChars(firstName);
+	const last = removeSpecialChars(lastName);
+	const name = first.split(" ").concat(last.split(" ")).join("-");
+	return `https://www.misprofesores.com/profesores/${name}_${id}`;
+};
+
+const fetchProfessorRating = (professorName, template) => {
+	if (!professorName) return null;
+
+	const firstName = getFirstName(professorName);
+	const lastName = getLastName(professorName);
+
+	if (!firstName || !lastName) return null;
+
+	const firstUnicode = transformSpecialChars(firstName);
+	const lastUnicode = transformSpecialChars(lastName);
+
+	const regExString = `\\{[^}]*(${firstUnicode}|${firstUnicode.toLowerCase()}|${removeSpecialChars(
+		firstName
+	)}|${removeSpecialChars(firstName).toLowerCase()}|${removeSpecialChars(
+		firstName
+	).toUpperCase()})[^}]*${getLastNameRegex(lastName, lastUnicode)}.*?\\}`;
+
+	const regEx = new RegExp(regExString);
+
+	try {
+		if (regEx.test(template)) {
+			const match = template.match(regEx);
+			if (match && match[0]) {
+				const profObject = JSON.parse(match[0]);
+				return {
+					name: profObject.n + " " + profObject.a,
+					rating: Math.round(parseFloat(profObject.c) * 10) / 10,
+					commentCount: parseInt(profObject.m),
+					id: profObject.i,
+					url: getProfessorUrl(firstName, lastName, profObject.i),
+				};
+			}
+		}
+		return null;
+	} catch (parseError) {
+		console.warn(
+			`Failed to parse professor data for ${professorName}:`,
+			parseError
+		);
+		return null;
+	}
+};
+
+const main = async () => {
+	try {
+		console.log("🔍 Starting professor ratings fetch...");
+
+		const outputDir = path.join(__dirname, "..", "data");
+
+		// Ensure output directory exists
+		if (!fs.existsSync(outputDir)) {
+			fs.mkdirSync(outputDir, { recursive: true });
+		}
+
+		// Read the professor list
+		const professorsPath = path.join(outputDir, "professors.json");
+
+		if (!fs.existsSync(professorsPath)) {
+			console.error(
+				"❌ professors.json not found. Please run extract-professors.js first."
+			);
+			process.exit(1);
+		}
+
+		const professorsData = JSON.parse(
+			fs.readFileSync(professorsPath, "utf8")
+		);
+		const professors = professorsData.professors;
+
+		console.log(
+			`📊 Found ${professors.length} unique professors to process`
+		);
+		console.log(
+			`📅 Professors list last updated: ${new Date(
+				professorsData.lastUpdated
+			).toLocaleString()}`
+		);
+
+		// Fetch the template from MisProfesores.com
+		console.log("🌐 Fetching template from MisProfesores.com...");
+		const response = await axios.get(
+			"https://www.misprofesores.com/escuelas/Facultad-de-Ciencias-UNAM_2842",
+			{
+				timeout: 60000, // 60 second timeout
+				headers: {
+					"User-Agent":
+						"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+					Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+					"Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+					"Accept-Encoding": "gzip, deflate, br",
+					Connection: "keep-alive",
+					"Upgrade-Insecure-Requests": "1",
+				},
+			}
+		);
+
+		const template = response.data;
+		console.log(
+			`✅ Template fetched successfully (${template.length} characters)`
+		);
+
+		// Process all professors
+		const ratings = {};
+		let processed = 0;
+		let found = 0;
+		const foundProfessors = [];
+
+		console.log("🔄 Processing professors...");
+
+		for (const professorName of professors) {
+			const rating = fetchProfessorRating(professorName, template);
+			ratings[professorName] = rating;
+
+			if (rating) {
+				found++;
+				foundProfessors.push({
+					name: professorName,
+					rating: rating.rating,
+					comments: rating.commentCount,
+				});
+
+				if (found <= 10) {
+					// Show first 10 found ratings
+					console.log(
+						`⭐ ${professorName}: ${rating.rating}/10 (${rating.commentCount} comentarios)`
+					);
+				}
+			}
+
+			processed++;
+
+			if (processed % 100 === 0) {
+				console.log(
+					`📈 Processed ${processed}/${professors.length} professors (${found} ratings found)`
+				);
+			}
+		}
+
+		// Write ratings to file
+		const ratingsPath = path.join(outputDir, "ratings.json");
+		const ratingsData = {
+			lastUpdated: new Date().toISOString(),
+			totalProfessors: professors.length,
+			ratingsFound: found,
+			foundPercentage: Math.round((found / professors.length) * 100),
+			ratings: ratings,
+			statistics: {
+				processed: processed,
+				found: found,
+				notFound: processed - found,
+			},
+		};
+
+		fs.writeFileSync(ratingsPath, JSON.stringify(ratingsData, null, 2));
+
+		console.log("\n🎉 Processing complete!");
+		console.log(`📊 Total professors processed: ${processed}`);
+		console.log(
+			`⭐ Ratings found: ${found} (${ratingsData.foundPercentage}%)`
+		);
+		console.log(`📁 Ratings saved to ${ratingsPath}`);
+
+		// Show top rated professors
+		if (foundProfessors.length > 0) {
+			console.log("\n🏆 Top rated professors:");
+			foundProfessors
+				.sort((a, b) => b.rating - a.rating)
+				.slice(0, 5)
+				.forEach((prof, index) => {
+					console.log(
+						`   ${index + 1}. ${prof.name}: ${prof.rating}/10 (${
+							prof.comments
+						} comentarios)`
+					);
+				});
+		}
+	} catch (error) {
+		console.error("❌ Error fetching ratings:", error);
+
+		if (error.response) {
+			console.error(`HTTP Status: ${error.response.status}`);
+			console.error(`Response headers:`, error.response.headers);
+		}
+
+		process.exit(1);
+	}
+};
+
+// Run the main function if this file is executed directly
+if (require.main === module) {
+	main();
+}
+
+module.exports = main;
