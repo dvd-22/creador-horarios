@@ -689,7 +689,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365135"
       },
       "4023": {
         "grupo": "4023",
@@ -719,7 +719,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365136"
       },
       "4024": {
         "grupo": "4024",
@@ -1127,7 +1127,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366629"
       },
       "7169": {
         "grupo": "7169",
@@ -1177,7 +1177,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366631"
       },
       "7171": {
         "grupo": "7171",
@@ -2339,7 +2339,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366633"
       }
     },
     "Matemáticas para las Ciencias Aplicadas II": {
@@ -2609,7 +2609,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365304"
       },
       "4128": {
         "grupo": "4128",
@@ -6896,7 +6896,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366663"
       }
     },
     "Estadística II": {
@@ -7085,7 +7085,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365554"
       }
     },
     "Investigación de Operaciones": {
@@ -7267,7 +7267,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365939"
       }
     },
     "Lógica Computacional II": {
@@ -8254,12 +8254,12 @@
         "nota": "Graficación Avanzada",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366157"
       },
       "7156": {
         "grupo": "7156",
         "profesor": {
-          "nombre": "Gustavo Carreón Vázquez",
+          "nombre": "Gustavo Carreón  Vázquez",
           "horarios": [
             {
               "horario": "09:00 a 10:00",
@@ -8338,7 +8338,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "José Luis Jiménez Andrade",
+            "nombre": "José Luis Jiménez  Andrade",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -8523,7 +8523,7 @@
             ]
           }
         ],
-        "nota": "El curso se impartrá de 11 a 12 hrs. en el Aula del Futuro del ICAT",
+        "nota": "El curso se impartrá de 11 a 12  hrs. en el Aula del Futuro del ICAT",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366165"
@@ -8865,7 +8865,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365518"
       }
     },
     "Teoría de los Conjuntos II": {
@@ -8955,6 +8955,98 @@
           }
         ],
         "nota": "Este curso será impartido por la Dra. Elsa Puente Vázquez en un horario por determinarse",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Teoría de los Números I": {
+      "4332": {
+        "grupo": "4332",
+        "profesor": {
+          "nombre": "Juan José Alba González",
+          "horarios": [
+            {
+              "horario": "08:00 a 09:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Francisco Javier Alvarado Cabrera",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4333": {
+        "grupo": "4333",
+        "profesor": {
+          "nombre": "Omar Vigueras Herrera",
+          "horarios": [
+            {
+              "horario": "13:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4334": {
+        "grupo": "4334",
+        "profesor": {
+          "nombre": "Javier Valdez Quijada",
+          "horarios": [
+            {
+              "horario": "19:00 a 20:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Teresa Fátima Castellanos Hernández",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null

@@ -1,17 +1,19 @@
-name: Update Professor Ratings
+name: Scrape Schedule Data
 
 on:
     schedule:
-        - cron: "0 6 * * 0"
-    workflow_dispatch:
+        # Run every semester (twice a year) - January and August
+        - cron: "0 8 1 1,8 *"
+    workflow_dispatch: # Allow manual triggers
     push:
         paths:
-            - "scripts/**"
-            - ".github/workflows/update-ratings.yml"
+            - "scripts/scraping/**"
+            - ".github/workflows/scrape-schedules.yml"
 
 jobs:
-    update-ratings:
+    scrape-schedules:
         runs-on: ubuntu-latest
+        timeout-minutes: 120 # Increase timeout for long scraping process
 
         steps:
             - name: Checkout repository
@@ -26,19 +28,17 @@ jobs:
             - name: Install dependencies
               run: npm install
 
-            - name: Extract professors list
-              run: npm run extract-professors
-
-            - name: Fetch professor ratings
-              run: npm run fetch-ratings
+            - name: Run full scraping process
+              run: npm run scrape:test
+              timeout-minutes: 90 # Set a timeout for the scraping process
 
             - name: Commit and push if changes
               run: |
                   git config --local user.email "action@github.com"
                   git config --local user.name "GitHub Action"
-                  git add public/data/professors.json public/data/ratings.json
+                  git add src/data/*.json
                   if ! git diff --staged --quiet; then
-                    git commit -m "Update professor ratings - $(date '+%Y-%m-%d %H:%M:%S')"
+                    git commit -m "🔄 Update schedule data - $(date '+%Y-%m-%d %H:%M:%S')"
                     git push
                   else
                     echo "No changes to commit"

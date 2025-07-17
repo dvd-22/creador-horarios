@@ -7,14 +7,24 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "scrape": "node scripts/scraping/scrape-materias.js && node scripts/scraping/scrape-schedules.js && node scripts/scraping/convert-to-json.js",
+    "scrape:materias": "node scripts/scraping/scrape-materias.js",
+    "scrape:schedules": "node scripts/scraping/scrape-schedules.js",
+    "scrape:convert": "node scripts/scraping/convert-to-json.js",
+    "scrape:test": "node scripts/scraping/test-scraping.js",
+    "extract-professors": "node scripts/extract-professors.js",
+    "fetch-ratings": "node scripts/fetch-ratings.js"
   },
   "dependencies": {
     "axios": "^1.10.0",
+    "csv-writer": "^1.6.0",
     "html2canvas": "^1.4.1",
     "ics": "^3.8.1",
     "lucide-react": "^0.469.0",
     "node-cache": "^5.1.2",
+    "papaparse": "^5.5.3",
+    "puppeteer": "^24.14.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
