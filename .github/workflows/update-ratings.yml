@@ -2,12 +2,8 @@ name: Update Professor Ratings
 
 on:
     schedule:
-        - cron: "0 6 * * 0"
+        - cron: "0 6 * * 0" # Weekly on Sundays at 6 AM UTC
     workflow_dispatch:
-    push:
-        paths:
-            - "scripts/**"
-            - ".github/workflows/update-ratings.yml"
 
 jobs:
     update-ratings:
