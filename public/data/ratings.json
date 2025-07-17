@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2025-07-17T08:45:58.081Z",
+  "lastUpdated": "2025-07-17T08:41:11.145Z",
   "totalProfessors": 2248,
-  "ratingsFound": 1255,
+  "ratingsFound": 1254,
   "foundPercentage": 56,
   "ratings": {
     "Aaron Ali Lozano Rocha": null,
@@ -356,7 +356,13 @@
       "id": "149886",
       "url": "https://www.misprofesores.com/profesores/Alejandro-Legaspe-Serrano_149886"
     },
-    "Alejandro Paredes Arriaga": null,
+    "Alejandro Paredes Arriaga": {
+      "name": "Alejandro Paredes Arriaga",
+      "rating": 7.9,
+      "commentCount": 10,
+      "id": "93120",
+      "url": "https://www.misprofesores.com/profesores/Alejandro-Paredes-Arriaga_93120"
+    },
     "Alejandro Piña Vargas": null,
     "Alejandro Ramírez Buenrostro": null,
     "Alejandro Reyes Coronado": {
@@ -640,7 +646,13 @@
     },
     "Ana Karen González Clemente": null,
     "Ana Laura Córdova Lara": null,
-    "Ana Lilia Anaya Muñoz": null,
+    "Ana Lilia Anaya Muñoz": {
+      "name": "Ana Lilia Anaya Muñoz",
+      "rating": 8.1,
+      "commentCount": 35,
+      "id": "83483",
+      "url": "https://www.misprofesores.com/profesores/Ana-Anaya-Muñoz_83483"
+    },
     "Ana Lilia Cesareo Gómez": null,
     "Ana Lilia Juárez Vázquez": {
       "name": "Ana Lilia Juárez Vázquez",
@@ -2759,7 +2771,13 @@
       "url": "https://www.misprofesores.com/profesores/Erika-Muñoz-Moral_150102"
     },
     "Erin Christy McKiernan": null,
-    "Ernesto Alejandro Vázquez Navarro": null,
+    "Ernesto Alejandro Vázquez Navarro": {
+      "name": "Ernesto Alejandro Vázquez Navarro",
+      "rating": 8.5,
+      "commentCount": 30,
+      "id": "36141",
+      "url": "https://www.misprofesores.com/profesores/Ernesto-Vazquez-Navarro_36141"
+    },
     "Ernesto Andreo Chimal García": {
       "name": "Ernesto Andreo Chimal García",
       "rating": 7.4,
@@ -3739,11 +3757,11 @@
       "url": "https://www.misprofesores.com/profesores/Gustavo-Cruz-Martinez_62739"
     },
     "Gustavo Enrique García de Jesús": {
-      "name": "Gustavo Enrique García de Jesus",
-      "rating": 9.3,
-      "commentCount": 4,
-      "id": "79188",
-      "url": "https://www.misprofesores.com/profesores/Gustavo-de-Jesus_79188"
+      "name": "Gustavo Enrique García de Jesús",
+      "rating": 8.6,
+      "commentCount": 21,
+      "id": "52550",
+      "url": "https://www.misprofesores.com/profesores/Gustavo-de-Jesus_52550"
     },
     "Gustavo Meléndez Valentin": null,
     "Gustavo Pacheco Santiago": null,
@@ -4483,10 +4501,10 @@
     },
     "Joel García León": {
       "name": "Joel García León",
-      "rating": 8,
-      "commentCount": 1,
-      "id": "99797",
-      "url": "https://www.misprofesores.com/profesores/Joel-Garcia-Leon_99797"
+      "rating": 6.9,
+      "commentCount": 60,
+      "id": "50830",
+      "url": "https://www.misprofesores.com/profesores/Joel-Garcia-Leon_50830"
     },
     "Joel Gómez Uribe": null,
     "Joel Rubalcava González": null,
@@ -4529,13 +4547,7 @@
       "url": "https://www.misprofesores.com/profesores/Jorge-Escutia-Sanchez_179271"
     },
     "Jorge Alberto Manero Orozco": null,
-    "Jorge Alfonso García Macedo": {
-      "name": "Jorge García Macedo",
-      "rating": 5.8,
-      "commentCount": 15,
-      "id": "38279",
-      "url": "https://www.misprofesores.com/profesores/Jorge-Garcia-Macedo_38279"
-    },
+    "Jorge Alfonso García Macedo": null,
     "Jorge Alonso Santos Mellado": {
       "name": "Jorge Alonso Santos Mellado",
       "rating": 9.3,
@@ -4560,10 +4572,10 @@
     },
     "Jorge Arturo Martínez Villegas": {
       "name": "Jorge Arturo Martínez Villegas",
-      "rating": 9.8,
-      "commentCount": 4,
-      "id": "94509",
-      "url": "https://www.misprofesores.com/profesores/Jorge-Martinez-Villegas_94509"
+      "rating": 9.5,
+      "commentCount": 20,
+      "id": "72630",
+      "url": "https://www.misprofesores.com/profesores/Jorge-Martinez-Villegas_72630"
     },
     "Jorge Arturo Quiroz Cabrera": null,
     "Jorge Barragán Argüero": null,
@@ -4642,11 +4654,11 @@
       "url": "https://www.misprofesores.com/profesores/Jorge-Moreno-Montes_83974"
     },
     "Jorge Pérez López": {
-      "name": "Jorge Pérez López",
-      "rating": 7.3,
-      "commentCount": 28,
-      "id": "42578",
-      "url": "https://www.misprofesores.com/profesores/Jorge-Perez-Lopez_42578"
+      "name": "Jorge Luis Pérez López",
+      "rating": 8.5,
+      "commentCount": 2,
+      "id": "81050",
+      "url": "https://www.misprofesores.com/profesores/Jorge-Perez-Lopez_81050"
     },
     "Jorge Ramón Soto Mercado": {
       "name": "Jorge Ramón Soto Mercado",
@@ -5145,11 +5157,11 @@
       "url": "https://www.misprofesores.com/profesores/Jose-Vega-Martinez_176743"
     },
     "José Román Latournerié Cervera": {
-      "name": "José Román Latournerié Cervera",
-      "rating": 5.6,
-      "commentCount": 8,
-      "id": "112369",
-      "url": "https://www.misprofesores.com/profesores/Jose-Latournerie-Cervera_112369"
+      "name": "José Román Latournerie Cervera",
+      "rating": 7.3,
+      "commentCount": 3,
+      "id": "101944",
+      "url": "https://www.misprofesores.com/profesores/Jose-Latournerie-Cervera_101944"
     },
     "José Rufino Díaz Uribe": {
       "name": "José Rufino Díaz Uribe",
@@ -5649,10 +5661,10 @@
     "Lenin Pavón Alvarez": null,
     "Leobardo Fernández Román": {
       "name": "Leobardo Fernández Román",
-      "rating": 9.2,
-      "commentCount": 36,
-      "id": "35724",
-      "url": "https://www.misprofesores.com/profesores/Leobardo-Fernandez-Roman_35724"
+      "rating": 9.7,
+      "commentCount": 11,
+      "id": "36053",
+      "url": "https://www.misprofesores.com/profesores/Leobardo-Fernandez-Roman_36053"
     },
     "Leobardo Terpán Acuña": null,
     "Leonardo Faustinos Morales": {
@@ -5780,11 +5792,11 @@
     },
     "Lissette Irene Torres Avelar": null,
     "Livia Socorro León Paniagua": {
-      "name": "Livia Socorro Leon Paniagua",
-      "rating": 9,
-      "commentCount": 1,
-      "id": "104209",
-      "url": "https://www.misprofesores.com/profesores/Livia-Leon-Paniagua_104209"
+      "name": "Livia León Paniagua",
+      "rating": 9.9,
+      "commentCount": 13,
+      "id": "52324",
+      "url": "https://www.misprofesores.com/profesores/Livia-Leon-Paniagua_52324"
     },
     "Lizbeth Naranjo Albarrán": {
       "name": "Lizbeth Naranjo",
@@ -6952,7 +6964,13 @@
       "url": "https://www.misprofesores.com/profesores/Maria-Serrano-Sanchez_83895"
     },
     "María de Lourdes Tavera Sierra": null,
-    "María de la Asunción Preisser Rodríguez": null,
+    "María de la Asunción Preisser Rodríguez": {
+      "name": "María de la Asunción Preisser Rodríguez",
+      "rating": 7.5,
+      "commentCount": 19,
+      "id": "79408",
+      "url": "https://www.misprofesores.com/profesores/Maria-Preisser-Rodriguez_79408"
+    },
     "María de la Luz Espinosa Fuentes": {
       "name": "María de la Luz Espinosa Fuentes",
       "rating": 9.5,
@@ -7348,10 +7366,10 @@
     },
     "Miriam Sosa Díaz": {
       "name": "Miriam Sosa Díaz",
-      "rating": 7.1,
-      "commentCount": 66,
-      "id": "96527",
-      "url": "https://www.misprofesores.com/profesores/Miriam-Sosa-Diaz_96527"
+      "rating": 3.3,
+      "commentCount": 3,
+      "id": "170754",
+      "url": "https://www.misprofesores.com/profesores/Miriam-Sosa-Diaz_170754"
     },
     "Miriam Torres Bucio": null,
     "Mirna Villavicencio Torres": {
@@ -7783,11 +7801,11 @@
       "url": "https://www.misprofesores.com/profesores/Oscar-Palmas-Velasco_165016"
     },
     "Oscar Aranda Martínez": {
-      "name": "Oscar Aranda Martínez",
-      "rating": 6.1,
-      "commentCount": 65,
-      "id": "41748",
-      "url": "https://www.misprofesores.com/profesores/Oscar-Aranda-Martinez_41748"
+      "name": "Oscar Aranda Martinez",
+      "rating": 6.2,
+      "commentCount": 14,
+      "id": "41702",
+      "url": "https://www.misprofesores.com/profesores/Oscar-Aranda-Martinez_41702"
     },
     "Oscar Aristidez Martinez Salas": {
       "name": "Oscar Aristidez Martinez Salas",
@@ -8819,10 +8837,10 @@
     "Sandra Castañón Alonso": null,
     "Sandra Castro Santiuste": {
       "name": "Sandra Castro Santiuste",
-      "rating": 9,
-      "commentCount": 30,
-      "id": "51796",
-      "url": "https://www.misprofesores.com/profesores/Sandra-Castro-Santiuste_51796"
+      "rating": 10,
+      "commentCount": 1,
+      "id": "62133",
+      "url": "https://www.misprofesores.com/profesores/Sandra-Castro-Santiuste_62133"
     },
     "Sandra Cristina Ramos García": {
       "name": "Sandra Cristina Ramos García",
@@ -9785,9 +9803,9 @@
   },
   "statistics": {
     "processed": 2248,
-    "found": 1255,
-    "notFound": 993,
-    "foundWithFallback": 37,
-    "foundWithMainTemplate": 1218
+    "found": 1254,
+    "notFound": 994,
+    "foundWithFallback": 38,
+    "foundWithMainTemplate": 1216
   }
 }
