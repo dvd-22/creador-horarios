@@ -1,5 +1,10 @@
 import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 import Papa from "papaparse";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const MAJORS = [
 	"actuaria",
@@ -186,8 +191,15 @@ async function convertAllCsvsToJson() {
 	console.log("🔄 Converting all CSV files to JSON...");
 
 	for (const major of MAJORS) {
-		const csvPath = `./${major}.csv`;
-		const jsonPath = `./src/data/${major}.json`;
+		const csvPath = path.resolve(__dirname, "..", "..", `${major}.csv`);
+		const jsonPath = path.resolve(
+			__dirname,
+			"..",
+			"..",
+			"src",
+			"data",
+			`${major}.json`
+		);
 
 		if (fs.existsSync(csvPath)) {
 			convertCsvToJson(csvPath, jsonPath);

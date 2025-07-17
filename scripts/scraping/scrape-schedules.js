@@ -1,6 +1,11 @@
 import puppeteer from "puppeteer";
 import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 import { createObjectCsvWriter } from "csv-writer";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const MAJORS_CONFIG = {
 	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20261/1556":
@@ -24,8 +29,9 @@ const MAJORS_CONFIG = {
 async function scrapeSchedules() {
 	console.log("🔍 Starting schedule scraping...");
 
-	// Read the materias data
-	const materiasData = JSON.parse(fs.readFileSync("./materias.json", "utf8"));
+	// Read the materias data (resolve path relative to project root)
+	const materiasPath = path.resolve(__dirname, "..", "..", "materias.json");
+	const materiasData = JSON.parse(fs.readFileSync(materiasPath, "utf8"));
 
 	const browser = await puppeteer.launch({
 		headless: true,
@@ -78,7 +84,7 @@ async function scrapeSchedules() {
 			try {
 				await page.goto(url, {
 					waitUntil: "domcontentloaded",
-					timeout: 15000,
+					timeout: 45000, // Increased timeout for GitHub Actions
 				});
 
 				// Get subject name and semester
@@ -245,9 +251,10 @@ async function scrapeSchedules() {
 			}
 		}
 
-		// Save CSV for this major
+		// Save CSV for this major (resolve path relative to project root)
+		const csvPath = path.resolve(__dirname, "..", "..", `${majorName}.csv`);
 		const csvWriter = createObjectCsvWriter({
-			path: `./${majorName}.csv`,
+			path: csvPath,
 			header: [
 				{ id: "semestre", title: "semestre" },
 				{ id: "materia", title: "materia" },
@@ -276,8 +283,6 @@ async function scrapeSchedules() {
 }
 
 // Run if this file is executed directly
-if (import.meta.url === `file://${process.argv[1]}`) {
-	scrapeSchedules().catch(console.error);
-}
+scrapeSchedules().catch(console.error);
 
 export default scrapeSchedules;

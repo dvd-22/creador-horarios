@@ -1,8 +1,12 @@
 import puppeteer from "puppeteer";
 import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 import createCsvWriter from "csv-writer";
 
 const { createObjectCsvWriter } = createCsvWriter;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const MAJORS_CONFIG = {
 	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20261/1556":
@@ -84,8 +88,9 @@ async function scrapeMaterias() {
 	await browser.close();
 
 	// Save to CSV
+	const csvPath = path.resolve(__dirname, "..", "..", "materias.csv");
 	const csvWriter = createObjectCsvWriter({
-		path: "./materias.csv",
+		path: csvPath,
 		header: [
 			{ id: "web-scraper-order", title: "web-scraper-order" },
 			{ id: "web-scraper-start-url", title: "web-scraper-start-url" },
@@ -98,7 +103,8 @@ async function scrapeMaterias() {
 	console.log(`📁 Saved ${allMaterias.length} materias to materias.csv`);
 
 	// Also save as JSON for easier processing
-	fs.writeFileSync("./materias.json", JSON.stringify(allMaterias, null, 2));
+	const jsonPath = path.resolve(__dirname, "..", "..", "materias.json");
+	fs.writeFileSync(jsonPath, JSON.stringify(allMaterias, null, 2));
 	console.log("📁 Saved materias.json");
 }
 
