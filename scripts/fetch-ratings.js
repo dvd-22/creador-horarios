@@ -92,10 +92,25 @@ const fetchProfessorRating = (professorName, template) => {
 			const match = template.match(regEx);
 			if (match && match[0]) {
 				const profObject = JSON.parse(match[0]);
+
+				// Validate the professor data
+				const rating = parseFloat(profObject.c);
+				const commentCount = parseInt(profObject.m);
+
+				// Only return valid data
+				if (
+					isNaN(rating) ||
+					isNaN(commentCount) ||
+					rating <= 0 ||
+					commentCount <= 0
+				) {
+					return null;
+				}
+
 				return {
 					name: profObject.n + " " + profObject.a,
-					rating: Math.round(parseFloat(profObject.c) * 10) / 10,
-					commentCount: parseInt(profObject.m),
+					rating: Math.round(rating * 10) / 10,
+					commentCount: commentCount,
 					id: profObject.i,
 					url: getProfessorUrl(firstName, lastName, profObject.i),
 				};
@@ -115,7 +130,7 @@ const main = async () => {
 	try {
 		console.log("🔍 Starting professor ratings fetch...");
 
-		const outputDir = path.join(__dirname, "..", "data");
+		const outputDir = path.join(__dirname, "..", "public", "data");
 
 		// Ensure output directory exists
 		if (!fs.existsSync(outputDir)) {
@@ -146,8 +161,8 @@ const main = async () => {
 			).toLocaleString()}`
 		);
 
-		// Fetch the template from MisProfesores.com
-		console.log("🌐 Fetching template from MisProfesores.com...");
+		// Fetch the template from MisProfesores.com (Facultad de Ciencias)
+		console.log("🌐 Fetching template from Facultad de Ciencias...");
 		const response = await axios.get(
 			"https://www.misprofesores.com/escuelas/Facultad-de-Ciencias-UNAM_2842",
 			{
@@ -166,19 +181,55 @@ const main = async () => {
 
 		const template = response.data;
 		console.log(
-			`✅ Template fetched successfully (${template.length} characters)`
+			`✅ Facultad de Ciencias template fetched successfully (${template.length} characters)`
+		);
+
+		// Fetch the fallback template from UNAM general page
+		console.log("🌐 Fetching fallback template from UNAM general page...");
+		const fallbackResponse = await axios.get(
+			"https://www.misprofesores.com/escuelas/UNAM_1059",
+			{
+				timeout: 60000, // 60 second timeout
+				headers: {
+					"User-Agent":
+						"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+					Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+					"Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+					"Accept-Encoding": "gzip, deflate, br",
+					Connection: "keep-alive",
+					"Upgrade-Insecure-Requests": "1",
+				},
+			}
+		);
+
+		const fallbackTemplate = fallbackResponse.data;
+		console.log(
+			`✅ UNAM fallback template fetched successfully (${fallbackTemplate.length} characters)`
 		);
 
 		// Process all professors
 		const ratings = {};
 		let processed = 0;
 		let found = 0;
+		let foundWithFallback = 0;
 		const foundProfessors = [];
 
 		console.log("🔄 Processing professors...");
 
 		for (const professorName of professors) {
-			const rating = fetchProfessorRating(professorName, template);
+			// First try with the main template (Facultad de Ciencias)
+			let rating = fetchProfessorRating(professorName, template);
+			let source = "Facultad de Ciencias";
+
+			// If not found, try with the fallback template (UNAM general)
+			if (!rating) {
+				rating = fetchProfessorRating(professorName, fallbackTemplate);
+				if (rating) {
+					foundWithFallback++;
+					source = "UNAM General";
+				}
+			}
+
 			ratings[professorName] = rating;
 
 			if (rating) {
@@ -187,12 +238,13 @@ const main = async () => {
 					name: professorName,
 					rating: rating.rating,
 					comments: rating.commentCount,
+					source: source,
 				});
 
 				if (found <= 10) {
 					// Show first 10 found ratings
 					console.log(
-						`⭐ ${professorName}: ${rating.rating}/10 (${rating.commentCount} comentarios)`
+						`⭐ ${professorName}: ${rating.rating}/10 (${rating.commentCount} comentarios) [${source}]`
 					);
 				}
 			}
@@ -201,7 +253,7 @@ const main = async () => {
 
 			if (processed % 100 === 0) {
 				console.log(
-					`📈 Processed ${processed}/${professors.length} professors (${found} ratings found)`
+					`📈 Processed ${processed}/${professors.length} professors (${found} ratings found, ${foundWithFallback} via fallback)`
 				);
 			}
 		}
@@ -218,6 +270,8 @@ const main = async () => {
 				processed: processed,
 				found: found,
 				notFound: processed - found,
+				foundWithFallback: foundWithFallback,
+				foundWithMainTemplate: found - foundWithFallback,
 			},
 		};
 
@@ -228,6 +282,10 @@ const main = async () => {
 		console.log(
 			`⭐ Ratings found: ${found} (${ratingsData.foundPercentage}%)`
 		);
+		console.log(
+			`   - Found with main template: ${found - foundWithFallback}`
+		);
+		console.log(`   - Found with fallback template: ${foundWithFallback}`);
 		console.log(`📁 Ratings saved to ${ratingsPath}`);
 
 		// Show top rated professors
@@ -240,7 +298,7 @@ const main = async () => {
 					console.log(
 						`   ${index + 1}. ${prof.name}: ${prof.rating}/10 (${
 							prof.comments
-						} comentarios)`
+						} comentarios) [${prof.source}]`
 					);
 				});
 		}

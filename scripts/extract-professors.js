@@ -3,7 +3,7 @@ const path = require("path");
 
 const extractProfessors = () => {
 	const srcDataDir = path.join(__dirname, "..", "src", "data");
-	const outputDir = path.join(__dirname, "..", "data");
+	const outputDir = path.join(__dirname, "..", "public", "data");
 	const professorSet = new Set(); // Use Set to avoid duplicates
 
 	console.log("📂 Extracting professors from data files...");
