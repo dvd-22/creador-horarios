@@ -20,29 +20,39 @@ class ProfessorRatingService {
 
 	async fetchStaticRatings() {
 		try {
-			console.log('📊 Loading static professor ratings...');
-			
-			// Fetch from the data folder (same level as src)
-			const response = await fetch('/data/ratings.json');
-			
+			console.log("📊 Loading static professor ratings...");
+
+			// Fetch from the public/data folder (served by GitHub Pages)
+			const response = await fetch("/data/ratings.json");
+
 			if (!response.ok) {
-				throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+				throw new Error(
+					`HTTP ${response.status}: ${response.statusText}`
+				);
 			}
-			
+
 			this.ratingsData = await response.json();
 			this.isLoaded = true;
-			
-			console.log(`✅ Loaded ${this.ratingsData.ratingsFound || 0} professor ratings`);
-			console.log(`📅 Last updated: ${new Date(this.ratingsData.lastUpdated).toLocaleDateString()}`);
-			
+
+			console.log(
+				`✅ Loaded ${
+					this.ratingsData.ratingsFound || 0
+				} professor ratings`
+			);
+			console.log(
+				`📅 Last updated: ${new Date(
+					this.ratingsData.lastUpdated
+				).toLocaleDateString()}`
+			);
+
 			return this.ratingsData;
 		} catch (error) {
-			console.warn('⚠️ Failed to load static ratings:', error);
-			this.ratingsData = { 
+			console.warn("⚠️ Failed to load static ratings:", error);
+			this.ratingsData = {
 				ratings: {},
 				lastUpdated: new Date().toISOString(),
 				totalProfessors: 0,
-				ratingsFound: 0
+				ratingsFound: 0,
 			};
 			this.isLoaded = true;
 			return this.ratingsData;
@@ -71,7 +81,7 @@ class ProfessorRatingService {
 		}
 
 		// Return ratings for all requested professors
-		return professorNames.map(name => 
+		return professorNames.map((name) =>
 			name ? this.ratingsData.ratings[name] || null : null
 		);
 	}
