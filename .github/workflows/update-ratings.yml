@@ -44,7 +44,7 @@ jobs:
               run: |
                   git config --local user.email "action@github.com"
                   git config --local user.name "GitHub Action"
-                  git add data/professors.json data/ratings.json
+                  git add public/data/professors.json public/data/ratings.json
                   if ! git diff --staged --quiet; then
                     git commit -m "Update professor ratings - $(date '+%Y-%m-%d %H:%M:%S')"
                     git push
