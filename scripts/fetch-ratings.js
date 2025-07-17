@@ -1,6 +1,10 @@
-const axios = require("axios");
-const fs = require("fs");
-const path = require("path");
+import axios from "axios";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // Helper functions from your existing Netlify function
 const getFirstName = (name) => {
@@ -315,8 +319,6 @@ const main = async () => {
 };
 
 // Run the main function if this file is executed directly
-if (require.main === module) {
-	main();
-}
+main();
 
-module.exports = main;
+export default main;

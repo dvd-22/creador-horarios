@@ -1,5 +1,9 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const extractProfessors = () => {
 	const srcDataDir = path.join(__dirname, "..", "src", "data");
@@ -123,8 +127,6 @@ const extractProfessors = () => {
 };
 
 // Run the extraction if this file is executed directly
-if (require.main === module) {
-	extractProfessors();
-}
+extractProfessors();
 
-module.exports = extractProfessors;
+export default extractProfessors;
