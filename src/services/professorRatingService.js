@@ -23,7 +23,9 @@ class ProfessorRatingService {
 			console.log("📊 Loading static professor ratings...");
 
 			// Fetch from the public/data folder (served by GitHub Pages)
-			const response = await fetch("/data/ratings.json");
+			const response = await fetch(
+				`${import.meta.env.BASE_URL}data/ratings.json`
+			);
 
 			if (!response.ok) {
 				throw new Error(
