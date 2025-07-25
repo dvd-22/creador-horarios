@@ -239,6 +239,66 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365572"
+      },
+      "8426": {
+        "grupo": "8426",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "20:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "8428": {
+        "grupo": "8428",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "20:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     },
@@ -2843,7 +2903,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365244"
       },
       "4080": {
         "grupo": "4080",
@@ -2873,7 +2933,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365246"
       },
       "4356": {
         "grupo": "4356",
@@ -3757,7 +3817,7 @@
         "nota": null,
         "salon": "Laboratorio de Mecánica I",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365606"
       },
       "8126": {
         "grupo": "8126",
@@ -3786,7 +3846,7 @@
         "nota": null,
         "salon": "Laboratorio de Mecánica I",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365607"
       },
       "8127": {
         "grupo": "8127",
@@ -3844,7 +3904,7 @@
         "nota": null,
         "salon": "Laboratorio de Mecánica I",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365609"
       }
     },
     "Mecánica Vectorial": {
@@ -4068,7 +4128,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365298"
       },
       "4122": {
         "grupo": "4122",
@@ -4488,7 +4548,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365312"
       },
       "4136": {
         "grupo": "4136",
@@ -4854,7 +4914,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365322"
       },
       "4146": {
         "grupo": "4146",
@@ -5423,7 +5483,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365338"
       },
       "4162": {
         "grupo": "4162",
@@ -7536,7 +7596,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365658"
       },
       "8178": {
         "grupo": "8178",
@@ -8839,7 +8899,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365415"
       }
     }
   },
@@ -12129,7 +12189,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365421"
       },
       "4232": {
         "grupo": "4232",
@@ -12251,7 +12311,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365261"
       },
       "4095": {
         "grupo": "4095",
@@ -13111,7 +13171,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365792"
       }
     },
     "Astrofísica General": {
@@ -13503,7 +13563,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365804"
       }
     },
     "Física de las Relaciones Sol Tierra": {
@@ -13738,7 +13798,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365250"
       },
       "4084": {
         "grupo": "4084",
@@ -13918,7 +13978,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365256"
       },
       "4090": {
         "grupo": "4090",
@@ -15674,7 +15734,7 @@
         "nota": "Mecánica Cuántica Avanzada",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365864"
       },
       "8400": {
         "grupo": "8400",
