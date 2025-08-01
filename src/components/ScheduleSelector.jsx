@@ -215,20 +215,21 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
         {/* Location and Modality Info */}
         {(groupData?.salon || groupData?.modalidad) && (
           <div className="flex flex-wrap gap-x-2 mb-1 text-xs">
-            {groupData?.salon && (
+            {groupData?.salon ? (
+              // If classroom is available, show only the classroom
               <span className="bg-gray-700 text-gray-200 px-2 py-0.5 rounded">
                 <span className="mr-1">🏫</span>
                 {highlightText(groupData.salon, searchQuery)}
               </span>
-            )}
-            {groupData?.modalidad && (
+            ) : groupData?.modalidad ? (
+              // If no classroom but modality exists, show modality
               <span className="bg-gray-700 text-gray-200 px-2 py-0.5 rounded">
                 <span className="mr-1">
                   {groupData.modalidad === "Presencial" ? "👨‍🏫" : "💻"}
                 </span>
                 {highlightText(groupData.modalidad, searchQuery)}
               </span>
-            )}
+            ) : null}
           </div>
         )}
 
