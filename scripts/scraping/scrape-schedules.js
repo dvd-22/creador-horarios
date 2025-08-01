@@ -89,6 +89,9 @@ async function scrapeSchedules() {
 				page = await browser.newPage();
 				pageCreated = true;
 
+				// Set viewport to reduce memory usage
+				await page.setViewport({ width: 1024, height: 768 });
+
 				let retryCount = 0;
 				const maxRetries = 3;
 				let pageLoaded = false;
@@ -291,7 +294,13 @@ async function scrapeSchedules() {
 				);
 			} finally {
 				if (pageCreated && page) {
-					await page.close();
+					try {
+						await page.close();
+					} catch (closeError) {
+						console.warn(
+							`⚠️ Warning closing page: ${closeError.message}`
+						);
+					}
 				}
 			}
 
@@ -326,6 +335,9 @@ async function scrapeSchedules() {
 		console.log(
 			`✅ Saved ${scheduleData.length} schedule entries for ${majorName}`
 		);
+
+		// Add a small delay between majors
+		await new Promise((resolve) => setTimeout(resolve, 1000));
 	}
 
 	await browser.close();
