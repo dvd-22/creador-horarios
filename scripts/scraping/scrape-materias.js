@@ -40,6 +40,11 @@ async function scrapeMaterias() {
 			"--disable-plugins",
 			"--disable-images",
 			"--no-first-run",
+			"--disable-background-timer-throttling",
+			"--disable-backgrounding-occluded-windows",
+			"--disable-renderer-backgrounding",
+			"--memory-pressure-off",
+			"--max_old_space_size=4096",
 		],
 	});
 
@@ -48,10 +53,50 @@ async function scrapeMaterias() {
 	for (const [url, majorName] of Object.entries(MAJORS_CONFIG)) {
 		console.log(`📚 Scraping ${majorName}...`);
 
-		const page = await browser.newPage();
+		let page;
+		let pageCreated = false;
+		let shouldSkip = false;
 
 		try {
-			await page.goto(url, { waitUntil: "networkidle2", timeout: 30000 });
+			page = await browser.newPage();
+			pageCreated = true;
+
+			let retryCount = 0;
+			const maxRetries = 3;
+			let pageLoaded = false;
+
+			while (retryCount < maxRetries && !pageLoaded) {
+				try {
+					await page.goto(url, {
+						waitUntil: "networkidle2",
+						timeout: 30000,
+					});
+					pageLoaded = true;
+				} catch (error) {
+					retryCount++;
+
+					if (retryCount >= maxRetries) {
+						console.error(
+							`❌ Error scraping ${majorName} after ${maxRetries} attempts:`,
+							error.message
+						);
+						shouldSkip = true;
+						break;
+					}
+
+					console.warn(
+						`⚠️ Retry ${retryCount}/${maxRetries} for ${majorName}: ${error.message}`
+					);
+					await new Promise((resolve) =>
+						setTimeout(resolve, 2000 * retryCount)
+					); // Progressive delay
+				}
+			}
+
+			// Skip this major if all retries failed
+			if (shouldSkip || !pageLoaded) {
+				continue;
+			}
 
 			// Wait for the subject links to load
 			await page.waitForSelector(".grupoplan_a", { timeout: 10000 });
@@ -79,10 +124,18 @@ async function scrapeMaterias() {
 				`✅ Found ${subjects.length} subjects for ${majorName}`
 			);
 		} catch (error) {
-			console.error(`❌ Error scraping ${majorName}:`, error);
+			console.error(
+				`❌ Error processing ${majorName} data:`,
+				error.message
+			);
 		} finally {
-			await page.close();
+			if (pageCreated && page) {
+				await page.close();
+			}
 		}
+
+		// Add a small delay between requests to be respectful to the server
+		await new Promise((resolve) => setTimeout(resolve, 1000));
 	}
 
 	await browser.close();
