@@ -19,35 +19,42 @@ const ExportLayout = forwardRef(({ selectedGroups, schedule }, ref) => {
                 </div>
                 <div className="w-64 bg-gray-900 p-4">
                     <h3 className="text-lg font-medium text-gray-100 mb-2">Materias Seleccionadas:</h3>
-                    <div className="space-y-3">
+                    <div className="space-y-2">
                         {selectedGroups.map((group, index) => (
                             <div key={index} className="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
-                                <div className="p-3 bg-gray-750 border-b border-gray-700">
+                                <div className="p-2 bg-gray-800 border-b border-gray-700">
                                     <div>
                                         <h4 className="font-medium text-gray-100">{group.subject}</h4>
                                         <div className="flex items-center space-x-2 text-sm">
                                             <span className="text-gray-400">Grupo {group.group}</span>
                                             {group.professor.nombre && (
-                                                <>
-                                                    <span className="text-gray-400">• {group.professor.nombre}</span>
-                                                    <ProfessorRating
-                                                        professorName={group.professor.nombre}
-                                                        className="text-xs"
-                                                    />
-                                                </>
+                                                <span className="text-gray-400">• {group.professor.nombre}</span>
                                             )}
                                         </div>
                                     </div>
                                 </div>
-                                {group.salon && (
-                                    <div className="px-3 py-2 text-xs flex items-center text-gray-300">
-                                        <span className="mr-1">🏫</span>
-                                        <span>{group.salon}</span>
-                                        {group.modalidad && (
-                                            <span className="ml-2">
-                                                <span className="mr-1">{group.modalidad === "Presencial" ? "👨‍🏫" : "💻"}</span>
-                                                {group.modalidad}
-                                            </span>
+                                {(group.salon || group.modalidad || group.professor.nombre) && (
+                                    <div className="px-2 py-1 text-xs flex items-center justify-between text-gray-300">
+                                        <div className="flex items-center">
+                                            {group.salon ? (
+                                                // If classroom is available, show only the classroom
+                                                <>
+                                                    <span className="mr-1">🏫</span>
+                                                    <span>{group.salon}</span>
+                                                </>
+                                            ) : group.modalidad ? (
+                                                // If no classroom but modality exists, show modality
+                                                <>
+                                                    <span className="mr-1">{group.modalidad === "Presencial" ? "👨‍🏫" : "💻"}</span>
+                                                    <span>{group.modalidad}</span>
+                                                </>
+                                            ) : null}
+                                        </div>
+                                        {group.professor.nombre && (
+                                            <ProfessorRating
+                                                professorName={group.professor.nombre}
+                                                className="text-xs"
+                                            />
                                         )}
                                     </div>
                                 )}

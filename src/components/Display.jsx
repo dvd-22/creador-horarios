@@ -3,6 +3,7 @@ import ScheduleSelector from './ScheduleSelector';
 import ExportLayout from './ExportLayout';
 import ScheduleViewer from './ScheduleViewer';
 import SelectedGroupsPanel from './SelectedGroupsPanel';
+import ResizablePanels from './ResizablePanels';
 import { saveScheduleAsPng } from '../utils/scheduleUtils';
 import SavePopup from './SavePopup';
 import { MajorProvider } from '../contexts/MajorContext';
@@ -408,7 +409,7 @@ const Display = () => {
 
     return (
         <MajorProvider>
-            <div className="flex h-[100dvh] overflow-hidden">
+            <div className="flex h-[100dvh] w-full overflow-hidden">
                 {conflictAlert && (
                     <CustomAlert
                         message={conflictAlert}
@@ -439,33 +440,43 @@ const Display = () => {
                         </div>
                     </div>
                 )}
-                <div className="w-80 flex-shrink-0 flex flex-col">
-                    <div className="flex-1 flex flex-col overflow-hidden">
-                        <ScheduleSelector
-                            onGroupSelect={handleGroupSelect}
+
+                <ResizablePanels
+                    leftPanel={
+                        <div className="flex flex-col h-full">
+                            <div className="flex-1 flex flex-col overflow-hidden">
+                                <ScheduleSelector
+                                    onGroupSelect={handleGroupSelect}
+                                    selectedGroups={selectedGroups}
+                                />
+                            </div>
+                            <OverlapToggle
+                                checked={allowOverlap}
+                                onChange={handleToggleOverlap}
+                            />
+                        </div>
+                    }
+                    centerPanel={
+                        <div className="overflow-hidden" ref={scheduleRef}>
+                            <ScheduleViewer
+                                selectedGroups={selectedGroups}
+                                onRemoveGroup={handleGroupSelect}
+                                scheduleName={scheduleTitle}
+                            />
+                        </div>
+                    }
+                    rightPanel={
+                        <SelectedGroupsPanel
                             selectedGroups={selectedGroups}
+                            onRemoveGroup={handleGroupSelect}
+                            onSaveSchedule={handleSaveSchedule}
+                            setShowSavePopup={setShowSavePopup}
+                            scheduleTitle={scheduleTitle}
+                            onTitleChange={handleTitleChange}
                         />
-                    </div>
-                    <OverlapToggle
-                        checked={allowOverlap}
-                        onChange={handleToggleOverlap}
-                    />
-                </div>
-                <div className="flex-1 overflow-hidden" ref={scheduleRef}>
-                    <ScheduleViewer
-                        selectedGroups={selectedGroups}
-                        onRemoveGroup={handleGroupSelect}
-                        scheduleName={scheduleTitle} // Pass the title to ScheduleViewer
-                    />
-                </div>
-                <SelectedGroupsPanel
-                    selectedGroups={selectedGroups}
-                    onRemoveGroup={handleGroupSelect}
-                    onSaveSchedule={handleSaveSchedule}
-                    setShowSavePopup={setShowSavePopup}
-                    scheduleTitle={scheduleTitle}
-                    onTitleChange={handleTitleChange}
+                    }
                 />
+
                 <ExportLayout
                     ref={exportRef}
                     selectedGroups={selectedGroups}

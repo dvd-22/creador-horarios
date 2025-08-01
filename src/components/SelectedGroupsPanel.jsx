@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { createEvents } from 'ics';
 import { useMajorContext } from '../contexts/MajorContext';
-import { ChevronLeft, ChevronRight, Edit2 } from 'lucide-react';
+import { Edit2 } from 'lucide-react';
 import ProfessorRating from './ProfessorRating';
 
 
@@ -49,32 +49,12 @@ const timeToMinutes = (time) => {
   return hours * 60 + minutes;
 };
 
-
-const getMajorColorClass = (majorId) => {
-  switch (majorId) {
-    case 'cs':
-      return 'bg-gray-600';
-    case 'math':
-      return 'bg-purple-500';
-    case 'physics':
-      return 'bg-yellow-500';
-    case 'ap-math':
-      return 'bg-orange-500';
-    case 'actuary':
-      return 'bg-blue-500';
-    case 'biology':
-      return 'bg-green-700';
-    default:
-      return 'bg-gray-600';
-  }
-};
-
 const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, setShowSavePopup, scheduleTitle, onTitleChange, isMobile = false }) => {
   const { availableMajors } = useMajorContext();
   const [isNaming, setIsNaming] = useState(false);
   const [isEditingTitle, setIsEditingTitle] = useState(false);
   const [tempTitle, setTempTitle] = useState(scheduleTitle);
-  const [isCollapsed, setIsCollapsed] = useState(false);
+
 
   const subjectColors = useMemo(() => {
     const uniqueSubjects = [...new Set(selectedGroups.map(group => group.subject))];
@@ -282,180 +262,168 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
     });
   };
 
-  // Toggle panel collapse state
-  const toggleCollapse = () => {
-    setIsCollapsed(!isCollapsed);
-  };
+
 
   return (
-    <div className={`transition-all duration-300 bg-gray-900 flex flex-col relative ${isMobile
-        ? 'h-full border-t border-gray-700'
-        : `border-l border-gray-700 ${isCollapsed ? 'w-12' : 'w-64'}`
+    <div className={`transition-all duration-300 bg-gray-900 flex flex-col relative h-full ${isMobile
+      ? 'border-t border-gray-700'
+      : 'border-l border-gray-700'
       }`}>
 
-      {!isMobile && (
-        <button
-          onClick={toggleCollapse}
-          className="absolute -left-4 top-4 bg-gray-800 text-gray-400 hover:text-gray-100 p-1 rounded-l-md border border-gray-700 border-r-0 z-10"
-          aria-label={isCollapsed ? "Expand panel" : "Collapse panel"}
-        >
-          {isCollapsed ? <ChevronLeft size={14} /> : <ChevronRight size={14} />}
-        </button>
-      )}
 
-      {!isMobile && isCollapsed ? (
-        <div className="flex flex-col items-center py-4 space-y-4">
-          <div
-            className="text-gray-400 text-xs"
-            style={{
-              writingMode: 'vertical-rl',
-              transform: 'rotate(180deg)'
-            }}
-          >
-            Materias
-          </div>
-          <div className="bg-blue-500 rounded-full w-6 h-6 flex items-center justify-center text-xs text-white font-medium">
-            {selectedGroups.length}
-          </div>
-        </div>
-      ) : (
-        <>
-          {/* Schedule Title Section */}
-          <div className="p-4 border-b border-gray-700">
-            {isEditingTitle ? (
-              <div className="space-y-2">
-                <input
-                  type="text"
-                  value={tempTitle}
-                  onChange={(e) => setTempTitle(e.target.value)}
-                  onKeyDown={handleTitleKeyPress}
-                  className="w-full p-2 bg-gray-800 border border-gray-600 rounded text-gray-100 text-sm focus:outline-none focus:border-blue-500"
-                  autoFocus
-                  autoComplete="off"
-                />
-                <div className="flex space-x-2">
-                  <button
-                    onClick={handleTitleSave}
-                    className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded text-xs"
-                  >
-                    Guardar
-                  </button>
-                  <button
-                    onClick={handleTitleCancel}
-                    className="flex-1 bg-gray-700 hover:bg-gray-600 text-white py-1 px-3 rounded text-xs"
-                  >
-                    Cancelar
-                  </button>
-                </div>
-              </div>
-            ) : (
-              <div
-                className="flex items-center justify-between cursor-pointer group hover:bg-gray-800 rounded p-2 -m-2"
-                onClick={handleTitleEdit}
+
+      {/* Schedule Title Section */}
+      <div className="p-4 border-b border-gray-700">
+        {isEditingTitle ? (
+          <div className="space-y-2">
+            <input
+              type="text"
+              value={tempTitle}
+              onChange={(e) => setTempTitle(e.target.value)}
+              onKeyDown={handleTitleKeyPress}
+              className="w-full p-2 bg-gray-800 border border-gray-600 rounded text-gray-100 text-sm focus:outline-none focus:border-blue-500"
+              autoFocus
+              autoComplete="off"
+            />
+            <div className="flex space-x-2">
+              <button
+                onClick={handleTitleSave}
+                className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded text-xs"
               >
-                <div className="text-gray-100 font-medium text-lg group-hover:text-blue-400 transition-colors">
-                  {scheduleTitle}
-                </div>
-                <Edit2
-                  size={14}
-                  className="text-gray-400 group-hover:text-blue-400 transition-colors"
-                />
-              </div>
-            )}
+                Guardar
+              </button>
+              <button
+                onClick={handleTitleCancel}
+                className="flex-1 bg-gray-700 hover:bg-gray-600 text-white py-1 px-3 rounded text-xs"
+              >
+                Cancelar
+              </button>
+            </div>
           </div>
-
-          {/* Action Buttons Section */}
-          <div className="p-4 space-y-2 border-b border-gray-700">
-            <button
-              onClick={handleSave}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded"
-              disabled={selectedGroups.length === 0}
-            >
-              Guardar PNG
-            </button>
-            <button
-              onClick={handleExportICS}
-              className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded"
-              disabled={selectedGroups.length === 0}
-            >
-              Exportar ICS
-            </button>
+        ) : (
+          <div
+            className="flex items-center justify-between cursor-pointer group hover:bg-gray-800 rounded p-2 -m-2"
+            onClick={handleTitleEdit}
+          >
+            <div className="text-gray-100 font-medium text-lg group-hover:text-blue-400 transition-colors">
+              {scheduleTitle}
+            </div>
+            <Edit2
+              size={14}
+              className="text-gray-400 group-hover:text-blue-400 transition-colors"
+            />
           </div>
+        )}
+      </div>
 
-          <h3 className="text-lg font-medium text-gray-100 mb-2 px-4">Materias Seleccionadas:</h3>
-          <div className="space-y-2 overflow-y-auto flex-1 px-4">
-            {selectedGroups.map((group, index) => {
-              // Get major color using the fixed function
-              const majorId = group.majorId || 'cs';
-              const majorColorClass = getMajorColorClass(majorId);
+      {/* Action Buttons Section */}
+      <div className="p-4 space-y-2 border-b border-gray-700">
+        <button
+          onClick={handleSave}
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded"
+          disabled={selectedGroups.length === 0}
+        >
+          Guardar PNG
+        </button>
+        <button
+          onClick={handleExportICS}
+          className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded"
+          disabled={selectedGroups.length === 0}
+        >
+          Exportar ICS
+        </button>
+      </div>
 
-              return (
-                <div key={index} className="flex flex-col bg-gray-800 rounded">
-                  {/* Add major indicator */}
-                  <div className={`h-1 w-full ${majorColorClass} rounded-t`}></div>
-
-                  <div className="p-2">
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="flex-1">
-                        <span className="text-gray-100">{group.subject}</span>
-                        <span className="text-gray-400 ml-2">Grupo {group.group}</span>
-                        {group.professor.nombre && (
-                          <div className="flex items-center gap-2 mt-1">
-                            <span className="text-gray-400 text-sm">• {group.professor.nombre}</span>
-                            <ProfessorRating
-                              professorName={group.professor.nombre}
-                              className="text-xs"
-                            />
-                          </div>
-                        )}
-                      </div>
-                      <button
-                        onClick={() => onRemoveGroup(group.semester, group.subject, group.group, {
-                          profesor: group.professor,
-                          ayudantes: group.assistants
-                        })}
-                        className="text-red-400 hover:text-red-300 text-xs h-5 w-5 flex items-center justify-center rounded-full hover:bg-gray-700"
-                        aria-label="Eliminar materia"
-                      >
-                        ✕
-                      </button>
+      <h3 className="text-lg font-medium text-gray-100 mb-2 px-4">Materias Seleccionadas:</h3>
+      <div className="space-y-3 overflow-y-auto flex-1 px-4">
+        {selectedGroups.map((group, index) => {
+          return (
+            <div key={index} className="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
+              {/* Header section with subject, group, and professor */}
+              <div className="p-3 bg-gray-800 border-b border-gray-700">
+                <div className="flex items-center justify-between">
+                  <div className="flex-1">
+                    <h4 className="font-medium text-gray-100">{group.subject}</h4>
+                    <div className="flex items-center space-x-2 text-sm">
+                      <span className="text-gray-400">Grupo {group.group}</span>
+                      {group.professor.nombre && (
+                        <span className="text-gray-400">• {group.professor.nombre}</span>
+                      )}
                     </div>
-
-                    {group.presentacion && (
-                      <div className="mt-2">
-                        <button
-                          onClick={() => window.open(group.presentacion, '_blank', 'noopener,noreferrer')}
-                          className="inline-flex items-center px-2 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
-                        >
-                          <span className="mr-1">📄</span>
-                          Presentación
-                        </button>
-                      </div>
-                    )}
                   </div>
+                  <button
+                    onClick={() => onRemoveGroup(group.semester, group.subject, group.group, {
+                      profesor: group.professor,
+                      ayudantes: group.assistants
+                    })}
+                    className="text-red-400 hover:text-red-300 text-xs h-5 w-5 flex items-center justify-center rounded-full hover:bg-gray-700 ml-2"
+                    aria-label="Eliminar materia"
+                  >
+                    ✕
+                  </button>
                 </div>
-              );
-            })}
-            {selectedGroups.length === 0 && (
-              <p className="text-gray-500 text-center text-sm italic">
-                Aún no has seleccionado materias
-              </p>
-            )}
-          </div>
+              </div>
 
-          <div className="mt-4 text-center text-sm text-gray-400 px-4 pb-4">
-            Con ♥️ por Dvd22 - {' '}
-            <a
-              href="https://github.com/dvd-22/creador-horarios"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300"
-            >
-              Contribuye
-            </a>
-          </div>
-        </>
-      )}
+              {/* Classroom/Modality/Rating section */}
+              {(group.salon || group.modalidad || group.professor.nombre) && (
+                <div className="px-3 py-2 text-xs flex items-center justify-between text-gray-300">
+                  <div className="flex items-center">
+                    {group.salon ? (
+                      // If classroom is available, show only the classroom
+                      <>
+                        <span className="mr-1">🏫</span>
+                        <span>{group.salon}</span>
+                      </>
+                    ) : group.modalidad ? (
+                      // If no classroom but modality exists, show modality
+                      <>
+                        <span className="mr-1">{group.modalidad === "Presencial" ? "👨‍🏫" : "💻"}</span>
+                        <span>{group.modalidad}</span>
+                      </>
+                    ) : null}
+                  </div>
+                  {group.professor.nombre && (
+                    <ProfessorRating
+                      professorName={group.professor.nombre}
+                      className="text-xs"
+                    />
+                  )}
+                </div>
+              )}
+
+              {/* Presentation button section */}
+              {group.presentacion && (
+                <div className="px-3 pb-3">
+                  <button
+                    onClick={() => window.open(group.presentacion, '_blank', 'noopener,noreferrer')}
+                    className="inline-flex items-center px-2 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
+                  >
+                    <span className="mr-1">📄</span>
+                    Presentación
+                  </button>
+                </div>
+              )}
+            </div>
+          );
+        })}
+        {selectedGroups.length === 0 && (
+          <p className="text-gray-500 text-center text-sm italic">
+            Aún no has seleccionado materias
+          </p>
+        )}
+      </div>
+
+      <div className="mt-4 text-center text-sm text-gray-400 px-4 pb-4">
+        Con ♥️ por Dvd22 - {' '}
+        <a
+          href="https://github.com/dvd-22/creador-horarios"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-blue-300"
+        >
+          Contribuye
+        </a>
+      </div>
     </div>
   );
 };
