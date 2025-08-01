@@ -3069,7 +3069,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rivaldo Hérnandez Magdaleno",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -3099,7 +3099,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Daniel Hilario Montero García",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
@@ -5966,7 +5966,13 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Paulina Guzmán Ruíz",
+            "horario": null,
+            "dias": []
+          }
+        ],
         "nota": null,
         "salon": "P111",
         "modalidad": "Presencial",
