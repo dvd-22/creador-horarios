@@ -46,6 +46,8 @@ async function scrapeSchedules() {
 			"--disable-background-timer-throttling",
 			"--disable-backgrounding-occluded-windows",
 			"--disable-renderer-backgrounding",
+			"--memory-pressure-off",
+			"--max_old_space_size=4096",
 		],
 	});
 
@@ -79,13 +81,51 @@ async function scrapeSchedules() {
 				`  📖 Processing subject ${i + 1}/${subjectUrls.length}...`
 			);
 
-			const page = await browser.newPage();
+			let page;
+			let pageCreated = false;
+			let shouldSkip = false;
 
 			try {
-				await page.goto(url, {
-					waitUntil: "domcontentloaded",
-					timeout: 45000, // Increased timeout for GitHub Actions
-				});
+				page = await browser.newPage();
+				pageCreated = true;
+
+				let retryCount = 0;
+				const maxRetries = 3;
+				let pageLoaded = false;
+
+				while (retryCount < maxRetries && !pageLoaded) {
+					try {
+						await page.goto(url, {
+							waitUntil: "domcontentloaded",
+							timeout: 45000,
+						});
+
+						pageLoaded = true;
+					} catch (error) {
+						retryCount++;
+
+						if (retryCount >= maxRetries) {
+							console.error(
+								`❌ Error scraping subject ${url} after ${maxRetries} attempts:`,
+								error.message
+							);
+							shouldSkip = true;
+							break;
+						}
+
+						console.warn(
+							`⚠️ Retry ${retryCount}/${maxRetries} for ${url}: ${error.message}`
+						);
+						await new Promise((resolve) =>
+							setTimeout(resolve, 2000 * retryCount)
+						); // Progressive delay
+					}
+				}
+
+				// Skip this iteration if all retries failed
+				if (shouldSkip || !pageLoaded) {
+					continue;
+				}
 
 				// Get subject name and semester
 				const subjectInfo = await page.evaluate(() => {
@@ -245,9 +285,19 @@ async function scrapeSchedules() {
 					});
 				});
 			} catch (error) {
-				console.error(`❌ Error scraping subject ${url}:`, error);
+				console.error(
+					`❌ Error processing subject data for ${url}:`,
+					error.message
+				);
 			} finally {
-				await page.close();
+				if (pageCreated && page) {
+					await page.close();
+				}
+			}
+
+			// Add a small delay between requests to be respectful to the server
+			if (i < subjectUrls.length - 1) {
+				await new Promise((resolve) => setTimeout(resolve, 500));
 			}
 		}
 
@@ -282,7 +332,9 @@ async function scrapeSchedules() {
 	console.log("🎉 Schedule scraping completed!");
 }
 
-// Run if this file is executed directly
-scrapeSchedules().catch(console.error);
+// Run if this file is executed directly (not imported)
+if (import.meta.url === `file://${process.argv[1]}`) {
+	scrapeSchedules().catch(console.error);
+}
 
 export default scrapeSchedules;

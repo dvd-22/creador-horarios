@@ -70,12 +70,15 @@ function convertCsvToJson(csvFilePath, jsonFilePath) {
 		const groupId = gid?.match(/\d+/)?.[0];
 
 		if (!semestre || !materia || !groupId) {
-			console.warn("Invalid row, missing key data:", {
-				semestre,
-				materia,
-				gid,
-				groupId,
-			});
+			// Skip empty rows silently (common at end of CSV files)
+			if (semestre || materia || gid) {
+				console.warn("Invalid row, missing key data:", {
+					semestre,
+					materia,
+					gid,
+					groupId,
+				});
+			}
 			return;
 		}
 
@@ -211,7 +214,9 @@ async function convertAllCsvsToJson() {
 	console.log("🎉 All conversions completed!");
 }
 
-// Run if this file is executed directly
-convertAllCsvsToJson().catch(console.error);
+// Run if this file is executed directly (not imported)
+if (import.meta.url === `file://${process.argv[1]}`) {
+	convertAllCsvsToJson().catch(console.error);
+}
 
 export default convertAllCsvsToJson;
