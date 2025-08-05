@@ -56,9 +56,9 @@
             ]
           }
         ],
-        "nota": null,
+        "nota": "Este grupo se impartirá en modalidad Presencial",
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365561"
       },
       "8082": {
@@ -78,7 +78,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Karim Yahir Vallejo Flores",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -244,7 +244,7 @@
       "8427": {
         "grupo": "8427",
         "profesor": {
-          "nombre": null,
+          "nombre": "Martín Alarcón Ronzón",
           "horarios": [
             {
               "horario": "20:00 a 21:00",
@@ -268,13 +268,13 @@
         ],
         "nota": null,
         "salon": "201 (Yelizcalli)",
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": null
       },
       "8429": {
         "grupo": "8429",
         "profesor": {
-          "nombre": null,
+          "nombre": "Víctor Hugo López Lugo",
           "horarios": [
             {
               "horario": "20:00 a 21:00",
@@ -296,10 +296,10 @@
             ]
           }
         ],
-        "nota": null,
+        "nota": "Este curso se ofrecerá en modalidad Presencial. Favor de ignorar la presentación.",
         "salon": "011",
-        "modalidad": null,
-        "presentacion": null
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366721"
       }
     },
     "Cálculo Diferencial e Integral I": {
@@ -403,7 +403,7 @@
         "nota": null,
         "salon": "O223",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365145"
       },
       "8003": {
         "grupo": "8003",
@@ -714,7 +714,7 @@
         "nota": null,
         "salon": "Aula Magna I",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365163"
       },
       "8012": {
         "grupo": "8012",
@@ -748,7 +748,7 @@
         "nota": null,
         "salon": "O217",
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365165"
       },
       "8013": {
         "grupo": "8013",
@@ -770,7 +770,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Maximiliano Rojas Zaputovich",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -838,7 +838,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Alejandro Hernández Gutiérrez",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -877,7 +877,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Eshele Guadalupe de la Cruz Saenz",
             "horario": "18:00 a 19:00",
             "dias": [
               "Lu",
@@ -1607,7 +1607,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366172"
       },
       "3004": {
         "grupo": "3004",
@@ -1689,7 +1689,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366174"
       }
     }
   },
@@ -1761,7 +1761,7 @@
         "nota": null,
         "salon": "P102",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365272"
       },
       "8056": {
         "grupo": "8056",
@@ -1973,7 +1973,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alejandro Melchor Galván",
             "horario": "19:00 a 20:00",
             "dias": [
               "Lu",
@@ -2275,7 +2275,7 @@
         "nota": null,
         "salon": "001 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365215"
       },
       "8038": {
         "grupo": "8038",
@@ -2545,7 +2545,7 @@
         "nota": null,
         "salon": "002 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365233"
       },
       "8047": {
         "grupo": "8047",
@@ -2654,7 +2654,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Sergio Jorge Rodríguez Sánchez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -2665,7 +2665,7 @@
         "nota": null,
         "salon": "P101",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365241"
       },
       "8051": {
         "grupo": "8051",
@@ -2684,7 +2684,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Sergio Ángel Sánchez Chávez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -3069,7 +3069,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Rivaldo Hérnandez Magdaleno",
+            "nombre": "Rivaldo Hernández Magdaleno",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -3172,7 +3172,7 @@
         "nota": null,
         "salon": "202 (Tlaltícpac)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366178"
       }
     },
     "Fenómenos Colectivos": {
@@ -3233,7 +3233,7 @@
         "nota": null,
         "salon": "Salón de Seminarios 429",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365618"
       },
       "8138": {
         "grupo": "8138",
@@ -3260,7 +3260,7 @@
         "nota": null,
         "salon": "103",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365619"
       },
       "8139": {
         "grupo": "8139",
@@ -3508,7 +3508,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366928"
       }
     },
     "Inglés": {
@@ -3573,7 +3573,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366179"
       },
       "3011": {
         "grupo": "3011",
@@ -3650,7 +3650,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366181"
       }
     },
     "Morfofuncional I": {
@@ -3888,7 +3888,7 @@
         "nota": null,
         "salon": "O121",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365368"
       },
       "8070": {
         "grupo": "8070",
@@ -4159,7 +4159,7 @@
         "nota": null,
         "salon": "P114",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365642"
       },
       "8162": {
         "grupo": "8162",
@@ -4402,7 +4402,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365726"
       },
@@ -4428,7 +4428,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -4459,7 +4459,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365730"
       },
@@ -4485,7 +4485,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365732"
       },
@@ -4511,7 +4511,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -4537,7 +4537,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365736"
       },
@@ -4563,7 +4563,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365738"
       },
@@ -4589,7 +4589,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365740"
       },
@@ -4615,7 +4615,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Aula 3 de Computación en Física",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366598"
       }
@@ -4828,7 +4828,7 @@
         "nota": "El curso se impartirá en el Instituto de Investigaciones en Materiales",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365662"
       },
       "8182": {
         "grupo": "8182",
@@ -4975,6 +4975,11 @@
             "nombre": "Erick Cisneros Linares",
             "horario": null,
             "dias": []
+          },
+          {
+            "nombre": "David Bañuelos Solórzano",
+            "horario": null,
+            "dias": []
           }
         ],
         "nota": null,
@@ -5000,6 +5005,11 @@
           ]
         },
         "ayudantes": [
+          {
+            "nombre": "Jesús Flores Mijangos",
+            "horario": null,
+            "dias": []
+          },
           {
             "nombre": "José Roberto Alonso Garduza",
             "horario": null,
@@ -5057,7 +5067,7 @@
         "nota": null,
         "salon": "Salón de Seminarios 330",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365680"
       },
       "8200": {
         "grupo": "8200",
@@ -5075,6 +5085,11 @@
           ]
         },
         "ayudantes": [
+          {
+            "nombre": "María Fernanda Ramírez Ayala",
+            "horario": null,
+            "dias": []
+          },
           {
             "nombre": "Esteban Alejandro Santillán López",
             "horario": null,
@@ -5148,7 +5163,7 @@
         "nota": null,
         "salon": "105 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365683"
       },
       "8203": {
         "grupo": "8203",
@@ -5276,7 +5291,7 @@
         "nota": null,
         "salon": "102",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365687"
       }
     }
   },
@@ -5307,7 +5322,7 @@
         "nota": null,
         "salon": "P205",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365718"
       },
       "8238": {
         "grupo": "8238",
@@ -5495,7 +5510,7 @@
         "nota": null,
         "salon": "102",
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366586"
       },
       "8412": {
         "grupo": "8412",
@@ -5562,7 +5577,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366187"
       },
       "3019": {
         "grupo": "3019",
@@ -5593,7 +5608,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366188"
       },
       "3020": {
         "grupo": "3020",
@@ -5740,7 +5755,7 @@
         "nota": null,
         "salon": "P206",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365752"
       },
       "8272": {
         "grupo": "8272",
@@ -5816,7 +5831,13 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Linda Alicia López Díaz",
+            "horario": null,
+            "dias": []
+          }
+        ],
         "nota": null,
         "salon": "O129",
         "modalidad": "Presencial",
@@ -5906,7 +5927,7 @@
         "nota": null,
         "salon": "011",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365758"
       }
     }
   },
@@ -5976,7 +5997,7 @@
         "nota": null,
         "salon": "P111",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366192"
       }
     }
   },
@@ -6077,7 +6098,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366945"
       }
     },
     "Dinámica de Biofluidos": {
@@ -6111,7 +6132,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366200"
       }
     },
     "Temas Selectos en Biofísica": {
@@ -6125,7 +6146,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366205"
       },
       "3037": {
         "grupo": "3037",
@@ -6220,27 +6241,7 @@
         "nota": "Introducción a la Ciencia de Datos Aplicada a Escenarios Médico-Biológicos",
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
-      }
-    },
-    "Temas Selectos en Cómputo de Alto Desempeño": {
-      "3041": {
-        "grupo": "3041",
-        "profesor": {
-          "nombre": "Ramón Santos Vidal",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "Francisco Javier Monroy Hernández",
-            "horario": null,
-            "dias": []
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366940"
       }
     },
     "Temas Selectos en Física Biológica": {
@@ -6371,7 +6372,7 @@
         "nota": null,
         "salon": "P110",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366941"
       }
     },
     "Sistemas Híbridos en Biomedicina": {
@@ -6404,7 +6405,7 @@
         "nota": null,
         "salon": "P117",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366196"
       }
     },
     "Biosensores": {
@@ -6556,6 +6557,26 @@
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366217"
+      },
+      "3059": {
+        "grupo": "3059",
+        "profesor": {
+          "nombre": "Daniel Pérez Calixto",
+          "horarios": [
+            {
+              "horario": "16:00 a 17:30",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": "Introducción a la mecanobiología como herramienta de diagnóstico en neurociencias",
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366960"
       }
     },
     "Temas Selectos en Instrumentación Biomédica": {
