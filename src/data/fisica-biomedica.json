@@ -788,7 +788,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Karen Susana Villa Aguirre",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -996,7 +996,7 @@
           }
         ],
         "nota": null,
-        "salon": "O220",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365175"
       },
@@ -1634,7 +1634,7 @@
           }
         ],
         "nota": "La primera clase sera en la \"Sala de Proyecciones\" del CEF (sala 213) del Edifico de Física",
-        "salon": null,
+        "salon": "Taller Interdisciplinario de Física y Biomedicina I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366171"
       },
@@ -1675,7 +1675,7 @@
           }
         ],
         "nota": "La primera clase sera en la \"Sala de Proyecciones\" del CEF (sala 213) del Edifico de Física",
-        "salon": null,
+        "salon": "Taller Interdisciplinario de Física y Biomedicina III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366172"
       },
@@ -1716,7 +1716,7 @@
           }
         ],
         "nota": "La primera clase sera en la \"Sala de Proyecciones\" del CEF (sala 213) del Edifico de Física",
-        "salon": null,
+        "salon": "Laboratorio de Física General VI",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366173"
       },
@@ -1757,7 +1757,7 @@
           }
         ],
         "nota": "La primera clase sera en la \"Sala de Proyecciones\" del CEF (sala 213) del Edifico de Física",
-        "salon": null,
+        "salon": "Laboratorio de Física General I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366174"
       }
@@ -1785,7 +1785,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Aldo César Almazán Avilés",
+            "nombre": "Francisco Arzola Galindo",
             "horario": "08:00 a 09:00",
             "dias": [
               "Lu",
@@ -2314,6 +2314,14 @@
         "ayudantes": [
           {
             "nombre": "José Antonio Estrada Nieves",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "Aldair Reyes González",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -3703,7 +3711,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Electrónica II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366179"
       },
@@ -3739,7 +3747,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller Interdisciplinario de Física y Biomedicina I",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -3780,7 +3788,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Electrónica I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366181"
       }
@@ -3919,7 +3927,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jorge Alberto Coleote Domínguez",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -5248,6 +5256,11 @@
             "nombre": "Monserrat Negrete Derramadero",
             "horario": null,
             "dias": []
+          },
+          {
+            "nombre": "Carlos Abraham García Fuentes",
+            "horario": null,
+            "dias": []
           }
         ],
         "nota": null,
@@ -5342,6 +5355,11 @@
           },
           {
             "nombre": "Renata Colina Tenorio",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Bryan Edgar Alonso Guzmán",
             "horario": null,
             "dias": []
           }
@@ -5766,7 +5784,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller Interdisciplinario de Física y Biomedicina I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366187"
       },
@@ -5791,13 +5809,18 @@
             "dias": []
           },
           {
+            "nombre": "Luis Enrique Nava García",
+            "horario": null,
+            "dias": []
+          },
+          {
             "nombre": "Misael Saúl Ávila López",
             "horario": null,
             "dias": []
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller Interdisciplinario de Física y Biomedicina III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366188"
       },
@@ -5833,7 +5856,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller Interdisciplinario de Física y Biomedicina III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366189"
       }
@@ -6129,11 +6152,90 @@
     "Práctica Profesional Supervisada": {
       "3060": {
         "grupo": "3060",
-        "profesor": null,
-        "ayudantes": [],
+        "profesor": {
+          "nombre": "Lucía Medina Gómez",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "René Ledesma Alonso",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "María Fátima Chilaca Rosas",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "David Hernández Obin",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Paola Ballesteros Zebadúa",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Víctor Manuel Lara Camacho",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Ángel Juárez Flores",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "José Eduardo Chairez Veloz",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Itzhel García Torres",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Itzel Marisol Garnica Palafox",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Jaime Fabian Vázquez De la Rosa",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Edgar Israel Fuentes Oliver",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Olga Olinca Galván de la Cruz",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "David Alexis García Espinosa",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Luis Alberto Rangel Chávez",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Mauricio García Vergara",
+            "horario": null,
+            "dias": []
+          }
+        ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     }
@@ -6302,7 +6404,7 @@
           ]
         },
         "ayudantes": [],
-        "nota": null,
+        "nota": "El curso se impartirá en el Instituto de Investigaciones en Materiales (IIM- UNAM)",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366945"
@@ -6336,7 +6438,7 @@
           "horarios": []
         },
         "ayudantes": [],
-        "nota": null,
+        "nota": "La materia se impartirá en el Laboratorio de Biofísica y Física Médica 431, edificio de Física",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366200"
@@ -6356,7 +6458,7 @@
             "dias": []
           }
         ],
-        "nota": null,
+        "nota": "La materia se impartira en el Laboratorio de Biofísica y Física Médica 431, edificio de Física",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366205"
@@ -6431,12 +6533,29 @@
             "nombre": "Luis Eduardo Flores Luna",
             "horario": null,
             "dias": []
+          },
+          {
+            "nombre": "Derek Saúl Morán Pérez",
+            "horario": null,
+            "dias": []
           }
         ],
         "nota": "Introducción a la Ciencia de Datos Aplicada a Escenarios Médico-Biológicos",
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366940"
+      },
+      "3066": {
+        "grupo": "3066",
+        "profesor": {
+          "nombre": "Alejandro Villarreal López",
+          "horarios": []
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368363"
       }
     },
     "Temas Selectos en Cómputo de Alto Desempeño": {
@@ -6444,7 +6563,15 @@
         "grupo": "3061",
         "profesor": {
           "nombre": "Zeus Tlaltecutli Domínguez Vega",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "12:00 a 13:30",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -6564,7 +6691,7 @@
           }
         ],
         "nota": null,
-        "salon": "P116",
+        "salon": "Taller de Física de Radiaciones",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366193"
       },
@@ -6589,8 +6716,8 @@
             "dias": []
           }
         ],
-        "nota": null,
-        "salon": "P110",
+        "nota": "La materia se impartirá en el Instituto Nacional de Neurología y Neurocirugía y el Instituto Nacional de Cancerología",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366941"
       }
@@ -6756,11 +6883,43 @@
           "nombre": "Patricio Vázquez Fernández",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Olga Sagrario Torres Martínez",
+            "horario": null,
+            "dias": []
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366215"
+      },
+      "3064": {
+        "grupo": "3064",
+        "profesor": {
+          "nombre": "César Fabián Domínguez Velasco",
+          "horarios": [
+            {
+              "horario": "09:00 a 11:00",
+              "dias": [
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Efraín Albor Ramírez",
+            "horario": null,
+            "dias": []
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Temas Selectos en Física del Diagnóstico Médico": {

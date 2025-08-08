@@ -1290,7 +1290,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Karen Susana Villa Aguirre",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -1498,7 +1498,7 @@
           }
         ],
         "nota": null,
-        "salon": "O220",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365174"
       },
@@ -2179,6 +2179,14 @@
         "ayudantes": [
           {
             "nombre": "José Antonio Estrada Nieves",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "Aldair Reyes González",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -3595,7 +3603,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Aldo César Almazán Avilés",
+            "nombre": "Francisco Arzola Galindo",
             "horario": "08:00 a 09:00",
             "dias": [
               "Lu",
@@ -5014,7 +5022,7 @@
           }
         ],
         "nota": null,
-        "salon": "O125",
+        "salon": "P106",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366666"
       },
@@ -5376,6 +5384,15 @@
               "Mi",
               "Vi"
             ]
+          },
+          {
+            "nombre": "Ángela Xanat Zenteno Rodríguez",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ]
           }
         ],
         "nota": null,
@@ -5438,6 +5455,15 @@
         "ayudantes": [
           {
             "nombre": "Juan Ramón Rodríguez Córdova",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ]
+          },
+          {
+            "nombre": "Bruno Amezcua Osorio",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -5793,7 +5819,7 @@
           }
         ],
         "nota": null,
-        "salon": "002 (Yelizcalli)",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365341"
       }
@@ -5985,7 +6011,7 @@
           }
         ],
         "nota": null,
-        "salon": "P106",
+        "salon": "O125",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365347"
       },
@@ -8701,7 +8727,7 @@
           }
         ],
         "nota": null,
-        "salon": "Taller de Topología",
+        "salon": "O130",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365451"
       },
@@ -8885,7 +8911,7 @@
           }
         ],
         "nota": null,
-        "salon": "Taller de Demografía",
+        "salon": "P107",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365459"
       },
@@ -9438,7 +9464,7 @@
             ]
           },
           {
-            "nombre": null,
+            "nombre": "Luis Mario Escobar Rosales",
             "horario": "16:00 a 18:00",
             "dias": [
               "Lu",
@@ -10015,9 +10041,9 @@
             {
               "horario": "09:00 a 10:00",
               "dias": [
-                "Lu",
+                "Ma",
                 "Mi",
-                "Vi"
+                "Ju"
               ]
             }
           ]
@@ -10027,16 +10053,16 @@
             "nombre": "Sebastián Rosas Ayala",
             "horario": "09:00 a 10:00",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Vi"
             ]
           },
           {
             "nombre": "Elías González Nieto",
             "horario": "09:00 a 10:00",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Vi"
             ]
           }
         ],
@@ -10243,6 +10269,14 @@
         "ayudantes": [
           {
             "nombre": "Rodrígo Basaldud Ortega",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "Aldo Ramírez Alanis",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -11476,7 +11510,7 @@
           }
         ],
         "nota": null,
-        "salon": "O130",
+        "salon": "Taller de Topología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365443"
       }
@@ -12027,7 +12061,7 @@
           }
         ],
         "nota": null,
-        "salon": "P115",
+        "salon": "301 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365766"
       },
@@ -12217,7 +12251,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "José Eduardo Núñez Ortiz",
+            "nombre": null,
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -12528,7 +12562,7 @@
           }
         ],
         "nota": null,
-        "salon": "Taller de Topología",
+        "salon": "P113",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365475"
       },
@@ -12880,7 +12914,7 @@
           }
         ],
         "nota": null,
-        "salon": "P210",
+        "salon": "O222",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365951"
       },
@@ -13060,7 +13094,7 @@
           }
         ],
         "nota": null,
-        "salon": "O130",
+        "salon": "301 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365963"
       },
@@ -14616,7 +14650,7 @@
           }
         ],
         "nota": null,
-        "salon": "Taller de Topología",
+        "salon": "P113",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365520"
       }
@@ -14745,36 +14779,6 @@
         "salon": "Taller de Demografía",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365527"
-      },
-      "4338": {
-        "grupo": "4338",
-        "profesor": {
-          "nombre": null,
-          "horarios": [
-            {
-              "horario": "18:00 a 19:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "18:00 a 19:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ]
-          }
-        ],
-        "nota": "Este curso será cambiado por Introducción Matemática a la Mecánica Celeste",
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365528"
       }
     },
     "Topología II": {
@@ -15200,7 +15204,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ilse Gema Peña Bernardino",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -15209,7 +15213,7 @@
           }
         ],
         "nota": null,
-        "salon": "Aula T1",
+        "salon": "O134",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366111"
       }
@@ -15301,7 +15305,7 @@
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Enseñanza de Cómputo de Matemáticas",
+        "salon": "Taller de Topología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365972"
       },
@@ -16118,6 +16122,14 @@
               "Ma",
               "Ju"
             ]
+          },
+          {
+            "nombre": "Pablo Josué Peña Molina",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ]
           }
         ],
         "nota": null,
@@ -16363,7 +16375,7 @@
           }
         ],
         "nota": null,
-        "salon": "P118",
+        "salon": "305 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366304"
       },
@@ -16423,7 +16435,7 @@
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría",
+        "salon": "306 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366948"
       }
@@ -17325,10 +17337,11 @@
           "nombre": "Odín Miguel Escorza Soria",
           "horarios": [
             {
-              "horario": "17:00 a 18:30",
+              "horario": "08:00 a 09:00",
               "dias": [
-                "Ma",
-                "Ju"
+                "Lu",
+                "Mi",
+                "Vi"
               ]
             }
           ]
@@ -17336,10 +17349,10 @@
         "ayudantes": [
           {
             "nombre": "Fernando Cruz Pineda",
-            "horario": "18:30 a 19:30",
+            "horario": "08:00 a 09:00",
             "dias": [
-              "Lu",
-              "Mi"
+              "Ma",
+              "Ju"
             ]
           },
           {
@@ -17350,8 +17363,8 @@
             ]
           }
         ],
-        "nota": "El horario del grupo cambiará de 8 a 9 hrs.",
-        "salon": "P212",
+        "nota": null,
+        "salon": "Laboratorio de Ciencias de la Computación 3",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366130"
       }
@@ -17960,6 +17973,11 @@
             "nombre": "Monserrat Negrete Derramadero",
             "horario": null,
             "dias": []
+          },
+          {
+            "nombre": "Carlos Abraham García Fuentes",
+            "horario": null,
+            "dias": []
           }
         ],
         "nota": null,
@@ -18266,9 +18284,9 @@
             {
               "horario": "11:00 a 12:00",
               "dias": [
-                "Lu",
                 "Ma",
-                "Mi"
+                "Mi",
+                "Ju"
               ]
             }
           ]
@@ -18278,7 +18296,7 @@
             "nombre": "Sebastián Rosas Ayala",
             "horario": "11:00 a 12:00",
             "dias": [
-              "Ju",
+              "Lu",
               "Vi"
             ]
           },
@@ -18286,7 +18304,7 @@
             "nombre": "José Antonio Pulido Pérez",
             "horario": "11:00 a 12:00",
             "dias": [
-              "Ju",
+              "Lu",
               "Vi"
             ]
           }
@@ -18595,7 +18613,7 @@
           }
         ],
         "nota": null,
-        "salon": "P204",
+        "salon": "O219",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365507"
       },
@@ -18684,7 +18702,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Axel Casas Espinosa",
             "horario": "16:00 a 17:00",
             "dias": [
               "Lu",
@@ -18874,7 +18892,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "José Manuel Madrigal Ramírez",
+            "nombre": "Laura Itzel Rodríguez Dimayuga",
             "horario": "19:30 a 20:30",
             "dias": [
               "Ma",
