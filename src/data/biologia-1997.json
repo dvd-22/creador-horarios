@@ -85,6 +85,11 @@
             "dias": [
               "Vi"
             ]
+          },
+          {
+            "nombre": "Diana Nahidally Martínez García",
+            "horario": null,
+            "dias": []
           }
         ],
         "nota": null,
@@ -107,7 +112,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Amaranta Anai Castro Espinosa",
+            "nombre": "Oscar Olicón Hernández",
             "horario": "18:00 a 21:00",
             "dias": [
               "Lu"
@@ -141,7 +146,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Yuliett Tatiana Contreras González",
             "horario": "11:00 a 14:00",
             "dias": [
               "Ju"
@@ -216,7 +221,7 @@
       "5006": {
         "grupo": "5006",
         "profesor": {
-          "nombre": null,
+          "nombre": "Mónica Ramírez Vázquez",
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -352,6 +357,33 @@
         "nota": null,
         "salon": "B003",
         "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364935"
+      },
+      "5622": {
+        "grupo": "5622",
+        "profesor": {
+          "nombre": "Susana Méndez Vázquez",
+          "horarios": [
+            {
+              "horario": "14:30 a 17:30",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Mariana Palma Tenango",
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": "003",
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -382,6 +414,33 @@
         "salon": "Laboratorio de Prácticas de Biogeografía I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364936"
+      },
+      "5626": {
+        "grupo": "5626",
+        "profesor": {
+          "nombre": "Moisés Armando Luis Martínez",
+          "horarios": [
+            {
+              "horario": "15:00 a 17:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "María Berenit Mendoza Garfias",
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Mi"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": "002",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368306"
       }
     }
   },
@@ -417,9 +476,43 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S5",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364937"
+      },
+      "5615": {
+        "grupo": "5615",
+        "profesor": {
+          "nombre": "Claudia Elizabeth Ruiz Rodríguez",
+          "horarios": [
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Ma",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Sandra López Grether",
+            "horario": "13:00 a 15:00",
+            "dias": [
+              "Lu",
+              "Ju"
+            ]
+          },
+          {
+            "nombre": "Fernanda Aide Arreola Luna",
+            "horario": null,
+            "dias": []
+          }
+        ],
+        "nota": null,
+        "salon": "002",
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Biología de Hongos": {
@@ -446,7 +539,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364938"
       },
@@ -473,7 +566,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "010",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364939"
       }
@@ -531,7 +624,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S2",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364941"
       },
@@ -558,7 +651,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S3",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364942"
       }
@@ -587,7 +680,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Paleobiología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366656"
       }
@@ -648,6 +741,33 @@
         "salon": "Laboratorio de Prácticas de Biogeografía I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364944"
+      },
+      "5623": {
+        "grupo": "5623",
+        "profesor": {
+          "nombre": "Georgina Santos Barrera",
+          "horarios": [
+            {
+              "horario": "15:00 a 18:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "César Antonio Ríos Muñoz",
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Vi"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": "Laboratorio de Prácticas de Biogeografía I",
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Biología de Animales I": {
@@ -730,9 +850,9 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "003",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366693"
       },
       "5400": {
         "grupo": "5400",
@@ -757,7 +877,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366694"
       }
@@ -786,7 +906,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364947"
       },
@@ -813,9 +933,36 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364948"
+      },
+      "5618": {
+        "grupo": "5618",
+        "profesor": {
+          "nombre": "Juan Carlos Gallardo Pérez",
+          "horarios": [
+            {
+              "horario": "14:30 a 17:30",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Miguel Santibáñez Andrade",
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Vi"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": "S2",
+        "modalidad": null,
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368261"
       }
     },
     "Biotecnología I": {
@@ -842,7 +989,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364949"
       },
@@ -869,9 +1016,36 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364950"
+      },
+      "5616": {
+        "grupo": "5616",
+        "profesor": {
+          "nombre": "Yamilka Karenia López Uc",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Rebeca Gutiérrez Ordoñez",
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": "003",
+        "modalidad": null,
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368254"
       }
     }
   },
@@ -1200,6 +1374,60 @@
         "salon": "B006",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364962"
+      },
+      "5628": {
+        "grupo": "5628",
+        "profesor": {
+          "nombre": "Germán Fernando Gutiérrez Aguilar",
+          "horarios": [
+            {
+              "horario": "18:00 a 21:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Teresa Antonia Meléndez Victoria",
+            "horario": "18:00 a 21:00",
+            "dias": [
+              "Ma"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": "B006",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "5629": {
+        "grupo": "5629",
+        "profesor": {
+          "nombre": "Rafael Lugo Huitrón",
+          "horarios": [
+            {
+              "horario": "14:30 a 17:30",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Itzel Susana de la Rosa Lara",
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Ma"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": "B006",
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Ecología I": {
@@ -1253,7 +1481,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "006",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364964"
       },
@@ -1499,6 +1727,33 @@
         "salon": "006",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364973"
+      },
+      "5630": {
+        "grupo": "5630",
+        "profesor": {
+          "nombre": "Omar Ávalos Hernández",
+          "horarios": [
+            {
+              "horario": "07:30 a 10:30",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Ma"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": "005",
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Genética I": {
@@ -1798,6 +2053,87 @@
         "salon": "003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364984"
+      },
+      "5619": {
+        "grupo": "5619",
+        "profesor": {
+          "nombre": "Bertha Verónica Valverde Garduño",
+          "horarios": [
+            {
+              "horario": "18:00 a 21:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Rubi Evangelista Casimiro",
+            "horario": "18:00 a 21:00",
+            "dias": [
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": "003",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368275"
+      },
+      "5620": {
+        "grupo": "5620",
+        "profesor": {
+          "nombre": "Adriana Alejandra Mendoza Amador",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Héctor Martín Abundis Manzano",
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Ma"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": "003",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368276"
+      },
+      "5621": {
+        "grupo": "5621",
+        "profesor": {
+          "nombre": "Yaneli Trujillo Varela",
+          "horarios": [
+            {
+              "horario": "14:30 a 17:30",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "César Noé Cortés Rubio",
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Mi"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": "003",
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Paleobiología": {
@@ -1851,7 +2187,7 @@
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Prácticas de Paleobiología",
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364986"
       },
@@ -1944,7 +2280,7 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Sa"
+                "Mi"
               ]
             }
           ]
@@ -1954,12 +2290,12 @@
             "nombre": "José Roberto Ovando Figueroa",
             "horario": "11:00 a 14:00",
             "dias": [
-              "Mi"
+              "Sa"
             ]
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Prácticas de Paleobiología",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364990"
       },
@@ -2013,7 +2349,7 @@
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Prácticas de Paleobiología",
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364992"
       },
@@ -2097,6 +2433,60 @@
         "salon": "Laboratorio de Prácticas de Paleobiología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364995"
+      },
+      "5624": {
+        "grupo": "5624",
+        "profesor": {
+          "nombre": "Oliver Ariel López Conde",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Alberto Alanis Pavón",
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Mi"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5625": {
+        "grupo": "5625",
+        "profesor": {
+          "nombre": "Sergio González Mora",
+          "horarios": [
+            {
+              "horario": "14:30 a 17:30",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "José Luis Martínez Díaz",
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Ju"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": "009",
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Taller Nivel 1": {
@@ -4341,7 +4731,7 @@
         "nota": "Neurobiología del aprendizaje y la memoria.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368019"
       }
     }
   },
@@ -4723,7 +5113,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -4750,7 +5140,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365010"
       },
@@ -4777,7 +5167,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365011"
       },
@@ -4804,7 +5194,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365012"
       },
@@ -4831,7 +5221,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365013"
       },
@@ -4858,7 +5248,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365014"
       },
@@ -4868,7 +5258,7 @@
           "nombre": "Rodrigo Muñoz Avilés",
           "horarios": [
             {
-              "horario": "18:00 a 20:00",
+              "horario": "18:00 a 21:00",
               "dias": [
                 "Lu"
               ]
@@ -4878,14 +5268,14 @@
         "ayudantes": [
           {
             "nombre": "José Antonio Benjamín Ordóñez Díaz",
-            "horario": "14:30 a 15:30",
+            "horario": "14:30 a 17:30",
             "dias": [
               "Mi"
             ]
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -4912,7 +5302,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365016"
       },
@@ -4939,7 +5329,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365017"
       },
@@ -4966,7 +5356,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365018"
       },
@@ -4993,7 +5383,34 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Tlaltícpac)",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "5631": {
+        "grupo": "5631",
+        "profesor": {
+          "nombre": "Rogelio Omar Corona Núñez",
+          "horarios": [
+            {
+              "horario": "14:30 a 17:30",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Vi"
+            ]
+          }
+        ],
+        "nota": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": null
       }
@@ -5688,6 +6105,11 @@
             "dias": []
           },
           {
+            "nombre": "Susana Hernández Monasterio",
+            "horario": null,
+            "dias": []
+          },
+          {
             "nombre": "José Daniel Lara Tufiño",
             "horario": null,
             "dias": []
@@ -5706,7 +6128,7 @@
         "nota": "Ecología, sistemática y conservación de anfibios",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366885"
       },
       "5573": {
         "grupo": "5573",
@@ -5956,6 +6378,44 @@
         "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366921"
+      },
+      "5627": {
+        "grupo": "5627",
+        "profesor": {
+          "nombre": "América Nitxin Castañeda Sortibrán",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Marco Antonio Carballo Ontiveros",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Viviana del Carmen Valadez Graham",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Horacio Valdemar Bárcenas Rodríguez",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Zeltzin Muñoz Juárez",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Adriana Alejandra Mendoza Amador",
+            "horario": null,
+            "dias": []
+          }
+        ],
+        "nota": "Genes y ambiente",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -9264,6 +9724,11 @@
             "dias": []
           },
           {
+            "nombre": "Susana Hernández Monasterio",
+            "horario": null,
+            "dias": []
+          },
+          {
             "nombre": "José Daniel Lara Tufiño",
             "horario": null,
             "dias": []
@@ -9282,7 +9747,7 @@
         "nota": "Ecología, sistemática y conservación de anfibios",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366886"
       },
       "5574": {
         "grupo": "5574",
@@ -9603,6 +10068,44 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5617": {
+        "grupo": "5617",
+        "profesor": {
+          "nombre": "Olivia Yáñez Ordóñez",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Natalhie Beatriz Campos Reales Pineda",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Aldo Bernal Rojas",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Marco Antonio Cervantes García",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Rosa Inés González Torres",
+            "horario": null,
+            "dias": []
+          },
+          {
+            "nombre": "Sol Ortiz García",
+            "horario": null,
+            "dias": []
+          }
+        ],
+        "nota": "La bioseguridad de los organismos genéticamente modificados desde la perspectiva del sector ambiental.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -9660,7 +10163,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365032"
       }
@@ -9688,7 +10191,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B001",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365033"
       }
@@ -9769,7 +10272,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "010",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365036"
       }
@@ -9858,6 +10361,11 @@
             "nombre": "Raquel Baza Medina",
             "horario": null,
             "dias": []
+          },
+          {
+            "nombre": "Luis Daniel Serrano Félix",
+            "horario": null,
+            "dias": []
           }
         ],
         "nota": "Cita para definir horario: miércoles 13 de agosto a las 12 hrs. Aula 3 del Instituto de Astronomía",
@@ -9919,7 +10427,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B002",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365040"
       }
@@ -9948,7 +10456,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "010",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365041"
       }
@@ -9977,7 +10485,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365042"
       }
@@ -10006,7 +10514,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365043"
       }
@@ -10035,7 +10543,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B002",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365044"
       }
@@ -10064,7 +10572,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B002",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366679"
       }
@@ -10093,7 +10601,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365045"
       }
@@ -10180,9 +10688,9 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S2",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365048"
       }
     },
     "Deuterostomados": {
@@ -10209,7 +10717,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S3",
         "modalidad": "Presencial",
         "presentacion": null
       }
@@ -10267,7 +10775,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B008",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365051"
       }
@@ -10296,7 +10804,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365052"
       }
@@ -10330,7 +10838,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B001",
         "modalidad": null,
         "presentacion": null
       }
@@ -10339,7 +10847,7 @@
       "5128": {
         "grupo": "5128",
         "profesor": {
-          "nombre": "Jesús Guillermo Jiménez Cortés",
+          "nombre": null,
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -10359,7 +10867,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B008",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365053"
       }
@@ -10388,7 +10896,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365054"
       }
@@ -10728,7 +11236,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B002",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365064"
       }
@@ -10815,7 +11323,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365066"
       }
@@ -10901,7 +11409,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B001",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365068"
       }
@@ -10930,7 +11438,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365069"
       }
@@ -11075,9 +11583,9 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B002",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365073"
       }
     },
     "Introducción Crítica a la Diplomacia de la Ciencia": {
@@ -11132,7 +11640,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S3",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365074"
       }
@@ -11190,7 +11698,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Plantas I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365076"
       }
@@ -11248,7 +11756,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Sala de Cómputo I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365078"
       }
@@ -11291,7 +11799,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365079"
       }
@@ -11321,7 +11829,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365081"
       }
     },
     "Origen de la Vida": {
@@ -11357,7 +11865,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S3",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366599"
       }
@@ -11386,7 +11894,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B006",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365082"
       }
@@ -11400,8 +11908,7 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Mi",
-                "Sa"
+                "Mi"
               ]
             }
           ]
@@ -11409,12 +11916,14 @@
         "ayudantes": [
           {
             "nombre": "Dalia García Alcántara",
-            "horario": null,
-            "dias": []
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Sa"
+            ]
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365083"
       }
@@ -11472,7 +11981,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B001",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365085"
       }
@@ -11501,7 +12010,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "010",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365086"
       }
@@ -11611,7 +12120,7 @@
           }
         ],
         "nota": "Bioética I",
-        "salon": null,
+        "salon": "B008",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366686"
       }
@@ -11940,7 +12449,7 @@
           }
         ],
         "nota": "Redacción Científica",
-        "salon": null,
+        "salon": "B005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365096"
       },
@@ -11967,7 +12476,7 @@
           }
         ],
         "nota": "ANTROPOLOGÍA BIOLÓGICA. EVOLUCIÓN DE LOS HOMININOS.",
-        "salon": null,
+        "salon": "B001",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365097"
       },
@@ -12021,7 +12530,7 @@
           }
         ],
         "nota": "Nanobiología celular",
-        "salon": null,
+        "salon": "B002",
         "modalidad": null,
         "presentacion": null
       }
@@ -12207,7 +12716,7 @@
           }
         ],
         "nota": "Hongos entomopatógenos",
-        "salon": null,
+        "salon": "B004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365103"
       },
@@ -12261,7 +12770,7 @@
           }
         ],
         "nota": "el suelo y funcionamiento de los ecosistemas",
-        "salon": null,
+        "salon": "B004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365105"
       },
@@ -12342,7 +12851,7 @@
           }
         ],
         "nota": "Técnicas de reproducción asistida",
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Animales III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366689"
       },
@@ -12506,7 +13015,7 @@
           }
         ],
         "nota": "Taxonomía vegetal",
-        "salon": null,
+        "salon": "B003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366711"
       }
@@ -12535,7 +13044,7 @@
           }
         ],
         "nota": "Métodos ecológicos y biogeográficos para el estudios de los murciélagos",
-        "salon": null,
+        "salon": "B001",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365109"
       },
@@ -12561,7 +13070,7 @@
           }
         ],
         "nota": "Neurobioquímica",
-        "salon": null,
+        "salon": "B001",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365110"
       },
@@ -12588,7 +13097,7 @@
           }
         ],
         "nota": "Cine documental",
-        "salon": null,
+        "salon": "B002",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366714"
       }
@@ -12617,7 +13126,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B008",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365111"
       }
@@ -12646,7 +13155,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B007",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365112"
       }

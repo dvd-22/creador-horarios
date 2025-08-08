@@ -121,7 +121,12 @@
             {
               "horario": "08:00 a 10:00",
               "dias": [
-                "Mi",
+                "Mi"
+              ]
+            },
+            {
+              "horario": "08:00 a 10:00",
+              "dias": [
                 "Vi"
               ]
             }
@@ -137,7 +142,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S3",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366382"
       },
@@ -149,7 +154,12 @@
             {
               "horario": "08:00 a 10:00",
               "dias": [
-                "Mi",
+                "Mi"
+              ]
+            },
+            {
+              "horario": "08:00 a 10:00",
+              "dias": [
                 "Vi"
               ]
             }
@@ -177,7 +187,12 @@
             {
               "horario": "11:00 a 13:00",
               "dias": [
-                "Lu",
+                "Lu"
+              ]
+            },
+            {
+              "horario": "11:00 a 13:00",
+              "dias": [
                 "Ma"
               ]
             }
@@ -193,7 +208,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366384"
       },
@@ -205,7 +220,12 @@
             {
               "horario": "11:00 a 13:00",
               "dias": [
-                "Lu",
+                "Lu"
+              ]
+            },
+            {
+              "horario": "11:00 a 13:00",
+              "dias": [
                 "Ma"
               ]
             }
@@ -228,7 +248,7 @@
       "5196": {
         "grupo": "5196",
         "profesor": {
-          "nombre": "Marco Antonio Tapia Palacios",
+          "nombre": "María del Jazmín Aguilar Medina",
           "horarios": [
             {
               "horario": "11:00 a 13:00",
@@ -256,7 +276,7 @@
       "5197": {
         "grupo": "5197",
         "profesor": {
-          "nombre": "María del Jazmín Aguilar Medina",
+          "nombre": "Danaí Montalván Sorrosa",
           "horarios": [
             {
               "horario": "11:00 a 13:00",
@@ -289,8 +309,7 @@
             {
               "horario": "12:00 a 14:00",
               "dias": [
-                "Ma",
-                "Mi"
+                "Ma"
               ]
             }
           ]
@@ -300,6 +319,7 @@
             "nombre": "María Magdalena López Ramírez",
             "horario": "11:00 a 13:00",
             "dias": [
+              "Mi",
               "Sa"
             ]
           }
@@ -317,8 +337,7 @@
             {
               "horario": "12:00 a 14:00",
               "dias": [
-                "Ma",
-                "Mi"
+                "Ma"
               ]
             }
           ]
@@ -328,6 +347,7 @@
             "nombre": "Teresa Pérez Carbajal",
             "horario": "11:00 a 13:00",
             "dias": [
+              "Mi",
               "Sa"
             ]
           }
@@ -345,7 +365,12 @@
             {
               "horario": "13:00 a 15:00",
               "dias": [
-                "Ma",
+                "Ma"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
                 "Mi"
               ]
             }
@@ -373,7 +398,12 @@
             {
               "horario": "13:00 a 15:00",
               "dias": [
-                "Ma",
+                "Ma"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
                 "Mi"
               ]
             }
@@ -401,7 +431,12 @@
             {
               "horario": "13:00 a 15:00",
               "dias": [
-                "Ma",
+                "Ma"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
                 "Vi"
               ]
             }
@@ -429,7 +464,12 @@
             {
               "horario": "13:00 a 15:00",
               "dias": [
-                "Ma",
+                "Ma"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
                 "Vi"
               ]
             }
@@ -641,7 +681,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Sistemática I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366400"
       },
@@ -667,7 +707,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366401"
       },
@@ -679,7 +719,12 @@
             {
               "horario": "10:00 a 12:00",
               "dias": [
-                "Lu",
+                "Lu"
+              ]
+            },
+            {
+              "horario": "10:00 a 12:00",
+              "dias": [
                 "Ju"
               ]
             }
@@ -719,7 +764,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366403"
       },
@@ -745,7 +790,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Sistemática I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366404"
       },
@@ -757,7 +802,12 @@
             {
               "horario": "10:00 a 12:00",
               "dias": [
-                "Ma",
+                "Ma"
+              ]
+            },
+            {
+              "horario": "10:00 a 12:00",
+              "dias": [
                 "Ju"
               ]
             }
@@ -771,7 +821,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S5",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366405"
       },
@@ -797,7 +847,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366406"
       },
@@ -823,7 +873,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Sistemática I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366407"
       },
@@ -849,7 +899,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366408"
       },
@@ -875,7 +925,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Sistemática I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366409"
       },
@@ -901,7 +951,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366410"
       },
@@ -927,7 +977,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Sistemática I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366411"
       },
@@ -953,7 +1003,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366412"
       },
@@ -979,7 +1029,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Sistemática I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366413"
       },
@@ -1005,7 +1055,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366414"
       },
@@ -1031,7 +1081,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Sistemática I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366415"
       },
@@ -1062,7 +1112,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Sistemática I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366416"
       },
@@ -1093,7 +1143,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366417"
       },
@@ -1119,7 +1169,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366418"
       },
@@ -1145,7 +1195,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Sistemática I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366419"
       },
@@ -1171,7 +1221,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366420"
       },
@@ -1197,7 +1247,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Sistemática I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366421"
       }
@@ -1369,7 +1419,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366427"
       },
       "5238": {
         "grupo": "5238",
@@ -1843,7 +1893,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366444"
       },
@@ -1874,7 +1924,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366445"
       },
@@ -1894,13 +1944,13 @@
         },
         "ayudantes": [
           {
-            "nombre": "Norma Angélica López Gómez",
+            "nombre": "Horacio Valdemar Bárcenas Rodríguez",
             "horario": null,
             "dias": []
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366446"
       },
@@ -1926,7 +1976,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366447"
       },
@@ -1952,7 +2002,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366448"
       },
@@ -1978,7 +2028,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366449"
       },
@@ -2004,7 +2054,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366450"
       },
@@ -2035,7 +2085,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366451"
       },
@@ -2066,7 +2116,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366452"
       },
@@ -2092,7 +2142,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366453"
       },
@@ -2123,7 +2173,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366454"
       }
@@ -2156,7 +2206,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366455"
       },
@@ -2187,7 +2237,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366456"
       },
@@ -2218,7 +2268,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -2249,7 +2299,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366458"
       },
@@ -2280,7 +2330,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366459"
       },
@@ -2311,7 +2361,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366460"
       },
@@ -2342,7 +2392,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366461"
       },
@@ -2373,7 +2423,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366462"
       },
@@ -2404,7 +2454,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366463"
       },
@@ -2462,7 +2512,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366664"
       }
@@ -2754,7 +2804,13 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "María Laura González Resendiz",
+            "horario": null,
+            "dias": []
+          }
+        ],
         "nota": null,
         "salon": "Laboratorio de Prácticas de Química I",
         "modalidad": "Presencial",
@@ -3148,9 +3204,13 @@
             {
               "horario": "18:00 a 20:00",
               "dias": [
-                "Ma",
-                "Ju",
-                "Vi"
+                "Ma"
+              ]
+            },
+            {
+              "horario": "18:00 a 20:00",
+              "dias": [
+                "Ju"
               ]
             }
           ]
@@ -3158,12 +3218,14 @@
         "ayudantes": [
           {
             "nombre": "José Javier García-Figueroa Morales",
-            "horario": null,
-            "dias": []
+            "horario": "18:00 a 20:00",
+            "dias": [
+              "Vi"
+            ]
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B002",
         "modalidad": "Presencial",
         "presentacion": null
       }
@@ -3177,7 +3239,12 @@
             {
               "horario": "14:00 a 16:00",
               "dias": [
-                "Ma",
+                "Ma"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
                 "Ju"
               ]
             }
@@ -3193,7 +3260,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366487"
       }
@@ -3251,7 +3318,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366489"
       },
@@ -3303,7 +3370,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366491"
       },
@@ -4004,7 +4071,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366517"
       },
@@ -4030,7 +4097,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366518"
       },
@@ -4056,7 +4123,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366519"
       },
@@ -4082,7 +4149,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366520"
       },
@@ -4109,7 +4176,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366521"
       },
@@ -4135,7 +4202,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366522"
       },
@@ -4161,7 +4228,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366523"
       },
@@ -4187,7 +4254,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366524"
       },
@@ -4214,7 +4281,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366525"
       },
@@ -4240,7 +4307,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366526"
       }
@@ -4269,7 +4336,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366527"
       },
@@ -4296,7 +4363,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366528"
       },
@@ -4323,7 +4390,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366529"
       },
@@ -4350,7 +4417,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366530"
       },
@@ -4377,7 +4444,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366531"
       },
@@ -4404,7 +4471,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366532"
       },
@@ -4431,9 +4498,9 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366533"
       },
       "5344": {
         "grupo": "5344",
@@ -4458,7 +4525,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366534"
       },
@@ -4485,7 +4552,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366535"
       },
@@ -4512,7 +4579,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366536"
       },
@@ -4539,7 +4606,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366537"
       },
@@ -4566,7 +4633,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366538"
       },
@@ -4593,7 +4660,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366539"
       },
@@ -4620,7 +4687,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366540"
       },
@@ -4647,7 +4714,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366541"
       },
@@ -4674,7 +4741,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366542"
       },
@@ -4701,7 +4768,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366543"
       },
@@ -4728,7 +4795,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366544"
       },
@@ -4755,7 +4822,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366545"
       }
@@ -4845,7 +4912,7 @@
       "5359": {
         "grupo": "5359",
         "profesor": {
-          "nombre": "Iván Romero García",
+          "nombre": "Agapcel Felipe Martínez Rodríguez",
           "horarios": [
             {
               "horario": "08:00 a 10:00",
@@ -4865,7 +4932,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366549"
       },
