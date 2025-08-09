@@ -183,7 +183,8 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
           let assistantScheduleMatches = false;
           if (groupData?.ayudantes) {
             assistantScheduleMatches = groupData.ayudantes.some(ayudante =>
-              normalizeText(ayudante?.horario || '').includes(normalizedQuery)
+              normalizeText(ayudante?.horario || '').includes(normalizedQuery) ||
+              normalizeText(ayudante?.salon || '').includes(normalizedQuery)
             );
           }
 
@@ -327,6 +328,12 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
                   {ayudante?.horario && ayudante?.dias && ayudante.dias.length > 0 && (
                     <p className="text-gray-400 text-xs">
                       {highlightText(ayudante.horario, searchQuery)} ({ayudante.dias.join(", ")})
+                      {/* Show assistant's salon if different from professor's or if no professor salon */}
+                      {ayudante?.salon && (
+                        <span className="ml-1 text-blue-300">
+                          🏫 {highlightText(ayudante.salon, searchQuery)}
+                        </span>
+                      )}
                     </p>
                   )}
                 </div>

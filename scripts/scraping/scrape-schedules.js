@@ -32,6 +32,7 @@ async function scrapeSchedules() {
 	// Read the materias data (resolve path relative to project root)
 	const materiasPath = path.resolve(__dirname, "..", "..", "materias.json");
 	const materiasData = JSON.parse(fs.readFileSync(materiasPath, "utf8"));
+	console.log(`📊 Loaded ${materiasData.length} materias from materias.json`);
 
 	const browser = await puppeteer.launch({
 		headless: true,
@@ -61,6 +62,8 @@ async function scrapeSchedules() {
 		materiasByMajor[majorKey].push(materia["materias-href"]);
 	});
 
+	console.log(`📚 Found ${Object.keys(MAJORS_CONFIG).length} majors to process`);
+
 	for (const [majorUrl, majorName] of Object.entries(MAJORS_CONFIG)) {
 		const subjectUrls = materiasByMajor[majorUrl] || [];
 
@@ -74,12 +77,18 @@ async function scrapeSchedules() {
 		);
 
 		const scheduleData = [];
+		let processedCount = 0;
+		let errorCount = 0;
 
 		for (let i = 0; i < subjectUrls.length; i++) {
 			const url = subjectUrls[i];
-			console.log(
-				`  📖 Processing subject ${i + 1}/${subjectUrls.length}...`
-			);
+			
+			// Show progress every 10 subjects
+			if (i % 10 === 0 || i === subjectUrls.length - 1) {
+				console.log(
+					`  📖 Processing subject ${i + 1}/${subjectUrls.length} (${Math.round((i/subjectUrls.length)*100)}%)...`
+				);
+			}
 
 			let page;
 			let pageCreated = false;
@@ -113,6 +122,7 @@ async function scrapeSchedules() {
 								error.message
 							);
 							shouldSkip = true;
+							errorCount++;
 							break;
 						}
 
@@ -231,6 +241,10 @@ async function scrapeSchedules() {
 											d.textContent?.trim() || "",
 									}))
 								),
+								"salon-ayudante":
+									row
+										.querySelector("a.horario_a")
+										?.textContent?.trim() || "",
 							})
 						);
 
@@ -284,6 +298,7 @@ async function scrapeSchedules() {
 							salon: "",
 							modalidad: group.modalidad,
 							"presentacion-href": group.presentacion,
+							"salon-ayudante": assistant["salon-ayudante"],
 						});
 					});
 				});
@@ -328,6 +343,7 @@ async function scrapeSchedules() {
 				{ id: "salon", title: "salon" },
 				{ id: "modalidad", title: "modalidad" },
 				{ id: "presentacion-href", title: "presentacion-href" },
+				{ id: "salon-ayudante", title: "salon-ayudante" },
 			],
 		});
 
@@ -335,6 +351,10 @@ async function scrapeSchedules() {
 		console.log(
 			`✅ Saved ${scheduleData.length} schedule entries for ${majorName}`
 		);
+		
+		// Show assistant salon statistics
+		const assistantWithSalon = scheduleData.filter(record => record["salon-ayudante"] && record["salon-ayudante"].trim());
+		console.log(`🎯 Found ${assistantWithSalon.length} assistant records with salon information for ${majorName}`);
 
 		// Add a small delay between majors
 		await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -345,8 +365,10 @@ async function scrapeSchedules() {
 }
 
 // Run if this file is executed directly (not imported)
-if (import.meta.url === `file://${process.argv[1]}`) {
-	scrapeSchedules().catch(console.error);
-}
+console.log("Script loaded, checking execution condition...");
+console.log("import.meta.url:", import.meta.url);
+console.log("process.argv[1]:", process.argv[1]);
+
+scrapeSchedules().catch(console.error);
 
 export default scrapeSchedules;

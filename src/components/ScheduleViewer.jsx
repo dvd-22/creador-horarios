@@ -138,7 +138,8 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                   type: 'assistant',
                   subject: group.subject,
                   group: group.group,
-                  professor: assistant.nombre || 'Ayudante no asignado'
+                  professor: assistant.nombre || 'Ayudante no asignado',
+                  salon: assistant.salon || group.salon || ''
                 });
               }
             }

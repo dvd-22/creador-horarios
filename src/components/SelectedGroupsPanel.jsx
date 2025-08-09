@@ -167,7 +167,8 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
                 day,
                 start,
                 end,
-                name: assistant.nombre || 'Ayudante no asignado'
+                name: assistant.nombre || 'Ayudante no asignado',
+                salon: assistant.salon || group.salon || ''
               });
             }
           });
@@ -202,7 +203,7 @@ const SelectedGroupsPanel = ({ selectedGroups, onRemoveGroup, onSaveSchedule, se
             endInputType: 'local',
             title: `${group.subject}`,
             description: `Ayudante: ${slot.name}`,
-            location: group.salon || '',
+            location: slot.salon,
             recurrenceRule: `FREQ=WEEKLY;BYDAY=${dayMap[slot.day]};UNTIL=20251128T235959Z`
           });
         }

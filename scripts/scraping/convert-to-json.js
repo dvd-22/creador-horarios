@@ -65,6 +65,7 @@ function convertCsvToJson(csvFilePath, jsonFilePath) {
 			salon,
 			modalidad,
 			"presentacion-href": presentacionHref,
+			"salon-ayudante": salonAyudante,
 		} = row;
 
 		const groupId = gid?.match(/\d+/)?.[0];
@@ -156,6 +157,7 @@ function convertCsvToJson(csvFilePath, jsonFilePath) {
 			try {
 				let diasAyud = [];
 				let horarioAyud = null;
+				let salonAyud = null;
 
 				// Parse schedule data if available
 				if (diasAyudantes && diasAyudantes.trim()) {
@@ -165,6 +167,10 @@ function convertCsvToJson(csvFilePath, jsonFilePath) {
 
 				if (horarios && horarios.trim()) {
 					horarioAyud = horarios.trim();
+				}
+
+				if (salonAyudante && salonAyudante.trim()) {
+					salonAyud = salonAyudante.trim();
 				}
 
 				// Only add assistant if they have meaningful data
@@ -177,6 +183,7 @@ function convertCsvToJson(csvFilePath, jsonFilePath) {
 						nombre: hasName ? nombres.trim() : null,
 						horario: horarioAyud,
 						dias: diasAyud,
+						salon: salonAyud,
 					});
 				}
 			} catch (error) {
