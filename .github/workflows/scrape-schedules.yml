@@ -2,13 +2,8 @@ name: Scrape Schedule Data
 
 on:
     schedule:
-        # Run every semester (twice a year) - January and August
-        - cron: "0 8 1 1,8 *"
+        - cron: "0 8 * * 0" # Every Sunday at 8 AM UTC (weekly)
     workflow_dispatch: # Allow manual triggers
-    push:
-        paths:
-            - "scripts/scraping/**"
-            - ".github/workflows/scrape-schedules.yml"
 
 jobs:
     scrape-schedules:

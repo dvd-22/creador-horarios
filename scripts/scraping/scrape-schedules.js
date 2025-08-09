@@ -62,7 +62,9 @@ async function scrapeSchedules() {
 		materiasByMajor[majorKey].push(materia["materias-href"]);
 	});
 
-	console.log(`📚 Found ${Object.keys(MAJORS_CONFIG).length} majors to process`);
+	console.log(
+		`📚 Found ${Object.keys(MAJORS_CONFIG).length} majors to process`
+	);
 
 	for (const [majorUrl, majorName] of Object.entries(MAJORS_CONFIG)) {
 		const subjectUrls = materiasByMajor[majorUrl] || [];
@@ -82,11 +84,13 @@ async function scrapeSchedules() {
 
 		for (let i = 0; i < subjectUrls.length; i++) {
 			const url = subjectUrls[i];
-			
+
 			// Show progress every 10 subjects
 			if (i % 10 === 0 || i === subjectUrls.length - 1) {
 				console.log(
-					`  📖 Processing subject ${i + 1}/${subjectUrls.length} (${Math.round((i/subjectUrls.length)*100)}%)...`
+					`  📖 Processing subject ${i + 1}/${
+						subjectUrls.length
+					} (${Math.round((i / subjectUrls.length) * 100)}%)...`
 				);
 			}
 
@@ -351,10 +355,15 @@ async function scrapeSchedules() {
 		console.log(
 			`✅ Saved ${scheduleData.length} schedule entries for ${majorName}`
 		);
-		
+
 		// Show assistant salon statistics
-		const assistantWithSalon = scheduleData.filter(record => record["salon-ayudante"] && record["salon-ayudante"].trim());
-		console.log(`🎯 Found ${assistantWithSalon.length} assistant records with salon information for ${majorName}`);
+		const assistantWithSalon = scheduleData.filter(
+			(record) =>
+				record["salon-ayudante"] && record["salon-ayudante"].trim()
+		);
+		console.log(
+			`🎯 Found ${assistantWithSalon.length} assistant records with salon information for ${majorName}`
+		);
 
 		// Add a small delay between majors
 		await new Promise((resolve) => setTimeout(resolve, 1000));
