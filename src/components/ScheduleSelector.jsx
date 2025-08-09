@@ -5,6 +5,12 @@ import MajorSelector from './MajorSelector';
 import ProfessorRating from './ProfessorRating';
 import { professorRatingService } from '../services/professorRatingService';
 
+// Utility function to normalize text for search (remove accents, convert to lowercase)
+const normalizeText = (text) => {
+  if (!text) return '';
+  return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+};
+
 const semesterOrder = [
   'Primer Semestre',
   'Segundo Semestre',
@@ -69,11 +75,27 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
 
   const highlightText = (text, query) => {
     if (!query.trim() || !text) return text;
-    const parts = text.split(new RegExp(`(${query})`, 'gi'));
-    return parts.map((part, index) =>
-      part.toLowerCase() === query.toLowerCase() ?
-        <span key={index} className="bg-yellow-500/30 text-white">{part}</span> :
-        part
+
+    const normalizedText = normalizeText(text);
+    const normalizedQuery = normalizeText(query.trim());
+
+    if (!normalizedText.includes(normalizedQuery)) return text;
+
+    // Find the position in the normalized text
+    const index = normalizedText.indexOf(normalizedQuery);
+    if (index === -1) return text;
+
+    // Extract the matching part from the original text
+    const before = text.substring(0, index);
+    const match = text.substring(index, index + normalizedQuery.length);
+    const after = text.substring(index + normalizedQuery.length);
+
+    return (
+      <>
+        {before}
+        <span className="bg-yellow-500/30 text-white">{match}</span>
+        {after}
+      </>
     );
   };
 
@@ -120,13 +142,9 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
   };
 
   const filteredScheduleData = useMemo(() => {
-    const query = searchQuery.toLowerCase().trim();
+    if (!searchQuery.trim()) return getOrderedData(majorData || {});
 
-    if (!query) {
-      // If no search query, return data with proper ordering
-      return getOrderedData(majorData);
-    }
-
+    const normalizedQuery = normalizeText(searchQuery.trim());
     const filtered = {};
 
     if (!majorData || typeof majorData !== 'object') {
@@ -141,18 +159,40 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
         const filteredGroups = {};
 
         Object.entries(groups).forEach(([groupNum, groupData]) => {
-          const matchesGroup = groupNum.toLowerCase().includes(query);
-          const matchesProfessor = groupData?.profesor?.nombre?.toLowerCase()?.includes(query) || false;
-          const matchesAyudante = groupData?.ayudantes?.some(
-            ayudante => ayudante?.nombre?.toLowerCase()?.includes(query)
-          ) || false;
-          const matchesSubject = subject.toLowerCase().includes(query);
-          const matchesSemester = semester.toLowerCase().includes(query);
-          const matchesSalon = groupData?.salon?.toLowerCase()?.includes(query) || false;
-          const matchesModalidad = groupData?.modalidad?.toLowerCase()?.includes(query) || false;
+          // Search in all possible fields
+          const searchFields = [
+            groupNum, // Group number
+            groupData?.profesor?.nombre, // Professor name
+            subject, // Subject name
+            semester, // Semester name
+            groupData?.salon, // Classroom
+            groupData?.modalidad, // Modality
+            groupData?.nota, // Notes
+            ...(groupData?.ayudantes?.map(ayudante => ayudante?.nombre) || []) // Assistant names
+          ];
 
-          if (matchesGroup || matchesProfessor || matchesAyudante || matchesSubject || matchesSemester ||
-            matchesSalon || matchesModalidad) {
+          // Search in professor schedules
+          let professorScheduleMatches = false;
+          if (groupData?.profesor?.horarios) {
+            professorScheduleMatches = groupData.profesor.horarios.some(schedule =>
+              normalizeText(schedule.horario || '').includes(normalizedQuery)
+            );
+          }
+
+          // Search in assistant schedules
+          let assistantScheduleMatches = false;
+          if (groupData?.ayudantes) {
+            assistantScheduleMatches = groupData.ayudantes.some(ayudante =>
+              normalizeText(ayudante?.horario || '').includes(normalizedQuery)
+            );
+          }
+
+          // Check if any field matches
+          const fieldMatches = searchFields.some(field =>
+            field && normalizeText(field).includes(normalizedQuery)
+          );
+
+          if (fieldMatches || professorScheduleMatches || assistantScheduleMatches) {
             filteredGroups[groupNum] = groupData;
           }
         });
@@ -248,7 +288,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
             {groupData?.profesor?.horarios?.map((schedule, index) => (
               schedule?.horario && schedule?.dias && schedule.dias.length > 0 ? (
                 <p key={index} className="text-gray-400 text-xs">
-                  {schedule.horario} ({schedule.dias.join(", ")})
+                  {highlightText(schedule.horario, searchQuery)} ({schedule.dias.join(", ")})
                 </p>
               ) : null
             ))}
@@ -286,7 +326,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
                   {/* Only show schedule if it exists and has associated days */}
                   {ayudante?.horario && ayudante?.dias && ayudante.dias.length > 0 && (
                     <p className="text-gray-400 text-xs">
-                      {ayudante.horario} ({ayudante.dias.join(", ")})
+                      {highlightText(ayudante.horario, searchQuery)} ({ayudante.dias.join(", ")})
                     </p>
                   )}
                 </div>
@@ -298,7 +338,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
         {/* Note Info */}
         {groupData?.nota && (
           <div className="border-t border-gray-700 pt-1 mt-1">
-            <p className="text-yellow-200 text-xs italic">&#x1F6C8; {groupData.nota}</p>
+            <p className="text-yellow-200 text-xs italic">&#x1F6C8; {highlightText(groupData.nota, searchQuery)}</p>
           </div>
         )}
       </div>
@@ -319,9 +359,6 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
           />
           <Search className="absolute left-2 top-2.5 text-gray-400" size={16} />
         </div>
-        {searchQuery && Object.keys(filteredScheduleData).length === 0 && (
-          <p className="mt-2 text-sm text-gray-400">No se encontraron resultados</p>
-        )}
       </div>
 
       <MajorSelector />
@@ -351,6 +388,17 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
         {/* Content */}
         {!isLoading && !loadError && (
           <div className="p-2">
+            {/* No results message when searching */}
+            {searchQuery && Object.keys(filteredScheduleData || {}).length === 0 && (
+              <div className="flex items-center justify-center h-64">
+                <div className="text-center">
+                  <div className="text-gray-500 mb-2">🔍</div>
+                  <p className="text-gray-400">No se encontraron resultados</p>
+                </div>
+              </div>
+            )}
+
+            {/* Results */}
             {Object.entries(filteredScheduleData || {}).map(([semester, subjects]) => (
               <div key={semester} className="mb-3 border border-gray-700 rounded-lg overflow-hidden">
                 <button
