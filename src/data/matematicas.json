@@ -7129,7 +7129,7 @@
       "4195": {
         "grupo": "4195",
         "profesor": {
-          "nombre": "Emilio Esteban Lluis Puebla",
+          "nombre": "Octavio Baltasar Zapata Fonseca",
           "horarios": [
             {
               "horario": "11:00 a 12:00",
@@ -7143,17 +7143,17 @@
         },
         "ayudantes": [
           {
-            "nombre": "Luis Adrián Nava Rosas",
+            "nombre": null,
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
               "Ju"
             ],
-            "salon": "O127"
+            "salon": "Taller de Análisis Numérico"
           }
         ],
         "nota": null,
-        "salon": "O127",
+        "salon": "Taller de Análisis Numérico",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365385"
       },
@@ -11806,7 +11806,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rodrigo Arellano García",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -11845,11 +11845,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Taller de Análisis Numérico"
+            "salon": "O127"
           }
         ],
         "nota": null,
-        "salon": "Taller de Análisis Numérico",
+        "salon": "O127",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365441"
       },
@@ -12162,6 +12162,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Max Emiliano Islas Zicatl",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -12186,7 +12195,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Diego León Luna",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -13523,6 +13532,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Elisa Margarita Olguín Hernández",
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -14355,7 +14373,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Edgar Cid Mariscal",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -16150,11 +16168,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P208"
+            "salon": "101 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "P208",
+        "salon": "101 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366251"
       },
@@ -16662,7 +16680,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Jesús Hermilo Candelas Mejía",
+            "nombre": "Anaxa Castrillo Coria",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",

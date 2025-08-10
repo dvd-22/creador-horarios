@@ -2335,11 +2335,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "101 (Yelizcalli)"
+            "salon": "P208"
           }
         ],
         "nota": null,
-        "salon": "101 (Yelizcalli)",
+        "salon": "P208",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365216"
       },
@@ -3257,6 +3257,15 @@
               "Ju"
             ],
             "salon": "O223"
+          },
+          {
+            "nombre": "Luis Gerardo Mayén Sosa",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -10748,6 +10757,15 @@
               "Ju"
             ],
             "salon": "O214"
+          },
+          {
+            "nombre": "Christopher Alejandro Alarcón Ortega",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -10992,6 +11010,15 @@
         "ayudantes": [
           {
             "nombre": "Angel Andoni Gónzalez Jaimes",
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Elisa Margarita Olguín Hernández",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -12261,6 +12288,15 @@
         "ayudantes": [
           {
             "nombre": "Aaron Mauricio Gómez Jiménez",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Max Emiliano Islas Zicatl",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -13785,7 +13821,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Efraín Hipólito Chamú",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -15326,6 +15362,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Abigail Ortiz Leyva",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": "Finanzas Aplicadas",
@@ -15480,7 +15525,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rodrigo Arellano García",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -15513,7 +15558,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Edgar Cid Mariscal",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",

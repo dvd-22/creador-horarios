@@ -4664,11 +4664,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O127"
+            "salon": "Taller de Topología"
           }
         ],
         "nota": null,
-        "salon": "O127",
+        "salon": "Taller de Topología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366108"
       },
@@ -5956,38 +5956,6 @@
     }
   },
   "Optativas": {
-    "Administración de Empresas de Software": {
-      "7191": {
-        "grupo": "7191",
-        "profesor": {
-          "nombre": "Daniel Ruelas Milanés",
-          "horarios": [
-            {
-              "horario": "17:00 a 18:30",
-              "dias": [
-                "Ma",
-                "Ju"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "18:30 a 19:30",
-            "dias": [
-              "Lu",
-              "Mi"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Virtual",
-        "presentacion": null
-      }
-    },
     "Álgebra Lineal II": {
       "4165": {
         "grupo": "4165",
@@ -6282,7 +6250,7 @@
       "4195": {
         "grupo": "4195",
         "profesor": {
-          "nombre": "Emilio Esteban Lluis Puebla",
+          "nombre": "Octavio Baltasar Zapata Fonseca",
           "horarios": [
             {
               "horario": "11:00 a 12:00",
@@ -6296,17 +6264,17 @@
         },
         "ayudantes": [
           {
-            "nombre": "Luis Adrián Nava Rosas",
+            "nombre": null,
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
               "Ju"
             ],
-            "salon": "O127"
+            "salon": "Taller de Análisis Numérico"
           }
         ],
         "nota": null,
-        "salon": "O127",
+        "salon": "Taller de Análisis Numérico",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365385"
       },
@@ -7545,75 +7513,6 @@
         "salon": "300 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365554"
-      }
-    },
-    "Ingeniería de Software II": {
-      "7190": {
-        "grupo": "7190",
-        "profesor": {
-          "nombre": "Mauricio Riva Palacio Orozco",
-          "horarios": [
-            {
-              "horario": "17:30 a 19:00",
-              "dias": [
-                "Lu",
-                "Mi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "19:00 a 20:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": "Taller de Lenguajes de Programación"
-          },
-          {
-            "nombre": null,
-            "horario": "17:00 a 19:00",
-            "dias": [
-              "Ju"
-            ],
-            "salon": "Taller de Lenguajes de Programación"
-          }
-        ],
-        "nota": null,
-        "salon": "Taller de Lenguajes de Programación",
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368001"
-      }
-    },
-    "Introducción Crítica a la Diplomacia de la Ciencia": {
-      "8434": {
-        "grupo": "8434",
-        "profesor": {
-          "nombre": "Parsifal Fidelio Islas Morales",
-          "horarios": [
-            {
-              "horario": "18:00 a 21:00",
-              "dias": [
-                "Lu",
-                "Ju"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Yudy Liliana Tibaduiza Roa",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
       }
     },
     "Investigación de Operaciones": {

@@ -2700,11 +2700,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "101 (Yelizcalli)"
+            "salon": "P208"
           }
         ],
         "nota": null,
-        "salon": "101 (Yelizcalli)",
+        "salon": "P208",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365216"
       },
@@ -13091,7 +13091,7 @@
       "4195": {
         "grupo": "4195",
         "profesor": {
-          "nombre": null,
+          "nombre": "Octavio Baltasar Zapata Fonseca",
           "horarios": [
             {
               "horario": "11:00 a 12:00",
@@ -13111,11 +13111,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O127"
+            "salon": "Taller de Análisis Numérico"
           }
         ],
-        "nota": "Este curso será impartido por el Dr. Octavio Baltazar Zapata Fonseca",
-        "salon": "O127",
+        "nota": null,
+        "salon": "Taller de Análisis Numérico",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365385"
       },
@@ -14542,11 +14542,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Taller de Análisis Numérico"
+            "salon": "O127"
           }
         ],
         "nota": null,
-        "salon": "Taller de Análisis Numérico",
+        "salon": "O127",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365441"
       },
@@ -14745,7 +14745,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P116",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365803"
       }
@@ -15685,7 +15685,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P115",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366567"
       }
@@ -15778,7 +15778,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P117",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365812"
       }
@@ -16043,35 +16043,6 @@
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365822"
       }
     },
-    "Introducción Crítica a la Diplomacia de la Ciencia": {
-      "8434": {
-        "grupo": "8434",
-        "profesor": {
-          "nombre": "Parsifal Fidelio Islas Morales",
-          "horarios": [
-            {
-              "horario": "18:00 a 21:00",
-              "dias": [
-                "Lu",
-                "Ju"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Yudy Liliana Tibaduiza Roa",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      }
-    },
     "Introducción Matemática a la Mecánica Celeste": {
       "4280": {
         "grupo": "4280",
@@ -16289,7 +16260,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "O132",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365828"
       }
@@ -16793,20 +16764,6 @@
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365837"
       }
     },
-    "Temas Selectos de Ciencias de la Tierra II": {
-      "8435": {
-        "grupo": "8435",
-        "profesor": {
-          "nombre": "Mónica Borunda Pacheco",
-          "horarios": []
-        },
-        "ayudantes": [],
-        "nota": "Recursos energéticos renovables de la Tierra",
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368013"
-      }
-    },
     "Temas Selectos de Electrónica e Instrumentación I": {
       "8357": {
         "grupo": "8357",
@@ -16892,7 +16849,7 @@
           }
         ],
         "nota": "Temas sobre filosofía de la f´sica",
-        "salon": null,
+        "salon": "Salón de Seminarios 327",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365839"
       },
@@ -17044,7 +17001,7 @@
           }
         ],
         "nota": "Dinámica no lineal y caos",
-        "salon": null,
+        "salon": "P114",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365845"
       }
@@ -17358,7 +17315,7 @@
           }
         ],
         "nota": "\"MAF II\"",
-        "salon": null,
+        "salon": "P112",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365861"
       },

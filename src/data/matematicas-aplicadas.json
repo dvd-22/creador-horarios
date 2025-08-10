@@ -9154,7 +9154,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Jesús Hermilo Candelas Mejía",
+            "nombre": "Anaxa Castrillo Coria",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -10136,6 +10136,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Elisa Margarita Olguín Hernández",
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -10455,16 +10464,7 @@
         "grupo": "6010",
         "profesor": {
           "nombre": "Octavio Baltasar Zapata Fonseca",
-          "horarios": [
-            {
-              "horario": "11:00 a 12:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
+          "horarios": []
         },
         "ayudantes": [
           {
@@ -11793,7 +11793,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Edgar Cid Mariscal",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -12085,37 +12085,6 @@
         "salon": "P201",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366706"
-      }
-    }
-  },
-  "Optativas de Movilidad": {
-    "Introducción Crítica a la Diplomacia de la Ciencia": {
-      "8434": {
-        "grupo": "8434",
-        "profesor": {
-          "nombre": "Parsifal Fidelio Islas Morales",
-          "horarios": [
-            {
-              "horario": "18:00 a 21:00",
-              "dias": [
-                "Lu",
-                "Ju"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Yudy Liliana Tibaduiza Roa",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
       }
     }
   },
