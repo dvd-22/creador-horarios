@@ -249,7 +249,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366385"
       },
@@ -399,7 +399,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "O133",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366390"
       },
@@ -433,7 +433,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "O124",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366391"
       },
@@ -467,7 +467,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "204 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366392"
       },
@@ -501,7 +501,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "303 (Tlaltícpac)",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366393"
       },
@@ -613,7 +613,7 @@
             "dias": [
               "Mi"
             ],
-            "salon": null
+            "salon": "104 (Tlaltícpac)"
           }
         ],
         "nota": null,
@@ -671,7 +671,7 @@
             "dias": [
               "Mi"
             ],
-            "salon": null
+            "salon": "303 (Tlaltícpac)"
           }
         ],
         "nota": null,
@@ -1397,7 +1397,12 @@
             {
               "horario": "08:00 a 10:00",
               "dias": [
-                "Ma",
+                "Ma"
+              ]
+            },
+            {
+              "horario": "08:00 a 10:00",
+              "dias": [
                 "Vi"
               ]
             }
@@ -1410,11 +1415,11 @@
             "dias": [
               "Sa"
             ],
-            "salon": null
+            "salon": "203 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366425"
       },
@@ -1473,11 +1478,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "104 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366427"
       },
@@ -1518,7 +1523,12 @@
             {
               "horario": "10:00 a 12:00",
               "dias": [
-                "Mi",
+                "Mi"
+              ]
+            },
+            {
+              "horario": "10:00 a 12:00",
+              "dias": [
                 "Vi"
               ]
             }
@@ -1531,11 +1541,11 @@
             "dias": [
               "Sa"
             ],
-            "salon": null
+            "salon": "203 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366429"
       },
@@ -1569,7 +1579,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "303 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366430"
       },
@@ -1581,7 +1591,12 @@
             {
               "horario": "10:00 a 12:00",
               "dias": [
-                "Mi",
+                "Mi"
+              ]
+            },
+            {
+              "horario": "10:00 a 12:00",
+              "dias": [
                 "Vi"
               ]
             }
@@ -1594,7 +1609,7 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "303 (Tlaltícpac)"
           }
         ],
         "nota": null,
@@ -1661,7 +1676,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366433"
       },
@@ -1719,7 +1734,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "O217",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366435"
       },
@@ -1928,7 +1943,7 @@
               "Mi",
               "Ju"
             ],
-            "salon": null
+            "salon": "104 (Yelizcalli)"
           }
         ],
         "nota": null,
@@ -1957,11 +1972,11 @@
               "Mi",
               "Ju"
             ],
-            "salon": null
+            "salon": "103 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366443"
       }
@@ -3263,7 +3278,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Fernando Fernández Ramírez",
+            "nombre": "Brandon Bustos García",
             "horario": "16:00 a 18:00",
             "dias": [
               "Vi",
@@ -3273,7 +3288,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P206",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366484"
       }
@@ -4501,6 +4516,38 @@
         "salon": "103 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366526"
+      },
+      "5639": {
+        "grupo": "5639",
+        "profesor": {
+          "nombre": "Verónica Noemí Zepeda Martínez",
+          "horarios": [
+            {
+              "horario": "15:00 a 18:00",
+              "dias": [
+                "Ju"
+              ]
+            },
+            {
+              "horario": "15:00 a 18:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Yury Glebskiy",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": "203 (Yelizcalli)",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368384"
       }
     },
     "Holomycota y organismos afines": {
@@ -5370,7 +5417,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366557"
       },
