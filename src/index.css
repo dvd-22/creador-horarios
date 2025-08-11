@@ -37,6 +37,73 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+/* Mobile responsive enhancements */
+@media (max-width: 768px) {
+	/* Ensure touch targets are large enough */
+	.hamburger-btn {
+		min-width: 44px;
+		min-height: 44px;
+	}
+
+	/* Smooth transitions for mobile menu */
+	.mobile-menu {
+		transition: transform 0.3s ease-in-out;
+	}
+
+	/* Better scrolling on mobile */
+	.overflow-x-auto {
+		-webkit-overflow-scrolling: touch;
+		scrollbar-width: thin;
+	}
+
+	/* Hide desktop scrollbars on mobile */
+	.overflow-x-auto::-webkit-scrollbar {
+		height: 4px;
+	}
+
+	.overflow-x-auto::-webkit-scrollbar-track {
+		background: rgba(107, 114, 128, 0.1);
+		border-radius: 2px;
+	}
+
+	.overflow-x-auto::-webkit-scrollbar-thumb {
+		background: rgba(107, 114, 128, 0.5);
+		border-radius: 2px;
+	}
+}
+
+/* Better schedule cards */
+.time-group-card {
+	backdrop-filter: blur(8px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	transition: all 0.2s ease;
+}
+
+.time-group-card:hover {
+	transform: translateY(-1px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+	border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Schedule grid improvements */
+.schedule-grid {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+/* Day header styling */
+.day-header {
+	background: linear-gradient(180deg, #1f2937 0%, #111827 100%);
+	backdrop-filter: blur(10px);
+	border-bottom: 2px solid #374151;
+}
+
+/* Time column styling */
+.time-column {
+	background: linear-gradient(90deg, #111827 0%, rgba(17, 24, 39, 0.95) 100%);
+	backdrop-filter: blur(10px);
+}
+
 a {
 	font-weight: 500;
 	color: #646cff;

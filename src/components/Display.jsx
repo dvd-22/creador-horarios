@@ -4,6 +4,7 @@ import ExportLayout from './ExportLayout';
 import ScheduleViewer from './ScheduleViewer';
 import SelectedGroupsPanel from './SelectedGroupsPanel';
 import ResizablePanels from './ResizablePanels';
+import ResponsiveDisplay from './ResponsiveDisplay';
 import { saveScheduleAsPng } from '../utils/scheduleUtils';
 import SavePopup from './SavePopup';
 import { MajorProvider } from '../contexts/MajorContext';
@@ -441,31 +442,21 @@ const Display = () => {
                     </div>
                 )}
 
-                <ResizablePanels
-                    leftPanel={
-                        <div className="flex flex-col h-full">
-                            <div className="flex-1 flex flex-col overflow-hidden">
-                                <ScheduleSelector
-                                    onGroupSelect={handleGroupSelect}
-                                    selectedGroups={selectedGroups}
-                                />
-                            </div>
-                            <OverlapToggle
-                                checked={allowOverlap}
-                                onChange={handleToggleOverlap}
-                            />
-                        </div>
+                <ResponsiveDisplay
+                    scheduleSelectorPanel={
+                        <ScheduleSelector
+                            onGroupSelect={handleGroupSelect}
+                            selectedGroups={selectedGroups}
+                        />
                     }
-                    centerPanel={
-                        <div className="overflow-hidden" ref={scheduleRef}>
-                            <ScheduleViewer
-                                selectedGroups={selectedGroups}
-                                onRemoveGroup={handleGroupSelect}
-                                scheduleName={scheduleTitle}
-                            />
-                        </div>
+                    scheduleViewerPanel={
+                        <ScheduleViewer
+                            selectedGroups={selectedGroups}
+                            onRemoveGroup={handleGroupSelect}
+                            scheduleName={scheduleTitle}
+                        />
                     }
-                    rightPanel={
+                    selectedGroupsPanel={
                         <SelectedGroupsPanel
                             selectedGroups={selectedGroups}
                             onRemoveGroup={handleGroupSelect}
@@ -475,6 +466,13 @@ const Display = () => {
                             onTitleChange={handleTitleChange}
                         />
                     }
+                    overlapTogglePanel={
+                        <OverlapToggle
+                            checked={allowOverlap}
+                            onChange={handleToggleOverlap}
+                        />
+                    }
+                    scheduleRef={scheduleRef}
                 />
 
                 <ExportLayout
