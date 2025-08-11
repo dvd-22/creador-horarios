@@ -211,6 +211,15 @@
               "Ju"
             ],
             "salon": "O121"
+          },
+          {
+            "nombre": "José Stefano Sánchez Sánchez",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -366,6 +375,15 @@
               "Ju"
             ],
             "salon": "101 (Yelizcalli)"
+          },
+          {
+            "nombre": "Sari Abril Salgado Hernández",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -593,7 +611,7 @@
       "4019": {
         "grupo": "4019",
         "profesor": {
-          "nombre": "Francisco González Bayona",
+          "nombre": "Grissel Santiago González",
           "horarios": [
             {
               "horario": "16:00 a 17:00",
@@ -607,7 +625,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Christian Alfredo Solís Calderón",
+            "nombre": null,
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -2798,7 +2816,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Luis Adrián Nava Rosas",
+            "nombre": null,
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -2877,7 +2895,7 @@
       "4132": {
         "grupo": "4132",
         "profesor": {
-          "nombre": "Adriana León Montes",
+          "nombre": "Carlos Eduardo Martínez Aguilar",
           "horarios": [
             {
               "horario": "10:00 a 11:00",
@@ -2891,7 +2909,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "José Eduardo Cazares Tapia",
+            "nombre": null,
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -3730,6 +3748,15 @@
               "Ju"
             ],
             "salon": "O218"
+          },
+          {
+            "nombre": "Carmina García Pérez",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5956,6 +5983,38 @@
     }
   },
   "Optativas": {
+    "Administración de Empresas de Software": {
+      "7191": {
+        "grupo": "7191",
+        "profesor": {
+          "nombre": "Daniel Ruelas Milanés",
+          "horarios": [
+            {
+              "horario": "17:00 a 18:30",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "18:30 a 19:30",
+            "dias": [
+              "Lu",
+              "Mi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368350"
+      }
+    },
     "Álgebra Lineal II": {
       "4165": {
         "grupo": "4165",
@@ -7059,7 +7118,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Jesús Hermilo Candelas Mejía",
+            "nombre": "Anaxa Castrillo Coria",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -7513,6 +7572,75 @@
         "salon": "300 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365554"
+      }
+    },
+    "Ingeniería de Software II": {
+      "7190": {
+        "grupo": "7190",
+        "profesor": {
+          "nombre": "Mauricio Riva Palacio Orozco",
+          "horarios": [
+            {
+              "horario": "17:30 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "Taller de Lenguajes de Programación"
+          },
+          {
+            "nombre": null,
+            "horario": "17:00 a 19:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "Taller de Lenguajes de Programación"
+          }
+        ],
+        "nota": null,
+        "salon": "Taller de Lenguajes de Programación",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368001"
+      }
+    },
+    "Introducción Crítica a la Diplomacia de la Ciencia": {
+      "8434": {
+        "grupo": "8434",
+        "profesor": {
+          "nombre": "Parsifal Fidelio Islas Morales",
+          "horarios": [
+            {
+              "horario": "18:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Yudy Liliana Tibaduiza Roa",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Investigación de Operaciones": {
@@ -8382,6 +8510,15 @@
         "ayudantes": [
           {
             "nombre": "Angel Andoni Gónzalez Jaimes",
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Elisa Margarita Olguín Hernández",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -9556,7 +9693,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Taller de Computación Visual e Innovación Tecnológica"
+            "salon": "104 (Tlaltícpac)"
           },
           {
             "nombre": "Kevin Isaac Alcántara Estrada",
@@ -9568,7 +9705,7 @@
           }
         ],
         "nota": "Estructuras de Datos Avanzadas",
-        "salon": "Taller de Computación Visual e Innovación Tecnológica",
+        "salon": "104 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366956"
       }
