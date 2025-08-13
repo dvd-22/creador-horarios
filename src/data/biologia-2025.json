@@ -2328,7 +2328,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Los lunes, la sesión se realizará en el Auditorio ABC",
         "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366455"
@@ -2360,7 +2360,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Los lunes, la sesión se realizará en el Auditorio ABC",
         "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366456"
@@ -2392,7 +2392,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Los lunes, la sesión se realizará en el Auditorio ABC",
         "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": null
@@ -2424,7 +2424,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Los lunes, la sesión se realizará en el Auditorio ABC",
         "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366458"
@@ -2456,7 +2456,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Los lunes, la sesión se realizará en el Auditorio ABC",
         "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366459"
@@ -2488,7 +2488,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Los lunes, la sesión se realizará en el Auditorio ABC",
         "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366460"
@@ -2520,7 +2520,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Los lunes, la sesión se realizará en el Auditorio ABC",
         "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366461"
@@ -2552,7 +2552,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Los lunes, la sesión se realizará en el Auditorio ABC",
         "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366462"
@@ -2584,7 +2584,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Los lunes, la sesión se realizará en el Auditorio ABC",
         "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366463"
@@ -2612,7 +2612,7 @@
             "salon": "203 (Yelizcalli)"
           }
         ],
-        "nota": null,
+        "nota": "Los lunes, la sesión se realizará en el Auditorio ABC",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366464"
@@ -2644,7 +2644,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Los lunes, la sesión se realizará en el Auditorio ABC",
         "salon": "004",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366664"
@@ -3351,11 +3351,11 @@
             "dias": [
               "Vi"
             ],
-            "salon": "B009"
+            "salon": "B005"
           }
         ],
         "nota": null,
-        "salon": "B009",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366485"
       }
@@ -4108,7 +4108,7 @@
           "nombre": "Adriana Yanet Miranda Martínez",
           "horarios": [
             {
-              "horario": "18:00 a 21:00",
+              "horario": "15:00 a 18:00",
               "dias": [
                 "Mi"
               ]
@@ -4118,7 +4118,7 @@
         "ayudantes": [
           {
             "nombre": "Nahui Olin Zunun Domínguez",
-            "horario": "15:00 a 18:00",
+            "horario": "18:00 a 21:00",
             "dias": [
               "Lu"
             ],
@@ -4126,7 +4126,7 @@
           }
         ],
         "nota": null,
-        "salon": "S2",
+        "salon": "B005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366512"
       },
@@ -5175,7 +5175,7 @@
           "nombre": "Agapcel Felipe Martínez Rodríguez",
           "horarios": [
             {
-              "horario": "08:00 a 10:00",
+              "horario": "11:00 a 13:00",
               "dias": [
                 "Vi"
               ]
@@ -5185,7 +5185,7 @@
         "ayudantes": [
           {
             "nombre": "Pedro Romero Moreno",
-            "horario": "11:00 a 13:00",
+            "horario": "08:00 a 10:00",
             "dias": [
               "Mi"
             ],
@@ -5193,7 +5193,7 @@
           }
         ],
         "nota": null,
-        "salon": "003",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366549"
       },
@@ -5231,7 +5231,7 @@
           "nombre": "Julio César García Zebadúa",
           "horarios": [
             {
-              "horario": "11:00 a 13:00",
+              "horario": "09:00 a 11:00",
               "dias": [
                 "Sa"
               ]
@@ -5241,7 +5241,7 @@
         "ayudantes": [
           {
             "nombre": "Alexandra Guzmán Velázquez",
-            "horario": "09:00 a 11:00",
+            "horario": "11:00 a 13:00",
             "dias": [
               "Lu"
             ],
@@ -5249,7 +5249,7 @@
           }
         ],
         "nota": null,
-        "salon": "002",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366551"
       },
@@ -5424,7 +5424,7 @@
       "5368": {
         "grupo": "5368",
         "profesor": {
-          "nombre": "Paola Ivette Portillo Tzompa",
+          "nombre": "María de Jesús Hernández León",
           "horarios": [
             {
               "horario": "16:00 a 18:00",
