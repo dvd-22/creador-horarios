@@ -11,6 +11,7 @@ const ResizablePanels = ({
     maxLeftWidth = 500, // 31.25rem
     minRightWidth = 240, // 15rem
     maxRightWidth = 500, // 31.25rem
+    minCenterWidth = 400, // Minimum width for center panel
     collapseThreshold = 120, // Width below which panel collapses
     className = ""
 }) => {
@@ -62,7 +63,16 @@ const ResizablePanels = ({
 
         if (isDraggingLeft) {
             const mouseX = e.clientX - containerRect.left;
-            const newLeftWidth = Math.max(0, Math.min(maxLeftWidth, mouseX));
+            let newLeftWidth = Math.max(0, Math.min(maxLeftWidth, mouseX));
+
+            // Calculate remaining space for center + right
+            const remainingSpace = containerWidth - newLeftWidth;
+            const requiredSpace = minCenterWidth + (isRightCollapsed ? 0 : Math.max(minRightWidth, rightWidth));
+
+            // If not enough space, adjust
+            if (remainingSpace < requiredSpace) {
+                newLeftWidth = Math.max(0, containerWidth - requiredSpace);
+            }
 
             if (newLeftWidth < collapseThreshold) {
                 setIsLeftCollapsed(true);
@@ -74,7 +84,16 @@ const ResizablePanels = ({
 
         if (isDraggingRight) {
             const mouseX = e.clientX - containerRect.left;
-            const newRightWidth = Math.max(0, Math.min(maxRightWidth, containerWidth - mouseX));
+            let newRightWidth = Math.max(0, Math.min(maxRightWidth, containerWidth - mouseX));
+
+            // Calculate remaining space for left + center
+            const remainingSpace = containerWidth - newRightWidth;
+            const requiredSpace = minCenterWidth + (isLeftCollapsed ? 0 : Math.max(minLeftWidth, leftWidth));
+
+            // If not enough space, adjust
+            if (remainingSpace < requiredSpace) {
+                newRightWidth = Math.max(0, containerWidth - requiredSpace);
+            }
 
             if (newRightWidth < collapseThreshold) {
                 setIsRightCollapsed(true);
@@ -83,7 +102,7 @@ const ResizablePanels = ({
                 setRightWidth(Math.max(minRightWidth, newRightWidth));
             }
         }
-    }, [isDraggingLeft, isDraggingRight, minLeftWidth, maxLeftWidth, minRightWidth, maxRightWidth, collapseThreshold]);
+    }, [isDraggingLeft, isDraggingRight, minLeftWidth, maxLeftWidth, minRightWidth, maxRightWidth, minCenterWidth, collapseThreshold, leftWidth, rightWidth, isLeftCollapsed, isRightCollapsed]);
 
     // Handle mouse up to stop dragging
     const handleMouseUp = useCallback(() => {

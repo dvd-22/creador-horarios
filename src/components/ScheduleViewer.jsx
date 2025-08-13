@@ -208,12 +208,23 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
   }, [occupiedSlots, days]);
 
   const calculateTop = (minutes) => {
-    const startOfDay = 7 * 60; // Change from 5:00 AM to 7:00 AM in minutes
-    return ((minutes - startOfDay) / 60) * 40; // 40px per hour
+    const startOfDay = 7 * 60; // 7:00 AM in minutes
+    const endOfDay = 22 * 60;  // 22:00 PM in minutes (last hour)
+    const totalMinutes = endOfDay - startOfDay;
+    const relativeMinutes = minutes - startOfDay;
+    return (relativeMinutes / totalMinutes) * 100; // Return percentage
+  };
+
+  const calculateHeight = (startMinutes, endMinutes) => {
+    const startOfDay = 7 * 60; // 7:00 AM in minutes
+    const endOfDay = 22 * 60;  // 22:00 PM in minutes (last hour)
+    const totalMinutes = endOfDay - startOfDay;
+    const durationMinutes = endMinutes - startMinutes;
+    return (durationMinutes / totalMinutes) * 100; // Return percentage
   };
 
   return (
-    <div className={`flex flex-col h-full bg-gray-900 ${isMobile ? 'p-2' : 'p-4'}`}>
+    <div className={`flex flex-col bg-gray-900 ${isMobile ? 'p-1 h-screen' : 'p-4 h-full'}`}>
       {/* Only show title in export mode */}
       {scheduleName && isExport && (
         <h1 className="text-2xl font-bold text-gray-100 text-center mb-6">
@@ -221,118 +232,135 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
         </h1>
       )}
 
-      <div className="flex-1 overflow-auto min-h-0">
-        <div className={`relative ${isMobile ? 'min-w-[800px]' : 'min-w-full'}`}>
-          <div className="grid grid-cols-7 gap-1">
-            {/* Time column */}
-            <div className="sticky left-0 bg-gray-900 z-10">
-              <div className="h-10"></div>
-              {timeSlots.map((time) => (
-                <div key={time} className={`h-10 flex items-start relative -top-3 text-gray-400 ${isMobile ? 'text-xs' : 'text-sm'}`}>
-                  {time}
-                </div>
-              ))}
+      <div className="flex-1 overflow-auto min-h-0 pb-4">
+        <div className={`h-full min-h-[640px] ${isMobile ? 'min-w-[900px]' : 'min-w-full'}`}>
+          <div className="flex h-full min-h-[640px]">
+            {/* Time column - fixed width */}
+            <div className="sticky left-0 bg-gray-900 z-10 w-16 flex-shrink-0 flex flex-col min-h-[640px]">
+              <div className="h-10 border-b border-gray-700 flex-shrink-0"></div>
+              {/* Margin to push first hour line down */}
+              <div className="h-3 flex-shrink-0"></div>
+              <div className="flex-1 relative min-h-[597px]">
+                {/* Hours positioned at grid lines */}
+                {timeSlots.map((time, index) => (
+                  <div
+                    key={time}
+                    className={`absolute text-gray-400 ${isMobile ? 'text-xs' : 'text-sm'} pr-2 -translate-y-1/2`}
+                    style={{
+                      top: `${(index / (timeSlots.length - 1)) * 100}%`
+                    }}
+                  >
+                    {time}
+                  </div>
+                ))}
+              </div>
             </div>
 
-            {/* Day columns */}
-            {days.map(day => (
-              <div key={day} className={isMobile ? "min-w-[110px]" : "min-w-[130px]"}>
-                <div className={`h-10 text-gray-100 font-medium flex items-center justify-center sticky top-0 bg-gray-900 z-10 border-b border-gray-700 ${isMobile ? 'text-sm' : ''}`}>
-                  {day}
-                </div>
-                <div className="relative">
-                  {timeSlots.map(time => (
-                    <div
-                      key={time}
-                      className="h-10 border-t border-gray-800"
-                    ></div>
-                  ))}
+            {/* Days container - flex to fill remaining space */}
+            <div className="flex-1 grid grid-cols-6 h-full min-h-[640px]">
+              {/* Day columns */}
+              {days.map(day => (
+                <div key={day} className="min-w-0 flex-1 flex flex-col h-full min-h-[640px]">
+                  <div className={`h-10 flex-shrink-0 text-gray-100 font-medium flex items-center justify-center sticky top-0 bg-gray-900 z-10 border-b border-gray-700 border-l border-gray-800 ${isMobile ? 'text-sm' : ''}`}>
+                    {day}
+                  </div>
+                  {/* Margin to match time column */}
+                  <div className="h-3 flex-shrink-0 border-l border-gray-800"></div>
+                  <div className="relative flex-1 min-h-[597px] border-l border-gray-800">
+                    {/* Grid lines only between time slots, not at number positions */}
+                    {Array.from({ length: timeSlots.length - 1 }).map((_, index) => (
+                      <div
+                        key={index}
+                        className="absolute left-0 right-0 border-t border-gray-800"
+                        style={{
+                          top: `${((index + 1) / (timeSlots.length - 1)) * 100}%`
+                        }}
+                      />
+                    ))}                    {/* Render grouped slots */}
+                    {groupedSlots[day]?.map((group, groupIndex) => {
+                      // For single-item groups, render normally
+                      if (group.length === 1) {
+                        const slot = group[0];
+                        const top = calculateTop(slot.start);
+                        const height = calculateHeight(slot.start, slot.end);
 
-                  {/* Render grouped slots */}
-                  {groupedSlots[day]?.map((group, groupIndex) => {
-                    // For single-item groups, render normally
-                    if (group.length === 1) {
-                      const slot = group[0];
-                      const top = calculateTop(slot.start);
-                      const height = ((slot.end - slot.start) / 60) * 40;
+                        return (
+                          <div
+                            key={`single-${groupIndex}`}
+                            className={`absolute left-1 right-1 rounded px-2 py-1 ${isMobile ? 'text-xs' : 'text-xs'} ${subjectColors[slot.subject]} time-group-card`}
+                            style={{
+                              top: `${top}%`,
+                              height: `${height}%`,
+                              minHeight: '20px'
+                            }}
+                          >
+                            <div className="flex flex-col h-full overflow-hidden">
+                              <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate`}>
+                                {slot.subject} ({slot.group})
+                              </div>
+                              <div className={`text-gray-200 truncate ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
+                                {slot.professor}
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      }
+
+                      // For multiple overlapping slots, create a container for them but keep individual heights
+                      // Get the earliest start time and latest end time for positioning the container
+                      const groupStart = Math.min(...group.map(slot => slot.start));
+                      const groupEnd = Math.max(...group.map(slot => slot.end));
+                      const containerTop = calculateTop(groupStart);
+                      const containerHeight = calculateHeight(groupStart, groupEnd);
 
                       return (
                         <div
-                          key={`single-${groupIndex}`}
-                          className={`absolute left-0 right-0 mx-1 rounded px-2 py-1 ${isMobile ? 'text-xs' : 'text-xs'} ${subjectColors[slot.subject]} time-group-card`}
+                          key={`group-${groupIndex}`}
+                          className="absolute left-1 right-1 flex flex-row rounded overflow-hidden"
                           style={{
-                            top: `${top}px`,
-                            height: `${height}px`,
+                            top: `${containerTop}%`,
+                            height: `${containerHeight}%`,
                             minHeight: '20px'
                           }}
                         >
-                          <div className="flex flex-col h-full overflow-hidden">
-                            <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate`}>
-                              {slot.subject} ({slot.group})
-                            </div>
-                            <div className={`text-gray-200 truncate ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
-                              {slot.professor}
-                            </div>
-                          </div>
-                        </div>
-                      );
-                    }
+                          {group.map((slot, slotIndex) => {
+                            // Calculate position relative to the group container
+                            const slotTopPercent = ((slot.start - groupStart) / (groupEnd - groupStart)) * 100;
+                            const slotHeightPercent = ((slot.end - slot.start) / (groupEnd - groupStart)) * 100;
 
-                    // For multiple overlapping slots, create a container for them but keep individual heights
-                    // Get the earliest start time and latest end time for positioning the container
-                    const groupStart = Math.min(...group.map(slot => slot.start));
-                    const groupEnd = Math.max(...group.map(slot => slot.end));
-                    const containerTop = calculateTop(groupStart);
-                    const containerHeight = ((groupEnd - groupStart) / 60) * 40;
-                    const width = 100 / group.length; // Each slot gets equal width
-
-                    return (
-                      <div
-                        key={`group-${groupIndex}`}
-                        className="absolute left-0 right-0 mx-1 flex flex-row rounded overflow-hidden"
-                        style={{
-                          top: `${containerTop}px`,
-                          height: `${containerHeight}px`,
-                          minHeight: '20px'
-                        }}
-                      >
-                        {group.map((slot, slotIndex) => {
-                          // Calculate position relative to the group container
-                          const slotTop = calculateTop(slot.start) - containerTop;
-                          const slotHeight = ((slot.end - slot.start) / 60) * 40;
-
-                          return (
-                            <div
-                              key={`slot-${slotIndex}`}
-                              className="relative flex-1 mx-0.5"
-                            >
+                            return (
                               <div
-                                className={`absolute ${subjectColors[slot.subject]} px-1 py-1 ${isMobile ? 'text-xs' : 'text-xs'} time-group-card rounded`}
-                                style={{
-                                  top: `${slotTop}px`,
-                                  height: `${slotHeight}px`,
-                                  width: '100%',
-                                  minHeight: '20px'
-                                }}
+                                key={`slot-${slotIndex}`}
+                                className="relative flex-1 mx-0.5"
                               >
-                                <div className="flex flex-col h-full overflow-hidden">
-                                  <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate`}>
-                                    {slot.subject} ({slot.group})
-                                  </div>
-                                  <div className={`text-gray-200 truncate ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
-                                    {slot.professor}
+                                <div
+                                  className={`absolute ${subjectColors[slot.subject]} px-1 py-1 ${isMobile ? 'text-xs' : 'text-xs'} time-group-card rounded`}
+                                  style={{
+                                    top: `${slotTopPercent}%`,
+                                    height: `${slotHeightPercent}%`,
+                                    width: '100%',
+                                    minHeight: '20px'
+                                  }}
+                                >
+                                  <div className="flex flex-col h-full overflow-hidden">
+                                    <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate`}>
+                                      {slot.subject} ({slot.group})
+                                    </div>
+                                    <div className={`text-gray-200 truncate ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
+                                      {slot.professor}
+                                    </div>
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    );
-                  })}
+                            );
+                          })}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
