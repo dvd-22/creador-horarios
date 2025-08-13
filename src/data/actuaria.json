@@ -3507,6 +3507,15 @@
               "Ju"
             ],
             "salon": "O223"
+          },
+          {
+            "nombre": "Luis Alfonso Zuno Rodríguez",
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7834,6 +7843,15 @@
               "Ju"
             ],
             "salon": "O125"
+          },
+          {
+            "nombre": "Rodrigo Baruch Rivera Rico",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -10123,6 +10141,15 @@
               "Ju"
             ],
             "salon": "003 (Yelizcalli)"
+          },
+          {
+            "nombre": "Miguel Betanzo Partida",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -12289,6 +12316,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Graciela Palomares González",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -12406,7 +12442,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Norma Martínez Ortega",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -12971,6 +13007,15 @@
         "ayudantes": [
           {
             "nombre": "Diana Perez Xicohtencatl",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Alejandro Pérez Muñoz",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -14330,7 +14375,7 @@
         "nota": null,
         "salon": "303 (Tlaltícpac)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368413"
       }
     },
     "Demografía Avanzada": {
@@ -15282,7 +15327,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Miguel Betanzo Partida",
+            "nombre": "Andrea Marlene García Sandoval",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",

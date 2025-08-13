@@ -17693,7 +17693,15 @@
         "grupo": "8382",
         "profesor": {
           "nombre": "Pablo Barberis Blostein",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
         },
         "ayudantes": [],
         "nota": "Introducción a la Información Cuántica y a Medidas de Enredamiento",

@@ -6904,6 +6904,15 @@
               "Ju"
             ],
             "salon": "O125"
+          },
+          {
+            "nombre": "Rodrigo Baruch Rivera Rico",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7202,6 +7211,12 @@
               "Ju"
             ],
             "salon": "O214"
+          },
+          {
+            "nombre": "Linda Alicia López Díaz",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -10970,7 +10985,7 @@
               "dias": [
                 "Lu",
                 "Mi",
-                "Vi"
+                "Ju"
               ]
             }
           ]

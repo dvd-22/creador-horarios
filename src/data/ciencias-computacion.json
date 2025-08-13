@@ -4126,6 +4126,15 @@
               "Ju"
             ],
             "salon": "O125"
+          },
+          {
+            "nombre": "Rodrigo Baruch Rivera Rico",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5007,12 +5016,29 @@
             "salon": "O134"
           },
           {
+            "nombre": "Jaime Octavio Delfín López",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
             "nombre": "Ricardo Badillo Macías",
             "horario": "14:00 a 16:00",
             "dias": [
               "Lu"
             ],
             "salon": "Taller de Computación Visual e Innovación Tecnológica"
+          },
+          {
+            "nombre": "Luis Enrique García Gómez",
+            "horario": "14:00 a 16:00",
+            "dias": [
+              "Lu"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5309,6 +5335,14 @@
               "Mi"
             ],
             "salon": "Taller de Sistemas Operativos, Redes de Cómputo, Sistemas Distribuidos y Manejo de Información"
+          },
+          {
+            "nombre": "José Manuel Madrigal Ramírez",
+            "horario": "14:00 a 16:00",
+            "dias": [
+              "Mi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5980,7 +6014,24 @@
             "salon": null
           },
           {
+            "nombre": "Dulce Julieta Mora Hernández",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
             "nombre": "Christian Alfredo Solís Calderón",
+            "horario": "14:00 a 16:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Dulce Julieta Mora Hernández",
             "horario": "14:00 a 16:00",
             "dias": [
               "Ju"
@@ -7018,7 +7069,7 @@
         "nota": null,
         "salon": "303 (Tlaltícpac)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368413"
       }
     },
     "Computación Cuántica I": {

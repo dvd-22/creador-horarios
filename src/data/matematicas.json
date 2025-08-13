@@ -8573,67 +8573,6 @@
     }
   },
   "Optativas de los Niveles I, II, III y IV": {
-    "Ciencia, Diversidad e Inclusión": {
-      "5643": {
-        "grupo": "5643",
-        "profesor": {
-          "nombre": "Diana Alethia Guerrero Hernández",
-          "horarios": [
-            {
-              "horario": "10:00 a 13:00",
-              "dias": [
-                "Lu"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Ana Cristina Cervantes Arrioja",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": "303 (Tlaltícpac)",
-        "modalidad": "Presencial",
-        "presentacion": null
-      }
-    },
-    "Conjuntos Convexos": {
-      "4371": {
-        "grupo": "4371",
-        "profesor": {
-          "nombre": "Saúl Arce Rocha",
-          "horarios": [
-            {
-              "horario": "14:00 a 15:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Vicente Marín Gutiérrez",
-            "horario": "14:00 a 15:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": "P103"
-          }
-        ],
-        "nota": null,
-        "salon": "P103",
-        "modalidad": null,
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366950"
-      }
-    },
     "Conjuntos y Lógica": {
       "4246": {
         "grupo": "4246",
@@ -11089,6 +11028,15 @@
               "Ju"
             ],
             "salon": "O125"
+          },
+          {
+            "nombre": "Rodrigo Baruch Rivera Rico",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -13328,35 +13276,6 @@
         "salon": "P211",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365540"
-      }
-    },
-    "Introducción Crítica a la Diplomacia de la Ciencia": {
-      "8434": {
-        "grupo": "8434",
-        "profesor": {
-          "nombre": "Parsifal Fidelio Islas Morales",
-          "horarios": [
-            {
-              "horario": "18:00 a 21:00",
-              "dias": [
-                "Lu",
-                "Ju"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Yudy Liliana Tibaduiza Roa",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
       }
     },
     "Lógica Matemática II": {
@@ -18445,6 +18364,14 @@
               "Mi"
             ],
             "salon": "Taller de Sistemas Operativos, Redes de Cómputo, Sistemas Distribuidos y Manejo de Información"
+          },
+          {
+            "nombre": "José Manuel Madrigal Ramírez",
+            "horario": "14:00 a 16:00",
+            "dias": [
+              "Mi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
