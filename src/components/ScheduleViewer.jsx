@@ -209,7 +209,7 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
 
   const calculateTop = (minutes) => {
     const startOfDay = 7 * 60; // 7:00 AM in minutes
-    const endOfDay = 23 * 60;  // 23:00 PM in minutes
+    const endOfDay = 22 * 60;  // 22:00 PM in minutes (last hour)
     const totalMinutes = endOfDay - startOfDay;
     const relativeMinutes = minutes - startOfDay;
     return (relativeMinutes / totalMinutes) * 100; // Return percentage
@@ -217,7 +217,7 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
 
   const calculateHeight = (startMinutes, endMinutes) => {
     const startOfDay = 7 * 60; // 7:00 AM in minutes
-    const endOfDay = 23 * 60;  // 23:00 PM in minutes
+    const endOfDay = 22 * 60;  // 22:00 PM in minutes (last hour)
     const totalMinutes = endOfDay - startOfDay;
     const durationMinutes = endMinutes - startMinutes;
     return (durationMinutes / totalMinutes) * 100; // Return percentage
@@ -232,15 +232,24 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
         </h1>
       )}
 
-      <div className="flex-1 overflow-auto min-h-0">
+      <div className="flex-1 overflow-auto min-h-0 pb-4">
         <div className={`h-full min-h-[640px] ${isMobile ? 'min-w-[900px]' : 'min-w-full'}`}>
           <div className="flex h-full min-h-[640px]">
             {/* Time column - fixed width */}
             <div className="sticky left-0 bg-gray-900 z-10 w-16 flex-shrink-0 flex flex-col min-h-[640px]">
               <div className="h-10 border-b border-gray-700 flex-shrink-0"></div>
-              <div className="flex-1 flex flex-col min-h-[600px]">
+              {/* Margin to push first hour line down */}
+              <div className="h-3 flex-shrink-0"></div>
+              <div className="flex-1 relative min-h-[597px]">
+                {/* Hours positioned at grid lines */}
                 {timeSlots.map((time, index) => (
-                  <div key={time} className={`flex-1 min-h-[37.5px] flex items-start relative -top-3 text-gray-400 ${isMobile ? 'text-xs' : 'text-sm'} pr-2 border-t border-gray-800`}>
+                  <div
+                    key={time}
+                    className={`absolute text-gray-400 ${isMobile ? 'text-xs' : 'text-sm'} pr-2 -translate-y-1/2`}
+                    style={{
+                      top: `${(index / (timeSlots.length - 1)) * 100}%`
+                    }}
+                  >
                     {time}
                   </div>
                 ))}
@@ -255,22 +264,19 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                   <div className={`h-10 flex-shrink-0 text-gray-100 font-medium flex items-center justify-center sticky top-0 bg-gray-900 z-10 border-b border-gray-700 border-l border-gray-800 ${isMobile ? 'text-sm' : ''}`}>
                     {day}
                   </div>
-                  <div className="relative flex-1 min-h-[600px]">
-                    {/* Background grid - now fills available height */}
-                    {timeSlots.map((time, index) => (
+                  {/* Margin to match time column */}
+                  <div className="h-3 flex-shrink-0 border-l border-gray-800"></div>
+                  <div className="relative flex-1 min-h-[597px] border-l border-gray-800">
+                    {/* Grid lines only between time slots, not at number positions */}
+                    {Array.from({ length: timeSlots.length - 1 }).map((_, index) => (
                       <div
-                        key={time}
-                        className="h-full border-t border-gray-800 border-l border-gray-800"
+                        key={index}
+                        className="absolute left-0 right-0 border-t border-gray-800"
                         style={{
-                          position: 'absolute',
-                          top: `${(index / timeSlots.length) * 100}%`,
-                          height: `${100 / timeSlots.length}%`,
-                          width: '100%'
+                          top: `${((index + 1) / (timeSlots.length - 1)) * 100}%`
                         }}
-                      ></div>
-                    ))}
-
-                    {/* Render grouped slots */}
+                      />
+                    ))}                    {/* Render grouped slots */}
                     {groupedSlots[day]?.map((group, groupIndex) => {
                       // For single-item groups, render normally
                       if (group.length === 1) {

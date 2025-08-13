@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown, ChevronUp } from 'lucide-react';
+import ResizablePanels from './ResizablePanels';
 
 const ResponsiveDisplay = ({
     scheduleSelectorPanel,
@@ -12,15 +13,24 @@ const ResponsiveDisplay = ({
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSubjectsVisible, setIsSubjectsVisible] = useState(true);
 
-    // Check if we're on mobile
+    // Check if we're on mobile - be more explicit about breakpoints
     useEffect(() => {
+        let timeoutId;
+
         const checkMobile = () => {
-            setIsMobile(window.innerWidth < 768); // md breakpoint
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(() => {
+                const isMobileSize = window.innerWidth < 768; // md breakpoint in Tailwind
+                setIsMobile(isMobileSize);
+            }, 100); // Debounce resize events
         };
 
         checkMobile();
         window.addEventListener('resize', checkMobile);
-        return () => window.removeEventListener('resize', checkMobile);
+        return () => {
+            window.removeEventListener('resize', checkMobile);
+            clearTimeout(timeoutId);
+        };
     }, []);
 
     // Close menu when clicking outside
@@ -36,33 +46,35 @@ const ResponsiveDisplay = ({
     }, [isMenuOpen]);
 
     if (!isMobile) {
-        // Desktop layout - use existing ResizablePanels logic
+        // Desktop layout - use ResizablePanels
         return (
-            <div className="flex h-full w-full overflow-hidden bg-gray-900">
-                {/* Left Panel */}
-                <div className="flex-shrink-0 w-80 flex flex-col overflow-hidden">
-                    <div className="flex-1 overflow-hidden">
-                        {scheduleSelectorPanel}
+            <ResizablePanels
+                leftPanel={
+                    <div className="flex flex-col h-full overflow-hidden">
+                        <div className="flex-1 overflow-hidden">
+                            {scheduleSelectorPanel}
+                        </div>
+                        {overlapTogglePanel}
                     </div>
-                    {overlapTogglePanel}
-                </div>
-
-                {/* Splitter */}
-                <div className="w-1 bg-gray-700 flex-shrink-0" />
-
-                {/* Center Panel */}
-                <div className="flex-1 overflow-hidden min-w-0" ref={scheduleRef}>
-                    {scheduleViewerPanel}
-                </div>
-
-                {/* Splitter */}
-                <div className="w-1 bg-gray-700 flex-shrink-0" />
-
-                {/* Right Panel */}
-                <div className="flex-shrink-0 w-80 overflow-hidden">
-                    {selectedGroupsPanel}
-                </div>
-            </div>
+                }
+                centerPanel={
+                    <div className="h-full overflow-hidden" ref={scheduleRef}>
+                        {scheduleViewerPanel}
+                    </div>
+                }
+                rightPanel={
+                    <div className="h-full overflow-hidden">
+                        {selectedGroupsPanel}
+                    </div>
+                }
+                defaultLeftWidth={320}
+                defaultRightWidth={320}
+                minLeftWidth={200}
+                maxLeftWidth={500}
+                minRightWidth={200}
+                maxRightWidth={500}
+                minCenterWidth={300}
+            />
         );
     }
 
@@ -122,7 +134,7 @@ const ResponsiveDisplay = ({
             </div>
 
             {/* Mobile Schedule Viewer (full screen) */}
-            <div className="flex-1 overflow-hidden relative" ref={scheduleRef}>
+            <div className="flex-1 overflow-auto relative" ref={scheduleRef}>
                 {React.cloneElement(scheduleViewerPanel, { isMobile: true })}
 
                 {/* Mobile Sidebar Menu - Full Height */}
