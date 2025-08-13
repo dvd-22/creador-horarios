@@ -208,12 +208,23 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
   }, [occupiedSlots, days]);
 
   const calculateTop = (minutes) => {
-    const startOfDay = 7 * 60; // Change from 5:00 AM to 7:00 AM in minutes
-    return ((minutes - startOfDay) / 60) * 40; // 40px per hour
+    const startOfDay = 7 * 60; // 7:00 AM in minutes
+    const endOfDay = 23 * 60;  // 23:00 PM in minutes
+    const totalMinutes = endOfDay - startOfDay;
+    const relativeMinutes = minutes - startOfDay;
+    return (relativeMinutes / totalMinutes) * 100; // Return percentage
+  };
+
+  const calculateHeight = (startMinutes, endMinutes) => {
+    const startOfDay = 7 * 60; // 7:00 AM in minutes
+    const endOfDay = 23 * 60;  // 23:00 PM in minutes
+    const totalMinutes = endOfDay - startOfDay;
+    const durationMinutes = endMinutes - startMinutes;
+    return (durationMinutes / totalMinutes) * 100; // Return percentage
   };
 
   return (
-    <div className={`flex flex-col h-full bg-gray-900 ${isMobile ? 'p-1' : 'p-4'}`}>
+    <div className={`flex flex-col bg-gray-900 ${isMobile ? 'p-1 h-screen' : 'p-4 h-full'}`}>
       {/* Only show title in export mode */}
       {scheduleName && isExport && (
         <h1 className="text-2xl font-bold text-gray-100 text-center mb-6">
@@ -222,14 +233,14 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
       )}
 
       <div className="flex-1 overflow-auto min-h-0">
-        <div className={`h-full ${isMobile ? 'min-w-[900px]' : 'min-w-full'}`}>
-          <div className="flex h-full">
+        <div className={`h-full min-h-[640px] ${isMobile ? 'min-w-[900px]' : 'min-w-full'}`}>
+          <div className="flex h-full min-h-[640px]">
             {/* Time column - fixed width */}
-            <div className="sticky left-0 bg-gray-900 z-10 w-16 flex-shrink-0">
-              <div className="h-10 border-b border-gray-700"></div>
-              <div className="flex flex-col" style={{ height: `${timeSlots.length * 40}px` }}>
-                {timeSlots.map((time) => (
-                  <div key={time} className={`h-10 flex items-start relative -top-3 text-gray-400 ${isMobile ? 'text-xs' : 'text-sm'} pr-2 border-t border-gray-800`}>
+            <div className="sticky left-0 bg-gray-900 z-10 w-16 flex-shrink-0 flex flex-col min-h-[640px]">
+              <div className="h-10 border-b border-gray-700 flex-shrink-0"></div>
+              <div className="flex-1 flex flex-col min-h-[600px]">
+                {timeSlots.map((time, index) => (
+                  <div key={time} className={`flex-1 min-h-[37.5px] flex items-start relative -top-3 text-gray-400 ${isMobile ? 'text-xs' : 'text-sm'} pr-2 border-t border-gray-800`}>
                     {time}
                   </div>
                 ))}
@@ -237,20 +248,25 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
             </div>
 
             {/* Days container - flex to fill remaining space */}
-            <div className="flex-1 grid grid-cols-6 min-h-full">
+            <div className="flex-1 grid grid-cols-6 h-full min-h-[640px]">
               {/* Day columns */}
               {days.map(day => (
-                <div key={day} className="min-w-0 flex-1 flex flex-col">
-                  <div className={`h-10 text-gray-100 font-medium flex items-center justify-center sticky top-0 bg-gray-900 z-10 border-b border-gray-700 border-l border-gray-800 ${isMobile ? 'text-sm' : ''}`}>
+                <div key={day} className="min-w-0 flex-1 flex flex-col h-full min-h-[640px]">
+                  <div className={`h-10 flex-shrink-0 text-gray-100 font-medium flex items-center justify-center sticky top-0 bg-gray-900 z-10 border-b border-gray-700 border-l border-gray-800 ${isMobile ? 'text-sm' : ''}`}>
                     {day}
                   </div>
-                  <div className="relative flex-1" style={{ height: `${timeSlots.length * 40}px` }}>
-                    {/* Background grid */}
+                  <div className="relative flex-1 min-h-[600px]">
+                    {/* Background grid - now fills available height */}
                     {timeSlots.map((time, index) => (
                       <div
                         key={time}
-                        className="absolute w-full h-10 border-t border-gray-800 border-l border-gray-800"
-                        style={{ top: `${index * 40}px` }}
+                        className="h-full border-t border-gray-800 border-l border-gray-800"
+                        style={{
+                          position: 'absolute',
+                          top: `${(index / timeSlots.length) * 100}%`,
+                          height: `${100 / timeSlots.length}%`,
+                          width: '100%'
+                        }}
                       ></div>
                     ))}
 
@@ -260,15 +276,15 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                       if (group.length === 1) {
                         const slot = group[0];
                         const top = calculateTop(slot.start);
-                        const height = ((slot.end - slot.start) / 60) * 40;
+                        const height = calculateHeight(slot.start, slot.end);
 
                         return (
                           <div
                             key={`single-${groupIndex}`}
                             className={`absolute left-1 right-1 rounded px-2 py-1 ${isMobile ? 'text-xs' : 'text-xs'} ${subjectColors[slot.subject]} time-group-card`}
                             style={{
-                              top: `${top}px`,
-                              height: `${height}px`,
+                              top: `${top}%`,
+                              height: `${height}%`,
                               minHeight: '20px'
                             }}
                           >
@@ -289,22 +305,22 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                       const groupStart = Math.min(...group.map(slot => slot.start));
                       const groupEnd = Math.max(...group.map(slot => slot.end));
                       const containerTop = calculateTop(groupStart);
-                      const containerHeight = ((groupEnd - groupStart) / 60) * 40;
+                      const containerHeight = calculateHeight(groupStart, groupEnd);
 
                       return (
                         <div
                           key={`group-${groupIndex}`}
                           className="absolute left-1 right-1 flex flex-row rounded overflow-hidden"
                           style={{
-                            top: `${containerTop}px`,
-                            height: `${containerHeight}px`,
+                            top: `${containerTop}%`,
+                            height: `${containerHeight}%`,
                             minHeight: '20px'
                           }}
                         >
                           {group.map((slot, slotIndex) => {
                             // Calculate position relative to the group container
-                            const slotTop = calculateTop(slot.start) - containerTop;
-                            const slotHeight = ((slot.end - slot.start) / 60) * 40;
+                            const slotTopPercent = ((slot.start - groupStart) / (groupEnd - groupStart)) * 100;
+                            const slotHeightPercent = ((slot.end - slot.start) / (groupEnd - groupStart)) * 100;
 
                             return (
                               <div
@@ -314,8 +330,8 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                                 <div
                                   className={`absolute ${subjectColors[slot.subject]} px-1 py-1 ${isMobile ? 'text-xs' : 'text-xs'} time-group-card rounded`}
                                   style={{
-                                    top: `${slotTop}px`,
-                                    height: `${slotHeight}px`,
+                                    top: `${slotTopPercent}%`,
+                                    height: `${slotHeightPercent}%`,
                                     width: '100%',
                                     minHeight: '20px'
                                   }}

@@ -307,7 +307,7 @@ const SelectedGroupsPanel = ({
     // Mobile subjects only (horizontal chips)
     if (showOnlySubjects && horizontal) {
       return (
-        <div className="flex flex-wrap gap-2">
+        <div className="flex items-center space-x-2 overflow-x-auto pb-1">
           {selectedGroups.map((group, index) => {
             const colorClass = subjectColors[group.subject];
             const colorHex = getColorFromClass(colorClass);
@@ -315,37 +315,61 @@ const SelectedGroupsPanel = ({
             return (
               <div
                 key={`${group.semester}-${group.subject}-${group.group}`}
-                className="bg-gray-800 border border-gray-600 rounded-lg overflow-hidden flex items-center"
+                className="flex-shrink-0 bg-gray-800 border border-gray-600 rounded-lg overflow-hidden flex items-stretch"
               >
-                {/* Color Bar */}
+                {/* Color Bar - takes full height */}
                 <div
-                  className="w-1 h-full flex-shrink-0"
+                  className="w-1 flex-shrink-0"
                   style={{ backgroundColor: colorHex }}
                 />
 
                 {/* Content */}
-                <div className="px-2 py-1 flex items-center space-x-2">
-                  <div className="text-xs">
+                <div className="px-3 py-2 flex items-center space-x-2">
+                  <div className="text-xs whitespace-nowrap">
                     <span className="text-white font-medium">{group.subject}</span>
                     <span className="text-gray-400 ml-1">({group.group})</span>
                   </div>
 
-                  <button
-                    onClick={() => onRemoveGroup(group.semester, group.subject, group.group, {
-                      profesor: group.professor,
-                      ayudantes: group.assistants
-                    })}
-                    className="text-red-400 hover:text-red-300 text-xs h-4 w-4 flex items-center justify-center flex-shrink-0"
-                  >
-                    ✕
-                  </button>
+                  {/* Action buttons container */}
+                  <div className="flex items-center space-x-1 flex-shrink-0">
+                    {group.professor.nombre && (
+                      <div className="flex-shrink-0">
+                        <ProfessorRating
+                          professorName={group.professor.nombre}
+                          className="text-xs flex items-center justify-center"
+                          compact={true}
+                        />
+                      </div>
+                    )}
+
+                    {group.presentacion && (
+                      <button
+                        onClick={() => window.open(group.presentacion, '_blank', 'noopener,noreferrer')}
+                        className="bg-blue-600 hover:bg-blue-700 text-white text-xs h-4 w-4 flex items-center justify-center flex-shrink-0 rounded"
+                        title="Ver presentación"
+                      >
+                        📄
+                      </button>
+                    )}
+
+                    <button
+                      onClick={() => onRemoveGroup(group.semester, group.subject, group.group, {
+                        profesor: group.professor,
+                        ayudantes: group.assistants
+                      })}
+                      className="text-red-400 hover:text-red-300 text-xs h-4 w-4 flex items-center justify-center flex-shrink-0"
+                      title="Eliminar materia"
+                    >
+                      ✕
+                    </button>
+                  </div>
                 </div>
               </div>
             );
           })}
 
           {selectedGroups.length === 0 && (
-            <div className="text-gray-500 text-sm italic">
+            <div className="text-gray-500 text-sm italic whitespace-nowrap">
               Ninguna materia seleccionada
             </div>
           )}
@@ -518,80 +542,91 @@ const SelectedGroupsPanel = ({
         </h3>
         {selectedGroups.map((group, index) => {
           const majorInfo = Object.values(availableMajors).find(m => m.id === group.semester);
+          const colorClass = subjectColors[group.subject];
+          const colorHex = getColorFromClass(colorClass);
 
           return (
-            <div key={`${group.semester}-${group.subject}-${group.group}`} className="mb-3 bg-gray-800 rounded-lg border border-gray-700 overflow-hidden hover:border-gray-600 transition-colors">
-              {/* Header with subject name and remove button */}
-              <div className="bg-gray-800 px-3 py-3">
-                <div className="flex items-start justify-between">
-                  <div className="flex-1 min-w-0">
-                    <div className="font-medium text-white text-sm mb-1 break-words">
-                      {group.subject}
+            <div key={`${group.semester}-${group.subject}-${group.group}`} className="mb-3 bg-gray-800 rounded-lg border border-gray-700 overflow-hidden hover:border-gray-600 transition-colors flex">
+              {/* Color Bar */}
+              <div
+                className="w-1 flex-shrink-0"
+                style={{ backgroundColor: colorHex }}
+              />
+
+              {/* Content */}
+              <div className="flex-1">
+                {/* Header with subject name and remove button */}
+                <div className="bg-gray-800 px-3 py-3">
+                  <div className="flex items-start justify-between">
+                    <div className="flex-1 min-w-0">
+                      <div className="font-medium text-white text-sm mb-1 break-words">
+                        {group.subject}
+                      </div>
+                      <div className="text-xs text-gray-400 flex flex-wrap items-center gap-2">
+                        <span className="bg-gray-700 px-2 py-1 rounded">Grupo {group.group}</span>
+                        {majorInfo && (
+                          <span className="bg-blue-600/20 text-blue-400 px-2 py-1 rounded">
+                            {majorInfo.name}
+                          </span>
+                        )}
+                        {group.professor.nombre && (
+                          <span className="text-gray-400">• {group.professor.nombre}</span>
+                        )}
+                      </div>
                     </div>
-                    <div className="text-xs text-gray-400 flex flex-wrap items-center gap-2">
-                      <span className="bg-gray-700 px-2 py-1 rounded">Grupo {group.group}</span>
-                      {majorInfo && (
-                        <span className="bg-blue-600/20 text-blue-400 px-2 py-1 rounded">
-                          {majorInfo.name}
-                        </span>
-                      )}
-                      {group.professor.nombre && (
-                        <span className="text-gray-400">• {group.professor.nombre}</span>
-                      )}
-                    </div>
+                    <button
+                      onClick={() => onRemoveGroup(group.semester, group.subject, group.group, {
+                        profesor: group.professor,
+                        ayudantes: group.assistants
+                      })}
+                      className="text-red-400 hover:text-red-300 text-xs h-5 w-5 flex items-center justify-center rounded-full hover:bg-gray-700 ml-2"
+                      aria-label="Eliminar materia"
+                    >
+                      ✕
+                    </button>
                   </div>
-                  <button
-                    onClick={() => onRemoveGroup(group.semester, group.subject, group.group, {
-                      profesor: group.professor,
-                      ayudantes: group.assistants
-                    })}
-                    className="text-red-400 hover:text-red-300 text-xs h-5 w-5 flex items-center justify-center rounded-full hover:bg-gray-700 ml-2"
-                    aria-label="Eliminar materia"
-                  >
-                    ✕
-                  </button>
                 </div>
+
+                {/* Classroom/Modality/Rating section */}
+                {(group.salon || group.modalidad || group.professor.nombre) && (
+                  <div className="px-3 py-2 text-xs flex items-center justify-between text-gray-300">
+                    <div className="flex items-center">
+                      {group.salon ? (
+                        // If classroom is available, show only the classroom
+                        <>
+                          <span className="mr-1">🏫</span>
+                          <span>{group.salon}</span>
+                        </>
+                      ) : group.modalidad ? (
+                        // If no classroom but modality exists, show modality
+                        <>
+                          <span className="mr-1">{group.modalidad === "Presencial" ? "👨‍🏫" : "💻"}</span>
+                          <span>{group.modalidad}</span>
+                        </>
+                      ) : null}
+                    </div>
+                    {group.professor.nombre && (
+                      <ProfessorRating
+                        professorName={group.professor.nombre}
+                        className="text-xs"
+                      />
+                    )}
+                  </div>
+                )}
+
+                {/* Presentation button section */}
+                {group.presentacion && (
+                  <div className="px-3 pb-3">
+                    <button
+                      onClick={() => window.open(group.presentacion, '_blank', 'noopener,noreferrer')}
+                      className="inline-flex items-center px-2 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
+                    >
+                      <span className="mr-1">📄</span>
+                      Presentación
+                    </button>
+                  </div>
+                )}
               </div>
-
-              {/* Classroom/Modality/Rating section */}
-              {(group.salon || group.modalidad || group.professor.nombre) && (
-                <div className="px-3 py-2 text-xs flex items-center justify-between text-gray-300">
-                  <div className="flex items-center">
-                    {group.salon ? (
-                      // If classroom is available, show only the classroom
-                      <>
-                        <span className="mr-1">🏫</span>
-                        <span>{group.salon}</span>
-                      </>
-                    ) : group.modalidad ? (
-                      // If no classroom but modality exists, show modality
-                      <>
-                        <span className="mr-1">{group.modalidad === "Presencial" ? "👨‍🏫" : "💻"}</span>
-                        <span>{group.modalidad}</span>
-                      </>
-                    ) : null}
-                  </div>
-                  {group.professor.nombre && (
-                    <ProfessorRating
-                      professorName={group.professor.nombre}
-                      className="text-xs"
-                    />
-                  )}
-                </div>
-              )}
-
-              {/* Presentation button section */}
-              {group.presentacion && (
-                <div className="px-3 pb-3">
-                  <button
-                    onClick={() => window.open(group.presentacion, '_blank', 'noopener,noreferrer')}
-                    className="inline-flex items-center px-2 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
-                  >
-                    <span className="mr-1">📄</span>
-                    Presentación
-                  </button>
-                </div>
-              )}
             </div>
           );
         })}
