@@ -51,7 +51,16 @@ const OverlapToggle = ({ checked, onChange }) => (
 );
 
 const Display = () => {
-    const [selectedGroups, setSelectedGroups] = useState([]);
+    // Load selectedGroups from localStorage on initialization
+    const [selectedGroups, setSelectedGroups] = useState(() => {
+        try {
+            const savedGroups = localStorage.getItem('lastSchedule');
+            return savedGroups ? JSON.parse(savedGroups) : [];
+        } catch (error) {
+            console.warn('Failed to load saved schedule from localStorage:', error);
+            return [];
+        }
+    });
     const [conflictAlert, setConflictAlert] = useState(null);
     const [scheduleTitle, setScheduleTitle] = useState('Mi horario');
     const [showSavePopup, setShowSavePopup] = useState(false);
@@ -60,6 +69,15 @@ const Display = () => {
     const [showOverlapWarning, setShowOverlapWarning] = useState(false);
     const scheduleRef = useRef(null);
     const exportRef = useRef(null);
+
+    // Auto-save selectedGroups to localStorage whenever they change
+    useEffect(() => {
+        try {
+            localStorage.setItem('lastSchedule', JSON.stringify(selectedGroups));
+        } catch (error) {
+            console.warn('Failed to save schedule to localStorage:', error);
+        }
+    }, [selectedGroups]);
 
     // Utility function to convert time string to minutes
     const timeToMinutes = (time) => {
