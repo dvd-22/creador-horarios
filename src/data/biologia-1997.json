@@ -763,7 +763,7 @@
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Prácticas de Paleobiología",
+        "salon": "Laboratorio de Prácticas de Ciencias de la Tierra",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366656"
       },
@@ -956,7 +956,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Margarita Ojeda Carrasco",
+            "nombre": "Ana Margarita Hermoso Salazar",
             "horario": "11:00 a 14:00",
             "dias": [
               "Lu"
@@ -1526,7 +1526,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Margarita Victoria García Garduño",
+            "nombre": "María del Carmen Miñana Solís",
             "horario": "18:00 a 21:00",
             "dias": [
               "Lu"
@@ -2633,7 +2633,7 @@
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Prácticas de Biología de Procariontes",
+        "salon": "Laboratorio de Prácticas de Química II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/364993"
       },
@@ -5319,6 +5319,37 @@
         "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368019"
+      },
+      "5648": {
+        "grupo": "5648",
+        "profesor": {
+          "nombre": "Yolanda López Vidal",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Gonzalo Castillo Rojas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Luis José René Arredondo Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Patricia Orduña Estrada",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Inmunología molecular microbiana en salud",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -7013,12 +7044,6 @@
           },
           {
             "nombre": "Lucía Yoscelina Centeno Betanzos",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Abigail Aguilar Contreras",
             "horario": null,
             "dias": [],
             "salon": null
@@ -9872,13 +9897,13 @@
             "salon": null
           },
           {
-            "nombre": "Jorge Eduardo Hernández Ortiz",
+            "nombre": "Luis Francisco Rodríguez Durán",
             "horario": null,
             "dias": [],
             "salon": null
           },
           {
-            "nombre": "Luis Francisco Rodríguez Durán",
+            "nombre": "Diana Laura Calvillo Montoya",
             "horario": null,
             "dias": [],
             "salon": null
@@ -9971,6 +9996,43 @@
           }
         ],
         "nota": "Regulación e inducción de la regeneración del Sistema Nervioso Central",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5647": {
+        "grupo": "5647",
+        "profesor": {
+          "nombre": "Vianey Rodríguez Lara",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Marco Antonio Cerbón Cervantes",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Nidia Samara Rodríguez Rivera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Gala Cortés Ramírez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Griselda Rodríguez Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Participación de la hormonas sexuales en el cáncer",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -11169,12 +11231,6 @@
             "horario": null,
             "dias": [],
             "salon": null
-          },
-          {
-            "nombre": "Abigail Aguilar Contreras",
-            "horario": null,
-            "dias": [],
-            "salon": null
           }
         ],
         "nota": "Investigación en plantas medicinales: de la etnobotánica a los fitofarmacos.",
@@ -12038,7 +12094,7 @@
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Prácticas de Biología de Procariontes",
+        "salon": "Laboratorio de Prácticas de Protistas y Algas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365047"
       }
@@ -12374,7 +12430,7 @@
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Prácticas de Biología de Plantas II",
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365057"
       }
@@ -12967,11 +13023,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "Sala de Cómputo II"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Sala de Cómputo II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365072"
       }
@@ -13611,11 +13667,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "B003"
           }
         ],
         "nota": "Derecho y Gestión Ambiental",
-        "salon": null,
+        "salon": "B003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365090"
       },
@@ -13728,7 +13784,7 @@
           }
         ],
         "nota": "Gestión del Conocimiento Científico y la Innovación Tecnológica",
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365092"
       },
@@ -13840,7 +13896,7 @@
           }
         ],
         "nota": "Agroecologìa",
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Química II",
         "modalidad": null,
         "presentacion": null
       },
@@ -14287,7 +14343,7 @@
           }
         ],
         "nota": "Producción de especies forestales en vivero con fines de reforestación",
-        "salon": "B002",
+        "salon": "Laboratorio de Prácticas de Biología de Plantas II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366681"
       },

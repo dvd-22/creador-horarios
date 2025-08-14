@@ -86,7 +86,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "201 (Yelizcalli)"
+            "salon": "Aula Magna II"
           },
           {
             "nombre": "Gustavo Sandoval Joya",
@@ -99,7 +99,7 @@
           }
         ],
         "nota": null,
-        "salon": "201 (Yelizcalli)",
+        "salon": "Aula Magna II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365563"
       },
@@ -160,7 +160,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Victor Hugo Saldaña Martínez",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -339,11 +339,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "011"
+            "salon": "202 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "011",
+        "salon": "202 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366721"
       }
@@ -502,6 +502,16 @@
               "Vi"
             ],
             "salon": "P101"
+          },
+          {
+            "nombre": "Lucía Monserrat de Jesús Chimal Súarez",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -707,6 +717,12 @@
               "Vi"
             ],
             "salon": "O215"
+          },
+          {
+            "nombre": "Carlos Germán López Rodríguez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -748,6 +764,16 @@
               "Vi"
             ],
             "salon": "O216"
+          },
+          {
+            "nombre": "Gustavo Sandoval Joya",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -783,6 +809,16 @@
               "Vi"
             ],
             "salon": "002 (Yelizcalli)"
+          },
+          {
+            "nombre": "Christopher Jonay Muñoz Flores",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -853,6 +889,16 @@
               "Vi"
             ],
             "salon": "O217"
+          },
+          {
+            "nombre": "Natalie Elizabeth Sánchez López",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1018,6 +1064,16 @@
               "Vi"
             ],
             "salon": "P101"
+          },
+          {
+            "nombre": "José María Villagómez Quintos",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1398,6 +1454,16 @@
               "Vi"
             ],
             "salon": "O216"
+          },
+          {
+            "nombre": "Israel Tomás Cuevas Carmona",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2307,7 +2373,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Arturo López Luna",
             "horario": "15:00 a 16:00",
             "dias": [
               "Lu",
@@ -2379,6 +2445,24 @@
               "Ju"
             ],
             "salon": "206 (Yelizcalli)"
+          },
+          {
+            "nombre": "Diana Yareth Santoya Ugalde",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Nancy Daniela Arroyo Martínez",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3018,6 +3102,15 @@
               "Ju"
             ],
             "salon": "P101"
+          },
+          {
+            "nombre": "Erika Lucero Ramos Meléndez",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3173,6 +3266,24 @@
               "Ju"
             ],
             "salon": "Aula Magna Juan de Oyarzabal"
+          },
+          {
+            "nombre": null,
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "José Emmanuel Herrera Flores",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3769,6 +3880,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Oscar Adrián Ramírez Kantun",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4072,27 +4189,19 @@
       "3014": {
         "grupo": "3014",
         "profesor": {
-          "nombre": "Genaro Vázquez Victorio",
-          "horarios": [
-            {
-              "horario": "12:00 a 14:00",
-              "dias": [
-                "Lu",
-                "Mi"
-              ]
-            }
-          ]
+          "nombre": "David Hernández Obin",
+          "horarios": []
         },
         "ayudantes": [
           {
-            "nombre": "David Hernández Obin",
+            "nombre": "Areli Quintana Bahena",
             "horario": null,
             "dias": [],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": "P205",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366183"
       }
@@ -5512,6 +5621,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Juan Manuel Muro Delgado Ontiveros",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6473,7 +6588,7 @@
         },
         "ayudantes": [],
         "nota": null,
-        "salon": "O129",
+        "salon": "P111",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365755"
       },
@@ -6495,6 +6610,12 @@
         "ayudantes": [
           {
             "nombre": "Benjamín Kalef Gutiérrez Aguilar",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Karime Alejandra Pérez Campos",
             "horario": null,
             "dias": [],
             "salon": null
@@ -6814,19 +6935,30 @@
         "grupo": "3028",
         "profesor": {
           "nombre": "Mitzi Paulina Pérez Calixto",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "16:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
             "nombre": "María de los Ángeles García Vicente",
-            "horario": null,
-            "dias": [],
+            "horario": "16:00 a 19:00",
+            "dias": [
+              "Lu",
+              "Mi"
+            ],
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Clase Teórica \"espacio por definir\"  Practicas en Laboratorio de Fibrosis, en el edificio Tlalticpac",
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366197"
       },
       "3058": {
@@ -6845,7 +6977,7 @@
           ]
         },
         "ayudantes": [],
-        "nota": "El curso se impartirá en el Instituto de Investigaciones en Materiales (IIM- UNAM)",
+        "nota": "Lu, Mi Salón de Seminarios 2,   Instituto de Investigaciones en Materiales (IIM- UNAM), Vi Laboratorio LC-002,   Instituto de Investigaciones en Materiales (IIM- UNAM)",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366945"
@@ -6877,7 +7009,15 @@
         "grupo": "3031",
         "profesor": {
           "nombre": "Erin Christy McKiernan",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "08:30 a 10:00",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
         },
         "ayudantes": [],
         "nota": "La materia se impartirá en el Laboratorio de Biofísica y Física Médica 431, edificio de Física",
@@ -6891,7 +7031,15 @@
         "grupo": "3036",
         "profesor": {
           "nombre": "Erin Christy McKiernan",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "08:30 a 10:00",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -7045,7 +7193,15 @@
         "grupo": "3042",
         "profesor": {
           "nombre": "Marco Antonio Zaragoza Campillo",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "12:30 a 14:00",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -7055,7 +7211,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Esta materia se impartira en el Laboratorio V, Laboratorio Física General, Planta Baja Edificio Física",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366211"
