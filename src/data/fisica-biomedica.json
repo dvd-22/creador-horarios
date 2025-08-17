@@ -24,11 +24,20 @@
               "Ma",
               "Ju"
             ],
-            "salon": "204 (Yelizcalli)"
+            "salon": "201 (Yelizcalli)"
+          },
+          {
+            "nombre": "Sabi Yolihue Serrato Navarrete",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
-        "salon": "204 (Yelizcalli)",
+        "salon": "201 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365559"
       },
@@ -56,6 +65,15 @@
               "Ju"
             ],
             "salon": "Aula Magna Juan de Oyarzabal"
+          },
+          {
+            "nombre": "José de Jesús Gutiérrez Castañeda",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -302,7 +320,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Hugo Torres Vargas",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
@@ -801,7 +819,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Liliana Ceja Urbiola",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -1244,6 +1262,16 @@
               "Vi"
             ],
             "salon": "206 (Yelizcalli)"
+          },
+          {
+            "nombre": "Virginia Teodosio Procopio",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1334,6 +1362,16 @@
               "Vi"
             ],
             "salon": "O121"
+          },
+          {
+            "nombre": "Edgar Omar Arroyo Munguía",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1374,6 +1412,12 @@
               "Vi"
             ],
             "salon": "O214"
+          },
+          {
+            "nombre": "Pedro Damián Jara Palma",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1414,6 +1458,12 @@
               "Vi"
             ],
             "salon": "O215"
+          },
+          {
+            "nombre": "Francisco Javier Hernández Moreno",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1496,7 +1546,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Ninive Atenea Tello Arcos",
+            "nombre": "Ricardo Domínguez Soto",
             "horario": "18:00 a 19:00",
             "dias": [
               "Lu",
@@ -2386,7 +2436,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368455"
       }
     },
     "Geometría Analítica I": {
@@ -2494,6 +2544,15 @@
               "Ju"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "Diosel López Cruz",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2565,6 +2624,24 @@
               "Ju"
             ],
             "salon": "O223"
+          },
+          {
+            "nombre": "Abdi Alejandro Gutierrez Romero",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": null,
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2778,6 +2855,15 @@
               "Ju"
             ],
             "salon": "204 (Yelizcalli)"
+          },
+          {
+            "nombre": "Rafael Augusto Barrientos Berthier",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3031,6 +3117,15 @@
               "Ju"
             ],
             "salon": "Aula Magna P"
+          },
+          {
+            "nombre": "Jaime Iván Carlos Félix",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3728,6 +3823,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Alejandro Báez Méndez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3753,6 +3854,12 @@
         "ayudantes": [
           {
             "nombre": "Diana Laura Javier García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "José Norberto Espíritu Contreras",
             "horario": null,
             "dias": [],
             "salon": null
@@ -4428,6 +4535,15 @@
               "Ju"
             ],
             "salon": "O216"
+          },
+          {
+            "nombre": "Kevin Arath Garrido Galindo",
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5068,6 +5184,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Rodrígo Vega Vilchis",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5666,7 +5788,7 @@
           }
         ],
         "nota": null,
-        "salon": "105 (Yelizcalli)",
+        "salon": "Salón de Seminarios 330",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365678"
       },
@@ -6077,7 +6199,7 @@
         },
         "ayudantes": [],
         "nota": null,
-        "salon": "202 (Yelizcalli)",
+        "salon": "202 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365720"
       },
@@ -6099,6 +6221,12 @@
         "ayudantes": [
           {
             "nombre": "Isaac Muñoz Estrada",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Alejandro Abraham Castillo Franco",
             "horario": null,
             "dias": [],
             "salon": null
@@ -6471,7 +6599,7 @@
           }
         ],
         "nota": null,
-        "salon": "O129",
+        "salon": "105 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -6561,6 +6689,12 @@
           },
           {
             "nombre": "Alondra Jazmín Tapia de la Rosa",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Amy Megan Chávez Montejano",
             "horario": null,
             "dias": [],
             "salon": null
@@ -6953,6 +7087,12 @@
               "Lu",
               "Mi"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Marco Antonio Espina Ordoñez",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -7574,6 +7714,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Gabriel Garduño Guadarrama",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7595,7 +7741,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Yalith Estefania Mejía Arratia",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": "Introducción a la mecanobiología como herramienta de diagnóstico en neurociencias",
         "salon": null,
         "modalidad": "Virtual",
