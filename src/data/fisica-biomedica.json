@@ -114,6 +114,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Alonso Alejandro Colín Cruz",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -700,6 +709,12 @@
               "Vi"
             ],
             "salon": "O214"
+          },
+          {
+            "nombre": "Karen Susana Villa Aguirre",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -997,6 +1012,16 @@
               "Vi"
             ],
             "salon": "O219"
+          },
+          {
+            "nombre": "Linda Jazmín Martínez Cruz",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1222,6 +1247,16 @@
               "Vi"
             ],
             "salon": "Aula Magna P"
+          },
+          {
+            "nombre": "Jesús Ismael Garduño Maldonado",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1594,6 +1629,16 @@
               "Vi"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "Yaded Ashley Soni Ramírez",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2141,6 +2186,16 @@
               "Vi"
             ],
             "salon": "102 (Yelizcalli)"
+          },
+          {
+            "nombre": "Cristián Jesús Torres Lozada",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2553,6 +2608,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Adrián Martín Cruz Delgado",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2944,6 +3008,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Arturo Molina Valle",
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2975,6 +3048,15 @@
               "Ju"
             ],
             "salon": "Aula Magna II"
+          },
+          {
+            "nombre": "Ángel de Jesús Sánchez López",
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3897,6 +3979,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Angela Miscli Rangel Garcia",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4297,18 +4385,29 @@
         "grupo": "3014",
         "profesor": {
           "nombre": "David Hernández Obin",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "12:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
             "nombre": "Areli Quintana Bahena",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "12:00 a 14:00",
+            "dias": [
+              "Lu",
+              "Mi"
+            ],
+            "salon": "P205"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P205",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366183"
       }
@@ -6596,6 +6695,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Teodora Irene Ortiz Cruz",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7440,7 +7545,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "El horario correcto de la clase del sábado  es de 14 a 16 hr",
         "salon": "Taller de Física de Radiaciones",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366193"
@@ -7462,6 +7567,12 @@
         "ayudantes": [
           {
             "nombre": "José Alfredo Herrera González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Yuridia Ávila Muñoz",
             "horario": null,
             "dias": [],
             "salon": null
@@ -7502,7 +7613,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "La clase se mueve al salón de seminarios 327 del departamento de física",
         "salon": "P117",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366196"
@@ -7536,7 +7647,14 @@
           "nombre": "José Manuel Lárraga Gutiérrez",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Jessica Nataly Gregoria Magallón Márquez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",

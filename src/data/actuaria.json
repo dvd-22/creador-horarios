@@ -571,6 +571,15 @@
               "Ju"
             ],
             "salon": "206 (Yelizcalli)"
+          },
+          {
+            "nombre": "Martha Rubí Gutiérrez González",
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1281,6 +1290,12 @@
               "Vi"
             ],
             "salon": "O214"
+          },
+          {
+            "nombre": "Karen Susana Villa Aguirre",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1578,6 +1593,16 @@
               "Vi"
             ],
             "salon": "O219"
+          },
+          {
+            "nombre": "Linda Jazmín Martínez Cruz",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1803,6 +1828,16 @@
               "Vi"
             ],
             "salon": "Aula Magna P"
+          },
+          {
+            "nombre": "Jesús Ismael Garduño Maldonado",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2175,6 +2210,16 @@
               "Vi"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "Yaded Ashley Soni Ramírez",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2411,6 +2456,15 @@
           },
           {
             "nombre": "Diosel López Cruz",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Adrián Martín Cruz Delgado",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -2808,6 +2862,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Arturo Molina Valle",
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2839,6 +2902,15 @@
               "Ju"
             ],
             "salon": "Aula Magna II"
+          },
+          {
+            "nombre": "Ángel de Jesús Sánchez López",
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3730,6 +3802,15 @@
               "Ju"
             ],
             "salon": "Aula Magna P"
+          },
+          {
+            "nombre": "Rebeca Vásquez Contreras",
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4113,6 +4194,15 @@
               "Ju"
             ],
             "salon": "204 (Yelizcalli)"
+          },
+          {
+            "nombre": "Isabel Vásquez Ortiz",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4389,6 +4479,16 @@
               "Vi"
             ],
             "salon": "102 (Yelizcalli)"
+          },
+          {
+            "nombre": "Cristián Jesús Torres Lozada",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5033,6 +5133,15 @@
               "Ju"
             ],
             "salon": "O220"
+          },
+          {
+            "nombre": "Jonathan López Ruiz",
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5843,7 +5952,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "206 (Yelizcalli)"
+            "salon": "Aula Magna P"
           },
           {
             "nombre": "Daniela Torija Sánchez",
@@ -5856,7 +5965,7 @@
           }
         ],
         "nota": null,
-        "salon": "206 (Yelizcalli)",
+        "salon": "Aula Magna P",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365312"
       },
@@ -6289,6 +6398,16 @@
               "Vi"
             ],
             "salon": "O216"
+          },
+          {
+            "nombre": "Carlos Saidt Fernández Naser",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6718,6 +6837,16 @@
           },
           {
             "nombre": "Bruno Amezcua Osorio",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Julia Fernández Hinke",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -7359,6 +7488,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Huitzil Sánchez Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7389,7 +7524,7 @@
             "salon": null
           },
           {
-            "nombre": "Huitzil Sánchez Martínez",
+            "nombre": "Erika Giebele Martínez Mares",
             "horario": null,
             "dias": [],
             "salon": null
@@ -8248,7 +8383,7 @@
             "salon": "102 (Yelizcalli)"
           },
           {
-            "nombre": "Jorge Luis Tamaya Domínguez",
+            "nombre": "Elena Tamaya Domínguez",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -8847,6 +8982,16 @@
               "Vi"
             ],
             "salon": "P201"
+          },
+          {
+            "nombre": "Jorge Luis Tamaya Domínguez",
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -10722,6 +10867,15 @@
               "Ju"
             ],
             "salon": "P102"
+          },
+          {
+            "nombre": "Eric Garcia Bustamante",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -11190,6 +11344,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Raúl López Benítez",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -11585,6 +11748,15 @@
               "Ju"
             ],
             "salon": "O217"
+          },
+          {
+            "nombre": "Jael Alejandro Gónzalez Guadarrama",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -12917,6 +13089,15 @@
               "Ju"
             ],
             "salon": "Aula Magna Juan de Oyarzabal"
+          },
+          {
+            "nombre": "José Oscar Rosales Vergara",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -13346,6 +13527,15 @@
               "Ju"
             ],
             "salon": "P210"
+          },
+          {
+            "nombre": "Carlos Fernando Vásquez Guerra",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -13433,15 +13623,6 @@
         "ayudantes": [
           {
             "nombre": "Aaron Mauricio Gómez Jiménez",
-            "horario": "19:00 a 20:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          },
-          {
-            "nombre": "Max Emiliano Islas Zicatl",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -13796,6 +13977,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Marlene Juárez Morgado",
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -13894,6 +14084,15 @@
         "ayudantes": [
           {
             "nombre": "Adriana Jocelyn Flores Rojas",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Noemi Hernández Santiago",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -14646,6 +14845,15 @@
               "Ju"
             ],
             "salon": "002 (Yelizcalli)"
+          },
+          {
+            "nombre": "Jeanett Monroy Anzueto",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -16232,7 +16440,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "María Fernanda Barrios Vega",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",

@@ -571,6 +571,15 @@
               "Ju"
             ],
             "salon": "206 (Yelizcalli)"
+          },
+          {
+            "nombre": "Martha Rubí Gutiérrez González",
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2050,6 +2059,15 @@
               "Ju"
             ],
             "salon": "204 (Yelizcalli)"
+          },
+          {
+            "nombre": "Isabel Vásquez Ortiz",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3201,7 +3219,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "206 (Yelizcalli)"
+            "salon": "Aula Magna P"
           },
           {
             "nombre": "Daniela Torija Sánchez",
@@ -3214,7 +3232,7 @@
           }
         ],
         "nota": null,
-        "salon": "206 (Yelizcalli)",
+        "salon": "Aula Magna P",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365312"
       },
@@ -3692,6 +3710,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Regina Ortiz Zamora",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3817,6 +3841,14 @@
               "Ma"
             ],
             "salon": "Taller de Ingeniería de Software"
+          },
+          {
+            "nombre": "Brenda Yareli García Landa",
+            "horario": "12:00 a 14:00",
+            "dias": [
+              "Ma"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4296,7 +4328,7 @@
             "salon": "102 (Yelizcalli)"
           },
           {
-            "nombre": "Jorge Luis Tamaya Domínguez",
+            "nombre": "Elena Tamaya Domínguez",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -5820,7 +5852,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alejandro Tadeo Meza Ferat",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -5829,7 +5861,7 @@
             "salon": "O127"
           },
           {
-            "nombre": null,
+            "nombre": "Diana Laura Luciano Paniagua",
             "horario": "14:00 a 16:00",
             "dias": [
               "Ma"
@@ -6354,7 +6386,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Joshua Emmanuel Mendoza Mendieta",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -6363,7 +6395,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Oscar José Hernández Sánchez",
             "horario": "16:00 a 18:00",
             "dias": [
               "Vi"
@@ -6418,6 +6450,12 @@
             "dias": [
               "Ma"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Jesús Alberto Reyes Gutiérrez",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -6494,6 +6532,38 @@
     }
   },
   "Optativas": {
+    "Administración de Empresas de Software": {
+      "7191": {
+        "grupo": "7191",
+        "profesor": {
+          "nombre": "Daniel Ruelas Milanés",
+          "horarios": [
+            {
+              "horario": "17:00 a 18:30",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Karem Ramos Calpulalpan",
+            "horario": "18:30 a 19:30",
+            "dias": [
+              "Lu",
+              "Mi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368350"
+      }
+    },
     "Álgebra Lineal II": {
       "4165": {
         "grupo": "4165",
@@ -7316,6 +7386,75 @@
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365974"
       }
     },
+    "Animación por Computadora": {
+      "7137": {
+        "grupo": "7137",
+        "profesor": {
+          "nombre": "Joel Espinosa Longi",
+          "horarios": [
+            {
+              "horario": "10:00 a 11:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Jorge Barragán Argüero",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "Aula T2"
+          },
+          {
+            "nombre": "Sergio Giovanni Bisogno Léon y Vélez",
+            "horario": "16:00 a 18:00",
+            "dias": [
+              "Lu"
+            ],
+            "salon": "Taller de Computación Visual e Innovación Tecnológica"
+          }
+        ],
+        "nota": null,
+        "salon": "Aula T2",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366139"
+      }
+    },
+    "Ciencia, Diversidad e Inclusión": {
+      "5643": {
+        "grupo": "5643",
+        "profesor": {
+          "nombre": "Diana Alethia Guerrero Hernández",
+          "horarios": [
+            {
+              "horario": "10:00 a 13:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ana Cristina Cervantes Arrioja",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": "303 (Tlaltícpac)",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368413"
+      }
+    },
     "Computación Cuántica I": {
       "7138": {
         "grupo": "7138",
@@ -7765,6 +7904,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Raúl López Benítez",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7989,6 +8137,15 @@
               "Ju"
             ],
             "salon": "Aula Magna Juan de Oyarzabal"
+          },
+          {
+            "nombre": "José Oscar Rosales Vergara",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -8106,6 +8263,75 @@
         "salon": "300 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365554"
+      }
+    },
+    "Ingeniería de Software II": {
+      "7190": {
+        "grupo": "7190",
+        "profesor": {
+          "nombre": "Mauricio Riva Palacio Orozco",
+          "horarios": [
+            {
+              "horario": "17:30 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Martín Felipe Espinal Cruces",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "Taller de Lenguajes de Programación"
+          },
+          {
+            "nombre": "Martín Felipe Espinal Cruces",
+            "horario": "17:00 a 19:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "Taller de Lenguajes de Programación"
+          }
+        ],
+        "nota": null,
+        "salon": "Taller de Lenguajes de Programación",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368001"
+      }
+    },
+    "Introducción Crítica a la Diplomacia de la Ciencia": {
+      "8434": {
+        "grupo": "8434",
+        "profesor": {
+          "nombre": "Parsifal Fidelio Islas Morales",
+          "horarios": [
+            {
+              "horario": "18:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Yudy Liliana Tibaduiza Roa",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Investigación de Operaciones": {
