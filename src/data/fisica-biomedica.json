@@ -274,6 +274,15 @@
               "Ju"
             ],
             "salon": "011"
+          },
+          {
+            "nombre": "Cecilia Amparo García Sánchez",
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -879,6 +888,19 @@
         },
         "ayudantes": [
           {
+            "nombre": "Ana Gabriela Muñoz Delgado",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Lu",
+              "Ma",
+              "Mi",
+              "Ju",
+              "Vi",
+              "Sa"
+            ],
+            "salon": null
+          },
+          {
             "nombre": "Fernando Herrera Ferreyra",
             "horario": "12:00 a 13:00",
             "dias": [
@@ -887,6 +909,16 @@
               "Vi"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "Victor Antonio Domínguez Silva",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1207,6 +1239,16 @@
               "Vi"
             ],
             "salon": "Aula Magna II"
+          },
+          {
+            "nombre": "Johan Eduardo Pérez Ramírez",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2151,6 +2193,16 @@
               "Vi"
             ],
             "salon": "P212"
+          },
+          {
+            "nombre": "Verónica Ángeles Escudero",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2446,6 +2498,16 @@
               "Vi"
             ],
             "salon": "004 (Yelizcalli)"
+          },
+          {
+            "nombre": "Víctor Vargas Herrera",
+            "horario": "21:00 a 22:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2699,7 +2761,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Axel Sael Blanco Olivares",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -2888,6 +2950,15 @@
               "Ju"
             ],
             "salon": "O214"
+          },
+          {
+            "nombre": "Diego Flores Rodríguez",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3128,6 +3199,15 @@
               "Ju"
             ],
             "salon": "002 (Yelizcalli)"
+          },
+          {
+            "nombre": "Ximena Itzel Rangel Ramos",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3319,6 +3399,15 @@
               "Ju"
             ],
             "salon": "206 (Yelizcalli)"
+          },
+          {
+            "nombre": "Alejandro Ramírez Ávila",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3381,6 +3470,15 @@
               "Ju"
             ],
             "salon": "O121"
+          },
+          {
+            "nombre": "Angel Efrain Matehuala Vélez",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3412,6 +3510,15 @@
               "Ju"
             ],
             "salon": "Aula Magna II"
+          },
+          {
+            "nombre": "Jorge Andrés Rosas Ávila",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3429,7 +3536,7 @@
               "dias": [
                 "Lu",
                 "Mi",
-                "Vi"
+                "Ju"
               ]
             }
           ]
@@ -3440,25 +3547,25 @@
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
-              "Ju"
+              "Vi"
             ],
             "salon": "Aula Magna Juan de Oyarzabal"
-          },
-          {
-            "nombre": null,
-            "horario": "10:00 a 11:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
           },
           {
             "nombre": "José Emmanuel Herrera Flores",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
-              "Ju"
+              "Vi"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Alejandro Ramírez Buenrostro",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Vi"
             ],
             "salon": null
           }
@@ -3801,12 +3908,6 @@
               "Ju"
             ],
             "salon": "202 (Tlaltícpac)"
-          },
-          {
-            "nombre": "José Antonio González González",
-            "horario": null,
-            "dias": [],
-            "salon": null
           }
         ],
         "nota": null,
@@ -6296,7 +6397,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Cristhian Jaimes Martinez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "202 (Tlaltícpac)",
         "modalidad": "Presencial",
@@ -6351,14 +6459,7 @@
             }
           ]
         },
-        "ayudantes": [
-          {
-            "nombre": "Arturo Torres Amador",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
+        "ayudantes": [],
         "nota": null,
         "salon": "202 (Yelizcalli)",
         "modalidad": "Presencial",
@@ -6416,6 +6517,12 @@
         "ayudantes": [
           {
             "nombre": "Luis Eduardo López Gallegos",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rodrigo Segura Moreno",
             "horario": null,
             "dias": [],
             "salon": null
@@ -6927,111 +7034,6 @@
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365758"
       }
-    },
-    "Práctica Profesional Supervisada": {
-      "3060": {
-        "grupo": "3060",
-        "profesor": {
-          "nombre": "Lucía Medina Gómez",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "René Ledesma Alonso",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "María Fátima Chilaca Rosas",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "David Hernández Obin",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Paola Ballesteros Zebadúa",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Víctor Manuel Lara Camacho",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Ángel Juárez Flores",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "José Eduardo Chairez Veloz",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Itzhel García Torres",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Itzel Marisol Garnica Palafox",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Jaime Fabian Vázquez De la Rosa",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Edgar Israel Fuentes Oliver",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Olga Olinca Galván de la Cruz",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "David Alexis García Espinosa",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Luis Alberto Rangel Chávez",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Mauricio García Vergara",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      }
     }
   },
   "Octavo Semestre": {
@@ -7193,12 +7195,6 @@
               "Mi"
             ],
             "salon": null
-          },
-          {
-            "nombre": "Marco Antonio Espina Ordoñez",
-            "horario": null,
-            "dias": [],
-            "salon": null
           }
         ],
         "nota": "Clase Teórica \"espacio por definir\"  Practicas en Laboratorio de Fibrosis, en el edificio Tlalticpac",
@@ -7226,27 +7222,6 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366945"
-      }
-    },
-    "Dinámica de Biofluidos": {
-      "3030": {
-        "grupo": "3030",
-        "profesor": {
-          "nombre": "Erick Javier López Sánchez",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "Norma Yanet Sánchez Torres",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366199"
       }
     },
     "Electrofisiología": {
@@ -7298,18 +7273,6 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366205"
-      },
-      "3037": {
-        "grupo": "3037",
-        "profesor": {
-          "nombre": "Max Alcántara Castellanos",
-          "horarios": []
-        },
-        "ayudantes": [],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366206"
       },
       "3038": {
         "grupo": "3038",
@@ -7682,28 +7645,6 @@
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366202"
       }
     },
-    "Física de la Resonancia Magnética": {
-      "3062": {
-        "grupo": "3062",
-        "profesor": {
-          "nombre": "Alfredo Odón Rodríguez González",
-          "horarios": [
-            {
-              "horario": "10:00 a 11:30",
-              "dias": [
-                "Ju",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Virtual",
-        "presentacion": null
-      }
-    },
     "Física del Radiodiagnóstico": {
       "3034": {
         "grupo": "3034",
@@ -7771,33 +7712,6 @@
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366215"
-      },
-      "3064": {
-        "grupo": "3064",
-        "profesor": {
-          "nombre": "César Fabián Domínguez Velasco",
-          "horarios": [
-            {
-              "horario": "09:00 a 11:00",
-              "dias": [
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Efraín Albor Ramírez",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
       }
     },
     "Temas Selectos en Física del Diagnóstico Médico": {
@@ -7840,7 +7754,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Clases martes y jueves de 16:00 a 17:30",
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366217"
