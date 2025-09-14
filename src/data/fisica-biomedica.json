@@ -4142,12 +4142,6 @@
             "horario": null,
             "dias": [],
             "salon": null
-          },
-          {
-            "nombre": "Diego González Baños",
-            "horario": null,
-            "dias": [],
-            "salon": null
           }
         ],
         "nota": null,
@@ -5869,7 +5863,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Saúl Cruz Espinosa",
+            "nombre": "Saul Cruz Espinosa",
             "horario": null,
             "dias": [],
             "salon": null
@@ -6482,7 +6476,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Dana Larissa Luna Gónzalez",
+            "nombre": "Dana Larissa Luna González",
             "horario": null,
             "dias": [],
             "salon": null
@@ -7033,6 +7027,111 @@
         "salon": "011",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365758"
+      }
+    },
+    "Práctica Profesional Supervisada": {
+      "3060": {
+        "grupo": "3060",
+        "profesor": {
+          "nombre": "Lucía Medina Gómez",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "René Ledesma Alonso",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "María Fátima Chilaca Rosas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "David Hernández Obin",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Paola Ballesteros Zebadúa",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Víctor Manuel Lara Camacho",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ángel Juárez Flores",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "José Eduardo Chairez Veloz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Itzhel García Torres",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Itzel Marisol Garnica Palafox",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Jaime Fabian Vázquez De la Rosa",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Edgar Israel Fuentes Oliver",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Olga Olinca Galván de la Cruz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "David Alexis García Espinosa",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Luis Alberto Rangel Chávez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Mauricio García Vergara",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     }
   },
@@ -7839,11 +7938,18 @@
         "grupo": "8397",
         "profesor": {
           "nombre": "Carolina Sánchez García",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "11:00 a 13:00",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
         },
         "ayudantes": [],
         "nota": null,
-        "salon": null,
+        "salon": "303 (Tlaltícpac)",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366570"
       }

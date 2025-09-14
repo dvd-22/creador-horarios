@@ -7106,12 +7106,6 @@
             "horario": null,
             "dias": [],
             "salon": null
-          },
-          {
-            "nombre": "Diego González Baños",
-            "horario": null,
-            "dias": [],
-            "salon": null
           }
         ],
         "nota": null,
@@ -9397,7 +9391,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Saúl Cruz Espinosa",
+            "nombre": "Saul Cruz Espinosa",
             "horario": null,
             "dias": [],
             "salon": null
@@ -11514,7 +11508,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Dana Larissa Luna Gónzalez",
+            "nombre": "Dana Larissa Luna González",
             "horario": null,
             "dias": [],
             "salon": null
@@ -13030,7 +13024,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Topacio Llarena Bravo",
+            "nombre": "Diego Daniel González Araiza",
             "horario": null,
             "dias": [],
             "salon": null
@@ -15631,6 +15625,34 @@
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365435"
       }
     },
+    "Ciencia, Diversidad e Inclusión": {
+      "5643": {
+        "grupo": "5643",
+        "profesor": {
+          "nombre": "Diana Alethia Guerrero Hernández",
+          "horarios": [
+            {
+              "horario": "10:00 a 13:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ana Cristina Cervantes Arrioja",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": "303 (Tlaltícpac)",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368413"
+      }
+    },
     "Cosmología Física": {
       "8316": {
         "grupo": "8316",
@@ -17259,6 +17281,35 @@
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365822"
       }
     },
+    "Introducción Crítica a la Diplomacia de la Ciencia": {
+      "8434": {
+        "grupo": "8434",
+        "profesor": {
+          "nombre": "Parsifal Fidelio Islas Morales",
+          "horarios": [
+            {
+              "horario": "18:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Yudy Liliana Tibaduiza Roa",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Introducción Matemática a la Mecánica Celeste": {
       "4280": {
         "grupo": "4280",
@@ -17472,11 +17523,18 @@
         "grupo": "8397",
         "profesor": {
           "nombre": "Carolina Sánchez García",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "11:00 a 13:00",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
         },
         "ayudantes": [],
         "nota": null,
-        "salon": null,
+        "salon": "303 (Tlaltícpac)",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366570"
       }
@@ -17995,6 +18053,27 @@
         "salon": "P114",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365836"
+      }
+    },
+    "Temas Selectos de Ciencias de la Tierra II": {
+      "8435": {
+        "grupo": "8435",
+        "profesor": {
+          "nombre": "Mónica Borunda Pacheco",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": "Recursos energéticos renovables de la Tierra",
+        "salon": "O133",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368013"
       }
     },
     "Temas Selectos de Electrónica e Instrumentación I": {
