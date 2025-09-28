@@ -12704,7 +12704,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Julio César Clemente González",
+            "nombre": null,
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -15635,37 +15635,32 @@
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366688"
       }
     },
-    "Demografía Avanzada": {
-      "9261": {
-        "grupo": "9261",
+    "Ciencia, Diversidad e Inclusión": {
+      "5643": {
+        "grupo": "5643",
         "profesor": {
-          "nombre": "Juan Diego Terán Páez",
+          "nombre": "Diana Alethia Guerrero Hernández",
           "horarios": [
             {
-              "horario": "08:00 a 09:00",
+              "horario": "10:00 a 13:00",
               "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
+                "Lu"
               ]
             }
           ]
         },
         "ayudantes": [
           {
-            "nombre": "René Carrillo Deaquino",
-            "horario": "08:00 a 09:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": "Taller de Geometría"
+            "nombre": "Ana Cristina Cervantes Arrioja",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
-        "salon": "Taller de Geometría",
+        "salon": "303 (Tlaltícpac)",
         "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366335"
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368413"
       }
     },
     "Econometría I": {
@@ -15959,6 +15954,35 @@
         "salon": "P104",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366003"
+      }
+    },
+    "Introducción Crítica a la Diplomacia de la Ciencia": {
+      "8434": {
+        "grupo": "8434",
+        "profesor": {
+          "nombre": "Parsifal Fidelio Islas Morales",
+          "horarios": [
+            {
+              "horario": "18:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Yudy Liliana Tibaduiza Roa",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Legislación en Seguro Privado y Social": {
