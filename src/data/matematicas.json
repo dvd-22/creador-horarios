@@ -6624,7 +6624,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Pedro Romero Martínez",
+            "nombre": "Irving Hernández Rosas",
             "horario": "17:00 a 18:00",
             "dias": [
               "Lu",
@@ -9471,67 +9471,6 @@
     }
   },
   "Optativas de los Niveles I, II, III y IV": {
-    "Ciencia, Diversidad e Inclusión": {
-      "5643": {
-        "grupo": "5643",
-        "profesor": {
-          "nombre": "Diana Alethia Guerrero Hernández",
-          "horarios": [
-            {
-              "horario": "10:00 a 13:00",
-              "dias": [
-                "Lu"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Ana Cristina Cervantes Arrioja",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": "303 (Tlaltícpac)",
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368413"
-      }
-    },
-    "Conjuntos Convexos": {
-      "4371": {
-        "grupo": "4371",
-        "profesor": {
-          "nombre": "Saúl Arce Rocha",
-          "horarios": [
-            {
-              "horario": "14:00 a 15:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Norma Angélica Cruz Cervantes",
-            "horario": "14:00 a 15:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": "P103"
-          }
-        ],
-        "nota": null,
-        "salon": "P103",
-        "modalidad": null,
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366950"
-      }
-    },
     "Conjuntos y Lógica": {
       "4246": {
         "grupo": "4246",
@@ -14287,35 +14226,6 @@
         "salon": "P211",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365540"
-      }
-    },
-    "Introducción Crítica a la Diplomacia de la Ciencia": {
-      "8434": {
-        "grupo": "8434",
-        "profesor": {
-          "nombre": "Parsifal Fidelio Islas Morales",
-          "horarios": [
-            {
-              "horario": "18:00 a 21:00",
-              "dias": [
-                "Lu",
-                "Ju"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Yudy Liliana Tibaduiza Roa",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
       }
     },
     "Lógica Matemática II": {
@@ -21756,10 +21666,27 @@
                 "Mi",
                 "Vi"
               ]
+            },
+            {
+              "horario": "13:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
             }
           ]
         },
         "ayudantes": [
+          {
+            "nombre": "Rodrigo Iván Rodríguez Barrera",
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "O130"
+          },
           {
             "nombre": "Rodrigo Iván Rodríguez Barrera",
             "horario": "13:00 a 14:00",
@@ -21787,10 +21714,27 @@
                 "Mi",
                 "Vi"
               ]
+            },
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
             }
           ]
         },
         "ayudantes": [
+          {
+            "nombre": "Susana Alejandra Barrera Ávalos",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "Taller de Topología"
+          },
           {
             "nombre": "Susana Alejandra Barrera Ávalos",
             "horario": "18:00 a 19:00",
@@ -21805,6 +21749,29 @@
         "salon": "Taller de Topología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365532"
+      }
+    }
+  },
+  " de los Niveles V y VI": {
+    "Topología I": {
+      "4340": {
+        "grupo": "4340",
+        "profesor": null,
+        "ayudantes": [
+          {
+            "nombre": "Julio Cesar Espindola Nuñez",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "Taller de Investigación de Operaciones"
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365530"
       }
     }
   }
