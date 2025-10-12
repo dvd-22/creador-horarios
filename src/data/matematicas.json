@@ -21666,27 +21666,10 @@
                 "Mi",
                 "Vi"
               ]
-            },
-            {
-              "horario": "13:00 a 14:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
             }
           ]
         },
         "ayudantes": [
-          {
-            "nombre": "Rodrigo Iván Rodríguez Barrera",
-            "horario": "13:00 a 14:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": "O130"
-          },
           {
             "nombre": "Rodrigo Iván Rodríguez Barrera",
             "horario": "13:00 a 14:00",
@@ -21714,27 +21697,10 @@
                 "Mi",
                 "Vi"
               ]
-            },
-            {
-              "horario": "18:00 a 19:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
             }
           ]
         },
         "ayudantes": [
-          {
-            "nombre": "Susana Alejandra Barrera Ávalos",
-            "horario": "18:00 a 19:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": "Taller de Topología"
-          },
           {
             "nombre": "Susana Alejandra Barrera Ávalos",
             "horario": "18:00 a 19:00",
@@ -21749,29 +21715,6 @@
         "salon": "Taller de Topología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365532"
-      }
-    }
-  },
-  " de los Niveles V y VI": {
-    "Topología I": {
-      "4340": {
-        "grupo": "4340",
-        "profesor": null,
-        "ayudantes": [
-          {
-            "nombre": "Julio Cesar Espindola Nuñez",
-            "horario": "11:00 a 12:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": "Taller de Investigación de Operaciones"
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365530"
       }
     }
   }
