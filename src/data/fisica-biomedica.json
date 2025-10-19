@@ -1933,6 +1933,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Leonardo Corral Robles",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": "La primera clase sera en la \"Sala de Proyecciones\" del CEF (sala 213) del Edifico de Física",
@@ -4897,7 +4903,7 @@
       "8076": {
         "grupo": "8076",
         "profesor": {
-          "nombre": "Jorge Chávez Carlos",
+          "nombre": null,
           "horarios": [
             {
               "horario": "21:00 a 22:00",
