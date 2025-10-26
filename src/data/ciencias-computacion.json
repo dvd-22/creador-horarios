@@ -6491,6 +6491,38 @@
     }
   },
   "Optativas": {
+    "Administración de Empresas de Software": {
+      "7191": {
+        "grupo": "7191",
+        "profesor": {
+          "nombre": "Daniel Ruelas Milanés",
+          "horarios": [
+            {
+              "horario": "17:00 a 18:30",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Karem Ramos Calpulalpan",
+            "horario": "18:30 a 19:30",
+            "dias": [
+              "Lu",
+              "Mi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368350"
+      }
+    },
     "Álgebra Lineal II": {
       "4165": {
         "grupo": "4165",
@@ -7354,6 +7386,34 @@
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/366139"
       }
     },
+    "Ciencia, Diversidad e Inclusión": {
+      "5643": {
+        "grupo": "5643",
+        "profesor": {
+          "nombre": "Diana Alethia Guerrero Hernández",
+          "horarios": [
+            {
+              "horario": "10:00 a 13:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ana Cristina Cervantes Arrioja",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": "303 (Tlaltícpac)",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368413"
+      }
+    },
     "Computación Cuántica I": {
       "7138": {
         "grupo": "7138",
@@ -8189,6 +8249,75 @@
         "salon": "300 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365554"
+      }
+    },
+    "Ingeniería de Software II": {
+      "7190": {
+        "grupo": "7190",
+        "profesor": {
+          "nombre": "Mauricio Riva Palacio Orozco",
+          "horarios": [
+            {
+              "horario": "17:30 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Martín Felipe Espinal Cruces",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "Taller de Lenguajes de Programación"
+          },
+          {
+            "nombre": "Martín Felipe Espinal Cruces",
+            "horario": "17:00 a 19:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "Taller de Lenguajes de Programación"
+          }
+        ],
+        "nota": null,
+        "salon": "Taller de Lenguajes de Programación",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/368001"
+      }
+    },
+    "Introducción Crítica a la Diplomacia de la Ciencia": {
+      "8434": {
+        "grupo": "8434",
+        "profesor": {
+          "nombre": "Parsifal Fidelio Islas Morales",
+          "horarios": [
+            {
+              "horario": "18:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Yudy Liliana Tibaduiza Roa",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Investigación de Operaciones": {

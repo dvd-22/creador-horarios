@@ -6496,7 +6496,7 @@
       "8243": {
         "grupo": "8243",
         "profesor": {
-          "nombre": "Ricardo Gutiérrez Jauregui",
+          "nombre": "Ricardo Gutiérrez Jáuregui",
           "horarios": [
             {
               "horario": "14:00 a 16:00",
@@ -7027,6 +7027,111 @@
         "salon": "011",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/365758"
+      }
+    },
+    "Práctica Profesional Supervisada": {
+      "3060": {
+        "grupo": "3060",
+        "profesor": {
+          "nombre": "Lucía Medina Gómez",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "René Ledesma Alonso",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "María Fátima Chilaca Rosas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "David Hernández Obin",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Paola Ballesteros Zebadúa",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Víctor Manuel Lara Camacho",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ángel Juárez Flores",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "José Eduardo Chairez Veloz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Itzhel García Torres",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Itzel Marisol Garnica Palafox",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Jaime Fabian Vázquez De la Rosa",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Edgar Israel Fuentes Oliver",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Olga Olinca Galván de la Cruz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "David Alexis García Espinosa",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Luis Alberto Rangel Chávez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Mauricio García Vergara",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     }
   },
