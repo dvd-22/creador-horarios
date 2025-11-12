@@ -109,7 +109,8 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
               majorId: group.majorId, // Add majorId for reveal functionality
               studyPlanId: group.studyPlanId, // Add studyPlanId for reveal functionality
               professor: group.professor.nombre,
-              salon: schedule.salon || group.salon || ''
+              salon: schedule.salon || group.salon || '',
+              modalidad: group.modalidad
             });
           });
         }
@@ -146,7 +147,8 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                   majorId: group.majorId, // Add majorId for reveal functionality
                   studyPlanId: group.studyPlanId, // Add studyPlanId for reveal functionality
                   professor: assistant.nombre || 'Ayudante no asignado',
-                  salon: assistant.salon || group.salon || ''
+                  salon: assistant.salon || group.salon || '',
+                  modalidad: group.modalidad
                 });
               }
             }
@@ -312,7 +314,7 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                               </div>
                               {showSalon && (
                                 <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
-                                  {slot.salon || 'Salón no especificado'}
+                                  {slot.salon || slot.modalidad || 'Salón no especificado'}
                                 </div>
                               )}
                             </div>
@@ -368,7 +370,7 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                                     </div>
                                     {showSalon && (
                                       <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
-                                        {slot.salon || 'Salón no especificado'}
+                                        {slot.salon || slot.modalidad || 'Salón no especificado'}
                                       </div>
                                     )}
                                   </div>
