@@ -65,7 +65,7 @@ const hasTimeOverlap = (start1, end1, start2, end2) => {
   return start1 < end2 && start2 < end1;
 };
 
-const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isExport = false, isMobile = false }) => {
+const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isExport = false, isMobile = false, onRevealGroup }) => {
   const days = ['Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'];
   // Change from starting at hour 5 to starting at hour 7, and reduce length from 18 to 16
   const timeSlots = Array.from({ length: 16 }, (_, i) => i + 7).map(hour =>
@@ -105,6 +105,9 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
               type: 'professor',
               subject: group.subject,
               group: group.group,
+              semester: group.semester,
+              majorId: group.majorId, // Add majorId for reveal functionality
+              studyPlanId: group.studyPlanId, // Add studyPlanId for reveal functionality
               professor: group.professor.nombre,
               salon: schedule.salon || group.salon || ''
             });
@@ -139,6 +142,9 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                   type: 'assistant',
                   subject: group.subject,
                   group: group.group,
+                  semester: group.semester,
+                  majorId: group.majorId, // Add majorId for reveal functionality
+                  studyPlanId: group.studyPlanId, // Add studyPlanId for reveal functionality
                   professor: assistant.nombre || 'Ayudante no asignado',
                   salon: assistant.salon || group.salon || ''
                 });
@@ -291,12 +297,14 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                         return (
                           <div
                             key={`single-${groupIndex}`}
-                            className={`absolute left-1 right-1 rounded px-2 py-1 ${isMobile ? 'text-xs' : 'text-xs'} ${subjectColors[slot.subject]} time-group-card`}
+                            className={`absolute left-1 right-1 rounded px-2 py-1 ${isMobile ? 'text-xs' : 'text-xs'} ${subjectColors[slot.subject]} time-group-card cursor-pointer hover:opacity-90 transition-opacity`}
                             style={{
                               top: `${top}%`,
                               height: `${height}%`,
                               minHeight: '20px'
                             }}
+                            onClick={() => onRevealGroup && onRevealGroup(slot.majorId, slot.studyPlanId, slot.semester, slot.subject, slot.group)}
+                            title="Ver en selector de materias"
                           >
                             <div className="flex flex-col h-full overflow-hidden">
                               <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate`}>
@@ -344,13 +352,15 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                                 className="relative flex-1 mx-0.5"
                               >
                                 <div
-                                  className={`absolute ${subjectColors[slot.subject]} px-1 py-1 ${isMobile ? 'text-xs' : 'text-xs'} time-group-card rounded`}
+                                  className={`absolute ${subjectColors[slot.subject]} px-1 py-1 ${isMobile ? 'text-xs' : 'text-xs'} time-group-card rounded cursor-pointer hover:opacity-90 transition-opacity`}
                                   style={{
                                     top: `${slotTopPercent}%`,
                                     height: `${slotHeightPercent}%`,
                                     width: '100%',
                                     minHeight: '20px'
                                   }}
+                                  onClick={() => onRevealGroup && onRevealGroup(slot.majorId, slot.studyPlanId, slot.semester, slot.subject, slot.group)}
+                                  title="Ver en selector de materias"
                                 >
                                   <div className="flex flex-col h-full overflow-hidden">
                                     <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate`}>

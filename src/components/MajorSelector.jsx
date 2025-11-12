@@ -38,14 +38,14 @@ const MajorSelector = () => {
         <div className="border-b border-gray-700 bg-gray-850">
             {/* Major Selector */}
             <div className="p-2 relative">
-                <div className="flex space-x-1 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 py-1">
+                <div className="flex gap-2 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 py-1">
                     {Object.values(availableMajors).map((major) => (
                         <button
                             key={major.id}
                             onClick={() => changeMajor(major.id)}
                             disabled={isLoading}
                             className={`${getMajorColorClasses(major.id, selectedMajorId === major.id)} ${isLoading ? 'opacity-50 cursor-not-allowed' : ''
-                                }`}
+                                } flex-shrink-0`}
                         >
                             {selectedMajorId === major.id && isLoading ? (
                                 <div className="animate-spin rounded-full h-3 w-3 border-b-2 border-white mr-1"></div>
@@ -62,13 +62,13 @@ const MajorSelector = () => {
             {hasStudyPlans && (
                 <div className="px-2 pb-2">
                     <div className="text-xs text-gray-400 mb-1">Plan de estudios:</div>
-                    <div className="flex space-x-1">
+                    <div className="flex gap-2">
                         {Object.values(currentMajor.studyPlans).map((studyPlan) => (
                             <button
                                 key={studyPlan.id}
                                 onClick={() => changeStudyPlan(studyPlan.id)}
                                 disabled={isLoading}
-                                className={`px-2 py-1 rounded text-xs font-medium ${selectedStudyPlan === studyPlan.id
+                                className={`px-2 py-1 rounded text-xs font-medium flex-shrink-0 ${selectedStudyPlan === studyPlan.id
                                     ? 'bg-green-600 text-white'
                                     : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
                                     } ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}

@@ -54,7 +54,7 @@ const getSemesterOrderPriority = (semesterName) => {
 };
 
 const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup }) => {
-  const { selectedMajorId, majorData, isLoading, loadError } = useMajorContext();
+  const { selectedMajorId, selectedStudyPlan, majorData, isLoading, loadError, changeMajor, changeStudyPlan, currentMajor } = useMajorContext();
   const [openSemesters, setOpenSemesters] = useState({});
   const [openSubjects, setOpenSubjects] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
@@ -62,43 +62,109 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup }) => {
   // Expose reveal function via callback
   useEffect(() => {
     if (onRevealGroup) {
-      onRevealGroup((semester, subject, group) => {
-        // Open the semester and subject
-        setOpenSemesters(prev => ({ ...prev, [semester]: true }));
-        setOpenSubjects(prev => ({ ...prev, [subject]: true }));
+      onRevealGroup((compositeMajorId, studyPlanId, semester, subject, group) => {
+        // Extract base major ID and study plan from composite ID if needed
+        // e.g., "biology-2025" -> majorId: "biology", studyPlanId: "2025"
+        let majorId = compositeMajorId;
+        let planId = studyPlanId;
 
-        // Scroll to the specific group if possible - position at 20% from top
-        setTimeout(() => {
-          const groupElement = document.getElementById(`group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`);
-          if (groupElement) {
-            // Find the scrollable container
-            const scrollContainer = groupElement.closest('.overflow-y-auto');
-
-            if (scrollContainer) {
-              // Calculate the position to place element at 20% from top of container
-              const containerHeight = scrollContainer.clientHeight;
-              const elementTop = groupElement.offsetTop;
-
-              // Add extra margin (in pixels) to account for search bar and major selector
-              const topMargin = 80; // Adjust this value as needed
-
-              // Calculate scroll position: element top should be at 20% of container height + margin
-              const scrollTo = elementTop - (containerHeight * 0.2) - topMargin;
-
-              // Smooth scroll to the calculated position
-              scrollContainer.scrollTo({
-                top: scrollTo,
-                behavior: 'smooth'
-              });
-            } else {
-              // Fallback to scrollIntoView if container not found
-              groupElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
+        // If compositeMajorId contains a hyphen, it's a composite ID - split it
+        if (compositeMajorId && compositeMajorId.includes('-')) {
+          const parts = compositeMajorId.split('-');
+          majorId = parts[0];
+          // Use the planId from the composite if we don't already have one
+          if (!planId) {
+            planId = parts[1];
           }
-        }, 150);
+        }
+
+        // Check if we need to switch major or study plan
+        const needMajorSwitch = majorId && majorId !== selectedMajorId;
+        const needPlanSwitch = planId && planId !== selectedStudyPlan;
+
+        if (needMajorSwitch || needPlanSwitch) {
+          // Switch major and study plan together to avoid race conditions
+          if (needMajorSwitch) {
+            changeMajor(majorId, planId); // Pass study plan along with major change
+          } else if (needPlanSwitch && planId) {
+            // Only plan needs to change
+            changeStudyPlan(planId);
+          }
+
+          // Need to wait for major/plan change to complete before opening/scrolling
+          setTimeout(() => {
+            // Open the semester and subject
+            setOpenSemesters(prev => ({ ...prev, [semester]: true }));
+            setOpenSubjects(prev => ({ ...prev, [subject]: true }));
+
+            // Scroll to the specific group if possible - position at 20% from top
+            setTimeout(() => {
+              const groupElement = document.getElementById(`group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`);
+              if (groupElement) {
+                // Find the scrollable container
+                const scrollContainer = groupElement.closest('.overflow-y-auto');
+
+                if (scrollContainer) {
+                  // Calculate the position to place element at 20% from top of container
+                  const containerHeight = scrollContainer.clientHeight;
+                  const elementTop = groupElement.offsetTop;
+
+                  // Add extra margin (in pixels) to account for search bar and major selector
+                  const topMargin = 150; // Increased margin for better visibility
+
+                  // Calculate scroll position: element top should be at 20% of container height + margin
+                  const scrollTo = elementTop - (containerHeight * 0.2) - topMargin;
+
+                  // Smooth scroll to the calculated position
+                  scrollContainer.scrollTo({
+                    top: scrollTo,
+                    behavior: 'smooth'
+                  });
+                } else {
+                  // Fallback to scrollIntoView if container not found
+                  groupElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+              }
+            }, 150);
+          }, 300); // Wait for major/plan change
+        } else {
+          // Same major and plan - just open and scroll
+          setOpenSemesters(prev => ({ ...prev, [semester]: true }));
+          setOpenSubjects(prev => ({ ...prev, [subject]: true }));
+
+          // Scroll to the specific group if possible - position at 20% from top
+          setTimeout(() => {
+            const groupElement = document.getElementById(`group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`);
+            if (groupElement) {
+              // Find the scrollable container
+              const scrollContainer = groupElement.closest('.overflow-y-auto');
+
+              if (scrollContainer) {
+                // Calculate the position to place element at 20% from top of container
+                const containerHeight = scrollContainer.clientHeight;
+                const elementTop = groupElement.offsetTop;
+
+                // Add extra margin (in pixels) to account for search bar and major selector
+                const topMargin = 150; // Increased margin for better visibility
+
+                // Calculate scroll position: element top should be at 20% of container height + margin
+                const scrollTo = elementTop - (containerHeight * 0.2) - topMargin;
+
+                // Smooth scroll to the calculated position
+                scrollContainer.scrollTo({
+                  top: scrollTo,
+                  behavior: 'smooth'
+                });
+              } else {
+                // Fallback to scrollIntoView if container not found
+                groupElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }
+          }, 150);
+        }
       });
     }
-  }, [onRevealGroup]);
+  }, [onRevealGroup, selectedMajorId, selectedStudyPlan, changeMajor, changeStudyPlan]);
 
   const toggleSemester = (semester) => {
     setOpenSemesters(prev => ({
@@ -289,7 +355,13 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup }) => {
         g.group === group
       ) ? 'border-blue-500' : 'border-gray-700'
         }`}
-      onClick={() => onGroupSelect(semester, subject, group, groupData, selectedMajorId)}
+      onClick={() => {
+        // Build a comprehensive majorId that includes study plan if applicable
+        const fullMajorId = currentMajor?.hasStudyPlans && selectedStudyPlan
+          ? `${selectedMajorId}-${selectedStudyPlan}`
+          : selectedMajorId;
+        onGroupSelect(semester, subject, group, groupData, fullMajorId, selectedStudyPlan);
+      }}
     >
       <h4 className="font-bold text-gray-100 mb-1">
         Grupo {highlightText(group, searchQuery)}

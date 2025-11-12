@@ -329,7 +329,7 @@ const SelectedGroupsPanel = ({
                   <div className="text-xs whitespace-nowrap">
                     <span className="text-white font-medium">{group.subject}</span>
                     <button
-                      onClick={() => onRevealGroup && onRevealGroup(group.semester, group.subject, group.group)}
+                      onClick={() => onRevealGroup && onRevealGroup(group.majorId, group.studyPlanId, group.semester, group.subject, group.group)}
                       className="text-gray-400 hover:text-gray-300 ml-1 transition-colors"
                       title="Ver en selector de materias"
                     >
@@ -459,7 +459,7 @@ const SelectedGroupsPanel = ({
                       <div className="text-xs">
                         <span className="text-white font-medium">{group.subject}</span>
                         <button
-                          onClick={() => onRevealGroup && onRevealGroup(group.semester, group.subject, group.group)}
+                          onClick={() => onRevealGroup && onRevealGroup(group.majorId, group.studyPlanId, group.semester, group.subject, group.group)}
                           className="text-gray-400 hover:text-gray-300 ml-1 transition-colors"
                           title="Ver en selector de materias"
                         >
@@ -607,7 +607,7 @@ const SelectedGroupsPanel = ({
                     {/* Group info */}
                     <div className="flex items-center gap-2 text-xs">
                       <button
-                        onClick={() => onRevealGroup && onRevealGroup(group.semester, group.subject, group.group)}
+                        onClick={() => onRevealGroup && onRevealGroup(group.majorId, group.studyPlanId, group.semester, group.subject, group.group)}
                         className="bg-gray-700 hover:bg-gray-600 px-2 py-1 rounded text-gray-300 transition-colors cursor-pointer"
                         title="Ver en selector de materias"
                       >

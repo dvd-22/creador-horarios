@@ -51,7 +51,7 @@ const AVAILABLE_MAJORS = {
             '2025': {
                 id: '2025',
                 name: 'Plan 2025',
-                dataLoader: () => import('../data/biologia-2025.json') 
+                dataLoader: () => import('../data/biologia-2025.json')
             }
         }
     }
@@ -135,11 +135,11 @@ export const MajorProvider = ({ children }) => {
         loadMajorData();
     }, [selectedMajorId, selectedStudyPlan, majorDataCache]);
 
-    const changeMajor = (majorId) => {
+    const changeMajor = (majorId, studyPlanId = null) => {
         if (AVAILABLE_MAJORS[majorId]) {
             setSelectedMajorId(majorId);
-            // Reset study plan when changing major
-            setSelectedStudyPlan(null);
+            // Set study plan if provided, otherwise reset to null
+            setSelectedStudyPlan(studyPlanId);
         }
     };
 

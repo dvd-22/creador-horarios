@@ -62,7 +62,15 @@ const Display = () => {
         }
     });
     const [conflictAlert, setConflictAlert] = useState(null);
-    const [scheduleTitle, setScheduleTitle] = useState('Mi horario');
+    const [scheduleTitle, setScheduleTitle] = useState(() => {
+        try {
+            const savedTitle = localStorage.getItem('scheduleTitle');
+            return savedTitle || 'Mi horario';
+        } catch (error) {
+            console.warn('Failed to load schedule title from localStorage:', error);
+            return 'Mi horario';
+        }
+    });
     const [showSavePopup, setShowSavePopup] = useState(false);
     const [savePopupMessage, setSavePopupMessage] = useState('');
     const [allowOverlap, setAllowOverlap] = useState(false);
@@ -80,6 +88,15 @@ const Display = () => {
             console.warn('Failed to save schedule to localStorage:', error);
         }
     }, [selectedGroups]);
+
+    // Auto-save scheduleTitle to localStorage whenever it changes
+    useEffect(() => {
+        try {
+            localStorage.setItem('scheduleTitle', scheduleTitle);
+        } catch (error) {
+            console.warn('Failed to save schedule title to localStorage:', error);
+        }
+    }, [scheduleTitle]);
 
     // Utility function to convert time string to minutes
     const timeToMinutes = (time) => {
@@ -260,7 +277,7 @@ const Display = () => {
     };
 
     // Handle group selection
-    const handleGroupSelect = (semester, subject, group, groupData, majorId = 'cs') => {
+    const handleGroupSelect = (semester, subject, group, groupData, majorId = 'cs', studyPlanId = null) => {
         const isSelected = selectedGroups.some(g =>
             g.semester === semester &&
             g.subject === subject &&
@@ -284,7 +301,7 @@ const Display = () => {
             return;
         }
 
-        // Add majorId and presentacion to the new group object
+        // Add majorId, studyPlanId, and presentacion to the new group object
         const newGroup = {
             semester,
             subject,
@@ -297,7 +314,8 @@ const Display = () => {
             salon: groupData.salon || null,
             modalidad: groupData.modalidad || null,
             presentacion: groupData.presentacion || null, // Add presentation link
-            majorId // Store the majorId
+            majorId, // Store the majorId (could be composite like "biology-1997")
+            studyPlanId // Store the study plan separately if applicable
         };
 
         // Only check for conflicts if overlap is not allowed
@@ -475,6 +493,23 @@ const Display = () => {
                             selectedGroups={selectedGroups}
                             onRemoveGroup={handleGroupSelect}
                             scheduleName={scheduleTitle}
+                            onRevealGroup={(majorId, studyPlanId, semester, subject, group) => {
+                                // Open mobile menu if on mobile
+                                if (openMobileMenuRef.current) {
+                                    openMobileMenuRef.current();
+                                    // Wait for menu to open before scrolling
+                                    setTimeout(() => {
+                                        if (revealGroupRef.current) {
+                                            revealGroupRef.current(majorId, studyPlanId, semester, subject, group);
+                                        }
+                                    }, 300);
+                                } else {
+                                    // Desktop - reveal immediately
+                                    if (revealGroupRef.current) {
+                                        revealGroupRef.current(majorId, studyPlanId, semester, subject, group);
+                                    }
+                                }
+                            }}
                         />
                     }
                     selectedGroupsPanel={
@@ -485,20 +520,20 @@ const Display = () => {
                             setShowSavePopup={setShowSavePopup}
                             scheduleTitle={scheduleTitle}
                             onTitleChange={handleTitleChange}
-                            onRevealGroup={(semester, subject, group) => {
+                            onRevealGroup={(majorId, studyPlanId, semester, subject, group) => {
                                 // Open mobile menu if on mobile
                                 if (openMobileMenuRef.current) {
                                     openMobileMenuRef.current();
                                     // Wait for menu to open before scrolling
                                     setTimeout(() => {
                                         if (revealGroupRef.current) {
-                                            revealGroupRef.current(semester, subject, group);
+                                            revealGroupRef.current(majorId, studyPlanId, semester, subject, group);
                                         }
                                     }, 300);
                                 } else {
                                     // Desktop - reveal immediately
                                     if (revealGroupRef.current) {
-                                        revealGroupRef.current(semester, subject, group);
+                                        revealGroupRef.current(majorId, studyPlanId, semester, subject, group);
                                     }
                                 }
                             }}
