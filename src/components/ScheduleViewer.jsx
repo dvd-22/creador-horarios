@@ -285,7 +285,8 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                         const top = calculateTop(slot.start);
                         const height = calculateHeight(slot.start, slot.end);
                         const durationMinutes = slot.end - slot.start;
-                        const shouldWrap = durationMinutes >= 120; // 2 hours or more
+                        const shouldWrap = durationMinutes >= 120; // 2 hours or more, and NOT overlapping
+                        const showSalon = durationMinutes >= 60; // Only show salon if cell is at least 1 hour
 
                         return (
                           <div
@@ -301,9 +302,11 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                               <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate`}>
                                 {slot.subject}
                               </div>
-                              <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
-                                {slot.salon || 'Salón no especificado'}
-                              </div>
+                              {showSalon && (
+                                <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
+                                  {slot.salon || 'Salón no especificado'}
+                                </div>
+                              )}
                             </div>
                           </div>
                         );
@@ -331,7 +334,9 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                             const slotTopPercent = ((slot.start - groupStart) / (groupEnd - groupStart)) * 100;
                             const slotHeightPercent = ((slot.end - slot.start) / (groupEnd - groupStart)) * 100;
                             const durationMinutes = slot.end - slot.start;
-                            const shouldWrap = durationMinutes >= 120; // 2 hours or more
+                            const showSalon = durationMinutes >= 60; // Only show salon if cell is at least 1 hour
+                            // When overlapping, ALWAYS truncate, never wrap
+                            const shouldWrap = false;
 
                             return (
                               <div
@@ -351,9 +356,11 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                                     <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate`}>
                                       {slot.subject}
                                     </div>
-                                    <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
-                                      {slot.salon || 'Salón no especificado'}
-                                    </div>
+                                    {showSalon && (
+                                      <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
+                                        {slot.salon || 'Salón no especificado'}
+                                      </div>
+                                    )}
                                   </div>
                                 </div>
                               </div>
