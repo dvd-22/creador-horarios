@@ -14,7 +14,7 @@ import { encodeScheduleToURL, decodeScheduleFromURL } from '../utils/urlEncoder'
 const loadGroupData = async (majorId, studyPlanId, groupId) => {
     try {
         let dataModule;
-        
+
         // Map majorId to data file
         const majorDataMap = {
             'cs': () => import('../data/ciencias-computacion.json'),
@@ -181,7 +181,7 @@ const Display = () => {
                     if (scheduleData && scheduleData.groups && Array.isArray(scheduleData.groups)) {
                         // Load full group data for each minimal group
                         const fullGroups = await Promise.all(
-                            scheduleData.groups.map(minimalGroup => 
+                            scheduleData.groups.map(minimalGroup =>
                                 loadGroupData(minimalGroup.majorId, minimalGroup.studyPlanId, minimalGroup.group)
                             )
                         );
