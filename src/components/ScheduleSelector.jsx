@@ -62,18 +62,40 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup }) => {
   // Expose reveal function via callback
   useEffect(() => {
     if (onRevealGroup) {
-      onRevealGroup((semester, subject) => {
+      onRevealGroup((semester, subject, group) => {
         // Open the semester and subject
         setOpenSemesters(prev => ({ ...prev, [semester]: true }));
         setOpenSubjects(prev => ({ ...prev, [subject]: true }));
 
-        // Scroll to the subject if possible
+        // Scroll to the specific group if possible - position at 20% from top
         setTimeout(() => {
-          const subjectElement = document.getElementById(`subject-${subject.replace(/\s+/g, '-')}`);
-          if (subjectElement) {
-            subjectElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          const groupElement = document.getElementById(`group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`);
+          if (groupElement) {
+            // Find the scrollable container
+            const scrollContainer = groupElement.closest('.overflow-y-auto');
+
+            if (scrollContainer) {
+              // Calculate the position to place element at 20% from top of container
+              const containerHeight = scrollContainer.clientHeight;
+              const elementTop = groupElement.offsetTop;
+
+              // Add extra margin (in pixels) to account for search bar and major selector
+              const topMargin = 80; // Adjust this value as needed
+
+              // Calculate scroll position: element top should be at 20% of container height + margin
+              const scrollTo = elementTop - (containerHeight * 0.2) - topMargin;
+
+              // Smooth scroll to the calculated position
+              scrollContainer.scrollTo({
+                top: scrollTo,
+                behavior: 'smooth'
+              });
+            } else {
+              // Fallback to scrollIntoView if container not found
+              groupElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
           }
-        }, 100);
+        }, 150);
       });
     }
   }, [onRevealGroup]);
@@ -260,6 +282,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup }) => {
   const renderGroupCard = (group, groupData, semester, subject) => (
     <div
       key={group}
+      id={`group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`}
       className={`bg-gray-800 p-2 rounded mb-2 text-sm border cursor-pointer ${selectedGroups.some(g =>
         g.semester === semester &&
         g.subject === subject &&

@@ -595,7 +595,7 @@ const SelectedGroupsPanel = ({
                     {/* Group info */}
                     <div className="flex items-center gap-2 text-xs">
                       <button
-                        onClick={() => onRevealGroup && onRevealGroup(group.semester, group.subject)}
+                        onClick={() => onRevealGroup && onRevealGroup(group.semester, group.subject, group.group)}
                         className="bg-gray-700 hover:bg-gray-600 px-2 py-1 rounded text-gray-300 transition-colors cursor-pointer"
                         title="Ver en selector de materias"
                       >

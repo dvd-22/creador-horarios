@@ -484,9 +484,9 @@ const Display = () => {
                             setShowSavePopup={setShowSavePopup}
                             scheduleTitle={scheduleTitle}
                             onTitleChange={handleTitleChange}
-                            onRevealGroup={(semester, subject) => {
+                            onRevealGroup={(semester, subject, group) => {
                                 if (revealGroupRef.current) {
-                                    revealGroupRef.current(semester, subject);
+                                    revealGroupRef.current(semester, subject, group);
                                 }
                             }}
                         />
