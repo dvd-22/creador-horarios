@@ -1,8 +1,9 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { createEvents } from 'ics';
 import { useMajorContext } from '../contexts/MajorContext';
 import { Edit2 } from 'lucide-react';
 import ProfessorRating from './ProfessorRating';
+import { professorRatingService } from '../services/professorRatingService';
 
 const GOOGLE_COLORS = {
   LAVENDER: 1,
@@ -66,6 +67,31 @@ const SelectedGroupsPanel = ({
   const [isNaming, setIsNaming] = useState(false);
   const [isEditingTitle, setIsEditingTitle] = useState(false);
   const [tempTitle, setTempTitle] = useState(scheduleTitle);
+  const [professorRatings, setProfessorRatings] = useState({});
+
+  // Fetch ratings for all professors
+  useEffect(() => {
+    const fetchRatings = async () => {
+      const ratings = {};
+      for (const group of selectedGroups) {
+        if (group.professor?.nombre && !professorRatings[group.professor.nombre]) {
+          try {
+            const result = await professorRatingService.getProfessorRating(group.professor.nombre);
+            if (result) {
+              ratings[group.professor.nombre] = result;
+            }
+          } catch (error) {
+            console.error('Error fetching rating for', group.professor.nombre, error);
+          }
+        }
+      }
+      if (Object.keys(ratings).length > 0) {
+        setProfessorRatings(prev => ({ ...prev, ...ratings }));
+      }
+    };
+
+    fetchRatings();
+  }, [selectedGroups]);
 
   // Color palette that matches ScheduleViewer
   const colorPalette = [
@@ -340,13 +366,23 @@ const SelectedGroupsPanel = ({
                   {/* Action buttons container */}
                   <div className="flex items-center space-x-1 flex-shrink-0">
                     {group.professor.nombre && (
-                      <div className="flex-shrink-0">
-                        <ProfessorRating
-                          professorName={group.professor.nombre}
-                          className="text-xs flex items-center justify-center"
-                          compact={true}
-                        />
-                      </div>
+                      <button
+                        onClick={() => {
+                          const ratingData = professorRatings[group.professor.nombre];
+                          if (ratingData?.url) {
+                            window.open(ratingData.url, '_blank', 'noopener,noreferrer');
+                          }
+                        }}
+                        className={`text-white text-[10px] h-4 px-1 flex items-center justify-center flex-shrink-0 rounded font-medium ${professorRatings[group.professor.nombre]?.rating
+                            ? professorRatingService.getRatingBgColor(professorRatings[group.professor.nombre].rating)
+                            : 'bg-gray-600'
+                          }`}
+                        title={professorRatings[group.professor.nombre]?.rating
+                          ? `Calificación: ${professorRatings[group.professor.nombre].rating}/10`
+                          : 'Cargando calificación...'}
+                      >
+                        {professorRatings[group.professor.nombre]?.rating || '...'}
+                      </button>
                     )}
 
                     {group.presentacion && (
