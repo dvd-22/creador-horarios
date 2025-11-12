@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { createEvents } from 'ics';
 import { useMajorContext } from '../contexts/MajorContext';
-import { Edit2 } from 'lucide-react';
+import { Edit2, Download } from 'lucide-react';
 import ProfessorRating from './ProfessorRating';
 import { professorRatingService } from '../services/professorRatingService';
 
@@ -68,6 +68,7 @@ const SelectedGroupsPanel = ({
   const [isEditingTitle, setIsEditingTitle] = useState(false);
   const [tempTitle, setTempTitle] = useState(scheduleTitle);
   const [professorRatings, setProfessorRatings] = useState({});
+  const [showDownloadModal, setShowDownloadModal] = useState(false);
 
   // Fetch ratings for all professors
   useEffect(() => {
@@ -155,7 +156,9 @@ const SelectedGroupsPanel = ({
   }, [selectedGroups, colorPalette]);
 
   const handleSave = () => {
+    setShowDownloadModal(false);
     onSaveSchedule(scheduleTitle);
+    setShowSavePopup(true); // Show disclaimer modal
   };
 
   const handleTitleEdit = () => {
@@ -184,6 +187,8 @@ const SelectedGroupsPanel = ({
   };
 
   const handleExportICS = () => {
+    setShowDownloadModal(false);
+
     const events = [];
     const dayOffsets = { Lu: 0, Ma: 1, Mi: 2, Ju: 3, Vi: 4, Sa: 5 };
 
@@ -222,8 +227,7 @@ const SelectedGroupsPanel = ({
                 status: 'CONFIRMED',
                 busyStatus: 'BUSY',
                 organizer: { name: group.professor.nombre || 'Profesor' },
-                recurrenceRule: 'FREQ=WEEKLY;COUNT=16',
-                color: color
+                recurrenceRule: 'FREQ=WEEKLY;COUNT=16'
               });
             }
           });
@@ -256,8 +260,7 @@ const SelectedGroupsPanel = ({
                 status: 'CONFIRMED',
                 busyStatus: 'BUSY',
                 organizer: { name: assistant.nombre || 'Ayudante' },
-                recurrenceRule: 'FREQ=WEEKLY;COUNT=16',
-                color: color
+                recurrenceRule: 'FREQ=WEEKLY;COUNT=16'
               });
             }
           });
@@ -268,6 +271,9 @@ const SelectedGroupsPanel = ({
     createEvents(events, (error, value) => {
       if (error) {
         console.error('Error creating ICS file:', error);
+        console.error('Error details:', JSON.stringify(error, null, 2));
+        console.error('Events that caused error:', events);
+        alert('Error al crear el archivo ICS. Por favor verifica la consola.');
         return;
       }
 
@@ -278,56 +284,207 @@ const SelectedGroupsPanel = ({
       document.body.appendChild(link);
       link.click();
       link.remove();
+
+      // Show disclaimer modal after download starts
+      setShowSavePopup(true);
     });
+  };
+
+  const handleShareSchedule = () => {
+    const url = window.location.href;
+
+    console.log('handleShareSchedule called', { isMobile, hasNavigatorShare: !!navigator.share });
+
+    // First, always try to copy to clipboard
+    navigator.clipboard.writeText(url).then(() => {
+      console.log('Copied to clipboard successfully');
+
+      // Then show native share if available on mobile
+      if (navigator.share && isMobile) {
+        console.log('Attempting native share...');
+        navigator.share({
+          title: scheduleTitle,
+          text: `Mira mi horario: ${scheduleTitle}`,
+          url: url
+        }).then(() => {
+          console.log('Share successful');
+        }).catch(err => {
+          console.log('Share error or cancelled:', err);
+        }).finally(() => {
+          // Always show modal after share attempt
+          setShowDownloadModal(false);
+          setShowSavePopup(true);
+        });
+      } else {
+        // Desktop: just show modal
+        console.log('Desktop mode - showing modal');
+        setShowDownloadModal(false);
+        setShowSavePopup(true);
+      }
+    }).catch(err => {
+      console.error('Error copying to clipboard:', err);
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = url;
+      textArea.style.position = 'fixed';
+      textArea.style.opacity = '0';
+      document.body.appendChild(textArea);
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        console.log('Copied using fallback method');
+        setShowDownloadModal(false);
+        setShowSavePopup(true);
+      } catch (e) {
+        console.error('Fallback copy failed:', e);
+        alert('Error al copiar el link');
+      }
+      document.body.removeChild(textArea);
+    });
+  };
+
+  const copyToClipboard = (text) => {
+    navigator.clipboard.writeText(text).then(() => {
+      setShowDownloadModal(false);
+      setShowSavePopup(true); // Show disclaimer modal
+    }).catch(err => {
+      console.error('Error copying to clipboard:', err);
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed';
+      textArea.style.opacity = '0';
+      document.body.appendChild(textArea);
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        setShowDownloadModal(false);
+        setShowSavePopup(true); // Show disclaimer modal
+      } catch (e) {
+        alert('Error al copiar el link');
+      }
+      document.body.removeChild(textArea);
+    });
+  };
+
+  const handleCopyLink = async () => {
+    const url = window.location.href;
+    try {
+      await navigator.clipboard.writeText(url);
+      console.log('Link copied successfully');
+      setShowDownloadModal(false);
+      setShowSavePopup(true);
+    } catch (err) {
+      console.error('Failed to copy link:', err);
+      // Fallback for older browsers
+      const textArea = document.createElement('textarea');
+      textArea.value = url;
+      textArea.style.position = 'fixed';
+      textArea.style.opacity = '0';
+      document.body.appendChild(textArea);
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        console.log('Link copied with fallback method');
+        setShowDownloadModal(false);
+        setShowSavePopup(true);
+      } catch (e) {
+        console.error('Fallback copy failed:', e);
+        alert('Error al copiar el link');
+      }
+      document.body.removeChild(textArea);
+    }
   };
 
   if (isMobile) {
     // Mobile header only (title and buttons)
     if (showOnlyHeader) {
       return (
-        <div className="flex items-center justify-between">
-          <div className="flex items-center flex-1 min-w-0">
-            {isEditingTitle ? (
-              <input
-                type="text"
-                value={tempTitle}
-                onChange={(e) => setTempTitle(e.target.value)}
-                onBlur={handleTitleSave}
-                onKeyDown={handleTitleKeyPress}
-                className="bg-gray-800 text-white px-2 py-1 rounded text-sm flex-1 border border-gray-600 focus:border-blue-500 outline-none"
-                autoFocus
-              />
-            ) : (
-              <div className="flex items-center flex-1 min-w-0">
-                <span className="text-white font-medium text-sm truncate">
-                  {scheduleTitle}
-                </span>
-                <button
+        <>
+          <div className="flex items-center gap-2">
+            <div className="flex-1 min-w-0 overflow-hidden">
+              {isEditingTitle ? (
+                <input
+                  type="text"
+                  value={tempTitle}
+                  onChange={(e) => setTempTitle(e.target.value)}
+                  onBlur={handleTitleSave}
+                  onKeyDown={handleTitleKeyPress}
+                  className="bg-gray-800 text-white px-2 py-1 rounded text-sm w-full border border-gray-600 focus:border-blue-500 outline-none"
+                  autoFocus
+                />
+              ) : (
+                <div
                   onClick={handleTitleEdit}
-                  className="ml-2 text-gray-400 hover:text-white p-1 flex-shrink-0"
+                  className="flex items-center cursor-pointer group"
                 >
-                  <Edit2 size={12} />
-                </button>
-              </div>
-            )}
+                  <p className="text-white font-medium text-sm truncate flex-1 min-w-0">
+                    {scheduleTitle}
+                  </p>
+                  <div className="ml-2 text-gray-400 group-hover:text-white p-1 flex-shrink-0 transition-colors">
+                    <Edit2 size={12} />
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Action Buttons */}
+            <button
+              onClick={() => setShowDownloadModal(true)}
+              className="bg-blue-600 hover:bg-blue-700 text-white px-2 py-1 rounded text-xs whitespace-nowrap flex items-center justify-center flex-shrink-0"
+            >
+              <Download size={16} />
+            </button>
           </div>
 
-          {/* Action Buttons */}
-          <div className="flex items-center space-x-2 ml-3 flex-shrink-0">
-            <button
-              onClick={handleSave}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-xs whitespace-nowrap"
-            >
-              Guardar
-            </button>
-            <button
-              onClick={handleExportICS}
-              className="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-xs whitespace-nowrap"
-            >
-              .ics
-            </button>
-          </div>
-        </div>
+          {/* Download Modal */}
+          {showDownloadModal && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" onClick={() => setShowDownloadModal(false)}>
+              <div className="bg-gray-800 rounded-lg p-6 max-w-sm w-full mx-4 border border-gray-700" onClick={(e) => e.stopPropagation()} onTouchEnd={(e) => e.stopPropagation()}>
+                <div className="text-center mb-6">
+                  <h3 className="text-lg font-semibold text-white mb-4">Descargar Horario</h3>
+                  <p className="text-gray-300 text-sm">
+                    Puedes copiar el link para compartir tu horario con tus amigos, guardarlo como imagen, o exportar a ics para poder importar a tu calendario favorito
+                  </p>
+                </div>
+                <div className="space-y-3">
+                  <button
+                    onClick={handleCopyLink}
+                    onTouchEnd={(e) => { e.preventDefault(); handleCopyLink(); }}
+                    className="w-full bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
+                    style={{ touchAction: 'manipulation' }}
+                  >
+                    🔗 Copiar Link
+                  </button>
+                  <button
+                    onClick={handleSave}
+                    onTouchEnd={(e) => { e.preventDefault(); handleSave(); }}
+                    className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
+                    style={{ touchAction: 'manipulation' }}
+                  >
+                    💾 Guardar como PNG
+                  </button>
+                  <button
+                    onClick={handleExportICS}
+                    onTouchEnd={(e) => { e.preventDefault(); handleExportICS(); }}
+                    className="w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
+                    style={{ touchAction: 'manipulation' }}
+                  >
+                    📅 Exportar .ics
+                  </button>
+                  <button
+                    onClick={() => setShowDownloadModal(false)}
+                    onTouchEnd={(e) => { e.preventDefault(); setShowDownloadModal(false); }}
+                    className="w-full bg-gray-700 hover:bg-gray-600 active:bg-gray-500 text-white py-2 px-4 rounded transition-colors touch-manipulation"
+                    style={{ touchAction: 'manipulation' }}
+                  >
+                    Cancelar
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
+        </>
       );
     }
 
@@ -374,8 +531,8 @@ const SelectedGroupsPanel = ({
                           }
                         }}
                         className={`text-white text-[10px] h-4 px-1 flex items-center justify-center flex-shrink-0 rounded font-medium ${professorRatings[group.professor.nombre]?.rating
-                            ? professorRatingService.getRatingBgColor(professorRatings[group.professor.nombre].rating)
-                            : 'bg-gray-600'
+                          ? professorRatingService.getRatingBgColor(professorRatings[group.professor.nombre].rating)
+                          : 'bg-gray-600'
                           }`}
                         title={professorRatings[group.professor.nombre]?.rating
                           ? `Calificación: ${professorRatings[group.professor.nombre].rating}/10`
@@ -439,16 +596,16 @@ const SelectedGroupsPanel = ({
                   autoFocus
                 />
               ) : (
-                <div className="flex items-center flex-1 min-w-0">
+                <div
+                  onClick={handleTitleEdit}
+                  className="flex items-center flex-1 min-w-0 cursor-pointer group"
+                >
                   <span className="text-white font-medium text-sm truncate">
                     {scheduleTitle}
                   </span>
-                  <button
-                    onClick={handleTitleEdit}
-                    className="ml-2 text-gray-400 hover:text-white p-1 flex-shrink-0"
-                  >
+                  <div className="ml-2 text-gray-400 group-hover:text-white p-1 flex-shrink-0 transition-colors">
                     <Edit2 size={12} />
-                  </button>
+                  </div>
                 </div>
               )}
             </div>
@@ -537,6 +694,54 @@ const SelectedGroupsPanel = ({
             )}
           </div>
         </div>
+
+        {/* Download Modal */}
+        {showDownloadModal && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" onClick={() => setShowDownloadModal(false)}>
+            <div className="bg-gray-800 rounded-lg p-6 max-w-sm w-full mx-4 border border-gray-700" onClick={(e) => e.stopPropagation()} onTouchEnd={(e) => e.stopPropagation()}>
+              <div className="text-center mb-6">
+                <h3 className="text-lg font-semibold text-white mb-4">Descargar Horario</h3>
+                <p className="text-gray-300 text-sm">
+                  Puedes copiar el link para compartir tu horario con tus amigos, guardarlo como imagen, o exportar a ics para poder importar a tu calendario favorito
+                </p>
+              </div>
+              <div className="space-y-3">
+                <button
+                  onClick={handleCopyLink}
+                  onTouchEnd={(e) => { e.preventDefault(); handleCopyLink(); }}
+                  className="w-full bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
+                  style={{ touchAction: 'manipulation' }}
+                >
+                  🔗 Copiar Link
+                </button>
+                <button
+                  onClick={handleSave}
+                  onTouchEnd={(e) => { e.preventDefault(); handleSave(); }}
+                  className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
+                  style={{ touchAction: 'manipulation' }}
+                >
+                  💾 Guardar como PNG
+                </button>
+                <button
+                  onClick={handleExportICS}
+                  onTouchEnd={(e) => { e.preventDefault(); handleExportICS(); }}
+                  className="w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
+                  style={{ touchAction: 'manipulation' }}
+                >
+                  📅 Exportar .ics
+                </button>
+                <button
+                  onClick={() => setShowDownloadModal(false)}
+                  onTouchEnd={(e) => { e.preventDefault(); setShowDownloadModal(false); }}
+                  className="w-full bg-gray-700 hover:bg-gray-600 active:bg-gray-500 text-white py-2 px-4 rounded transition-colors touch-manipulation"
+                  style={{ touchAction: 'manipulation' }}
+                >
+                  Cancelar
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     );
   }  // Desktop vertical layout (existing code)
@@ -544,8 +749,8 @@ const SelectedGroupsPanel = ({
     <div className="h-full flex flex-col bg-gray-900 text-white">
       {/* Header */}
       <div className="flex-shrink-0 p-4 border-b border-gray-700">
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center flex-1">
+        <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center flex-1 min-w-0">
             {isEditingTitle ? (
               <input
                 type="text"
@@ -557,34 +762,26 @@ const SelectedGroupsPanel = ({
                 autoFocus
               />
             ) : (
-              <div className="flex items-center flex-1">
+              <div
+                onClick={handleTitleEdit}
+                className="flex items-center flex-1 min-w-0 cursor-pointer group"
+              >
                 <h2 className="text-lg font-semibold text-white truncate">
                   {scheduleTitle}
                 </h2>
-                <button
-                  onClick={handleTitleEdit}
-                  className="ml-2 text-gray-400 hover:text-white p-1 rounded"
-                >
+                <div className="ml-2 text-gray-400 group-hover:text-white p-1 rounded flex-shrink-0 transition-colors">
                   <Edit2 size={16} />
-                </button>
+                </div>
               </div>
             )}
           </div>
-        </div>
 
-        {/* Action buttons */}
-        <div className="flex space-x-2">
+          {/* Download button */}
           <button
-            onClick={handleSave}
-            className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded text-sm font-medium transition-colors"
+            onClick={() => setShowDownloadModal(true)}
+            className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded transition-colors flex items-center justify-center flex-shrink-0"
           >
-            💾 Guardar como PNG
-          </button>
-          <button
-            onClick={handleExportICS}
-            className="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded text-sm font-medium transition-colors"
-          >
-            📅 Exportar .ics
+            <Download size={20} />
           </button>
         </div>
       </div>
@@ -691,6 +888,54 @@ const SelectedGroupsPanel = ({
           Contribuye
         </a>
       </div>
+
+      {/* Download Modal */}
+      {showDownloadModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" onClick={() => setShowDownloadModal(false)}>
+          <div className="bg-gray-800 rounded-lg p-6 max-w-sm w-full mx-4 border border-gray-700" onClick={(e) => e.stopPropagation()} onTouchEnd={(e) => e.stopPropagation()}>
+            <div className="text-center mb-6">
+              <h3 className="text-lg font-semibold text-white mb-4">Descargar Horario</h3>
+              <p className="text-gray-300 text-sm">
+                Puedes copiar el link para compartir tu horario con tus amigos, guardarlo como imagen, o exportar a ics para poder importar a tu calendario favorito
+              </p>
+            </div>
+            <div className="space-y-3">
+              <button
+                onClick={handleCopyLink}
+                onTouchEnd={(e) => { e.preventDefault(); handleCopyLink(); }}
+                className="w-full bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
+                style={{ touchAction: 'manipulation' }}
+              >
+                🔗 Copiar Link
+              </button>
+              <button
+                onClick={handleSave}
+                onTouchEnd={(e) => { e.preventDefault(); handleSave(); }}
+                className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
+                style={{ touchAction: 'manipulation' }}
+              >
+                💾 Guardar como PNG
+              </button>
+              <button
+                onClick={handleExportICS}
+                onTouchEnd={(e) => { e.preventDefault(); handleExportICS(); }}
+                className="w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
+                style={{ touchAction: 'manipulation' }}
+              >
+                📅 Exportar .ics
+              </button>
+              <button
+                onClick={() => setShowDownloadModal(false)}
+                onTouchEnd={(e) => { e.preventDefault(); setShowDownloadModal(false); }}
+                className="w-full bg-gray-700 hover:bg-gray-600 active:bg-gray-500 text-white py-2 px-4 rounded transition-colors touch-manipulation"
+                style={{ touchAction: 'manipulation' }}
+              >
+                Cancelar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

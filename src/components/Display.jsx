@@ -8,6 +8,74 @@ import ResponsiveDisplay from './ResponsiveDisplay';
 import { saveScheduleAsPng } from '../utils/scheduleUtils';
 import SavePopup from './SavePopup';
 import { MajorProvider } from '../contexts/MajorContext';
+import { encodeScheduleToURL, decodeScheduleFromURL } from '../utils/urlEncoder';
+
+// Function to load full group data from JSON files
+const loadGroupData = async (majorId, studyPlanId, groupId) => {
+    try {
+        let dataModule;
+        
+        // Map majorId to data file
+        const majorDataMap = {
+            'cs': () => import('../data/ciencias-computacion.json'),
+            'math': () => import('../data/matematicas.json'),
+            'physics': () => import('../data/fisica.json'),
+            'ap-math': () => import('../data/matematicas-aplicadas.json'),
+            'actuary': () => import('../data/actuaria.json'),
+            'bio-physics': () => import('../data/fisica-biomedica.json'),
+            'biology-1997': () => import('../data/biologia-1997.json'),
+            'biology-2025': () => import('../data/biologia-2025.json'),
+        };
+
+        // Handle biology with study plans
+        let dataKey = majorId;
+        if (majorId === 'biology' && studyPlanId) {
+            dataKey = `biology-${studyPlanId}`;
+        }
+
+        const dataLoader = majorDataMap[dataKey];
+        if (!dataLoader) {
+            console.error(`No data loader found for ${dataKey}`);
+            return null;
+        }
+
+        dataModule = await dataLoader();
+        const data = dataModule.default;
+
+        // Search for the group across all semesters
+        for (const semester of Object.keys(data)) {
+            const semesterData = data[semester];
+            for (const subject of Object.keys(semesterData)) {
+                const subjectData = semesterData[subject];
+                // Groups are directly under the subject, not under a 'grupos' key
+                if (subjectData[groupId]) {
+                    const groupData = subjectData[groupId];
+                    return {
+                        semester,
+                        subject,
+                        group: groupId,
+                        professor: {
+                            ...groupData.profesor,
+                            horarios: groupData.profesor.horarios || []
+                        },
+                        assistants: groupData.ayudantes || [],
+                        salon: groupData.salon || null,
+                        modalidad: groupData.modalidad || null,
+                        presentacion: groupData.presentacion || null,
+                        majorId,
+                        studyPlanId
+                    };
+                }
+            }
+        }
+
+        console.warn(`Group ${groupId} not found in ${dataKey}`);
+        return null;
+    } catch (error) {
+        console.error(`Error loading group data for ${majorId}/${groupId}:`, error);
+        return null;
+    }
+};
 
 const CustomAlert = ({ message, onClose }) => (
     <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-md bg-red-900/80 border border-red-500 text-white px-5 py-4 rounded-lg shadow-xl backdrop-blur-sm">
@@ -52,17 +120,25 @@ const OverlapToggle = ({ checked, onChange }) => (
 
 const Display = () => {
     // Load selectedGroups from localStorage on initialization
-    const [selectedGroups, setSelectedGroups] = useState(() => {
-        try {
-            const savedGroups = localStorage.getItem('lastSchedule');
-            return savedGroups ? JSON.parse(savedGroups) : [];
-        } catch (error) {
-            console.warn('Failed to load saved schedule from localStorage:', error);
-            return [];
-        }
-    });
+    const [selectedGroups, setSelectedGroups] = useState([]);
+    const [isLoadingFromURL, setIsLoadingFromURL] = useState(false);
+    const [hasInitiallyLoaded, setHasInitiallyLoaded] = useState(false);
     const [conflictAlert, setConflictAlert] = useState(null);
     const [scheduleTitle, setScheduleTitle] = useState(() => {
+        // First, try to load from URL hash
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            try {
+                const scheduleData = decodeScheduleFromURL(hash);
+                if (scheduleData && scheduleData.title) {
+                    return scheduleData.title;
+                }
+            } catch (error) {
+                console.warn('Failed to load title from URL:', error);
+            }
+        }
+
+        // Fallback to localStorage
         try {
             const savedTitle = localStorage.getItem('scheduleTitle');
             return savedTitle || 'Mi horario';
@@ -73,12 +149,78 @@ const Display = () => {
     });
     const [showSavePopup, setShowSavePopup] = useState(false);
     const [savePopupMessage, setSavePopupMessage] = useState('');
-    const [allowOverlap, setAllowOverlap] = useState(false);
+    const [allowOverlap, setAllowOverlap] = useState(() => {
+        // First, try to load from URL hash
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            try {
+                const scheduleData = decodeScheduleFromURL(hash);
+                if (scheduleData && scheduleData.allowOverlap !== undefined) {
+                    return scheduleData.allowOverlap;
+                }
+            } catch (error) {
+                console.warn('Failed to load allowOverlap from URL:', error);
+            }
+        }
+        return false;
+    });
     const [showOverlapWarning, setShowOverlapWarning] = useState(false);
     const scheduleRef = useRef(null);
     const exportRef = useRef(null);
     const revealGroupRef = useRef(null);
     const openMobileMenuRef = useRef(null);
+
+    // Load groups from URL on mount
+    useEffect(() => {
+        const loadFromURL = async () => {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                setIsLoadingFromURL(true);
+                try {
+                    const scheduleData = decodeScheduleFromURL(hash);
+                    if (scheduleData && scheduleData.groups && Array.isArray(scheduleData.groups)) {
+                        // Load full group data for each minimal group
+                        const fullGroups = await Promise.all(
+                            scheduleData.groups.map(minimalGroup => 
+                                loadGroupData(minimalGroup.majorId, minimalGroup.studyPlanId, minimalGroup.group)
+                            )
+                        );
+                        // Filter out any null results (groups that couldn't be loaded)
+                        const validGroups = fullGroups.filter(g => g !== null);
+                        setSelectedGroups(validGroups);
+                        setHasInitiallyLoaded(true);
+                    }
+                } catch (error) {
+                    console.warn('Failed to load schedule from URL:', error);
+                    // Fallback to localStorage
+                    try {
+                        const savedGroups = localStorage.getItem('lastSchedule');
+                        if (savedGroups) {
+                            setSelectedGroups(JSON.parse(savedGroups));
+                        }
+                    } catch (e) {
+                        console.warn('Failed to load from localStorage:', e);
+                    }
+                    setHasInitiallyLoaded(true);
+                } finally {
+                    setIsLoadingFromURL(false);
+                }
+            } else {
+                // No URL hash, load from localStorage
+                try {
+                    const savedGroups = localStorage.getItem('lastSchedule');
+                    if (savedGroups) {
+                        setSelectedGroups(JSON.parse(savedGroups));
+                    }
+                } catch (error) {
+                    console.warn('Failed to load from localStorage:', error);
+                }
+                setHasInitiallyLoaded(true);
+            }
+        };
+
+        loadFromURL();
+    }, []); // Only run on mount
 
     // Auto-save selectedGroups to localStorage whenever they change
     useEffect(() => {
@@ -97,6 +239,29 @@ const Display = () => {
             console.warn('Failed to save schedule title to localStorage:', error);
         }
     }, [scheduleTitle]);
+
+    // Update URL hash whenever schedule changes
+    useEffect(() => {
+        // Don't update URL while loading from URL or before initial load is complete
+        if (isLoadingFromURL || !hasInitiallyLoaded) return;
+
+        if (selectedGroups.length > 0) {
+            try {
+                const scheduleData = {
+                    groups: selectedGroups,
+                    title: scheduleTitle,
+                    allowOverlap: allowOverlap
+                };
+                const encodedData = encodeScheduleToURL(scheduleData);
+                window.history.replaceState(null, '', `#${encodedData}`);
+            } catch (error) {
+                console.warn('Failed to update URL:', error);
+            }
+        } else {
+            // Clear hash if no groups selected
+            window.history.replaceState(null, '', window.location.pathname);
+        }
+    }, [selectedGroups, scheduleTitle, allowOverlap, isLoadingFromURL, hasInitiallyLoaded]);
 
     // Utility function to convert time string to minutes
     const timeToMinutes = (time) => {
