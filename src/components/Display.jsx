@@ -69,6 +69,7 @@ const Display = () => {
     const [showOverlapWarning, setShowOverlapWarning] = useState(false);
     const scheduleRef = useRef(null);
     const exportRef = useRef(null);
+    const revealGroupRef = useRef(null);
 
     // Auto-save selectedGroups to localStorage whenever they change
     useEffect(() => {
@@ -465,6 +466,7 @@ const Display = () => {
                         <ScheduleSelector
                             onGroupSelect={handleGroupSelect}
                             selectedGroups={selectedGroups}
+                            onRevealGroup={(fn) => { revealGroupRef.current = fn; }}
                         />
                     }
                     scheduleViewerPanel={
@@ -482,6 +484,11 @@ const Display = () => {
                             setShowSavePopup={setShowSavePopup}
                             scheduleTitle={scheduleTitle}
                             onTitleChange={handleTitleChange}
+                            onRevealGroup={(semester, subject) => {
+                                if (revealGroupRef.current) {
+                                    revealGroupRef.current(semester, subject);
+                                }
+                            }}
                         />
                     }
                     overlapTogglePanel={

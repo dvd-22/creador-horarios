@@ -53,11 +53,30 @@ const getSemesterOrderPriority = (semesterName) => {
   return 2000 + semesterName.localeCompare('');
 };
 
-const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
+const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup }) => {
   const { selectedMajorId, majorData, isLoading, loadError } = useMajorContext();
   const [openSemesters, setOpenSemesters] = useState({});
   const [openSubjects, setOpenSubjects] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
+
+  // Expose reveal function via callback
+  useEffect(() => {
+    if (onRevealGroup) {
+      onRevealGroup((semester, subject) => {
+        // Open the semester and subject
+        setOpenSemesters(prev => ({ ...prev, [semester]: true }));
+        setOpenSubjects(prev => ({ ...prev, [subject]: true }));
+
+        // Scroll to the subject if possible
+        setTimeout(() => {
+          const subjectElement = document.getElementById(`subject-${subject.replace(/\s+/g, '-')}`);
+          if (subjectElement) {
+            subjectElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }, 100);
+      });
+    }
+  }, [onRevealGroup]);
 
   const toggleSemester = (semester) => {
     setOpenSemesters(prev => ({
@@ -424,7 +443,11 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups }) => {
                 {openSemesters[semester] && (
                   <div className="p-2 space-y-2">
                     {Object.entries(subjects).map(([subject, groups]) => (
-                      <div key={subject} className="border border-gray-700 rounded-lg">
+                      <div
+                        key={subject}
+                        id={`subject-${subject.replace(/\s+/g, '-')}`}
+                        className="border border-gray-700 rounded-lg"
+                      >
                         <button
                           onClick={() => toggleSubject(subject)}
                           className="w-full p-2 bg-gray-800 hover:bg-gray-700 flex items-center justify-between text-gray-100 text-sm"

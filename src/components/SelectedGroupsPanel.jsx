@@ -59,7 +59,8 @@ const SelectedGroupsPanel = ({
   showOnlyHeader = false,
   showOnlySubjects = false,
   horizontal = false,
-  showSubjectsCount = false
+  showSubjectsCount = false,
+  onRevealGroup
 }) => {
   const { availableMajors } = useMajorContext();
   const [isNaming, setIsNaming] = useState(false);
@@ -454,8 +455,13 @@ const SelectedGroupsPanel = ({
                         <span className="text-gray-400 ml-1">({group.group})</span>
                       </div>
                       {group.professor.nombre && (
-                        <div className="text-xs text-gray-400 truncate mt-1">
-                          {group.professor.nombre}
+                        <div className="text-xs text-gray-400 truncate mt-1 flex items-center gap-2">
+                          <span>{group.professor.nombre}</span>
+                          <ProfessorRating
+                            professorName={group.professor.nombre}
+                            className="text-xs"
+                            compact={true}
+                          />
                         </div>
                       )}
                     </div>
@@ -559,20 +565,16 @@ const SelectedGroupsPanel = ({
                 <div className="bg-gray-800 px-3 py-3">
                   <div className="flex items-start justify-between">
                     <div className="flex-1 min-w-0">
+                      {/* Subject Title */}
                       <div className="font-medium text-white text-sm mb-1 break-words">
                         {group.subject}
                       </div>
-                      <div className="text-xs text-gray-400 flex flex-wrap items-center gap-2">
-                        <span className="bg-gray-700 px-2 py-1 rounded">Grupo {group.group}</span>
-                        {majorInfo && (
-                          <span className="bg-blue-600/20 text-blue-400 px-2 py-1 rounded">
-                            {majorInfo.name}
-                          </span>
-                        )}
-                        {group.professor.nombre && (
-                          <span className="text-gray-400">• {group.professor.nombre}</span>
-                        )}
-                      </div>
+                      {/* Professor */}
+                      {group.professor.nombre && (
+                        <div className="text-xs text-gray-400 truncate">
+                          {group.professor.nombre}
+                        </div>
+                      )}
                     </div>
                     <button
                       onClick={() => onRemoveGroup(group.semester, group.subject, group.group, {
@@ -587,45 +589,38 @@ const SelectedGroupsPanel = ({
                   </div>
                 </div>
 
-                {/* Classroom/Modality/Rating section */}
-                {(group.salon || group.modalidad || group.professor.nombre) && (
-                  <div className="px-3 py-2 text-xs flex items-center justify-between text-gray-300">
-                    <div className="flex items-center">
-                      {group.salon ? (
-                        // If classroom is available, show only the classroom
-                        <>
-                          <span className="mr-1">🏫</span>
-                          <span>{group.salon}</span>
-                        </>
-                      ) : group.modalidad ? (
-                        // If no classroom but modality exists, show modality
-                        <>
-                          <span className="mr-1">{group.modalidad === "Presencial" ? "👨‍🏫" : "💻"}</span>
-                          <span>{group.modalidad}</span>
-                        </>
-                      ) : null}
+                {/* Separating line and bottom section */}
+                <div className="border-t border-gray-700">
+                  <div className="px-3 py-2 flex items-center justify-between">
+                    {/* Group info */}
+                    <div className="flex items-center gap-2 text-xs">
+                      <button
+                        onClick={() => onRevealGroup && onRevealGroup(group.semester, group.subject)}
+                        className="bg-gray-700 hover:bg-gray-600 px-2 py-1 rounded text-gray-300 transition-colors cursor-pointer"
+                        title="Ver en selector de materias"
+                      >
+                        Grupo {group.group}
+                      </button>
+                      {group.professor.nombre && (
+                        <ProfessorRating
+                          professorName={group.professor.nombre}
+                          className="text-xs"
+                        />
+                      )}
                     </div>
-                    {group.professor.nombre && (
-                      <ProfessorRating
-                        professorName={group.professor.nombre}
-                        className="text-xs"
-                      />
+
+                    {/* Presentation button */}
+                    {group.presentacion && (
+                      <button
+                        onClick={() => window.open(group.presentacion, '_blank', 'noopener,noreferrer')}
+                        className="inline-flex items-center px-2 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
+                      >
+                        <span className="mr-1">📄</span>
+                        Presentación
+                      </button>
                     )}
                   </div>
-                )}
-
-                {/* Presentation button section */}
-                {group.presentacion && (
-                  <div className="px-3 pb-3">
-                    <button
-                      onClick={() => window.open(group.presentacion, '_blank', 'noopener,noreferrer')}
-                      className="inline-flex items-center px-2 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
-                    >
-                      <span className="mr-1">📄</span>
-                      Presentación
-                    </button>
-                  </div>
-                )}
+                </div>
               </div>
             </div>
           );

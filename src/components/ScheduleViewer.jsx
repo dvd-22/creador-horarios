@@ -105,7 +105,8 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
               type: 'professor',
               subject: group.subject,
               group: group.group,
-              professor: group.professor.nombre
+              professor: group.professor.nombre,
+              salon: schedule.salon || group.salon || ''
             });
           });
         }
@@ -283,6 +284,8 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                         const slot = group[0];
                         const top = calculateTop(slot.start);
                         const height = calculateHeight(slot.start, slot.end);
+                        const durationMinutes = slot.end - slot.start;
+                        const shouldWrap = durationMinutes >= 120; // 2 hours or more
 
                         return (
                           <div
@@ -296,10 +299,10 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                           >
                             <div className="flex flex-col h-full overflow-hidden">
                               <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate`}>
-                                {slot.subject} ({slot.group})
+                                {slot.subject}
                               </div>
-                              <div className={`text-gray-200 truncate ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
-                                {slot.professor}
+                              <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
+                                {slot.salon || 'Salón no especificado'}
                               </div>
                             </div>
                           </div>
@@ -327,6 +330,8 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                             // Calculate position relative to the group container
                             const slotTopPercent = ((slot.start - groupStart) / (groupEnd - groupStart)) * 100;
                             const slotHeightPercent = ((slot.end - slot.start) / (groupEnd - groupStart)) * 100;
+                            const durationMinutes = slot.end - slot.start;
+                            const shouldWrap = durationMinutes >= 120; // 2 hours or more
 
                             return (
                               <div
@@ -344,10 +349,10 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                                 >
                                   <div className="flex flex-col h-full overflow-hidden">
                                     <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate`}>
-                                      {slot.subject} ({slot.group})
+                                      {slot.subject}
                                     </div>
-                                    <div className={`text-gray-200 truncate ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
-                                      {slot.professor}
+                                    <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
+                                      {slot.salon || 'Salón no especificado'}
                                     </div>
                                   </div>
                                 </div>
