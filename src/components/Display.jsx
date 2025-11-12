@@ -70,6 +70,7 @@ const Display = () => {
     const scheduleRef = useRef(null);
     const exportRef = useRef(null);
     const revealGroupRef = useRef(null);
+    const openMobileMenuRef = useRef(null);
 
     // Auto-save selectedGroups to localStorage whenever they change
     useEffect(() => {
@@ -485,8 +486,20 @@ const Display = () => {
                             scheduleTitle={scheduleTitle}
                             onTitleChange={handleTitleChange}
                             onRevealGroup={(semester, subject, group) => {
-                                if (revealGroupRef.current) {
-                                    revealGroupRef.current(semester, subject, group);
+                                // Open mobile menu if on mobile
+                                if (openMobileMenuRef.current) {
+                                    openMobileMenuRef.current();
+                                    // Wait for menu to open before scrolling
+                                    setTimeout(() => {
+                                        if (revealGroupRef.current) {
+                                            revealGroupRef.current(semester, subject, group);
+                                        }
+                                    }, 300);
+                                } else {
+                                    // Desktop - reveal immediately
+                                    if (revealGroupRef.current) {
+                                        revealGroupRef.current(semester, subject, group);
+                                    }
                                 }
                             }}
                         />
@@ -498,6 +511,7 @@ const Display = () => {
                         />
                     }
                     scheduleRef={scheduleRef}
+                    onOpenMobileMenu={(fn) => { openMobileMenuRef.current = fn; }}
                 />
 
                 <ExportLayout

@@ -328,7 +328,13 @@ const SelectedGroupsPanel = ({
                 <div className="px-3 py-2 flex items-center space-x-2">
                   <div className="text-xs whitespace-nowrap">
                     <span className="text-white font-medium">{group.subject}</span>
-                    <span className="text-gray-400 ml-1">({group.group})</span>
+                    <button
+                      onClick={() => onRevealGroup && onRevealGroup(group.semester, group.subject, group.group)}
+                      className="text-gray-400 hover:text-gray-300 ml-1 transition-colors"
+                      title="Ver en selector de materias"
+                    >
+                      ({group.group})
+                    </button>
                   </div>
 
                   {/* Action buttons container */}
@@ -452,7 +458,13 @@ const SelectedGroupsPanel = ({
                     <div className="flex-1 min-w-0">
                       <div className="text-xs">
                         <span className="text-white font-medium">{group.subject}</span>
-                        <span className="text-gray-400 ml-1">({group.group})</span>
+                        <button
+                          onClick={() => onRevealGroup && onRevealGroup(group.semester, group.subject, group.group)}
+                          className="text-gray-400 hover:text-gray-300 ml-1 transition-colors"
+                          title="Ver en selector de materias"
+                        >
+                          ({group.group})
+                        </button>
                       </div>
                       {group.professor.nombre && (
                         <div className="text-xs text-gray-400 truncate mt-1 flex items-center gap-2">

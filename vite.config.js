@@ -7,4 +7,8 @@ export default defineConfig({
 		postcss: "./postcss.config.js",
 	},
 	base: "/creador-horarios/",
+	server: {
+		host: true,
+		port: 5173,
+	},
 });

@@ -7,11 +7,19 @@ const ResponsiveDisplay = ({
     scheduleViewerPanel,
     selectedGroupsPanel,
     overlapTogglePanel,
-    scheduleRef
+    scheduleRef,
+    onOpenMobileMenu
 }) => {
     const [isMobile, setIsMobile] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSubjectsVisible, setIsSubjectsVisible] = useState(true);
+
+    // Expose setIsMenuOpen through callback
+    useEffect(() => {
+        if (onOpenMobileMenu) {
+            onOpenMobileMenu(() => setIsMenuOpen(true));
+        }
+    }, [onOpenMobileMenu]);
 
     // Check if we're on mobile - be more explicit about breakpoints
     useEffect(() => {
