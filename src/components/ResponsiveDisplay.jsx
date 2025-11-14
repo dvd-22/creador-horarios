@@ -8,7 +8,8 @@ const ResponsiveDisplay = ({
     selectedGroupsPanel,
     overlapTogglePanel,
     scheduleRef,
-    onOpenMobileMenu
+    onOpenMobileMenu,
+    onUncollapseLeftPanel
 }) => {
     const [isMobile, setIsMobile] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,6 +71,7 @@ const ResponsiveDisplay = ({
                 minRightWidth={200}
                 maxRightWidth={500}
                 minCenterWidth={300}
+                onUncollapseLeft={onUncollapseLeftPanel}
             />
         );
     }

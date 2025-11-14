@@ -169,6 +169,7 @@ const Display = () => {
     const exportRef = useRef(null);
     const revealGroupRef = useRef(null);
     const openMobileMenuRef = useRef(null);
+    const uncollapseLeftPanelRef = useRef(null);
 
     // Load groups from URL on mount
     useEffect(() => {
@@ -654,7 +655,25 @@ const Display = () => {
                         <ScheduleSelector
                             onGroupSelect={handleGroupSelect}
                             selectedGroups={selectedGroups}
-                            onRevealGroup={(fn) => { revealGroupRef.current = fn; }}
+                            onRevealGroup={(fn) => { 
+                                revealGroupRef.current = (majorId, studyPlanId, semester, subject, group) => {
+                                    // Uncollapse left panel if collapsed (desktop only)
+                                    let wasCollapsed = false;
+                                    if (uncollapseLeftPanelRef.current) {
+                                        wasCollapsed = uncollapseLeftPanelRef.current();
+                                    }
+                                    
+                                    if (wasCollapsed) {
+                                        // Wait for panel to expand before revealing
+                                        setTimeout(() => {
+                                            fn(majorId, studyPlanId, semester, subject, group);
+                                        }, 200);
+                                    } else {
+                                        // Panel already expanded, reveal immediately
+                                        fn(majorId, studyPlanId, semester, subject, group);
+                                    }
+                                };
+                            }}
                         />
                     }
                     scheduleViewerPanel={
@@ -716,6 +735,7 @@ const Display = () => {
                     }
                     scheduleRef={scheduleRef}
                     onOpenMobileMenu={(fn) => { openMobileMenuRef.current = fn; }}
+                    onUncollapseLeftPanel={(fn) => { uncollapseLeftPanelRef.current = fn; }}
                 />
 
                 <ExportLayout

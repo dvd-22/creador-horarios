@@ -13,7 +13,8 @@ const ResizablePanels = ({
     maxRightWidth = 500, // 31.25rem
     minCenterWidth = 400, // Minimum width for center panel
     collapseThreshold = 120, // Width below which panel collapses
-    className = ""
+    className = "",
+    onUncollapseLeft // Callback to expose uncollapse function
 }) => {
     const [leftWidth, setLeftWidth] = useState(defaultLeftWidth);
     const [rightWidth, setRightWidth] = useState(defaultRightWidth);
@@ -41,6 +42,20 @@ const ResizablePanels = ({
             setIsRightCollapsed(true);
         }
     }, [isRightCollapsed, defaultRightWidth]);
+
+    // Expose uncollapse function
+    useEffect(() => {
+        if (onUncollapseLeft) {
+            onUncollapseLeft(() => {
+                if (isLeftCollapsed) {
+                    setIsLeftCollapsed(false);
+                    setLeftWidth(defaultLeftWidth);
+                    return true; // Panel was collapsed, now uncollapsing
+                }
+                return false; // Panel was already expanded
+            });
+        }
+    }, [onUncollapseLeft, isLeftCollapsed, defaultLeftWidth]);
 
     // Handle left splitter drag
     const handleLeftMouseDown = useCallback((e) => {
