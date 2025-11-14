@@ -78,7 +78,7 @@ const loadGroupData = async (majorId, studyPlanId, groupId) => {
 };
 
 const CustomAlert = ({ message, onClose }) => (
-    <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[90%] max-w-md bg-red-900/80 border border-red-500 text-white px-5 py-4 rounded-lg shadow-xl backdrop-blur-sm">
+    <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-[60] w-[90%] max-w-md bg-red-900/80 border border-red-500 text-white px-5 py-4 rounded-lg shadow-xl backdrop-blur-sm">
         <div className="flex items-start">
             <div className="flex-shrink-0 mr-3">
                 <svg className="h-6 w-6 text-red-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -625,7 +625,7 @@ const Display = () => {
                     />
                 )}
                 {showOverlapWarning && (
-                    <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+                    <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-[60]">
                         <div className="bg-gray-800 rounded-lg p-6 max-w-md mx-4 border border-gray-700 shadow-xl">
                             <h3 className="text-xl font-semibold text-red-400 mb-3">¡Atención!</h3>
                             <p className="text-gray-300 mb-4">
