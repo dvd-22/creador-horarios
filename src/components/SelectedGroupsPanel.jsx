@@ -1,9 +1,9 @@
-import React, { useState, useMemo, useEffect } from 'react';
-import { createEvents } from 'ics';
-import { useMajorContext } from '../contexts/MajorContext';
-import { Edit2, Download } from 'lucide-react';
-import ProfessorRating from './ProfessorRating';
-import { professorRatingService } from '../services/professorRatingService';
+import React, { useState, useMemo, useEffect } from "react";
+import { createEvents } from "ics";
+import { useMajorContext } from "../contexts/MajorContext";
+import { Edit2, Download } from "lucide-react";
+import ProfessorRating from "./ProfessorRating";
+import { professorRatingService } from "../services/professorRatingService";
 
 const GOOGLE_COLORS = {
   LAVENDER: 1,
@@ -16,27 +16,27 @@ const GOOGLE_COLORS = {
   GRAPHITE: 8,
   BLUEBERRY: 9,
   BASIL: 10,
-  TOMATO: 11
+  TOMATO: 11,
 };
 
 const parseTimeString = (timeStr) => {
-  if (!timeStr || timeStr === 'Horario no especificado') return null;
+  if (!timeStr || timeStr === "Horario no especificado") return null;
 
   // Handle format "HH:MM a HH:MM"
-  if (timeStr.includes('a')) {
-    const [startTime, endTime] = timeStr.split('a').map(t => t.trim());
+  if (timeStr.includes("a")) {
+    const [startTime, endTime] = timeStr.split("a").map((t) => t.trim());
     return {
       start: timeToMinutes(startTime),
-      end: timeToMinutes(endTime)
+      end: timeToMinutes(endTime),
     };
   }
 
   // Handle format "HH:MM - HH:MM"
-  if (timeStr.includes('-')) {
-    const [startTime, endTime] = timeStr.split('-').map(t => t.trim());
+  if (timeStr.includes("-")) {
+    const [startTime, endTime] = timeStr.split("-").map((t) => t.trim());
     return {
       start: timeToMinutes(startTime),
-      end: timeToMinutes(endTime)
+      end: timeToMinutes(endTime),
     };
   }
 
@@ -45,7 +45,7 @@ const parseTimeString = (timeStr) => {
 
 const timeToMinutes = (time) => {
   if (!time) return null;
-  const [hours, minutes] = time.split(':').map(Number);
+  const [hours, minutes] = time.split(":").map(Number);
   return hours * 60 + minutes;
 };
 
@@ -61,7 +61,7 @@ const SelectedGroupsPanel = ({
   showOnlySubjects = false,
   horizontal = false,
   showSubjectsCount = false,
-  onRevealGroup
+  onRevealGroup,
 }) => {
   const { availableMajors } = useMajorContext();
   const [isNaming, setIsNaming] = useState(false);
@@ -75,19 +75,28 @@ const SelectedGroupsPanel = ({
     const fetchRatings = async () => {
       const ratings = {};
       for (const group of selectedGroups) {
-        if (group.professor?.nombre && !professorRatings[group.professor.nombre]) {
+        if (
+          group.professor?.nombre &&
+          !professorRatings[group.professor.nombre]
+        ) {
           try {
-            const result = await professorRatingService.getProfessorRating(group.professor.nombre);
+            const result = await professorRatingService.getProfessorRating(
+              group.professor.nombre
+            );
             if (result) {
               ratings[group.professor.nombre] = result;
             }
           } catch (error) {
-            console.error('Error fetching rating for', group.professor.nombre, error);
+            console.error(
+              "Error fetching rating for",
+              group.professor.nombre,
+              error
+            );
           }
         }
       }
       if (Object.keys(ratings).length > 0) {
-        setProfessorRatings(prev => ({ ...prev, ...ratings }));
+        setProfessorRatings((prev) => ({ ...prev, ...ratings }));
       }
     };
 
@@ -96,61 +105,63 @@ const SelectedGroupsPanel = ({
 
   // Color palette that matches ScheduleViewer
   const colorPalette = [
-    'bg-blue-700/50',
-    'bg-purple-700/50',
-    'bg-green-700/50',
-    'bg-red-700/50',
-    'bg-yellow-700/50',
-    'bg-indigo-700/50',
-    'bg-pink-700/50',
-    'bg-cyan-700/50',
-    'bg-teal-700/50',
-    'bg-orange-700/50',
-    'bg-lime-700/50',
-    'bg-emerald-700/50',
-    'bg-sky-700/50',
-    'bg-violet-700/50',
-    'bg-rose-700/50',
-    'bg-amber-700/50',
-    'bg-fuchsia-700/50',
-    'bg-blue-600/50',
-    'bg-purple-600/50',
-    'bg-green-600/50'
+    "bg-blue-700/50",
+    "bg-purple-700/50",
+    "bg-green-700/50",
+    "bg-red-700/50",
+    "bg-yellow-700/50",
+    "bg-indigo-700/50",
+    "bg-pink-700/50",
+    "bg-cyan-700/50",
+    "bg-teal-700/50",
+    "bg-orange-700/50",
+    "bg-lime-700/50",
+    "bg-emerald-700/50",
+    "bg-sky-700/50",
+    "bg-violet-700/50",
+    "bg-rose-700/50",
+    "bg-amber-700/50",
+    "bg-fuchsia-700/50",
+    "bg-blue-600/50",
+    "bg-purple-600/50",
+    "bg-green-600/50",
   ];
 
   // Convert Tailwind color classes to CSS colors for color bars
   const getColorFromClass = (colorClass) => {
     const colorMap = {
-      'bg-blue-700/50': '#1d4ed8',
-      'bg-purple-700/50': '#7c3aed',
-      'bg-green-700/50': '#15803d',
-      'bg-red-700/50': '#b91c1c',
-      'bg-yellow-700/50': '#a16207',
-      'bg-indigo-700/50': '#4338ca',
-      'bg-pink-700/50': '#be185d',
-      'bg-cyan-700/50': '#0e7490',
-      'bg-teal-700/50': '#0f766e',
-      'bg-orange-700/50': '#c2410c',
-      'bg-lime-700/50': '#4d7c0f',
-      'bg-emerald-700/50': '#047857',
-      'bg-sky-700/50': '#0369a1',
-      'bg-violet-700/50': '#6d28d9',
-      'bg-rose-700/50': '#be123c',
-      'bg-amber-700/50': '#b45309',
-      'bg-fuchsia-700/50': '#a21caf',
-      'bg-blue-600/50': '#2563eb',
-      'bg-purple-600/50': '#9333ea',
-      'bg-green-600/50': '#16a34a'
+      "bg-blue-700/50": "#1d4ed8",
+      "bg-purple-700/50": "#7c3aed",
+      "bg-green-700/50": "#15803d",
+      "bg-red-700/50": "#b91c1c",
+      "bg-yellow-700/50": "#a16207",
+      "bg-indigo-700/50": "#4338ca",
+      "bg-pink-700/50": "#be185d",
+      "bg-cyan-700/50": "#0e7490",
+      "bg-teal-700/50": "#0f766e",
+      "bg-orange-700/50": "#c2410c",
+      "bg-lime-700/50": "#4d7c0f",
+      "bg-emerald-700/50": "#047857",
+      "bg-sky-700/50": "#0369a1",
+      "bg-violet-700/50": "#6d28d9",
+      "bg-rose-700/50": "#be123c",
+      "bg-amber-700/50": "#b45309",
+      "bg-fuchsia-700/50": "#a21caf",
+      "bg-blue-600/50": "#2563eb",
+      "bg-purple-600/50": "#9333ea",
+      "bg-green-600/50": "#16a34a",
     };
-    return colorMap[colorClass] || '#6b7280';
+    return colorMap[colorClass] || "#6b7280";
   };
 
   const subjectColors = useMemo(() => {
-    const uniqueSubjects = [...new Set(selectedGroups.map(group => group.subject))];
+    const uniqueSubjects = [
+      ...new Set(selectedGroups.map((group) => group.subject)),
+    ];
     return Object.fromEntries(
       uniqueSubjects.map((subject, index) => [
         subject,
-        colorPalette[index % colorPalette.length]
+        colorPalette[index % colorPalette.length],
       ])
     );
   }, [selectedGroups, colorPalette]);
@@ -179,9 +190,9 @@ const SelectedGroupsPanel = ({
   };
 
   const handleTitleKeyPress = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       handleTitleSave();
-    } else if (e.key === 'Escape') {
+    } else if (e.key === "Escape") {
       handleTitleCancel();
     }
   };
@@ -202,10 +213,10 @@ const SelectedGroupsPanel = ({
       const color = subjectColors[group.subject];
 
       // Process professor schedules
-      group.professor.horarios?.forEach(schedule => {
+      group.professor.horarios?.forEach((schedule) => {
         const timeRange = parseTimeString(schedule.horario);
         if (timeRange && schedule.dias) {
-          schedule.dias.forEach(day => {
+          schedule.dias.forEach((day) => {
             const dayOffset = dayOffsets[day];
             if (dayOffset !== undefined) {
               const eventDate = new Date(nextMonday);
@@ -214,20 +225,40 @@ const SelectedGroupsPanel = ({
               const startDateTime = new Date(eventDate);
               const endDateTime = new Date(eventDate);
 
-              startDateTime.setHours(Math.floor(timeRange.start / 60), timeRange.start % 60);
-              endDateTime.setHours(Math.floor(timeRange.end / 60), timeRange.end % 60);
+              startDateTime.setHours(
+                Math.floor(timeRange.start / 60),
+                timeRange.start % 60
+              );
+              endDateTime.setHours(
+                Math.floor(timeRange.end / 60),
+                timeRange.end % 60
+              );
 
               events.push({
                 title: `${group.subject} (${group.group})`,
-                description: `Profesor: ${group.professor.nombre}\nAyudantes: ${group.assistants?.map(a => a.nombre).join(', ') || 'N/A'}`,
-                start: [startDateTime.getFullYear(), startDateTime.getMonth() + 1, startDateTime.getDate(), startDateTime.getHours(), startDateTime.getMinutes()],
-                end: [endDateTime.getFullYear(), endDateTime.getMonth() + 1, endDateTime.getDate(), endDateTime.getHours(), endDateTime.getMinutes()],
-                location: group.salon || group.modalidad || '',
+                description: `Profesor: ${group.professor.nombre}\nAyudantes: ${
+                  group.assistants?.map((a) => a.nombre).join(", ") || "N/A"
+                }`,
+                start: [
+                  startDateTime.getFullYear(),
+                  startDateTime.getMonth() + 1,
+                  startDateTime.getDate(),
+                  startDateTime.getHours(),
+                  startDateTime.getMinutes(),
+                ],
+                end: [
+                  endDateTime.getFullYear(),
+                  endDateTime.getMonth() + 1,
+                  endDateTime.getDate(),
+                  endDateTime.getHours(),
+                  endDateTime.getMinutes(),
+                ],
+                location: group.salon || group.modalidad || "",
                 categories: [group.subject],
-                status: 'CONFIRMED',
-                busyStatus: 'BUSY',
-                organizer: { name: group.professor.nombre || 'Profesor' },
-                recurrenceRule: 'FREQ=WEEKLY;COUNT=16'
+                status: "CONFIRMED",
+                busyStatus: "BUSY",
+                organizer: { name: group.professor.nombre || "Profesor" },
+                recurrenceRule: "FREQ=WEEKLY;COUNT=16",
               });
             }
           });
@@ -235,10 +266,10 @@ const SelectedGroupsPanel = ({
       });
 
       // Process assistants schedules
-      group.assistants?.forEach(assistant => {
+      group.assistants?.forEach((assistant) => {
         const timeRange = parseTimeString(assistant.horario);
         if (timeRange && assistant.dias) {
-          assistant.dias.forEach(day => {
+          assistant.dias.forEach((day) => {
             const dayOffset = dayOffsets[day];
             if (dayOffset !== undefined) {
               const eventDate = new Date(nextMonday);
@@ -247,20 +278,38 @@ const SelectedGroupsPanel = ({
               const startDateTime = new Date(eventDate);
               const endDateTime = new Date(eventDate);
 
-              startDateTime.setHours(Math.floor(timeRange.start / 60), timeRange.start % 60);
-              endDateTime.setHours(Math.floor(timeRange.end / 60), timeRange.end % 60);
+              startDateTime.setHours(
+                Math.floor(timeRange.start / 60),
+                timeRange.start % 60
+              );
+              endDateTime.setHours(
+                Math.floor(timeRange.end / 60),
+                timeRange.end % 60
+              );
 
               events.push({
                 title: `${group.subject} (${group.group}) - Ayudantía`,
                 description: `Ayudante: ${assistant.nombre}`,
-                start: [startDateTime.getFullYear(), startDateTime.getMonth() + 1, startDateTime.getDate(), startDateTime.getHours(), startDateTime.getMinutes()],
-                end: [endDateTime.getFullYear(), endDateTime.getMonth() + 1, endDateTime.getDate(), endDateTime.getHours(), endDateTime.getMinutes()],
-                location: assistant.salon || '',
+                start: [
+                  startDateTime.getFullYear(),
+                  startDateTime.getMonth() + 1,
+                  startDateTime.getDate(),
+                  startDateTime.getHours(),
+                  startDateTime.getMinutes(),
+                ],
+                end: [
+                  endDateTime.getFullYear(),
+                  endDateTime.getMonth() + 1,
+                  endDateTime.getDate(),
+                  endDateTime.getHours(),
+                  endDateTime.getMinutes(),
+                ],
+                location: assistant.salon || "",
                 categories: [group.subject],
-                status: 'CONFIRMED',
-                busyStatus: 'BUSY',
-                organizer: { name: assistant.nombre || 'Ayudante' },
-                recurrenceRule: 'FREQ=WEEKLY;COUNT=16'
+                status: "CONFIRMED",
+                busyStatus: "BUSY",
+                organizer: { name: assistant.nombre || "Ayudante" },
+                recurrenceRule: "FREQ=WEEKLY;COUNT=16",
               });
             }
           });
@@ -270,17 +319,17 @@ const SelectedGroupsPanel = ({
 
     createEvents(events, (error, value) => {
       if (error) {
-        console.error('Error creating ICS file:', error);
-        console.error('Error details:', JSON.stringify(error, null, 2));
-        console.error('Events that caused error:', events);
-        alert('Error al crear el archivo ICS. Por favor verifica la consola.');
+        console.error("Error creating ICS file:", error);
+        console.error("Error details:", JSON.stringify(error, null, 2));
+        console.error("Events that caused error:", events);
+        alert("Error al crear el archivo ICS. Por favor verifica la consola.");
         return;
       }
 
-      const blob = new Blob([value], { type: 'text/calendar;charset=utf-8' });
-      const link = document.createElement('a');
+      const blob = new Blob([value], { type: "text/calendar;charset=utf-8" });
+      const link = document.createElement("a");
       link.href = window.URL.createObjectURL(blob);
-      link.setAttribute('download', `${scheduleTitle || 'horario'}.ics`);
+      link.setAttribute("download", `${scheduleTitle || "horario"}.ics`);
       document.body.appendChild(link);
       link.click();
       link.remove();
@@ -293,104 +342,117 @@ const SelectedGroupsPanel = ({
   const handleShareSchedule = () => {
     const url = window.location.href;
 
-    console.log('handleShareSchedule called', { isMobile, hasNavigatorShare: !!navigator.share });
+    console.log("handleShareSchedule called", {
+      isMobile,
+      hasNavigatorShare: !!navigator.share,
+    });
 
     // First, always try to copy to clipboard
-    navigator.clipboard.writeText(url).then(() => {
-      console.log('Copied to clipboard successfully');
+    navigator.clipboard
+      .writeText(url)
+      .then(() => {
+        console.log("Copied to clipboard successfully");
 
-      // Then show native share if available on mobile
-      if (navigator.share && isMobile) {
-        console.log('Attempting native share...');
-        navigator.share({
-          title: scheduleTitle,
-          text: `Mira mi horario: ${scheduleTitle}`,
-          url: url
-        }).then(() => {
-          console.log('Share successful');
-        }).catch(err => {
-          console.log('Share error or cancelled:', err);
-        }).finally(() => {
-          // Always show modal after share attempt
+        // Then show native share if available on mobile
+        if (navigator.share && isMobile) {
+          console.log("Attempting native share...");
+          navigator
+            .share({
+              title: scheduleTitle,
+              text: `Mira mi horario: ${scheduleTitle}`,
+              url: url,
+            })
+            .then(() => {
+              console.log("Share successful");
+            })
+            .catch((err) => {
+              console.log("Share error or cancelled:", err);
+            })
+            .finally(() => {
+              // Always show modal after share attempt
+              setShowDownloadModal(false);
+              setShowSavePopup(true);
+            });
+        } else {
+          // Desktop: just show modal
+          console.log("Desktop mode - showing modal");
           setShowDownloadModal(false);
           setShowSavePopup(true);
-        });
-      } else {
-        // Desktop: just show modal
-        console.log('Desktop mode - showing modal');
-        setShowDownloadModal(false);
-        setShowSavePopup(true);
-      }
-    }).catch(err => {
-      console.error('Error copying to clipboard:', err);
-      // Fallback for older browsers
-      const textArea = document.createElement('textarea');
-      textArea.value = url;
-      textArea.style.position = 'fixed';
-      textArea.style.opacity = '0';
-      document.body.appendChild(textArea);
-      textArea.select();
-      try {
-        document.execCommand('copy');
-        console.log('Copied using fallback method');
-        setShowDownloadModal(false);
-        setShowSavePopup(true);
-      } catch (e) {
-        console.error('Fallback copy failed:', e);
-        alert('Error al copiar el link');
-      }
-      document.body.removeChild(textArea);
-    });
+        }
+      })
+      .catch((err) => {
+        console.error("Error copying to clipboard:", err);
+        // Fallback for older browsers
+        const textArea = document.createElement("textarea");
+        textArea.value = url;
+        textArea.style.position = "fixed";
+        textArea.style.opacity = "0";
+        document.body.appendChild(textArea);
+        textArea.select();
+        try {
+          document.execCommand("copy");
+          console.log("Copied using fallback method");
+          setShowDownloadModal(false);
+          setShowSavePopup(true);
+        } catch (e) {
+          console.error("Fallback copy failed:", e);
+          alert("Error al copiar el link");
+        }
+        document.body.removeChild(textArea);
+      });
   };
 
   const copyToClipboard = (text) => {
-    navigator.clipboard.writeText(text).then(() => {
-      setShowDownloadModal(false);
-      setShowSavePopup(true); // Show disclaimer modal
-    }).catch(err => {
-      console.error('Error copying to clipboard:', err);
-      // Fallback for older browsers
-      const textArea = document.createElement('textarea');
-      textArea.value = text;
-      textArea.style.position = 'fixed';
-      textArea.style.opacity = '0';
-      document.body.appendChild(textArea);
-      textArea.select();
-      try {
-        document.execCommand('copy');
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
         setShowDownloadModal(false);
         setShowSavePopup(true); // Show disclaimer modal
-      } catch (e) {
-        alert('Error al copiar el link');
-      }
-      document.body.removeChild(textArea);
-    });
+      })
+      .catch((err) => {
+        console.error("Error copying to clipboard:", err);
+        // Fallback for older browsers
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
+        textArea.style.position = "fixed";
+        textArea.style.opacity = "0";
+        document.body.appendChild(textArea);
+        textArea.select();
+        try {
+          document.execCommand("copy");
+          setShowDownloadModal(false);
+          setShowSavePopup(true); // Show disclaimer modal
+        } catch (e) {
+          alert("Error al copiar el link");
+        }
+        document.body.removeChild(textArea);
+      });
   };
 
   const handleCopyLink = async () => {
     const url = window.location.href;
     try {
       await navigator.clipboard.writeText(url);
-      console.log('Link copied successfully');
+      console.log("Link copied successfully");
       setShowDownloadModal(false);
       setShowSavePopup(true);
     } catch (err) {
-      console.error('Failed to copy link:', err);
+      console.error("Failed to copy link:", err);
       // Fallback for older browsers
-      const textArea = document.createElement('textarea');
+      const textArea = document.createElement("textarea");
       textArea.value = url;
-      textArea.style.position = 'fixed';
-      textArea.style.opacity = '0';
+      textArea.style.position = "fixed";
+      textArea.style.opacity = "0";
       document.body.appendChild(textArea);
       textArea.select();
       try {
-        document.execCommand('copy');
-        console.log('Link copied with fallback method');
+        document.execCommand("copy");
+        console.log("Link copied with fallback method");
         setShowDownloadModal(false);
         setShowSavePopup(true);
       } catch (e) {
-        console.error('Fallback copy failed:', e);
-        alert('Error al copiar el link');
+        console.error("Fallback copy failed:", e);
+        alert("Error al copiar el link");
       }
       document.body.removeChild(textArea);
     }
@@ -419,7 +481,9 @@ const SelectedGroupsPanel = ({
                   className="flex items-center cursor-pointer group"
                 >
                   <p className="text-white font-medium text-sm truncate flex-1 min-w-0">
-                    {scheduleTitle}
+                    {scheduleTitle.length > 25
+                      ? scheduleTitle.slice(0, 25) + "..."
+                      : scheduleTitle}
                   </p>
                   <div className="ml-2 text-gray-400 group-hover:text-white p-1 flex-shrink-0 transition-colors">
                     <Edit2 size={12} />
@@ -439,44 +503,67 @@ const SelectedGroupsPanel = ({
 
           {/* Download Modal */}
           {showDownloadModal && (
-            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" onClick={() => setShowDownloadModal(false)}>
-              <div className="bg-gray-800 rounded-lg p-6 max-w-sm w-full mx-4 border border-gray-700" onClick={(e) => e.stopPropagation()} onTouchEnd={(e) => e.stopPropagation()}>
+            <div
+              className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+              onClick={() => setShowDownloadModal(false)}
+            >
+              <div
+                className="bg-gray-800 rounded-lg p-6 max-w-sm w-full mx-4 border border-gray-700"
+                onClick={(e) => e.stopPropagation()}
+                onTouchEnd={(e) => e.stopPropagation()}
+              >
                 <div className="text-center mb-6">
-                  <h3 className="text-lg font-semibold text-white mb-4">Descargar Horario</h3>
+                  <h3 className="text-lg font-semibold text-white mb-4">
+                    Descargar Horario
+                  </h3>
                   <p className="text-gray-300 text-sm">
-                    Puedes copiar el link para compartir tu horario con tus amigos, guardarlo como imagen, o exportar a ics para poder importar a tu calendario favorito
+                    Puedes copiar el link para compartir tu horario con tus
+                    amigos, guardarlo como imagen, o exportar a ics para poder
+                    importar a tu calendario favorito
                   </p>
                 </div>
                 <div className="space-y-3">
                   <button
                     onClick={handleCopyLink}
-                    onTouchEnd={(e) => { e.preventDefault(); handleCopyLink(); }}
+                    onTouchEnd={(e) => {
+                      e.preventDefault();
+                      handleCopyLink();
+                    }}
                     className="w-full bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                    style={{ touchAction: 'manipulation' }}
+                    style={{ touchAction: "manipulation" }}
                   >
                     🔗 Copiar Link
                   </button>
                   <button
                     onClick={handleSave}
-                    onTouchEnd={(e) => { e.preventDefault(); handleSave(); }}
+                    onTouchEnd={(e) => {
+                      e.preventDefault();
+                      handleSave();
+                    }}
                     className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                    style={{ touchAction: 'manipulation' }}
+                    style={{ touchAction: "manipulation" }}
                   >
                     💾 Guardar como PNG
                   </button>
                   <button
                     onClick={handleExportICS}
-                    onTouchEnd={(e) => { e.preventDefault(); handleExportICS(); }}
+                    onTouchEnd={(e) => {
+                      e.preventDefault();
+                      handleExportICS();
+                    }}
                     className="w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                    style={{ touchAction: 'manipulation' }}
+                    style={{ touchAction: "manipulation" }}
                   >
                     📅 Exportar .ics
                   </button>
                   <button
                     onClick={() => setShowDownloadModal(false)}
-                    onTouchEnd={(e) => { e.preventDefault(); setShowDownloadModal(false); }}
+                    onTouchEnd={(e) => {
+                      e.preventDefault();
+                      setShowDownloadModal(false);
+                    }}
                     className="w-full bg-gray-700 hover:bg-gray-600 active:bg-gray-500 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                    style={{ touchAction: 'manipulation' }}
+                    style={{ touchAction: "manipulation" }}
                   >
                     Cancelar
                   </button>
@@ -510,9 +597,20 @@ const SelectedGroupsPanel = ({
                 {/* Content */}
                 <div className="px-3 py-2 flex items-center space-x-2">
                   <div className="text-xs whitespace-nowrap">
-                    <span className="text-white font-medium">{group.subject}</span>
+                    <span className="text-white font-medium">
+                      {group.subject}
+                    </span>
                     <button
-                      onClick={() => onRevealGroup && onRevealGroup(group.majorId, group.studyPlanId, group.semester, group.subject, group.group)}
+                      onClick={() =>
+                        onRevealGroup &&
+                        onRevealGroup(
+                          group.majorId,
+                          group.studyPlanId,
+                          group.semester,
+                          group.subject,
+                          group.group
+                        )
+                      }
                       className="text-gray-400 hover:text-gray-300 ml-1 transition-colors"
                       title="Ver en selector de materias"
                     >
@@ -525,26 +623,45 @@ const SelectedGroupsPanel = ({
                     {group.professor.nombre && (
                       <button
                         onClick={() => {
-                          const ratingData = professorRatings[group.professor.nombre];
+                          const ratingData =
+                            professorRatings[group.professor.nombre];
                           if (ratingData?.url) {
-                            window.open(ratingData.url, '_blank', 'noopener,noreferrer');
+                            window.open(
+                              ratingData.url,
+                              "_blank",
+                              "noopener,noreferrer"
+                            );
                           }
                         }}
-                        className={`text-white text-[10px] h-4 px-1 flex items-center justify-center flex-shrink-0 rounded font-medium ${professorRatings[group.professor.nombre]?.rating
-                          ? professorRatingService.getRatingBgColor(professorRatings[group.professor.nombre].rating)
-                          : 'bg-gray-600'
-                          }`}
-                        title={professorRatings[group.professor.nombre]?.rating
-                          ? `Calificación: ${professorRatings[group.professor.nombre].rating}/10`
-                          : 'Cargando calificación...'}
+                        className={`text-white text-[10px] h-4 px-1 flex items-center justify-center flex-shrink-0 rounded font-medium ${
+                          professorRatings[group.professor.nombre]?.rating
+                            ? professorRatingService.getRatingBgColor(
+                                professorRatings[group.professor.nombre].rating
+                              )
+                            : "bg-gray-600"
+                        }`}
+                        title={
+                          professorRatings[group.professor.nombre]?.rating
+                            ? `Calificación: ${
+                                professorRatings[group.professor.nombre].rating
+                              }/10`
+                            : "Cargando calificación..."
+                        }
                       >
-                        {professorRatings[group.professor.nombre]?.rating || '...'}
+                        {professorRatings[group.professor.nombre]?.rating ||
+                          "..."}
                       </button>
                     )}
 
                     {group.presentacion && (
                       <button
-                        onClick={() => window.open(group.presentacion, '_blank', 'noopener,noreferrer')}
+                        onClick={() =>
+                          window.open(
+                            group.presentacion,
+                            "_blank",
+                            "noopener,noreferrer"
+                          )
+                        }
                         className="bg-blue-600 hover:bg-blue-700 text-white text-xs h-4 w-4 flex items-center justify-center flex-shrink-0 rounded"
                         title="Ver presentación"
                       >
@@ -553,10 +670,17 @@ const SelectedGroupsPanel = ({
                     )}
 
                     <button
-                      onClick={() => onRemoveGroup(group.semester, group.subject, group.group, {
-                        profesor: group.professor,
-                        ayudantes: group.assistants
-                      })}
+                      onClick={() =>
+                        onRemoveGroup(
+                          group.semester,
+                          group.subject,
+                          group.group,
+                          {
+                            profesor: group.professor,
+                            ayudantes: group.assistants,
+                          }
+                        )
+                      }
                       className="text-red-400 hover:text-red-300 text-xs h-4 w-4 flex items-center justify-center flex-shrink-0"
                       title="Eliminar materia"
                     >
@@ -650,9 +774,20 @@ const SelectedGroupsPanel = ({
                   <div className="flex-1 px-3 py-2 flex items-center justify-between">
                     <div className="flex-1 min-w-0">
                       <div className="text-xs">
-                        <span className="text-white font-medium">{group.subject}</span>
+                        <span className="text-white font-medium">
+                          {group.subject}
+                        </span>
                         <button
-                          onClick={() => onRevealGroup && onRevealGroup(group.majorId, group.studyPlanId, group.semester, group.subject, group.group)}
+                          onClick={() =>
+                            onRevealGroup &&
+                            onRevealGroup(
+                              group.majorId,
+                              group.studyPlanId,
+                              group.semester,
+                              group.subject,
+                              group.group
+                            )
+                          }
                           className="text-gray-400 hover:text-gray-300 ml-1 transition-colors"
                           title="Ver en selector de materias"
                         >
@@ -672,10 +807,17 @@ const SelectedGroupsPanel = ({
                     </div>
 
                     <button
-                      onClick={() => onRemoveGroup(group.semester, group.subject, group.group, {
-                        profesor: group.professor,
-                        ayudantes: group.assistants
-                      })}
+                      onClick={() =>
+                        onRemoveGroup(
+                          group.semester,
+                          group.subject,
+                          group.group,
+                          {
+                            profesor: group.professor,
+                            ayudantes: group.assistants,
+                          }
+                        )
+                      }
                       className="text-red-400 hover:text-red-300 text-xs h-6 w-6 flex items-center justify-center flex-shrink-0 ml-2"
                     >
                       ✕
@@ -697,44 +839,67 @@ const SelectedGroupsPanel = ({
 
         {/* Download Modal */}
         {showDownloadModal && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" onClick={() => setShowDownloadModal(false)}>
-            <div className="bg-gray-800 rounded-lg p-6 max-w-sm w-full mx-4 border border-gray-700" onClick={(e) => e.stopPropagation()} onTouchEnd={(e) => e.stopPropagation()}>
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+            onClick={() => setShowDownloadModal(false)}
+          >
+            <div
+              className="bg-gray-800 rounded-lg p-6 max-w-sm w-full mx-4 border border-gray-700"
+              onClick={(e) => e.stopPropagation()}
+              onTouchEnd={(e) => e.stopPropagation()}
+            >
               <div className="text-center mb-6">
-                <h3 className="text-lg font-semibold text-white mb-4">Descargar Horario</h3>
+                <h3 className="text-lg font-semibold text-white mb-4">
+                  Descargar Horario
+                </h3>
                 <p className="text-gray-300 text-sm">
-                  Puedes copiar el link para compartir tu horario con tus amigos, guardarlo como imagen, o exportar a ics para poder importar a tu calendario favorito
+                  Puedes copiar el link para compartir tu horario con tus
+                  amigos, guardarlo como imagen, o exportar a ics para poder
+                  importar a tu calendario favorito
                 </p>
               </div>
               <div className="space-y-3">
                 <button
                   onClick={handleCopyLink}
-                  onTouchEnd={(e) => { e.preventDefault(); handleCopyLink(); }}
+                  onTouchEnd={(e) => {
+                    e.preventDefault();
+                    handleCopyLink();
+                  }}
                   className="w-full bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                  style={{ touchAction: 'manipulation' }}
+                  style={{ touchAction: "manipulation" }}
                 >
                   🔗 Copiar Link
                 </button>
                 <button
                   onClick={handleSave}
-                  onTouchEnd={(e) => { e.preventDefault(); handleSave(); }}
+                  onTouchEnd={(e) => {
+                    e.preventDefault();
+                    handleSave();
+                  }}
                   className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                  style={{ touchAction: 'manipulation' }}
+                  style={{ touchAction: "manipulation" }}
                 >
                   💾 Guardar como PNG
                 </button>
                 <button
                   onClick={handleExportICS}
-                  onTouchEnd={(e) => { e.preventDefault(); handleExportICS(); }}
+                  onTouchEnd={(e) => {
+                    e.preventDefault();
+                    handleExportICS();
+                  }}
                   className="w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                  style={{ touchAction: 'manipulation' }}
+                  style={{ touchAction: "manipulation" }}
                 >
                   📅 Exportar .ics
                 </button>
                 <button
                   onClick={() => setShowDownloadModal(false)}
-                  onTouchEnd={(e) => { e.preventDefault(); setShowDownloadModal(false); }}
+                  onTouchEnd={(e) => {
+                    e.preventDefault();
+                    setShowDownloadModal(false);
+                  }}
                   className="w-full bg-gray-700 hover:bg-gray-600 active:bg-gray-500 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                  style={{ touchAction: 'manipulation' }}
+                  style={{ touchAction: "manipulation" }}
                 >
                   Cancelar
                 </button>
@@ -744,7 +909,7 @@ const SelectedGroupsPanel = ({
         )}
       </div>
     );
-  }  // Desktop vertical layout (existing code)
+  } // Desktop vertical layout (existing code)
   return (
     <div className="h-full flex flex-col bg-gray-900 text-white">
       {/* Header */}
@@ -792,12 +957,17 @@ const SelectedGroupsPanel = ({
           Materias seleccionadas ({selectedGroups.length})
         </h3>
         {selectedGroups.map((group, index) => {
-          const majorInfo = Object.values(availableMajors).find(m => m.id === group.semester);
+          const majorInfo = Object.values(availableMajors).find(
+            (m) => m.id === group.semester
+          );
           const colorClass = subjectColors[group.subject];
           const colorHex = getColorFromClass(colorClass);
 
           return (
-            <div key={`${group.semester}-${group.subject}-${group.group}`} className="mb-3 bg-gray-800 rounded-lg border border-gray-700 overflow-hidden hover:border-gray-600 transition-colors flex">
+            <div
+              key={`${group.semester}-${group.subject}-${group.group}`}
+              className="mb-3 bg-gray-800 rounded-lg border border-gray-700 overflow-hidden hover:border-gray-600 transition-colors flex"
+            >
               {/* Color Bar */}
               <div
                 className="w-1 flex-shrink-0"
@@ -822,10 +992,17 @@ const SelectedGroupsPanel = ({
                       )}
                     </div>
                     <button
-                      onClick={() => onRemoveGroup(group.semester, group.subject, group.group, {
-                        profesor: group.professor,
-                        ayudantes: group.assistants
-                      })}
+                      onClick={() =>
+                        onRemoveGroup(
+                          group.semester,
+                          group.subject,
+                          group.group,
+                          {
+                            profesor: group.professor,
+                            ayudantes: group.assistants,
+                          }
+                        )
+                      }
                       className="text-red-400 hover:text-red-300 text-xs h-5 w-5 flex items-center justify-center rounded-full hover:bg-gray-700 ml-2"
                       aria-label="Eliminar materia"
                     >
@@ -840,7 +1017,16 @@ const SelectedGroupsPanel = ({
                     {/* Group info */}
                     <div className="flex items-center gap-2 text-xs">
                       <button
-                        onClick={() => onRevealGroup && onRevealGroup(group.majorId, group.studyPlanId, group.semester, group.subject, group.group)}
+                        onClick={() =>
+                          onRevealGroup &&
+                          onRevealGroup(
+                            group.majorId,
+                            group.studyPlanId,
+                            group.semester,
+                            group.subject,
+                            group.group
+                          )
+                        }
                         className="bg-gray-700 hover:bg-gray-600 px-2 py-1 rounded text-gray-300 transition-colors cursor-pointer"
                         title="Ver en selector de materias"
                       >
@@ -857,7 +1043,13 @@ const SelectedGroupsPanel = ({
                     {/* Presentation button */}
                     {group.presentacion && (
                       <button
-                        onClick={() => window.open(group.presentacion, '_blank', 'noopener,noreferrer')}
+                        onClick={() =>
+                          window.open(
+                            group.presentacion,
+                            "_blank",
+                            "noopener,noreferrer"
+                          )
+                        }
                         className="inline-flex items-center px-2 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
                       >
                         <span className="mr-1">📄</span>
@@ -878,7 +1070,7 @@ const SelectedGroupsPanel = ({
       </div>
 
       <div className="mt-4 text-center text-sm text-gray-400 px-4 pb-4">
-        Con ♥️ por Dvd22 - {' '}
+        Con ♥️ por Dvd22 -{" "}
         <a
           href="https://github.com/dvd-22/creador-horarios"
           target="_blank"
@@ -891,44 +1083,67 @@ const SelectedGroupsPanel = ({
 
       {/* Download Modal */}
       {showDownloadModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" onClick={() => setShowDownloadModal(false)}>
-          <div className="bg-gray-800 rounded-lg p-6 max-w-sm w-full mx-4 border border-gray-700" onClick={(e) => e.stopPropagation()} onTouchEnd={(e) => e.stopPropagation()}>
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+          onClick={() => setShowDownloadModal(false)}
+        >
+          <div
+            className="bg-gray-800 rounded-lg p-6 max-w-sm w-full mx-4 border border-gray-700"
+            onClick={(e) => e.stopPropagation()}
+            onTouchEnd={(e) => e.stopPropagation()}
+          >
             <div className="text-center mb-6">
-              <h3 className="text-lg font-semibold text-white mb-4">Descargar Horario</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Descargar Horario
+              </h3>
               <p className="text-gray-300 text-sm">
-                Puedes copiar el link para compartir tu horario con tus amigos, guardarlo como imagen, o exportar a ics para poder importar a tu calendario favorito
+                Puedes copiar el link para compartir tu horario con tus amigos,
+                guardarlo como imagen, o exportar a ics para poder importar a tu
+                calendario favorito
               </p>
             </div>
             <div className="space-y-3">
               <button
                 onClick={handleCopyLink}
-                onTouchEnd={(e) => { e.preventDefault(); handleCopyLink(); }}
+                onTouchEnd={(e) => {
+                  e.preventDefault();
+                  handleCopyLink();
+                }}
                 className="w-full bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                style={{ touchAction: 'manipulation' }}
+                style={{ touchAction: "manipulation" }}
               >
                 🔗 Copiar Link
               </button>
               <button
                 onClick={handleSave}
-                onTouchEnd={(e) => { e.preventDefault(); handleSave(); }}
+                onTouchEnd={(e) => {
+                  e.preventDefault();
+                  handleSave();
+                }}
                 className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                style={{ touchAction: 'manipulation' }}
+                style={{ touchAction: "manipulation" }}
               >
                 💾 Guardar como PNG
               </button>
               <button
                 onClick={handleExportICS}
-                onTouchEnd={(e) => { e.preventDefault(); handleExportICS(); }}
+                onTouchEnd={(e) => {
+                  e.preventDefault();
+                  handleExportICS();
+                }}
                 className="w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                style={{ touchAction: 'manipulation' }}
+                style={{ touchAction: "manipulation" }}
               >
                 📅 Exportar .ics
               </button>
               <button
                 onClick={() => setShowDownloadModal(false)}
-                onTouchEnd={(e) => { e.preventDefault(); setShowDownloadModal(false); }}
+                onTouchEnd={(e) => {
+                  e.preventDefault();
+                  setShowDownloadModal(false);
+                }}
                 className="w-full bg-gray-700 hover:bg-gray-600 active:bg-gray-500 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                style={{ touchAction: 'manipulation' }}
+                style={{ touchAction: "manipulation" }}
               >
                 Cancelar
               </button>
