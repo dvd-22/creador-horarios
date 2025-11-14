@@ -399,6 +399,7 @@ const Display = () => {
                             day,
                             start: profStart,
                             end: profEnd,
+                            groupId: `${group.subject}-${group.group}`, // Unique identifier for the group
                             group: `${group.subject} (${group.group})`
                         });
                     });
@@ -418,6 +419,7 @@ const Display = () => {
                             day,
                             start: astStart,
                             end: astEnd,
+                            groupId: `${group.subject}-${group.group}`, // Same identifier for professor and assistants
                             group: `${group.subject} (${group.group}) - Ayudantía`
                         });
                     });
@@ -425,13 +427,15 @@ const Display = () => {
             });
         }
 
-        // Check for overlaps
+        // Check for overlaps between DIFFERENT groups only
         for (let i = 0; i < allSlots.length; i++) {
             for (let j = i + 1; j < allSlots.length; j++) {
                 const slotA = allSlots[i];
                 const slotB = allSlots[j];
 
-                if (slotA.day === slotB.day &&
+                // Only check overlaps between different groups
+                if (slotA.groupId !== slotB.groupId &&
+                    slotA.day === slotB.day &&
                     hasTimeOverlap(slotA.start, slotA.end, slotB.start, slotB.end)) {
                     return true;
                 }

@@ -129,19 +129,15 @@ const ResponsiveDisplay = ({
 
                 {/* Selected Subjects - Collapsible */}
                 {isSubjectsVisible && (
-                    <>
-                        <div className="border-t border-gray-700 max-h-32 overflow-y-auto">
-                            <div className="p-3">
-                                {React.cloneElement(selectedGroupsPanel, {
-                                    isMobile: true,
-                                    showOnlySubjects: true,
-                                    horizontal: true
-                                })}
-                            </div>
+                    <div className="border-t border-gray-700 max-h-32 overflow-y-auto">
+                        <div className="p-3">
+                            {React.cloneElement(selectedGroupsPanel, {
+                                isMobile: true,
+                                showOnlySubjects: true,
+                                horizontal: true
+                            })}
                         </div>
-                        {/* Overlap Toggle - Show when subjects dropdown is open */}
-                        {overlapTogglePanel}
-                    </>
+                    </div>
                 )}
             </div>
 
@@ -158,7 +154,9 @@ const ResponsiveDisplay = ({
                         {/* Sidebar - Full screen height */}
                         <div className="mobile-menu fixed top-0 left-0 w-80 h-screen bg-gray-900 border-r border-gray-700 z-50 flex flex-col">
                             <div className="flex-1 overflow-hidden">
-                                {scheduleSelectorPanel}
+                                {React.cloneElement(scheduleSelectorPanel, {
+                                    overlapToggle: overlapTogglePanel
+                                })}
                             </div>
                         </div>
                     </>

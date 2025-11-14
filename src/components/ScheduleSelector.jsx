@@ -53,7 +53,7 @@ const getSemesterOrderPriority = (semesterName) => {
   return 2000 + semesterName.localeCompare('');
 };
 
-const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup }) => {
+const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overlapToggle }) => {
   const { selectedMajorId, selectedStudyPlan, majorData, isLoading, loadError, changeMajor, changeStudyPlan, currentMajor } = useMajorContext();
   const [openSemesters, setOpenSemesters] = useState({});
   const [openSubjects, setOpenSubjects] = useState({});
@@ -481,6 +481,9 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup }) => {
           <Search className="absolute left-2 top-2.5 text-gray-400" size={16} />
         </div>
       </div>
+
+      {/* Overlap toggle - only show on mobile when passed as prop */}
+      {overlapToggle && overlapToggle}
 
       <MajorSelector />
 
