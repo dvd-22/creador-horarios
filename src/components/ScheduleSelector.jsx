@@ -22,10 +22,6 @@ const timeToMinutes = (timeStr) => {
 
 // Utility function to check if a schedule matches filter criteria
 const scheduleMatchesFilter = (horario, filters) => {
-  if (!filters.startTime && !filters.endTime && filters.exactTimes.length === 0 && (!filters.days || filters.days.length === 6) && (!filters.blockedHours || filters.blockedHours.length === 0)) {
-    return true; // No filters applied
-  }
-
   if (!horario) return false;
 
   // Check day filter if specified
@@ -49,6 +45,10 @@ const scheduleMatchesFilter = (horario, filters) => {
 
     if (!allDaysAllowed) return false;
   }
+
+  // If no time-based filters are set, we're done checking
+  const hasTimeFilters = filters.startTime || filters.endTime || filters.exactTimes.length > 0 || (filters.blockedHours && filters.blockedHours.length > 0);
+  if (!hasTimeFilters) return true;
 
   // Extract start time from schedule string (e.g., "07:00 a 08:30" -> "07:00")
   const timeMatch = horario.horario.match(/^(\d{2}:\d{2})/);
@@ -359,7 +359,16 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
   const filteredScheduleData = useMemo(() => {
     const orderedData = getOrderedData(majorData || {});
 
-    if (!searchQuery.trim() && !filters.startTime && !filters.endTime && filters.exactTimes.length === 0) {
+    // Check if no filters are applied (including modality and blocked hours)
+    const noFiltersApplied = !searchQuery.trim() &&
+      !filters.startTime &&
+      !filters.endTime &&
+      filters.exactTimes.length === 0 &&
+      (!filters.days || filters.days.length === 6) &&
+      (!filters.blockedHours || filters.blockedHours.length === 0) &&
+      (!filters.modalities || filters.modalities.length === 2);
+
+    if (noFiltersApplied) {
       return orderedData;
     }
 
