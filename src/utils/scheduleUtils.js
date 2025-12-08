@@ -28,8 +28,9 @@ export const saveScheduleAsPng = async (scheduleRef, name, options = {}) => {
 	try {
 		const html2canvas = (await import("html2canvas")).default;
 
-		// Store original display style
-		const originalDisplay = scheduleRef.current.style.display;
+		// Store original positioning
+		const originalTop = scheduleRef.current.style.top;
+		const originalVisibility = scheduleRef.current.style.visibility;
 
 		// Store original styles of time-group-card elements
 		const elements =
@@ -41,6 +42,10 @@ export const saveScheduleAsPng = async (scheduleRef, name, options = {}) => {
 			overflow: el.style.overflow,
 		}));
 
+		// Temporarily move element on-screen and make visible for capture
+		scheduleRef.current.style.top = "0";
+		scheduleRef.current.style.visibility = "visible";
+
 		// Apply export styles
 		originalStyles.forEach(({ el }) => {
 			el.style.zIndex = "999";
@@ -48,17 +53,20 @@ export const saveScheduleAsPng = async (scheduleRef, name, options = {}) => {
 			el.style.overflow = "visible";
 		});
 
-		// Make export layout visible
-		scheduleRef.current.style.display = "block";
+		// Ensure layout is rendered before capture
+		await new Promise((resolve) => setTimeout(resolve, 100));
 
-		// Ensure layout is visible during capture
-		await new Promise((resolve) => setTimeout(resolve, 50));
+		// Calculate dynamic height based on actual content
+		const actualHeight = scheduleRef.current.scrollHeight;
+		const width = 1400;
+		// Use the larger of: 800px (minimum) or actual content height
+		const height = Math.max(800, actualHeight);
 
 		const canvas = await html2canvas(scheduleRef.current, {
 			backgroundColor,
 			scale,
-			width: 1400,
-			height: 800,
+			width,
+			height,
 			logging: false,
 			useCORS: true,
 			allowTaint: true,
@@ -73,8 +81,9 @@ export const saveScheduleAsPng = async (scheduleRef, name, options = {}) => {
 			el.style.overflow = overflow;
 		});
 
-		// Restore original display style
-		scheduleRef.current.style.display = originalDisplay;
+		// Restore original positioning
+		scheduleRef.current.style.top = originalTop;
+		scheduleRef.current.style.visibility = originalVisibility;
 
 		const link = document.createElement("a");
 		const sanitizedName = sanitizeFileName(name);

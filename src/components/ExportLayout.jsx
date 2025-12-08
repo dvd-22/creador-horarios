@@ -68,10 +68,13 @@ const ExportLayout = forwardRef(({ selectedGroups, schedule }, ref) => {
             ref={ref}
             className="bg-gray-900 p-4"
             style={{
-                position: 'absolute',
-                display: 'none',
+                position: 'fixed',
+                top: '-10000px',
+                left: '0',
                 minWidth: '1400px',
-                minHeight: '800px'
+                minHeight: '800px',
+                visibility: 'hidden',
+                zIndex: -9999
             }}
         >
             <div className="flex gap-4">
@@ -109,20 +112,22 @@ const ExportLayout = forwardRef(({ selectedGroups, schedule }, ref) => {
                                         </div>
 
                                         {/* Separating line and bottom section */}
-                                        <div className="px-2 py-1 text-xs flex items-center justify-between text-gray-300">
+                                        <div className="px-2 py-1 text-xs flex items-center justify-between text-gray-300 gap-2 min-w-0">
                                             {/* Group info */}
-                                            <div className="flex items-center">
-                                                <span className="bg-gray-700 px-2 py-1 rounded">
+                                            <div className="flex items-center flex-shrink-0">
+                                                <span className="bg-gray-700 px-2 py-1 rounded whitespace-nowrap">
                                                     Grupo {group.group}
                                                 </span>
                                             </div>
 
                                             {/* Rating on the right */}
                                             {group.professor.nombre && (
-                                                <ProfessorRating
-                                                    professorName={group.professor.nombre}
-                                                    className="text-xs"
-                                                />
+                                                <div className="flex-shrink-0">
+                                                    <ProfessorRating
+                                                        professorName={group.professor.nombre}
+                                                        className="text-xs"
+                                                    />
+                                                </div>
                                             )}
                                         </div>
                                     </div>

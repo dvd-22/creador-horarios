@@ -203,11 +203,13 @@ const SelectedGroupsPanel = ({
     const events = [];
     const dayOffsets = { Lu: 0, Ma: 1, Mi: 2, Ju: 3, Vi: 4, Sa: 5 };
 
-    // Get the next Monday as the starting point
-    const today = new Date();
-    const nextMonday = new Date(today);
-    const daysUntilMonday = (7 - today.getDay() + 1) % 7;
-    nextMonday.setDate(today.getDate() + daysUntilMonday);
+    // Semester 2026-2: February 3, 2026 to May 29, 2026
+    // February 3, 2026 is a Tuesday, so we need to find the Monday before it (February 2)
+    const semesterStartMonday = new Date(2026, 1, 2); // February 2, 2026 (month is 0-indexed)
+    const semesterEnd = new Date(2026, 4, 29); // May 29, 2026
+
+    // Calculate number of weeks in semester (17 weeks from Feb 2 to May 29)
+    const weekCount = 17;
 
     selectedGroups.forEach((group, groupIndex) => {
       const color = subjectColors[group.subject];
@@ -219,19 +221,23 @@ const SelectedGroupsPanel = ({
           schedule.dias.forEach((day) => {
             const dayOffset = dayOffsets[day];
             if (dayOffset !== undefined) {
-              const eventDate = new Date(nextMonday);
-              eventDate.setDate(nextMonday.getDate() + dayOffset);
+              const eventDate = new Date(semesterStartMonday);
+              eventDate.setDate(semesterStartMonday.getDate() + dayOffset);
 
               const startDateTime = new Date(eventDate);
               const endDateTime = new Date(eventDate);
 
               startDateTime.setHours(
                 Math.floor(timeRange.start / 60),
-                timeRange.start % 60
+                timeRange.start % 60,
+                0,
+                0
               );
               endDateTime.setHours(
                 Math.floor(timeRange.end / 60),
-                timeRange.end % 60
+                timeRange.end % 60,
+                0,
+                0
               );
 
               events.push({
@@ -245,6 +251,8 @@ const SelectedGroupsPanel = ({
                   startDateTime.getHours(),
                   startDateTime.getMinutes(),
                 ],
+                startInputType: 'local',
+                startOutputType: 'local',
                 end: [
                   endDateTime.getFullYear(),
                   endDateTime.getMonth() + 1,
@@ -252,12 +260,14 @@ const SelectedGroupsPanel = ({
                   endDateTime.getHours(),
                   endDateTime.getMinutes(),
                 ],
+                endInputType: 'local',
+                endOutputType: 'local',
                 location: group.salon || group.modalidad || "",
                 categories: [group.subject],
                 status: "CONFIRMED",
                 busyStatus: "BUSY",
                 organizer: { name: group.professor.nombre || "Profesor" },
-                recurrenceRule: "FREQ=WEEKLY;COUNT=16",
+                recurrenceRule: `FREQ=WEEKLY;UNTIL=20260529T235959`,
               });
             }
           });
@@ -271,19 +281,23 @@ const SelectedGroupsPanel = ({
           assistant.dias.forEach((day) => {
             const dayOffset = dayOffsets[day];
             if (dayOffset !== undefined) {
-              const eventDate = new Date(nextMonday);
-              eventDate.setDate(nextMonday.getDate() + dayOffset);
+              const eventDate = new Date(semesterStartMonday);
+              eventDate.setDate(semesterStartMonday.getDate() + dayOffset);
 
               const startDateTime = new Date(eventDate);
               const endDateTime = new Date(eventDate);
 
               startDateTime.setHours(
                 Math.floor(timeRange.start / 60),
-                timeRange.start % 60
+                timeRange.start % 60,
+                0,
+                0
               );
               endDateTime.setHours(
                 Math.floor(timeRange.end / 60),
-                timeRange.end % 60
+                timeRange.end % 60,
+                0,
+                0
               );
 
               events.push({
@@ -296,6 +310,8 @@ const SelectedGroupsPanel = ({
                   startDateTime.getHours(),
                   startDateTime.getMinutes(),
                 ],
+                startInputType: 'local',
+                startOutputType: 'local',
                 end: [
                   endDateTime.getFullYear(),
                   endDateTime.getMonth() + 1,
@@ -303,12 +319,14 @@ const SelectedGroupsPanel = ({
                   endDateTime.getHours(),
                   endDateTime.getMinutes(),
                 ],
+                endInputType: 'local',
+                endOutputType: 'local',
                 location: assistant.salon || "",
                 categories: [group.subject],
                 status: "CONFIRMED",
                 busyStatus: "BUSY",
                 organizer: { name: assistant.nombre || "Ayudante" },
-                recurrenceRule: "FREQ=WEEKLY;COUNT=16",
+                recurrenceRule: `FREQ=WEEKLY;UNTIL=20260529T235959`,
               });
             }
           });
