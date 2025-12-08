@@ -66,7 +66,7 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
                     <h2 className="text-xl font-bold text-gray-100">Filtros de Horario</h2>
                     <button
                         onClick={onClose}
-                        className="p-1 hover:bg-gray-700 rounded-lg transition-colors"
+                        className="p-1 hover:bg-gray-700 rounded-lg transition-colors flex items-center justify-center"
                         aria-label="Cerrar"
                     >
                         <X size={20} className="text-gray-400" />

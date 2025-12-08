@@ -537,21 +537,21 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
   return (
     <div className="h-full bg-gray-900 border-r border-gray-700 flex flex-col">
       <div className="p-4 border-b border-gray-700">
-        <div className="flex gap-2">
+        <div className="flex gap-2 items-stretch">
           <div className="relative flex-1">
             <input
               type="text"
               placeholder="Buscar..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full p-2 pl-8 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-500 text-sm"
+              className="w-full h-full py-2 pl-8 pr-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-500 text-sm"
               autoComplete="off"
             />
-            <Search className="absolute left-2 top-2.5 text-gray-400" size={16} />
+            <Search className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-400" size={16} />
           </div>
           <button
             onClick={() => setIsFilterModalOpen(true)}
-            className={`p-2 rounded-lg border transition-colors ${filters.startTime || filters.endTime || filters.exactTimes.length > 0
+            className={`px-3 py-2 rounded-lg border transition-colors flex items-center justify-center ${filters.startTime || filters.endTime || filters.exactTimes.length > 0
               ? 'bg-blue-600 border-blue-500 text-white'
               : 'bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700'
               }`}
