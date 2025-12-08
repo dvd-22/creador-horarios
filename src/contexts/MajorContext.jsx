@@ -77,7 +77,8 @@ export const MajorProvider = ({ children }) => {
         mode: 'range',
         startTime: null,
         endTime: null,
-        exactTimes: []
+        exactTimes: [],
+        days: ['L', 'M', 'I', 'J', 'V', 'S']
     });
 
     // Load major data when selected major or study plan changes

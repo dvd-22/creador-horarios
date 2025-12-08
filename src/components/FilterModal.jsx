@@ -9,9 +9,19 @@ const HOURS = [
     '19:00', '19:30', '20:00', '20:30', '21:00', '21:30', '22:00'
 ];
 
+const DAYS = [
+    { id: 'L', label: 'Lun', full: 'Lunes' },
+    { id: 'M', label: 'Mar', full: 'Martes' },
+    { id: 'I', label: 'Mié', full: 'Miércoles' },
+    { id: 'J', label: 'Jue', full: 'Jueves' },
+    { id: 'V', label: 'Vie', full: 'Viernes' },
+    { id: 'S', label: 'Sáb', full: 'Sábado' }
+];
+
 const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
     const [startIndex, setStartIndex] = useState(0);
     const [endIndex, setEndIndex] = useState(HOURS.length - 1);
+    const [selectedDays, setSelectedDays] = useState(['L', 'M', 'I', 'J', 'V', 'S']);
 
     useEffect(() => {
         if (isOpen) {
@@ -27,6 +37,12 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
                 if (idx !== -1) setEndIndex(idx);
             } else {
                 setEndIndex(HOURS.length - 1);
+            }
+
+            if (filters.days && filters.days.length > 0) {
+                setSelectedDays(filters.days);
+            } else {
+                setSelectedDays(['L', 'M', 'I', 'J', 'V', 'S']);
             }
         }
     }, [isOpen, filters]);
@@ -55,12 +71,28 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
         }
     };
 
+    const toggleDay = (dayId) => {
+        setSelectedDays(prev => {
+            if (prev.includes(dayId)) {
+                // Don't allow deselecting if it's the last day
+                if (prev.length === 1) return prev;
+                return prev.filter(d => d !== dayId);
+            } else {
+                return [...prev, dayId].sort((a, b) => {
+                    const order = ['L', 'M', 'I', 'J', 'V', 'S'];
+                    return order.indexOf(a) - order.indexOf(b);
+                });
+            }
+        });
+    };
+
     const handleApply = () => {
         onApplyFilters({
             mode: 'range',
             startTime: HOURS[startIndex],
             endTime: HOURS[endIndex],
-            exactTimes: []
+            exactTimes: [],
+            days: selectedDays
         });
         onClose();
     };
@@ -70,7 +102,8 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
             mode: 'range',
             startTime: null,
             endTime: null,
-            exactTimes: []
+            exactTimes: [],
+            days: ['L', 'M', 'I', 'J', 'V', 'S']
         });
         onClose();
     };
@@ -100,6 +133,28 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
 
                 {/* Content */}
                 <div className="flex-1 overflow-y-auto p-6 space-y-6">
+                    {/* Day Toggles */}
+                    <div>
+                        <label className="block text-sm font-medium text-gray-300 mb-3">
+                            Días de la semana
+                        </label>
+                        <div className="grid grid-cols-6 gap-2">
+                            {DAYS.map(day => (
+                                <button
+                                    key={day.id}
+                                    onClick={() => toggleDay(day.id)}
+                                    className={`px-2 py-2 rounded-lg font-medium text-xs transition-all ${selectedDays.includes(day.id)
+                                            ? 'bg-blue-600 text-white shadow-md'
+                                            : 'bg-gray-700 text-gray-400 hover:bg-gray-600'
+                                        }`}
+                                    title={day.full}
+                                >
+                                    {day.label}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+
                     <div>
                         <label className="block text-sm font-medium text-gray-300 mb-4">
                             Rango de horas

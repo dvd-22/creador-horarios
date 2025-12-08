@@ -21,14 +21,36 @@ const timeToMinutes = (timeStr) => {
 
 // Utility function to check if a schedule matches filter criteria
 const scheduleMatchesFilter = (horario, filters) => {
-  if (!filters.startTime && !filters.endTime && filters.exactTimes.length === 0) {
+  if (!filters.startTime && !filters.endTime && filters.exactTimes.length === 0 && (!filters.days || filters.days.length === 6)) {
     return true; // No filters applied
   }
 
   if (!horario) return false;
 
+  // Check day filter if specified
+  if (filters.days && filters.days.length < 6 && horario.dias) {
+    // Map filter day IDs to schedule day format
+    const dayMap = {
+      'L': 'Lu',
+      'M': 'Ma',
+      'I': 'Mi',
+      'J': 'Ju',
+      'V': 'Vi',
+      'S': 'Sa'
+    };
+
+    const scheduleDays = horario.dias;
+    // ALL schedule days must be within the selected filter days
+    const allDaysAllowed = scheduleDays.every(day => {
+      const filterId = Object.keys(dayMap).find(key => dayMap[key] === day);
+      return filterId && filters.days.includes(filterId);
+    });
+
+    if (!allDaysAllowed) return false;
+  }
+
   // Extract start time from schedule string (e.g., "07:00 a 08:30" -> "07:00")
-  const timeMatch = horario.match(/^(\d{2}:\d{2})/);
+  const timeMatch = horario.horario.match(/^(\d{2}:\d{2})/);
   if (!timeMatch) return false;
 
   const scheduleStartTime = timeMatch[1];
@@ -41,7 +63,7 @@ const scheduleMatchesFilter = (horario, filters) => {
     if (!filters.startTime || !filters.endTime) return true;
 
     // Parse schedule time range (e.g., "07:00 a 08:30")
-    const scheduleMatch = horario.match(/^(\d{2}:\d{2})\s*a\s*(\d{2}:\d{2})/);
+    const scheduleMatch = horario.horario.match(/^(\d{2}:\d{2})\s*a\s*(\d{2}:\d{2})/);
     if (!scheduleMatch) return false;
 
     const scheduleStart = timeToMinutes(scheduleMatch[1]);
@@ -314,16 +336,30 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
         const filteredGroups = {};
 
         Object.entries(groups).forEach(([groupNum, groupData]) => {
-          // First check time filters
+          // First check time and day filters
           let matchesTimeFilter = true;
 
-          if (filters.startTime || filters.endTime || filters.exactTimes.length > 0) {
-            // Check if any of the professor's schedules match the filter
-            const professorSchedulesMatch = groupData?.profesor?.horarios?.some(schedule =>
-              scheduleMatchesFilter(schedule.horario, filters)
+          if (filters.startTime || filters.endTime || filters.exactTimes.length > 0 || (filters.days && filters.days.length < 6)) {
+            // Check professor's schedules
+            const professorSchedulesMatch = groupData?.profesor?.horarios?.every(schedule =>
+              scheduleMatchesFilter(schedule, filters)
             ) || false;
 
-            matchesTimeFilter = professorSchedulesMatch;
+            // Check assistant's schedules - all must match too
+            let assistantsMatch = true;
+            if (groupData?.ayudantes && groupData.ayudantes.length > 0) {
+              assistantsMatch = groupData.ayudantes.every(ayudante => {
+                if (!ayudante.horario || !ayudante.dias) return true;
+                // Create schedule object for assistant
+                const assistantSchedule = {
+                  horario: ayudante.horario,
+                  dias: ayudante.dias
+                };
+                return scheduleMatchesFilter(assistantSchedule, filters);
+              });
+            }
+
+            matchesTimeFilter = professorSchedulesMatch && assistantsMatch;
           }
 
           // If doesn't match time filter, skip this group
