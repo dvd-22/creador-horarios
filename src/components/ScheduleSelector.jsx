@@ -21,7 +21,7 @@ const timeToMinutes = (timeStr) => {
 
 // Utility function to check if a schedule matches filter criteria
 const scheduleMatchesFilter = (horario, filters) => {
-  if (!filters.startTime && !filters.endTime && filters.exactTimes.length === 0 && (!filters.days || filters.days.length === 6)) {
+  if (!filters.startTime && !filters.endTime && filters.exactTimes.length === 0 && (!filters.days || filters.days.length === 6) && (!filters.blockedHours || filters.blockedHours.length === 0)) {
     return true; // No filters applied
   }
 
@@ -55,6 +55,25 @@ const scheduleMatchesFilter = (horario, filters) => {
 
   const scheduleStartTime = timeMatch[1];
 
+  // Parse schedule time range
+  const scheduleMatch = horario.horario.match(/^(\d{2}:\d{2})\s*a\s*(\d{2}:\d{2})/);
+  if (!scheduleMatch) return false;
+
+  const scheduleStart = timeToMinutes(scheduleMatch[1]);
+  const scheduleEnd = timeToMinutes(scheduleMatch[2]);
+
+  // Check blocked hours - if schedule overlaps with any blocked hour, filter it out
+  if (filters.blockedHours && filters.blockedHours.length > 0) {
+    const hasOverlap = filters.blockedHours.some(block => {
+      const blockStart = timeToMinutes(block.startTime);
+      const blockEnd = timeToMinutes(block.endTime);
+      // Check if there's any overlap between schedule and blocked time
+      return !(scheduleEnd <= blockStart || scheduleStart >= blockEnd);
+    });
+
+    if (hasOverlap) return false;
+  }
+
   if (filters.mode === 'exact') {
     // Exact mode: check if schedule starts at one of the exact times
     return filters.exactTimes.includes(scheduleStartTime);
@@ -62,12 +81,6 @@ const scheduleMatchesFilter = (horario, filters) => {
     // Range mode: check if schedule is within the time range
     if (!filters.startTime || !filters.endTime) return true;
 
-    // Parse schedule time range (e.g., "07:00 a 08:30")
-    const scheduleMatch = horario.horario.match(/^(\d{2}:\d{2})\s*a\s*(\d{2}:\d{2})/);
-    if (!scheduleMatch) return false;
-
-    const scheduleStart = timeToMinutes(scheduleMatch[1]);
-    const scheduleEnd = timeToMinutes(scheduleMatch[2]);
     const filterStart = timeToMinutes(filters.startTime);
     const filterEnd = timeToMinutes(filters.endTime);
 
@@ -339,7 +352,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
           // First check time and day filters
           let matchesTimeFilter = true;
 
-          if (filters.startTime || filters.endTime || filters.exactTimes.length > 0 || (filters.days && filters.days.length < 6)) {
+          if (filters.startTime || filters.endTime || filters.exactTimes.length > 0 || (filters.days && filters.days.length < 6) || (filters.blockedHours && filters.blockedHours.length > 0)) {
             // Check professor's schedules
             const professorSchedulesMatch = groupData?.profesor?.horarios?.every(schedule =>
               scheduleMatchesFilter(schedule, filters)
