@@ -1,17 +1,12 @@
 name: Update Professor Ratings
 
 on:
-    schedule:
-        - cron: "0 6 */4 * *" # Every 4 days at 6 AM UTC
     workflow_dispatch:
-    push:
-        branches:
-            - main
+    workflow_call:
 
 jobs:
     update-ratings:
         runs-on: ubuntu-latest
-        if: github.ref == 'refs/heads/main' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
 
         steps:
             - name: Checkout repository

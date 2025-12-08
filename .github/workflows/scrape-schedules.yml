@@ -40,3 +40,13 @@ jobs:
                   fi
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    update-ratings:
+        needs: scrape-schedules
+        uses: ./.github/workflows/update-ratings.yml
+        secrets: inherit
+
+    deploy:
+        needs: update-ratings
+        uses: ./.github/workflows/deploy.yml
+        secrets: inherit
