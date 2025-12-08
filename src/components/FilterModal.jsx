@@ -33,17 +33,25 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
 
     const handleStartChange = (e) => {
         const newStart = parseInt(e.target.value);
-        setStartIndex(newStart);
-        if (newStart > endIndex) {
-            setEndIndex(newStart);
+        const minGap = 2; // 1 hour = 2 intervals of 30 minutes
+        const maxAllowedStart = endIndex - minGap;
+
+        if (newStart <= maxAllowedStart) {
+            setStartIndex(newStart);
+        } else {
+            setStartIndex(maxAllowedStart);
         }
     };
 
     const handleEndChange = (e) => {
         const newEnd = parseInt(e.target.value);
-        setEndIndex(newEnd);
-        if (newEnd < startIndex) {
-            setStartIndex(newEnd);
+        const minGap = 2; // 1 hour = 2 intervals of 30 minutes
+        const minAllowedEnd = startIndex + minGap;
+
+        if (newEnd >= minAllowedEnd) {
+            setEndIndex(newEnd);
+        } else {
+            setEndIndex(minAllowedEnd);
         }
     };
 
@@ -114,9 +122,9 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
                         <div className="relative h-12 mb-2">
                             {/* Track Background */}
                             <div className="absolute top-1/2 -translate-y-1/2 w-full h-2 bg-gray-700 rounded-lg"></div>
-                            
+
                             {/* Active Track */}
-                            <div 
+                            <div
                                 className="absolute top-1/2 -translate-y-1/2 h-2 bg-blue-500 rounded-lg pointer-events-none"
                                 style={{
                                     left: `${(startIndex / (HOURS.length - 1)) * 100}%`,
