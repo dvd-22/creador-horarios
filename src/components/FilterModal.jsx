@@ -10,27 +10,49 @@ const HOURS = [
 ];
 
 const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
-    const [filterMode, setFilterMode] = useState(filters.mode || 'range');
-    const [startTime, setStartTime] = useState(filters.startTime || '07:00');
-    const [endTime, setEndTime] = useState(filters.endTime || '22:00');
-    const [exactTimes, setExactTimes] = useState(filters.exactTimes || []);
-    const [newExactTime, setNewExactTime] = useState('');
+    const [startIndex, setStartIndex] = useState(0);
+    const [endIndex, setEndIndex] = useState(HOURS.length - 1);
 
     useEffect(() => {
         if (isOpen) {
-            setFilterMode(filters.mode || 'range');
-            setStartTime(filters.startTime || '07:00');
-            setEndTime(filters.endTime || '22:00');
-            setExactTimes(filters.exactTimes || []);
+            if (filters.startTime) {
+                const idx = HOURS.indexOf(filters.startTime);
+                if (idx !== -1) setStartIndex(idx);
+            } else {
+                setStartIndex(0);
+            }
+
+            if (filters.endTime) {
+                const idx = HOURS.indexOf(filters.endTime);
+                if (idx !== -1) setEndIndex(idx);
+            } else {
+                setEndIndex(HOURS.length - 1);
+            }
         }
     }, [isOpen, filters]);
 
+    const handleStartChange = (e) => {
+        const newStart = parseInt(e.target.value);
+        setStartIndex(newStart);
+        if (newStart > endIndex) {
+            setEndIndex(newStart);
+        }
+    };
+
+    const handleEndChange = (e) => {
+        const newEnd = parseInt(e.target.value);
+        setEndIndex(newEnd);
+        if (newEnd < startIndex) {
+            setStartIndex(newEnd);
+        }
+    };
+
     const handleApply = () => {
         onApplyFilters({
-            mode: filterMode,
-            startTime: filterMode === 'range' ? startTime : null,
-            endTime: filterMode === 'range' ? endTime : null,
-            exactTimes: filterMode === 'exact' ? exactTimes : []
+            mode: 'range',
+            startTime: HOURS[startIndex],
+            endTime: HOURS[endIndex],
+            exactTimes: []
         });
         onClose();
     };
@@ -45,22 +67,17 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
         onClose();
     };
 
-    const addExactTime = () => {
-        if (newExactTime && !exactTimes.includes(newExactTime)) {
-            setExactTimes([...exactTimes, newExactTime].sort());
-            setNewExactTime('');
-        }
-    };
-
-    const removeExactTime = (time) => {
-        setExactTimes(exactTimes.filter(t => t !== time));
-    };
-
     if (!isOpen) return null;
 
     return createPortal(
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-            <div className="bg-gray-800 rounded-lg shadow-xl w-full max-w-md max-h-[90vh] overflow-hidden flex flex-col">
+        <div
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+            onClick={onClose}
+        >
+            <div
+                className="bg-gray-800 rounded-lg shadow-xl w-full max-w-md max-h-[90vh] overflow-hidden flex flex-col"
+                onClick={(e) => e.stopPropagation()}
+            >
                 {/* Header */}
                 <div className="flex items-center justify-between p-4 border-b border-gray-700">
                     <h2 className="text-xl font-bold text-gray-100">Filtros de Horario</h2>
@@ -74,142 +91,66 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 overflow-y-auto p-4 space-y-4">
-                    {/* Filter Mode Selection */}
+                <div className="flex-1 overflow-y-auto p-6 space-y-6">
                     <div>
-                        <label className="block text-sm font-medium text-gray-300 mb-2">
-                            Tipo de filtro
+                        <label className="block text-sm font-medium text-gray-300 mb-4">
+                            Rango de horas
                         </label>
-                        <div className="space-y-2">
-                            <label className="flex items-center p-3 bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700/50 transition-colors">
-                                <input
-                                    type="radio"
-                                    name="filterMode"
-                                    value="range"
-                                    checked={filterMode === 'range'}
-                                    onChange={(e) => setFilterMode(e.target.value)}
-                                    className="mr-3"
-                                />
-                                <div>
-                                    <div className="text-gray-100 font-medium">Rango de horas</div>
-                                    <div className="text-xs text-gray-400">Clases entre horarios específicos</div>
-                                </div>
-                            </label>
-                            <label className="flex items-center p-3 bg-gray-900 rounded-lg cursor-pointer hover:bg-gray-700/50 transition-colors">
-                                <input
-                                    type="radio"
-                                    name="filterMode"
-                                    value="exact"
-                                    checked={filterMode === 'exact'}
-                                    onChange={(e) => setFilterMode(e.target.value)}
-                                    className="mr-3"
-                                />
-                                <div>
-                                    <div className="text-gray-100 font-medium">Horas exactas</div>
-                                    <div className="text-xs text-gray-400">Clases en horarios específicos</div>
-                                </div>
-                            </label>
+
+                        {/* Time Display */}
+                        <div className="flex items-center justify-between mb-4">
+                            <div className="text-center">
+                                <div className="text-xs text-gray-400 mb-1">Inicio</div>
+                                <div className="text-2xl font-bold text-blue-400">{HOURS[startIndex]}</div>
+                            </div>
+                            <div className="text-gray-500">—</div>
+                            <div className="text-center">
+                                <div className="text-xs text-gray-400 mb-1">Fin</div>
+                                <div className="text-2xl font-bold text-blue-400">{HOURS[endIndex]}</div>
+                            </div>
+                        </div>
+
+                        {/* Dual Handle Range Slider */}
+                        <div className="relative h-12 mb-2">
+                            {/* Track Background */}
+                            <div className="absolute top-1/2 -translate-y-1/2 w-full h-2 bg-gray-700 rounded-lg"></div>
+                            
+                            {/* Active Track */}
+                            <div 
+                                className="absolute top-1/2 -translate-y-1/2 h-2 bg-blue-500 rounded-lg pointer-events-none"
+                                style={{
+                                    left: `${(startIndex / (HOURS.length - 1)) * 100}%`,
+                                    right: `${100 - (endIndex / (HOURS.length - 1)) * 100}%`
+                                }}
+                            ></div>
+
+                            {/* Start Handle Slider */}
+                            <input
+                                type="range"
+                                min="0"
+                                max={HOURS.length - 1}
+                                value={startIndex}
+                                onChange={handleStartChange}
+                                className="absolute top-1/2 -translate-y-1/2 w-full appearance-none bg-transparent cursor-pointer slider-thumb pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-moz-range-thumb]:pointer-events-auto"
+                            />
+
+                            {/* End Handle Slider */}
+                            <input
+                                type="range"
+                                min="0"
+                                max={HOURS.length - 1}
+                                value={endIndex}
+                                onChange={handleEndChange}
+                                className="absolute top-1/2 -translate-y-1/2 w-full appearance-none bg-transparent cursor-pointer slider-thumb pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-moz-range-thumb]:pointer-events-auto"
+                            />
                         </div>
                     </div>
 
-                    {/* Range Mode */}
-                    {filterMode === 'range' && (
-                        <div className="space-y-4">
-                            <div>
-                                <label className="block text-sm font-medium text-gray-300 mb-2">
-                                    Hora de inicio
-                                </label>
-                                <select
-                                    value={startTime}
-                                    onChange={(e) => setStartTime(e.target.value)}
-                                    className="w-full p-2 bg-gray-900 border border-gray-700 rounded-lg text-gray-100 focus:outline-none focus:border-blue-500"
-                                >
-                                    {HOURS.map(hour => (
-                                        <option key={hour} value={hour}>{hour}</option>
-                                    ))}
-                                </select>
-                            </div>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-300 mb-2">
-                                    Hora de fin
-                                </label>
-                                <select
-                                    value={endTime}
-                                    onChange={(e) => setEndTime(e.target.value)}
-                                    className="w-full p-2 bg-gray-900 border border-gray-700 rounded-lg text-gray-100 focus:outline-none focus:border-blue-500"
-                                >
-                                    {HOURS.map(hour => (
-                                        <option key={hour} value={hour}>{hour}</option>
-                                    ))}
-                                </select>
-                            </div>
-                            <div className="bg-blue-900/20 border border-blue-700/50 rounded-lg p-3">
-                                <p className="text-xs text-blue-200">
-                                    Se mostrarán clases que se impartan completamente entre {startTime} y {endTime}
-                                </p>
-                            </div>
-                        </div>
-                    )}
-
-                    {/* Exact Mode */}
-                    {filterMode === 'exact' && (
-                        <div className="space-y-4">
-                            <div>
-                                <label className="block text-sm font-medium text-gray-300 mb-2">
-                                    Agregar hora
-                                </label>
-                                <div className="flex gap-2">
-                                    <select
-                                        value={newExactTime}
-                                        onChange={(e) => setNewExactTime(e.target.value)}
-                                        className="flex-1 p-2 bg-gray-900 border border-gray-700 rounded-lg text-gray-100 focus:outline-none focus:border-blue-500"
-                                    >
-                                        <option value="">Seleccionar hora...</option>
-                                        {HOURS.map(hour => (
-                                            <option key={hour} value={hour}>{hour}</option>
-                                        ))}
-                                    </select>
-                                    <button
-                                        onClick={addExactTime}
-                                        disabled={!newExactTime}
-                                        className="px-4 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-700 disabled:cursor-not-allowed text-white rounded-lg transition-colors"
-                                    >
-                                        +
-                                    </button>
-                                </div>
-                            </div>
-
-                            {exactTimes.length > 0 && (
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-300 mb-2">
-                                        Horas seleccionadas
-                                    </label>
-                                    <div className="flex flex-wrap gap-2">
-                                        {exactTimes.map(time => (
-                                            <div
-                                                key={time}
-                                                className="flex items-center gap-2 px-3 py-1 bg-blue-600/20 border border-blue-500/50 rounded-full"
-                                            >
-                                                <span className="text-sm text-blue-200">{time}</span>
-                                                <button
-                                                    onClick={() => removeExactTime(time)}
-                                                    className="text-blue-300 hover:text-blue-100 transition-colors"
-                                                    aria-label={`Eliminar ${time}`}
-                                                >
-                                                    <X size={14} />
-                                                </button>
-                                            </div>
-                                        ))}
-                                    </div>
-                                    <div className="bg-blue-900/20 border border-blue-700/50 rounded-lg p-3 mt-3">
-                                        <p className="text-xs text-blue-200">
-                                            Se mostrarán clases que comiencen exactamente a estas horas
-                                        </p>
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-                    )}
+                    <div className="bg-blue-900/20 border border-blue-700/50 rounded-lg p-3">
+                        <p className="text-xs text-blue-200">
+                            Se mostrarán clases que se impartan completamente entre {HOURS[startIndex]} y {HOURS[endIndex]}
+                        </p>
+                    </div>
                 </div>
 
                 {/* Footer */}
