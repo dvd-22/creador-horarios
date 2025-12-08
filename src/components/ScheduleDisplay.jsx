@@ -208,8 +208,8 @@ const ScheduleDisplay = () => {
                     <button
                         onClick={() => setActiveTab('courses')}
                         className={`flex-1 flex items-center justify-center py-3 px-4 text-sm font-medium transition-colors ${activeTab === 'courses'
-                                ? 'bg-blue-600 text-white'
-                                : 'text-gray-400 hover:text-gray-200 hover:bg-gray-800'
+                            ? 'bg-blue-600 text-white'
+                            : 'text-gray-400 hover:text-gray-200 hover:bg-gray-800'
                             }`}
                     >
                         <List size={18} className="mr-2" />
@@ -218,8 +218,8 @@ const ScheduleDisplay = () => {
                     <button
                         onClick={() => setActiveTab('schedule')}
                         className={`flex-1 flex items-center justify-center py-3 px-4 text-sm font-medium transition-colors ${activeTab === 'schedule'
-                                ? 'bg-blue-600 text-white'
-                                : 'text-gray-400 hover:text-gray-200 hover:bg-gray-800'
+                            ? 'bg-blue-600 text-white'
+                            : 'text-gray-400 hover:text-gray-200 hover:bg-gray-800'
                             }`}
                     >
                         <Calendar size={18} className="mr-2" />
@@ -228,8 +228,8 @@ const ScheduleDisplay = () => {
                     <button
                         onClick={() => setActiveTab('selected')}
                         className={`flex-1 flex items-center justify-center py-3 px-4 text-sm font-medium transition-colors relative ${activeTab === 'selected'
-                                ? 'bg-blue-600 text-white'
-                                : 'text-gray-400 hover:text-gray-200 hover:bg-gray-800'
+                            ? 'bg-blue-600 text-white'
+                            : 'text-gray-400 hover:text-gray-200 hover:bg-gray-800'
                             }`}
                     >
                         <Settings size={18} className="mr-2" />
@@ -251,7 +251,7 @@ const ScheduleDisplay = () => {
                         />
                     )}
                     {activeTab === 'schedule' && (
-                        <div className="h-full overflow-auto" ref={scheduleRef}>
+                        <div className="h-full" ref={scheduleRef}>
                             <ScheduleViewer
                                 selectedGroups={selectedGroups}
                                 onRemoveGroup={handleGroupSelect}

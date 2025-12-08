@@ -269,7 +269,7 @@ const ScheduleViewer = ({ selectedGroups, spacers = [], onRemoveGroup, onEditSpa
   };
 
   return (
-    <div className={`flex flex-col bg-gray-900 ${isMobile ? 'p-1 h-screen' : 'p-4 h-full'}`}>
+    <div className={`flex flex-col bg-gray-900 ${isMobile ? 'p-1 h-full' : 'p-4 h-full'}`}>
       {/* Only show title in export mode */}
       {scheduleName && isExport && (
         <h1 className="text-2xl font-bold text-gray-100 text-center mb-6">
@@ -277,7 +277,7 @@ const ScheduleViewer = ({ selectedGroups, spacers = [], onRemoveGroup, onEditSpa
         </h1>
       )}
 
-      <div className="flex-1 overflow-auto min-h-0 pb-4">
+      <div className={`flex-1 min-h-0 pb-4 ${isMobile ? 'overflow-auto' : 'overflow-auto'}`}>
         <div className={`h-full min-h-[640px] ${isMobile ? 'min-w-[900px]' : 'min-w-full'}`}>
           <div className="flex h-full min-h-[640px]">
             {/* Time column - fixed width */}
@@ -306,7 +306,7 @@ const ScheduleViewer = ({ selectedGroups, spacers = [], onRemoveGroup, onEditSpa
               {/* Day columns */}
               {days.map(day => (
                 <div key={day} className="min-w-0 flex-1 flex flex-col h-full min-h-[640px]">
-                  <div className={`h-10 flex-shrink-0 text-gray-100 font-medium flex items-center justify-center sticky top-0 bg-gray-900 z-10 border-b border-gray-700 border-l border-gray-800 ${isMobile ? 'text-sm' : ''}`}>
+                  <div className={`h-10 flex-shrink-0 text-gray-100 font-medium flex items-center justify-center bg-gray-900 border-b border-gray-700 border-l border-gray-800 sticky top-0 z-10 ${isMobile ? 'text-sm' : ''}`}>
                     {day}
                   </div>
                   {/* Margin to match time column */}
