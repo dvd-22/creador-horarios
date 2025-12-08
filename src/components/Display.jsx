@@ -200,6 +200,13 @@ const Display = () => {
                         // Filter out any null results (groups that couldn't be loaded)
                         const validGroups = fullGroups.filter(g => g !== null);
                         setSelectedGroups(validGroups);
+
+                        // Load spacers from URL
+                        if (scheduleData.spacers && Array.isArray(scheduleData.spacers)) {
+                            setSpacers(scheduleData.spacers);
+                            localStorage.setItem('spacers', JSON.stringify(scheduleData.spacers));
+                        }
+
                         setHasInitiallyLoaded(true);
                     }
                 } catch (error) {
@@ -257,10 +264,11 @@ const Display = () => {
         // Don't update URL while loading from URL or before initial load is complete
         if (isLoadingFromURL || !hasInitiallyLoaded) return;
 
-        if (selectedGroups.length > 0) {
+        if (selectedGroups.length > 0 || spacers.length > 0) {
             try {
                 const scheduleData = {
                     groups: selectedGroups,
+                    spacers: spacers,
                     title: scheduleTitle,
                     allowOverlap: allowOverlap
                 };
@@ -273,7 +281,7 @@ const Display = () => {
             // Clear hash if no groups selected
             window.history.replaceState(null, '', window.location.pathname);
         }
-    }, [selectedGroups, scheduleTitle, allowOverlap, isLoadingFromURL, hasInitiallyLoaded]);
+    }, [selectedGroups, spacers, scheduleTitle, allowOverlap, isLoadingFromURL, hasInitiallyLoaded]);
 
     // Utility function to convert time string to minutes
     const timeToMinutes = (time) => {

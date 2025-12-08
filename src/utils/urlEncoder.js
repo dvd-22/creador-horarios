@@ -16,13 +16,25 @@ export const compressScheduleData = (scheduleData) => {
 			group.group,
 		]),
 	};
+
+	// Add spacers if they exist
+	if (scheduleData.spacers && scheduleData.spacers.length > 0) {
+		compressed.s = scheduleData.spacers.map((spacer) => [
+			spacer.name,
+			spacer.days.join(""),
+			spacer.startTime,
+			spacer.endTime,
+			spacer.color,
+		]);
+	}
+
 	return compressed;
 };
 
 // Decompress schedule data from minimal format
 // Note: This returns minimal group info - full data must be fetched from JSON files
 export const decompressScheduleData = (compressed) => {
-	return {
+	const decompressed = {
 		title: compressed.t,
 		allowOverlap: compressed.o === 1,
 		// Returns minimal group info that can be used to look up full data
@@ -32,6 +44,21 @@ export const decompressScheduleData = (compressed) => {
 			group: g[2],
 		})),
 	};
+
+	// Add spacers if they exist
+	if (compressed.s && compressed.s.length > 0) {
+		decompressed.spacers = compressed.s.map((s, index) => ({
+			id: `spacer-${Date.now()}-${index}`,
+			type: "spacer",
+			name: s[0],
+			days: s[1].split(""),
+			startTime: s[2],
+			endTime: s[3],
+			color: s[4],
+		}));
+	}
+
+	return decompressed;
 };
 
 // Encode schedule data to URL-safe string
