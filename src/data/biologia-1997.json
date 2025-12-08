@@ -1084,7 +1084,7 @@
       "5036": {
         "grupo": "5036",
         "profesor": {
-          "nombre": null,
+          "nombre": "Enrique Macario Herrera Medina",
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -1776,7 +1776,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Varenka Martínez Toledo",
+            "nombre": "Yaneli Trujillo Varela",
             "horario": "07:30 a 10:30",
             "dias": [
               "Ju"
@@ -1871,7 +1871,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369434"
       },
       "5064": {
         "grupo": "5064",
@@ -1904,7 +1904,7 @@
       "5065": {
         "grupo": "5065",
         "profesor": {
-          "nombre": "María de Jesús Guadalupe Vázquez Cuevas",
+          "nombre": "Marco Antonio Carballo Ontiveros",
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -1988,7 +1988,7 @@
       "5068": {
         "grupo": "5068",
         "profesor": {
-          "nombre": "Yaneli Trujillo Varela",
+          "nombre": "Varenka Martínez Toledo",
           "horarios": [
             {
               "horario": "14:30 a 17:30",
@@ -2861,7 +2861,7 @@
         "nota": "Fundamentos en ecología de sistemas acuáticos.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371088"
       },
       "5472": {
         "grupo": "5472",
@@ -4584,7 +4584,7 @@
         "nota": "Calcio y estrés oxidativo en modelos de daño neuronal.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371032"
       },
       "5420": {
         "grupo": "5420",
@@ -5758,6 +5758,43 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5545": {
+        "grupo": "5545",
+        "profesor": {
+          "nombre": "Pablo Padilla Longoria",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "José Antonio Alonso Pavón",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Mario Sánchez Domínguez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ricardo Munguía Díaz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Sergio Javier Martínez García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Biología sintética.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -6573,7 +6610,7 @@
         "nota": "Fundamentos en ecología de sistemas acuáticos.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371089"
       },
       "5470": {
         "grupo": "5470",
@@ -7502,7 +7539,7 @@
         "nota": "Calcio y estrés oxidativo en modelos de daño neuronal.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371033"
       },
       "5413": {
         "grupo": "5413",
@@ -9082,6 +9119,43 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5546": {
+        "grupo": "5546",
+        "profesor": {
+          "nombre": "Pablo Padilla Longoria",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "José Antonio Alonso Pavón",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Mario Sánchez Domínguez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ricardo Munguía Díaz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Sergio Javier Martínez García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Biología sintética.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -9551,7 +9625,7 @@
       "5128": {
         "grupo": "5128",
         "profesor": {
-          "nombre": "Miguel Santibáñez Andrade",
+          "nombre": "América Vanoye Carlo",
           "horarios": [
             {
               "horario": "18:00 a 21:00",
@@ -9919,7 +9993,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Miguel Santibáñez Andrade",
+            "nombre": "Juan Carlos Gómez Verjan",
             "horario": null,
             "dias": [],
             "salon": null
@@ -9944,6 +10018,36 @@
         "grupo": "5141",
         "profesor": {
           "nombre": "Adolfo Andrade Cetto",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Vi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Etnozoología": {
+      "5543": {
+        "grupo": "5543",
+        "profesor": {
+          "nombre": "Mayra Guadalupe Canseco Rivas",
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -10240,7 +10344,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369521"
       }
     },
     "Malacología": {
@@ -10290,6 +10394,36 @@
         "ayudantes": [
           {
             "nombre": "Roberto Romero Ramírez",
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Lu"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Manejo de Vertebrados Terrestres": {
+      "5544": {
+        "grupo": "5544",
+        "profesor": {
+          "nombre": "Omar Hernández Ordóñez",
+          "horarios": [
+            {
+              "horario": "14:30 a 17:30",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
             "horario": "14:30 a 17:30",
             "dias": [
               "Lu"
@@ -10471,6 +10605,36 @@
               "Ju",
               "Vi",
               "Sa"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Ornitología": {
+      "5542": {
+        "grupo": "5542",
+        "profesor": {
+          "nombre": "Kathleen Ann Babb Stanley",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Mi"
             ],
             "salon": null
           }
@@ -10694,7 +10858,7 @@
         "nota": "Metodología de la investigación",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369539"
       }
     },
     "Seminario de Biología II": {
@@ -11212,7 +11376,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "María de Jesús Hernández León",
             "horario": "11:00 a 14:00",
             "dias": [
               "Vi"

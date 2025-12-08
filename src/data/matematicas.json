@@ -337,7 +337,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Alberto Hernández Pérez",
             "horario": "08:00 a 09:00",
             "dias": [
               "Lu",
@@ -407,7 +407,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Aurelio Reyes Sánchez",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -442,7 +442,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Francisco Arzola Galindo",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -902,7 +902,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ulises Said Cárdenas Verdiguel",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -1311,7 +1311,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alberto Rosales Pérez",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -2348,7 +2348,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369668"
       },
       "4071": {
         "grupo": "4071",
@@ -3402,7 +3402,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alonso Alejandro Colín Cruz",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -5520,7 +5520,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369784"
       },
       "4164": {
         "grupo": "4164",
@@ -5539,7 +5539,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Emilio Uvilla Amador",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -5960,7 +5960,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369804"
       },
       "4178": {
         "grupo": "4178",
@@ -5991,7 +5991,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369805"
       },
       "4179": {
         "grupo": "4179",
@@ -6524,7 +6524,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369822"
       },
       "4196": {
         "grupo": "4196",
@@ -7925,7 +7925,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Víctor Hugo Pulido Argueta",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -8045,7 +8045,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370016"
       },
       "8099": {
         "grupo": "8099",
@@ -8417,6 +8417,12 @@
           ]
         },
         "ayudantes": [
+          {
+            "nombre": "Roberto Guillermo Dehesa Borja",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
           {
             "nombre": "Camila Itzel Marín Gómez",
             "horario": null,
@@ -8822,7 +8828,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Gustavo Sandoval Joya",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -9255,7 +9261,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369841"
       }
     },
     "Complejidad Computacional": {
@@ -9822,7 +9828,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },
@@ -9887,6 +9893,37 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
+        "presentacion": null
+      },
+      "9310": {
+        "grupo": "9310",
+        "profesor": {
+          "nombre": "Ricardo Ramírez Aldana",
+          "horarios": [
+            {
+              "horario": "19:00 a 20:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     },
@@ -10017,7 +10054,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370139"
       },
       "8223": {
         "grupo": "8223",
@@ -10639,7 +10676,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369963"
       }
     },
     "Lógica Matemática II": {
@@ -11359,7 +11396,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Tonatiuh Vera Ramos",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": null,
@@ -11706,7 +11750,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Bruno Amezcua Osorio",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -11718,7 +11762,7 @@
         "nota": "Teoría de matroides",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369896"
       }
     },
     "Seminario de Análisis Matemático A": {
@@ -11751,7 +11795,7 @@
         "nota": "Variedades Hiperbólicas",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369897"
       },
       "4271": {
         "grupo": "4271",
@@ -11908,8 +11952,8 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
+        "modalidad": "Virtual",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369902"
       },
       "4276": {
         "grupo": "4276",
@@ -12072,7 +12116,7 @@
         "nota": "Grupos Kleinianos: Geometría y Visualización",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369907"
       },
       "4281": {
         "grupo": "4281",
@@ -12200,7 +12244,7 @@
         "nota": "Invariantes topológicos esenciales",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369910"
       },
       "4284": {
         "grupo": "4284",
@@ -12295,6 +12339,37 @@
         "nota": "Introducción al Análisis Topológico de Datos",
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4334": {
+        "grupo": "4334",
+        "profesor": {
+          "nombre": "Roberto Pichardo Mendoza",
+          "horarios": [
+            {
+              "horario": "14:00 a 15:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Este seminario se ofrecerá en horario de 12 a 13 horas",
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     },
@@ -13193,7 +13268,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369957"
       },
       "4331": {
         "grupo": "4331",
@@ -13738,7 +13813,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370506"
       },
       "7094": {
         "grupo": "7094",
@@ -15845,7 +15920,20 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Victor Sebastian Razo Morales",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "David Bañuelos Solórzano",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -16363,7 +16451,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370086"
       },
       "8169": {
         "grupo": "8169",
@@ -17652,7 +17740,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370120"
       },
       "8203": {
         "grupo": "8203",
@@ -17815,6 +17903,37 @@
           }
         ],
         "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "4335": {
+        "grupo": "4335",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Este curso se impartirá de 19 a 20 horas por el Dr. Jesús Manuel Mayorquin",
         "salon": null,
         "modalidad": null,
         "presentacion": null

@@ -337,7 +337,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Alberto Hernández Pérez",
             "horario": "08:00 a 09:00",
             "dias": [
               "Lu",
@@ -407,7 +407,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Aurelio Reyes Sánchez",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -442,7 +442,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Francisco Arzola Galindo",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -902,7 +902,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ulises Said Cárdenas Verdiguel",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -1209,7 +1209,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alberto Rosales Pérez",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -2246,7 +2246,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369668"
       },
       "4071": {
         "grupo": "4071",
@@ -3769,7 +3769,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alonso Alejandro Colín Cruz",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -4548,6 +4548,55 @@
           ]
         },
         "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9305": {
+        "grupo": "9305",
+        "profesor": {
+          "nombre": "Juan Martín Barrios Vargas",
+          "horarios": [
+            {
+              "horario": "07:00 a 08:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9306": {
+        "grupo": "9306",
+        "profesor": {
+          "nombre": "Miguel Angel Pérez León",
+          "horarios": [
+            {
+              "horario": "19:00 a 20:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Erick Eduardo Aguilar Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -6334,7 +6383,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369784"
       },
       "4164": {
         "grupo": "4164",
@@ -6353,7 +6402,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Emilio Uvilla Amador",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -7272,7 +7321,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369804"
       },
       "4178": {
         "grupo": "4178",
@@ -7303,7 +7352,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369805"
       },
       "4179": {
         "grupo": "4179",
@@ -9092,7 +9141,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369841"
       }
     },
     "Seminario de Biología Matemática": {
@@ -9125,7 +9174,7 @@
         "nota": "Modelación matemática y computacional del cáncer",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370806"
       }
     },
     "Teoría de Juegos I": {
@@ -10014,7 +10063,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Bruno Amezcua Osorio",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -10026,7 +10075,7 @@
         "nota": "Teoría de matroides",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369896"
       }
     },
     "Temas Selectos de Investigación de Operaciones": {
@@ -10387,7 +10436,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },
@@ -10451,7 +10500,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },
@@ -10485,7 +10534,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370769"
       }
     },
     "Modelos no Paramétricos y de Regresión": {
