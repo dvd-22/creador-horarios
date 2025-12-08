@@ -13,7 +13,7 @@ const ResponsiveDisplay = ({
 }) => {
     const [isMobile, setIsMobile] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isSubjectsVisible, setIsSubjectsVisible] = useState(true);
+    const [isSubjectsVisible, setIsSubjectsVisible] = useState(false);
 
     // Expose setIsMenuOpen through callback
     useEffect(() => {
