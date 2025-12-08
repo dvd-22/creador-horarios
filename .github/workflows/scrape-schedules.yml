@@ -25,7 +25,7 @@ jobs:
 
             - name: Run full scraping process
               run: npm run scrape:test
-              timeout-minutes: 90 # Set a timeout for the scraping process
+              timeout-minutes: 25 # Cancel if scraping takes more than 25 minutes
 
             - name: Commit and push if changes
               run: |
