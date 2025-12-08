@@ -552,8 +552,8 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
           <button
             onClick={() => setIsFilterModalOpen(true)}
             className={`p-2 rounded-lg border transition-colors ${filters.startTime || filters.endTime || filters.exactTimes.length > 0
-                ? 'bg-blue-600 border-blue-500 text-white'
-                : 'bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700'
+              ? 'bg-blue-600 border-blue-500 text-white'
+              : 'bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700'
               }`}
             aria-label="Filtros"
             title="Filtros de horario"
@@ -570,9 +570,6 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
         filters={filters}
         onApplyFilters={updateFilters}
       />
-
-      {/* Overlap toggle - only show on mobile when passed as prop */}
-      {overlapToggle && overlapToggle}
 
       <MajorSelector />
 
@@ -600,7 +597,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
 
         {/* Content */}
         {!isLoading && !loadError && (
-          <div className="p-2">
+          <div className="p-2 pb-24">
             {/* No results message when searching */}
             {searchQuery && Object.keys(filteredScheduleData || {}).length === 0 && (
               <div className="flex items-center justify-center h-64">
@@ -664,6 +661,9 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
           </div>
         )}
       </div>
+
+      {/* Overlap toggle - only show on mobile when passed as prop - positioned at bottom */}
+      {overlapToggle && overlapToggle}
     </div>
   );
 };

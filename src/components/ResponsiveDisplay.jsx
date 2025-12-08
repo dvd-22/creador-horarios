@@ -146,9 +146,9 @@ const ResponsiveDisplay = ({
             />
 
             {/* Sidebar - Slide animation */}
-            <div className={`mobile-menu fixed top-0 left-0 w-80 h-screen bg-gray-900 border-r border-gray-700 z-50 flex flex-col transition-transform duration-150 ease-out ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'
+            <div className={`mobile-menu fixed top-0 left-0 w-80 h-[100dvh] bg-gray-900 border-r border-gray-700 z-50 flex flex-col transition-transform duration-150 ease-out ${isMenuOpen ? 'translate-x-0' : '-translate-x-full'
                 }`}>
-                <div className="flex-1 overflow-hidden">
+                <div className="flex-1 overflow-hidden pb-safe">
                     {React.cloneElement(scheduleSelectorPanel, {
                         overlapToggle: overlapTogglePanel
                     })}
