@@ -1,7 +1,7 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { createEvents } from "ics";
 import { useMajorContext } from "../contexts/MajorContext";
-import { Edit2, Download } from "lucide-react";
+import { Edit2, Download, X } from "lucide-react";
 import ProfessorRating from "./ProfessorRating";
 import { professorRatingService } from "../services/professorRatingService";
 
@@ -580,69 +580,71 @@ const SelectedGroupsPanel = ({
           {/* Download Modal */}
           {showDownloadModal && (
             <div
-              className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50"
+              className="fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/50 backdrop-blur-sm"
               onClick={() => setShowDownloadModal(false)}
             >
               <div
-                className="bg-gray-800 rounded-lg p-6 max-w-sm w-full mx-4 border border-gray-700"
+                className="bg-gray-800 rounded-lg shadow-xl w-full max-w-md max-h-[90vh] overflow-hidden flex flex-col border border-gray-700"
                 onClick={(e) => e.stopPropagation()}
                 onTouchEnd={(e) => e.stopPropagation()}
               >
-                <div className="text-center mb-6">
-                  <h3 className="text-lg font-semibold text-white mb-4">
+                {/* Header */}
+                <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-700">
+                  <h2 className="text-lg sm:text-xl font-semibold text-gray-100">
                     Descargar Horario
-                  </h3>
-                  <p className="text-gray-300 text-sm">
+                  </h2>
+                  <button
+                    onClick={() => setShowDownloadModal(false)}
+                    className="p-1 hover:bg-gray-700 rounded transition-colors text-gray-400 hover:text-gray-100 flex items-center justify-center"
+                    aria-label="Cerrar"
+                  >
+                    <X size={20} />
+                  </button>
+                </div>
+
+                {/* Content */}
+                <div className="flex-1 overflow-y-auto p-4 sm:p-6">
+                  <p className="text-gray-300 text-sm mb-4 text-center">
                     Puedes copiar el link para compartir tu horario con tus
                     amigos, guardarlo como imagen, o exportar a ics para poder
                     importar a tu calendario favorito
                   </p>
-                </div>
-                <div className="space-y-3">
-                  <button
-                    onClick={handleCopyLink}
-                    onTouchEnd={(e) => {
-                      e.preventDefault();
-                      handleCopyLink();
-                    }}
-                    className="w-full bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                    style={{ touchAction: "manipulation" }}
-                  >
-                    🔗 Copiar Link
-                  </button>
-                  <button
-                    onClick={handleSave}
-                    onTouchEnd={(e) => {
-                      e.preventDefault();
-                      handleSave();
-                    }}
-                    className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                    style={{ touchAction: "manipulation" }}
-                  >
-                    💾 Guardar como PNG
-                  </button>
-                  <button
-                    onClick={handleExportICS}
-                    onTouchEnd={(e) => {
-                      e.preventDefault();
-                      handleExportICS();
-                    }}
-                    className="w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                    style={{ touchAction: "manipulation" }}
-                  >
-                    📅 Exportar .ics
-                  </button>
-                  <button
-                    onClick={() => setShowDownloadModal(false)}
-                    onTouchEnd={(e) => {
-                      e.preventDefault();
-                      setShowDownloadModal(false);
-                    }}
-                    className="w-full bg-gray-700 hover:bg-gray-600 active:bg-gray-500 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                    style={{ touchAction: "manipulation" }}
-                  >
-                    Cancelar
-                  </button>
+
+                  <div className="space-y-3">
+                    <button
+                      onClick={handleCopyLink}
+                      onTouchEnd={(e) => {
+                        e.preventDefault();
+                        handleCopyLink();
+                      }}
+                      className="w-full bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
+                      style={{ touchAction: "manipulation" }}
+                    >
+                      Copiar Link
+                    </button>
+                    <button
+                      onClick={handleSave}
+                      onTouchEnd={(e) => {
+                        e.preventDefault();
+                        handleSave();
+                      }}
+                      className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
+                      style={{ touchAction: "manipulation" }}
+                    >
+                      Guardar como PNG
+                    </button>
+                    <button
+                      onClick={handleExportICS}
+                      onTouchEnd={(e) => {
+                        e.preventDefault();
+                        handleExportICS();
+                      }}
+                      className="w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
+                      style={{ touchAction: "manipulation" }}
+                    >
+                      Exportar .ics
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -914,69 +916,71 @@ const SelectedGroupsPanel = ({
         {/* Download Modal */}
         {showDownloadModal && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50"
+            className="fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/50 backdrop-blur-sm"
             onClick={() => setShowDownloadModal(false)}
           >
             <div
-              className="bg-gray-800 rounded-lg p-6 max-w-sm w-full mx-4 border border-gray-700"
+              className="bg-gray-800 rounded-lg shadow-xl w-full max-w-md max-h-[90vh] overflow-hidden flex flex-col border border-gray-700"
               onClick={(e) => e.stopPropagation()}
               onTouchEnd={(e) => e.stopPropagation()}
             >
-              <div className="text-center mb-6">
-                <h3 className="text-lg font-semibold text-white mb-4">
+              {/* Header */}
+              <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-700">
+                <h2 className="text-lg sm:text-xl font-semibold text-gray-100">
                   Descargar Horario
-                </h3>
-                <p className="text-gray-300 text-sm">
+                </h2>
+                <button
+                  onClick={() => setShowDownloadModal(false)}
+                  className="p-1 hover:bg-gray-700 rounded transition-colors text-gray-400 hover:text-gray-100 flex items-center justify-center"
+                  aria-label="Cerrar"
+                >
+                  <X size={20} />
+                </button>
+              </div>
+
+              {/* Content */}
+              <div className="flex-1 overflow-y-auto p-4 sm:p-6">
+                <p className="text-gray-300 text-sm mb-4 text-center">
                   Puedes copiar el link para compartir tu horario con tus
                   amigos, guardarlo como imagen, o exportar a ics para poder
                   importar a tu calendario favorito
                 </p>
-              </div>
-              <div className="space-y-3">
-                <button
-                  onClick={handleCopyLink}
-                  onTouchEnd={(e) => {
-                    e.preventDefault();
-                    handleCopyLink();
-                  }}
-                  className="w-full bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                  style={{ touchAction: "manipulation" }}
-                >
-                  🔗 Copiar Link
-                </button>
-                <button
-                  onClick={handleSave}
-                  onTouchEnd={(e) => {
-                    e.preventDefault();
-                    handleSave();
-                  }}
-                  className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                  style={{ touchAction: "manipulation" }}
-                >
-                  💾 Guardar como PNG
-                </button>
-                <button
-                  onClick={handleExportICS}
-                  onTouchEnd={(e) => {
-                    e.preventDefault();
-                    handleExportICS();
-                  }}
-                  className="w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                  style={{ touchAction: "manipulation" }}
-                >
-                  📅 Exportar .ics
-                </button>
-                <button
-                  onClick={() => setShowDownloadModal(false)}
-                  onTouchEnd={(e) => {
-                    e.preventDefault();
-                    setShowDownloadModal(false);
-                  }}
-                  className="w-full bg-gray-700 hover:bg-gray-600 active:bg-gray-500 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                  style={{ touchAction: "manipulation" }}
-                >
-                  Cancelar
-                </button>
+
+                <div className="space-y-3">
+                  <button
+                    onClick={handleCopyLink}
+                    onTouchEnd={(e) => {
+                      e.preventDefault();
+                      handleCopyLink();
+                    }}
+                    className="w-full bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
+                    style={{ touchAction: "manipulation" }}
+                  >
+                    Copiar Link
+                  </button>
+                  <button
+                    onClick={handleSave}
+                    onTouchEnd={(e) => {
+                      e.preventDefault();
+                      handleSave();
+                    }}
+                    className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
+                    style={{ touchAction: "manipulation" }}
+                  >
+                    Guardar como PNG
+                  </button>
+                  <button
+                    onClick={handleExportICS}
+                    onTouchEnd={(e) => {
+                      e.preventDefault();
+                      handleExportICS();
+                    }}
+                    className="w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
+                    style={{ touchAction: "manipulation" }}
+                  >
+                    Exportar .ics
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -1158,69 +1162,71 @@ const SelectedGroupsPanel = ({
       {/* Download Modal */}
       {showDownloadModal && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50"
+          className="fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/50 backdrop-blur-sm"
           onClick={() => setShowDownloadModal(false)}
         >
           <div
-            className="bg-gray-800 rounded-lg p-6 max-w-sm w-full mx-4 border border-gray-700"
+            className="bg-gray-800 rounded-lg shadow-xl w-full max-w-md max-h-[90vh] overflow-hidden flex flex-col border border-gray-700"
             onClick={(e) => e.stopPropagation()}
             onTouchEnd={(e) => e.stopPropagation()}
           >
-            <div className="text-center mb-6">
-              <h3 className="text-lg font-semibold text-white mb-4">
+            {/* Header */}
+            <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-700">
+              <h2 className="text-lg sm:text-xl font-semibold text-gray-100">
                 Descargar Horario
-              </h3>
-              <p className="text-gray-300 text-sm">
+              </h2>
+              <button
+                onClick={() => setShowDownloadModal(false)}
+                className="p-1 hover:bg-gray-700 rounded transition-colors text-gray-400 hover:text-gray-100 flex items-center justify-center"
+                aria-label="Cerrar"
+              >
+                <X size={20} />
+              </button>
+            </div>
+
+            {/* Content */}
+            <div className="flex-1 overflow-y-auto p-4 sm:p-6">
+              <p className="text-gray-300 text-sm mb-4 text-center">
                 Puedes copiar el link para compartir tu horario con tus amigos,
                 guardarlo como imagen, o exportar a ics para poder importar a tu
                 calendario favorito
               </p>
-            </div>
-            <div className="space-y-3">
-              <button
-                onClick={handleCopyLink}
-                onTouchEnd={(e) => {
-                  e.preventDefault();
-                  handleCopyLink();
-                }}
-                className="w-full bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                style={{ touchAction: "manipulation" }}
-              >
-                🔗 Copiar Link
-              </button>
-              <button
-                onClick={handleSave}
-                onTouchEnd={(e) => {
-                  e.preventDefault();
-                  handleSave();
-                }}
-                className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                style={{ touchAction: "manipulation" }}
-              >
-                💾 Guardar como PNG
-              </button>
-              <button
-                onClick={handleExportICS}
-                onTouchEnd={(e) => {
-                  e.preventDefault();
-                  handleExportICS();
-                }}
-                className="w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                style={{ touchAction: "manipulation" }}
-              >
-                📅 Exportar .ics
-              </button>
-              <button
-                onClick={() => setShowDownloadModal(false)}
-                onTouchEnd={(e) => {
-                  e.preventDefault();
-                  setShowDownloadModal(false);
-                }}
-                className="w-full bg-gray-700 hover:bg-gray-600 active:bg-gray-500 text-white py-2 px-4 rounded transition-colors touch-manipulation"
-                style={{ touchAction: "manipulation" }}
-              >
-                Cancelar
-              </button>
+
+              <div className="space-y-3">
+                <button
+                  onClick={handleCopyLink}
+                  onTouchEnd={(e) => {
+                    e.preventDefault();
+                    handleCopyLink();
+                  }}
+                  className="w-full bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
+                  style={{ touchAction: "manipulation" }}
+                >
+                  Copiar Link
+                </button>
+                <button
+                  onClick={handleSave}
+                  onTouchEnd={(e) => {
+                    e.preventDefault();
+                    handleSave();
+                  }}
+                  className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
+                  style={{ touchAction: "manipulation" }}
+                >
+                  Guardar como PNG
+                </button>
+                <button
+                  onClick={handleExportICS}
+                  onTouchEnd={(e) => {
+                    e.preventDefault();
+                    handleExportICS();
+                  }}
+                  className="w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
+                  style={{ touchAction: "manipulation" }}
+                >
+                  Exportar .ics
+                </button>
+              </div>
             </div>
           </div>
         </div>

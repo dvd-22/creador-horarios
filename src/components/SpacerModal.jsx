@@ -156,7 +156,7 @@ const SpacerModal = ({ isOpen, onClose, onSave, onDelete, editingSpacer = null }
                     </h2>
                     <button
                         onClick={onClose}
-                        className="p-1 hover:bg-gray-700 rounded transition-colors text-gray-400 hover:text-gray-100"
+                        className="p-1 hover:bg-gray-700 rounded transition-colors text-gray-400 hover:text-gray-100 flex items-center justify-center"
                         aria-label="Cerrar"
                     >
                         <X size={20} />
