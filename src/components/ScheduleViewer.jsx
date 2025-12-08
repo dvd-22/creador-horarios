@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { Edit2 } from 'lucide-react';
 
 const parseTimeString = (timeStr) => {
   if (!timeStr || timeStr === 'Horario no especificado') return null;
@@ -65,7 +66,7 @@ const hasTimeOverlap = (start1, end1, start2, end2) => {
   return start1 < end2 && start2 < end1;
 };
 
-const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isExport = false, isMobile = false, onRevealGroup }) => {
+const ScheduleViewer = ({ selectedGroups, spacers = [], onRemoveGroup, onEditSpacer, scheduleName = '', isExport = false, isMobile = false, onRevealGroup }) => {
   const days = ['Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'];
   // Change from starting at hour 5 to starting at hour 7, and reduce length from 18 to 16
   const timeSlots = Array.from({ length: 16 }, (_, i) => i + 7).map(hour =>
@@ -160,8 +161,43 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
       }
     });
 
+    // Add spacers to slots
+    spacers.forEach(spacer => {
+      const timeRange = {
+        start: timeToMinutes(spacer.startTime),
+        end: timeToMinutes(spacer.endTime)
+      };
+
+      if (timeRange.start !== null && timeRange.end !== null) {
+        spacer.days.forEach(day => {
+          // Convert day ID to display format
+          const dayMap = {
+            'L': 'Lu',
+            'M': 'Ma',
+            'I': 'Mi',
+            'J': 'Ju',
+            'V': 'Vi',
+            'S': 'Sa'
+          };
+          const displayDay = dayMap[day];
+
+          slots.push({
+            day: displayDay,
+            start: timeRange.start,
+            end: timeRange.end,
+            type: 'spacer',
+            spacerId: spacer.id,
+            subject: spacer.name,
+            group: '',
+            color: spacer.color,
+            isSpacer: true
+          });
+        });
+      }
+    });
+
     return slots;
-  }, [selectedGroups]);
+  }, [selectedGroups, spacers]);
 
   // Group overlapping slots by day
   const groupedSlots = useMemo(() => {
@@ -299,20 +335,29 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                         return (
                           <div
                             key={`single-${groupIndex}`}
-                            className={`absolute left-1 right-1 rounded px-2 py-1 ${isMobile ? 'text-xs' : 'text-xs'} ${subjectColors[slot.subject]} time-group-card cursor-pointer hover:opacity-90 transition-opacity`}
+                            className={`absolute left-1 right-1 rounded px-2 py-1 ${isMobile ? 'text-xs' : 'text-xs'} ${slot.isSpacer ? slot.color : subjectColors[slot.subject]} time-group-card cursor-pointer hover:opacity-90 transition-opacity`}
                             style={{
                               top: `${top}%`,
                               height: `${height}%`,
                               minHeight: '20px'
                             }}
-                            onClick={() => onRevealGroup && onRevealGroup(slot.majorId, slot.studyPlanId, slot.semester, slot.subject, slot.group)}
-                            title="Ver en selector de materias"
+                            onClick={() => {
+                              if (slot.isSpacer && onEditSpacer) {
+                                onEditSpacer(slot.spacerId);
+                              } else if (onRevealGroup) {
+                                onRevealGroup(slot.majorId, slot.studyPlanId, slot.semester, slot.subject, slot.group);
+                              }
+                            }}
+                            title={slot.isSpacer ? "Editar espacio" : "Ver en selector de materias"}
                           >
-                            <div className="flex flex-col h-full overflow-hidden">
-                              <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate`}>
+                            <div className="flex flex-col h-full overflow-hidden relative">
+                              <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate ${slot.isSpacer && !isExport ? 'pr-5' : ''}`}>
                                 {slot.subject}
+                                {slot.isSpacer && !isExport && (
+                                  <Edit2 size={12} className="absolute top-0 right-0 text-white/70" />
+                                )}
                               </div>
-                              {showSalon && (
+                              {showSalon && !slot.isSpacer && (
                                 <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
                                   {slot.salon || slot.modalidad || 'Salón no especificado'}
                                 </div>
@@ -354,21 +399,30 @@ const ScheduleViewer = ({ selectedGroups, onRemoveGroup, scheduleName = '', isEx
                                 className="relative flex-1 mx-0.5"
                               >
                                 <div
-                                  className={`absolute ${subjectColors[slot.subject]} px-1 py-1 ${isMobile ? 'text-xs' : 'text-xs'} time-group-card rounded cursor-pointer hover:opacity-90 transition-opacity`}
+                                  className={`absolute ${slot.isSpacer ? slot.color : subjectColors[slot.subject]} px-1 py-1 ${isMobile ? 'text-xs' : 'text-xs'} time-group-card rounded cursor-pointer hover:opacity-90 transition-opacity`}
                                   style={{
                                     top: `${slotTopPercent}%`,
                                     height: `${slotHeightPercent}%`,
                                     width: '100%',
                                     minHeight: '20px'
                                   }}
-                                  onClick={() => onRevealGroup && onRevealGroup(slot.majorId, slot.studyPlanId, slot.semester, slot.subject, slot.group)}
-                                  title="Ver en selector de materias"
+                                  onClick={() => {
+                                    if (slot.isSpacer && onEditSpacer) {
+                                      onEditSpacer(slot.spacerId);
+                                    } else if (onRevealGroup) {
+                                      onRevealGroup(slot.majorId, slot.studyPlanId, slot.semester, slot.subject, slot.group);
+                                    }
+                                  }}
+                                  title={slot.isSpacer ? "Editar espacio" : "Ver en selector de materias"}
                                 >
-                                  <div className="flex flex-col h-full overflow-hidden">
-                                    <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate`}>
+                                  <div className="flex flex-col h-full overflow-hidden relative">
+                                    <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate ${slot.isSpacer && !isExport ? 'pr-5' : ''}`}>
                                       {slot.subject}
+                                      {slot.isSpacer && !isExport && (
+                                        <Edit2 size={12} className="absolute top-0 right-0 text-white/70" />
+                                      )}
                                     </div>
-                                    {showSalon && (
+                                    {showSalon && !slot.isSpacer && (
                                       <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
                                         {slot.salon || slot.modalidad || 'Salón no especificado'}
                                       </div>

@@ -1,7 +1,7 @@
 import React, { forwardRef, useMemo } from 'react';
 import ProfessorRating from './ProfessorRating';
 
-const ExportLayout = forwardRef(({ selectedGroups, schedule }, ref) => {
+const ExportLayout = forwardRef(({ selectedGroups, spacers = [], schedule }, ref) => {
     // Color palette that matches ScheduleViewer
     const colorPalette = [
         'bg-blue-700/50',
@@ -89,7 +89,7 @@ const ExportLayout = forwardRef(({ selectedGroups, schedule }, ref) => {
                             const colorHex = getColorFromClass(colorClass);
 
                             return (
-                                <div key={index} className="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden flex">
+                                <div key={`group-${index}`} className="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden flex">
                                     {/* Color Bar */}
                                     <div
                                         className="w-1 flex-shrink-0"

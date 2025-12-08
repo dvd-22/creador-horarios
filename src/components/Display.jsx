@@ -5,6 +5,7 @@ import ScheduleViewer from './ScheduleViewer';
 import SelectedGroupsPanel from './SelectedGroupsPanel';
 import ResizablePanels from './ResizablePanels';
 import ResponsiveDisplay from './ResponsiveDisplay';
+import SpacerModal from './SpacerModal';
 import { saveScheduleAsPng } from '../utils/scheduleUtils';
 import SavePopup from './SavePopup';
 import { MajorProvider } from '../contexts/MajorContext';
@@ -121,6 +122,14 @@ const OverlapToggle = ({ checked, onChange }) => (
 const Display = () => {
     // Load selectedGroups from localStorage on initialization
     const [selectedGroups, setSelectedGroups] = useState([]);
+    const [spacers, setSpacers] = useState(() => {
+        try {
+            const saved = localStorage.getItem('spacers');
+            return saved ? JSON.parse(saved) : [];
+        } catch {
+            return [];
+        }
+    });
     const [isLoadingFromURL, setIsLoadingFromURL] = useState(false);
     const [hasInitiallyLoaded, setHasInitiallyLoaded] = useState(false);
     const [conflictAlert, setConflictAlert] = useState(null);
@@ -165,6 +174,8 @@ const Display = () => {
         return false;
     });
     const [showOverlapWarning, setShowOverlapWarning] = useState(false);
+    const [editingSpacerId, setEditingSpacerId] = useState(null);
+    const [isSpacerModalOpen, setIsSpacerModalOpen] = useState(false);
     const scheduleRef = useRef(null);
     const exportRef = useRef(null);
     const revealGroupRef = useRef(null);
@@ -513,6 +524,136 @@ const Display = () => {
         setScheduleTitle(newTitle);
     };
 
+    const handleSpacerSave = (spacer) => {
+        // Check for conflicts if overlap is not allowed
+        if (!allowOverlap) {
+            const conflict = checkSpacerConflicts(spacer);
+            if (conflict) {
+                // Don't close modal, show error through the modal
+                return conflict;
+            }
+        }
+
+        setSpacers(prev => {
+            const existingIndex = prev.findIndex(s => s.id === spacer.id);
+            let updated;
+            if (existingIndex >= 0) {
+                // Update existing spacer
+                updated = [...prev];
+                updated[existingIndex] = spacer;
+            } else {
+                // Add new spacer
+                updated = [...prev, spacer];
+            }
+            // Save to localStorage
+            localStorage.setItem('spacers', JSON.stringify(updated));
+            return updated;
+        });
+        return null; // No conflict
+    };
+
+    const checkSpacerConflicts = (newSpacer) => {
+        const dayMap = {
+            'L': 'Lu',
+            'M': 'Ma',
+            'I': 'Mi',
+            'J': 'Ju',
+            'V': 'Vi',
+            'S': 'Sa'
+        };
+
+        const spacerStart = timeToMinutes(newSpacer.startTime);
+        const spacerEnd = timeToMinutes(newSpacer.endTime);
+
+        // Check against all selected groups
+        for (const group of selectedGroups) {
+            // Check professor schedules
+            for (const schedule of (group.professor.horarios || [])) {
+                const [profStart, profEnd] = parseTimeString(schedule.horario);
+                const profDays = schedule.dias || [];
+
+                if (profStart !== null && profEnd !== null) {
+                    for (const scheduleDay of profDays) {
+                        for (const spacerDayId of newSpacer.days) {
+                            const spacerDay = dayMap[spacerDayId];
+                            if (spacerDay === scheduleDay && hasTimeOverlap(spacerStart, spacerEnd, profStart, profEnd)) {
+                                return `El espacio "${newSpacer.name}" se superpone con ${group.subject} (${group.group}) el día ${scheduleDay}`;
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Check assistant schedules
+            for (const assistant of (group.assistants || [])) {
+                if (!assistant.horario || !assistant.dias) continue;
+
+                const [astStart, astEnd] = parseTimeString(assistant.horario);
+                const assistantDays = assistant.dias || [];
+
+                if (astStart !== null && astEnd !== null) {
+                    for (const scheduleDay of assistantDays) {
+                        for (const spacerDayId of newSpacer.days) {
+                            const spacerDay = dayMap[spacerDayId];
+                            if (spacerDay === scheduleDay && hasTimeOverlap(spacerStart, spacerEnd, astStart, astEnd)) {
+                                return `El espacio "${newSpacer.name}" se superpone con ${group.subject} (${group.group}) - Ayudantía el día ${scheduleDay}`;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Check against other spacers (excluding itself if editing)
+        for (const existingSpacer of spacers) {
+            if (existingSpacer.id === newSpacer.id) continue; // Skip self when editing
+
+            const existingStart = timeToMinutes(existingSpacer.startTime);
+            const existingEnd = timeToMinutes(existingSpacer.endTime);
+
+            for (const existingDayId of existingSpacer.days) {
+                for (const newDayId of newSpacer.days) {
+                    if (existingDayId === newDayId && hasTimeOverlap(spacerStart, spacerEnd, existingStart, existingEnd)) {
+                        const dayMap2 = {
+                            'L': 'Lunes',
+                            'M': 'Martes',
+                            'I': 'Miércoles',
+                            'J': 'Jueves',
+                            'V': 'Viernes',
+                            'S': 'Sábado'
+                        };
+                        return `El espacio "${newSpacer.name}" se superpone con otro espacio "${existingSpacer.name}" el día ${dayMap2[existingDayId]}`;
+                    }
+                }
+            }
+        }
+
+        return null; // No conflicts
+    };
+
+    const handleSpacerDelete = (spacerId) => {
+        setSpacers(prev => {
+            const updated = prev.filter(s => s.id !== spacerId);
+            localStorage.setItem('spacers', JSON.stringify(updated));
+            return updated;
+        });
+    };
+
+    const handleEditSpacer = (spacerId) => {
+        setEditingSpacerId(spacerId);
+        setIsSpacerModalOpen(true);
+    };
+
+    const handleSpacerModalSave = (spacer) => {
+        handleSpacerSave(spacer);
+        setEditingSpacerId(null);
+    };
+
+    const handleSpacerModalClose = () => {
+        setEditingSpacerId(null);
+        setIsSpacerModalOpen(false);
+    };
+
     // Handle toggle change
     const handleToggleOverlap = (e) => {
         const newValue = e.target.checked;
@@ -655,6 +796,7 @@ const Display = () => {
                         <ScheduleSelector
                             onGroupSelect={handleGroupSelect}
                             selectedGroups={selectedGroups}
+                            onSpacerSave={handleSpacerSave}
                             onRevealGroup={(fn) => {
                                 revealGroupRef.current = (majorId, studyPlanId, semester, subject, group) => {
                                     // Uncollapse left panel if collapsed (desktop only)
@@ -679,7 +821,9 @@ const Display = () => {
                     scheduleViewerPanel={
                         <ScheduleViewer
                             selectedGroups={selectedGroups}
+                            spacers={spacers}
                             onRemoveGroup={handleGroupSelect}
+                            onEditSpacer={handleEditSpacer}
                             scheduleName={scheduleTitle}
                             onRevealGroup={(majorId, studyPlanId, semester, subject, group) => {
                                 // Open mobile menu if on mobile
@@ -703,6 +847,7 @@ const Display = () => {
                     selectedGroupsPanel={
                         <SelectedGroupsPanel
                             selectedGroups={selectedGroups}
+                            spacers={spacers}
                             onRemoveGroup={handleGroupSelect}
                             onSaveSchedule={handleSaveSchedule}
                             setShowSavePopup={setShowSavePopup}
@@ -741,14 +886,26 @@ const Display = () => {
                 <ExportLayout
                     ref={exportRef}
                     selectedGroups={selectedGroups}
+                    spacers={spacers}
                     schedule={
                         <ScheduleViewer
                             selectedGroups={selectedGroups}
+                            spacers={spacers}
                             scheduleName={scheduleTitle}
                             isExport={true}
                         />
                     }
                 />
+
+                {/* Spacer Modal for editing from schedule */}
+                <SpacerModal
+                    isOpen={isSpacerModalOpen}
+                    onClose={handleSpacerModalClose}
+                    onSave={handleSpacerModalSave}
+                    onDelete={handleSpacerDelete}
+                    editingSpacer={editingSpacerId ? spacers.find(s => s.id === editingSpacerId) : null}
+                />
+
                 {showSavePopup && (
                     <SavePopup onClose={() => setShowSavePopup(false)} />
                 )}

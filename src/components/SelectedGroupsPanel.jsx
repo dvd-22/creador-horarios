@@ -51,6 +51,7 @@ const timeToMinutes = (time) => {
 
 const SelectedGroupsPanel = ({
   selectedGroups,
+  spacers = [],
   onRemoveGroup,
   onSaveSchedule,
   setShowSavePopup,
@@ -252,7 +253,7 @@ const SelectedGroupsPanel = ({
                   startDateTime.getMinutes(),
                 ],
                 startInputType: 'local',
-                startOutputType: 'local',
+                startOutputType: 'utc',
                 end: [
                   endDateTime.getFullYear(),
                   endDateTime.getMonth() + 1,
@@ -261,13 +262,12 @@ const SelectedGroupsPanel = ({
                   endDateTime.getMinutes(),
                 ],
                 endInputType: 'local',
-                endOutputType: 'local',
+                endOutputType: 'utc',
                 location: group.salon || group.modalidad || "",
                 categories: [group.subject],
                 status: "CONFIRMED",
                 busyStatus: "BUSY",
-                organizer: { name: group.professor.nombre || "Profesor" },
-                recurrenceRule: `FREQ=WEEKLY;UNTIL=20260529T235959`,
+                recurrenceRule: `FREQ=WEEKLY;UNTIL=20260530T055959Z`,
               });
             }
           });
@@ -311,7 +311,7 @@ const SelectedGroupsPanel = ({
                   startDateTime.getMinutes(),
                 ],
                 startInputType: 'local',
-                startOutputType: 'local',
+                startOutputType: 'utc',
                 end: [
                   endDateTime.getFullYear(),
                   endDateTime.getMonth() + 1,
@@ -320,18 +320,77 @@ const SelectedGroupsPanel = ({
                   endDateTime.getMinutes(),
                 ],
                 endInputType: 'local',
-                endOutputType: 'local',
+                endOutputType: 'utc',
                 location: assistant.salon || "",
                 categories: [group.subject],
                 status: "CONFIRMED",
                 busyStatus: "BUSY",
-                organizer: { name: assistant.nombre || "Ayudante" },
-                recurrenceRule: `FREQ=WEEKLY;UNTIL=20260529T235959`,
+                recurrenceRule: `FREQ=WEEKLY;UNTIL=20260530T055959Z`,
               });
             }
           });
         }
       });
+    });
+
+    // Add spacers to calendar
+    spacers.forEach((spacer) => {
+      const dayOffsets = { L: 0, M: 1, I: 2, J: 3, V: 4, S: 5 };
+      const timeRange = parseTimeString(`${spacer.startTime} a ${spacer.endTime}`);
+
+      if (timeRange && spacer.days) {
+        spacer.days.forEach((day) => {
+          const dayOffset = dayOffsets[day];
+          if (dayOffset !== undefined) {
+            const eventDate = new Date(semesterStartMonday);
+            eventDate.setDate(semesterStartMonday.getDate() + dayOffset);
+
+            const startDateTime = new Date(eventDate);
+            const endDateTime = new Date(eventDate);
+
+            startDateTime.setHours(
+              Math.floor(timeRange.start / 60),
+              timeRange.start % 60,
+              0,
+              0
+            );
+            endDateTime.setHours(
+              Math.floor(timeRange.end / 60),
+              timeRange.end % 60,
+              0,
+              0
+            );
+
+            events.push({
+              title: spacer.name,
+              description: "Espacio reservado",
+              start: [
+                startDateTime.getFullYear(),
+                startDateTime.getMonth() + 1,
+                startDateTime.getDate(),
+                startDateTime.getHours(),
+                startDateTime.getMinutes(),
+              ],
+              startInputType: 'local',
+              startOutputType: 'utc',
+              end: [
+                endDateTime.getFullYear(),
+                endDateTime.getMonth() + 1,
+                endDateTime.getDate(),
+                endDateTime.getHours(),
+                endDateTime.getMinutes(),
+              ],
+              endInputType: 'local',
+              endOutputType: 'utc',
+              location: "",
+              categories: [spacer.name],
+              status: "CONFIRMED",
+              busyStatus: "BUSY",
+              recurrenceRule: `FREQ=WEEKLY;UNTIL=20260530T055959Z`,
+            });
+          }
+        });
+      }
     });
 
     createEvents(events, (error, value) => {

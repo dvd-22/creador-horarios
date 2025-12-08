@@ -1,9 +1,10 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { ChevronDown, ChevronRight, Search, Filter } from 'lucide-react';
+import { ChevronDown, ChevronRight, Search, Filter, Plus } from 'lucide-react';
 import { useMajorContext } from '../contexts/MajorContext';
 import MajorSelector from './MajorSelector';
 import ProfessorRating from './ProfessorRating';
 import FilterModal from './FilterModal';
+import SpacerModal from './SpacerModal';
 import { professorRatingService } from '../services/professorRatingService';
 
 // Utility function to normalize text for search (remove accents, convert to lowercase)
@@ -131,12 +132,13 @@ const getSemesterOrderPriority = (semesterName) => {
   return 2000 + semesterName.localeCompare('');
 };
 
-const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overlapToggle }) => {
+const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overlapToggle, onSpacerSave }) => {
   const { selectedMajorId, selectedStudyPlan, majorData, isLoading, loadError, changeMajor, changeStudyPlan, currentMajor, filters, updateFilters } = useMajorContext();
   const [openSemesters, setOpenSemesters] = useState({});
   const [openSubjects, setOpenSubjects] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
   const [isFilterModalOpen, setIsFilterModalOpen] = useState(false);
+  const [isSpacerModalOpen, setIsSpacerModalOpen] = useState(false);
 
   // Calculate the number of active filters
   const activeFilterCount = useMemo(() => {
@@ -659,6 +661,24 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
         filters={filters}
         onApplyFilters={updateFilters}
       />
+
+      {/* Spacer Modal */}
+      <SpacerModal
+        isOpen={isSpacerModalOpen}
+        onClose={() => setIsSpacerModalOpen(false)}
+        onSave={onSpacerSave}
+      />
+
+      {/* Spacer Button */}
+      <div className="px-4 py-2 border-b border-gray-700">
+        <button
+          onClick={() => setIsSpacerModalOpen(true)}
+          className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-lg text-gray-300 transition-colors"
+        >
+          <Plus size={16} />
+          <span className="text-sm">Agregar Espacio</span>
+        </button>
+      </div>
 
       <MajorSelector />
 
