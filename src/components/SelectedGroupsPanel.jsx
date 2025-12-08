@@ -363,7 +363,7 @@ const SelectedGroupsPanel = ({
 
             events.push({
               title: spacer.name,
-              description: "Espacio reservado",
+              description: "Horario personal",
               start: [
                 startDateTime.getFullYear(),
                 startDateTime.getMonth() + 1,

@@ -390,6 +390,36 @@ const Display = () => {
             }
         }
 
+        // Check against spacers
+        const dayMap = {
+            'L': 'Lu',
+            'M': 'Ma',
+            'I': 'Mi',
+            'J': 'Ju',
+            'V': 'Vi',
+            'S': 'Sa'
+        };
+
+        for (const spacer of spacers) {
+            const spacerStart = timeToMinutes(spacer.startTime);
+            const spacerEnd = timeToMinutes(spacer.endTime);
+
+            for (const newSlot of newSlots) {
+                for (const spacerDayId of spacer.days) {
+                    const spacerDay = dayMap[spacerDayId];
+                    if (newSlot.day === spacerDay &&
+                        hasTimeOverlap(newSlot.start, newSlot.end, spacerStart, spacerEnd)) {
+                        return {
+                            conflictWith: { subject: spacer.name, group: '(Horario Personal)' },
+                            day: newSlot.day,
+                            newTime: `${Math.floor(newSlot.start / 60)}:${String(newSlot.start % 60).padStart(2, '0')} - ${Math.floor(newSlot.end / 60)}:${String(newSlot.end % 60).padStart(2, '0')}`,
+                            existingTime: spacer.startTime + ' - ' + spacer.endTime
+                        };
+                    }
+                }
+            }
+        }
+
         return null;
     };
 
@@ -450,6 +480,52 @@ const Display = () => {
                     slotA.day === slotB.day &&
                     hasTimeOverlap(slotA.start, slotA.end, slotB.start, slotB.end)) {
                     return true;
+                }
+            }
+        }
+
+        // Check for overlaps between groups and spacers
+        const dayMap = {
+            'L': 'Lu',
+            'M': 'Ma',
+            'I': 'Mi',
+            'J': 'Ju',
+            'V': 'Vi',
+            'S': 'Sa'
+        };
+
+        for (const spacer of spacers) {
+            const spacerStart = timeToMinutes(spacer.startTime);
+            const spacerEnd = timeToMinutes(spacer.endTime);
+
+            for (const slot of allSlots) {
+                for (const spacerDayId of spacer.days) {
+                    const spacerDay = dayMap[spacerDayId];
+                    if (slot.day === spacerDay &&
+                        hasTimeOverlap(slot.start, slot.end, spacerStart, spacerEnd)) {
+                        return true;
+                    }
+                }
+            }
+        }
+
+        // Check for overlaps between spacers
+        for (let i = 0; i < spacers.length; i++) {
+            for (let j = i + 1; j < spacers.length; j++) {
+                const spacerA = spacers[i];
+                const spacerB = spacers[j];
+
+                const startA = timeToMinutes(spacerA.startTime);
+                const endA = timeToMinutes(spacerA.endTime);
+                const startB = timeToMinutes(spacerB.startTime);
+                const endB = timeToMinutes(spacerB.endTime);
+
+                for (const dayA of spacerA.days) {
+                    for (const dayB of spacerB.days) {
+                        if (dayA === dayB && hasTimeOverlap(startA, endA, startB, endB)) {
+                            return true;
+                        }
+                    }
                 }
             }
         }
@@ -645,8 +721,11 @@ const Display = () => {
     };
 
     const handleSpacerModalSave = (spacer) => {
-        handleSpacerSave(spacer);
-        setEditingSpacerId(null);
+        const error = handleSpacerSave(spacer);
+        if (!error) {
+            setEditingSpacerId(null);
+        }
+        return error;
     };
 
     const handleSpacerModalClose = () => {
@@ -670,10 +749,21 @@ const Display = () => {
     const handleConfirmDisableOverlap = () => {
         // First, create a list of non-conflicting groups to keep
         const groupsToKeep = [];
+        const spacersToKeep = [];
         const conflicts = new Set();
 
-        // Function to check if a group conflicts with any group in groupsToKeep
+        const dayMap = {
+            'L': 'Lu',
+            'M': 'Ma',
+            'I': 'Mi',
+            'J': 'Ju',
+            'V': 'Vi',
+            'S': 'Sa'
+        };
+
+        // Function to check if a group conflicts with any group in groupsToKeep or spacersToKeep
         const hasConflict = (group) => {
+            // Check against kept groups
             for (const existingGroup of groupsToKeep) {
                 // Create slots for the new group
                 const newSlots = [];
@@ -733,6 +823,108 @@ const Display = () => {
                     }
                 }
             }
+
+            // Check against kept spacers
+            for (const spacer of spacersToKeep) {
+                const spacerStart = timeToMinutes(spacer.startTime);
+                const spacerEnd = timeToMinutes(spacer.endTime);
+
+                // Create slots for the new group
+                const newSlots = [];
+
+                // Add professor slots
+                group.professor.horarios?.forEach(schedule => {
+                    const [start, end] = parseTimeString(schedule.horario) || [null, null];
+                    if (start === null || end === null) return;
+
+                    (schedule.dias || []).forEach(day => {
+                        newSlots.push({ day, start, end });
+                    });
+                });
+
+                // Add assistant slots
+                group.assistants?.forEach(assistant => {
+                    if (!assistant.horario || !assistant.dias) return;
+                    const [start, end] = parseTimeString(assistant.horario) || [null, null];
+                    if (start === null || end === null) return;
+
+                    assistant.dias.forEach(day => {
+                        newSlots.push({ day, start, end });
+                    });
+                });
+
+                // Check for conflicts
+                for (const slot of newSlots) {
+                    for (const spacerDayId of spacer.days) {
+                        const spacerDay = dayMap[spacerDayId];
+                        if (slot.day === spacerDay &&
+                            hasTimeOverlap(slot.start, slot.end, spacerStart, spacerEnd)) {
+                            return true;
+                        }
+                    }
+                }
+            }
+
+            return false;
+        };
+
+        // Function to check if a spacer conflicts with kept groups or spacers
+        const spacerHasConflict = (spacer) => {
+            const spacerStart = timeToMinutes(spacer.startTime);
+            const spacerEnd = timeToMinutes(spacer.endTime);
+
+            // Check against kept groups
+            for (const group of groupsToKeep) {
+                // Check professor schedules
+                for (const schedule of (group.professor.horarios || [])) {
+                    const [start, end] = parseTimeString(schedule.horario);
+                    const days = schedule.dias || [];
+
+                    if (start !== null && end !== null) {
+                        for (const scheduleDay of days) {
+                            for (const spacerDayId of spacer.days) {
+                                const spacerDay = dayMap[spacerDayId];
+                                if (spacerDay === scheduleDay && hasTimeOverlap(spacerStart, spacerEnd, start, end)) {
+                                    return true;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // Check assistant schedules
+                for (const assistant of (group.assistants || [])) {
+                    if (!assistant.horario || !assistant.dias) continue;
+                    const [start, end] = parseTimeString(assistant.horario);
+                    const days = assistant.dias || [];
+
+                    if (start !== null && end !== null) {
+                        for (const scheduleDay of days) {
+                            for (const spacerDayId of spacer.days) {
+                                const spacerDay = dayMap[spacerDayId];
+                                if (spacerDay === scheduleDay && hasTimeOverlap(spacerStart, spacerEnd, start, end)) {
+                                    return true;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Check against kept spacers
+            for (const existingSpacer of spacersToKeep) {
+                const existingStart = timeToMinutes(existingSpacer.startTime);
+                const existingEnd = timeToMinutes(existingSpacer.endTime);
+
+                for (const dayA of spacer.days) {
+                    for (const dayB of existingSpacer.days) {
+                        if (dayA === dayB && hasTimeOverlap(spacerStart, spacerEnd, existingStart, existingEnd)) {
+                            return true;
+                        }
+                    }
+                }
+            }
+
             return false;
         };
 
@@ -745,8 +937,19 @@ const Display = () => {
             }
         }
 
+        // Process each spacer
+        for (const spacer of spacers) {
+            if (spacerHasConflict(spacer)) {
+                conflicts.add(`${spacer.name} (Horario Personal)`);
+            } else {
+                spacersToKeep.push(spacer);
+            }
+        }
+
         // Update state
         setSelectedGroups(groupsToKeep);
+        setSpacers(spacersToKeep);
+        localStorage.setItem('spacers', JSON.stringify(spacersToKeep));
         setAllowOverlap(false);
         setShowOverlapWarning(false);
 

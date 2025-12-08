@@ -676,7 +676,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
           className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-lg text-gray-300 transition-colors"
         >
           <Plus size={16} />
-          <span className="text-sm">Agregar Espacio</span>
+          <span className="text-sm">Agregar Horario Personal</span>
         </button>
       </div>
 

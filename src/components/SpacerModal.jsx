@@ -152,7 +152,7 @@ const SpacerModal = ({ isOpen, onClose, onSave, onDelete, editingSpacer = null }
                 {/* Header */}
                 <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-700">
                     <h2 className="text-lg sm:text-xl font-semibold text-gray-100">
-                        {editingSpacer ? 'Editar Espacio' : 'Agregar Espacio'}
+                        {editingSpacer ? 'Editar Horario Personal' : 'Agregar Horario Personal'}
                     </h2>
                     <button
                         onClick={onClose}
@@ -234,7 +234,7 @@ const SpacerModal = ({ isOpen, onClose, onSave, onDelete, editingSpacer = null }
                                     max={HOURS.length - 1}
                                     value={startIndex}
                                     onChange={handleStartChange}
-                                    className="absolute w-full appearance-none bg-transparent pointer-events-auto cursor-pointer slider-thumb z-10"
+                                    className="absolute w-full appearance-none bg-transparent cursor-pointer slider-thumb pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-moz-range-thumb]:pointer-events-auto"
                                     style={{ height: '2rem' }}
                                 />
 
@@ -245,7 +245,7 @@ const SpacerModal = ({ isOpen, onClose, onSave, onDelete, editingSpacer = null }
                                     max={HOURS.length - 1}
                                     value={endIndex}
                                     onChange={handleEndChange}
-                                    className="absolute w-full appearance-none bg-transparent pointer-events-auto cursor-pointer slider-thumb z-10"
+                                    className="absolute w-full appearance-none bg-transparent cursor-pointer slider-thumb pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-moz-range-thumb]:pointer-events-auto"
                                     style={{ height: '2rem' }}
                                 />
                             </div>
@@ -280,7 +280,7 @@ const SpacerModal = ({ isOpen, onClose, onSave, onDelete, editingSpacer = null }
                         <button
                             onClick={handleDelete}
                             className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors flex items-center gap-2"
-                            title="Eliminar espacio"
+                            title="Eliminar horario personal"
                         >
                             <Trash2 size={16} />
                         </button>
