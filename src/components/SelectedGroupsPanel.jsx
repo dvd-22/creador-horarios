@@ -236,9 +236,8 @@ const SelectedGroupsPanel = ({
 
               events.push({
                 title: `${group.subject} (${group.group})`,
-                description: `Profesor: ${group.professor.nombre}\nAyudantes: ${
-                  group.assistants?.map((a) => a.nombre).join(", ") || "N/A"
-                }`,
+                description: `Profesor: ${group.professor.nombre}\nAyudantes: ${group.assistants?.map((a) => a.nombre).join(", ") || "N/A"
+                  }`,
                 start: [
                   startDateTime.getFullYear(),
                   startDateTime.getMonth() + 1,
@@ -504,7 +503,7 @@ const SelectedGroupsPanel = ({
           {/* Download Modal */}
           {showDownloadModal && (
             <div
-              className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+              className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50"
               onClick={() => setShowDownloadModal(false)}
             >
               <div
@@ -633,18 +632,16 @@ const SelectedGroupsPanel = ({
                             );
                           }
                         }}
-                        className={`text-white text-[10px] h-4 px-1 flex items-center justify-center flex-shrink-0 rounded font-medium ${
-                          professorRatings[group.professor.nombre]?.rating
-                            ? professorRatingService.getRatingBgColor(
-                                professorRatings[group.professor.nombre].rating
-                              )
-                            : "bg-gray-600"
-                        }`}
+                        className={`text-white text-[10px] h-4 px-1 flex items-center justify-center flex-shrink-0 rounded font-medium ${professorRatings[group.professor.nombre]?.rating
+                          ? professorRatingService.getRatingBgColor(
+                            professorRatings[group.professor.nombre].rating
+                          )
+                          : "bg-gray-600"
+                          }`}
                         title={
                           professorRatings[group.professor.nombre]?.rating
-                            ? `Calificación: ${
-                                professorRatings[group.professor.nombre].rating
-                              }/10`
+                            ? `Calificación: ${professorRatings[group.professor.nombre].rating
+                            }/10`
                             : "Cargando calificación..."
                         }
                       >
@@ -840,7 +837,7 @@ const SelectedGroupsPanel = ({
         {/* Download Modal */}
         {showDownloadModal && (
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+            className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50"
             onClick={() => setShowDownloadModal(false)}
           >
             <div
@@ -1084,7 +1081,7 @@ const SelectedGroupsPanel = ({
       {/* Download Modal */}
       {showDownloadModal && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50"
           onClick={() => setShowDownloadModal(false)}
         >
           <div
