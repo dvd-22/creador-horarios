@@ -9,21 +9,21 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const MAJORS_CONFIG = {
-	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20261/1556":
+	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20262/1556":
 		"Ciencias de la Computación",
-	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20261/2017":
+	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20262/2017":
 		"Actuaría",
-	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20261/2272":
+	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20262/2272":
 		"Biología 2025",
-	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20261/181":
+	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20262/181":
 		"Biología 1997",
-	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20261/1081":
+	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20262/1081":
 		"Física",
-	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20261/2016":
+	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20262/2016":
 		"Física Biomédica",
-	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20261/217":
+	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20262/217":
 		"Matemáticas",
-	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20261/2055":
+	"https://www.fciencias.unam.mx/docencia/horarios/indiceplan/20262/2055":
 		"Matemáticas aplicadas",
 };
 
