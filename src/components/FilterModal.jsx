@@ -18,10 +18,16 @@ const DAYS = [
     { id: 'S', label: 'Sáb', full: 'Sábado' }
 ];
 
+const MODALITIES = [
+    { id: 'Presencial', label: 'Presencial' },
+    { id: 'Virtual', label: 'Virtual' }
+];
+
 const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
     const [startIndex, setStartIndex] = useState(0);
     const [endIndex, setEndIndex] = useState(HOURS.length - 1);
     const [selectedDays, setSelectedDays] = useState(['L', 'M', 'I', 'J', 'V', 'S']);
+    const [selectedModalities, setSelectedModalities] = useState(['Presencial', 'Virtual']);
     const [blockedHours, setBlockedHours] = useState([]);
     const [newBlockStart, setNewBlockStart] = useState(0);
     const [newBlockEnd, setNewBlockEnd] = useState(1);
@@ -52,6 +58,12 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
                 setBlockedHours(filters.blockedHours);
             } else {
                 setBlockedHours([]);
+            }
+
+            if (filters.modalities && filters.modalities.length > 0) {
+                setSelectedModalities(filters.modalities);
+            } else {
+                setSelectedModalities(['Presencial', 'Virtual']);
             }
         }
     }, [isOpen, filters]);
@@ -95,6 +107,18 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
         });
     };
 
+    const toggleModality = (modalityId) => {
+        setSelectedModalities(prev => {
+            if (prev.includes(modalityId)) {
+                // Don't allow deselecting if it's the last modality
+                if (prev.length === 1) return prev;
+                return prev.filter(m => m !== modalityId);
+            } else {
+                return [...prev, modalityId];
+            }
+        });
+    };
+
     const addBlockedHour = () => {
         const newBlock = {
             startTime: HOURS[newBlockStart],
@@ -127,13 +151,17 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
     };
 
     const handleApply = () => {
+        // Only set startTime/endTime if they're not at default positions
+        const isDefaultTimeRange = startIndex === 0 && endIndex === HOURS.length - 1;
+
         onApplyFilters({
             mode: 'range',
-            startTime: HOURS[startIndex],
-            endTime: HOURS[endIndex],
+            startTime: isDefaultTimeRange ? null : HOURS[startIndex],
+            endTime: isDefaultTimeRange ? null : HOURS[endIndex],
             exactTimes: [],
             days: selectedDays,
-            blockedHours: blockedHours
+            blockedHours: blockedHours,
+            modalities: selectedModalities
         });
         onClose();
     };
@@ -143,6 +171,7 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
         setStartIndex(0);
         setEndIndex(HOURS.length - 1);
         setSelectedDays(['L', 'M', 'I', 'J', 'V', 'S']);
+        setSelectedModalities(['Presencial', 'Virtual']);
         setBlockedHours([]);
 
         // Apply cleared filters
@@ -152,12 +181,11 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
             endTime: null,
             exactTimes: [],
             days: ['L', 'M', 'I', 'J', 'V', 'S'],
-            blockedHours: []
+            blockedHours: [],
+            modalities: ['Presencial', 'Virtual']
         });
         // Don't close the modal
-    };
-
-    if (!isOpen) return null;
+    }; if (!isOpen) return null;
 
     return createPortal(
         <div
@@ -199,6 +227,27 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
                                     title={day.full}
                                 >
                                     {day.label}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Modality Toggles */}
+                    <div>
+                        <label className="block text-sm font-medium text-gray-300 mb-3">
+                            Modalidad
+                        </label>
+                        <div className="grid grid-cols-2 gap-2">
+                            {MODALITIES.map(modality => (
+                                <button
+                                    key={modality.id}
+                                    onClick={() => toggleModality(modality.id)}
+                                    className={`px-3 py-2 rounded-lg font-medium text-sm transition-all ${selectedModalities.includes(modality.id)
+                                            ? 'bg-blue-600 text-white shadow-md'
+                                            : 'bg-gray-700 text-gray-400 hover:bg-gray-600'
+                                        }`}
+                                >
+                                    {modality.label}
                                 </button>
                             ))}
                         </div>
@@ -360,6 +409,9 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
                                             return index === 0 ? `${block.startTime} a ${block.endTime}` : `, de ${block.startTime} a ${block.endTime}`;
                                         }).join('')}</>
                                     )}
+                                    {selectedModalities.length === 1 && (
+                                        <> en modalidad {selectedModalities[0].toLowerCase()}</>
+                                    )}
                                 </>
                             ) : (
                                 <>
@@ -379,6 +431,9 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
                                             }
                                             return index === 0 ? `${block.startTime} a ${block.endTime}` : `, de ${block.startTime} a ${block.endTime}`;
                                         }).join('')}</>
+                                    )}
+                                    {selectedModalities.length === 1 && (
+                                        <> en modalidad {selectedModalities[0].toLowerCase()}</>
                                     )}
                                 </>
                             )}

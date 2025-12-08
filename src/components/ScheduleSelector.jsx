@@ -138,6 +138,33 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
   const [searchQuery, setSearchQuery] = useState('');
   const [isFilterModalOpen, setIsFilterModalOpen] = useState(false);
 
+  // Calculate the number of active filters
+  const activeFilterCount = useMemo(() => {
+    let count = 0;
+
+    // Check if day filter is active (less than 6 days selected)
+    if (filters.days && filters.days.length < 6) {
+      count++;
+    }
+
+    // Check if time range filter is active
+    if (filters.startTime || filters.endTime) {
+      count++;
+    }
+
+    // Check if blocked hours filter is active
+    if (filters.blockedHours && filters.blockedHours.length > 0) {
+      count++;
+    }
+
+    // Check if modality filter is active (less than 2 modalities selected)
+    if (filters.modalities && filters.modalities.length < 2) {
+      count++;
+    }
+
+    return count;
+  }, [filters]);
+
   // Expose reveal function via callback
   useEffect(() => {
     if (onRevealGroup) {
@@ -378,6 +405,14 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
           // If doesn't match time filter, skip this group
           if (!matchesTimeFilter) return;
 
+          // Check modality filter
+          if (filters.modalities && filters.modalities.length < 2) {
+            const modalidad = groupData?.modalidad;
+            if (modalidad && !filters.modalities.includes(modalidad)) {
+              return; // Skip this group if modality doesn't match
+            }
+          }
+
           // Then apply search filter if query exists
           if (searchQuery.trim()) {
             // Search in all possible fields
@@ -600,7 +635,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
           </div>
           <button
             onClick={() => setIsFilterModalOpen(true)}
-            className={`px-3 py-2 rounded-lg border transition-colors flex items-center justify-center ${filters.startTime || filters.endTime || filters.exactTimes.length > 0
+            className={`relative px-3 py-2 rounded-lg border transition-colors flex items-center justify-center ${activeFilterCount > 0
               ? 'bg-blue-600 border-blue-500 text-white'
               : 'bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700'
               }`}
@@ -608,6 +643,11 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
             title="Filtros de horario"
           >
             <Filter size={16} />
+            {activeFilterCount > 0 && (
+              <span className="absolute -top-1 -right-1 bg-blue-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                {activeFilterCount}
+              </span>
+            )}
           </button>
         </div>
       </div>
