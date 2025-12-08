@@ -1,14 +1,57 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { ChevronDown, ChevronRight, Search } from 'lucide-react';
+import { ChevronDown, ChevronRight, Search, Filter } from 'lucide-react';
 import { useMajorContext } from '../contexts/MajorContext';
 import MajorSelector from './MajorSelector';
 import ProfessorRating from './ProfessorRating';
+import FilterModal from './FilterModal';
 import { professorRatingService } from '../services/professorRatingService';
 
 // Utility function to normalize text for search (remove accents, convert to lowercase)
 const normalizeText = (text) => {
   if (!text) return '';
   return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+};
+
+// Utility function to parse time string to minutes since midnight
+const timeToMinutes = (timeStr) => {
+  if (!timeStr) return null;
+  const [hours, minutes] = timeStr.split(':').map(Number);
+  return hours * 60 + minutes;
+};
+
+// Utility function to check if a schedule matches filter criteria
+const scheduleMatchesFilter = (horario, filters) => {
+  if (!filters.startTime && !filters.endTime && filters.exactTimes.length === 0) {
+    return true; // No filters applied
+  }
+
+  if (!horario) return false;
+
+  // Extract start time from schedule string (e.g., "07:00 a 08:30" -> "07:00")
+  const timeMatch = horario.match(/^(\d{2}:\d{2})/);
+  if (!timeMatch) return false;
+
+  const scheduleStartTime = timeMatch[1];
+
+  if (filters.mode === 'exact') {
+    // Exact mode: check if schedule starts at one of the exact times
+    return filters.exactTimes.includes(scheduleStartTime);
+  } else {
+    // Range mode: check if schedule is within the time range
+    if (!filters.startTime || !filters.endTime) return true;
+
+    // Parse schedule time range (e.g., "07:00 a 08:30")
+    const scheduleMatch = horario.match(/^(\d{2}:\d{2})\s*a\s*(\d{2}:\d{2})/);
+    if (!scheduleMatch) return false;
+
+    const scheduleStart = timeToMinutes(scheduleMatch[1]);
+    const scheduleEnd = timeToMinutes(scheduleMatch[2]);
+    const filterStart = timeToMinutes(filters.startTime);
+    const filterEnd = timeToMinutes(filters.endTime);
+
+    // Check if the entire class is within the filter range
+    return scheduleStart >= filterStart && scheduleEnd <= filterEnd;
+  }
 };
 
 const semesterOrder = [
@@ -54,10 +97,11 @@ const getSemesterOrderPriority = (semesterName) => {
 };
 
 const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overlapToggle }) => {
-  const { selectedMajorId, selectedStudyPlan, majorData, isLoading, loadError, changeMajor, changeStudyPlan, currentMajor } = useMajorContext();
+  const { selectedMajorId, selectedStudyPlan, majorData, isLoading, loadError, changeMajor, changeStudyPlan, currentMajor, filters, updateFilters } = useMajorContext();
   const [openSemesters, setOpenSemesters] = useState({});
   const [openSubjects, setOpenSubjects] = useState({});
   const [searchQuery, setSearchQuery] = useState('');
+  const [isFilterModalOpen, setIsFilterModalOpen] = useState(false);
 
   // Expose reveal function via callback
   useEffect(() => {
@@ -249,7 +293,11 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
   };
 
   const filteredScheduleData = useMemo(() => {
-    if (!searchQuery.trim()) return getOrderedData(majorData || {});
+    const orderedData = getOrderedData(majorData || {});
+
+    if (!searchQuery.trim() && !filters.startTime && !filters.endTime && filters.exactTimes.length === 0) {
+      return orderedData;
+    }
 
     const normalizedQuery = normalizeText(searchQuery.trim());
     const filtered = {};
@@ -259,50 +307,70 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
       return {};
     }
 
-    Object.entries(majorData).forEach(([semester, subjects]) => {
+    Object.entries(orderedData).forEach(([semester, subjects]) => {
       const filteredSubjects = {};
 
       Object.entries(subjects).forEach(([subject, groups]) => {
         const filteredGroups = {};
 
         Object.entries(groups).forEach(([groupNum, groupData]) => {
-          // Search in all possible fields
-          const searchFields = [
-            groupNum, // Group number
-            groupData?.profesor?.nombre, // Professor name
-            subject, // Subject name
-            semester, // Semester name
-            groupData?.salon, // Classroom
-            groupData?.modalidad, // Modality
-            groupData?.nota, // Notes
-            ...(groupData?.ayudantes?.map(ayudante => ayudante?.nombre) || []) // Assistant names
-          ];
+          // First check time filters
+          let matchesTimeFilter = true;
 
-          // Search in professor schedules
-          let professorScheduleMatches = false;
-          if (groupData?.profesor?.horarios) {
-            professorScheduleMatches = groupData.profesor.horarios.some(schedule =>
-              normalizeText(schedule.horario || '').includes(normalizedQuery)
+          if (filters.startTime || filters.endTime || filters.exactTimes.length > 0) {
+            // Check if any of the professor's schedules match the filter
+            const professorSchedulesMatch = groupData?.profesor?.horarios?.some(schedule =>
+              scheduleMatchesFilter(schedule.horario, filters)
+            ) || false;
+
+            matchesTimeFilter = professorSchedulesMatch;
+          }
+
+          // If doesn't match time filter, skip this group
+          if (!matchesTimeFilter) return;
+
+          // Then apply search filter if query exists
+          if (searchQuery.trim()) {
+            // Search in all possible fields
+            const searchFields = [
+              groupNum, // Group number
+              groupData?.profesor?.nombre, // Professor name
+              subject, // Subject name
+              semester, // Semester name
+              groupData?.salon, // Classroom
+              groupData?.modalidad, // Modality
+              groupData?.nota, // Notes
+              ...(groupData?.ayudantes?.map(ayudante => ayudante?.nombre) || []) // Assistant names
+            ];
+
+            // Search in professor schedules
+            let professorScheduleMatches = false;
+            if (groupData?.profesor?.horarios) {
+              professorScheduleMatches = groupData.profesor.horarios.some(schedule =>
+                normalizeText(schedule.horario || '').includes(normalizedQuery)
+              );
+            }
+
+            // Search in assistant schedules
+            let assistantScheduleMatches = false;
+            if (groupData?.ayudantes) {
+              assistantScheduleMatches = groupData.ayudantes.some(ayudante =>
+                normalizeText(ayudante?.horario || '').includes(normalizedQuery) ||
+                normalizeText(ayudante?.salon || '').includes(normalizedQuery)
+              );
+            }
+
+            // Check if any field matches
+            const fieldMatches = searchFields.some(field =>
+              field && normalizeText(field).includes(normalizedQuery)
             );
+
+            if (!fieldMatches && !professorScheduleMatches && !assistantScheduleMatches) {
+              return; // Skip this group if search doesn't match
+            }
           }
 
-          // Search in assistant schedules
-          let assistantScheduleMatches = false;
-          if (groupData?.ayudantes) {
-            assistantScheduleMatches = groupData.ayudantes.some(ayudante =>
-              normalizeText(ayudante?.horario || '').includes(normalizedQuery) ||
-              normalizeText(ayudante?.salon || '').includes(normalizedQuery)
-            );
-          }
-
-          // Check if any field matches
-          const fieldMatches = searchFields.some(field =>
-            field && normalizeText(field).includes(normalizedQuery)
-          );
-
-          if (fieldMatches || professorScheduleMatches || assistantScheduleMatches) {
-            filteredGroups[groupNum] = groupData;
-          }
+          filteredGroups[groupNum] = groupData;
         });
 
         if (Object.keys(filteredGroups).length > 0) {
@@ -315,8 +383,8 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
       }
     });
 
-    return getOrderedData(filtered);
-  }, [searchQuery, majorData]);
+    return filtered;
+  }, [searchQuery, majorData, filters]);
 
   useEffect(() => {
     const loadVisibleProfessorRatings = async () => {
@@ -469,18 +537,39 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
   return (
     <div className="h-full bg-gray-900 border-r border-gray-700 flex flex-col">
       <div className="p-4 border-b border-gray-700">
-        <div className="relative">
-          <input
-            type="text"
-            placeholder="Buscar..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full p-2 pl-8 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-500 text-sm"
-            autoComplete="off"
-          />
-          <Search className="absolute left-2 top-2.5 text-gray-400" size={16} />
+        <div className="flex gap-2">
+          <div className="relative flex-1">
+            <input
+              type="text"
+              placeholder="Buscar..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full p-2 pl-8 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-500 text-sm"
+              autoComplete="off"
+            />
+            <Search className="absolute left-2 top-2.5 text-gray-400" size={16} />
+          </div>
+          <button
+            onClick={() => setIsFilterModalOpen(true)}
+            className={`p-2 rounded-lg border transition-colors ${filters.startTime || filters.endTime || filters.exactTimes.length > 0
+                ? 'bg-blue-600 border-blue-500 text-white'
+                : 'bg-gray-800 border-gray-700 text-gray-400 hover:bg-gray-700'
+              }`}
+            aria-label="Filtros"
+            title="Filtros de horario"
+          >
+            <Filter size={16} />
+          </button>
         </div>
       </div>
+
+      {/* Filter Modal */}
+      <FilterModal
+        isOpen={isFilterModalOpen}
+        onClose={() => setIsFilterModalOpen(false)}
+        filters={filters}
+        onApplyFilters={updateFilters}
+      />
 
       {/* Overlap toggle - only show on mobile when passed as prop */}
       {overlapToggle && overlapToggle}

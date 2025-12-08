@@ -72,6 +72,14 @@ export const MajorProvider = ({ children }) => {
     // Cache for loaded major data
     const [majorDataCache, setMajorDataCache] = useState({});
 
+    // Filter state - persists across major changes
+    const [filters, setFilters] = useState({
+        mode: 'range',
+        startTime: null,
+        endTime: null,
+        exactTimes: []
+    });
+
     // Load major data when selected major or study plan changes
     useEffect(() => {
         const loadMajorData = async () => {
@@ -150,6 +158,10 @@ export const MajorProvider = ({ children }) => {
         }
     };
 
+    const updateFilters = (newFilters) => {
+        setFilters(newFilters);
+    };
+
     const value = {
         selectedMajorId,
         selectedStudyPlan,
@@ -160,7 +172,9 @@ export const MajorProvider = ({ children }) => {
         changeStudyPlan,
         isLoading,
         loadError,
-        loadedMajors: Array.from(loadedMajors)
+        loadedMajors: Array.from(loadedMajors),
+        filters,
+        updateFilters
     };
 
     return (

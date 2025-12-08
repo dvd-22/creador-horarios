@@ -626,7 +626,7 @@ const Display = () => {
                     />
                 )}
                 {showOverlapWarning && (
-                    <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-[60]">
+                    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-[60]">
                         <div className="bg-gray-800 rounded-lg p-6 max-w-md mx-4 border border-gray-700 shadow-xl">
                             <h3 className="text-xl font-semibold text-red-400 mb-3">¡Atención!</h3>
                             <p className="text-gray-300 mb-4">
@@ -655,14 +655,14 @@ const Display = () => {
                         <ScheduleSelector
                             onGroupSelect={handleGroupSelect}
                             selectedGroups={selectedGroups}
-                            onRevealGroup={(fn) => { 
+                            onRevealGroup={(fn) => {
                                 revealGroupRef.current = (majorId, studyPlanId, semester, subject, group) => {
                                     // Uncollapse left panel if collapsed (desktop only)
                                     let wasCollapsed = false;
                                     if (uncollapseLeftPanelRef.current) {
                                         wasCollapsed = uncollapseLeftPanelRef.current();
                                     }
-                                    
+
                                     if (wasCollapsed) {
                                         // Wait for panel to expand before revealing
                                         setTimeout(() => {
