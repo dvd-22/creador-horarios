@@ -123,6 +123,22 @@ const Display = () => {
     // Load selectedGroups from localStorage on initialization
     const [selectedGroups, setSelectedGroups] = useState([]);
     const [spacers, setSpacers] = useState(() => {
+        // First, try to load from URL hash
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            try {
+                const scheduleData = decodeScheduleFromURL(hash);
+                if (scheduleData && scheduleData.spacers && Array.isArray(scheduleData.spacers)) {
+                    return scheduleData.spacers;
+                }
+                // If URL exists but has no spacers, return empty array (don't use localStorage)
+                return [];
+            } catch (error) {
+                console.warn('Failed to load spacers from URL:', error);
+            }
+        }
+
+        // Only use localStorage if there's no URL hash
         try {
             const saved = localStorage.getItem('spacers');
             return saved ? JSON.parse(saved) : [];
