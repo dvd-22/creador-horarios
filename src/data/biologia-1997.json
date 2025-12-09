@@ -146,7 +146,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Karla Genoveva Bassols Bello",
             "horario": "14:30 a 17:30",
             "dias": [
               "Vi"
@@ -534,7 +534,7 @@
       "5017": {
         "grupo": "5017",
         "profesor": {
-          "nombre": null,
+          "nombre": "Amaranta Ramírez Terrazo",
           "horarios": [
             {
               "horario": "14:30 a 17:30",
@@ -970,7 +970,7 @@
       "5032": {
         "grupo": "5032",
         "profesor": {
-          "nombre": null,
+          "nombre": "Rocío Salceda Sacanelles",
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -1196,7 +1196,7 @@
       "5040": {
         "grupo": "5040",
         "profesor": {
-          "nombre": "Renato León Rodríguez",
+          "nombre": "Yamilka Karenia López Uc",
           "horarios": [
             {
               "horario": "18:00 a 21:00",
@@ -1832,7 +1832,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Rubi Evangelista Casimiro",
+            "nombre": "Diana Catalina Castro Rodríguez",
             "horario": "07:30 a 10:30",
             "dias": [
               "Sa"
@@ -1916,7 +1916,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Diana Catalina Castro Rodríguez",
+            "nombre": "Rubi Evangelista Casimiro",
             "horario": "11:00 a 14:00",
             "dias": [
               "Vi"
@@ -2471,7 +2471,7 @@
         "nota": "Comunicación entre las células del sistema nervioso y su implicación en enfermedades neurológicas",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371035"
       },
       "5416": {
         "grupo": "5416",
@@ -2618,6 +2618,12 @@
           },
           {
             "nombre": "José Daniel Lara Tufiño",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Carlos Omar Becerra Soria",
             "horario": null,
             "dias": [],
             "salon": null
@@ -3872,6 +3878,34 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "5550": {
+        "grupo": "5550",
+        "profesor": {
+          "nombre": "Miguel Angel Palomino Garibay",
+          "horarios": [
+            {
+              "horario": "07:30 a 10:30",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Tanya Marcela González Martínez",
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Recursos Naturales": {
@@ -4548,6 +4582,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Julieta Griselda Mendoza Torreblanca",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": "Bioseñalización e inflamación en las vías aéreas",
@@ -4985,7 +5025,7 @@
         "nota": "Estudio de los procesos biológicos de diversas enfermedades en el humano para el desarrollo de nuevas estrategias terapéuticas basadas en el uso de proteínas",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371072"
       },
       "5453": {
         "grupo": "5453",
@@ -5471,6 +5511,12 @@
           },
           {
             "nombre": "Verónica Monserrat Rodríguez Sánchez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Giovani Joel Colchado López",
             "horario": null,
             "dias": [],
             "salon": null
@@ -6135,6 +6181,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Antar Mijail Pérez Botello",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": "Adaptaciones fisiológicas de animales acuáticos de interés comercial y para la conservación",
@@ -6243,6 +6295,12 @@
           },
           {
             "nombre": "Alexa Jazive Valdés Trujillo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Alberto Carlo Gutierrez Ixta",
             "horario": null,
             "dias": [],
             "salon": null
@@ -6418,7 +6476,7 @@
         "nota": "Comunicación entre las células del sistema nervioso y su implicación en enfermedades neurológicas",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371036"
       },
       "5427": {
         "grupo": "5427",
@@ -6466,6 +6524,12 @@
           },
           {
             "nombre": "José Daniel Lara Tufiño",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Carlos Omar Becerra Soria",
             "horario": null,
             "dias": [],
             "salon": null
@@ -7143,6 +7207,12 @@
           },
           {
             "nombre": "Alexa Jazive Valdés Trujillo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Alberto Carlo Gutierrez Ixta",
             "horario": null,
             "dias": [],
             "salon": null
@@ -8026,7 +8096,7 @@
         "nota": "Estudio de los procesos biológicos de diversas enfermedades en el humano para el desarrollo de nuevas estrategias terapéuticas basadas en el uso de proteínas",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371073"
       },
       "5454": {
         "grupo": "5454",
@@ -8677,6 +8747,12 @@
             "salon": null
           },
           {
+            "nombre": "Giovani Joel Colchado López",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Wooden Victor Velasco Tapia",
             "horario": null,
             "dias": [],
@@ -9266,7 +9342,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Juan Carlos Campuzano Caballero",
             "horario": "07:30 a 10:30",
             "dias": [
               "Vi"
@@ -9831,6 +9907,36 @@
         "presentacion": null
       }
     },
+    "Edafología": {
+      "5559": {
+        "grupo": "5559",
+        "profesor": {
+          "nombre": "Yasmin Vázquez Santos",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Isaac Romeo Acevedo Rojas",
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "El Cultivo de Tejidos Vegetales como Herramienta Biotecnologíca": {
       "5135": {
         "grupo": "5135",
@@ -9993,7 +10099,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Juan Carlos Gómez Verjan",
+            "nombre": "Miguel Santibáñez Andrade",
             "horario": null,
             "dias": [],
             "salon": null
@@ -10183,6 +10289,36 @@
             "horario": "11:00 a 14:00",
             "dias": [
               "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Geomorfologia": {
+      "5558": {
+        "grupo": "5558",
+        "profesor": {
+          "nombre": "José Fernando Aceves Quesada",
+          "horarios": [
+            {
+              "horario": "14:30 a 17:30",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Kassandra Patricia Ojeda Hinds",
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Vi"
             ],
             "salon": null
           }
@@ -10735,6 +10871,35 @@
         "presentacion": null
       }
     },
+    "Recursos Forestales de México y su Manejo Sustentable": {
+      "5549": {
+        "grupo": "5549",
+        "profesor": {
+          "nombre": "Iskra Alejandra Rojo Negrete",
+          "horarios": [
+            {
+              "horario": "18:00 a 21:00",
+              "dias": [
+                "Ma",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Angel Rodrigo González González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Restauración Ecológica": {
       "5164": {
         "grupo": "5164",
@@ -10859,6 +11024,53 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369539"
+      },
+      "5552": {
+        "grupo": "5552",
+        "profesor": null,
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Lu",
+              "Mi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "5553": {
+        "grupo": "5553",
+        "profesor": {
+          "nombre": "Néstor Fabián Díaz Martínez",
+          "horarios": [
+            {
+              "horario": "14:30 a 17:30",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Daniela Ávila González",
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Biologia de las células troncales",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Seminario de Biología II": {
@@ -10896,9 +11108,9 @@
           "nombre": "Lucero Cetina Arenas",
           "horarios": [
             {
-              "horario": "11:00 a 14:00",
+              "horario": "07:30 a 10:30",
               "dias": [
-                "Ju"
+                "Lu"
               ]
             }
           ]
@@ -10906,9 +11118,9 @@
         "ayudantes": [
           {
             "nombre": "Monserrat Moysén Carbajal",
-            "horario": "11:00 a 14:00",
+            "horario": "07:30 a 10:30",
             "dias": [
-              "Lu"
+              "Mi"
             ],
             "salon": null
           }
@@ -11196,6 +11408,90 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "5547": {
+        "grupo": "5547",
+        "profesor": {
+          "nombre": "Jorge Alberto Escutia Sánchez",
+          "horarios": [
+            {
+              "horario": "14:30 a 17:30",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ximena Delgado Villegas",
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Lu"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Vigilancia tecnológica para las ciencias biológicas",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371181"
+      },
+      "5555": {
+        "grupo": "5555",
+        "profesor": {
+          "nombre": "Luis David Ginez Vázquez",
+          "horarios": [
+            {
+              "horario": "07:30 a 10:30",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Thelma Isabel Arenas Rodríguez",
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Ma"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Biología celular de bacterias",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "5556": {
+        "grupo": "5556",
+        "profesor": {
+          "nombre": "Itzel Guadalupe Ramírez Moreno",
+          "horarios": [
+            {
+              "horario": "14:30 a 17:30",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Margarita Jacaranda Rosendo Pineda",
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Lu"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Biología molecular en el diseño de nuevas vacunas",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Temas Selectos de Biología II": {
@@ -11302,6 +11598,34 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "5557": {
+        "grupo": "5557",
+        "profesor": {
+          "nombre": "Adán Israel Espinosa de la Cruz",
+          "horarios": [
+            {
+              "horario": "15:00 a 18:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Juan José Leal García",
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Lu"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Biologia de sistemas",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Temas Selectos de Biología III": {
@@ -11388,6 +11712,34 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "5548": {
+        "grupo": "5548",
+        "profesor": {
+          "nombre": "Jorge Alberto Escutia Sánchez",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ximena Delgado Villegas",
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Lu"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Propiedad intelectual y el aprovechamiento",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371182"
       }
     },
     "Temas Selectos de Biología IV": {
@@ -11437,6 +11789,65 @@
             "nombre": "Karla Fabiola Meza Sosa",
             "horario": null,
             "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Toxicología Molecular": {
+      "5551": {
+        "grupo": "5551",
+        "profesor": {
+          "nombre": "Cesar Valdovinos Flores",
+          "horarios": [
+            {
+              "horario": "15:00 a 18:00",
+              "dias": [
+                "Lu",
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Janikua Floritta Nelson Mora",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Virologia": {
+      "5554": {
+        "grupo": "5554",
+        "profesor": {
+          "nombre": "José Alberto Campillo Balderas",
+          "horarios": [
+            {
+              "horario": "14:30 a 17:30",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Alejandro Rodrigo Jácome Ramírez",
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Mi"
+            ],
             "salon": null
           }
         ],

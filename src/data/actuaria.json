@@ -3035,7 +3035,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Roxana Jiménez Jiménez",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -3171,7 +3171,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369698"
       },
       "4089": {
         "grupo": "4089",
@@ -3264,7 +3264,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369701"
       },
       "4092": {
         "grupo": "4092",
@@ -3544,6 +3544,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "4336": {
+        "grupo": "4336",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "14:00 a 15:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Será impartida por el Prof. Miguel Manterola",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     },
     "Programación": {
@@ -3762,7 +3793,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370652"
       },
       "9171": {
         "grupo": "9171",
@@ -5271,7 +5302,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370309"
       },
       "9030": {
         "grupo": "9030",
@@ -6596,7 +6627,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370340"
       },
       "9062": {
         "grupo": "9062",
@@ -7919,7 +7950,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Melani Aquino Cedillo",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -8556,7 +8587,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Guillermo Enrique Hernández Sánchez",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -8715,7 +8746,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Brenda Abril Néquiz Guillén",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -9591,7 +9622,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Aaron Mauricio Gómez Jiménez",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -10011,7 +10042,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },
@@ -11867,7 +11898,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Monserrat Zuñiga Loreto",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -12547,9 +12578,9 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "El horario será de 18 a 19 hrs",
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370769"
       }
     },

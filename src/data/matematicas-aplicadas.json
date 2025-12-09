@@ -2802,7 +2802,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Roxana Jiménez Jiménez",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -2938,7 +2938,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369698"
       },
       "4089": {
         "grupo": "4089",
@@ -3031,7 +3031,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369701"
       },
       "4092": {
         "grupo": "4092",
@@ -3311,6 +3311,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "4336": {
+        "grupo": "4336",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "14:00 a 15:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Será impartida por el Prof. Miguel Manterola",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     },
     "Programación": {
@@ -3529,7 +3560,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370652"
       },
       "9171": {
         "grupo": "9171",
@@ -4912,7 +4943,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370309"
       },
       "9030": {
         "grupo": "9030",
@@ -6633,7 +6664,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370340"
       },
       "9062": {
         "grupo": "9062",
@@ -7683,7 +7714,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Brenda Abril Néquiz Guillén",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -8313,7 +8344,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369819"
       },
       "4193": {
         "grupo": "4193",
@@ -8553,7 +8584,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Guillermo Enrique Hernández Sánchez",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -9175,6 +9206,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370806"
+      },
+      "6024": {
+        "grupo": "6024",
+        "profesor": {
+          "nombre": "Layla Michán Aguirre",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Sarahi Lilian Tello Torres",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371184"
       }
     },
     "Teoría de Juegos I": {
@@ -9386,7 +9448,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "José Antonio Vilchis Salazar",
             "horario": "15:00 a 16:00",
             "dias": [
               "Lu",
@@ -9395,7 +9457,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "José Antonio Vilchis Salazar",
             "horario": "15:00 a 16:00",
             "dias": [
               "Lu",
@@ -10531,9 +10593,9 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "El horario será de 18 a 19 hrs",
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370769"
       }
     },
@@ -10586,7 +10648,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Aaron Mauricio Gómez Jiménez",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -10893,7 +10955,7 @@
           "nombre": "Ursula Xiomara Iturrarán Viveros",
           "horarios": [
             {
-              "horario": "16:00 a 17:00",
+              "horario": "10:00 a 11:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -10905,7 +10967,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "16:00 a 18:00",
+            "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
               "Ju"

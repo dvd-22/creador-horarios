@@ -710,7 +710,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369996"
       },
       "8079": {
         "grupo": "8079",
@@ -2178,7 +2178,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Roxana Jiménez Jiménez",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -2314,7 +2314,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369698"
       },
       "4089": {
         "grupo": "4089",
@@ -2407,7 +2407,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369701"
       },
       "4092": {
         "grupo": "4092",
@@ -2687,6 +2687,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "4336": {
+        "grupo": "4336",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "14:00 a 15:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Será impartida por el Prof. Miguel Manterola",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     },
     "Laboratorio de Mecánica": {
@@ -2766,7 +2797,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Erick Emmanuel Pérez Franco",
             "horario": "07:00 a 10:00",
             "dias": [
               "Ma",
@@ -2826,7 +2857,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Maricruz Rosas Velázquez",
             "horario": "07:00 a 10:00",
             "dias": [
               "Mi",
@@ -2946,7 +2977,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Sara Mercedes Fraija Castellanos",
             "horario": "11:00 a 14:00",
             "dias": [
               "Ma",
@@ -3309,6 +3340,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Jesús Esteban Fosado Jiménez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3470,7 +3507,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Luis Joel Hernández Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -4521,6 +4565,27 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "8366": {
+        "grupo": "8366",
+        "profesor": {
+          "nombre": "Juan Adrián Reyes Cervantes",
+          "horarios": [
+            {
+              "horario": "12:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     },
@@ -5975,7 +6040,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370045"
       },
       "8128": {
         "grupo": "8128",
@@ -6113,6 +6178,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "Mónica Araceli Canales Lizaola",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Fabiola Sánchez Roa",
             "horario": null,
             "dias": [],
@@ -6214,7 +6285,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370054"
       },
       "8137": {
         "grupo": "8137",
@@ -6698,7 +6769,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Josué Cuauhtémoc Bucio Rivera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": null,
@@ -7395,7 +7473,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369819"
       },
       "4193": {
         "grupo": "4193",
@@ -9316,7 +9394,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Jesús Omar Franco Franco",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -9538,6 +9623,12 @@
           },
           {
             "nombre": "Juan López Patiño",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Angélica Carrillo Verduzco",
             "horario": null,
             "dias": [],
             "salon": null
@@ -12599,7 +12690,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369618"
       },
       "4034": {
         "grupo": "4034",
@@ -13091,7 +13182,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Luis Gerardo Flores Roldán",
+            "nombre": "Sharon Zamora Hernández",
             "horario": null,
             "dias": [],
             "salon": null
@@ -13598,7 +13689,7 @@
         "nota": "El arte de descubrir la verdad.",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369914"
       },
       "4288": {
         "grupo": "4288",
@@ -13695,7 +13786,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370235"
       }
     },
     "Taller": {
@@ -13770,7 +13861,7 @@
         "nota": "Heliofísica y Clima Espacial",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370238"
       },
       "8321": {
         "grupo": "8321",
@@ -13815,7 +13906,7 @@
         "nota": "La Física de la Astrofísica",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370241"
       }
     },
     "Temas Selectos de Ciencias de la Tierra I": {
@@ -14283,7 +14374,7 @@
         "nota": "Física y Arte",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370270"
       },
       "8353": {
         "grupo": "8353",
@@ -14295,7 +14386,7 @@
         "nota": "Algunos temas de historia de la física",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370271"
       }
     },
     "Temas Selectos de Mecánica de Fluidos I": {

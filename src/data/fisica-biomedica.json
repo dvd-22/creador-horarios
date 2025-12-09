@@ -1977,6 +1977,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Jesús Esteban Fosado Jiménez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2138,7 +2144,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Luis Joel Hernández Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -2596,6 +2609,27 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "8366": {
+        "grupo": "8366",
+        "profesor": {
+          "nombre": "Juan Adrián Reyes Cervantes",
+          "horarios": [
+            {
+              "horario": "12:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -2680,7 +2714,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370580"
       }
     },
     "Ecuaciones Diferenciales I": {
@@ -3468,7 +3502,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370045"
       },
       "8128": {
         "grupo": "8128",
@@ -3605,6 +3639,12 @@
           ]
         },
         "ayudantes": [
+          {
+            "nombre": "Mónica Araceli Canales Lizaola",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
           {
             "nombre": "Fabiola Sánchez Roa",
             "horario": null,
@@ -3968,7 +4008,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Josué Cuauhtémoc Bucio Rivera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": null,
@@ -4544,7 +4591,7 @@
       "3019": {
         "grupo": "3019",
         "profesor": {
-          "nombre": "Erick Cisneros Linares",
+          "nombre": "Ricardo Martín Hernández Flores",
           "horarios": [
             {
               "horario": "16:00 a 18:00",
@@ -4558,13 +4605,19 @@
         },
         "ayudantes": [
           {
+            "nombre": "Alejandro Villarreal López",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Ángel Eduardo Escárcega Mendicuti",
             "horario": null,
             "dias": [],
             "salon": null
           },
           {
-            "nombre": "Ricardo Martín Hernández Flores",
+            "nombre": "Erick Cisneros Linares",
             "horario": null,
             "dias": [],
             "salon": null
@@ -5026,7 +5079,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370611"
       }
     },
     "Fisiopatología de la Hiperexcitabilidad Neuronal": {
@@ -5599,7 +5652,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370604"
       }
     },
     "Filosofía de la Ciencia": {
