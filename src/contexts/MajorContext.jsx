@@ -72,29 +72,16 @@ export const MajorProvider = ({ children }) => {
     // Cache for loaded major data
     const [majorDataCache, setMajorDataCache] = useState({});
 
-    // Load filters from localStorage or use defaults
-    const loadFiltersFromStorage = () => {
-        try {
-            const savedFilters = localStorage.getItem('scheduleFilters');
-            if (savedFilters) {
-                return JSON.parse(savedFilters);
-            }
-        } catch (error) {
-            console.error('Failed to load filters from localStorage:', error);
-        }
-        return {
-            mode: 'range',
-            startTime: null,
-            endTime: null,
-            exactTimes: [],
-            days: ['L', 'M', 'I', 'J', 'V', 'S'],
-            blockedHours: [],
-            modalities: ['Presencial', 'Virtual']
-        };
-    };
-
-    // Filter state - persists across major changes and in localStorage
-    const [filters, setFilters] = useState(loadFiltersFromStorage());
+    // Filter state - persists across major changes
+    const [filters, setFilters] = useState({
+        mode: 'range',
+        startTime: null,
+        endTime: null,
+        exactTimes: [],
+        days: ['L', 'M', 'I', 'J', 'V', 'S'],
+        blockedHours: [],
+        modalities: ['Presencial', 'Virtual']
+    });
 
     // Load major data when selected major or study plan changes
     useEffect(() => {
@@ -175,27 +162,7 @@ export const MajorProvider = ({ children }) => {
     };
 
     const updateFilters = (newFilters) => {
-        // Check if filters are default (no filtering applied)
-        const isDefault =
-            !newFilters.startTime &&
-            !newFilters.endTime &&
-            newFilters.exactTimes.length === 0 &&
-            newFilters.days.length === 6 &&
-            newFilters.blockedHours.length === 0 &&
-            newFilters.modalities.length === 2;
-
         setFilters(newFilters);
-
-        // Only save to localStorage if filters are not default
-        try {
-            if (isDefault) {
-                localStorage.removeItem('scheduleFilters');
-            } else {
-                localStorage.setItem('scheduleFilters', JSON.stringify(newFilters));
-            }
-        } catch (error) {
-            console.error('Failed to save filters to localStorage:', error);
-        }
     };
 
     const value = {
