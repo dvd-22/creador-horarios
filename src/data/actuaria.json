@@ -302,7 +302,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Hararec Medina Gónzalez",
             "horario": "08:00 a 09:00",
             "dias": [
               "Lu",
@@ -575,7 +575,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369584"
       },
       "4017": {
         "grupo": "4017",
@@ -2968,6 +2968,37 @@
         "ayudantes": [
           {
             "nombre": "Ricardo Morales Jimenez",
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9349": {
+        "grupo": "9349",
+        "profesor": {
+          "nombre": "Jéssika Dilhery Lucas Flores",
+          "horarios": [
+            {
+              "horario": "20:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Karina Santiago Vargas",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
@@ -6472,7 +6503,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alan Jahir Gómez Sánchez",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -9075,7 +9106,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Federico Gabriel García Juárez",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -12930,7 +12961,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370420"
       }
     },
     "Legislación en Seguro Privado y Social": {
@@ -13443,6 +13474,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9347": {
+        "grupo": "9347",
+        "profesor": {
+          "nombre": "Orlando René Martínez Medrano",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Programación Lineal": {
@@ -13635,6 +13697,37 @@
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": null
+      },
+      "9342": {
+        "grupo": "9342",
+        "profesor": {
+          "nombre": "Erick Eduardo Talavera Perea",
+          "horarios": [
+            {
+              "horario": "07:00 a 08:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Aprendizaje automático y Business Intelligence en Seguro Automotriz",
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
       }
     },
     "Seminario de Aplicaciones Actuariales II": {
@@ -13727,7 +13820,7 @@
         "nota": "Seminario Avanzado de Derivados",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370775"
       },
       "9293": {
         "grupo": "9293",
@@ -13886,7 +13979,7 @@
         "nota": "Aprendizaje de Máquina",
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370779"
       }
     },
     "Seminario de Finanzas II": {
@@ -14220,7 +14313,7 @@
           "nombre": "Marco Antonio Ayala Torres",
           "horarios": [
             {
-              "horario": "08:00 a 09:00",
+              "horario": "13:00 a 14:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -14232,7 +14325,7 @@
         "ayudantes": [
           {
             "nombre": "Adriana Esperon Romero",
-            "horario": "08:00 a 09:00",
+            "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
               "Ju"
@@ -14240,7 +14333,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 13:00 a 14:00 h",
+        "nota": null,
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": null

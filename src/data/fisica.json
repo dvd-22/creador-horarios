@@ -389,7 +389,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369584"
       },
       "4017": {
         "grupo": "4017",
@@ -2899,7 +2899,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370004"
       },
       "8087": {
         "grupo": "8087",
@@ -6028,7 +6028,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Raymundo Manjarrez Chávez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -7221,7 +7228,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Luis Daniel Pérez Samano",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -7900,7 +7914,7 @@
       "8187": {
         "grupo": "8187",
         "profesor": {
-          "nombre": "Francisco Nettel Rueda",
+          "nombre": "Yonatan Betancur Ocampo",
           "horarios": [
             {
               "horario": "12:00 a 14:00",
@@ -8019,7 +8033,7 @@
       "8376": {
         "grupo": "8376",
         "profesor": {
-          "nombre": null,
+          "nombre": "Francisco Nettel Rueda",
           "horarios": [
             {
               "horario": "12:00 a 14:00",
@@ -8212,7 +8226,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370116"
       },
       "8371": {
         "grupo": "8371",
@@ -8602,6 +8616,40 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "8386": {
+        "grupo": "8386",
+        "profesor": {
+          "nombre": "José Alberto Martín Ruiz",
+          "horarios": [
+            {
+              "horario": "10:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Martín Alejandro Ibarra Meneses",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Juan Antonio Cañas Palomeque",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Física Computacional": {
@@ -8747,11 +8795,18 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Rubén Alfaro Quiza",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370141"
       }
     },
     "Laboratorio de Electrónica": {
@@ -9026,7 +9081,7 @@
       "8234": {
         "grupo": "8234",
         "profesor": {
-          "nombre": "Erick Leonardo Patiño Jaidar",
+          "nombre": "José Jesús Carlos Quintanar Sierra",
           "horarios": [
             {
               "horario": "10:00 a 12:00",
@@ -9040,7 +9095,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Daniel Kosoi La Mont",
+            "nombre": "Xareni Durán Ramírez",
             "horario": null,
             "dias": [],
             "salon": null
@@ -9180,7 +9235,7 @@
       "8375": {
         "grupo": "8375",
         "profesor": {
-          "nombre": null,
+          "nombre": "Erick Leonardo Patiño Jaidar",
           "horarios": [
             {
               "horario": "10:00 a 12:00",
@@ -10304,12 +10359,18 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Erica Guadalupe Terán Morales",
             "horario": "11:00 a 14:00",
             "dias": [
               "Lu",
               "Mi"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Jesús Aaron Flores Prudente",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -11007,7 +11068,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Isabel Vásquez Ortiz",
+            "nombre": "Julio César Marentes Mosqueda",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -11538,7 +11599,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Christopher Jonay Muñoz Flores",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -12982,7 +13043,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Gibrán Ramiro Reynoso Jiménez",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -13400,8 +13461,18 @@
     "Introducción a la Oceanografía Física": {
       "8385": {
         "grupo": "8385",
-        "profesor": null,
-        "ayudantes": [],
+        "profesor": {
+          "nombre": "David Uriel Hernández Becerril",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Klaudia Bañuelos Cedano",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": null,
@@ -13430,7 +13501,10 @@
       },
       "8384": {
         "grupo": "8384",
-        "profesor": null,
+        "profesor": {
+          "nombre": "Alfred Barry U'Ren Cortés",
+          "horarios": []
+        },
         "ayudantes": [],
         "nota": null,
         "salon": null,
@@ -13481,6 +13555,25 @@
           "horarios": []
         },
         "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "8389": {
+        "grupo": "8389",
+        "profesor": {
+          "nombre": "Marcela Regina Beltrán Sánchez",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Angel Armando Moreno Ortega",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": null,
@@ -14154,12 +14247,15 @@
       },
       "8379": {
         "grupo": "8379",
-        "profesor": null,
+        "profesor": {
+          "nombre": "Alejandro Cruz Osorio",
+          "horarios": []
+        },
         "ayudantes": [],
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371291"
       }
     },
     "Temas Selectos de Biofísica y Física Médica I": {
@@ -14292,7 +14388,10 @@
       },
       "8380": {
         "grupo": "8380",
-        "profesor": null,
+        "profesor": {
+          "nombre": "Israel Chávez Villalpando",
+          "horarios": []
+        },
         "ayudantes": [],
         "nota": null,
         "salon": null,
@@ -14423,6 +14522,18 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "8387": {
+        "grupo": "8387",
+        "profesor": {
+          "nombre": "José Antonio Vázquez Mata",
+          "horarios": []
+        },
+        "ayudantes": [],
+        "nota": "Introducción a Redes Neuronales",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Temas Selectos de Física Computacional III": {
@@ -14499,7 +14610,7 @@
         "nota": "Supersimetría",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370256"
       },
       "8339": {
         "grupo": "8339",
@@ -14525,18 +14636,35 @@
         "nota": "Teoría Cuántica de Campos I",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370258"
       }
     },
     "Temas Selectos de Física de Plasmas I": {
       "8381": {
         "grupo": "8381",
-        "profesor": null,
-        "ayudantes": [],
+        "profesor": {
+          "nombre": "José Julio Emilio Herrera Velázquez",
+          "horarios": [
+            {
+              "horario": "10:00 a 13:00",
+              "dias": [
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Kassandra Salguero Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371293"
       }
     },
     "Temas Selectos de Física de Radiacciones I": {
@@ -14615,7 +14743,10 @@
       },
       "8382": {
         "grupo": "8382",
-        "profesor": null,
+        "profesor": {
+          "nombre": "Juan Claudio Toledo Roy",
+          "horarios": []
+        },
         "ayudantes": [],
         "nota": null,
         "salon": null,

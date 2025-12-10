@@ -575,7 +575,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369584"
       },
       "4017": {
         "grupo": "4017",
@@ -1457,7 +1457,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Christopher Jonay Muñoz Flores",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -8829,7 +8829,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Federico Gabriel García Juárez",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -9523,7 +9523,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Melissa Ponce Sosa",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -9931,6 +9931,46 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "7185": {
+        "grupo": "7185",
+        "profesor": {
+          "nombre": "Carlos Zerón Martínez",
+          "horarios": [
+            {
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "José Antonio Vilchis Salazar",
+            "horario": "17:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Modelado y Programación": {
@@ -10070,7 +10110,7 @@
           "nombre": "José Salvador Zamora Muñoz",
           "horarios": [
             {
-              "horario": "09:00 a 10:00",
+              "horario": "11:00 a 12:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -10078,7 +10118,7 @@
               ]
             },
             {
-              "horario": "09:00 a 10:00",
+              "horario": "11:00 a 12:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -10090,7 +10130,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "09:00 a 10:00",
+            "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
               "Ju"
@@ -10099,7 +10139,7 @@
           },
           {
             "nombre": null,
-            "horario": "09:00 a 10:00",
+            "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
               "Ju"
@@ -10446,7 +10486,7 @@
           "nombre": "Adrián Girard Islas",
           "horarios": [
             {
-              "horario": "08:00 a 09:00",
+              "horario": "20:00 a 21:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -10458,7 +10498,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "08:00 a 09:00",
+            "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
               "Ju"
@@ -10479,7 +10519,7 @@
           "nombre": "Marco Antonio Ayala Torres",
           "horarios": [
             {
-              "horario": "08:00 a 09:00",
+              "horario": "13:00 a 14:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -10491,7 +10531,7 @@
         "ayudantes": [
           {
             "nombre": "Adriana Esperon Romero",
-            "horario": "08:00 a 09:00",
+            "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
               "Ju"
@@ -10499,7 +10539,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 13:00 a 14:00 h",
+        "nota": null,
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": null
@@ -10967,7 +11007,7 @@
           "nombre": "Ricardo Ramírez Aldana",
           "horarios": [
             {
-              "horario": "17:00 a 18:00",
+              "horario": "18:00 a 19:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -10979,7 +11019,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "17:00 a 18:00",
+            "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
               "Ju"
@@ -10987,7 +11027,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 18 a 19 hrs",
+        "nota": null,
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370769"

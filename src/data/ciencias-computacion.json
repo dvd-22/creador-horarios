@@ -1334,6 +1334,46 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "7185": {
+        "grupo": "7185",
+        "profesor": {
+          "nombre": "Carlos Zerón Martínez",
+          "horarios": [
+            {
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "José Antonio Vilchis Salazar",
+            "horario": "17:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Graficas y Juegos": {
@@ -1663,7 +1703,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Antonio Romero Téllez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -2236,7 +2283,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370471"
       }
     },
     "Modelado y Programación": {
@@ -3567,7 +3614,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Daniel Michel Tavera",
             "horario": "17:30 a 18:30",
             "dias": [
               "Lu",
@@ -4049,6 +4096,44 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369963"
+      },
+      "7187": {
+        "grupo": "7187",
+        "profesor": {
+          "nombre": "Manuel Cristóbal López Michelone",
+          "horarios": [
+            {
+              "horario": "18:30 a 20:00",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "18:30 a 19:30",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": null,
+            "horario": "12:00 a 14:00",
+            "dias": [
+              "Mi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
       }
     },
     "Sistemas Operativos": {
@@ -4309,7 +4394,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },
@@ -4432,45 +4517,6 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
-      },
-      "7117": {
-        "grupo": "7117",
-        "profesor": {
-          "nombre": "Carlos Zerón Martínez",
-          "horarios": [
-            {
-              "horario": "11:00 a 12:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "11:00 a 12:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          },
-          {
-            "nombre": null,
-            "horario": "15:00 a 17:00",
-            "dias": [
-              "Lu"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
         "presentacion": null
       },
       "7119": {
@@ -5209,7 +5255,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Isabel Vásquez Ortiz",
+            "nombre": "Julio César Marentes Mosqueda",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -5898,7 +5944,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Daniel Michel Tavera",
+            "nombre": "Fernando Michel Tavera",
             "horario": "17:30 a 18:30",
             "dias": [
               "Lu",
@@ -5907,7 +5953,7 @@
             "salon": null
           },
           {
-            "nombre": "Fernando Michel Tavera",
+            "nombre": "Daniel Michel Tavera",
             "horario": null,
             "dias": [],
             "salon": null
@@ -5985,7 +6031,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370547"
       }
     },
     "Diseño y Programación de Videojuegos": {
@@ -7704,7 +7750,7 @@
           "nombre": "Raúl Rueda Díaz del Campo",
           "horarios": [
             {
-              "horario": "11:00 a 12:00",
+              "horario": "09:00 a 10:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -7716,7 +7762,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "11:00 a 12:00",
+            "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
               "Ju"
@@ -7724,7 +7770,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 9:00 a 10:00",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -7870,7 +7916,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Federico Gabriel García Juárez",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",

@@ -69,7 +69,7 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Ma"
+                "Lu"
               ]
             }
           ]
@@ -79,7 +79,7 @@
             "nombre": "María del Pilar Segarra Alberú",
             "horario": "11:00 a 14:00",
             "dias": [
-              "Vi"
+              "Ju"
             ],
             "salon": null
           },
@@ -2046,7 +2046,7 @@
       "5070": {
         "grupo": "5070",
         "profesor": {
-          "nombre": null,
+          "nombre": "Elia Ramírez Arriaga",
           "horarios": [
             {
               "horario": "07:30 a 10:30",
@@ -5872,6 +5872,49 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5566": {
+        "grupo": "5566",
+        "profesor": {
+          "nombre": "Ingeborg Dorothea Becker Fauser",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Estefania Grostieta Rojas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Daniel Sokani Sánchez Montes",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Jaime Zamora Chimal",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Abraham Uriel Morales Primo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Héctor Manuel Zazueta Islas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Bases moleculares de la infección de la célula hospedero por el parásito Leishmania",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -7171,6 +7214,43 @@
           }
         ],
         "nota": "Sistemática y biogeografía de la flora de ecosistemas templados de Mesoamérica",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5570": {
+        "grupo": "5570",
+        "profesor": {
+          "nombre": "Luis Servín González",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Gabriela González Cerón",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rosa Laura Camarena Mejía",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Sebastián Poggio Ghilarducci",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Clara Inés Espitia Pinzón",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Biología molecular bacteriana.",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -11125,6 +11205,28 @@
         "nota": "Biologia de las células troncales",
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371189"
+      },
+      "5563": {
+        "grupo": "5563",
+        "profesor": {
+          "nombre": "María Fernanda Figueroa Díaz Escobar",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Marcia Leticia Durand Smith",
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Lu",
+              "Mi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Ecología Política",
+        "salon": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -11374,6 +11476,31 @@
         "nota": "Nanobiología Celular",
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "5564": {
+        "grupo": "5564",
+        "profesor": {
+          "nombre": "Eduardo Cota Corona",
+          "horarios": [
+            {
+              "horario": "19:00 a 21:00",
+              "dias": [
+                "Ma"
+              ]
+            },
+            {
+              "horario": "19:00 a 22:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": "Habilidades y aptitudes del Biólogo para el mundo profesional",
+        "salon": null,
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },
@@ -11680,6 +11807,34 @@
         "nota": "Biologia de sistemas",
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "5565": {
+        "grupo": "5565",
+        "profesor": {
+          "nombre": "Eduardo Cota Corona",
+          "horarios": [
+            {
+              "horario": "18:00 a 21:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "18:00 a 21:00",
+            "dias": [
+              "Mi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Elaboración, venta y administración de proyectos",
+        "salon": null,
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },

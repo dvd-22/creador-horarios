@@ -575,7 +575,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369584"
       },
       "4017": {
         "grupo": "4017",
@@ -1559,7 +1559,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Christopher Jonay Muñoz Flores",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -7013,7 +7013,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Raymundo Manjarrez Chávez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -8051,6 +8058,46 @@
           },
           {
             "nombre": "Raúl Eduardo Martínez Dámaso",
+            "horario": "17:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "7186": {
+        "grupo": "7186",
+        "profesor": {
+          "nombre": "Carlos Zerón Martínez",
+          "horarios": [
+            {
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "José Antonio Vilchis Salazar",
             "horario": "17:00 a 19:00",
             "dias": [
               "Ma",
@@ -9525,7 +9572,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },
@@ -10272,11 +10319,18 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Rubén Alfaro Quiza",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370141"
       }
     },
     "Física Estadística": {
@@ -11074,7 +11128,7 @@
       "8234": {
         "grupo": "8234",
         "profesor": {
-          "nombre": "Erick Leonardo Patiño Jaidar",
+          "nombre": "José Jesús Carlos Quintanar Sierra",
           "horarios": [
             {
               "horario": "10:00 a 12:00",
@@ -11088,7 +11142,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Daniel Kosoi La Mont",
+            "nombre": "Xareni Durán Ramírez",
             "horario": null,
             "dias": [],
             "salon": null
@@ -11228,7 +11282,7 @@
       "8375": {
         "grupo": "8375",
         "profesor": {
-          "nombre": null,
+          "nombre": "Erick Leonardo Patiño Jaidar",
           "horarios": [
             {
               "horario": "10:00 a 12:00",
@@ -11451,7 +11505,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Federico Gabriel García Juárez",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -11783,7 +11837,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370116"
       },
       "8371": {
         "grupo": "8371",
@@ -12490,7 +12544,7 @@
           "nombre": "Adrián Girard Islas",
           "horarios": [
             {
-              "horario": "08:00 a 09:00",
+              "horario": "20:00 a 21:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -12502,7 +12556,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "08:00 a 09:00",
+            "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
               "Ju"
@@ -12510,7 +12564,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "El horario será de 20:00 a 21:00 h",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -14769,6 +14823,40 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "8386": {
+        "grupo": "8386",
+        "profesor": {
+          "nombre": "José Alberto Martín Ruiz",
+          "horarios": [
+            {
+              "horario": "10:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Martín Alejandro Ibarra Meneses",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Juan Antonio Cañas Palomeque",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Estadística I": {
@@ -16377,7 +16465,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370098"
       },
       "8182": {
         "grupo": "8182",
@@ -16515,7 +16603,7 @@
       "8187": {
         "grupo": "8187",
         "profesor": {
-          "nombre": "Francisco Nettel Rueda",
+          "nombre": "Yonatan Betancur Ocampo",
           "horarios": [
             {
               "horario": "12:00 a 14:00",
@@ -16634,7 +16722,7 @@
       "8376": {
         "grupo": "8376",
         "profesor": {
-          "nombre": null,
+          "nombre": "Francisco Nettel Rueda",
           "horarios": [
             {
               "horario": "12:00 a 14:00",
@@ -16764,7 +16852,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Luis Daniel Pérez Samano",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -17011,7 +17106,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Carmina García Pérez",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
