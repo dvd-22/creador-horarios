@@ -840,7 +840,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Arturo Molina Valle",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -852,7 +852,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369600"
       },
       "4025": {
         "grupo": "4025",
@@ -1103,6 +1103,33 @@
         "presentacion": null
       }
     },
+    "Inglés I": {
+      "9315": {
+        "grupo": "9315",
+        "profesor": {
+          "nombre": "María Teresa Pozos Delgado",
+          "horarios": [
+            {
+              "horario": "09:00 a 11:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Teoría del Seguro": {
       "9032": {
         "grupo": "9032",
@@ -1318,7 +1345,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Diana Paola Méndez Hernández",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -1473,7 +1500,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Mara Jazmín Cruz Barrena",
+            "nombre": null,
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -1893,7 +1920,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Natalie Elizabeth Sánchez López",
             "horario": "10:00 a 11:00",
             "dias": [
               "Lu",
@@ -1906,7 +1933,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369648"
       },
       "4061": {
         "grupo": "4061",
@@ -2144,7 +2171,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Luis Eduardo Ramírez Montoya",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -2422,7 +2449,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369676"
       },
       "4075": {
         "grupo": "4075",
@@ -3419,7 +3446,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369706"
       },
       "4097": {
         "grupo": "4097",
@@ -3577,6 +3604,158 @@
         "presentacion": null
       }
     },
+    "Inglés II": {
+      "9316": {
+        "grupo": "9316",
+        "profesor": {
+          "nombre": "Manuel Enrique Camargo Coronel",
+          "horarios": [
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Lu"
+              ]
+            },
+            {
+              "horario": "07:00 a 09:00",
+              "dias": [
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
+      },
+      "9317": {
+        "grupo": "9317",
+        "profesor": {
+          "nombre": "María Teresa Pozos Delgado",
+          "horarios": [
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Mi"
+              ]
+            },
+            {
+              "horario": "07:00 a 09:00",
+              "dias": [
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
+      },
+      "9318": {
+        "grupo": "9318",
+        "profesor": {
+          "nombre": "Lidia Fabiola Quevedo Rojas",
+          "horarios": [
+            {
+              "horario": "09:00 a 11:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9319": {
+        "grupo": "9319",
+        "profesor": {
+          "nombre": "Lidia Fabiola Quevedo Rojas",
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Ma"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9320": {
+        "grupo": "9320",
+        "profesor": {
+          "nombre": "Lidia Fabiola Quevedo Rojas",
+          "horarios": [
+            {
+              "horario": "15:00 a 17:00",
+              "dias": [
+                "Vi"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9321": {
+        "grupo": "9321",
+        "profesor": {
+          "nombre": "Lidia Fabiola Quevedo Rojas",
+          "horarios": [
+            {
+              "horario": "07:00 a 09:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Programación": {
       "9157": {
         "grupo": "9157",
@@ -3626,7 +3805,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Daniel Guzmán Grijalva",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -4219,7 +4398,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ángel Eduardo Escárcega Mendicuti",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
@@ -4416,7 +4595,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },
@@ -4767,6 +4946,58 @@
         "presentacion": null
       }
     },
+    "Inglés III": {
+      "9322": {
+        "grupo": "9322",
+        "profesor": {
+          "nombre": "Daniel Sil Hernández",
+          "horarios": [
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Mi"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9323": {
+        "grupo": "9323",
+        "profesor": {
+          "nombre": "Jorge Mauricio Medina Casimiro",
+          "horarios": [
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Ju"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Manejo de Datos": {
       "9185": {
         "grupo": "9185",
@@ -4980,6 +5211,37 @@
           {
             "nombre": null,
             "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9339": {
+        "grupo": "9339",
+        "profesor": {
+          "nombre": "Diana Romo Carrillo",
+          "horarios": [
+            {
+              "horario": "07:00 a 08:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
               "Ju"
@@ -5354,6 +5616,37 @@
           {
             "nombre": null,
             "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9344": {
+        "grupo": "9344",
+        "profesor": {
+          "nombre": "Fernando Rojas Linares",
+          "horarios": [
+            {
+              "horario": "17:00 a 18:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
               "Ju"
@@ -6535,6 +6828,133 @@
         "presentacion": null
       }
     },
+    "Inglés IV": {
+      "9324": {
+        "grupo": "9324",
+        "profesor": {
+          "nombre": "Silvia Loera Rivera",
+          "horarios": [
+            {
+              "horario": "15:00 a 17:00",
+              "dias": [
+                "Mi"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9325": {
+        "grupo": "9325",
+        "profesor": {
+          "nombre": "Diana Aguilar Vázquez",
+          "horarios": [
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Mi"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9326": {
+        "grupo": "9326",
+        "profesor": {
+          "nombre": "Silvia Loera Rivera",
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Lu"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9327": {
+        "grupo": "9327",
+        "profesor": {
+          "nombre": "María Azucena Rivera Vidal",
+          "horarios": [
+            {
+              "horario": "07:00 a 09:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9328": {
+        "grupo": "9328",
+        "profesor": {
+          "nombre": "María Azucena Rivera Vidal",
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Mi"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Investigación de Operaciones": {
       "9056": {
         "grupo": "9056",
@@ -7087,6 +7507,43 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9343": {
+        "grupo": "9343",
+        "profesor": {
+          "nombre": "Hugo Merlín Ramírez",
+          "horarios": [
+            {
+              "horario": "07:00 a 08:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "19:00 a 20:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Probabilidad II": {
@@ -7200,7 +7657,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Emmanuel David Silva Amaya",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -7762,7 +8219,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Mara Jazmín Cruz Barrena",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -7793,7 +8250,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Salvador Zaragoza Juárez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -7902,37 +8359,6 @@
         "modalidad": "Presencial",
         "presentacion": null
       },
-      "9191": {
-        "grupo": "9191",
-        "profesor": {
-          "nombre": "Nancy Alejandra Hernández Calderón",
-          "horarios": [
-            {
-              "horario": "08:00 a 09:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "08:00 a 09:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": "Asignación sujeta a entrevista.",
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
       "9193": {
         "grupo": "9193",
         "profesor": {
@@ -7983,6 +8409,37 @@
           {
             "nombre": null,
             "horario": "17:00 a 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9311": {
+        "grupo": "9311",
+        "profesor": {
+          "nombre": "Fructuoso Matias García",
+          "horarios": [
+            {
+              "horario": "08:00 a 09:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Nelson Arturo Izazaga Jijón",
+            "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
               "Ju"
@@ -8494,7 +8951,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Sebastian Rosas Ayala",
+            "nombre": "Jorge Emiliano Alvarez Gil Leyva",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -8601,10 +9058,10 @@
         "modalidad": "Presencial",
         "presentacion": null
       },
-      "9090": {
-        "grupo": "9090",
+      "9314": {
+        "grupo": "9314",
         "profesor": {
-          "nombre": "Orlando René Martínez Medrano",
+          "nombre": "Alejandro Hernández Wences",
           "horarios": [
             {
               "horario": "18:00 a 19:00",
@@ -9098,6 +9555,108 @@
             "salon": null
           }
         ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Inglés V": {
+      "9329": {
+        "grupo": "9329",
+        "profesor": {
+          "nombre": "Olga Nelly Sánchez Cárdenas",
+          "horarios": [
+            {
+              "horario": "07:00 a 09:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9330": {
+        "grupo": "9330",
+        "profesor": {
+          "nombre": "Olga Nelly Sánchez Cárdenas",
+          "horarios": [
+            {
+              "horario": "09:00 a 11:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9331": {
+        "grupo": "9331",
+        "profesor": {
+          "nombre": "Olga Nelly Sánchez Cárdenas",
+          "horarios": [
+            {
+              "horario": "11:00 a 13:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
+      },
+      "9332": {
+        "grupo": "9332",
+        "profesor": {
+          "nombre": "Emma Alejandra Razo Arroyo",
+          "horarios": [
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Vi"
+              ]
+            },
+            {
+              "horario": "12:00 a 14:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -9951,6 +10510,83 @@
         "presentacion": null
       }
     },
+    "Inglés VI": {
+      "9333": {
+        "grupo": "9333",
+        "profesor": {
+          "nombre": "María Azucena Rivera Vidal",
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Ju"
+              ]
+            },
+            {
+              "horario": "15:00 a 17:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9334": {
+        "grupo": "9334",
+        "profesor": {
+          "nombre": "Emma Alejandra Razo Arroyo",
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Vi"
+              ]
+            },
+            {
+              "horario": "15:00 a 17:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9337": {
+        "grupo": "9337",
+        "profesor": {
+          "nombre": "María Azucena Rivera Vidal",
+          "horarios": [
+            {
+              "horario": "09:00 a 11:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Modelos de Supervivencia y de Series de Tiempo": {
       "9266": {
         "grupo": "9266",
@@ -10128,6 +10764,37 @@
           {
             "nombre": null,
             "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9345": {
+        "grupo": "9345",
+        "profesor": {
+          "nombre": "Ernesto Rosas García",
+          "horarios": [
+            {
+              "horario": "19:00 a 20:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
               "Ju"
@@ -10548,6 +11215,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9346": {
+        "grupo": "9346",
+        "profesor": {
+          "nombre": "Ernesto Rosas García",
+          "horarios": [
+            {
+              "horario": "20:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Teoría del Riesgo": {
@@ -10630,7 +11328,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Daira Guadalupe García Maldonado",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -11136,7 +11834,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Gustavo Sandoval Joya",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -11386,7 +12084,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Mara Jazmín Cruz Barrena",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -12551,6 +13249,39 @@
         "presentacion": null
       }
     },
+    "Mercadotecnia de Seguros": {
+      "9338": {
+        "grupo": "9338",
+        "profesor": {
+          "nombre": "Luis Felipe Javier Barros y Villa",
+          "horarios": [
+            {
+              "horario": "08:00 a 09:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Adriana Cruz Mejía",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Modelos Lineales": {
       "9286": {
         "grupo": "9286",
@@ -13028,6 +13759,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9341": {
+        "grupo": "9341",
+        "profesor": {
+          "nombre": "Adriana Cruz Mejía",
+          "horarios": [
+            {
+              "horario": "09:00 a 10:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Seminario de Estadística I": {
@@ -13124,6 +13886,39 @@
         "nota": "Aprendizaje de Máquina",
         "salon": null,
         "modalidad": "Virtual",
+        "presentacion": null
+      }
+    },
+    "Seminario de Finanzas II": {
+      "9340": {
+        "grupo": "9340",
+        "profesor": {
+          "nombre": "Donovan Eduardo Calva Caggiano",
+          "horarios": [
+            {
+              "horario": "11:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Finanzas Aplicadas",
+        "salon": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -13447,7 +14242,7 @@
         ],
         "nota": "El horario será de 13:00 a 14:00 h",
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       },
       "4312": {
@@ -13510,6 +14305,37 @@
           }
         ],
         "nota": "Problemas básicos de redes",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9335": {
+        "grupo": "9335",
+        "profesor": {
+          "nombre": "Gabriela García Verde",
+          "horarios": [
+            {
+              "horario": "07:00 a 08:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Algoritmos en Redes y sus Aplicaciones",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -13659,7 +14485,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Elie Macario Peña Ruiz",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",

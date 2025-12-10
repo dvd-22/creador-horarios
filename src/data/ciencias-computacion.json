@@ -359,6 +359,33 @@
         "presentacion": null
       }
     },
+    "Inglés I": {
+      "7160": {
+        "grupo": "7160",
+        "profesor": {
+          "nombre": "Emma Alejandra Razo Arroyo",
+          "horarios": [
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Ma"
+              ]
+            },
+            {
+              "horario": "12:00 a 14:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Introducción a Ciencias de la Computación": {
       "7027": {
         "grupo": "7027",
@@ -466,6 +493,37 @@
           {
             "nombre": null,
             "horario": "17:30 a 19:30",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "7182": {
+        "grupo": "7182",
+        "profesor": {
+          "nombre": "Salvador López Mendoza",
+          "horarios": [
+            {
+              "horario": "08:00 a 09:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
               "Ju"
@@ -667,7 +725,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Diana Paola Méndez Hernández",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -822,7 +880,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Mara Jazmín Cruz Barrena",
+            "nombre": null,
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -1466,6 +1524,108 @@
         "presentacion": null
       }
     },
+    "Inglés II": {
+      "7161": {
+        "grupo": "7161",
+        "profesor": {
+          "nombre": "Silvia Loera Rivera",
+          "horarios": [
+            {
+              "horario": "15:00 a 17:00",
+              "dias": [
+                "Ju"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "7162": {
+        "grupo": "7162",
+        "profesor": {
+          "nombre": "Lidia Fabiola Quevedo Rojas",
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Lu"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "7163": {
+        "grupo": "7163",
+        "profesor": {
+          "nombre": "Lidia Fabiola Quevedo Rojas",
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Ju"
+              ]
+            },
+            {
+              "horario": "12:00 a 14:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "7164": {
+        "grupo": "7164",
+        "profesor": {
+          "nombre": "Silvia Loera Rivera",
+          "horarios": [
+            {
+              "horario": "15:00 a 17:00",
+              "dias": [
+                "Ma"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Matemáticas para las Ciencias Aplicadas II": {
       "7045": {
         "grupo": "7045",
@@ -1800,7 +1960,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ángel Eduardo Escárcega Mendicuti",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
@@ -1995,6 +2155,33 @@
             "salon": null
           }
         ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
+      }
+    },
+    "Inglés III": {
+      "7165": {
+        "grupo": "7165",
+        "profesor": {
+          "nombre": "María Azucena Rivera Vidal",
+          "horarios": [
+            {
+              "horario": "15:00 a 17:00",
+              "dias": [
+                "Lu"
+              ]
+            },
+            {
+              "horario": "17:00 a 19:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -2504,6 +2691,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9344": {
+        "grupo": "9344",
+        "profesor": {
+          "nombre": "Fernando Rojas Linares",
+          "horarios": [
+            {
+              "horario": "17:00 a 18:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     }
   },
@@ -2659,6 +2877,58 @@
             "salon": null
           }
         ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Inglés IV": {
+      "7166": {
+        "grupo": "7166",
+        "profesor": {
+          "nombre": "Gabriel Iturralde Villalobos",
+          "horarios": [
+            {
+              "horario": "07:00 a 09:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "7167": {
+        "grupo": "7167",
+        "profesor": {
+          "nombre": "María Teresa Pozos Delgado",
+          "horarios": [
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Ma"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -3101,10 +3371,10 @@
         "modalidad": "Presencial",
         "presentacion": null
       },
-      "7097": {
-        "grupo": "7097",
+      "7099": {
+        "grupo": "7099",
         "profesor": {
-          "nombre": "Salvador López Mendoza",
+          "nombre": "Donají Xóchitl Cruz López",
           "horarios": [
             {
               "horario": "12:00 a 13:30",
@@ -3139,10 +3409,10 @@
         "modalidad": "Presencial",
         "presentacion": null
       },
-      "7099": {
-        "grupo": "7099",
+      "7158": {
+        "grupo": "7158",
         "profesor": {
-          "nombre": "Donají Xóchitl Cruz López",
+          "nombre": "María Ximena Lezama Hernández",
           "horarios": [
             {
               "horario": "12:00 a 13:30",
@@ -3279,7 +3549,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370519"
       },
       "7106": {
         "grupo": "7106",
@@ -3365,7 +3635,7 @@
           "nombre": "Javier León Cotonieto",
           "horarios": [
             {
-              "horario": "18:30 a 20:00",
+              "horario": "17:00 a 18:30",
               "dias": [
                 "Lu",
                 "Mi"
@@ -3392,7 +3662,34 @@
             "salon": null
           }
         ],
-        "nota": "El horario será lu mi de 17:00 a 18:30 h",
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Inglés V": {
+      "7168": {
+        "grupo": "7168",
+        "profesor": {
+          "nombre": "Gabriel Iturralde Villalobos",
+          "horarios": [
+            {
+              "horario": "11:00 a 13:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -4034,7 +4331,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Juan Angeles Hernández",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -4213,6 +4510,44 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "7179": {
+        "grupo": "7179",
+        "profesor": {
+          "nombre": "Diego Alejandro Velázquez Cervantes",
+          "horarios": [
+            {
+              "horario": "19:30 a 21:00",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "18:30 a 19:30",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": null,
+            "horario": "18:00 a 20:00",
+            "dias": [
+              "Vi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
       }
     },
     "Criptografía y Seguridad": {
@@ -4310,7 +4645,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Juan Angeles Hernández",
             "horario": "15:00 a 16:00",
             "dias": [
               "Lu",
@@ -4319,7 +4654,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Erick Bernal Márquez",
             "horario": "16:00 a 18:00",
             "dias": [
               "Vi"
@@ -4330,6 +4665,58 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
+        "presentacion": null
+      }
+    },
+    "Inglés VI": {
+      "7169": {
+        "grupo": "7169",
+        "profesor": {
+          "nombre": "Diana Aguilar Vázquez",
+          "horarios": [
+            {
+              "horario": "15:00 a 17:00",
+              "dias": [
+                "Ju"
+              ]
+            },
+            {
+              "horario": "15:00 a 17:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "7170": {
+        "grupo": "7170",
+        "profesor": {
+          "nombre": "Christian Diego Iván López Barrera",
+          "horarios": [
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Mi"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     }
@@ -4353,7 +4740,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Erick Iram García Velasco",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -4603,7 +4990,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Gustavo Sandoval Joya",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -5095,6 +5482,39 @@
         "presentacion": null
       }
     },
+    "Almacenes y Minería de Datos": {
+      "7171": {
+        "grupo": "7171",
+        "profesor": {
+          "nombre": "Jessica Santizo Galicia",
+          "horarios": [
+            {
+              "horario": "08:00 a 09:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Análisis de Algoritmos II": {
       "7012": {
         "grupo": "7012",
@@ -5420,7 +5840,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370541"
       }
     },
     "Computación Cuántica II": {
@@ -5588,6 +6008,36 @@
           {
             "nombre": null,
             "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "7175": {
+        "grupo": "7175",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "15:30 a 17:00",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
               "Ju"
@@ -6203,6 +6653,36 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "7181": {
+        "grupo": "7181",
+        "profesor": {
+          "nombre": "Diego Jesús Favela Nava",
+          "horarios": [
+            {
+              "horario": "17:00 a 18:30",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Investigación de Operaciones": {
@@ -6678,6 +7158,39 @@
         "presentacion": null
       }
     },
+    "Métricas de Software": {
+      "7173": {
+        "grupo": "7173",
+        "profesor": {
+          "nombre": "Francisco Valdés Souto",
+          "horarios": [
+            {
+              "horario": "09:00 a 10:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Probabilidad II": {
       "9042": {
         "grupo": "9042",
@@ -6789,7 +7302,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Emmanuel David Silva Amaya",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -7121,7 +7634,7 @@
           "nombre": "Ulises Rodríguez Domínguez",
           "horarios": [
             {
-              "horario": "08:00 a 09:00",
+              "horario": "09:00 a 10:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -7133,15 +7646,21 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "08:00 a 09:00",
+            "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Marco Antonio Herrera Solar",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
-        "nota": "El horario cambiará, será de 9:00 a 10:00",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -7227,7 +7746,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Sebastian Rosas Ayala",
+            "nombre": "Jorge Emiliano Alvarez Gil Leyva",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -7334,10 +7853,10 @@
         "modalidad": "Presencial",
         "presentacion": null
       },
-      "9089": {
-        "grupo": "9089",
+      "9313": {
+        "grupo": "9313",
         "profesor": {
-          "nombre": "Orlando René Martínez Medrano",
+          "nombre": "Alejandro Hernández Wences",
           "horarios": [
             {
               "horario": "18:00 a 19:00",
@@ -7410,7 +7929,7 @@
           "nombre": "Ana Libia Eslava Cervantes",
           "horarios": [
             {
-              "horario": "18:30 a 20:00",
+              "horario": "18:00 a 19:30",
               "dias": [
                 "Lu",
                 "Mi"
@@ -7421,15 +7940,23 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "20:00 a 21:00",
+            "horario": "19:30 a 20:30",
             "dias": [
               "Ma",
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": null,
+            "horario": "17:00 a 19:00",
+            "dias": [
+              "Ma"
+            ],
+            "salon": null
           }
         ],
-        "nota": "El horario será Profesor lu mi 18 a 19:30 Ayudante ma ju 19:30 a 20:30 Ayudante  Lab. ma 17 a 19",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -7564,6 +8091,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370556"
+      },
+      "7178": {
+        "grupo": "7178",
+        "profesor": {
+          "nombre": "Ulises Rodríguez Domínguez",
+          "horarios": [
+            {
+              "horario": "11:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Redes Neuronales": {
@@ -7589,6 +8147,12 @@
               "Lu",
               "Mi"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Dereck Ariel Miguel Medrano",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -7637,7 +8201,7 @@
           "nombre": "Manuel Soto Romero",
           "horarios": [
             {
-              "horario": "08:00 a 09:00",
+              "horario": "11:00 a 12:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -7649,52 +8213,27 @@
         "ayudantes": [
           {
             "nombre": "Diego Méndez Medina",
-            "horario": "08:00 a 09:00",
+            "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Mauro Emiliano Chávez Zamora",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
-        "nota": "El horario será de 11:00 a 12:00 h",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369983"
       }
     },
     "Seminario de Ciencias de la Computación A": {
-      "7145": {
-        "grupo": "7145",
-        "profesor": {
-          "nombre": "Karen Lucero Roldán Serrato",
-          "horarios": [
-            {
-              "horario": "07:00 a 08:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "07:00 a 08:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": "Análisis de Vulnerabilidades",
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
       "7146": {
         "grupo": "7146",
         "profesor": {
@@ -7860,6 +8399,36 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "7176": {
+        "grupo": "7176",
+        "profesor": {
+          "nombre": "Jaime Ayala Pérez",
+          "horarios": [
+            {
+              "horario": "17:00 a 18:30",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Internet de las cosas",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Seminario de Ciencias de la Computación B": {
@@ -7869,7 +8438,7 @@
           "nombre": "Germán Ernesto Zapata Ledesma",
           "horarios": [
             {
-              "horario": "07:00 a 08:00",
+              "horario": "09:00 a 10:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -7881,7 +8450,7 @@
         "ayudantes": [
           {
             "nombre": "Miguel Mireles Padilla",
-            "horario": "07:00 a 08:00",
+            "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
               "Ju"
@@ -7889,7 +8458,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 9 a 10 h",
+        "nota": "Administración de proyectos",
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370565"
@@ -8020,6 +8589,37 @@
         "nota": "Emprendimiento de base Científica-Tecnológica",
         "salon": null,
         "modalidad": "Virtual",
+        "presentacion": null
+      },
+      "7184": {
+        "grupo": "7184",
+        "profesor": {
+          "nombre": "Jesús Iván Saavedra Martínez",
+          "horarios": [
+            {
+              "horario": "07:00 a 08:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Desarrollo web backend",
+        "salon": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -8598,6 +9198,70 @@
           }
         ],
         "nota": "Problemas básicos de redes",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9335": {
+        "grupo": "9335",
+        "profesor": {
+          "nombre": "Gabriela García Verde",
+          "horarios": [
+            {
+              "horario": "07:00 a 08:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Algoritmos en Redes y sus Aplicaciones",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Visión Por Computadora": {
+      "7177": {
+        "grupo": "7177",
+        "profesor": {
+          "nombre": "Sergio Rodolfo Cruz Gómez",
+          "horarios": [
+            {
+              "horario": "13:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null

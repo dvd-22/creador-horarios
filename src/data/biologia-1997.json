@@ -518,7 +518,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Daniela Abigail Guzmán Ramírez",
+            "nombre": "Mariana del Olmo Ruiz",
             "horario": "07:30 a 10:30",
             "dias": [
               "Vi"
@@ -907,7 +907,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369400"
       },
       "5030": {
         "grupo": "5030",
@@ -970,7 +970,7 @@
       "5032": {
         "grupo": "5032",
         "profesor": {
-          "nombre": "Rocío Salceda Sacanelles",
+          "nombre": null,
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -2883,12 +2883,6 @@
             "salon": null
           },
           {
-            "nombre": "Berenice García Ponce de León",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
             "nombre": "María Elena Álvarez-Buylla Roces",
             "horario": null,
             "dias": [],
@@ -3375,6 +3369,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Fereshteh Safavi",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": "Plantas medicinales útiles en el control de la diabetes tipo 2",
@@ -3770,7 +3770,7 @@
       "5087": {
         "grupo": "5087",
         "profesor": {
-          "nombre": null,
+          "nombre": "María del Carmen Uribe Aranzábal",
           "horarios": [
             {
               "horario": "14:30 a 17:30",
@@ -5841,6 +5841,37 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5560": {
+        "grupo": "5560",
+        "profesor": {
+          "nombre": "Luis Medrano González",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "María de Jesús Guadalupe Vázquez Cuevas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Emiliano Rodrigo Arroyo Sánchez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Arturo Misael Reyes Colín",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Estudios multidisciplinarios de mastozoología marina",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -6132,7 +6163,7 @@
           "nombre": "Héctor Gilberto Vázquez López",
           "horarios": [
             {
-              "horario": "18:00 a 22:00",
+              "horario": "18:00 a 21:00",
               "dias": [
                 "Lu"
               ]
@@ -6141,10 +6172,9 @@
         },
         "ayudantes": [
           {
-            "nombre": "Tomas Alfredo Salazar Trejo",
-            "horario": "18:00 a 22:00",
+            "nombre": "Roberto Emiliano Trejo Salazar",
+            "horario": "14:30 a 17:30",
             "dias": [
-              "Vi",
               "Mi"
             ],
             "salon": null
@@ -8402,12 +8432,6 @@
             "salon": null
           },
           {
-            "nombre": "Berenice García Ponce de León",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
             "nombre": "María Elena Álvarez-Buylla Roces",
             "horario": null,
             "dias": [],
@@ -9229,6 +9253,37 @@
           }
         ],
         "nota": "Biología sintética.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5562": {
+        "grupo": "5562",
+        "profesor": {
+          "nombre": "Bertha Josefina Espinoza Gutiérrez",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Gohar Gevorgyan",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Nora Alma Fierro González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ignacio Martínez Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Respuesta inmune: de lo básico a lo aplicado.",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -10087,7 +10142,7 @@
       "5140": {
         "grupo": "5140",
         "profesor": {
-          "nombre": null,
+          "nombre": "Rodrigo González Barrios de la Parra",
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -10135,7 +10190,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Gerardo Mata Torres Valle",
             "horario": "11:00 a 14:00",
             "dias": [
               "Vi"
@@ -10165,7 +10220,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Karla Pamela Reveles Martínez",
             "horario": "11:00 a 14:00",
             "dias": [
               "Vi"
@@ -10552,17 +10607,17 @@
             {
               "horario": "14:30 a 17:30",
               "dias": [
-                "Ju"
+                "Ma"
               ]
             }
           ]
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Adriana Judith Xóchitl González Hernández",
             "horario": "14:30 a 17:30",
             "dias": [
-              "Lu"
+              "Vi"
             ],
             "salon": null
           }
@@ -11100,7 +11155,7 @@
         "nota": "Derecho y Gestión Ambiental",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369540"
       },
       "5170": {
         "grupo": "5170",
@@ -11740,6 +11795,34 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371182"
+      },
+      "5561": {
+        "grupo": "5561",
+        "profesor": {
+          "nombre": "Nataly Quiroz González",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Luis Gabriel Aguilar Estrada",
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Vi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Interacciones ecológicas de invertebrados y vegetación acuática",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Temas Selectos de Biología IV": {
