@@ -80,7 +80,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "María del Pilar Aguilar Del Valle",
+            "nombre": "Cecilia Amparo García Sánchez",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -116,7 +116,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Hararec Medina Gónzalez",
             "horario": "08:00 a 09:00",
             "dias": [
               "Lu",
@@ -2128,7 +2128,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369692"
       },
       "4083": {
         "grupo": "4083",
@@ -2376,7 +2376,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369700"
       },
       "4091": {
         "grupo": "4091",
@@ -2989,7 +2989,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370007"
       },
       "8090": {
         "grupo": "8090",
@@ -3942,7 +3942,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369718"
       },
       "4109": {
         "grupo": "4109",
@@ -4591,6 +4591,34 @@
           },
           {
             "nombre": "Oswaldo Adapta García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "8392": {
+        "grupo": "8392",
+        "profesor": {
+          "nombre": "Francisco Javier Reyes Mora",
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Monserrat Zuñiga Loreto",
             "horario": null,
             "dias": [],
             "salon": null
@@ -5566,7 +5594,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alan Jahir Gómez Sánchez",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -5598,37 +5626,6 @@
         "ayudantes": [
           {
             "nombre": "Diego Adrián Barrera Hernández",
-            "horario": "10:00 a 11:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
-      "4159": {
-        "grupo": "4159",
-        "profesor": {
-          "nombre": "Pedro Eduardo Miramontes Vidal",
-          "horarios": [
-            {
-              "horario": "10:00 a 11:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -5909,6 +5906,37 @@
           {
             "nombre": null,
             "horario": "21:00 a 22:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4343": {
+        "grupo": "4343",
+        "profesor": {
+          "nombre": "Manuel Tejada Wriedt",
+          "horarios": [
+            {
+              "horario": "10:00 a 11:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
               "Ju"
@@ -8611,7 +8639,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Daniel Espinosa González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": null,
@@ -8988,7 +9023,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370148"
       },
       "8231": {
         "grupo": "8231",
@@ -9328,7 +9363,20 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Miguel Ángel Quetzeri Santiago",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Juan Manuel González López",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -12454,6 +12502,39 @@
         "presentacion": null
       }
     },
+    "Biofísica General": {
+      "8388": {
+        "grupo": "8388",
+        "profesor": {
+          "nombre": "César Oliver Lara Figueroa",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "María Luisa Durán Pastén",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Alma Valeria Velarde Ortega",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Erick Jonathan Lazaro Cruz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Cálculo de las Variaciones": {
       "4215": {
         "grupo": "4215",
@@ -12511,7 +12592,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370202"
       }
     },
     "Cosmología Física": {
@@ -12718,6 +12799,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "4339": {
+        "grupo": "4339",
+        "profesor": {
+          "nombre": "Diego Martín Terrazas Hernández",
+          "horarios": [
+            {
+              "horario": "20:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "César Armando Mendoza Rodríguez",
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Ecuaciones Diferenciales Parciales II": {
@@ -12760,7 +12872,14 @@
           "nombre": "Pablo de la Mora y Palomar Askinasy",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Luis Daniel Rodríguez García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -12919,6 +13038,37 @@
           {
             "nombre": "Andrew Shaw Legarreta",
             "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4337": {
+        "grupo": "4337",
+        "profesor": {
+          "nombre": "Oscar Chávez Molina",
+          "horarios": [
+            {
+              "horario": "19:00 a 20:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
               "Ju"
@@ -13323,10 +13473,17 @@
           "nombre": "Patricio Vázquez Fernández",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Luis Iván Ramírez Román",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -13596,6 +13753,70 @@
           }
         ],
         "nota": "El curso se impartirá en el Instituto de Investigaciones en Materiales",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Introducción Matemática a la Mecánica Celeste": {
+      "4340": {
+        "grupo": "4340",
+        "profesor": {
+          "nombre": "Carlos Rodolfo Barrera Anzaldo",
+          "horarios": [
+            {
+              "horario": "13:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4341": {
+        "grupo": "4341",
+        "profesor": {
+          "nombre": "Alejandro Sánchez Cervantes",
+          "horarios": [
+            {
+              "horario": "19:00 a 20:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Alejandro Cortés Díaz Sandi",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -14090,7 +14311,7 @@
         "nota": "“Comunicación pública de la ciencia”",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369927"
       }
     },
     "Sismología y Vulcanología": {
@@ -14358,7 +14579,7 @@
         "nota": "Adquisición de datos experimentales",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370244"
       }
     },
     "Temas Selectos de Estado Sólido I": {

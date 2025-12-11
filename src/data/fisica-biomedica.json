@@ -2386,7 +2386,7 @@
             "salon": null
           },
           {
-            "nombre": "Benito Juárez García",
+            "nombre": "David Porta Zepeda",
             "horario": null,
             "dias": [],
             "salon": null
@@ -2491,7 +2491,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "David Porta Zepeda",
+            "nombre": "Benito Juárez García",
             "horario": null,
             "dias": [],
             "salon": null
@@ -2981,37 +2981,6 @@
         "modalidad": "Presencial",
         "presentacion": null
       },
-      "8056": {
-        "grupo": "8056",
-        "profesor": {
-          "nombre": "Pedro Eduardo Miramontes Vidal",
-          "horarios": [
-            {
-              "horario": "10:00 a 11:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "10:00 a 11:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
       "8057": {
         "grupo": "8057",
         "profesor": {
@@ -3279,6 +3248,37 @@
           {
             "nombre": null,
             "horario": "21:00 a 22:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "8391": {
+        "grupo": "8391",
+        "profesor": {
+          "nombre": "Manuel Tejada Wriedt",
+          "horarios": [
+            {
+              "horario": "10:00 a 11:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
               "Ju"
@@ -3760,7 +3760,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Gregorio Sainz Lombardo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -4020,6 +4027,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "Pedro Antonio Quinto Su",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Carlos Javier Cureño Ayluardo",
             "horario": null,
             "dias": [],
@@ -4046,7 +4059,20 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Ricardo Covarrubias Yeffal",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "André Sebastián García Ward",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -5484,7 +5510,7 @@
       "3071": {
         "grupo": "3071",
         "profesor": {
-          "nombre": null,
+          "nombre": "José Eduardo Chairez Veloz",
           "horarios": [
             {
               "horario": "13:00 a 14:30",
@@ -5504,7 +5530,7 @@
       "3072": {
         "grupo": "3072",
         "profesor": {
-          "nombre": null,
+          "nombre": "Humberto Jair Hijar Juárez",
           "horarios": [
             {
               "horario": "10:00 a 11:30",
@@ -5823,6 +5849,25 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "3075": {
+        "grupo": "3075",
+        "profesor": {
+          "nombre": "Mitzi Paulina Pérez Calixto",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "María de los Ángeles García Vicente",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },

@@ -302,7 +302,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Hararec Medina Gónzalez",
             "horario": "08:00 a 09:00",
             "dias": [
               "Lu",
@@ -1007,7 +1007,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369610"
       },
       "4030": {
         "grupo": "4030",
@@ -2752,7 +2752,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369692"
       },
       "4083": {
         "grupo": "4083",
@@ -4056,7 +4056,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369718"
       },
       "4109": {
         "grupo": "4109",
@@ -4253,7 +4253,7 @@
       "4115": {
         "grupo": "4115",
         "profesor": {
-          "nombre": "Lauro Morales Montesinos",
+          "nombre": "Emilio Cabrera Castro",
           "horarios": [
             {
               "horario": "07:00 a 08:00",
@@ -4282,7 +4282,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": null
       },
       "4116": {
@@ -4682,6 +4682,27 @@
             "salon": null
           }
         ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9350": {
+        "grupo": "9350",
+        "profesor": {
+          "nombre": "David Ortiz Ramirez",
+          "horarios": [
+            {
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -6321,7 +6342,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alan Jahir Gómez Sánchez",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -6353,37 +6374,6 @@
         "ayudantes": [
           {
             "nombre": "Diego Adrián Barrera Hernández",
-            "horario": "10:00 a 11:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
-      "4159": {
-        "grupo": "4159",
-        "profesor": {
-          "nombre": "Pedro Eduardo Miramontes Vidal",
-          "horarios": [
-            {
-              "horario": "10:00 a 11:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -6674,6 +6664,37 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4338": {
+        "grupo": "4338",
+        "profesor": {
+          "nombre": "Gilberto Bruno Pérez",
+          "horarios": [
+            {
+              "horario": "10:00 a 11:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     },
@@ -7127,7 +7148,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Carmina García Pérez",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -8663,7 +8684,7 @@
           "nombre": "Raúl Rueda Díaz del Campo",
           "horarios": [
             {
-              "horario": "11:00 a 12:00",
+              "horario": "09:00 a 10:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -8675,7 +8696,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "11:00 a 12:00",
+            "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
               "Ju"
@@ -8930,6 +8951,37 @@
           {
             "nombre": "Martín Alberto Herrera Garza",
             "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4339": {
+        "grupo": "4339",
+        "profesor": {
+          "nombre": "Diego Martín Terrazas Hernández",
+          "horarios": [
+            {
+              "horario": "20:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "César Armando Mendoza Rodríguez",
+            "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
               "Ju"
@@ -9674,7 +9726,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370539"
       }
     },
     "Análisis de Algoritmos": {
@@ -10147,7 +10199,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 11:00  a 12:00 h",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -10183,7 +10235,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370807"
       }
     },
     "Teoría de Gráficas": {
@@ -10506,7 +10558,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 20:00 a 21:00 h",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -10735,7 +10787,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Ciencia de Datos Geospaciales para el medio ambiente",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null

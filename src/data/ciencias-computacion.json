@@ -880,7 +880,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Christopher Jonay Muñoz Flores",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -2050,7 +2050,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369718"
       },
       "4109": {
         "grupo": "4109",
@@ -3674,7 +3674,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370521"
       },
       "7109": {
         "grupo": "7109",
@@ -3879,7 +3879,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "César Eduardo Jardines Mendoza",
+            "nombre": "Víctor Fidel Rodríguez Torres",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -3888,7 +3888,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "César Eduardo Jardines Mendoza",
             "horario": "16:00 a 18:00",
             "dias": [
               "Ma"
@@ -3896,7 +3896,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Se impartirá en el Aula del Futuro del ICAT.",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -4743,7 +4743,7 @@
       "7170": {
         "grupo": "7170",
         "profesor": {
-          "nombre": "Christian Diego Iván López Barrera",
+          "nombre": "Cristian Diego Iván López Barrera",
           "horarios": [
             {
               "horario": "14:00 a 16:00",
@@ -5983,16 +5983,24 @@
         },
         "ayudantes": [
           {
-            "nombre": "César Eduardo Jardines Mendoza",
+            "nombre": null,
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "César Eduardo Jardines Mendoza",
+            "horario": "14:00 a 16:00",
+            "dias": [
+              "Ma"
+            ],
+            "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Se impartirá en el Aula del Futuro del ICAT.",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -6064,7 +6072,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370549"
       },
       "7175": {
         "grupo": "7175",
@@ -7170,7 +7178,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369887"
       },
       "4261": {
         "grupo": "4261",
@@ -7379,7 +7387,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Carmina García Pérez",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -8041,6 +8049,39 @@
         "presentacion": null
       }
     },
+    "Programación no Lineal": {
+      "9351": {
+        "grupo": "9351",
+        "profesor": {
+          "nombre": "Samuel Martínez Bello",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Karla Ruíz de la Luz",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Pruebas de Software y Administración de la Configuración": {
       "7140": {
         "grupo": "7140",
@@ -8605,7 +8646,7 @@
         "nota": "Seguridad en el Internet de las Cosas",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370568"
       },
       "7155": {
         "grupo": "7155",
@@ -8888,6 +8929,37 @@
             "dias": [
               "Ma",
               "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4342": {
+        "grupo": "4342",
+        "profesor": {
+          "nombre": "Loiret Alejandría Dosal Trujillo",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Emiliano Hernández Salazar",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Lu",
+              "Mi"
             ],
             "salon": null
           }
@@ -9310,7 +9382,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371275"
       }
     }
   }

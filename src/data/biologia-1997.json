@@ -384,7 +384,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Álvaro Chaos Cador",
+            "nombre": "Patricia Astrid González Ávila",
             "horario": "11:00 a 14:00",
             "dias": [
               "Ma"
@@ -1112,7 +1112,7 @@
       "5037": {
         "grupo": "5037",
         "profesor": {
-          "nombre": "Sergio Enríquez Flores",
+          "nombre": "Katya Dafne Guadarrama Orozco",
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -1208,7 +1208,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Katya Dafne Guadarrama Orozco",
+            "nombre": "Sergio Enríquez Flores",
             "horario": "18:00 a 21:00",
             "dias": [
               "Ma"
@@ -3566,6 +3566,49 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5571": {
+        "grupo": "5571",
+        "profesor": {
+          "nombre": "Ana Flisser Steinbruch",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Fela Mendlovic Pasol",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Guillermina Avila Ramírez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Evelyn Rivera Toledo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Mayra Yolanda Cruz Rivera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Carlos Alberto Santiago Olivares",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Inmunomodulación y agentes patógenos",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -5915,6 +5958,43 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5569": {
+        "grupo": "5569",
+        "profesor": {
+          "nombre": "Luis Servín González",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Gabriela González Cerón",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rosa Laura Camarena Mejía",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Sebastián Poggio Ghilarducci",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Clara Inés Espitia Pinzón",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Biología molecular bacteriana.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -6963,7 +7043,7 @@
         "nota": "Invertebrados de la zona costera y arrecifal del Golfo de México.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371112"
       },
       "5493": {
         "grupo": "5493",
@@ -7251,6 +7331,49 @@
           }
         ],
         "nota": "Biología molecular bacteriana.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5572": {
+        "grupo": "5572",
+        "profesor": {
+          "nombre": "María de la Luz Navarro Angulo",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Marina Martínez Vargas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Sylvia Leticia Verdugo Díaz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Perla Eugenia Ugalde Muñiz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Adán Pérez Arredondo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Roxana Isela Noriega Navarro",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Fisiopatología cerebral y neuroprotección",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -10192,7 +10315,7 @@
       "5139": {
         "grupo": "5139",
         "profesor": {
-          "nombre": null,
+          "nombre": "Julián Alexander Mendivil Nieto",
           "horarios": [
             {
               "horario": "14:30 a 17:30",
@@ -11374,7 +11497,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Ximena Delgado Villegas",
+            "nombre": "Sofía Flores Fuentes",
             "horario": "18:00 a 21:00",
             "dias": [
               "Ma",
@@ -11501,6 +11624,34 @@
         "nota": "Habilidades y aptitudes del Biólogo para el mundo profesional",
         "salon": null,
         "modalidad": "Virtual",
+        "presentacion": null
+      },
+      "5567": {
+        "grupo": "5567",
+        "profesor": {
+          "nombre": "Mayra Dinorah Álvarez Santos",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "11:00 a 13:00",
+            "dias": [
+              "Vi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Redacción científica",
+        "salon": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -12034,6 +12185,34 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "5568": {
+        "grupo": "5568",
+        "profesor": {
+          "nombre": "Norberto Sánchez Téllez",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Joshua Anthuan Bautista González",
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Principios de liquenología",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Toxicología Molecular": {
@@ -12043,7 +12222,7 @@
           "nombre": "Cesar Valdovinos Flores",
           "horarios": [
             {
-              "horario": "15:00 a 18:00",
+              "horario": "17:30 a 20:30",
               "dias": [
                 "Lu",
                 "Ju"

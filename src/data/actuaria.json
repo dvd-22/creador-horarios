@@ -1007,7 +1007,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369610"
       },
       "4030": {
         "grupo": "4030",
@@ -1500,7 +1500,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Christopher Jonay Muñoz Flores",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -2812,7 +2812,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Eliseo Marcial Méndez",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -3043,7 +3043,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369692"
       },
       "4083": {
         "grupo": "4083",
@@ -3291,7 +3291,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369700"
       },
       "4091": {
         "grupo": "4091",
@@ -4096,7 +4096,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370658"
       },
       "9177": {
         "grupo": "9177",
@@ -4472,7 +4472,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369718"
       },
       "4109": {
         "grupo": "4109",
@@ -5123,6 +5123,27 @@
             "salon": null
           }
         ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9350": {
+        "grupo": "9350",
+        "profesor": {
+          "nombre": "David Ortiz Ramirez",
+          "horarios": [
+            {
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -6548,37 +6569,6 @@
         "modalidad": "Presencial",
         "presentacion": null
       },
-      "4159": {
-        "grupo": "4159",
-        "profesor": {
-          "nombre": "Pedro Eduardo Miramontes Vidal",
-          "horarios": [
-            {
-              "horario": "10:00 a 11:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "10:00 a 11:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
       "4160": {
         "grupo": "4160",
         "profesor": {
@@ -6856,6 +6846,37 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4338": {
+        "grupo": "4338",
+        "profesor": {
+          "nombre": "Gilberto Bruno Pérez",
+          "horarios": [
+            {
+              "horario": "10:00 a 11:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     },
@@ -7719,7 +7740,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Carmina García Pérez",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -8438,7 +8459,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Nicole Lissette González Vázquez",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -8940,7 +8961,7 @@
           "nombre": "Raúl Rueda Díaz del Campo",
           "horarios": [
             {
-              "horario": "11:00 a 12:00",
+              "horario": "09:00 a 10:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -8952,7 +8973,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "11:00 a 12:00",
+            "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
               "Ju"
@@ -9380,7 +9401,7 @@
           "nombre": "Rosalba Jasso Vargas",
           "horarios": [
             {
-              "horario": "09:00 a 10:00",
+              "horario": "10:00 a 11:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -9391,8 +9412,8 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
-            "horario": "09:00 a 10:00",
+            "nombre": "Bernice Anaid Mendoza Serrano",
+            "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
               "Ju"
@@ -9400,7 +9421,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 10:00 a 11:00",
+        "nota": null,
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": null
@@ -10507,7 +10528,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370745"
       },
       "9264": {
         "grupo": "9264",
@@ -11604,7 +11625,7 @@
           "nombre": "Yurguen Hugo Camargo Serafin",
           "horarios": [
             {
-              "horario": "19:00 a 20:00",
+              "horario": "14:00 a 15:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -11616,7 +11637,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "19:00 a 20:00",
+            "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
               "Ju"
@@ -11624,7 +11645,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 14:00 a 15:00 h",
+        "nota": null,
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": null
@@ -13246,7 +13267,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369887"
       },
       "4261": {
         "grupo": "4261",
@@ -13310,7 +13331,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371240"
       }
     },
     "Modelos Lineales": {
@@ -13320,7 +13341,7 @@
           "nombre": "Ricardo Ramírez Aldana",
           "horarios": [
             {
-              "horario": "17:00 a 18:00",
+              "horario": "18:00 a 19:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -13332,7 +13353,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "17:00 a 18:00",
+            "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
               "Ju"
@@ -13340,7 +13361,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 18 a 19 hrs",
+        "nota": null,
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370769"
@@ -13634,7 +13655,7 @@
         "nota": "TRANSFORMACIÓN DIGITAL EN LA PROFESIÓN ACTUARIAL- FUNDAMENTOS Y ESTRATEGIAS EN LA NUBE  (AWS, AZURE, GOOGLE CLOUD COMPUTING, HUAWEI)",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370770"
       },
       "9288": {
         "grupo": "9288",
@@ -13892,7 +13913,7 @@
           "nombre": "Gonzalo Pérez de la Cruz",
           "horarios": [
             {
-              "horario": "11:00 a 12:00",
+              "horario": "13:00 a 14:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -13904,7 +13925,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "11:00 a 12:00",
+            "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
               "Ju"
@@ -13912,7 +13933,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 13:00 a 14:00 h",
+        "nota": "Aprendizaje estadístico automatizado",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -14055,7 +14076,7 @@
           "nombre": "José Salvador Zamora Muñoz",
           "horarios": [
             {
-              "horario": "09:00 a 10:00",
+              "horario": "11:00 a 12:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -14067,7 +14088,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "09:00 a 10:00",
+            "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
               "Ju"
@@ -14075,7 +14096,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 11:00  a 12:00 h",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -14152,7 +14173,7 @@
           "nombre": "Adrián Girard Islas",
           "horarios": [
             {
-              "horario": "08:00 a 09:00",
+              "horario": "20:00 a 21:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -14164,7 +14185,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "08:00 a 09:00",
+            "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
               "Ju"
@@ -14172,7 +14193,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 20:00 a 21:00 h",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
