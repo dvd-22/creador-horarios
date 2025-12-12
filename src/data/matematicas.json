@@ -1007,7 +1007,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369610"
       },
       "4030": {
         "grupo": "4030",
@@ -2902,7 +2902,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Oscar Alan Cordero Vilchis",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -3069,7 +3069,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369700"
       },
       "4091": {
         "grupo": "4091",
@@ -3367,7 +3367,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Sergio López Olivares",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
@@ -3662,7 +3662,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369718"
       },
       "4109": {
         "grupo": "4109",
@@ -4111,7 +4111,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Iván Francisco Jiménez López",
             "horario": "19:00 a 20:00",
             "dias": [
               "Lu",
@@ -4435,7 +4435,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Francisco Arzola Galindo",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -4466,7 +4466,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Pedro Astudillo Ramírez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -5677,10 +5677,10 @@
         "modalidad": "Presencial",
         "presentacion": null
       },
-      "4338": {
-        "grupo": "4338",
+      "4343": {
+        "grupo": "4343",
         "profesor": {
-          "nombre": "Gilberto Bruno Pérez",
+          "nombre": "Manuel Tejada Wriedt",
           "horarios": [
             {
               "horario": "10:00 a 11:00",
@@ -5705,7 +5705,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     }
@@ -7444,7 +7444,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371371"
       }
     },
     "Geometría Moderna II": {
@@ -7539,7 +7539,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369864"
       }
     },
     "Geometría Proyectiva": {
@@ -7636,7 +7636,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369869"
       },
       "4243": {
         "grupo": "4243",
@@ -7791,7 +7791,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369874"
       }
     },
     "Introducción a Ciencias de la Computación I": {
@@ -9683,7 +9683,20 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Miguel Ángel Quetzeri Santiago",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Juan Manuel González López",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -10729,7 +10742,7 @@
         "nota": "Este curso se impartirá en horario de 13 a 14 horas",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369868"
       }
     },
     "Ingeniería de Software": {
@@ -11688,6 +11701,39 @@
         "presentacion": null
       }
     },
+    "Programación no Lineal": {
+      "9351": {
+        "grupo": "9351",
+        "profesor": {
+          "nombre": "Samuel Martínez Bello",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Karla Ruíz de la Luz",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Redes de Computadoras": {
       "7010": {
         "grupo": "7010",
@@ -12447,39 +12493,6 @@
         "presentacion": null
       }
     },
-    "Seminario de Filosofía de la Ciencia II": {
-      "4277": {
-        "grupo": "4277",
-        "profesor": {
-          "nombre": "Carlos Iván Lingan Pérez",
-          "horarios": [
-            {
-              "horario": "14:00 a 15:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "14:00 a 15:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": "“Ciencia, tecnología, arte y sociedad en los siglos XX y XXI”",
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      }
-    },
     "Seminario de Filosofía de la Ciencia III": {
       "4278": {
         "grupo": "4278",
@@ -12510,6 +12523,39 @@
         "nota": "Filosofía de la ciencia",
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Seminario de Filosofía de la Ciencia IV": {
+      "4344": {
+        "grupo": "4344",
+        "profesor": {
+          "nombre": "Carlos Iván Lingan Pérez",
+          "horarios": [
+            {
+              "horario": "14:00 a 15:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     },
@@ -13563,7 +13609,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371328"
       }
     },
     "Teoría de los Conjuntos II": {
@@ -14953,7 +14999,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Daniel Espinosa González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": null,
@@ -15574,7 +15627,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jorge Alberto Coleote Domínguez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -16527,7 +16580,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369883"
       },
       "4257": {
         "grupo": "4257",
@@ -16892,7 +16945,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Brayan Matias Rojo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
@@ -17405,7 +17465,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370327"
       },
       "9048": {
         "grupo": "9048",
@@ -18379,7 +18439,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369943"
       },
       "4317": {
         "grupo": "4317",
@@ -18411,6 +18471,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "4345": {
+        "grupo": "4345",
+        "profesor": {
+          "nombre": "Edgar Migueles Pérez",
+          "horarios": [
+            {
+              "horario": "16:00 a 17:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Erasmo Catarino Ávila Mendoza",
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Termodinámica": {
@@ -18429,7 +18520,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Daniel Mccumber Avilés",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",

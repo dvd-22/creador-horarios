@@ -3124,7 +3124,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Oscar Alan Cordero Vilchis",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -3589,7 +3589,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Sergio López Olivares",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
@@ -4065,7 +4065,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370656"
       },
       "9175": {
         "grupo": "9175",
@@ -4669,7 +4669,7 @@
       "4115": {
         "grupo": "4115",
         "profesor": {
-          "nombre": "Lauro Morales Montesinos",
+          "nombre": "Emilio Cabrera Castro",
           "horarios": [
             {
               "horario": "07:00 a 08:00",
@@ -4698,7 +4698,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": null
       },
       "4116": {
@@ -4921,7 +4921,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Iván Francisco Jiménez López",
             "horario": "19:00 a 20:00",
             "dias": [
               "Lu",
@@ -5697,7 +5697,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Angela Lemus Torres",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -6848,10 +6848,10 @@
         "modalidad": "Presencial",
         "presentacion": null
       },
-      "4338": {
-        "grupo": "4338",
+      "4343": {
+        "grupo": "4343",
         "profesor": {
-          "nombre": "Gilberto Bruno Pérez",
+          "nombre": "Manuel Tejada Wriedt",
           "horarios": [
             {
               "horario": "10:00 a 11:00",
@@ -6876,7 +6876,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -7783,7 +7783,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370327"
       },
       "9048": {
         "grupo": "9048",
@@ -11917,7 +11917,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Francisco Arzola Galindo",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -11948,7 +11948,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Pedro Astudillo Ramírez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -13141,7 +13141,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369883"
       },
       "4257": {
         "grupo": "4257",
@@ -13561,6 +13561,39 @@
         "presentacion": null
       }
     },
+    "Programación no Lineal": {
+      "9351": {
+        "grupo": "9351",
+        "profesor": {
+          "nombre": "Samuel Martínez Bello",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Karla Ruíz de la Luz",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Reaseguro": {
       "9148": {
         "grupo": "9148",
@@ -13812,7 +13845,7 @@
         "nota": "LA PRACTICA E IMPLEMENTACION  DE LA ADMON DE RIESGOS USANDO METODOLOGIA DE CASOS REALES EN EL MUNDO CORPORATIVO",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370774"
       },
       "9292": {
         "grupo": "9292",

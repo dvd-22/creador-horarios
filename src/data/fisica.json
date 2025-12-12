@@ -706,7 +706,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Hilario Texcahua Escobar",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -1062,7 +1069,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369610"
       },
       "4030": {
         "grupo": "4030",
@@ -2209,7 +2216,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Oscar Alan Cordero Vilchis",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -2674,7 +2681,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Sergio López Olivares",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
@@ -3007,7 +3014,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Zaira Yessenia Saucedo Chávez",
             "horario": "11:00 a 14:00",
             "dias": [
               "Mi",
@@ -4139,7 +4146,7 @@
       "4115": {
         "grupo": "4115",
         "profesor": {
-          "nombre": "Lauro Morales Montesinos",
+          "nombre": "Emilio Cabrera Castro",
           "horarios": [
             {
               "horario": "07:00 a 08:00",
@@ -4168,7 +4175,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": null
       },
       "4116": {
@@ -4391,7 +4398,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Iván Francisco Jiménez López",
             "horario": "19:00 a 20:00",
             "dias": [
               "Lu",
@@ -4627,7 +4634,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371371"
       }
     },
     "Laboratorio de Fenómenos Colectivos": {
@@ -4689,7 +4696,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370037"
       },
       "8120": {
         "grupo": "8120",
@@ -6293,7 +6300,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Gregorio Sainz Lombardo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -6742,6 +6756,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "Pedro Antonio Quinto Su",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Carlos Javier Cureño Ayluardo",
             "horario": null,
             "dias": [],
@@ -6768,7 +6788,20 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Ricardo Covarrubias Yeffal",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "André Sebastián García Ward",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -6959,11 +6992,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Óptica II"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Óptica II",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -6989,11 +7022,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": null
+            "salon": "Laboratorio de Óptica II"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Óptica II",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -7019,13 +7052,13 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Óptica II"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Óptica II",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370075"
       },
       "8158": {
         "grupo": "8158",
@@ -7049,11 +7082,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Óptica I"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Óptica I",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -7079,11 +7112,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": null
+            "salon": "Laboratorio de Óptica II"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Óptica II",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -7109,11 +7142,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Óptica II"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Óptica II",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -7139,11 +7172,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Óptica I"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Óptica I",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -7169,11 +7202,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Óptica II"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Óptica II",
         "modalidad": "Presencial",
         "presentacion": null
       }
@@ -7746,7 +7779,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "David Nuñez de Jesus",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -7975,7 +8015,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Brayan Matias Rojo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
@@ -8281,7 +8328,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371209"
       }
     },
     "Termodinámica": {
@@ -8300,7 +8347,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Daniel Mccumber Avilés",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -10200,7 +10254,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370185"
       },
       "8268": {
         "grupo": "8268",
@@ -10928,7 +10982,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Francisco Arzola Galindo",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -10959,7 +11013,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Pedro Astudillo Ramírez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -12898,6 +12952,20 @@
         "presentacion": null
       }
     },
+    "Estructura Electrónica de los Materiales": {
+      "8394": {
+        "grupo": "8394",
+        "profesor": {
+          "nombre": "José Luis Rodríguez López",
+          "horarios": []
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Fenómenos Cooperativos I": {
       "8288": {
         "grupo": "8288",
@@ -13067,7 +13135,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jorge Alberto Coleote Domínguez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -13331,7 +13399,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369864"
       }
     },
     "Geometría Riemanniana I": {
@@ -13395,6 +13463,20 @@
           }
         ],
         "nota": "Este curso se impartirá en horario de 13 a 14 horas",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369868"
+      }
+    },
+    "Historia de la Física I": {
+      "8393": {
+        "grupo": "8393",
+        "profesor": {
+          "nombre": "Javier Berjon de Gortari",
+          "horarios": []
+        },
+        "ayudantes": [],
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -15151,7 +15233,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370273"
       }
     },
     "Temas Selectos de Óptica I": {

@@ -1406,7 +1406,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369869"
       },
       "4243": {
         "grupo": "4243",
@@ -1561,7 +1561,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369874"
       }
     },
     "Inglés II": {
@@ -2756,7 +2756,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Angela Lemus Torres",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -3020,7 +3020,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370485"
       },
       "7073": {
         "grupo": "7073",
@@ -4075,7 +4075,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Javier Roberto Rubalcava Cortés",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -4084,7 +4084,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Alfonso Ortiz Avila",
             "horario": "12:00 a 14:00",
             "dias": [
               "Mi"
@@ -4242,6 +4242,45 @@
           {
             "nombre": null,
             "horario": "12:00 a 14:00",
+            "dias": [
+              "Lu"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "7188": {
+        "grupo": "7188",
+        "profesor": {
+          "nombre": "Salvador López Mendoza",
+          "horarios": [
+            {
+              "horario": "13:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": null,
+            "horario": "16:00 a 18:00",
             "dias": [
               "Lu"
             ],
@@ -5067,7 +5106,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Francisco Arzola Galindo",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -5098,7 +5137,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Pedro Astudillo Ramírez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -5525,7 +5564,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370539"
       }
     },
     "Almacenes y Minería de Datos": {
@@ -6706,7 +6745,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369979"
       },
       "7181": {
         "grupo": "7181",
@@ -6736,7 +6775,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371279"
       }
     },
     "Investigación de Operaciones": {
@@ -7430,7 +7469,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370327"
       },
       "9048": {
         "grupo": "9048",
@@ -8144,7 +8183,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370555"
       }
     },
     "Reconocimiento de Patrones y Aprendizaje Automatizado": {
@@ -8165,12 +8204,18 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Gustavo Adolfo Garduño Martínez",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
               "Ju"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Julio César Misael Monroy González",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -8702,12 +8747,18 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Mónica Miranda Mijangos",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": "Desarrollo web backend",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371282"
       }
     },
     "Teoría de Códigos": {
@@ -8967,7 +9018,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371328"
       }
     },
     "Teoría de los Conjuntos I": {
@@ -9031,7 +9082,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369943"
       },
       "4317": {
         "grupo": "4317",
@@ -9052,6 +9103,37 @@
           {
             "nombre": "Alejandro Ríos Herrejón",
             "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4345": {
+        "grupo": "4345",
+        "profesor": {
+          "nombre": "Edgar Migueles Pérez",
+          "horarios": [
+            {
+              "horario": "16:00 a 17:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Erasmo Catarino Ávila Mendoza",
+            "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
               "Ju"
@@ -9376,6 +9458,12 @@
               "Ma",
               "Ju"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Gibran Aguilar Zuñiga",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],

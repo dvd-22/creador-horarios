@@ -146,7 +146,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Karla Genoveva Bassols Bello",
+            "nombre": "Natalie Elizabeth Sánchez López",
             "horario": "14:30 a 17:30",
             "dias": [
               "Vi"
@@ -594,7 +594,7 @@
       "5019": {
         "grupo": "5019",
         "profesor": {
-          "nombre": null,
+          "nombre": "César Antonio Ortiz Martínez",
           "horarios": [
             {
               "horario": "07:30 a 10:30",
@@ -970,7 +970,7 @@
       "5032": {
         "grupo": "5032",
         "profesor": {
-          "nombre": null,
+          "nombre": "Rocío Salceda Sacanelles",
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -3145,7 +3145,7 @@
         "nota": "Invertebrados de la zona costera y arrecifal del Golfo de México.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371111"
       },
       "5492": {
         "grupo": "5492",
@@ -4023,7 +4023,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Jesus Lizardo Cruz Romo",
+            "nombre": "Iskra Alejandra Rojo Negrete",
             "horario": "07:30 a 10:30",
             "dias": [
               "Ma"
@@ -5992,6 +5992,31 @@
           }
         ],
         "nota": "Biología molecular bacteriana.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5573": {
+        "grupo": "5573",
+        "profesor": {
+          "nombre": "María Guadalupe Barajas Guzmán",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Juan Carlos Peña Becerril",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Martha América Baleón Sepúlveda",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Ecología de la biota del suelo: su papel en la dinámica, funcionamiento y restauración de los ecosistemas.",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -9630,7 +9655,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Felipe de Jesús Eslava Silva",
+            "nombre": "Lucía Yoscelina Centeno Betanzos",
             "horario": "11:00 a 14:00",
             "dias": [
               "Mi"
@@ -9952,7 +9977,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369498"
       }
     },
     "Carcinogenésis": {
@@ -10091,7 +10116,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Eduardo Everardo García Cárdenas",
+            "nombre": "Camilo José Medina Ramírez",
             "horario": "11:00 a 14:00",
             "dias": [
               "Lu"
@@ -11025,7 +11050,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Blanca Estela Hernández Baños",
             "horario": "11:00 a 14:00",
             "dias": [
               "Mi"
@@ -11510,6 +11535,34 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "5574": {
+        "grupo": "5574",
+        "profesor": {
+          "nombre": "Amaranta Ramírez Terrazo",
+          "horarios": [
+            {
+              "horario": "14:30 a 17:30",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Joshua Anthuan Bautista González",
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Vi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Herramientas y técnicas Etnobiológicas en un mundo globalizado",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Seminario de Biología IV": {
@@ -11682,7 +11735,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369549"
       }
     },
     "Temas Selectos de Biología I": {
@@ -11796,7 +11849,7 @@
         "nota": "Biología celular de bacterias",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371191"
       },
       "5556": {
         "grupo": "5556",
@@ -12210,6 +12263,28 @@
           }
         ],
         "nota": "Principios de liquenología",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "5575": {
+        "grupo": "5575",
+        "profesor": {
+          "nombre": "Paris Olalde Estrada",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Rafael de Villa Magallón",
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Mi",
+              "Sa"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Cine documental",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
