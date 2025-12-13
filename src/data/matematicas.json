@@ -92,7 +92,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369563"
       },
       "4003": {
         "grupo": "4003",
@@ -1100,7 +1100,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369616"
       }
     },
     "Geometría Moderna I": {
@@ -6243,37 +6243,6 @@
       }
     },
     "Variable Compleja I": {
-      "4186": {
-        "grupo": "4186",
-        "profesor": {
-          "nombre": "Vinicio Antonio Gómez Gutiérrez",
-          "horarios": [
-            {
-              "horario": "08:00 a 09:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Carisa Cano Figueroa",
-            "horario": "08:00 a 09:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
       "4187": {
         "grupo": "4187",
         "profesor": {
@@ -6520,6 +6489,37 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4346": {
+        "grupo": "4346",
+        "profesor": {
+          "nombre": "Carlos Daniel Velázquez Mendoza",
+          "horarios": [
+            {
+              "horario": "08:00 a 09:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     }
@@ -10281,7 +10281,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370131"
       },
       "8215": {
         "grupo": "8215",
@@ -13035,7 +13035,7 @@
         "nota": "Matemáticas en la Visión por Computadora: robots móviles e inteligencia artificial",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369918"
       },
       "4292": {
         "grupo": "4292",
@@ -13386,7 +13386,7 @@
         "nota": "Creación de Contenido Educativo",
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369929"
       }
     },
     "Teoría de Juegos I": {
@@ -15482,7 +15482,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370738"
       },
       "9257": {
         "grupo": "9257",
@@ -18218,7 +18218,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370478"
       },
       "7066": {
         "grupo": "7066",
@@ -18363,7 +18363,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Kinam Uc Jacinto",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",

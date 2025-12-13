@@ -1162,7 +1162,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369616"
       }
     }
   },
@@ -6311,7 +6311,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371286"
       }
     },
     "Laboratorio de Electromagnetismo": {
@@ -7402,37 +7402,6 @@
       }
     },
     "Variable Compleja I": {
-      "4186": {
-        "grupo": "4186",
-        "profesor": {
-          "nombre": "Vinicio Antonio Gómez Gutiérrez",
-          "horarios": [
-            {
-              "horario": "08:00 a 09:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Carisa Cano Figueroa",
-            "horario": "08:00 a 09:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
       "4187": {
         "grupo": "4187",
         "profesor": {
@@ -7679,6 +7648,37 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4346": {
+        "grupo": "4346",
+        "profesor": {
+          "nombre": "Carlos Daniel Velázquez Mendoza",
+          "horarios": [
+            {
+              "horario": "08:00 a 09:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     }
@@ -12963,7 +12963,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371374"
       }
     },
     "Fenómenos Cooperativos I": {
@@ -14020,7 +14020,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370230"
       },
       "8313": {
         "grupo": "8313",

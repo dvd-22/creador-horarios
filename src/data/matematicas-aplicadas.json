@@ -92,7 +92,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369563"
       },
       "4003": {
         "grupo": "4003",
@@ -1100,7 +1100,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369616"
       }
     },
     "Introducción a las Matemáticas Discretas": {
@@ -3401,7 +3401,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370640"
       },
       "9159": {
         "grupo": "9159",
@@ -8304,37 +8304,6 @@
       }
     },
     "Variable Compleja I": {
-      "4186": {
-        "grupo": "4186",
-        "profesor": {
-          "nombre": "Vinicio Antonio Gómez Gutiérrez",
-          "horarios": [
-            {
-              "horario": "08:00 a 09:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Carisa Cano Figueroa",
-            "horario": "08:00 a 09:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
       "4187": {
         "grupo": "4187",
         "profesor": {
@@ -8581,6 +8550,37 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4346": {
+        "grupo": "4346",
+        "profesor": {
+          "nombre": "Carlos Daniel Velázquez Mendoza",
+          "horarios": [
+            {
+              "horario": "08:00 a 09:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     }
@@ -10931,7 +10931,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Kinam Uc Jacinto",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -10940,7 +10940,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Kinam Uc Jacinto",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -11334,7 +11334,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370737"
       },
       "9256": {
         "grupo": "9256",
