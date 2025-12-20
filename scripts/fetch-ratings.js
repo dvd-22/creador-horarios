@@ -296,11 +296,7 @@ const main = async () => {
 				if (found <= 10) {
 					// Show first 10 found ratings
 					console.log(
-						`⭐ ${professorName}: ${
-							ratings[professorName].rating
-						}/10 (${
-							ratings[professorName].commentCount
-						} comentarios) [${source}]`
+						`⭐ ${professorName}: ${ratings[professorName].rating}/10 (${ratings[professorName].commentCount} comentarios) [${source}]`
 					);
 				}
 			}
