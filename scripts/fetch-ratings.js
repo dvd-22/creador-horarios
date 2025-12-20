@@ -165,6 +165,25 @@ const main = async () => {
 			).toLocaleString()}`
 		);
 
+		// Load existing ratings if they exist
+		const ratingsPath = path.join(outputDir, "ratings.json");
+		let existingRatings = {};
+		if (fs.existsSync(ratingsPath)) {
+			try {
+				const existingData = JSON.parse(
+					fs.readFileSync(ratingsPath, "utf8")
+				);
+				existingRatings = existingData.ratings || {};
+				console.log(
+					`📦 Loaded ${
+						Object.keys(existingRatings).length
+					} existing ratings`
+				);
+			} catch (error) {
+				console.warn("⚠️  Could not load existing ratings:", error);
+			}
+		}
+
 		// Fetch the template from MisProfesores.com (Facultad de Ciencias)
 		console.log("🌐 Fetching template from Facultad de Ciencias...");
 		const response = await axios.get(
@@ -216,6 +235,8 @@ const main = async () => {
 		let processed = 0;
 		let found = 0;
 		let foundWithFallback = 0;
+		let keptExisting = 0;
+		let upgraded = 0;
 		const foundProfessors = [];
 
 		console.log("🔄 Processing professors...");
@@ -234,21 +255,48 @@ const main = async () => {
 				}
 			}
 
-			ratings[professorName] = rating;
+			// Decision logic: keep the rating with the most comments
+			const existingRating = existingRatings[professorName];
 
-			if (rating) {
+			if (rating && existingRating) {
+				// Both new and existing ratings exist - keep the one with more comments
+				if (
+					existingRating.commentCount &&
+					rating.commentCount <= existingRating.commentCount
+				) {
+					// Keep existing rating (has more or equal comments)
+					ratings[professorName] = existingRating;
+					keptExisting++;
+				} else {
+					// Use new rating (has more comments)
+					ratings[professorName] = rating;
+					upgraded++;
+				}
+			} else if (rating) {
+				// Only new rating exists
+				ratings[professorName] = rating;
+			} else if (existingRating) {
+				// Only existing rating exists - keep it
+				ratings[professorName] = existingRating;
+				keptExisting++;
+			} else {
+				// No rating found (new or existing)
+				ratings[professorName] = null;
+			}
+
+			if (ratings[professorName]) {
 				found++;
 				foundProfessors.push({
 					name: professorName,
-					rating: rating.rating,
-					comments: rating.commentCount,
+					rating: ratings[professorName].rating,
+					comments: ratings[professorName].commentCount,
 					source: source,
 				});
 
 				if (found <= 10) {
 					// Show first 10 found ratings
 					console.log(
-						`⭐ ${professorName}: ${rating.rating}/10 (${rating.commentCount} comentarios) [${source}]`
+						`⭐ ${professorName}: ${ratings[professorName].rating}/10 (${ratings[professorName].commentCount} comentarios) [${source}]`
 					);
 				}
 			}
@@ -257,13 +305,12 @@ const main = async () => {
 
 			if (processed % 100 === 0) {
 				console.log(
-					`📈 Processed ${processed}/${professors.length} professors (${found} ratings found, ${foundWithFallback} via fallback)`
+					`📈 Processed ${processed}/${professors.length} professors (${found} ratings, ${keptExisting} kept from previous, ${upgraded} upgraded)`
 				);
 			}
 		}
 
 		// Write ratings to file
-		const ratingsPath = path.join(outputDir, "ratings.json");
 		const ratingsData = {
 			lastUpdated: new Date().toISOString(),
 			totalProfessors: professors.length,
@@ -276,6 +323,8 @@ const main = async () => {
 				notFound: processed - found,
 				foundWithFallback: foundWithFallback,
 				foundWithMainTemplate: found - foundWithFallback,
+				keptExisting: keptExisting,
+				upgraded: upgraded,
 			},
 		};
 
@@ -290,6 +339,8 @@ const main = async () => {
 			`   - Found with main template: ${found - foundWithFallback}`
 		);
 		console.log(`   - Found with fallback template: ${foundWithFallback}`);
+		console.log(`   - Kept existing ratings: ${keptExisting}`);
+		console.log(`   - Upgraded to new ratings: ${upgraded}`);
 		console.log(`📁 Ratings saved to ${ratingsPath}`);
 
 		// Show top rated professors
