@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2025-12-25T06:54:03.953Z",
+  "lastUpdated": "2025-12-28T08:44:45.696Z",
   "totalProfessors": 2452,
-  "ratingsFound": 1324,
+  "ratingsFound": 1326,
   "foundPercentage": 54,
   "ratings": {
     "Aaron Ali Lozano Rocha": null,
@@ -701,10 +701,10 @@
     },
     "Ana Lucía Sereno Uribe": {
       "name": "Ana Lucía Sereno Uribe",
-      "rating": 8.7,
-      "commentCount": 3,
-      "id": "118512",
-      "url": "https://www.misprofesores.com/profesores/Ana-Sereno-Uribe_118512"
+      "rating": 9.2,
+      "commentCount": 13,
+      "id": "118098",
+      "url": "https://www.misprofesores.com/profesores/Ana-Sereno-Uribe_118098"
     },
     "Ana Luisa Acua Morales": null,
     "Ana Margarita Hermoso Salazar": {
@@ -940,8 +940,8 @@
     "Araceli Ortega Díaz": null,
     "Aramis Arias Romero": {
       "name": "Aramis Arias Romero",
-      "rating": 7,
-      "commentCount": 9,
+      "rating": 7.1,
+      "commentCount": 10,
       "id": "172976",
       "url": "https://www.misprofesores.com/profesores/Aramis-Arias-Romero_172976"
     },
@@ -1650,7 +1650,7 @@
     "Claudia Solís Said": {
       "name": "Claudia Solís Said",
       "rating": 8.2,
-      "commentCount": 33,
+      "commentCount": 34,
       "id": "47873",
       "url": "https://www.misprofesores.com/profesores/Claudia-Solis-Said_47873"
     },
@@ -3283,8 +3283,8 @@
     },
     "Francisco Larrión Riveroll": {
       "name": "Francisco Larrión Riveroll",
-      "rating": 7.8,
-      "commentCount": 59,
+      "rating": 7.7,
+      "commentCount": 60,
       "id": "43065",
       "url": "https://www.misprofesores.com/profesores/Francisco-Larrion-Riveroll_43065"
     },
@@ -4211,8 +4211,8 @@
     "Isabel Yajaira Rojas Martinez": null,
     "Isaías Rodríguez Aguirre": {
       "name": "Isaías Rodríguez Aguirre",
-      "rating": 5.6,
-      "commentCount": 30,
+      "rating": 5.5,
+      "commentCount": 31,
       "id": "60620",
       "url": "https://www.misprofesores.com/profesores/Isaias-Rodriguez-Aguirre_60620"
     },
@@ -4398,7 +4398,7 @@
     "Jaime Vázquez Alamilla": {
       "name": "Jaime Vázquez Alamilla",
       "rating": 7.6,
-      "commentCount": 134,
+      "commentCount": 135,
       "id": "41755",
       "url": "https://www.misprofesores.com/profesores/Jaime-Vazquez-Alamilla_41755"
     },
@@ -4902,7 +4902,7 @@
     "Jorge Luis Reyes García": {
       "name": "Jorge Luis Reyes García",
       "rating": 8.2,
-      "commentCount": 168,
+      "commentCount": 169,
       "id": "60274",
       "url": "https://www.misprofesores.com/profesores/Jorge-Reyes-Garcia_60274"
     },
@@ -5057,7 +5057,13 @@
       "id": "124921",
       "url": "https://www.misprofesores.com/profesores/Jose-Sanchez-Gutierrez_124921"
     },
-    "José Alejandro Jiménez Acosta": null,
+    "José Alejandro Jiménez Acosta": {
+      "name": "José Alejandro Jiménez Acosta",
+      "rating": 10,
+      "commentCount": 1,
+      "id": "190604",
+      "url": "https://www.misprofesores.com/profesores/Jose-Jimenez-Acosta_190604"
+    },
     "José Alfredo Cobián Campos": {
       "name": "José Alfredo Cobián Campos",
       "rating": 7.3,
@@ -7551,7 +7557,13 @@
       "url": "https://www.misprofesores.com/profesores/Maria-Cancino-Rodezno_120047"
     },
     "María de los Ángeles García Vicente": null,
-    "María de los Ángeles Garduño Crespo": null,
+    "María de los Ángeles Garduño Crespo": {
+      "name": "María de los Ángeles Garduño Crespo",
+      "rating": 7.8,
+      "commentCount": 39,
+      "id": "79789",
+      "url": "https://www.misprofesores.com/profesores/Maria-Garduño-Crespo_79789"
+    },
     "María de los Ángeles Sandoval Romero": {
       "name": "María de los Ángeles Sandoval Romero",
       "rating": 7.4,
@@ -7648,8 +7660,8 @@
     "María del Rocío Suárez Sánchez": null,
     "María del Rosario Espinosa Tufiño": {
       "name": "María del Rosario Espinosa Tufiño",
-      "rating": 7.6,
-      "commentCount": 31,
+      "rating": 7.7,
+      "commentCount": 32,
       "id": "63659",
       "url": "https://www.misprofesores.com/profesores/Maria-Espinosa-Tufiño_63659"
     },
@@ -8318,8 +8330,8 @@
     },
     "Omar de la Riva Torres": {
       "name": "Omar de la Riva Torres",
-      "rating": 4.3,
-      "commentCount": 27,
+      "rating": 4.1,
+      "commentCount": 29,
       "id": "64003",
       "url": "https://www.misprofesores.com/profesores/Omar-Riva-Torres_64003"
     },
@@ -10403,11 +10415,11 @@
   },
   "statistics": {
     "processed": 2452,
-    "found": 1324,
-    "notFound": 1128,
+    "found": 1326,
+    "notFound": 1126,
     "foundWithFallback": 41,
-    "foundWithMainTemplate": 1283,
-    "keptExisting": 1287,
-    "upgraded": 36
+    "foundWithMainTemplate": 1285,
+    "keptExisting": 1315,
+    "upgraded": 9
   }
 }
