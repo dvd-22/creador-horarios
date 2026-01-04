@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { ChevronDown, ChevronRight, Search, Filter, Plus } from 'lucide-react';
+import { ChevronDown, ChevronRight, Search, Filter, Plus, X } from 'lucide-react';
 import { useMajorContext } from '../contexts/MajorContext';
 import MajorSelector from './MajorSelector';
 import ProfessorRating from './ProfessorRating';
@@ -171,6 +171,9 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
   useEffect(() => {
     if (onRevealGroup) {
       onRevealGroup((compositeMajorId, studyPlanId, semester, subject, group) => {
+        // Clear search query to ensure the group is visible
+        setSearchQuery('');
+
         // Extract base major ID and study plan from composite ID if needed
         // e.g., "biology-2025" -> majorId: "biology", studyPlanId: "2025"
         let majorId = compositeMajorId;
@@ -639,10 +642,17 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
               placeholder="Buscar..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full h-full py-2 pl-8 pr-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-500 text-sm"
+              className="w-full h-full py-2 pl-8 pr-8 bg-gray-800 border border-gray-700 rounded-lg text-gray-100 placeholder-gray-400 focus:outline-none focus:border-blue-500 text-sm"
               autoComplete="off"
             />
             <Search className="absolute left-2 top-1/2 -translate-y-1/2 text-gray-400" size={16} />
+            {searchQuery && (
+              <X
+                onClick={() => setSearchQuery('')}
+                className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-200 cursor-pointer transition-colors"
+                size={16}
+              />
+            )}
           </div>
           <button
             onClick={() => setIsFilterModalOpen(true)}
