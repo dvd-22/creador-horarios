@@ -62,6 +62,7 @@ const SelectedGroupsPanel = ({
   showOnlySubjects = false,
   horizontal = false,
   showSubjectsCount = false,
+  hideHeader = false,
   onRevealGroup,
 }) => {
   const { availableMajors } = useMajorContext();
@@ -781,52 +782,54 @@ const SelectedGroupsPanel = ({
     return (
       <div className="flex flex-col h-full bg-gray-900 text-white">
         {/* Fixed Header */}
-        <div className="flex-shrink-0 bg-gray-900 border-b border-gray-700 px-3 py-2">
-          <div className="flex items-center justify-between mb-2">
-            {/* Schedule Title */}
-            <div className="flex items-center flex-1 min-w-0">
-              {isEditingTitle ? (
-                <input
-                  type="text"
-                  value={tempTitle}
-                  onChange={(e) => setTempTitle(e.target.value)}
-                  onBlur={handleTitleSave}
-                  onKeyDown={handleTitleKeyPress}
-                  className="bg-gray-800 text-white px-2 py-1 rounded text-sm flex-1 border border-gray-600 focus:border-blue-500 outline-none"
-                  autoFocus
-                />
-              ) : (
-                <div
-                  onClick={handleTitleEdit}
-                  className="flex items-center flex-1 min-w-0 cursor-pointer group"
-                >
-                  <span className="text-white font-medium text-sm truncate">
-                    {scheduleTitle}
-                  </span>
-                  <div className="ml-2 text-gray-400 group-hover:text-white p-1 flex-shrink-0 transition-colors">
-                    <Edit2 size={12} />
+        {!hideHeader && (
+          <div className="flex-shrink-0 bg-gray-900 border-b border-gray-700 px-3 py-2">
+            <div className="flex items-center justify-between mb-2">
+              {/* Schedule Title */}
+              <div className="flex items-center flex-1 min-w-0">
+                {isEditingTitle ? (
+                  <input
+                    type="text"
+                    value={tempTitle}
+                    onChange={(e) => setTempTitle(e.target.value)}
+                    onBlur={handleTitleSave}
+                    onKeyDown={handleTitleKeyPress}
+                    className="bg-gray-800 text-white px-2 py-1 rounded text-sm flex-1 border border-gray-600 focus:border-blue-500 outline-none"
+                    autoFocus
+                  />
+                ) : (
+                  <div
+                    onClick={handleTitleEdit}
+                    className="flex items-center flex-1 min-w-0 cursor-pointer group"
+                  >
+                    <span className="text-white font-medium text-sm truncate">
+                      {scheduleTitle}
+                    </span>
+                    <div className="ml-2 text-gray-400 group-hover:text-white p-1 flex-shrink-0 transition-colors">
+                      <Edit2 size={12} />
+                    </div>
                   </div>
-                </div>
-              )}
-            </div>
+                )}
+              </div>
 
-            {/* Action Buttons */}
-            <div className="flex items-center space-x-2 ml-3 flex-shrink-0">
-              <button
-                onClick={handleSave}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-xs whitespace-nowrap"
-              >
-                Guardar
-              </button>
-              <button
-                onClick={handleExportICS}
-                className="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-xs whitespace-nowrap"
-              >
-                .ics
-              </button>
+              {/* Action Buttons */}
+              <div className="flex items-center space-x-2 ml-3 flex-shrink-0">
+                <button
+                  onClick={handleSave}
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-xs whitespace-nowrap"
+                >
+                  Guardar
+                </button>
+                <button
+                  onClick={handleExportICS}
+                  className="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-xs whitespace-nowrap"
+                >
+                  .ics
+                </button>
+              </div>
             </div>
           </div>
-        </div>
+        )}
 
         {/* Scrollable Selected Groups */}
         <div className="flex-1 overflow-y-auto px-3 py-2">
@@ -991,43 +994,45 @@ const SelectedGroupsPanel = ({
   return (
     <div className="h-full flex flex-col bg-gray-900 text-white">
       {/* Header */}
-      <div className="flex-shrink-0 p-4 border-b border-gray-700">
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center flex-1 min-w-0">
-            {isEditingTitle ? (
-              <input
-                type="text"
-                value={tempTitle}
-                onChange={(e) => setTempTitle(e.target.value)}
-                onBlur={handleTitleSave}
-                onKeyDown={handleTitleKeyPress}
-                className="bg-gray-800 text-white px-3 py-2 rounded border border-gray-600 focus:border-blue-500 outline-none flex-1"
-                autoFocus
-              />
-            ) : (
-              <div
-                onClick={handleTitleEdit}
-                className="flex items-center flex-1 min-w-0 cursor-pointer group"
-              >
-                <h2 className="text-lg font-semibold text-white truncate">
-                  {scheduleTitle}
-                </h2>
-                <div className="ml-2 text-gray-400 group-hover:text-white p-1 rounded flex-shrink-0 transition-colors">
-                  <Edit2 size={16} />
+      {!hideHeader && (
+        <div className="flex-shrink-0 p-4 border-b border-gray-700">
+          <div className="flex items-center justify-between gap-4">
+            <div className="flex items-center flex-1 min-w-0">
+              {isEditingTitle ? (
+                <input
+                  type="text"
+                  value={tempTitle}
+                  onChange={(e) => setTempTitle(e.target.value)}
+                  onBlur={handleTitleSave}
+                  onKeyDown={handleTitleKeyPress}
+                  className="bg-gray-800 text-white px-3 py-2 rounded border border-gray-600 focus:border-blue-500 outline-none flex-1"
+                  autoFocus
+                />
+              ) : (
+                <div
+                  onClick={handleTitleEdit}
+                  className="flex items-center flex-1 min-w-0 cursor-pointer group"
+                >
+                  <h2 className="text-lg font-semibold text-white truncate">
+                    {scheduleTitle}
+                  </h2>
+                  <div className="ml-2 text-gray-400 group-hover:text-white p-1 rounded flex-shrink-0 transition-colors">
+                    <Edit2 size={16} />
+                  </div>
                 </div>
-              </div>
-            )}
-          </div>
+              )}
+            </div>
 
-          {/* Download button */}
-          <button
-            onClick={() => setShowDownloadModal(true)}
-            className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded transition-colors flex items-center justify-center flex-shrink-0"
-          >
-            <Download size={20} />
-          </button>
+            {/* Download button */}
+            <button
+              onClick={() => setShowDownloadModal(true)}
+              className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded transition-colors flex items-center justify-center flex-shrink-0"
+            >
+              <Download size={20} />
+            </button>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Selected Groups List */}
       <div className="flex-1 p-4 overflow-y-auto">

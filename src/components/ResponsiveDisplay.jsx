@@ -9,11 +9,13 @@ const ResponsiveDisplay = ({
     overlapTogglePanel,
     scheduleRef,
     onOpenMobileMenu,
-    onUncollapseLeftPanel
+    onUncollapseLeftPanel,
+    onCloseRightPanel
 }) => {
     const [isMobile, setIsMobile] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSubjectsVisible, setIsSubjectsVisible] = useState(false);
+    const [isSubjectsPanelOpen, setIsSubjectsPanelOpen] = useState(false);
 
     // Expose setIsMenuOpen through callback
     useEffect(() => {
@@ -21,6 +23,13 @@ const ResponsiveDisplay = ({
             onOpenMobileMenu(() => setIsMenuOpen(true));
         }
     }, [onOpenMobileMenu]);
+
+    // Expose setIsSubjectsPanelOpen through callback
+    useEffect(() => {
+        if (onCloseRightPanel) {
+            onCloseRightPanel(() => setIsSubjectsPanelOpen(false));
+        }
+    }, [onCloseRightPanel]);
 
     // Check if we're on mobile - be more explicit about breakpoints
     useEffect(() => {
@@ -99,35 +108,23 @@ const ResponsiveDisplay = ({
                                 showOnlyHeader: true
                             })}
                         </div>
-                    </div>
-                </div>
 
-                {/* Toggle for subjects visibility */}
-                {selectedGroupsPanel.props.selectedGroups?.length > 0 && (
-                    <div className="border-t border-gray-700">
-                        <button
-                            onClick={() => setIsSubjectsVisible(!isSubjectsVisible)}
-                            className="w-full flex items-center justify-center p-2 text-gray-400 hover:text-white transition-colors"
-                        >
-                            <span className="text-sm mr-1">
-                                Materias seleccionadas ({selectedGroupsPanel.props.selectedGroups.length})
-                            </span>
-                            {isSubjectsVisible ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-                        </button>
-                    </div>
-                )}
-
-                {/* Selected Subjects - Collapsible with Animation */}
-                <div className={`border-t border-gray-700 overflow-hidden transition-all duration-150 ease-out ${isSubjectsVisible ? 'max-h-32' : 'max-h-0'
-                    }`}>
-                    <div className="overflow-y-auto h-full">
-                        <div className="p-3">
-                            {React.cloneElement(selectedGroupsPanel, {
-                                isMobile: true,
-                                showOnlySubjects: true,
-                                horizontal: true
-                            })}
-                        </div>
+                        {/* Button to open subjects panel on the right */}
+                        {selectedGroupsPanel.props.selectedGroups?.length > 0 && (
+                            <button
+                                onClick={() => setIsSubjectsPanelOpen(true)}
+                                className="p-2 text-gray-400 hover:text-white transition-colors flex-shrink-0 relative"
+                                aria-label="View selected subjects"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="9" y1="3" x2="9" y2="21"></line>
+                                </svg>
+                                <span className="absolute -top-1 -right-1 bg-blue-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+                                    {selectedGroupsPanel.props.selectedGroups.length}
+                                </span>
+                            </button>
+                        )}
                     </div>
                 </div>
             </div>
@@ -137,7 +134,7 @@ const ResponsiveDisplay = ({
                 {React.cloneElement(scheduleViewerPanel, { isMobile: true })}
             </div>
 
-            {/* Mobile Sidebar Menu - Full Height with Animation */}
+            {/* Mobile Sidebar Menu (Left) - Full Height with Animation */}
             {/* Overlay with fade animation - Fixed positioning */}
             <div
                 className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-150 ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
@@ -151,6 +148,34 @@ const ResponsiveDisplay = ({
                 <div className="flex-1 overflow-hidden pb-safe">
                     {React.cloneElement(scheduleSelectorPanel, {
                         overlapToggle: overlapTogglePanel
+                    })}
+                </div>
+            </div>
+
+            {/* Selected Subjects Panel (Right) - Full Height with Animation */}
+            {/* Overlay for subjects panel */}
+            <div
+                className={`fixed inset-0 bg-black/50 z-40 transition-opacity duration-150 ${isSubjectsPanelOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                    }`}
+                onClick={() => setIsSubjectsPanelOpen(false)}
+            />
+
+            {/* Subjects Panel - Slide from right */}
+            <div className={`fixed top-0 right-0 w-80 h-[100dvh] bg-gray-900 border-l border-gray-700 z-50 flex flex-col transition-transform duration-150 ease-out ${isSubjectsPanelOpen ? 'translate-x-0' : 'translate-x-full'
+                }`}>
+                <div className="flex items-center justify-between p-3 border-b border-gray-700">
+                    <h2 className="text-lg font-semibold text-white">Materias seleccionadas</h2>
+                    <button
+                        onClick={() => setIsSubjectsPanelOpen(false)}
+                        className="p-2 text-gray-400 hover:text-white transition-colors"
+                        aria-label="Close panel"
+                    >
+                        <X size={24} />
+                    </button>
+                </div>
+                <div className="flex-1 overflow-hidden pb-safe">
+                    {React.cloneElement(selectedGroupsPanel, {
+                        hideHeader: true
                     })}
                 </div>
             </div>

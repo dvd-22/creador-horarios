@@ -8,128 +8,79 @@ import FilterModal from './FilterModal';
 import SpacerModal from './SpacerModal';
 import { professorRatingService } from '../services/professorRatingService';
 
-// Utility function to normalize text for search (remove accents, convert to lowercase)
 const normalizeText = (text) => {
   if (!text) return '';
   return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 };
 
-// Utility function to parse time string to minutes since midnight
 const timeToMinutes = (timeStr) => {
   if (!timeStr) return null;
   const [hours, minutes] = timeStr.split(':').map(Number);
   return hours * 60 + minutes;
 };
 
-// Utility function to check if a schedule matches filter criteria
 const scheduleMatchesFilter = (horario, filters) => {
   if (!horario) return false;
 
-  // Check day filter if specified
   if (filters.days && filters.days.length < 6 && horario.dias) {
-    // Map filter day IDs to schedule day format
-    const dayMap = {
-      'L': 'Lu',
-      'M': 'Ma',
-      'I': 'Mi',
-      'J': 'Ju',
-      'V': 'Vi',
-      'S': 'Sa'
-    };
-
+    const dayMap = { 'L': 'Lu', 'M': 'Ma', 'I': 'Mi', 'J': 'Ju', 'V': 'Vi', 'S': 'Sa' };
     const scheduleDays = horario.dias;
-    // ALL schedule days must be within the selected filter days
     const allDaysAllowed = scheduleDays.every(day => {
       const filterId = Object.keys(dayMap).find(key => dayMap[key] === day);
       return filterId && filters.days.includes(filterId);
     });
-
     if (!allDaysAllowed) return false;
   }
 
-  // If no time-based filters are set, we're done checking
   const hasTimeFilters = filters.startTime || filters.endTime || filters.exactTimes.length > 0 || (filters.blockedHours && filters.blockedHours.length > 0);
   if (!hasTimeFilters) return true;
 
-  // Extract start time from schedule string (e.g., "07:00 a 08:30" -> "07:00")
   const timeMatch = horario.horario.match(/^(\d{2}:\d{2})/);
   if (!timeMatch) return false;
-
   const scheduleStartTime = timeMatch[1];
 
-  // Parse schedule time range
   const scheduleMatch = horario.horario.match(/^(\d{2}:\d{2})\s*a\s*(\d{2}:\d{2})/);
   if (!scheduleMatch) return false;
-
   const scheduleStart = timeToMinutes(scheduleMatch[1]);
   const scheduleEnd = timeToMinutes(scheduleMatch[2]);
 
-  // Check blocked hours - if schedule overlaps with any blocked hour, filter it out
   if (filters.blockedHours && filters.blockedHours.length > 0) {
     const hasOverlap = filters.blockedHours.some(block => {
       const blockStart = timeToMinutes(block.startTime);
       const blockEnd = timeToMinutes(block.endTime);
-      // Check if there's any overlap between schedule and blocked time
       return !(scheduleEnd <= blockStart || scheduleStart >= blockEnd);
     });
-
     if (hasOverlap) return false;
   }
 
   if (filters.mode === 'exact') {
-    // Exact mode: check if schedule starts at one of the exact times
     return filters.exactTimes.includes(scheduleStartTime);
   } else {
-    // Range mode: check if schedule is within the time range
     if (!filters.startTime || !filters.endTime) return true;
-
     const filterStart = timeToMinutes(filters.startTime);
     const filterEnd = timeToMinutes(filters.endTime);
-
-    // Check if the entire class is within the filter range
     return scheduleStart >= filterStart && scheduleEnd <= filterEnd;
   }
 };
 
 const semesterOrder = [
-  'Primer Semestre',
-  'Segundo Semestre',
-  'Tercer Semestre',
-  'Cuarto Semestre',
-  'Quinto Semestre',
-  'Sexto Semestre',
-  'Séptimo Semestre',
-  'Octavo Semestre',
-  'Noveno Semestre',
-  'Optativas'
+  'Primer Semestre', 'Segundo Semestre', 'Tercer Semestre', 'Cuarto Semestre',
+  'Quinto Semestre', 'Sexto Semestre', 'Séptimo Semestre', 'Octavo Semestre',
+  'Noveno Semestre', 'Optativas'
 ];
 
-// Helper function to get semester order priority
 const getSemesterOrderPriority = (semesterName) => {
   const index = semesterOrder.indexOf(semesterName);
-  if (index !== -1) {
-    return index;
-  }
+  if (index !== -1) return index;
 
-  // Handle special case for "Optativas de los niveles" with Roman numerals
   if (semesterName.startsWith('Optativas de los niveles')) {
-    // Extract the Roman numerals part
     const romanPart = semesterName.replace('Optativas de los niveles ', '');
-
-    // Define priority based on Roman numerals
-    if (romanPart.includes('I,II,III,IV')) {
-      return 1000; // First optativas group
-    } else if (romanPart.includes('V,VI') || romanPart.includes('V, VI')) {
-      return 1001; // Second optativas group
-    } else if (romanPart.includes('VII,VIII') || romanPart.includes('VII, VIII')) {
-      return 1002; // Third optativas group
-    }
-
-    // Fallback for other Roman numeral patterns
+    if (romanPart.includes('I,II,III,IV')) return 1000;
+    if (romanPart.includes('V,VI') || romanPart.includes('V, VI')) return 1001;
+    if (romanPart.includes('VII,VIII') || romanPart.includes('VII, VIII')) return 1002;
     return 1003;
   }
 
-  // For other optativas or unknown semesters, sort alphabetically after main optativas
   return 2000 + semesterName.localeCompare('');
 };
 
@@ -141,177 +92,121 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
   const [isFilterModalOpen, setIsFilterModalOpen] = useState(false);
   const [isSpacerModalOpen, setIsSpacerModalOpen] = useState(false);
 
-  // Calculate the number of active filters
   const activeFilterCount = useMemo(() => {
     let count = 0;
-
-    // Check if day filter is active (less than 6 days selected)
-    if (filters.days && filters.days.length < 6) {
-      count++;
-    }
-
-    // Check if time range filter is active
-    if (filters.startTime || filters.endTime) {
-      count++;
-    }
-
-    // Check if blocked hours filter is active
-    if (filters.blockedHours && filters.blockedHours.length > 0) {
-      count++;
-    }
-
-    // Check if modality filter is active (less than 2 modalities selected)
-    if (filters.modalities && filters.modalities.length < 2) {
-      count++;
-    }
-
+    if (filters.days && filters.days.length < 6) count++;
+    if (filters.startTime || filters.endTime) count++;
+    if (filters.blockedHours && filters.blockedHours.length > 0) count++;
+    if (filters.modalities && filters.modalities.length < 2) count++;
     return count;
   }, [filters]);
 
-  // Expose reveal function via callback
   useEffect(() => {
     if (onRevealGroup) {
       onRevealGroup((compositeMajorId, studyPlanId, semester, subject, group) => {
-        // Clear search query to ensure the group is visible
-        // Use flushSync to force React to update immediately instead of batching
         flushSync(() => {
           setSearchQuery('');
         });
 
-        // Extract base major ID and study plan from composite ID if needed
-        // e.g., "biology-2025" -> majorId: "biology", studyPlanId: "2025"
         let majorId = compositeMajorId;
         let planId = studyPlanId;
 
-        // If compositeMajorId contains a hyphen, it's a composite ID - split it
         if (compositeMajorId && compositeMajorId.includes('-')) {
           const parts = compositeMajorId.split('-');
           majorId = parts[0];
-          // Use the planId from the composite if we don't already have one
-          if (!planId) {
-            planId = parts[1];
-          }
+          if (!planId) planId = parts[1];
         }
 
-        // Check if we need to switch major or study plan
         const needMajorSwitch = majorId && majorId !== selectedMajorId;
         const needPlanSwitch = planId && planId !== selectedStudyPlan;
 
         if (needMajorSwitch || needPlanSwitch) {
-          // Switch major and study plan together to avoid race conditions
           if (needMajorSwitch) {
-            changeMajor(majorId, planId); // Pass study plan along with major change
+            changeMajor(majorId, planId);
           } else if (needPlanSwitch && planId) {
-            // Only plan needs to change
             changeStudyPlan(planId);
           }
 
-          // Need to wait for major/plan change to complete before opening/scrolling
           setTimeout(() => {
-            // Open the semester and subject
             setOpenSemesters(prev => ({ ...prev, [semester]: true }));
             setOpenSubjects(prev => ({ ...prev, [subject]: true }));
 
-            // Scroll to the specific group if possible - position at 20% from top
-            // Use a retry mechanism to wait for the element to appear in the DOM
-            const scrollToGroup = (retries = 0, maxRetries = 20) => {
-              const groupId = `group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`;
-              const groupElement = document.getElementById(groupId);
-              
-              if (groupElement) {
-                // Find the scrollable container
-                const scrollContainer = groupElement.closest('.overflow-y-auto');
+            const scrollToGroup = () => {
+              requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                  const groupId = `group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`;
+                  console.log('🔍 Looking for element:', groupId);
+                  const groupElement = document.getElementById(groupId);
 
-                if (scrollContainer) {
-                  // Calculate the position to place element at 20% from top of container
-                  const containerHeight = scrollContainer.clientHeight;
-                  const elementTop = groupElement.offsetTop;
+                  if (groupElement) {
+                    console.log('✅ Element found!');
+                    const scrollContainer = groupElement.closest('.overflow-y-auto');
 
-                  // Add extra margin (in pixels) to account for search bar and major selector
-                  const topMargin = 150; // Increased margin for better visibility
+                    if (scrollContainer) {
+                      const containerHeight = scrollContainer.clientHeight;
+                      const elementTop = groupElement.offsetTop;
+                      const topMargin = 150;
+                      const scrollTo = elementTop - (containerHeight * 0.2) - topMargin;
 
-                  // Calculate scroll position: element top should be at 20% of container height + margin
-                  const scrollTo = elementTop - (containerHeight * 0.2) - topMargin;
-
-                  // Smooth scroll to the calculated position
-                  scrollContainer.scrollTo({
-                    top: scrollTo,
-                    behavior: 'smooth'
-                  });
-                } else {
-                  // Fallback to scrollIntoView if container not found
-                  groupElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-              } else if (retries < maxRetries) {
-                // Element not found yet, retry after a short delay
-                setTimeout(() => scrollToGroup(retries + 1, maxRetries), 100);
-              }
+                      console.log('📜 Scrolling to position:', scrollTo);
+                      scrollContainer.scrollTo({ top: scrollTo, behavior: 'smooth' });
+                    } else {
+                      groupElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  } else {
+                    console.log('❌ Element not found');
+                  }
+                });
+              });
             };
-            
-            // Start the scroll attempt after a small initial delay
-            setTimeout(() => scrollToGroup(), 100);
-          }, 500); // Wait for major/plan change and search clear
+
+            scrollToGroup();
+          }, 500);
         } else {
-          // Same major and plan - just open and scroll
           setOpenSemesters(prev => ({ ...prev, [semester]: true }));
           setOpenSubjects(prev => ({ ...prev, [subject]: true }));
 
-          // Scroll to the specific group if possible - position at 20% from top
-          // Wait longer to allow search clear to re-render the component
-          // Use a retry mechanism to wait for the element to appear in the DOM
-          const scrollToGroup = (retries = 0, maxRetries = 20) => {
-            const groupId = `group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`;
-            const groupElement = document.getElementById(groupId);
-            
-            if (groupElement) {
-              // Find the scrollable container
-              const scrollContainer = groupElement.closest('.overflow-y-auto');
+          const scrollToGroup = () => {
+            requestAnimationFrame(() => {
+              requestAnimationFrame(() => {
+                const groupId = `group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`;
+                console.log('🔍 Looking for element:', groupId);
+                const groupElement = document.getElementById(groupId);
 
-              if (scrollContainer) {
-                // Calculate the position to place element at 20% from top of container
-                const containerHeight = scrollContainer.clientHeight;
-                const elementTop = groupElement.offsetTop;
+                if (groupElement) {
+                  console.log('✅ Element found!');
+                  const scrollContainer = groupElement.closest('.overflow-y-auto');
 
-                // Add extra margin (in pixels) to account for search bar and major selector
-                const topMargin = 150; // Increased margin for better visibility
+                  if (scrollContainer) {
+                    const containerHeight = scrollContainer.clientHeight;
+                    const elementTop = groupElement.offsetTop;
+                    const topMargin = 150;
+                    const scrollTo = elementTop - (containerHeight * 0.2) - topMargin;
 
-                // Calculate scroll position: element top should be at 20% of container height + margin
-                const scrollTo = elementTop - (containerHeight * 0.2) - topMargin;
-
-                // Smooth scroll to the calculated position
-                scrollContainer.scrollTo({
-                  top: scrollTo,
-                  behavior: 'smooth'
-                });
-              } else {
-                // Fallback to scrollIntoView if container not found
-                groupElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }
-            } else if (retries < maxRetries) {
-              // Element not found yet, retry after a short delay
-              setTimeout(() => scrollToGroup(retries + 1, maxRetries), 100);
-            }
+                    console.log('📜 Scrolling to position:', scrollTo);
+                    scrollContainer.scrollTo({ top: scrollTo, behavior: 'smooth' });
+                  } else {
+                    groupElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                } else {
+                  console.log('❌ Element not found');
+                }
+              });
+            });
           };
-          
-          // Start the scroll attempt after a small initial delay
-          setTimeout(() => scrollToGroup(), 100);
+
+          scrollToGroup();
         }
       });
     }
   }, [onRevealGroup, selectedMajorId, selectedStudyPlan, changeMajor, changeStudyPlan]);
 
   const toggleSemester = (semester) => {
-    setOpenSemesters(prev => ({
-      ...prev,
-      [semester]: !prev[semester]
-    }));
+    setOpenSemesters(prev => ({ ...prev, [semester]: !prev[semester] }));
   };
 
   const toggleSubject = (subject) => {
-    setOpenSubjects(prev => ({
-      ...prev,
-      [subject]: !prev[subject]
-    }));
+    setOpenSubjects(prev => ({ ...prev, [subject]: !prev[subject] }));
   };
 
   const highlightText = (text, query) => {
@@ -319,14 +214,11 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
 
     const normalizedText = normalizeText(text);
     const normalizedQuery = normalizeText(query.trim());
-
     if (!normalizedText.includes(normalizedQuery)) return text;
 
-    // Find the position in the normalized text
     const index = normalizedText.indexOf(normalizedQuery);
     if (index === -1) return text;
 
-    // Extract the matching part from the original text
     const before = text.substring(0, index);
     const match = text.substring(index, index + normalizedQuery.length);
     const after = text.substring(index + normalizedQuery.length);
@@ -340,32 +232,20 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
     );
   };
 
-  // Helper function to order data properly - moved before useMemo
   const getOrderedData = (data) => {
-    if (!data || typeof data !== 'object') {
-      return {};
-    }
+    if (!data || typeof data !== 'object') return {};
 
     const orderedData = {};
-
-    // Get all semesters and sort them properly
     const allSemesters = Object.keys(data);
     const sortedSemesters = allSemesters.sort((a, b) => {
       const priorityA = getSemesterOrderPriority(a);
       const priorityB = getSemesterOrderPriority(b);
-
-      if (priorityA !== priorityB) {
-        return priorityA - priorityB;
-      }
-
-      // If same priority, sort alphabetically as fallback
+      if (priorityA !== priorityB) return priorityA - priorityB;
       return a.localeCompare(b, 'es', { sensitivity: 'base' });
     });
 
-    // Process each semester in order
     sortedSemesters.forEach(semester => {
       if (data[semester] && typeof data[semester] === 'object') {
-        // Sort subjects alphabetically
         const sortedSubjects = Object.keys(data[semester]).sort((a, b) =>
           a.localeCompare(b, 'es', { sensitivity: 'base' })
         );
@@ -385,7 +265,6 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
   const filteredScheduleData = useMemo(() => {
     const orderedData = getOrderedData(majorData || {});
 
-    // Check if no filters are applied (including modality and blocked hours)
     const noFiltersApplied = !searchQuery.trim() &&
       !filters.startTime &&
       !filters.endTime &&
@@ -394,9 +273,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
       (!filters.blockedHours || filters.blockedHours.length === 0) &&
       (!filters.modalities || filters.modalities.length === 2);
 
-    if (noFiltersApplied) {
-      return orderedData;
-    }
+    if (noFiltersApplied) return orderedData;
 
     const normalizedQuery = normalizeText(searchQuery.trim());
     const filtered = {};
@@ -413,21 +290,17 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
         const filteredGroups = {};
 
         Object.entries(groups).forEach(([groupNum, groupData]) => {
-          // First check time and day filters
           let matchesTimeFilter = true;
 
           if (filters.startTime || filters.endTime || filters.exactTimes.length > 0 || (filters.days && filters.days.length < 6) || (filters.blockedHours && filters.blockedHours.length > 0)) {
-            // Check professor's schedules
             const professorSchedulesMatch = groupData?.profesor?.horarios?.every(schedule =>
               scheduleMatchesFilter(schedule, filters)
             ) || false;
 
-            // Check assistant's schedules - all must match too
             let assistantsMatch = true;
             if (groupData?.ayudantes && groupData.ayudantes.length > 0) {
               assistantsMatch = groupData.ayudantes.every(ayudante => {
                 if (!ayudante.horario || !ayudante.dias) return true;
-                // Create schedule object for assistant
                 const assistantSchedule = {
                   horario: ayudante.horario,
                   dias: ayudante.dias
@@ -439,32 +312,25 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
             matchesTimeFilter = professorSchedulesMatch && assistantsMatch;
           }
 
-          // If doesn't match time filter, skip this group
           if (!matchesTimeFilter) return;
 
-          // Check modality filter
           if (filters.modalities && filters.modalities.length < 2) {
             const modalidad = groupData?.modalidad;
-            if (modalidad && !filters.modalities.includes(modalidad)) {
-              return; // Skip this group if modality doesn't match
-            }
+            if (modalidad && !filters.modalities.includes(modalidad)) return;
           }
 
-          // Then apply search filter if query exists
           if (searchQuery.trim()) {
-            // Search in all possible fields
             const searchFields = [
-              groupNum, // Group number
-              groupData?.profesor?.nombre, // Professor name
-              subject, // Subject name
-              semester, // Semester name
-              groupData?.salon, // Classroom
-              groupData?.modalidad, // Modality
-              groupData?.nota, // Notes
-              ...(groupData?.ayudantes?.map(ayudante => ayudante?.nombre) || []) // Assistant names
+              groupNum,
+              groupData?.profesor?.nombre,
+              subject,
+              semester,
+              groupData?.salon,
+              groupData?.modalidad,
+              groupData?.nota,
+              ...(groupData?.ayudantes?.map(ayudante => ayudante?.nombre) || [])
             ];
 
-            // Search in professor schedules
             let professorScheduleMatches = false;
             if (groupData?.profesor?.horarios) {
               professorScheduleMatches = groupData.profesor.horarios.some(schedule =>
@@ -472,7 +338,6 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
               );
             }
 
-            // Search in assistant schedules
             let assistantScheduleMatches = false;
             if (groupData?.ayudantes) {
               assistantScheduleMatches = groupData.ayudantes.some(ayudante =>
@@ -481,14 +346,11 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
               );
             }
 
-            // Check if any field matches
             const fieldMatches = searchFields.some(field =>
               field && normalizeText(field).includes(normalizedQuery)
             );
 
-            if (!fieldMatches && !professorScheduleMatches && !assistantScheduleMatches) {
-              return; // Skip this group if search doesn't match
-            }
+            if (!fieldMatches && !professorScheduleMatches && !assistantScheduleMatches) return;
           }
 
           filteredGroups[groupNum] = groupData;
@@ -508,9 +370,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
   }, [searchQuery, majorData, filters]);
 
   useEffect(() => {
-    const loadVisibleProfessorRatings = async () => {
-    };
-
+    const loadVisibleProfessorRatings = async () => {};
     loadVisibleProfessorRatings();
   }, [filteredScheduleData]);
 
@@ -539,13 +399,9 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
       key={group}
       id={`group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`}
       className={`bg-gray-800 p-2 rounded mb-2 text-sm border cursor-pointer ${selectedGroups.some(g =>
-        g.semester === semester &&
-        g.subject === subject &&
-        g.group === group
-      ) ? 'border-blue-500' : 'border-gray-700'
-        }`}
+        g.semester === semester && g.subject === subject && g.group === group
+      ) ? 'border-blue-500' : 'border-gray-700'}`}
       onClick={() => {
-        // Build a comprehensive majorId that includes study plan if applicable
         const fullMajorId = currentMajor?.hasStudyPlans && selectedStudyPlan
           ? `${selectedMajorId}-${selectedStudyPlan}`
           : selectedMajorId;
@@ -556,38 +412,29 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
         Grupo {highlightText(group, searchQuery)}
       </h4>
       <div className="space-y-2">
-        {/* Location and Modality Info */}
         {(groupData?.salon || groupData?.modalidad) && (
           <div className="flex flex-wrap gap-x-2 mb-1 text-xs">
             {groupData?.salon ? (
-              // If classroom is available, show the classroom
               <span className="bg-gray-700 text-gray-200 px-2 py-0.5 rounded">
                 <span className="mr-1">🏫</span>
                 {highlightText(groupData.salon, searchQuery)}
               </span>
             ) : groupData?.modalidad ? (
-              // If no classroom but modality exists, show modality (Virtual, En línea, etc.)
               <span className="bg-gray-700 text-gray-200 px-2 py-0.5 rounded">
-                <span className="mr-1">
-                  {groupData.modalidad === "Presencial" ? "👨‍🏫" : "💻"}
-                </span>
+                <span className="mr-1">{groupData.modalidad === "Presencial" ? "👨‍🏫" : "💻"}</span>
                 {highlightText(groupData.modalidad, searchQuery)}
               </span>
             ) : null}
           </div>
         )}
 
-        {/* Professor Info */}
         {groupData?.profesor?.nombre && (
           <div>
             <div className="flex items-center gap-2 mb-1">
               <p className="text-gray-200 text-sm">
                 {highlightText(groupData.profesor.nombre, searchQuery)}
               </p>
-              <ProfessorRating
-                professorName={groupData.profesor.nombre}
-                className="text-xs"
-              />
+              <ProfessorRating professorName={groupData.profesor.nombre} className="text-xs" />
             </div>
             {groupData?.profesor?.horarios?.map((schedule, index) => (
               schedule?.horario && schedule?.dias && schedule.dias.length > 0 ? (
@@ -599,12 +446,11 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
           </div>
         )}
 
-        {/* Presentation Button */}
         {groupData?.presentacion && (
           <div className="mt-2">
             <button
               onClick={(e) => {
-                e.stopPropagation(); // Prevent triggering group selection
+                e.stopPropagation();
                 window.open(groupData.presentacion, '_blank', 'noopener,noreferrer');
               }}
               className="inline-flex items-center px-2 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
@@ -615,23 +461,18 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
           </div>
         )}
 
-        {/* Assistants Info */}
         {groupData?.ayudantes && groupData.ayudantes.length > 0 && (
           <div className="border-t border-gray-700 pt-1 mt-1">
             <p className="text-gray-300 text-xs font-medium">Ayudantes:</p>
             {groupData.ayudantes.map((ayudante, index) => (
-              // Only display assistants if they have some data to show
               ((ayudante?.nombre || ayudante?.horario || (ayudante?.dias && ayudante.dias.length > 0)) && (
                 <div key={index} className="ml-1">
-                  {/* Show name or default text if name is null but other data exists */}
                   <p className="text-gray-200 text-sm">
                     {highlightText(ayudante?.nombre || "Ayudante no asignado", searchQuery)}
                   </p>
-                  {/* Only show schedule if it exists and has associated days */}
                   {ayudante?.horario && ayudante?.dias && ayudante.dias.length > 0 && (
                     <p className="text-gray-400 text-xs">
                       {highlightText(ayudante.horario, searchQuery)} ({ayudante.dias.join(", ")})
-                      {/* Show assistant's salon if different from professor's or if no professor salon */}
                       {ayudante?.salon && (
                         <span className="ml-1 text-blue-300">
                           🏫 {highlightText(ayudante.salon, searchQuery)}
@@ -645,7 +486,6 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
           </div>
         )}
 
-        {/* Note Info */}
         {groupData?.nota && (
           <div className="border-t border-gray-700 pt-1 mt-1">
             <p className="text-yellow-200 text-xs italic">&#x1F6C8; {highlightText(groupData.nota, searchQuery)}</p>
@@ -696,7 +536,6 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
         </div>
       </div>
 
-      {/* Filter Modal */}
       <FilterModal
         isOpen={isFilterModalOpen}
         onClose={() => setIsFilterModalOpen(false)}
@@ -704,14 +543,12 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
         onApplyFilters={updateFilters}
       />
 
-      {/* Spacer Modal */}
       <SpacerModal
         isOpen={isSpacerModalOpen}
         onClose={() => setIsSpacerModalOpen(false)}
         onSave={onSpacerSave}
       />
 
-      {/* Spacer Button */}
       <div className="px-4 py-2 border-b border-gray-700">
         <button
           onClick={() => setIsSpacerModalOpen(true)}
@@ -725,7 +562,6 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
       <MajorSelector />
 
       <div className="flex-1 overflow-y-auto">
-        {/* Loading State */}
         {isLoading && (
           <div className="flex items-center justify-center h-64">
             <div className="text-center">
@@ -735,7 +571,6 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
           </div>
         )}
 
-        {/* Error State */}
         {loadError && (
           <div className="flex items-center justify-center h-64">
             <div className="text-center">
@@ -746,10 +581,8 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
           </div>
         )}
 
-        {/* Content */}
         {!isLoading && !loadError && (
           <div className="p-2 pb-24">
-            {/* No results message when searching */}
             {searchQuery && Object.keys(filteredScheduleData || {}).length === 0 && (
               <div className="flex items-center justify-center h-64">
                 <div className="text-center">
@@ -759,16 +592,13 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
               </div>
             )}
 
-            {/* Results */}
             {Object.entries(filteredScheduleData || {}).map(([semester, subjects]) => (
               <div key={semester} className="mb-3 border border-gray-700 rounded-lg overflow-hidden">
                 <button
                   onClick={() => toggleSemester(semester)}
                   className="w-full p-2 bg-gray-800 hover:bg-gray-700 flex items-center justify-between text-gray-100 text-sm"
                 >
-                  <span className="font-semibold text-left">
-                    {highlightText(semester, searchQuery)}
-                  </span>
+                  <span className="font-semibold text-left">{highlightText(semester, searchQuery)}</span>
                   {openSemesters[semester] ?
                     <ChevronDown size={16} className="text-gray-400 flex-shrink-0" /> :
                     <ChevronRight size={16} className="text-gray-400 flex-shrink-0" />
@@ -787,9 +617,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
                           onClick={() => toggleSubject(subject)}
                           className="w-full p-2 bg-gray-800 hover:bg-gray-700 flex items-center justify-between text-gray-100 text-sm"
                         >
-                          <span className="font-medium text-left pr-2">
-                            {highlightText(subject, searchQuery)}
-                          </span>
+                          <span className="font-medium text-left pr-2">{highlightText(subject, searchQuery)}</span>
                           {openSubjects[subject] ?
                             <ChevronDown size={16} className="text-gray-400 flex-shrink-0" /> :
                             <ChevronRight size={16} className="text-gray-400 flex-shrink-0" />
@@ -813,7 +641,6 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
         )}
       </div>
 
-      {/* Overlap toggle - only show on mobile when passed as prop - positioned at bottom */}
       {overlapToggle && overlapToggle}
     </div>
   );
