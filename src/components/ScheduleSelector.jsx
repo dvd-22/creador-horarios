@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
+import { flushSync } from 'react-dom';
 import { ChevronDown, ChevronRight, Search, Filter, Plus, X } from 'lucide-react';
 import { useMajorContext } from '../contexts/MajorContext';
 import MajorSelector from './MajorSelector';
@@ -172,7 +173,10 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
     if (onRevealGroup) {
       onRevealGroup((compositeMajorId, studyPlanId, semester, subject, group) => {
         // Clear search query to ensure the group is visible
-        setSearchQuery('');
+        // Use flushSync to force React to update immediately instead of batching
+        flushSync(() => {
+          setSearchQuery('');
+        });
 
         // Extract base major ID and study plan from composite ID if needed
         // e.g., "biology-2025" -> majorId: "biology", studyPlanId: "2025"
@@ -209,8 +213,11 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
             setOpenSubjects(prev => ({ ...prev, [subject]: true }));
 
             // Scroll to the specific group if possible - position at 20% from top
-            setTimeout(() => {
-              const groupElement = document.getElementById(`group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`);
+            // Use a retry mechanism to wait for the element to appear in the DOM
+            const scrollToGroup = (retries = 0, maxRetries = 20) => {
+              const groupId = `group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`;
+              const groupElement = document.getElementById(groupId);
+              
               if (groupElement) {
                 // Find the scrollable container
                 const scrollContainer = groupElement.closest('.overflow-y-auto');
@@ -235,17 +242,27 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
                   // Fallback to scrollIntoView if container not found
                   groupElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
+              } else if (retries < maxRetries) {
+                // Element not found yet, retry after a short delay
+                setTimeout(() => scrollToGroup(retries + 1, maxRetries), 100);
               }
-            }, 150);
-          }, 300); // Wait for major/plan change
+            };
+            
+            // Start the scroll attempt after a small initial delay
+            setTimeout(() => scrollToGroup(), 100);
+          }, 500); // Wait for major/plan change and search clear
         } else {
           // Same major and plan - just open and scroll
           setOpenSemesters(prev => ({ ...prev, [semester]: true }));
           setOpenSubjects(prev => ({ ...prev, [subject]: true }));
 
           // Scroll to the specific group if possible - position at 20% from top
-          setTimeout(() => {
-            const groupElement = document.getElementById(`group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`);
+          // Wait longer to allow search clear to re-render the component
+          // Use a retry mechanism to wait for the element to appear in the DOM
+          const scrollToGroup = (retries = 0, maxRetries = 20) => {
+            const groupId = `group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`;
+            const groupElement = document.getElementById(groupId);
+            
             if (groupElement) {
               // Find the scrollable container
               const scrollContainer = groupElement.closest('.overflow-y-auto');
@@ -270,8 +287,14 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
                 // Fallback to scrollIntoView if container not found
                 groupElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
               }
+            } else if (retries < maxRetries) {
+              // Element not found yet, retry after a short delay
+              setTimeout(() => scrollToGroup(retries + 1, maxRetries), 100);
             }
-          }, 150);
+          };
+          
+          // Start the scroll attempt after a small initial delay
+          setTimeout(() => scrollToGroup(), 100);
         }
       });
     }
