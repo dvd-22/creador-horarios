@@ -1,7 +1,8 @@
 import React, { useState, useMemo, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { createEvents } from "ics";
 import { useMajorContext } from "../contexts/MajorContext";
-import { Edit2, Download, X } from "lucide-react";
+import { Edit2, Download, X, Trash2 } from "lucide-react";
 import ProfessorRating from "./ProfessorRating";
 import { professorRatingService } from "../services/professorRatingService";
 
@@ -62,6 +63,7 @@ const SelectedGroupsPanel = ({
   showOnlySubjects = false,
   horizontal = false,
   showSubjectsCount = false,
+  hideHeader = false,
   onRevealGroup,
 }) => {
   const { availableMajors } = useMajorContext();
@@ -70,6 +72,7 @@ const SelectedGroupsPanel = ({
   const [tempTitle, setTempTitle] = useState(scheduleTitle);
   const [professorRatings, setProfessorRatings] = useState({});
   const [showDownloadModal, setShowDownloadModal] = useState(false);
+  const [showClearModal, setShowClearModal] = useState(false);
 
   // Fetch ratings for all professors
   useEffect(() => {
@@ -196,6 +199,22 @@ const SelectedGroupsPanel = ({
     } else if (e.key === "Escape") {
       handleTitleCancel();
     }
+  };
+
+  const handleClearAll = () => {
+    if (selectedGroups.length === 0) return;
+    setShowClearModal(true);
+  };
+
+  const handleConfirmClear = () => {
+    // Remove all groups one by one
+    selectedGroups.forEach((group) => {
+      onRemoveGroup(group.semester, group.subject, group.group, {
+        profesor: group.professor,
+        ayudantes: group.assistants,
+      });
+    });
+    setShowClearModal(false);
   };
 
   const handleExportICS = () => {
@@ -649,6 +668,57 @@ const SelectedGroupsPanel = ({
               </div>
             </div>
           )}
+
+          {/* Clear Confirmation Modal */}
+          {showClearModal && createPortal(
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/50 backdrop-blur-sm"
+              onClick={() => setShowClearModal(false)}
+            >
+              <div
+                className="bg-gray-800 rounded-lg shadow-xl w-full max-w-md border border-gray-700"
+                onClick={(e) => e.stopPropagation()}
+                onTouchEnd={(e) => e.stopPropagation()}
+              >
+                {/* Header */}
+                <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-700">
+                  <h2 className="text-lg sm:text-xl font-semibold text-gray-100">
+                    Limpiar horario
+                  </h2>
+                  <button
+                    onClick={() => setShowClearModal(false)}
+                    className="p-1 hover:bg-gray-700 rounded transition-colors text-gray-400 hover:text-gray-100 flex items-center justify-center"
+                    aria-label="Cerrar"
+                  >
+                    <X size={20} />
+                  </button>
+                </div>
+
+                {/* Content */}
+                <div className="p-4 sm:p-6">
+                  <p className="text-gray-300 text-sm mb-6">
+                    ¿Estás seguro de que quieres eliminar todas las {selectedGroups.length} materias seleccionadas?
+                  </p>
+
+                  <div className="flex gap-3">
+                    <button
+                      onClick={() => setShowClearModal(false)}
+                      className="flex-1 bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-lg transition-colors"
+                    >
+                      Cancelar
+                    </button>
+                    <button
+                      onClick={handleConfirmClear}
+                      className="flex-1 bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-lg transition-colors"
+                    >
+                      Limpiar
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>,
+            document.body
+          )}
         </>
       );
     }
@@ -781,52 +851,54 @@ const SelectedGroupsPanel = ({
     return (
       <div className="flex flex-col h-full bg-gray-900 text-white">
         {/* Fixed Header */}
-        <div className="flex-shrink-0 bg-gray-900 border-b border-gray-700 px-3 py-2">
-          <div className="flex items-center justify-between mb-2">
-            {/* Schedule Title */}
-            <div className="flex items-center flex-1 min-w-0">
-              {isEditingTitle ? (
-                <input
-                  type="text"
-                  value={tempTitle}
-                  onChange={(e) => setTempTitle(e.target.value)}
-                  onBlur={handleTitleSave}
-                  onKeyDown={handleTitleKeyPress}
-                  className="bg-gray-800 text-white px-2 py-1 rounded text-sm flex-1 border border-gray-600 focus:border-blue-500 outline-none"
-                  autoFocus
-                />
-              ) : (
-                <div
-                  onClick={handleTitleEdit}
-                  className="flex items-center flex-1 min-w-0 cursor-pointer group"
-                >
-                  <span className="text-white font-medium text-sm truncate">
-                    {scheduleTitle}
-                  </span>
-                  <div className="ml-2 text-gray-400 group-hover:text-white p-1 flex-shrink-0 transition-colors">
-                    <Edit2 size={12} />
+        {!hideHeader && (
+          <div className="flex-shrink-0 bg-gray-900 border-b border-gray-700 px-3 py-2">
+            <div className="flex items-center justify-between mb-2">
+              {/* Schedule Title */}
+              <div className="flex items-center flex-1 min-w-0">
+                {isEditingTitle ? (
+                  <input
+                    type="text"
+                    value={tempTitle}
+                    onChange={(e) => setTempTitle(e.target.value)}
+                    onBlur={handleTitleSave}
+                    onKeyDown={handleTitleKeyPress}
+                    className="bg-gray-800 text-white px-2 py-1 rounded text-sm flex-1 border border-gray-600 focus:border-blue-500 outline-none"
+                    autoFocus
+                  />
+                ) : (
+                  <div
+                    onClick={handleTitleEdit}
+                    className="flex items-center flex-1 min-w-0 cursor-pointer group"
+                  >
+                    <span className="text-white font-medium text-sm truncate">
+                      {scheduleTitle}
+                    </span>
+                    <div className="ml-2 text-gray-400 group-hover:text-white p-1 flex-shrink-0 transition-colors">
+                      <Edit2 size={12} />
+                    </div>
                   </div>
-                </div>
-              )}
-            </div>
+                )}
+              </div>
 
-            {/* Action Buttons */}
-            <div className="flex items-center space-x-2 ml-3 flex-shrink-0">
-              <button
-                onClick={handleSave}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-xs whitespace-nowrap"
-              >
-                Guardar
-              </button>
-              <button
-                onClick={handleExportICS}
-                className="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-xs whitespace-nowrap"
-              >
-                .ics
-              </button>
+              {/* Action Buttons */}
+              <div className="flex items-center space-x-2 ml-3 flex-shrink-0">
+                <button
+                  onClick={handleSave}
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded text-xs whitespace-nowrap"
+                >
+                  Guardar
+                </button>
+                <button
+                  onClick={handleExportICS}
+                  className="bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded text-xs whitespace-nowrap"
+                >
+                  .ics
+                </button>
+              </div>
             </div>
           </div>
-        </div>
+        )}
 
         {/* Scrollable Selected Groups */}
         <div className="flex-1 overflow-y-auto px-3 py-2">
@@ -991,49 +1063,77 @@ const SelectedGroupsPanel = ({
   return (
     <div className="h-full flex flex-col bg-gray-900 text-white">
       {/* Header */}
-      <div className="flex-shrink-0 p-4 border-b border-gray-700">
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center flex-1 min-w-0">
-            {isEditingTitle ? (
-              <input
-                type="text"
-                value={tempTitle}
-                onChange={(e) => setTempTitle(e.target.value)}
-                onBlur={handleTitleSave}
-                onKeyDown={handleTitleKeyPress}
-                className="bg-gray-800 text-white px-3 py-2 rounded border border-gray-600 focus:border-blue-500 outline-none flex-1"
-                autoFocus
-              />
-            ) : (
-              <div
-                onClick={handleTitleEdit}
-                className="flex items-center flex-1 min-w-0 cursor-pointer group"
-              >
-                <h2 className="text-lg font-semibold text-white truncate">
-                  {scheduleTitle}
-                </h2>
-                <div className="ml-2 text-gray-400 group-hover:text-white p-1 rounded flex-shrink-0 transition-colors">
-                  <Edit2 size={16} />
+      {!hideHeader && (
+        <div className="flex-shrink-0 p-4 border-b border-gray-700">
+          <div className="flex items-center justify-between gap-4">
+            <div className="flex items-center flex-1 min-w-0">
+              {isEditingTitle ? (
+                <input
+                  type="text"
+                  value={tempTitle}
+                  onChange={(e) => setTempTitle(e.target.value)}
+                  onBlur={handleTitleSave}
+                  onKeyDown={handleTitleKeyPress}
+                  className="bg-gray-800 text-white px-3 py-2 rounded border border-gray-600 focus:border-blue-500 outline-none flex-1"
+                  autoFocus
+                />
+              ) : (
+                <div
+                  onClick={handleTitleEdit}
+                  className="flex items-center flex-1 min-w-0 cursor-pointer group"
+                >
+                  <h2 className="text-lg font-semibold text-white truncate">
+                    {scheduleTitle}
+                  </h2>
+                  <div className="ml-2 text-gray-400 group-hover:text-white p-1 rounded flex-shrink-0 transition-colors">
+                    <Edit2 size={16} />
+                  </div>
                 </div>
-              </div>
-            )}
-          </div>
+              )}
+            </div>
 
-          {/* Download button */}
-          <button
-            onClick={() => setShowDownloadModal(true)}
-            className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded transition-colors flex items-center justify-center flex-shrink-0"
-          >
-            <Download size={20} />
-          </button>
+            {/* Action buttons */}
+            <div className="flex items-center gap-2">
+              {/* Clear all button */}
+              {selectedGroups.length > 0 && (
+                <button
+                  onClick={handleClearAll}
+                  className="bg-red-600 hover:bg-red-700 text-white p-2 rounded transition-colors flex items-center justify-center flex-shrink-0"
+                  title="Limpiar todas las materias"
+                >
+                  <Trash2 size={20} />
+                </button>
+              )}
+
+              {/* Download button */}
+              <button
+                onClick={() => setShowDownloadModal(true)}
+                className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded transition-colors flex items-center justify-center flex-shrink-0"
+              >
+                <Download size={20} />
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Selected Groups List */}
       <div className="flex-1 p-4 overflow-y-auto">
-        <h3 className="font-medium text-gray-300 mb-3">
-          Materias seleccionadas ({selectedGroups.length})
-        </h3>
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="font-medium text-gray-300">
+            Materias seleccionadas ({selectedGroups.length})
+          </h3>
+          {/* Clear all button - only show when header is hidden and there are groups */}
+          {hideHeader && selectedGroups.length > 0 && (
+            <button
+              onClick={handleClearAll}
+              className="bg-red-600 hover:bg-red-700 text-white p-2 rounded transition-colors flex items-center justify-center"
+              title="Limpiar todas las materias"
+            >
+              <Trash2 size={16} />
+            </button>
+          )}
+        </div>
         {selectedGroups.map((group, index) => {
           const majorInfo = Object.values(availableMajors).find(
             (m) => m.id === group.semester
@@ -1093,7 +1193,7 @@ const SelectedGroupsPanel = ({
                 <div className="border-t border-gray-700">
                   <div className="px-3 py-2 flex items-center justify-between">
                     {/* Group info */}
-                    <div className="flex items-center gap-2 text-xs">
+                    <div className="flex items-center gap-2">
                       <button
                         onClick={() =>
                           onRevealGroup &&
@@ -1105,7 +1205,7 @@ const SelectedGroupsPanel = ({
                             group.group
                           )
                         }
-                        className="bg-gray-700 hover:bg-gray-600 px-2 py-1 rounded text-gray-300 transition-colors cursor-pointer"
+                        className="bg-gray-700 hover:bg-gray-600 px-2 py-1 h-[26px] rounded text-gray-300 text-xs transition-colors cursor-pointer inline-flex items-center"
                         title="Ver en selector de materias"
                       >
                         Grupo {group.group}
@@ -1113,7 +1213,6 @@ const SelectedGroupsPanel = ({
                       {group.professor.nombre && (
                         <ProfessorRating
                           professorName={group.professor.nombre}
-                          className="text-xs"
                         />
                       )}
                     </div>
@@ -1128,7 +1227,7 @@ const SelectedGroupsPanel = ({
                             "noopener,noreferrer"
                           )
                         }
-                        className="inline-flex items-center px-2 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
+                        className="inline-flex items-center px-2 py-1 h-[26px] bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
                       >
                         <span className="mr-1">📄</span>
                         Presentación
@@ -1230,6 +1329,57 @@ const SelectedGroupsPanel = ({
             </div>
           </div>
         </div>
+      )}
+
+      {/* Clear Confirmation Modal */}
+      {showClearModal && createPortal(
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/50 backdrop-blur-sm"
+          onClick={() => setShowClearModal(false)}
+        >
+          <div
+            className="bg-gray-800 rounded-lg shadow-xl w-full max-w-md border border-gray-700"
+            onClick={(e) => e.stopPropagation()}
+            onTouchEnd={(e) => e.stopPropagation()}
+          >
+            {/* Header */}
+            <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-700">
+              <h2 className="text-lg sm:text-xl font-semibold text-gray-100">
+                Limpiar horario
+              </h2>
+              <button
+                onClick={() => setShowClearModal(false)}
+                className="p-1 hover:bg-gray-700 rounded transition-colors text-gray-400 hover:text-gray-100 flex items-center justify-center"
+                aria-label="Cerrar"
+              >
+                <X size={20} />
+              </button>
+            </div>
+
+            {/* Content */}
+            <div className="p-4 sm:p-6">
+              <p className="text-gray-300 text-sm mb-6">
+                ¿Estás seguro de que quieres eliminar todas las {selectedGroups.length} materias seleccionadas?
+              </p>
+
+              <div className="flex gap-3">
+                <button
+                  onClick={() => setShowClearModal(false)}
+                  className="flex-1 bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-lg transition-colors"
+                >
+                  Cancelar
+                </button>
+                <button
+                  onClick={handleConfirmClear}
+                  className="flex-1 bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-lg transition-colors"
+                >
+                  Limpiar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>,
+        document.body
       )}
     </div>
   );

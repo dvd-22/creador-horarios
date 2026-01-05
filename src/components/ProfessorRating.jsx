@@ -42,7 +42,7 @@ const ProfessorRating = ({ professorName, className = "" }) => {
 
     if (loading) {
         return (
-            <span className={`inline-flex items-center px-2 py-1 text-xs font-medium bg-gray-700 text-gray-400 rounded animate-pulse ${className}`}>
+            <span className={`inline-flex items-center px-2 py-1 h-[26px] text-xs font-medium bg-gray-700 text-gray-400 rounded animate-pulse ${className}`}>
                 <div className="w-2 h-2 bg-gray-500 rounded-full mr-1 animate-bounce"></div>
                 ...
             </span>
@@ -51,7 +51,7 @@ const ProfessorRating = ({ professorName, className = "" }) => {
 
     if (error || rating === null) {
         return (
-            <span className={`inline-flex items-center px-2 py-1 text-xs font-medium bg-gray-600 text-gray-400 rounded ${className}`}>
+            <span className={`inline-flex items-center px-2 py-1 h-[26px] text-xs font-medium bg-gray-600 text-gray-400 rounded ${className}`}>
                 N/A
             </span>
         );
@@ -62,7 +62,7 @@ const ProfessorRating = ({ professorName, className = "" }) => {
 
     return (
         <span
-            className={`inline-flex items-center px-2 py-1 text-xs font-medium text-white rounded cursor-pointer hover:opacity-80 transition-opacity ${bgColorClass} ${className}`}
+            className={`inline-flex items-center px-2 py-1 h-[26px] text-xs font-medium text-white rounded cursor-pointer hover:opacity-80 transition-opacity ${bgColorClass} ${className}`}
             onClick={handleClick}
             title={`Calificación: ${rating}/10 - Click para ver en MisProfesores.com`}
         >

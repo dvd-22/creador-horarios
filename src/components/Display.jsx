@@ -197,6 +197,7 @@ const Display = () => {
     const revealGroupRef = useRef(null);
     const openMobileMenuRef = useRef(null);
     const uncollapseLeftPanelRef = useRef(null);
+    const closeRightPanelRef = useRef(null);
 
     // Load groups from URL on mount
     useEffect(() => {
@@ -1033,10 +1034,16 @@ const Display = () => {
                                     }
 
                                     if (wasCollapsed) {
-                                        // Wait for panel to expand before revealing
-                                        setTimeout(() => {
-                                            fn(majorId, studyPlanId, semester, subject, group);
-                                        }, 200);
+                                        // Wait for panel to expand and component to fully render
+                                        // Use requestAnimationFrame to wait for browser to complete rendering
+                                        requestAnimationFrame(() => {
+                                            requestAnimationFrame(() => {
+                                                // Double RAF ensures layout is complete
+                                                setTimeout(() => {
+                                                    fn(majorId, studyPlanId, semester, subject, group);
+                                                }, 100);
+                                            });
+                                        });
                                     } else {
                                         // Panel already expanded, reveal immediately
                                         fn(majorId, studyPlanId, semester, subject, group);
@@ -1083,6 +1090,10 @@ const Display = () => {
                             onRevealGroup={(majorId, studyPlanId, semester, subject, group) => {
                                 // Open mobile menu if on mobile
                                 if (openMobileMenuRef.current) {
+                                    // Close right panel first
+                                    if (closeRightPanelRef.current) {
+                                        closeRightPanelRef.current();
+                                    }
                                     openMobileMenuRef.current();
                                     // Wait for menu to open before scrolling
                                     setTimeout(() => {
@@ -1108,6 +1119,7 @@ const Display = () => {
                     scheduleRef={scheduleRef}
                     onOpenMobileMenu={(fn) => { openMobileMenuRef.current = fn; }}
                     onUncollapseLeftPanel={(fn) => { uncollapseLeftPanelRef.current = fn; }}
+                    onCloseRightPanel={(fn) => { closeRightPanelRef.current = fn; }}
                 />
 
                 <ExportLayout
