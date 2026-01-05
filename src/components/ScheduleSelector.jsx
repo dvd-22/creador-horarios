@@ -135,11 +135,9 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
               requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
                   const groupId = `group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`;
-                  console.log('🔍 Looking for element:', groupId);
                   const groupElement = document.getElementById(groupId);
 
                   if (groupElement) {
-                    console.log('✅ Element found!');
                     const scrollContainer = groupElement.closest('.overflow-y-auto');
 
                     if (scrollContainer) {
@@ -148,13 +146,10 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
                       const topMargin = 150;
                       const scrollTo = elementTop - (containerHeight * 0.2) - topMargin;
 
-                      console.log('📜 Scrolling to position:', scrollTo);
                       scrollContainer.scrollTo({ top: scrollTo, behavior: 'smooth' });
                     } else {
                       groupElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }
-                  } else {
-                    console.log('❌ Element not found');
                   }
                 });
               });
@@ -170,11 +165,9 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
             requestAnimationFrame(() => {
               requestAnimationFrame(() => {
                 const groupId = `group-${semester.replace(/\s+/g, '-')}-${subject.replace(/\s+/g, '-')}-${group}`;
-                console.log('🔍 Looking for element:', groupId);
                 const groupElement = document.getElementById(groupId);
 
                 if (groupElement) {
-                  console.log('✅ Element found!');
                   const scrollContainer = groupElement.closest('.overflow-y-auto');
 
                   if (scrollContainer) {
@@ -183,13 +176,10 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
                     const topMargin = 150;
                     const scrollTo = elementTop - (containerHeight * 0.2) - topMargin;
 
-                    console.log('📜 Scrolling to position:', scrollTo);
                     scrollContainer.scrollTo({ top: scrollTo, behavior: 'smooth' });
                   } else {
                     groupElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
                   }
-                } else {
-                  console.log('❌ Element not found');
                 }
               });
             });
@@ -370,7 +360,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
   }, [searchQuery, majorData, filters]);
 
   useEffect(() => {
-    const loadVisibleProfessorRatings = async () => {};
+    const loadVisibleProfessorRatings = async () => { };
     loadVisibleProfessorRatings();
   }, [filteredScheduleData]);
 

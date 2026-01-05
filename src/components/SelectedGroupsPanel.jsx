@@ -1104,7 +1104,7 @@ const SelectedGroupsPanel = ({
                   <Trash2 size={20} />
                 </button>
               )}
-              
+
               {/* Download button */}
               <button
                 onClick={() => setShowDownloadModal(true)}
@@ -1127,11 +1127,10 @@ const SelectedGroupsPanel = ({
           {hideHeader && selectedGroups.length > 0 && (
             <button
               onClick={handleClearAll}
-              className="bg-red-600 hover:bg-red-700 text-white px-2 py-1 rounded text-xs flex items-center gap-1 transition-colors"
+              className="bg-red-600 hover:bg-red-700 text-white p-2 rounded transition-colors flex items-center justify-center"
               title="Limpiar todas las materias"
             >
-              <Trash2 size={14} />
-              <span>Limpiar</span>
+              <Trash2 size={16} />
             </button>
           )}
         </div>
@@ -1194,7 +1193,7 @@ const SelectedGroupsPanel = ({
                 <div className="border-t border-gray-700">
                   <div className="px-3 py-2 flex items-center justify-between">
                     {/* Group info */}
-                    <div className="flex items-center gap-2 text-xs">
+                    <div className="flex items-center gap-2">
                       <button
                         onClick={() =>
                           onRevealGroup &&
@@ -1206,7 +1205,7 @@ const SelectedGroupsPanel = ({
                             group.group
                           )
                         }
-                        className="bg-gray-700 hover:bg-gray-600 px-2 py-1 rounded text-gray-300 transition-colors cursor-pointer"
+                        className="bg-gray-700 hover:bg-gray-600 px-2 py-1 h-[26px] rounded text-gray-300 text-xs transition-colors cursor-pointer inline-flex items-center"
                         title="Ver en selector de materias"
                       >
                         Grupo {group.group}
@@ -1214,7 +1213,6 @@ const SelectedGroupsPanel = ({
                       {group.professor.nombre && (
                         <ProfessorRating
                           professorName={group.professor.nombre}
-                          className="text-xs"
                         />
                       )}
                     </div>
@@ -1229,7 +1227,7 @@ const SelectedGroupsPanel = ({
                             "noopener,noreferrer"
                           )
                         }
-                        className="inline-flex items-center px-2 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
+                        className="inline-flex items-center px-2 py-1 h-[26px] bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
                       >
                         <span className="mr-1">📄</span>
                         Presentación
