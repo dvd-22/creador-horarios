@@ -864,7 +864,7 @@
         "ayudantes": [
           {
             "nombre": "Marco Fabio Ortiz Ramírez",
-            "horario": "12:00 a 14:00",
+            "horario": "14:00 a 16:00",
             "dias": [
               "Mi",
               "Ju"
@@ -893,7 +893,7 @@
         "ayudantes": [
           {
             "nombre": "Celia Esperanza Sanginés Franco",
-            "horario": "12:00 a 14:00",
+            "horario": "14:00 a 16:00",
             "dias": [
               "Mi",
               "Ju"
@@ -909,7 +909,7 @@
       "5221": {
         "grupo": "5221",
         "profesor": {
-          "nombre": "Blanca Estela Hernández Baños",
+          "nombre": "Edgar Uriel Garduño Montes de Oca",
           "horarios": [
             {
               "horario": "15:00 a 17:00",
@@ -1025,7 +1025,7 @@
       "5225": {
         "grupo": "5225",
         "profesor": {
-          "nombre": "Alma Melisa Vázquez López",
+          "nombre": "Ricardo Mariño Pérez",
           "horarios": [
             {
               "horario": "18:00 a 20:00",
@@ -1136,7 +1136,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370849"
       }
     },
     "Historia de la biología": {
@@ -1225,7 +1225,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370852"
       },
       "5232": {
         "grupo": "5232",
@@ -1254,7 +1254,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370853"
       },
       "5233": {
         "grupo": "5233",
@@ -1520,7 +1520,7 @@
       "5242": {
         "grupo": "5242",
         "profesor": {
-          "nombre": "Norma Angélica López Gómez",
+          "nombre": "Anahi Carranza Ramirez",
           "horarios": [
             {
               "horario": "07:00 a 10:00",
@@ -1532,7 +1532,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Nataly Quiroz González",
+            "nombre": "Annie May Ek García García",
             "horario": "07:00 a 10:00",
             "dias": [
               "Vi"
@@ -1756,7 +1756,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Nataly Quiroz González",
             "horario": "11:00 a 14:00",
             "dias": [
               "Sa"
@@ -1823,7 +1823,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370873"
       },
       "5253": {
         "grupo": "5253",
@@ -1925,7 +1925,7 @@
         "ayudantes": [
           {
             "nombre": "María Luisa Núñez Reséndiz",
-            "horario": "18:00 a 21:00",
+            "horario": "15:00 a 18:00",
             "dias": [
               "Mi"
             ],
@@ -1943,9 +1943,9 @@
           "nombre": "Noé Becerra Lobato",
           "horarios": [
             {
-              "horario": "18:00 a 21:00",
+              "horario": "15:00 a 18:00",
               "dias": [
-                "Lu"
+                "Mi"
               ]
             }
           ]
@@ -1955,7 +1955,7 @@
             "nombre": "Graciela Arce Rocha",
             "horario": "18:00 a 21:00",
             "dias": [
-              "Mi"
+              "Lu"
             ],
             "salon": null
           }
@@ -1983,7 +1983,7 @@
             "nombre": "Maricruz Becerra Lobato",
             "horario": "18:00 a 21:00",
             "dias": [
-              "Vi"
+              "Ju"
             ],
             "salon": null
           }
@@ -2011,7 +2011,7 @@
             "nombre": "Ernesto Cabrera Becerril",
             "horario": "18:00 a 21:00",
             "dias": [
-              "Vi"
+              "Ju"
             ],
             "salon": null
           }
@@ -2222,7 +2222,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370887"
       },
       "5267": {
         "grupo": "5267",
@@ -2628,7 +2628,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370901"
       },
       "5281": {
         "grupo": "5281",
@@ -3230,7 +3230,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370922"
       },
       "5302": {
         "grupo": "5302",
@@ -3564,7 +3564,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Daniela Abigail Guzmán Ramírez",
             "horario": "12:00 a 14:00",
             "dias": [
               "Vi"
@@ -3870,7 +3870,7 @@
       "5324": {
         "grupo": "5324",
         "profesor": {
-          "nombre": "Daniela Abigail Guzmán Ramírez",
+          "nombre": null,
           "horarios": [
             {
               "horario": "18:00 a 20:00",
@@ -3985,7 +3985,7 @@
       "5328": {
         "grupo": "5328",
         "profesor": {
-          "nombre": "Rubí Bustamante García",
+          "nombre": "Felipe de Jesús Eslava Silva",
           "horarios": [
             {
               "horario": "07:30 a 10:30",
@@ -4377,7 +4377,7 @@
       "5342": {
         "grupo": "5342",
         "profesor": {
-          "nombre": "Felipe de Jesús Eslava Silva",
+          "nombre": "Rubí Bustamante García",
           "horarios": [
             {
               "horario": "18:00 a 21:00",
@@ -5081,7 +5081,7 @@
       "5367": {
         "grupo": "5367",
         "profesor": {
-          "nombre": "Paula Meli",
+          "nombre": "Liliana Itze López Olmedo",
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -5244,7 +5244,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370993"
       },
       "5373": {
         "grupo": "5373",
