@@ -144,7 +144,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370815"
       }
     },
     "Métodos básicos de biología": {
@@ -643,7 +643,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370832"
       },
       "5212": {
         "grupo": "5212",
@@ -1341,7 +1341,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370856"
       },
       "5236": {
         "grupo": "5236",
@@ -1399,7 +1399,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370858"
       },
       "5238": {
         "grupo": "5238",
@@ -1655,7 +1655,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370867"
       },
       "5247": {
         "grupo": "5247",
@@ -1907,7 +1907,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370876"
       },
       "5256": {
         "grupo": "5256",
@@ -2135,7 +2135,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370884"
       },
       "5264": {
         "grupo": "5264",
@@ -2372,7 +2372,7 @@
       "5272": {
         "grupo": "5272",
         "profesor": {
-          "nombre": null,
+          "nombre": "Karla Genoveva Bassols Bello",
           "horarios": [
             {
               "horario": "12:00 a 14:00",
@@ -2425,7 +2425,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370894"
       },
       "5274": {
         "grupo": "5274",
@@ -2530,7 +2530,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Sergio Antonio Alcalá Corona",
             "horario": "15:00 a 17:00",
             "dias": [
               "Vi"
@@ -2570,7 +2570,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370899"
       },
       "5279": {
         "grupo": "5279",
@@ -2775,7 +2775,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370906"
       }
     },
     "Ecología": {
@@ -2795,7 +2795,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Jorge Arturo Martínez Villegas",
+            "nombre": "Ángel Fernando Soto Pozos",
             "horario": null,
             "dias": [],
             "salon": null
@@ -2816,7 +2816,12 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Ma",
+                "Ma"
+              ]
+            },
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
                 "Vi"
               ]
             }
@@ -2862,7 +2867,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370909"
       }
     }
   },
@@ -2874,7 +2879,7 @@
           "nombre": "Alicia Cruz Martínez",
           "horarios": [
             {
-              "horario": "07:30 a 10:30",
+              "horario": "07:00 a 10:00",
               "dias": [
                 "Lu"
               ]
@@ -2884,7 +2889,7 @@
         "ayudantes": [
           {
             "nombre": "Rebeca María López Rivas",
-            "horario": "07:30 a 10:30",
+            "horario": "07:00 a 10:00",
             "dias": [
               "Ju"
             ],
@@ -2902,7 +2907,7 @@
           "nombre": "José Luis Bortolini Rosales",
           "horarios": [
             {
-              "horario": "07:30 a 10:30",
+              "horario": "07:00 a 10:00",
               "dias": [
                 "Lu"
               ]
@@ -2912,7 +2917,7 @@
         "ayudantes": [
           {
             "nombre": "Ivette Ruiz Boijseauneau",
-            "horario": "07:30 a 10:30",
+            "horario": "07:00 a 10:00",
             "dias": [
               "Ju"
             ],
@@ -2930,7 +2935,7 @@
           "nombre": "Perla María del Carmen Acevedo Ramírez",
           "horarios": [
             {
-              "horario": "07:30 a 10:30",
+              "horario": "07:00 a 10:00",
               "dias": [
                 "Ma"
               ]
@@ -2940,7 +2945,7 @@
         "ayudantes": [
           {
             "nombre": "Angela Arango Galván",
-            "horario": "07:30 a 10:30",
+            "horario": "07:00 a 10:00",
             "dias": [
               "Vi"
             ],
@@ -2958,7 +2963,7 @@
           "nombre": "Gema Yolanda Armendáriz Ortega",
           "horarios": [
             {
-              "horario": "07:30 a 10:30",
+              "horario": "07:00 a 10:00",
               "dias": [
                 "Mi"
               ]
@@ -2968,7 +2973,7 @@
         "ayudantes": [
           {
             "nombre": "Luis Gabriel Aguilar Estrada",
-            "horario": "07:30 a 10:30",
+            "horario": "07:00 a 10:00",
             "dias": [
               "Sa"
             ],
@@ -3174,7 +3179,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370920"
       },
       "5300": {
         "grupo": "5300",
@@ -3459,7 +3464,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370930"
       },
       "5310": {
         "grupo": "5310",
@@ -3585,8 +3590,8 @@
             {
               "horario": "12:00 a 14:00",
               "dias": [
-                "Ma",
-                "Mi"
+                "Lu",
+                "Ju"
               ]
             }
           ]
@@ -3594,9 +3599,9 @@
         "ayudantes": [
           {
             "nombre": "Carlos Granados Peláez",
-            "horario": "12:00 a 14:00",
+            "horario": "14:00 a 16:00",
             "dias": [
-              "Vi"
+              "Mi"
             ],
             "salon": null
           }
@@ -3691,7 +3696,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370938"
       },
       "5318": {
         "grupo": "5318",
@@ -3720,7 +3725,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370939"
       },
       "5319": {
         "grupo": "5319",
@@ -3749,7 +3754,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370940"
       },
       "5320": {
         "grupo": "5320",
@@ -3865,12 +3870,12 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370944"
       },
       "5324": {
         "grupo": "5324",
         "profesor": {
-          "nombre": null,
+          "nombre": "Erandi Tzayani Rodríguez Pérez",
           "horarios": [
             {
               "horario": "18:00 a 20:00",
@@ -3932,7 +3937,7 @@
           "nombre": "Rosa María Fonseca Juárez",
           "horarios": [
             {
-              "horario": "07:30 a 10:30",
+              "horario": "07:00 a 10:00",
               "dias": [
                 "Lu"
               ]
@@ -3942,7 +3947,7 @@
         "ayudantes": [
           {
             "nombre": "Felipe Ernesto Velázquez Montes",
-            "horario": "07:30 a 10:30",
+            "horario": "07:00 a 10:00",
             "dias": [
               "Ju"
             ],
@@ -3960,7 +3965,7 @@
           "nombre": "Susana Valencia Avalos",
           "horarios": [
             {
-              "horario": "07:30 a 10:30",
+              "horario": "07:00 a 10:00",
               "dias": [
                 "Ma"
               ]
@@ -3970,7 +3975,7 @@
         "ayudantes": [
           {
             "nombre": "Dalila Fragoso Tejas",
-            "horario": "07:30 a 10:30",
+            "horario": "07:00 a 10:00",
             "dias": [
               "Vi"
             ],
@@ -4044,7 +4049,7 @@
           "nombre": "Mónica Elías González",
           "horarios": [
             {
-              "horario": "07:30 a 10:30",
+              "horario": "07:00 a 10:00",
               "dias": [
                 "Mi"
               ]
@@ -4054,7 +4059,7 @@
         "ayudantes": [
           {
             "nombre": "Brenda Hernández Hernández",
-            "horario": "07:30 a 10:30",
+            "horario": "07:00 a 10:00",
             "dias": [
               "Sa"
             ],
@@ -4212,9 +4217,9 @@
           "nombre": "Ramiro Cruz Durán",
           "horarios": [
             {
-              "horario": "15:00 a 18:00",
+              "horario": "11:00 a 14:00",
               "dias": [
-                "Lu"
+                "Ma"
               ]
             }
           ]
@@ -4222,9 +4227,9 @@
         "ayudantes": [
           {
             "nombre": "María Elena García Granados",
-            "horario": "15:00 a 18:00",
+            "horario": "11:00 a 14:00",
             "dias": [
-              "Ju"
+              "Vi"
             ],
             "salon": null
           }
@@ -4372,7 +4377,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370962"
       },
       "5342": {
         "grupo": "5342",
@@ -4812,7 +4817,7 @@
         "ayudantes": [
           {
             "nombre": "Carlos Alfredo Silva Islas",
-            "horario": "18:00 a 21:00",
+            "horario": "15:00 a 18:00",
             "dias": [
               "Mi"
             ],
@@ -4839,7 +4844,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Rosa Nuria Galindo Solano",
+            "nombre": "Nancy Galvez Reyes",
             "horario": "18:00 a 21:00",
             "dias": [
               "Ju"
@@ -4855,12 +4860,12 @@
       "5359": {
         "grupo": "5359",
         "profesor": {
-          "nombre": "Nancy Galvez Reyes",
+          "nombre": "Rosa Nuria Galindo Solano",
           "horarios": [
             {
-              "horario": "18:00 a 21:00",
+              "horario": "15:00 a 18:00",
               "dias": [
-                "Ma"
+                "Lu"
               ]
             }
           ]
@@ -4868,7 +4873,7 @@
         "ayudantes": [
           {
             "nombre": "Brandon Bustos García",
-            "horario": "18:00 a 21:00",
+            "horario": "15:00 a 18:00",
             "dias": [
               "Ju"
             ],
@@ -4972,7 +4977,7 @@
           "nombre": "Alya Ramos Ramos Elorduy",
           "horarios": [
             {
-              "horario": "07:30 a 10:30",
+              "horario": "07:00 a 10:00",
               "dias": [
                 "Ma"
               ]
@@ -4982,7 +4987,7 @@
         "ayudantes": [
           {
             "nombre": "Leobardo Terpán Acuña",
-            "horario": "07:30 a 10:30",
+            "horario": "07:00 a 10:00",
             "dias": [
               "Vi"
             ],
@@ -5028,7 +5033,7 @@
           "nombre": "Irama Silvia Marisela Núñez Tancredi",
           "horarios": [
             {
-              "horario": "07:30 a 10:30",
+              "horario": "07:00 a 10:00",
               "dias": [
                 "Mi"
               ]
@@ -5038,7 +5043,7 @@
         "ayudantes": [
           {
             "nombre": "Libertad Rosalia Castro Colina",
-            "horario": "07:30 a 10:30",
+            "horario": "07:00 a 10:00",
             "dias": [
               "Sa"
             ],
@@ -5348,7 +5353,7 @@
             "nombre": "Joshafat Mostalac Valdivieso",
             "horario": "18:00 a 21:00",
             "dias": [
-              "Vi"
+              "Ju"
             ],
             "salon": null
           }

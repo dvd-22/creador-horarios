@@ -499,7 +499,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369386"
       }
     },
     "Biología de Hongos": {
@@ -617,7 +617,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369390"
       },
       "5020": {
         "grupo": "5020",
@@ -1251,7 +1251,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369412"
       },
       "5042": {
         "grupo": "5042",
@@ -1650,7 +1650,7 @@
       "5056": {
         "grupo": "5056",
         "profesor": {
-          "nombre": "Johnattan Hernández Cumplido",
+          "nombre": "Irene Pisanty Baruch",
           "horarios": [
             {
               "horario": "14:30 a 17:30",
@@ -1662,7 +1662,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Irene Pisanty Baruch",
+            "nombre": "Yasmin Vázquez Santos",
             "horario": "14:30 a 17:30",
             "dias": [
               "Lu"
@@ -1678,7 +1678,7 @@
       "5057": {
         "grupo": "5057",
         "profesor": {
-          "nombre": "Zenón Cano Santana",
+          "nombre": "Jorge Arturo Martínez Villegas",
           "horarios": [
             {
               "horario": "14:30 a 17:30",
@@ -1815,7 +1815,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369432"
       },
       "5062": {
         "grupo": "5062",
@@ -1983,7 +1983,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369438"
       },
       "5068": {
         "grupo": "5068",
@@ -2403,7 +2403,7 @@
         "nota": "Biología y ecología de Invertebrados Marinos",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371025"
       },
       "5408": {
         "grupo": "5408",
@@ -3003,7 +3003,7 @@
         "nota": "Interacciones socio-ecológicas en sistemas acuáticos.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371103"
       },
       "5484": {
         "grupo": "5484",
@@ -3448,7 +3448,7 @@
         "nota": "Procesos de la biosfera, sustentabilidad y sociedad.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371146"
       },
       "5531": {
         "grupo": "5531",
@@ -3566,6 +3566,80 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5580": {
+        "grupo": "5580",
+        "profesor": {
+          "nombre": "María Gloria Soldevila Melgarejo",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Marisol Sandoval Ríos",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Aleida Núñez Ruiz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Mauricio Ortiz Ramírez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ada Nelly Galicia Camacho",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Cynthia Paola López  Pacheco",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Análisis de los mecanismos moleculares y celulares involucrados en la regulación del sistema inmune.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5581": {
+        "grupo": "5581",
+        "profesor": {
+          "nombre": "Luis Felipe Montaño Estrada",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Erika Patricia Rendón Huerta",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Naresh Esteban Diego Bocanegra",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Jorge Hiram Romero Estrada",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Biología del cáncer: importancia de las uniones intercelulares.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371390"
       }
     }
   },
@@ -6045,6 +6119,166 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5583": {
+        "grupo": "5583",
+        "profesor": {
+          "nombre": "Federico Bermúdez Rattoni",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Daniel Osorio Gómez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Arturo Hernández Matias",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Karla Gabriela Medina Medina",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Diana Laura Calvillo Montoya",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Luis Francisco Rodríguez Durán",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Neurobiología del aprendizaje y la memoria.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5585": {
+        "grupo": "5585",
+        "profesor": {
+          "nombre": "Aliesha Araceli González Arenas",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Luis Daniel Ríos Barrera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ingrid Annette Fetter Pruneda",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Marisol De la Fuente Granada",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Denisse Itzel Arcos Montoya",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Luis Eduardo Sánchez Cisneros",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Técnicas de investigación para el estudio de las neurociencias en modelos animales",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5586": {
+        "grupo": "5586",
+        "profesor": {
+          "nombre": "Roberto Garibay Orijel",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Rodolfo Salas Lizana",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ricardo Miranda Gonzalez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Norberto Sánchez Téllez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Felipe Campos Cerda",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Miguel Fernando Romero Gutiérrez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Diversidad y aspectos ecológicos de macromicetos saprobios, ectomicorrizicos y líquenes.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5588": {
+        "grupo": "5588",
+        "profesor": {
+          "nombre": "Jesus Chimal Monroy",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Jessica Cristina Marín Llera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rosa Estela Navarro González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Diana María Escalante Alcalde",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Biología de desarrollo y regeneración en diversos modelos animales",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -7025,7 +7259,7 @@
         "nota": "Interacciones socio-ecológicas en sistemas acuáticos.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371104"
       },
       "5488": {
         "grupo": "5488",
@@ -7455,6 +7689,37 @@
           }
         ],
         "nota": "Biología de la Reproducción en Mamíferos",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371386"
+      },
+      "5582": {
+        "grupo": "5582",
+        "profesor": {
+          "nombre": "Luis Felipe Montaño Estrada",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Erika Patricia Rendón Huerta",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Naresh Esteban Diego Bocanegra",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Jorge Hiram Romero Estrada",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Biología del cáncer: importancia de las uniones intercelulares.",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -9596,6 +9861,123 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5584": {
+        "grupo": "5584",
+        "profesor": {
+          "nombre": "Federico Bermúdez Rattoni",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Daniel Osorio Gómez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Arturo Hernández Matias",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Karla Gabriela Medina Medina",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Diana Laura Calvillo Montoya",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Luis Francisco Rodríguez Durán",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Neurobiología del aprendizaje y la memoria.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5587": {
+        "grupo": "5587",
+        "profesor": {
+          "nombre": "Roberto Garibay Orijel",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Rodolfo Salas Lizana",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ricardo Miranda Gonzalez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Norberto Sánchez Téllez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Felipe Campos Cerda",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Miguel Fernando Romero Gutiérrez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Diversidad y aspectos ecológicos de macromicetos saprobios, ectomicorrizicos y líquenes.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5589": {
+        "grupo": "5589",
+        "profesor": {
+          "nombre": "Jesus Chimal Monroy",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Jessica Cristina Marín Llera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rosa Estela Navarro González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Diana María Escalante Alcalde",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Biología de desarrollo y regeneración en diversos modelos animales",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -9627,7 +10009,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369484"
       }
     },
     "Administración de Recursos Naturales": {
@@ -10118,7 +10500,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369500"
       }
     },
     "Cronobiología": {
@@ -10934,7 +11316,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371168"
       }
     },
     "Mastozoología": {
@@ -11232,7 +11614,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369533"
       }
     },
     "Recursos Forestales de México y su Manejo Sustentable": {
@@ -11315,7 +11697,7 @@
         "nota": "Bioetica I",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369536"
       },
       "5166": {
         "grupo": "5166",
@@ -11388,25 +11770,6 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369539"
-      },
-      "5552": {
-        "grupo": "5552",
-        "profesor": null,
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "11:00 a 14:00",
-            "dias": [
-              "Lu",
-              "Mi"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
       },
       "5553": {
         "grupo": "5553",
@@ -11733,7 +12096,7 @@
         "nota": "Nanobiología Celular",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369548"
       },
       "5564": {
         "grupo": "5564",
@@ -11874,7 +12237,7 @@
         "nota": "Taxonomía y sistemáticade hongos macroscópicos",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369551"
       },
       "5547": {
         "grupo": "5547",
@@ -11980,7 +12343,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369552"
       },
       "5182": {
         "grupo": "5182",
@@ -12262,7 +12625,7 @@
         "nota": "Interacciones ecológicas de invertebrados y vegetación acuática",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371206"
       }
     },
     "Temas Selectos de Biología IV": {
@@ -12346,7 +12709,7 @@
         "nota": "Principios de liquenología",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371314"
       },
       "5575": {
         "grupo": "5575",
