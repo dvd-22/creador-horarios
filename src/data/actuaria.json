@@ -61,7 +61,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369562"
       },
       "4002": {
         "grupo": "4002",
@@ -123,7 +123,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369564"
       },
       "4004": {
         "grupo": "4004",
@@ -266,7 +266,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "José Mario Martínez Alfaro",
             "horario": "21:00 a 22:00",
             "dias": [
               "Ma",
@@ -278,7 +278,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369569"
       }
     },
     "Cálculo Diferencial e Integral I": {
@@ -315,7 +315,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369570"
       },
       "4010": {
         "grupo": "4010",
@@ -522,7 +522,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ninive Atenea Tello Arcos",
             "horario": "15:00 a 16:00",
             "dias": [
               "Lu",
@@ -602,7 +602,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Enrique Vega Castillo",
             "horario": "17:00 a 18:00",
             "dias": [
               "Lu",
@@ -655,7 +655,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369588"
       },
       "4019": {
         "grupo": "4019",
@@ -695,7 +695,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369590"
       }
     },
     "Geometría Analítica I": {
@@ -914,7 +914,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369604"
       },
       "4027": {
         "grupo": "4027",
@@ -945,7 +945,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369606"
       },
       "4028": {
         "grupo": "4028",
@@ -1038,7 +1038,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369612"
       },
       "4031": {
         "grupo": "4031",
@@ -1069,7 +1069,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369614"
       },
       "4032": {
         "grupo": "4032",
@@ -1264,7 +1264,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369624"
       },
       "4040": {
         "grupo": "4040",
@@ -1326,7 +1326,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369626"
       },
       "4042": {
         "grupo": "4042",
@@ -3198,7 +3198,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369697"
       },
       "4088": {
         "grupo": "4088",
@@ -3260,7 +3260,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369699"
       },
       "4090": {
         "grupo": "4090",
@@ -3632,7 +3632,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371185"
       }
     },
     "Inglés II": {
@@ -3659,7 +3659,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371211"
       },
       "9317": {
         "grupo": "9317",
@@ -3811,11 +3811,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Finanzas"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Finanzas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370640"
       },
@@ -3873,13 +3873,13 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Investigación de Operaciones"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Investigación de Operaciones",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370644"
       },
       "9163": {
         "grupo": "9163",
@@ -3904,13 +3904,13 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370646"
       },
       "9165": {
         "grupo": "9165",
@@ -3935,11 +3935,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370648"
       },
@@ -3972,7 +3972,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370650"
       },
       "9169": {
         "grupo": "9169",
@@ -3997,11 +3997,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Finanzas"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Finanzas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370652"
       },
@@ -4121,11 +4121,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Finanzas"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Finanzas",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -4152,11 +4152,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370662"
       },
@@ -4183,11 +4183,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -4214,13 +4214,13 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Finanzas"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Finanzas",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370666"
       }
     }
   },
@@ -4503,7 +4503,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369719"
       },
       "4110": {
         "grupo": "4110",
@@ -4534,7 +4534,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369720"
       },
       "4111": {
         "grupo": "4111",
@@ -4664,7 +4664,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369724"
       },
       "4115": {
         "grupo": "4115",
@@ -4686,7 +4686,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "José Santos",
             "horario": "08:00 a 09:00",
             "dias": [
               "Lu",
@@ -4734,7 +4734,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369726"
       },
       "4117": {
         "grupo": "4117",
@@ -5056,7 +5056,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370668"
       },
       "9186": {
         "grupo": "9186",
@@ -5126,7 +5126,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371170"
       },
       "9350": {
         "grupo": "9350",
@@ -5145,7 +5145,7 @@
         },
         "ayudantes": [],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371319"
       }
@@ -5305,6 +5305,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9354": {
+        "grupo": "9354",
+        "profesor": {
+          "nombre": "Humberto Plata Gallegos",
+          "horarios": [
+            {
+              "horario": "19:00 a 20:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371405"
       }
     },
     "Probabilidad I": {
@@ -5480,7 +5511,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alfonso Zavala Cessa",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -5511,7 +5542,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Almendra María Valdez Astudillo",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ju",
@@ -5783,7 +5814,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369746"
       },
       "4137": {
         "grupo": "4137",
@@ -6148,7 +6179,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369756"
       },
       "4147": {
         "grupo": "4147",
@@ -6308,7 +6339,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369760"
       },
       "4151": {
         "grupo": "4151",
@@ -6679,7 +6710,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Sergio Ulises Arellano Barrera",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
@@ -6722,7 +6753,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369786"
       },
       "4165": {
         "grupo": "4165",
@@ -6815,7 +6846,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369792"
       },
       "4168": {
         "grupo": "4168",
@@ -7254,7 +7285,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370350"
       },
       "9072": {
         "grupo": "9072",
@@ -7285,7 +7316,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370352"
       }
     },
     "Matemáticas Actuariales del Seguro de Personas I": {
@@ -7339,7 +7370,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Sofía Guzmán León",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -7489,7 +7520,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370320"
       },
       "9041": {
         "grupo": "9041",
@@ -7616,7 +7647,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rodrígo Dolores Ibarra",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -7659,7 +7690,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370323"
       },
       "9044": {
         "grupo": "9044",
@@ -7721,7 +7752,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370325"
       },
       "9046": {
         "grupo": "9046",
@@ -7833,7 +7864,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Carmina García Pérez",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ju",
@@ -8000,7 +8031,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370334"
       },
       "9055": {
         "grupo": "9055",
@@ -8019,7 +8050,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Víctor Manuel Huitrón Zambrano",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -8032,6 +8063,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370335"
+      },
+      "9352": {
+        "grupo": "9352",
+        "profesor": {
+          "nombre": "Marco Antonio López Ortiz",
+          "horarios": [
+            {
+              "horario": "08:00 a 09:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     }
   },
@@ -8190,7 +8252,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369807"
       },
       "4181": {
         "grupo": "4181",
@@ -8314,7 +8376,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369811"
       },
       "4185": {
         "grupo": "4185",
@@ -8471,7 +8533,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370678"
       },
       "9311": {
         "grupo": "9311",
@@ -8659,7 +8721,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370688"
       },
       "9207": {
         "grupo": "9207",
@@ -8690,7 +8752,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370690"
       },
       "9209": {
         "grupo": "9209",
@@ -8856,7 +8918,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371175"
       }
     },
     "Mercados Financieros y Valuación de Instrumentos": {
@@ -9108,7 +9170,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370368"
       },
       "9314": {
         "grupo": "9314",
@@ -9199,11 +9261,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -9323,11 +9385,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Demografía"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Demografía",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370381"
       },
@@ -9354,13 +9416,13 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370383"
       },
       "9105": {
         "grupo": "9105",
@@ -9391,7 +9453,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370385"
       }
     },
     "Demografía": {
@@ -9517,7 +9579,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370702"
       },
       "9221": {
         "grupo": "9221",
@@ -9900,7 +9962,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370715"
       },
       "9233": {
         "grupo": "9233",
@@ -9931,7 +9993,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370716"
       }
     },
     "Métodos Cuantitativos en Finanzas": {
@@ -9964,7 +10026,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370717"
       },
       "9235": {
         "grupo": "9235",
@@ -10076,7 +10138,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Claudia Gloria Ortiz Sánchez",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -10088,7 +10150,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370721"
       },
       "9239": {
         "grupo": "9239",
@@ -10150,7 +10212,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370723"
       },
       "9241": {
         "grupo": "9241",
@@ -10214,7 +10276,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370725"
       },
       "9244": {
         "grupo": "9244",
@@ -10338,7 +10400,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370733"
       },
       "9252": {
         "grupo": "9252",
@@ -10516,7 +10578,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Mónica Andrea Gómez Sánchez",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -10559,7 +10621,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370747"
       }
     },
     "Inglés VI": {
@@ -10700,7 +10762,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370751"
       },
       "9309": {
         "grupo": "9309",
@@ -10954,7 +11016,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370757"
       },
       "9276": {
         "grupo": "9276",
@@ -10985,7 +11047,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370759"
       },
       "9278": {
         "grupo": "9278",
@@ -11016,7 +11078,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370761"
       },
       "9280": {
         "grupo": "9280",
@@ -11111,7 +11173,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370391"
       },
       "9112": {
         "grupo": "9112",
@@ -11142,12 +11204,12 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370392"
       },
       "9113": {
         "grupo": "9113",
         "profesor": {
-          "nombre": "Carlos Llanas Vázquez",
+          "nombre": "César Adrián Hernández Viveros",
           "horarios": [
             {
               "horario": "08:00 a 09:00",
@@ -11161,7 +11223,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "José Enrique Pérez Salvador",
+            "nombre": null,
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -11172,7 +11234,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": null
       },
       "9114": {
@@ -11235,7 +11297,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370395"
       },
       "9308": {
         "grupo": "9308",
@@ -11423,7 +11485,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370400"
       },
       "9121": {
         "grupo": "9121",
@@ -11485,7 +11547,38 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370402"
+      },
+      "9353": {
+        "grupo": "9353",
+        "profesor": {
+          "nombre": "Edgar Gerardo Alarcón González",
+          "horarios": [
+            {
+              "horario": "19:00 a 20:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371403"
       }
     }
   },
@@ -11519,8 +11612,8 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
-        "presentacion": null
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370403"
       },
       "9124": {
         "grupo": "9124",
@@ -11583,7 +11676,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370405"
       }
     },
@@ -11648,7 +11741,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370407"
       }
     },
     "Álgebra Lineal II": {
@@ -11774,7 +11867,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369736"
       },
       "4127": {
         "grupo": "4127",
@@ -11867,7 +11960,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369739"
       },
       "4130": {
         "grupo": "4130",
@@ -11898,7 +11991,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369740"
       },
       "4131": {
         "grupo": "4131",
@@ -12010,7 +12103,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Stephanie Nicole Cabello Fragoso",
             "horario": "21:00 a 22:00",
             "dias": [
               "Ma",
@@ -12022,7 +12115,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369744"
       }
     },
     "Análisis Matemático II": {
@@ -12211,6 +12304,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369827"
+      },
+      "4351": {
+        "grupo": "4351",
+        "profesor": {
+          "nombre": "María de los Ángeles Sandoval Romero",
+          "horarios": [
+            {
+              "horario": "13:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Análisis Matemático III": {
@@ -12243,7 +12367,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369838"
       }
     },
     "Análisis Matemático IV": {
@@ -12372,7 +12496,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370410"
       },
       "9131": {
@@ -12431,11 +12555,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Demografía"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Demografía",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370412"
       },
@@ -12467,8 +12591,8 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
-        "presentacion": null
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370413"
       },
       "9134": {
         "grupo": "9134",
@@ -12563,7 +12687,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370416"
       }
     },
     "Demografía Avanzada": {
@@ -12628,8 +12752,8 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
-        "presentacion": null
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370417"
       },
       "9138": {
         "grupo": "9138",
@@ -12648,7 +12772,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Monserrat Zuñiga Loreto",
+            "nombre": "Melani Aquino Cedillo",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -12660,7 +12784,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370418"
       }
     },
     "Ecuaciones Diferenciales II": {
@@ -12821,7 +12945,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369854"
       },
       "4228": {
         "grupo": "4228",
@@ -12873,7 +12997,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ángel Mejía Monroy",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -13045,7 +13169,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370422"
       }
     },
@@ -13079,7 +13203,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369881"
       },
       "4255": {
         "grupo": "4255",
@@ -13172,7 +13296,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369884"
       },
       "4347": {
         "grupo": "4347",
@@ -13267,7 +13391,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369886"
       },
       "4260": {
         "grupo": "4260",
@@ -13460,7 +13584,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370424"
       },
       "9145": {
@@ -13544,7 +13668,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Huitzil Sánchez Martínez",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -13589,7 +13713,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370427"
       }
     },
     "Programación no Lineal": {
@@ -13622,7 +13746,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371372"
       }
     },
     "Reaseguro": {
@@ -13654,7 +13778,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370428"
       },
       "9149": {
@@ -13749,7 +13873,7 @@
         ],
         "nota": "Análisis de estados financieros de instituciones de seguros",
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370771"
       },
       "9289": {
@@ -13775,13 +13899,13 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Demografía"
           }
         ],
         "nota": "JUEGOS EVOLUTIVOS",
-        "salon": null,
-        "modalidad": "Virtual",
-        "presentacion": null
+        "salon": "Taller de Demografía",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370772"
       },
       "9342": {
         "grupo": "9342",
@@ -13811,7 +13935,7 @@
         ],
         "nota": "Aprendizaje automático y Business Intelligence en Seguro Automotriz",
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371263"
       }
     },
@@ -13844,7 +13968,7 @@
         ],
         "nota": "Construcción de Indicadores",
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370773"
       },
       "9291": {
@@ -13936,7 +14060,7 @@
         "nota": "Aplicaciones actuariales en Seguros de Salud Públicos",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370776"
       },
       "9341": {
         "grupo": "9341",
@@ -14000,7 +14124,7 @@
         "nota": "Aprendizaje estadístico automatizado",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370777"
       },
       "9295": {
         "grupo": "9295",
@@ -14030,7 +14154,7 @@
         ],
         "nota": "Introducción a la Ciencia de Datos con Spark",
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -14097,7 +14221,7 @@
         "nota": "Finanzas Aplicadas",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371261"
       }
     },
     "Series de Tiempo": {
@@ -14163,7 +14287,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370780"
       }
     },
     "Temas Selectos de Economía": {
@@ -14227,7 +14351,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370783"
       }
     },
     "Temas Selectos de Investigación de Operaciones": {
@@ -14287,13 +14411,13 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Demografía"
           }
         ],
         "nota": null,
-        "salon": null,
-        "modalidad": "Virtual",
-        "presentacion": null
+        "salon": "Taller de Demografía",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370431"
       },
       "9153": {
         "grupo": "9153",
@@ -14345,7 +14469,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Zeus Hernández Gallegos",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -14568,7 +14692,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Carlos Germán López Rodríguez",
+            "nombre": "Isabel Vásquez Ortiz",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -14616,10 +14740,10 @@
       "4335": {
         "grupo": "4335",
         "profesor": {
-          "nombre": null,
+          "nombre": "Jesús Manuel Mayorquín García",
           "horarios": [
             {
-              "horario": "18:00 a 19:00",
+              "horario": "19:00 a 20:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -14631,7 +14755,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "18:00 a 19:00",
+            "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
               "Ju"
@@ -14639,7 +14763,7 @@
             "salon": null
           }
         ],
-        "nota": "Este curso se impartirá de 19 a 20 horas por el Dr. Jesús Manuel Mayorquin",
+        "nota": null,
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -14683,7 +14807,7 @@
           "nombre": "Jorge Marcos Martínez Montejano",
           "horarios": [
             {
-              "horario": "18:00 a 19:00",
+              "horario": "13:00 a 14:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -14695,7 +14819,7 @@
         "ayudantes": [
           {
             "nombre": "Rodrigo Iván Rodríguez Barrera",
-            "horario": "18:00 a 19:00",
+            "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
               "Ju"
@@ -14703,7 +14827,7 @@
             "salon": null
           }
         ],
-        "nota": "Este curso se impartirá en el horario de 13 a 14 horas",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
