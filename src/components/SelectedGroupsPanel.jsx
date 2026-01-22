@@ -589,12 +589,25 @@ const SelectedGroupsPanel = ({
             </div>
 
             {/* Action Buttons */}
-            <button
-              onClick={() => setShowDownloadModal(true)}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-2 py-1 rounded text-xs whitespace-nowrap flex items-center justify-center flex-shrink-0"
-            >
-              <Download size={16} />
-            </button>
+            <div className="flex items-center gap-2">
+              {/* Save button */}
+              {onManualSave && (
+                <button
+                  onClick={onManualSave}
+                  className="bg-green-600 hover:bg-green-700 text-white px-2 py-1 rounded text-xs whitespace-nowrap flex items-center justify-center flex-shrink-0"
+                  title="Guardar horario en este navegador"
+                >
+                  <Save size={16} />
+                </button>
+              )}
+              
+              <button
+                onClick={() => setShowDownloadModal(true)}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-2 py-1 rounded text-xs whitespace-nowrap flex items-center justify-center flex-shrink-0"
+              >
+                <Download size={16} />
+              </button>
+            </div>
           </div>
 
           {/* Download Modal */}

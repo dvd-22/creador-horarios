@@ -102,6 +102,30 @@ const CustomAlert = ({ message, onClose }) => (
     </div>
 );
 
+const SuccessAlert = ({ message, onClose }) => (
+    <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-[60] w-[90%] max-w-md bg-green-900/80 border border-green-500 text-white px-5 py-4 rounded-lg shadow-xl backdrop-blur-sm">
+        <div className="flex items-start">
+            <div className="flex-shrink-0 mr-3">
+                <svg className="h-6 w-6 text-green-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+            </div>
+            <div className="flex-1 ml-1">
+                <p className="text-sm font-medium">{message}</p>
+            </div>
+            <button
+                onClick={onClose}
+                className="ml-3 flex-shrink-0 text-green-300 hover:text-white transition-colors"
+                aria-label="Close alert"
+            >
+                <svg className="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+            </button>
+        </div>
+    </div>
+);
+
 const OverlapToggle = ({ checked, onChange }) => (
     <div className="flex items-center space-x-2 px-4 py-2 bg-gray-800 border-t border-gray-700">
         <div className="flex items-center">
@@ -149,6 +173,7 @@ const Display = () => {
     const [isLoadingFromURL, setIsLoadingFromURL] = useState(false);
     const [hasInitiallyLoaded, setHasInitiallyLoaded] = useState(false);
     const [conflictAlert, setConflictAlert] = useState(null);
+    const [successAlert, setSuccessAlert] = useState(null);
     const [scheduleTitle, setScheduleTitle] = useState(() => {
         // First, try to load from URL hash
         const hash = window.location.hash.substring(1);
@@ -278,12 +303,12 @@ const Display = () => {
             localStorage.setItem('spacers', JSON.stringify(spacers));
             localStorage.setItem('allowOverlap', JSON.stringify(allowOverlap));
             setHasUnsavedChanges(false);
-            setSavePopupMessage('Horario guardado exitosamente');
-            setShowSavePopup(true);
+            setSuccessAlert('Horario guardado');
+            // Auto-dismiss after 3 seconds
+            setTimeout(() => setSuccessAlert(null), 3000);
         } catch (error) {
             console.warn('Failed to save schedule to localStorage:', error);
-            setSavePopupMessage('Error al guardar el horario');
-            setShowSavePopup(true);
+            setConflictAlert('Error al guardar el horario');
         }
     };
 
@@ -1023,6 +1048,12 @@ const Display = () => {
                     <CustomAlert
                         message={conflictAlert}
                         onClose={() => setConflictAlert(null)}
+                    />
+                )}
+                {successAlert && (
+                    <SuccessAlert
+                        message={successAlert}
+                        onClose={() => setSuccessAlert(null)}
                     />
                 )}
                 {showOverlapWarning && (
