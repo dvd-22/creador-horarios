@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { createEvents } from "ics";
 import { useMajorContext } from "../contexts/MajorContext";
-import { Edit2, Download, X, Trash2 } from "lucide-react";
+import { Edit2, Download, X, Trash2, Save } from "lucide-react";
 import ProfessorRating from "./ProfessorRating";
 import { professorRatingService } from "../services/professorRatingService";
 
@@ -55,6 +55,7 @@ const SelectedGroupsPanel = ({
   spacers = [],
   onRemoveGroup,
   onSaveSchedule,
+  onManualSave,
   setShowSavePopup,
   scheduleTitle,
   onTitleChange,
@@ -1094,14 +1095,14 @@ const SelectedGroupsPanel = ({
 
             {/* Action buttons */}
             <div className="flex items-center gap-2">
-              {/* Clear all button */}
-              {selectedGroups.length > 0 && (
+              {/* Save button */}
+              {onManualSave && (
                 <button
-                  onClick={handleClearAll}
-                  className="bg-red-600 hover:bg-red-700 text-white p-2 rounded transition-colors flex items-center justify-center flex-shrink-0"
-                  title="Limpiar todas las materias"
+                  onClick={onManualSave}
+                  className="bg-green-600 hover:bg-green-700 text-white p-2 rounded transition-colors flex items-center justify-center flex-shrink-0"
+                  title="Guardar horario en este navegador"
                 >
-                  <Trash2 size={20} />
+                  <Save size={20} />
                 </button>
               )}
 
@@ -1123,8 +1124,8 @@ const SelectedGroupsPanel = ({
           <h3 className="font-medium text-gray-300">
             Materias seleccionadas ({selectedGroups.length})
           </h3>
-          {/* Clear all button - only show when header is hidden and there are groups */}
-          {hideHeader && selectedGroups.length > 0 && (
+          {/* Clear all button - always show when there are groups */}
+          {selectedGroups.length > 0 && (
             <button
               onClick={handleClearAll}
               className="bg-red-600 hover:bg-red-700 text-white p-2 rounded transition-colors flex items-center justify-center"

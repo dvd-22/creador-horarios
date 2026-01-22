@@ -187,11 +187,19 @@ const Display = () => {
                 console.warn('Failed to load allowOverlap from URL:', error);
             }
         }
-        return false;
+        
+        // Fallback to localStorage
+        try {
+            const saved = localStorage.getItem('allowOverlap');
+            return saved ? JSON.parse(saved) : false;
+        } catch {
+            return false;
+        }
     });
     const [showOverlapWarning, setShowOverlapWarning] = useState(false);
     const [editingSpacerId, setEditingSpacerId] = useState(null);
     const [isSpacerModalOpen, setIsSpacerModalOpen] = useState(false);
+    const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
     const scheduleRef = useRef(null);
     const exportRef = useRef(null);
     const revealGroupRef = useRef(null);
@@ -221,7 +229,11 @@ const Display = () => {
                         // Load spacers from URL
                         if (scheduleData.spacers && Array.isArray(scheduleData.spacers)) {
                             setSpacers(scheduleData.spacers);
-                            localStorage.setItem('spacers', JSON.stringify(scheduleData.spacers));
+                        }
+
+                        // Load allowOverlap from URL
+                        if (scheduleData.allowOverlap !== undefined) {
+                            setAllowOverlap(scheduleData.allowOverlap);
                         }
 
                         setHasInitiallyLoaded(true);
@@ -258,23 +270,45 @@ const Display = () => {
         loadFromURL();
     }, []); // Only run on mount
 
-    // Auto-save selectedGroups to localStorage whenever they change
-    useEffect(() => {
+    // Manual save function to save to localStorage
+    const handleManualSave = () => {
         try {
             localStorage.setItem('lastSchedule', JSON.stringify(selectedGroups));
+            localStorage.setItem('scheduleTitle', scheduleTitle);
+            localStorage.setItem('spacers', JSON.stringify(spacers));
+            localStorage.setItem('allowOverlap', JSON.stringify(allowOverlap));
+            setHasUnsavedChanges(false);
+            setSavePopupMessage('Horario guardado exitosamente');
+            setShowSavePopup(true);
         } catch (error) {
             console.warn('Failed to save schedule to localStorage:', error);
+            setSavePopupMessage('Error al guardar el horario');
+            setShowSavePopup(true);
         }
-    }, [selectedGroups]);
+    };
 
-    // Auto-save scheduleTitle to localStorage whenever it changes
+    // Track changes to mark as unsaved
     useEffect(() => {
-        try {
-            localStorage.setItem('scheduleTitle', scheduleTitle);
-        } catch (error) {
-            console.warn('Failed to save schedule title to localStorage:', error);
-        }
-    }, [scheduleTitle]);
+        // Don't mark as unsaved while loading from URL or before initial load is complete
+        if (isLoadingFromURL || !hasInitiallyLoaded) return;
+        
+        // Mark as unsaved whenever schedule data changes
+        setHasUnsavedChanges(true);
+    }, [selectedGroups, spacers, scheduleTitle, isLoadingFromURL, hasInitiallyLoaded]);
+
+    // Warn before leaving page with unsaved changes
+    useEffect(() => {
+        const handleBeforeUnload = (e) => {
+            if (hasUnsavedChanges) {
+                e.preventDefault();
+                e.returnValue = ''; // Required for Chrome
+                return ''; // Required for other browsers
+            }
+        };
+
+        window.addEventListener('beforeunload', handleBeforeUnload);
+        return () => window.removeEventListener('beforeunload', handleBeforeUnload);
+    }, [hasUnsavedChanges]);
 
     // Update URL hash whenever schedule changes
     useEffect(() => {
@@ -646,8 +680,6 @@ const Display = () => {
                 // Add new spacer
                 updated = [...prev, spacer];
             }
-            // Save to localStorage
-            localStorage.setItem('spacers', JSON.stringify(updated));
             return updated;
         });
         return null; // No conflict
@@ -735,7 +767,6 @@ const Display = () => {
     const handleSpacerDelete = (spacerId) => {
         setSpacers(prev => {
             const updated = prev.filter(s => s.id !== spacerId);
-            localStorage.setItem('spacers', JSON.stringify(updated));
             return updated;
         });
     };
@@ -1084,6 +1115,7 @@ const Display = () => {
                             spacers={spacers}
                             onRemoveGroup={handleGroupSelect}
                             onSaveSchedule={handleSaveSchedule}
+                            onManualSave={handleManualSave}
                             setShowSavePopup={setShowSavePopup}
                             scheduleTitle={scheduleTitle}
                             onTitleChange={handleTitleChange}
