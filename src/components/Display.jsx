@@ -104,13 +104,13 @@ const CustomAlert = ({ message, onClose }) => (
 
 const SuccessAlert = ({ message, onClose }) => (
     <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-[60] w-[90%] max-w-md bg-green-900/80 border border-green-500 text-white px-5 py-4 rounded-lg shadow-xl backdrop-blur-sm">
-        <div className="flex items-start">
+        <div className="flex items-center">
             <div className="flex-shrink-0 mr-3">
                 <svg className="h-6 w-6 text-green-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                 </svg>
             </div>
-            <div className="flex-1 ml-1">
+            <div className="flex-1">
                 <p className="text-sm font-medium">{message}</p>
             </div>
             <button
@@ -212,7 +212,7 @@ const Display = () => {
                 console.warn('Failed to load allowOverlap from URL:', error);
             }
         }
-        
+
         // Fallback to localStorage
         try {
             const saved = localStorage.getItem('allowOverlap');
@@ -316,7 +316,7 @@ const Display = () => {
     useEffect(() => {
         // Don't mark as unsaved while loading from URL or before initial load is complete
         if (isLoadingFromURL || !hasInitiallyLoaded) return;
-        
+
         // Mark as unsaved whenever schedule data changes
         setHasUnsavedChanges(true);
     }, [selectedGroups, spacers, scheduleTitle, isLoadingFromURL, hasInitiallyLoaded]);
@@ -485,20 +485,25 @@ const Display = () => {
         };
 
         for (const spacer of spacers) {
-            const spacerStart = timeToMinutes(spacer.startTime);
-            const spacerEnd = timeToMinutes(spacer.endTime);
+            // Handle both old format (single schedule) and new format (multiple schedules)
+            const spacerSchedules = spacer.schedules || [{ days: spacer.days, startTime: spacer.startTime, endTime: spacer.endTime }];
 
-            for (const newSlot of newSlots) {
-                for (const spacerDayId of spacer.days) {
-                    const spacerDay = dayMap[spacerDayId];
-                    if (newSlot.day === spacerDay &&
-                        hasTimeOverlap(newSlot.start, newSlot.end, spacerStart, spacerEnd)) {
-                        return {
-                            conflictWith: { subject: spacer.name, group: '(Horario Personal)' },
-                            day: newSlot.day,
-                            newTime: `${Math.floor(newSlot.start / 60)}:${String(newSlot.start % 60).padStart(2, '0')} - ${Math.floor(newSlot.end / 60)}:${String(newSlot.end % 60).padStart(2, '0')}`,
-                            existingTime: spacer.startTime + ' - ' + spacer.endTime
-                        };
+            for (const spacerSched of spacerSchedules) {
+                const spacerStart = timeToMinutes(spacerSched.startTime);
+                const spacerEnd = timeToMinutes(spacerSched.endTime);
+
+                for (const newSlot of newSlots) {
+                    for (const spacerDayId of spacerSched.days) {
+                        const spacerDay = dayMap[spacerDayId];
+                        if (newSlot.day === spacerDay &&
+                            hasTimeOverlap(newSlot.start, newSlot.end, spacerStart, spacerEnd)) {
+                            return {
+                                conflictWith: { subject: spacer.name, group: '(Horario Personal)' },
+                                day: newSlot.day,
+                                newTime: `${Math.floor(newSlot.start / 60)}:${String(newSlot.start % 60).padStart(2, '0')} - ${Math.floor(newSlot.end / 60)}:${String(newSlot.end % 60).padStart(2, '0')}`,
+                                existingTime: spacerSched.startTime + ' - ' + spacerSched.endTime
+                            };
+                        }
                     }
                 }
             }
@@ -579,15 +584,20 @@ const Display = () => {
         };
 
         for (const spacer of spacers) {
-            const spacerStart = timeToMinutes(spacer.startTime);
-            const spacerEnd = timeToMinutes(spacer.endTime);
+            // Handle both old format (single schedule) and new format (multiple schedules)
+            const spacerSchedules = spacer.schedules || [{ days: spacer.days, startTime: spacer.startTime, endTime: spacer.endTime }];
 
-            for (const slot of allSlots) {
-                for (const spacerDayId of spacer.days) {
-                    const spacerDay = dayMap[spacerDayId];
-                    if (slot.day === spacerDay &&
-                        hasTimeOverlap(slot.start, slot.end, spacerStart, spacerEnd)) {
-                        return true;
+            for (const spacerSched of spacerSchedules) {
+                const spacerStart = timeToMinutes(spacerSched.startTime);
+                const spacerEnd = timeToMinutes(spacerSched.endTime);
+
+                for (const slot of allSlots) {
+                    for (const spacerDayId of spacerSched.days) {
+                        const spacerDay = dayMap[spacerDayId];
+                        if (slot.day === spacerDay &&
+                            hasTimeOverlap(slot.start, slot.end, spacerStart, spacerEnd)) {
+                            return true;
+                        }
                     }
                 }
             }
@@ -599,15 +609,22 @@ const Display = () => {
                 const spacerA = spacers[i];
                 const spacerB = spacers[j];
 
-                const startA = timeToMinutes(spacerA.startTime);
-                const endA = timeToMinutes(spacerA.endTime);
-                const startB = timeToMinutes(spacerB.startTime);
-                const endB = timeToMinutes(spacerB.endTime);
+                const schedulesA = spacerA.schedules || [{ days: spacerA.days, startTime: spacerA.startTime, endTime: spacerA.endTime }];
+                const schedulesB = spacerB.schedules || [{ days: spacerB.days, startTime: spacerB.startTime, endTime: spacerB.endTime }];
 
-                for (const dayA of spacerA.days) {
-                    for (const dayB of spacerB.days) {
-                        if (dayA === dayB && hasTimeOverlap(startA, endA, startB, endB)) {
-                            return true;
+                for (const schedA of schedulesA) {
+                    for (const schedB of schedulesB) {
+                        const startA = timeToMinutes(schedA.startTime);
+                        const endA = timeToMinutes(schedA.endTime);
+                        const startB = timeToMinutes(schedB.startTime);
+                        const endB = timeToMinutes(schedB.endTime);
+
+                        for (const dayA of schedA.days) {
+                            for (const dayB of schedB.days) {
+                                if (dayA === dayB && hasTimeOverlap(startA, endA, startB, endB)) {
+                                    return true;
+                                }
+                            }
                         }
                     }
                 }
@@ -720,8 +737,7 @@ const Display = () => {
             'S': 'Sa'
         };
 
-        const spacerStart = timeToMinutes(newSpacer.startTime);
-        const spacerEnd = timeToMinutes(newSpacer.endTime);
+        const newSpacerSchedules = newSpacer.schedules || [{ days: newSpacer.days, startTime: newSpacer.startTime, endTime: newSpacer.endTime }];
 
         // Check against all selected groups
         for (const group of selectedGroups) {
@@ -732,10 +748,15 @@ const Display = () => {
 
                 if (profStart !== null && profEnd !== null) {
                     for (const scheduleDay of profDays) {
-                        for (const spacerDayId of newSpacer.days) {
-                            const spacerDay = dayMap[spacerDayId];
-                            if (spacerDay === scheduleDay && hasTimeOverlap(spacerStart, spacerEnd, profStart, profEnd)) {
-                                return `El espacio "${newSpacer.name}" se superpone con ${group.subject} (${group.group}) el día ${scheduleDay}`;
+                        for (const spacerSched of newSpacerSchedules) {
+                            const spacerStart = timeToMinutes(spacerSched.startTime);
+                            const spacerEnd = timeToMinutes(spacerSched.endTime);
+
+                            for (const spacerDayId of spacerSched.days) {
+                                const spacerDay = dayMap[spacerDayId];
+                                if (spacerDay === scheduleDay && hasTimeOverlap(spacerStart, spacerEnd, profStart, profEnd)) {
+                                    return `El espacio "${newSpacer.name}" se superpone con ${group.subject} (${group.group}) el día ${scheduleDay}`;
+                                }
                             }
                         }
                     }
@@ -751,10 +772,15 @@ const Display = () => {
 
                 if (astStart !== null && astEnd !== null) {
                     for (const scheduleDay of assistantDays) {
-                        for (const spacerDayId of newSpacer.days) {
-                            const spacerDay = dayMap[spacerDayId];
-                            if (spacerDay === scheduleDay && hasTimeOverlap(spacerStart, spacerEnd, astStart, astEnd)) {
-                                return `El espacio "${newSpacer.name}" se superpone con ${group.subject} (${group.group}) - Ayudantía el día ${scheduleDay}`;
+                        for (const spacerSched of newSpacerSchedules) {
+                            const spacerStart = timeToMinutes(spacerSched.startTime);
+                            const spacerEnd = timeToMinutes(spacerSched.endTime);
+
+                            for (const spacerDayId of spacerSched.days) {
+                                const spacerDay = dayMap[spacerDayId];
+                                if (spacerDay === scheduleDay && hasTimeOverlap(spacerStart, spacerEnd, astStart, astEnd)) {
+                                    return `El espacio "${newSpacer.name}" se superpone con ${group.subject} (${group.group}) - Ayudantía el día ${scheduleDay}`;
+                                }
                             }
                         }
                     }
@@ -766,21 +792,30 @@ const Display = () => {
         for (const existingSpacer of spacers) {
             if (existingSpacer.id === newSpacer.id) continue; // Skip self when editing
 
-            const existingStart = timeToMinutes(existingSpacer.startTime);
-            const existingEnd = timeToMinutes(existingSpacer.endTime);
+            const existingSchedules = existingSpacer.schedules || [{ days: existingSpacer.days, startTime: existingSpacer.startTime, endTime: existingSpacer.endTime }];
 
-            for (const existingDayId of existingSpacer.days) {
-                for (const newDayId of newSpacer.days) {
-                    if (existingDayId === newDayId && hasTimeOverlap(spacerStart, spacerEnd, existingStart, existingEnd)) {
-                        const dayMap2 = {
-                            'L': 'Lunes',
-                            'M': 'Martes',
-                            'I': 'Miércoles',
-                            'J': 'Jueves',
-                            'V': 'Viernes',
-                            'S': 'Sábado'
-                        };
-                        return `El espacio "${newSpacer.name}" se superpone con otro espacio "${existingSpacer.name}" el día ${dayMap2[existingDayId]}`;
+            for (const existingSched of existingSchedules) {
+                const existingStart = timeToMinutes(existingSched.startTime);
+                const existingEnd = timeToMinutes(existingSched.endTime);
+
+                for (const newSched of newSpacerSchedules) {
+                    const newStart = timeToMinutes(newSched.startTime);
+                    const newEnd = timeToMinutes(newSched.endTime);
+
+                    for (const existingDayId of existingSched.days) {
+                        for (const newDayId of newSched.days) {
+                            if (existingDayId === newDayId && hasTimeOverlap(newStart, newEnd, existingStart, existingEnd)) {
+                                const dayMap2 = {
+                                    'L': 'Lunes',
+                                    'M': 'Martes',
+                                    'I': 'Miércoles',
+                                    'J': 'Jueves',
+                                    'V': 'Viernes',
+                                    'S': 'Sábado'
+                                };
+                                return `El espacio "${newSpacer.name}" se superpone con otro espacio "${existingSpacer.name}" el día ${dayMap2[existingDayId]}`;
+                            }
+                        }
                     }
                 }
             }
@@ -1030,7 +1065,6 @@ const Display = () => {
         // Update state
         setSelectedGroups(groupsToKeep);
         setSpacers(spacersToKeep);
-        localStorage.setItem('spacers', JSON.stringify(spacersToKeep));
         setAllowOverlap(false);
         setShowOverlapWarning(false);
 

@@ -356,61 +356,72 @@ const SelectedGroupsPanel = ({
     // Add spacers to calendar
     spacers.forEach((spacer) => {
       const dayOffsets = { L: 0, M: 1, I: 2, J: 3, V: 4, S: 5 };
-      const timeRange = parseTimeString(`${spacer.startTime} a ${spacer.endTime}`);
 
-      if (timeRange && spacer.days) {
-        spacer.days.forEach((day) => {
-          const dayOffset = dayOffsets[day];
-          if (dayOffset !== undefined) {
-            const eventDate = new Date(semesterStartMonday);
-            eventDate.setDate(semesterStartMonday.getDate() + dayOffset);
+      // Handle both old format (single schedule) and new format (multiple schedules)
+      const spacerSchedules = spacer.schedules || [{
+        days: spacer.days,
+        startTime: spacer.startTime,
+        endTime: spacer.endTime,
+        location: spacer.location
+      }];
 
-            const startDateTime = new Date(eventDate);
-            const endDateTime = new Date(eventDate);
+      spacerSchedules.forEach((schedule) => {
+        const timeRange = parseTimeString(`${schedule.startTime} a ${schedule.endTime}`);
 
-            startDateTime.setHours(
-              Math.floor(timeRange.start / 60),
-              timeRange.start % 60,
-              0,
-              0
-            );
-            endDateTime.setHours(
-              Math.floor(timeRange.end / 60),
-              timeRange.end % 60,
-              0,
-              0
-            );
+        if (timeRange && schedule.days) {
+          schedule.days.forEach((day) => {
+            const dayOffset = dayOffsets[day];
+            if (dayOffset !== undefined) {
+              const eventDate = new Date(semesterStartMonday);
+              eventDate.setDate(semesterStartMonday.getDate() + dayOffset);
 
-            events.push({
-              title: spacer.name,
-              description: "Horario personal",
-              start: [
-                startDateTime.getFullYear(),
-                startDateTime.getMonth() + 1,
-                startDateTime.getDate(),
-                startDateTime.getHours(),
-                startDateTime.getMinutes(),
-              ],
-              startInputType: 'local',
-              startOutputType: 'utc',
-              end: [
-                endDateTime.getFullYear(),
-                endDateTime.getMonth() + 1,
-                endDateTime.getDate(),
-                endDateTime.getHours(),
-                endDateTime.getMinutes(),
-              ],
-              endInputType: 'local',
-              endOutputType: 'utc',
-              location: "",
-              categories: [spacer.name],
-              status: "CONFIRMED",
-              busyStatus: "BUSY",
-              recurrenceRule: `FREQ=WEEKLY;UNTIL=20260530T055959Z`,
-            });
-          }
-        });
-      }
+              const startDateTime = new Date(eventDate);
+              const endDateTime = new Date(eventDate);
+
+              startDateTime.setHours(
+                Math.floor(timeRange.start / 60),
+                timeRange.start % 60,
+                0,
+                0
+              );
+              endDateTime.setHours(
+                Math.floor(timeRange.end / 60),
+                timeRange.end % 60,
+                0,
+                0
+              );
+
+              events.push({
+                title: spacer.name,
+                description: "Horario personal",
+                start: [
+                  startDateTime.getFullYear(),
+                  startDateTime.getMonth() + 1,
+                  startDateTime.getDate(),
+                  startDateTime.getHours(),
+                  startDateTime.getMinutes(),
+                ],
+                startInputType: 'local',
+                startOutputType: 'utc',
+                end: [
+                  endDateTime.getFullYear(),
+                  endDateTime.getMonth() + 1,
+                  endDateTime.getDate(),
+                  endDateTime.getHours(),
+                  endDateTime.getMinutes(),
+                ],
+                endInputType: 'local',
+                endOutputType: 'utc',
+                location: schedule.location || "",
+                categories: [spacer.name],
+                status: "CONFIRMED",
+                busyStatus: "BUSY",
+                recurrenceRule: `FREQ=WEEKLY;UNTIL=20260530T055959Z`,
+              });
+            }
+          });
+        }
+      });
     });
 
     createEvents(events, (error, value) => {
@@ -600,7 +611,7 @@ const SelectedGroupsPanel = ({
                   <Save size={16} />
                 </button>
               )}
-              
+
               <button
                 onClick={() => setShowDownloadModal(true)}
                 className="bg-blue-600 hover:bg-blue-700 text-white px-2 py-1 rounded text-xs whitespace-nowrap flex items-center justify-center flex-shrink-0"

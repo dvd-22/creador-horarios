@@ -163,37 +163,43 @@ const ScheduleViewer = ({ selectedGroups, spacers = [], onRemoveGroup, onEditSpa
 
     // Add spacers to slots
     spacers.forEach(spacer => {
-      const timeRange = {
-        start: timeToMinutes(spacer.startTime),
-        end: timeToMinutes(spacer.endTime)
-      };
+      // Handle both old format (single schedule) and new format (multiple schedules)
+      const spacerSchedules = spacer.schedules || [{ days: spacer.days, startTime: spacer.startTime, endTime: spacer.endTime, location: spacer.location }];
 
-      if (timeRange.start !== null && timeRange.end !== null) {
-        spacer.days.forEach(day => {
-          // Convert day ID to display format
-          const dayMap = {
-            'L': 'Lu',
-            'M': 'Ma',
-            'I': 'Mi',
-            'J': 'Ju',
-            'V': 'Vi',
-            'S': 'Sa'
-          };
-          const displayDay = dayMap[day];
+      spacerSchedules.forEach(schedule => {
+        const timeRange = {
+          start: timeToMinutes(schedule.startTime),
+          end: timeToMinutes(schedule.endTime)
+        };
 
-          slots.push({
-            day: displayDay,
-            start: timeRange.start,
-            end: timeRange.end,
-            type: 'spacer',
-            spacerId: spacer.id,
-            subject: spacer.name,
-            group: '',
-            color: spacer.color,
-            isSpacer: true
+        if (timeRange.start !== null && timeRange.end !== null) {
+          schedule.days.forEach(day => {
+            // Convert day ID to display format
+            const dayMap = {
+              'L': 'Lu',
+              'M': 'Ma',
+              'I': 'Mi',
+              'J': 'Ju',
+              'V': 'Vi',
+              'S': 'Sa'
+            };
+            const displayDay = dayMap[day];
+
+            slots.push({
+              day: displayDay,
+              start: timeRange.start,
+              end: timeRange.end,
+              type: 'spacer',
+              spacerId: spacer.id,
+              subject: spacer.name,
+              group: '',
+              salon: schedule.location || '',
+              color: spacer.color,
+              isSpacer: true
+            });
           });
-        });
-      }
+        }
+      });
     });
 
     return slots;
@@ -357,9 +363,14 @@ const ScheduleViewer = ({ selectedGroups, spacers = [], onRemoveGroup, onEditSpa
                                   <Edit2 size={12} className="absolute top-0 right-0 text-white/70" />
                                 )}
                               </div>
-                              {showSalon && !slot.isSpacer && (
+                              {showSalon && slot.salon && (
                                 <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
-                                  {slot.salon || slot.modalidad || 'Salón no especificado'}
+                                  {slot.salon}
+                                </div>
+                              )}
+                              {showSalon && !slot.salon && !slot.isSpacer && (
+                                <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
+                                  {slot.modalidad || 'Salón no especificado'}
                                 </div>
                               )}
                             </div>
@@ -422,9 +433,14 @@ const ScheduleViewer = ({ selectedGroups, spacers = [], onRemoveGroup, onEditSpa
                                         <Edit2 size={12} className="absolute top-0 right-0 text-white/70" />
                                       )}
                                     </div>
-                                    {showSalon && !slot.isSpacer && (
+                                    {showSalon && slot.salon && (
                                       <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
-                                        {slot.salon || slot.modalidad || 'Salón no especificado'}
+                                        {slot.salon}
+                                      </div>
+                                    )}
+                                    {showSalon && !slot.salon && !slot.isSpacer && (
+                                      <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
+                                        {slot.modalidad || 'Salón no especificado'}
                                       </div>
                                     )}
                                   </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { X, Trash2 } from 'lucide-react';
+import { X, Trash2, Plus } from 'lucide-react';
 
 const HOURS = [
     '07:00', '07:30', '08:00', '08:30', '09:00', '09:30', '10:00', '10:30',
@@ -33,9 +33,13 @@ const COLORS = [
 
 const SpacerModal = ({ isOpen, onClose, onSave, onDelete, editingSpacer = null }) => {
     const [name, setName] = useState('');
-    const [selectedDays, setSelectedDays] = useState(['L', 'M', 'I', 'J', 'V', 'S']);
-    const [startIndex, setStartIndex] = useState(0);
-    const [endIndex, setEndIndex] = useState(2);
+    const [schedules, setSchedules] = useState([{
+        id: 0,
+        days: ['L', 'M', 'I', 'J', 'V', 'S'],
+        startIndex: 0,
+        endIndex: 2,
+        location: ''
+    }]);
     const [selectedColor, setSelectedColor] = useState('bg-blue-700/50');
     const [error, setError] = useState('');
 
@@ -46,64 +50,152 @@ const SpacerModal = ({ isOpen, onClose, onSave, onDelete, editingSpacer = null }
 
             if (editingSpacer) {
                 setName(editingSpacer.name || '');
-                setSelectedDays(editingSpacer.days || ['L', 'M', 'I', 'J', 'V', 'S']);
                 setSelectedColor(editingSpacer.color || 'bg-blue-700/50');
 
-                if (editingSpacer.startTime) {
-                    const idx = HOURS.indexOf(editingSpacer.startTime);
-                    if (idx !== -1) setStartIndex(idx);
-                }
-                if (editingSpacer.endTime) {
-                    const idx = HOURS.indexOf(editingSpacer.endTime);
-                    if (idx !== -1) setEndIndex(idx);
+                // Handle both old (single schedule) and new (multiple schedules) format
+                if (editingSpacer.schedules && Array.isArray(editingSpacer.schedules)) {
+                    // New format with multiple schedules
+                    setSchedules(editingSpacer.schedules.map((sched, index) => ({
+                        id: index,
+                        days: sched.days || [],
+                        startIndex: HOURS.indexOf(sched.startTime) !== -1 ? HOURS.indexOf(sched.startTime) : 0,
+                        endIndex: HOURS.indexOf(sched.endTime) !== -1 ? HOURS.indexOf(sched.endTime) : 2,
+                        location: sched.location || ''
+                    })));
+                } else {
+                    // Old format - convert to new format
+                    const startIdx = editingSpacer.startTime ? HOURS.indexOf(editingSpacer.startTime) : 0;
+                    const endIdx = editingSpacer.endTime ? HOURS.indexOf(editingSpacer.endTime) : 2;
+                    setSchedules([{
+                        id: 0,
+                        days: editingSpacer.days || ['L', 'M', 'I', 'J', 'V', 'S'],
+                        startIndex: startIdx !== -1 ? startIdx : 0,
+                        endIndex: endIdx !== -1 ? endIdx : 2,
+                        location: editingSpacer.location || ''
+                    }]);
                 }
             } else {
                 // Reset for new spacer
                 setName('');
-                setSelectedDays(['L', 'M', 'I', 'J', 'V', 'S']);
-                setStartIndex(0);
-                setEndIndex(2);
+                setSchedules([{
+                    id: 0,
+                    days: ['L', 'M', 'I', 'J', 'V', 'S'],
+                    startIndex: 0,
+                    endIndex: 2,
+                    location: ''
+                }]);
                 setSelectedColor('bg-blue-700/50');
             }
         }
     }, [isOpen, editingSpacer]);
 
-    const handleStartChange = (e) => {
+    const handleStartChange = (scheduleId, e) => {
         const newStart = parseInt(e.target.value);
-        const minGap = 1; // Minimum 30 minutes
-        const maxAllowedStart = endIndex - minGap;
-
-        if (newStart <= maxAllowedStart) {
-            setStartIndex(newStart);
-        } else {
-            setStartIndex(maxAllowedStart);
-        }
-    };
-
-    const handleEndChange = (e) => {
-        const newEnd = parseInt(e.target.value);
-        const minGap = 1; // Minimum 30 minutes
-        const minAllowedEnd = startIndex + minGap;
-
-        if (newEnd >= minAllowedEnd) {
-            setEndIndex(newEnd);
-        } else {
-            setEndIndex(minAllowedEnd);
-        }
-    };
-
-    const toggleDay = (dayId) => {
-        setSelectedDays(prev => {
-            if (prev.includes(dayId)) {
-                if (prev.length === 1) return prev; // Don't allow deselecting last day
-                return prev.filter(d => d !== dayId);
-            } else {
-                return [...prev, dayId].sort((a, b) => {
-                    const order = ['L', 'M', 'I', 'J', 'V', 'S'];
-                    return order.indexOf(a) - order.indexOf(b);
-                });
+        setSchedules(prev => prev.map(sched => {
+            if (sched.id === scheduleId) {
+                const minGap = 1; // Minimum 30 minutes
+                const maxAllowedStart = sched.endIndex - minGap;
+                const adjustedStart = newStart <= maxAllowedStart ? newStart : maxAllowedStart;
+                return { ...sched, startIndex: adjustedStart };
             }
-        });
+            return sched;
+        }));
+    };
+
+    const handleEndChange = (scheduleId, e) => {
+        const newEnd = parseInt(e.target.value);
+        setSchedules(prev => prev.map(sched => {
+            if (sched.id === scheduleId) {
+                const minGap = 1; // Minimum 30 minutes
+                const minAllowedEnd = sched.startIndex + minGap;
+                const adjustedEnd = newEnd >= minAllowedEnd ? newEnd : minAllowedEnd;
+                return { ...sched, endIndex: adjustedEnd };
+            }
+            return sched;
+        }));
+    };
+
+    const toggleDay = (scheduleId, dayId) => {
+        setSchedules(prev => prev.map(sched => {
+            if (sched.id === scheduleId) {
+                const newDays = sched.days.includes(dayId)
+                    ? sched.days.length === 1 ? sched.days : sched.days.filter(d => d !== dayId)
+                    : [...sched.days, dayId].sort((a, b) => {
+                        const order = ['L', 'M', 'I', 'J', 'V', 'S'];
+                        return order.indexOf(a) - order.indexOf(b);
+                    });
+                return { ...sched, days: newDays };
+            }
+            return sched;
+        }));
+    };
+
+    const updateLocation = (scheduleId, location) => {
+        setSchedules(prev => prev.map(sched => {
+            if (sched.id === scheduleId) {
+                return { ...sched, location };
+            }
+            return sched;
+        }));
+    };
+
+    const addSchedule = () => {
+        const newId = Math.max(...schedules.map(s => s.id), 0) + 1;
+        setSchedules(prev => [...prev, {
+            id: newId,
+            days: ['L'],
+            startIndex: 0,
+            endIndex: 2,
+            location: ''
+        }]);
+    };
+
+    const removeSchedule = (scheduleId) => {
+        if (schedules.length === 1) return; // Don't allow removing the last schedule
+        setSchedules(prev => prev.filter(s => s.id !== scheduleId));
+    };
+
+    // Helper to check if schedules conflict with each other
+    const timeToMinutes = (time) => {
+        const [hours, minutes] = time.split(':').map(Number);
+        return hours * 60 + minutes;
+    };
+
+    const hasTimeOverlap = (start1, end1, start2, end2) => {
+        return start1 < end2 && start2 < end1;
+    };
+
+    const checkInternalConflicts = () => {
+        // Check if any schedules within this spacer conflict with each other
+        for (let i = 0; i < schedules.length; i++) {
+            for (let j = i + 1; j < schedules.length; j++) {
+                const schedA = schedules[i];
+                const schedB = schedules[j];
+
+                const startA = timeToMinutes(HOURS[schedA.startIndex]);
+                const endA = timeToMinutes(HOURS[schedA.endIndex]);
+                const startB = timeToMinutes(HOURS[schedB.startIndex]);
+                const endB = timeToMinutes(HOURS[schedB.endIndex]);
+
+                // Check if they share any days
+                for (const dayA of schedA.days) {
+                    for (const dayB of schedB.days) {
+                        if (dayA === dayB && hasTimeOverlap(startA, endA, startB, endB)) {
+                            const dayMap = {
+                                'L': 'Lunes',
+                                'M': 'Martes',
+                                'I': 'Miércoles',
+                                'J': 'Jueves',
+                                'V': 'Viernes',
+                                'S': 'Sábado'
+                            };
+                            return `Los horarios ${i + 1} y ${j + 1} se superponen el día ${dayMap[dayA]}`;
+                        }
+                    }
+                }
+            }
+        }
+        return null;
     };
 
     const handleSave = () => {
@@ -112,14 +204,29 @@ const SpacerModal = ({ isOpen, onClose, onSave, onDelete, editingSpacer = null }
             return;
         }
 
+        // Check for internal conflicts first
+        const internalConflict = checkInternalConflicts();
+        if (internalConflict) {
+            setError(internalConflict);
+            return;
+        }
+
         const spacer = {
             id: editingSpacer?.id || `spacer-${Date.now()}`,
             type: 'spacer',
             name: name.trim(),
-            days: selectedDays,
-            startTime: HOURS[startIndex],
-            endTime: HOURS[endIndex],
-            color: selectedColor
+            schedules: schedules.map(sched => ({
+                days: sched.days,
+                startTime: HOURS[sched.startIndex],
+                endTime: HOURS[sched.endIndex],
+                location: sched.location || ''
+            })),
+            color: selectedColor,
+            // Keep old format for backward compatibility
+            days: schedules[0].days,
+            startTime: HOURS[schedules[0].startIndex],
+            endTime: HOURS[schedules[0].endIndex],
+            location: schedules[0].location || ''
         };
 
         const conflictError = onSave(spacer);
@@ -188,66 +295,114 @@ const SpacerModal = ({ isOpen, onClose, onSave, onDelete, editingSpacer = null }
                             />
                         </div>
 
-                        {/* Day Selection */}
+                        {/* Schedules */}
                         <div>
-                            <label className="block text-sm font-medium text-gray-300 mb-2">
-                                Días
-                            </label>
-                            <div className="grid grid-cols-6 gap-2">
-                                {DAYS.map(day => (
-                                    <button
-                                        key={day.id}
-                                        onClick={() => toggleDay(day.id)}
-                                        className={`py-2 px-1 rounded-lg text-xs sm:text-sm font-medium transition-colors ${selectedDays.includes(day.id)
-                                            ? 'bg-blue-600 text-white'
-                                            : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
-                                            }`}
-                                    >
-                                        {day.label}
-                                    </button>
-                                ))}
+                            <div className="flex items-center justify-between mb-2">
+                                <label className="block text-sm font-medium text-gray-300">
+                                    Horarios ({schedules.length})
+                                </label>
+                                <button
+                                    onClick={addSchedule}
+                                    className="flex items-center gap-1 px-2 py-1 bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
+                                >
+                                    <Plus size={14} />
+                                    Agregar
+                                </button>
                             </div>
-                        </div>
 
-                        {/* Time Range Slider */}
-                        <div>
-                            <label className="block text-sm font-medium text-gray-300 mb-2">
-                                Horario: {HOURS[startIndex]} - {HOURS[endIndex]}
-                            </label>
-                            <div className="relative h-8 flex items-center">
-                                {/* Track background */}
-                                <div className="absolute w-full h-2 bg-gray-700 rounded-full" />
+                            <div className="space-y-3">
+                                {schedules.map((schedule, index) => (
+                                    <div key={schedule.id} className="p-3 bg-gray-700/50 rounded-lg border border-gray-600">
+                                        <div className="flex items-center justify-between mb-2">
+                                            <span className="text-xs font-medium text-gray-400">
+                                                Horario {index + 1}
+                                            </span>
+                                            {schedules.length > 1 && (
+                                                <button
+                                                    onClick={() => removeSchedule(schedule.id)}
+                                                    className="text-red-400 hover:text-red-300 p-1 flex items-center justify-center"
+                                                    title="Eliminar horario"
+                                                >
+                                                    <X size={14} />
+                                                </button>
+                                            )}
+                                        </div>
 
-                                {/* Active range */}
-                                <div
-                                    className="absolute h-2 bg-blue-500 rounded-full"
-                                    style={{
-                                        left: `${(startIndex / (HOURS.length - 1)) * 100}%`,
-                                        width: `${((endIndex - startIndex) / (HOURS.length - 1)) * 100}%`
-                                    }}
-                                />
+                                        {/* Day Selection */}
+                                        <div className="mb-3">
+                                            <label className="block text-xs text-gray-400 mb-1">Días</label>
+                                            <div className="grid grid-cols-6 gap-1">
+                                                {DAYS.map(day => (
+                                                    <button
+                                                        key={day.id}
+                                                        onClick={() => toggleDay(schedule.id, day.id)}
+                                                        className={`py-1 px-1 rounded text-xs font-medium transition-colors ${schedule.days.includes(day.id)
+                                                                ? 'bg-blue-600 text-white'
+                                                                : 'bg-gray-600 text-gray-300 hover:bg-gray-500'
+                                                            }`}
+                                                    >
+                                                        {day.label}
+                                                    </button>
+                                                ))}
+                                            </div>
+                                        </div>
 
-                                {/* Start slider */}
-                                <input
-                                    type="range"
-                                    min="0"
-                                    max={HOURS.length - 1}
-                                    value={startIndex}
-                                    onChange={handleStartChange}
-                                    className="absolute w-full appearance-none bg-transparent cursor-pointer slider-thumb pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-moz-range-thumb]:pointer-events-auto"
-                                    style={{ height: '2rem' }}
-                                />
+                                        {/* Time Range */}
+                                        <div>
+                                            <label className="block text-xs text-gray-400 mb-1">
+                                                Horario: {HOURS[schedule.startIndex]} - {HOURS[schedule.endIndex]}
+                                            </label>
+                                            <div className="relative h-8 flex items-center">
+                                                {/* Track background */}
+                                                <div className="absolute w-full h-2 bg-gray-600 rounded-full" />
 
-                                {/* End slider */}
-                                <input
-                                    type="range"
-                                    min="0"
-                                    max={HOURS.length - 1}
-                                    value={endIndex}
-                                    onChange={handleEndChange}
-                                    className="absolute w-full appearance-none bg-transparent cursor-pointer slider-thumb pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-moz-range-thumb]:pointer-events-auto"
-                                    style={{ height: '2rem' }}
-                                />
+                                                {/* Active range */}
+                                                <div
+                                                    className="absolute h-2 bg-blue-500 rounded-full"
+                                                    style={{
+                                                        left: `${(schedule.startIndex / (HOURS.length - 1)) * 100}%`,
+                                                        width: `${((schedule.endIndex - schedule.startIndex) / (HOURS.length - 1)) * 100}%`
+                                                    }}
+                                                />
+
+                                                {/* Start slider */}
+                                                <input
+                                                    type="range"
+                                                    min="0"
+                                                    max={HOURS.length - 1}
+                                                    value={schedule.startIndex}
+                                                    onChange={(e) => handleStartChange(schedule.id, e)}
+                                                    className="absolute w-full appearance-none bg-transparent cursor-pointer slider-thumb pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-moz-range-thumb]:pointer-events-auto"
+                                                    style={{ height: '2rem' }}
+                                                />
+
+                                                {/* End slider */}
+                                                <input
+                                                    type="range"
+                                                    min="0"
+                                                    max={HOURS.length - 1}
+                                                    value={schedule.endIndex}
+                                                    onChange={(e) => handleEndChange(schedule.id, e)}
+                                                    className="absolute w-full appearance-none bg-transparent cursor-pointer slider-thumb pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-moz-range-thumb]:pointer-events-auto"
+                                                    style={{ height: '2rem' }}
+                                                />
+                                            </div>
+                                        </div>
+
+                                        {/* Location */}
+                                        <div>
+                                            <label className="block text-xs text-gray-400 mb-1">Lugar (opcional)</label>
+                                            <input
+                                                type="text"
+                                                value={schedule.location}
+                                                onChange={(e) => updateLocation(schedule.id, e.target.value)}
+                                                placeholder="Ej: Salón 101, Gimnasio..."
+                                                className="w-full px-2 py-1 bg-gray-600 border border-gray-500 rounded text-gray-100 text-xs placeholder-gray-400 focus:outline-none focus:border-blue-500"
+                                                maxLength={50}
+                                            />
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         </div>
 
@@ -262,8 +417,8 @@ const SpacerModal = ({ isOpen, onClose, onSave, onDelete, editingSpacer = null }
                                         key={color.id}
                                         onClick={() => setSelectedColor(color.id)}
                                         className={`h-10 rounded-lg border-2 transition-all ${selectedColor === color.id
-                                            ? 'border-white scale-110'
-                                            : 'border-gray-600 hover:border-gray-400'
+                                                ? 'border-white scale-110'
+                                                : 'border-gray-600 hover:border-gray-400'
                                             }`}
                                         style={{ backgroundColor: color.hex }}
                                         title={color.label}
