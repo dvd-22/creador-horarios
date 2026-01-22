@@ -335,7 +335,7 @@ const ScheduleViewer = ({ selectedGroups, spacers = [], onRemoveGroup, onEditSpa
                         const top = calculateTop(slot.start);
                         const height = calculateHeight(slot.start, slot.end);
                         const durationMinutes = slot.end - slot.start;
-                        const shouldWrap = durationMinutes >= 120; // 2 hours or more, and NOT overlapping
+                        const lineClamp = durationMinutes >= 120 ? 'line-clamp-3' : 'line-clamp-2'; // More lines for longer classes
                         const showSalon = durationMinutes >= 60; // Only show salon if cell is at least 1 hour
 
                         return (
@@ -357,19 +357,19 @@ const ScheduleViewer = ({ selectedGroups, spacers = [], onRemoveGroup, onEditSpa
                             title={slot.isSpacer ? "Editar horario personal" : "Ver en selector de materias"}
                           >
                             <div className="flex flex-col h-full overflow-hidden relative">
-                              <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate ${slot.isSpacer && !isExport ? 'pr-5' : ''}`}>
+                              <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate flex-shrink-0 ${slot.isSpacer && !isExport ? 'pr-5' : ''}`}>
                                 {slot.subject}
                                 {slot.isSpacer && !isExport && (
                                   <Edit2 size={12} className="absolute top-0 right-0 text-white/70" />
                                 )}
                               </div>
                               {showSalon && slot.salon && (
-                                <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
+                                <div className={`text-gray-200 ${lineClamp} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight overflow-hidden`}>
                                   {slot.salon}
                                 </div>
                               )}
                               {showSalon && !slot.salon && !slot.isSpacer && (
-                                <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
+                                <div className={`text-gray-200 ${lineClamp} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight overflow-hidden`}>
                                   {slot.modalidad || 'Salón no especificado'}
                                 </div>
                               )}
@@ -401,8 +401,7 @@ const ScheduleViewer = ({ selectedGroups, spacers = [], onRemoveGroup, onEditSpa
                             const slotHeightPercent = ((slot.end - slot.start) / (groupEnd - groupStart)) * 100;
                             const durationMinutes = slot.end - slot.start;
                             const showSalon = durationMinutes >= 60; // Only show salon if cell is at least 1 hour
-                            // When overlapping, ALWAYS truncate, never wrap
-                            const shouldWrap = false;
+                            const lineClamp = durationMinutes >= 120 ? 'line-clamp-3' : 'line-clamp-2'; // More lines for longer classes
 
                             return (
                               <div
@@ -427,19 +426,19 @@ const ScheduleViewer = ({ selectedGroups, spacers = [], onRemoveGroup, onEditSpa
                                   title={slot.isSpacer ? "Editar horario personal" : "Ver en selector de materias"}
                                 >
                                   <div className="flex flex-col h-full overflow-hidden relative">
-                                    <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate ${slot.isSpacer && !isExport ? 'pr-5' : ''}`}>
+                                    <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate flex-shrink-0 ${slot.isSpacer && !isExport ? 'pr-5' : ''}`}>
                                       {slot.subject}
                                       {slot.isSpacer && !isExport && (
                                         <Edit2 size={12} className="absolute top-0 right-0 text-white/70" />
                                       )}
                                     </div>
                                     {showSalon && slot.salon && (
-                                      <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
+                                      <div className={`text-gray-200 ${lineClamp} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight overflow-hidden`}>
                                         {slot.salon}
                                       </div>
                                     )}
                                     {showSalon && !slot.salon && !slot.isSpacer && (
-                                      <div className={`text-gray-200 ${shouldWrap ? 'break-words' : 'truncate'} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight`}>
+                                      <div className={`text-gray-200 ${lineClamp} ${isMobile ? 'text-xs' : 'text-xs'} leading-tight overflow-hidden`}>
                                         {slot.modalidad || 'Salón no especificado'}
                                       </div>
                                     )}
