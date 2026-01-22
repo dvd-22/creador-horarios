@@ -19,13 +19,30 @@ export const compressScheduleData = (scheduleData) => {
 
 	// Add spacers if they exist
 	if (scheduleData.spacers && scheduleData.spacers.length > 0) {
-		compressed.s = scheduleData.spacers.map((spacer) => [
-			spacer.name,
-			spacer.days.join(""),
-			spacer.startTime,
-			spacer.endTime,
-			spacer.color,
-		]);
+		compressed.s = scheduleData.spacers.map((spacer) => {
+			// New format: include schedules array with multiple schedules
+			if (spacer.schedules && spacer.schedules.length > 0) {
+				return [
+					spacer.name,
+					spacer.color,
+					spacer.schedules.map((sched) => [
+						sched.days.join(""),
+						sched.startTime,
+						sched.endTime,
+						sched.location || "",
+					]),
+				];
+			}
+			// Old format fallback (single schedule)
+			return [
+				spacer.name,
+				spacer.days.join(""),
+				spacer.startTime,
+				spacer.endTime,
+				spacer.color,
+				spacer.location || "",
+			];
+		});
 	}
 
 	return compressed;
@@ -47,15 +64,49 @@ export const decompressScheduleData = (compressed) => {
 
 	// Add spacers if they exist
 	if (compressed.s && compressed.s.length > 0) {
-		decompressed.spacers = compressed.s.map((s, index) => ({
-			id: `spacer-${Date.now()}-${index}`,
-			type: "spacer",
-			name: s[0],
-			days: s[1].split(""),
-			startTime: s[2],
-			endTime: s[3],
-			color: s[4],
-		}));
+		decompressed.spacers = compressed.s.map((s, index) => {
+			// Detect new format: [name, color, [[days, start, end, location], ...]]
+			// New format has array as third element
+			if (Array.isArray(s[2])) {
+				return {
+					id: `spacer-${Date.now()}-${index}`,
+					type: "spacer",
+					name: s[0],
+					color: s[1],
+					schedules: s[2].map((sched) => ({
+						days: sched[0].split(""),
+						startTime: sched[1],
+						endTime: sched[2],
+						location: sched[3] || "",
+					})),
+					// Keep old format for backward compatibility (use first schedule)
+					days: s[2][0][0].split(""),
+					startTime: s[2][0][1],
+					endTime: s[2][0][2],
+					location: s[2][0][3] || "",
+				};
+			}
+			// Old format: [name, days, startTime, endTime, color, location?]
+			return {
+				id: `spacer-${Date.now()}-${index}`,
+				type: "spacer",
+				name: s[0],
+				days: s[1].split(""),
+				startTime: s[2],
+				endTime: s[3],
+				color: s[4],
+				location: s[5] || "",
+				// Convert to new format
+				schedules: [
+					{
+						days: s[1].split(""),
+						startTime: s[2],
+						endTime: s[3],
+						location: s[5] || "",
+					},
+				],
+			};
+		});
 	}
 
 	return decompressed;
