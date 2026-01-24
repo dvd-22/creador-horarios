@@ -369,15 +369,44 @@ async function scrapeSchedules() {
 		await new Promise((resolve) => setTimeout(resolve, 1000));
 	}
 
-	await browser.close();
-	console.log("🎉 Schedule scraping completed!");
+	try {
+		await browser.close();
+		console.log("🎉 Schedule scraping completed!");
+	} catch (closeError) {
+		console.warn("⚠️ Warning closing browser:", closeError.message);
+		// Force close all browser processes
+		if (browser && browser.process()) {
+			browser.process().kill('SIGTERM');
+		}
+	}
+	
+	// Ensure all async operations complete
+	await new Promise(resolve => setTimeout(resolve, 1000));
 }
 
-// Run if this file is executed directly (not imported)
-console.log("Script loaded, checking execution condition...");
-console.log("import.meta.url:", import.meta.url);
-console.log("process.argv[1]:", process.argv[1]);
+// Check if this file is being run directly (not imported as a module)
+const isMainModule = import.meta.url === `file://${process.argv[1].replace(/\\/g, '/')}`;
 
-scrapeSchedules().catch(console.error);
+if (isMainModule) {
+	console.log("Script loaded, running directly...");
+	
+	// Set a safety timeout to force exit if something hangs
+	const safetyTimeout = setTimeout(() => {
+		console.warn("⚠️ Safety timeout triggered - forcing exit");
+		process.exit(0);
+	}, 300000); // 5 minutes
+	
+	scrapeSchedules()
+		.then(() => {
+			clearTimeout(safetyTimeout);
+			console.log("✨ Scraping function completed, exiting process...");
+			process.exit(0);
+		})
+		.catch((error) => {
+			clearTimeout(safetyTimeout);
+			console.error("❌ Fatal error:", error);
+			process.exit(1);
+		});
+}
 
 export default scrapeSchedules;

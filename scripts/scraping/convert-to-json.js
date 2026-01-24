@@ -221,9 +221,21 @@ async function convertAllCsvsToJson() {
 	console.log("🎉 All conversions completed!");
 }
 
-// Run if this file is executed directly (not imported)
-if (import.meta.url === `file://${process.argv[1]}`) {
-	convertAllCsvsToJson().catch(console.error);
+// Check if this file is being run directly (not imported as a module)
+const isMainModule = import.meta.url === `file://${process.argv[1].replace(/\\/g, '/')}`;
+
+if (isMainModule) {
+	console.log("Script loaded, running directly...");
+	
+	convertAllCsvsToJson()
+		.then(() => {
+			console.log("✨ Conversion function completed, exiting process...");
+			process.exit(0);
+		})
+		.catch((error) => {
+			console.error("❌ Fatal error:", error);
+			process.exit(1);
+		});
 }
 
 export default convertAllCsvsToJson;

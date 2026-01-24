@@ -26,9 +26,17 @@ async function runFullScraping() {
 		console.log("  - [major].json files");
 	} catch (error) {
 		console.error("❌ Error during scraping:", error);
-		process.exit(1);
+		throw error; // Re-throw to be caught by the outer handler
 	}
 }
 
-// Run the full process
-runFullScraping();
+// Run the full process with proper exit handling
+runFullScraping()
+	.then(() => {
+		console.log("✨ All scraping completed, exiting process...");
+		process.exit(0);
+	})
+	.catch((error) => {
+		console.error("❌ Fatal error in scraping process:", error);
+		process.exit(1);
+	});

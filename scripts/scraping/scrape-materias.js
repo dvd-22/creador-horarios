@@ -147,7 +147,15 @@ async function scrapeMaterias() {
 		await new Promise((resolve) => setTimeout(resolve, 1000));
 	}
 
-	await browser.close();
+	try {
+		await browser.close();
+	} catch (closeError) {
+		console.warn("⚠️ Warning closing browser:", closeError.message);
+		// Force close all browser processes
+		if (browser && browser.process()) {
+			browser.process().kill('SIGTERM');
+		}
+	}
 
 	// Save to CSV
 	const csvPath = path.resolve(__dirname, "..", "..", "materias.csv");
@@ -168,11 +176,34 @@ async function scrapeMaterias() {
 	const jsonPath = path.resolve(__dirname, "..", "..", "materias.json");
 	fs.writeFileSync(jsonPath, JSON.stringify(allMaterias, null, 2));
 	console.log("📁 Saved materias.json");
+	
+	// Ensure all async operations complete
+	await new Promise(resolve => setTimeout(resolve, 1000));
 }
 
-// Run if this file is executed directly
-if (import.meta.url === `file://${process.argv[1]}`) {
-	scrapeMaterias().catch(console.error);
+// Check if this file is being run directly (not imported as a module)
+const isMainModule = import.meta.url === `file://${process.argv[1].replace(/\\/g, '/')}`;
+
+if (isMainModule) {
+	console.log("Script loaded, running directly...");
+	
+	// Set a safety timeout to force exit if something hangs
+	const safetyTimeout = setTimeout(() => {
+		console.warn("⚠️ Safety timeout triggered - forcing exit");
+		process.exit(0);
+	}, 300000); // 5 minutes
+	
+	scrapeMaterias()
+		.then(() => {
+			clearTimeout(safetyTimeout);
+			console.log("✨ Scraping function completed, exiting process...");
+			process.exit(0);
+		})
+		.catch((error) => {
+			clearTimeout(safetyTimeout);
+			console.error("❌ Fatal error:", error);
+			process.exit(1);
+		});
 }
 
 export default scrapeMaterias;
