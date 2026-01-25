@@ -3426,11 +3426,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Álgebra"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Álgebra",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370642"
       },
@@ -3612,11 +3612,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Sistemas Complejos"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Sistemas Complejos",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370654"
       },
@@ -3643,11 +3643,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Enseñanza de Cómputo de Matemáticas"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza de Cómputo de Matemáticas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370656"
       },
@@ -3674,11 +3674,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "302 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370658"
       },
@@ -3988,11 +3988,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P101"
+            "salon": "Aula Magna P"
           }
         ],
         "nota": null,
-        "salon": "P101",
+        "salon": "Aula Magna P",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369716"
       },
@@ -4392,11 +4392,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "O130"
+            "salon": "Aula Magna II"
           }
         ],
         "nota": null,
-        "salon": "O130",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369728"
       },
@@ -4472,11 +4472,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "O128"
+            "salon": "Aula Magna P"
           }
         ],
         "nota": null,
-        "salon": "O128",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369730"
       },
@@ -4632,9 +4632,16 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Yanahi Demetrio Torres",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Sistemas Complejos",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370669"
       },
@@ -4655,7 +4662,7 @@
         },
         "ayudantes": [],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Geometría",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371169"
       },
@@ -4683,7 +4690,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza de Cómputo de Matemáticas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371170"
       },
@@ -5840,11 +5847,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": null
+            "salon": "P101"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P101",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369753"
       },
@@ -6774,7 +6781,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Emiliano Hernández Salazar",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -6873,11 +6880,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Salón de Seminarios S-105"
           }
         ],
         "nota": "Se impartirá en el Salón de Seminarios S105 (Departamento de Matemáticas)",
-        "salon": null,
+        "salon": "Salón de Seminarios S-105",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370344"
       },
@@ -7811,11 +7818,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Enseñanza de Cómputo de Matemáticas"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza de Cómputo de Matemáticas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370371"
       },
@@ -7873,11 +7880,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Enseñanza de Cómputo de Matemáticas"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza de Cómputo de Matemáticas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370375"
       },
@@ -7904,11 +7911,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Sistemas Complejos"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Sistemas Complejos",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370377"
       },
@@ -7935,11 +7942,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "302 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370379"
       },
@@ -8028,11 +8035,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Sistemas Complejos"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Sistemas Complejos",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370385"
       }
@@ -8282,7 +8289,7 @@
         "nota": null,
         "salon": "P108",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370791"
       },
       "6005": {
         "grupo": "6005",
@@ -8309,7 +8316,7 @@
         "nota": null,
         "salon": "P203",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370792"
       }
     },
     "Taller de Redacción": {
@@ -10511,7 +10518,7 @@
         "nota": null,
         "salon": "P202",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369933"
       },
       "4307": {
         "grupo": "4307",
@@ -10863,11 +10870,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Salón de Seminarios S-102"
           }
         ],
         "nota": "Se impartirá en el Salón de Seminarios S102 (Departamento de Matemáticas)",
-        "salon": null,
+        "salon": "Salón de Seminarios S-102",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370435"
       },
@@ -11531,7 +11538,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Mario Alejandro Molina Palma",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -11601,11 +11608,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Sistemas Complejos"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Sistemas Complejos",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370430"
       }
