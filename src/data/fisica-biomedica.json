@@ -2140,7 +2140,7 @@
         "nota": null,
         "salon": "Salón de Seminarios 327",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370022"
       },
       "8105": {
         "grupo": "8105",
@@ -4447,6 +4447,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "María Fernanda Ramírez Ayala",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Luis Daniel Pérez Samano",
             "horario": null,
             "dias": [],
@@ -5104,7 +5110,7 @@
         "nota": null,
         "salon": "P205",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370593"
       }
     }
   },
@@ -5268,7 +5274,7 @@
         "nota": null,
         "salon": "P112",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370155"
       },
       "8238": {
         "grupo": "8238",

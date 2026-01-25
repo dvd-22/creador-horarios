@@ -728,7 +728,7 @@
         "nota": null,
         "salon": "003 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369592"
       },
       "4021": {
         "grupo": "4021",
@@ -8560,7 +8560,7 @@
         "nota": null,
         "salon": "Salón de Seminarios 327",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370022"
       },
       "8105": {
         "grupo": "8105",
@@ -9765,7 +9765,7 @@
         "nota": null,
         "salon": "Salón de Seminarios 429",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370158"
       },
       "8241": {
         "grupo": "8241",
@@ -10696,7 +10696,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "David Angel de Jesus Luna",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "301 (Tlaltícpac)",
         "modalidad": "Presencial",
@@ -10717,7 +10724,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Michinobu Juan Manuel Takane Aguilar",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "P206",
         "modalidad": "Presencial",
@@ -10794,7 +10808,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Mariel Ivone Rivera Brown",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "O132",
         "modalidad": "Presencial",
@@ -11563,7 +11584,7 @@
         "nota": null,
         "salon": "P112",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370155"
       },
       "8238": {
         "grupo": "8238",
@@ -11710,7 +11731,7 @@
         "nota": null,
         "salon": "300 (Tlaltícpac)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370360"
       },
       "9082": {
         "grupo": "9082",
@@ -12521,37 +12542,6 @@
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369897"
       },
-      "4271": {
-        "grupo": "4271",
-        "profesor": {
-          "nombre": "María de los Ángeles Sandoval Romero",
-          "horarios": [
-            {
-              "horario": "10:00 a 11:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Hugo Guadalupe Reyna Castañeda",
-            "horario": "10:00 a 11:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": "Matemáticas para la Computación Cuántica 1",
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369898"
-      },
       "4272": {
         "grupo": "4272",
         "profesor": {
@@ -13194,7 +13184,7 @@
         "nota": "Grafos y Bases de Datos",
         "salon": "Taller de Demografía",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369916"
       },
       "4290": {
         "grupo": "4290",
@@ -13994,7 +13984,7 @@
         "nota": "Algoritmos en Redes y sus Aplicaciones",
         "salon": "101 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371231"
       }
     },
     "Topología Diferencial I": {
@@ -16890,7 +16880,7 @@
       "4347": {
         "grupo": "4347",
         "profesor": {
-          "nombre": null,
+          "nombre": "Osvaldo Alfonso Téllez Nieto",
           "horarios": [
             {
               "horario": "18:00 a 19:00",
@@ -16913,7 +16903,7 @@
             "salon": null
           }
         ],
-        "nota": "Este curso será impartido por el Dr. Osvaldo Alfonso Téllez Nieto en horario de 19 a 20 hrs",
+        "nota": null,
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -18467,7 +18457,7 @@
       "4306": {
         "grupo": "4306",
         "profesor": {
-          "nombre": "Germán Benítez Bobadilla",
+          "nombre": "Saúl Arce Rocha",
           "horarios": [
             {
               "horario": "11:00 a 12:00",

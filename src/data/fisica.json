@@ -2835,7 +2835,7 @@
       "8084": {
         "grupo": "8084",
         "profesor": {
-          "nombre": "Guadalupe Jaquebet Vargas Bustamante",
+          "nombre": "José Luis Meza Cabañas",
           "horarios": [
             {
               "horario": "07:00 a 10:00",
@@ -2848,7 +2848,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Erick Benítez Flores",
+            "nombre": null,
             "horario": "07:00 a 10:00",
             "dias": [
               "Mi",
@@ -3098,7 +3098,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Samuel Puente Mancilla",
             "horario": "15:00 a 18:00",
             "dias": [
               "Ma",
@@ -3500,7 +3500,7 @@
         "nota": null,
         "salon": "Salón de Seminarios 327",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370022"
       },
       "8105": {
         "grupo": "8105",
@@ -7381,6 +7381,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "María Fernanda Ramírez Ayala",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Luis Daniel Pérez Samano",
             "horario": null,
             "dias": [],
@@ -9096,7 +9102,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Electrónica I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370143"
       },
@@ -9126,7 +9132,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Electrónica I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370144"
       },
@@ -9156,9 +9162,9 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Electrónica I",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370145"
       },
       "8228": {
         "grupo": "8228",
@@ -9186,7 +9192,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Electrónica II",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -9216,7 +9222,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Electrónica II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370147"
       },
@@ -9246,7 +9252,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Electrónica I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370148"
       },
@@ -9266,7 +9272,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Darío Rigoberto Rivera Calzadilla",
             "horario": "18:00 a 21:00",
             "dias": [
               "Ma",
@@ -9276,7 +9282,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Electrónica II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370149"
       }
@@ -9440,7 +9446,7 @@
         "nota": null,
         "salon": "P112",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370155"
       },
       "8238": {
         "grupo": "8238",
@@ -9561,7 +9567,7 @@
         "nota": null,
         "salon": "Salón de Seminarios 429",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370158"
       },
       "8241": {
         "grupo": "8241",
@@ -9877,7 +9883,7 @@
         "nota": null,
         "salon": "P206",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370169"
       },
       "8369": {
         "grupo": "8369",
@@ -10006,7 +10012,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "David Angel de Jesus Luna",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "301 (Tlaltícpac)",
         "modalidad": "Presencial",
@@ -10027,7 +10040,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Michinobu Juan Manuel Takane Aguilar",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "P206",
         "modalidad": "Presencial",
@@ -10104,7 +10124,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Mariel Ivone Rivera Brown",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "O132",
         "modalidad": "Presencial",
@@ -10205,6 +10232,12 @@
               "Vi"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Laura Ivonne Martín Pérez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": "Laboratorio de Física Contemporánea I",
@@ -10267,7 +10300,7 @@
       "8262": {
         "grupo": "8262",
         "profesor": {
-          "nombre": "Beatriz Elizabeth Fuentes Madariaga",
+          "nombre": "Marco Antonio Sánchez Alejo",
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -13027,7 +13060,15 @@
         "grupo": "8285",
         "profesor": {
           "nombre": "Axel Ricardo De la Macorra Pettersson Moriel",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "12:00 a 13:30",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
         },
         "ayudantes": [],
         "nota": null,
@@ -15491,7 +15532,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371435"
       }
     },
     "Temas Selectos de Física de Materiales I": {
