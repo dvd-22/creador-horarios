@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-01-25T08:44:58.938Z",
-  "totalProfessors": 2763,
+  "lastUpdated": "2026-01-25T21:40:10.195Z",
+  "totalProfessors": 2766,
   "ratingsFound": 1351,
   "foundPercentage": 49,
   "ratings": {
@@ -6655,6 +6655,7 @@
       "id": "141822",
       "url": "https://www.misprofesores.com/profesores/Luis-Martinez-Vazquez_141822"
     },
+    "Luis Arturo Proudinat Pérez": null,
     "Luis Augusto Martínez Sánchez": null,
     "Luis Benet Fernández": {
       "name": "Luis Benet Fernández",
@@ -6715,6 +6716,7 @@
       "url": "https://www.misprofesores.com/profesores/Luis-Quintanar-Cortes_50948"
     },
     "Luis Enrique Reyes Rodríguez": null,
+    "Luis Enrique Reyes Romero": null,
     "Luis Enrique Serrano Gutiérrez": {
       "name": "Luis Enrique Serrano Gutiérrez",
       "rating": 6.9,
@@ -7343,6 +7345,7 @@
     "Mario Alberto Farfan Landa": null,
     "Mario Alberto Serrano Ortega": null,
     "Mario Alberto Villa Carapia": null,
+    "Mario Alejandro Molina Palma": null,
     "Mario Arturo Nieto Butron": null,
     "Mario Delgadillo Torres": {
       "name": "Mario Delgadillo Torres",
@@ -10875,9 +10878,9 @@
     "Óscar Hernández Hernández": null
   },
   "statistics": {
-    "processed": 2763,
+    "processed": 2766,
     "found": 1351,
-    "notFound": 1412,
+    "notFound": 1415,
     "foundWithFallback": 0,
     "foundWithMainTemplate": 1351,
     "keptExisting": 1351,
