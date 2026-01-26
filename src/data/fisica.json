@@ -551,8 +551,8 @@
             {
               "horario": "10:00 a 11:30",
               "dias": [
-                "Lu",
-                "Mi"
+                "Ma",
+                "Ju"
               ]
             }
           ]
@@ -562,8 +562,8 @@
             "nombre": "Juan Rangel González",
             "horario": "10:00 a 11:30",
             "dias": [
-              "Lu",
-              "Mi"
+              "Ma",
+              "Ju"
             ],
             "salon": null
           }
@@ -2490,7 +2490,7 @@
         "nota": null,
         "salon": "O218",
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369703"
       },
       "4094": {
         "grupo": "4094",
@@ -2943,7 +2943,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Arturo Champo Drali",
             "horario": "11:00 a 14:00",
             "dias": [
               "Lu",
@@ -3517,7 +3517,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Cristhian Jaimes Martinez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "O131",
         "modalidad": "Presencial",
@@ -3713,7 +3720,7 @@
         "nota": null,
         "salon": "O129",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370029"
       },
       "8112": {
         "grupo": "8112",
@@ -6050,10 +6057,10 @@
             "salon": null
           }
         ],
-        "nota": null,
-        "salon": "102 (Tlaltícpac)",
+        "nota": "El curso se impartirá en la Sala Ángel Dacal del Instituto de Física",
+        "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370041"
       },
       "8124": {
         "grupo": "8124",
@@ -8147,7 +8154,7 @@
         "nota": null,
         "salon": "202 (Tlaltícpac)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370105"
       },
       "8188": {
         "grupo": "8188",
@@ -8874,7 +8881,7 @@
         "nota": null,
         "salon": "P206",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370130"
       },
       "8386": {
         "grupo": "8386",
@@ -9018,7 +9025,7 @@
         "nota": null,
         "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370137"
       },
       "8221": {
         "grupo": "8221",
@@ -9529,7 +9536,7 @@
         "nota": null,
         "salon": "P115",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371287"
       }
     }
   },
@@ -9829,7 +9836,7 @@
         "nota": null,
         "salon": "P209",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370167"
       },
       "8250": {
         "grupo": "8250",
@@ -10828,7 +10835,7 @@
         "nota": "Materiales nanoestructurados, propiedades y características.",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370193"
       },
       "8276": {
         "grupo": "8276",
@@ -14159,7 +14166,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Luis Ernesto Garduño Garrido",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "P117",
         "modalidad": "Presencial",
@@ -14306,7 +14320,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370222"
       }
     },
     "Introducción al Estado Sólido": {
@@ -14453,7 +14467,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370225"
       }
     },
     "Máquinas Digitales con Laboratorio": {
@@ -14573,7 +14587,7 @@
           }
         ],
         "nota": null,
-        "salon": "P114",
+        "salon": "Aula 1 de Computación en Física",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370230"
       },
@@ -14624,7 +14638,7 @@
         "nota": null,
         "salon": "Anfiteatro Alfredo Barrera",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371436"
       }
     },
     "Óptica de Fourier": {
@@ -15337,6 +15351,20 @@
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371292"
       }
     },
+    "Temas Selectos de Estado Sólido II": {
+      "8399": {
+        "grupo": "8399",
+        "profesor": {
+          "nombre": "David Hinojosa Romero",
+          "horarios": []
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      }
+    },
     "Temas Selectos de Filosofía de la Física": {
       "8329": {
         "grupo": "8329",
@@ -15423,7 +15451,7 @@
         "nota": "Inteligencia Artificial en la Física",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370250"
       },
       "8333": {
         "grupo": "8333",
@@ -15574,7 +15602,7 @@
         "nota": "Análisis por elementos finitos en la instrumentación astronómica",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370255"
       }
     },
     "Temas Selectos de Física de Partículas Elementales I": {
@@ -15781,7 +15809,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371294"
       }
     },
     "Temas Selectos de Física Matemática y Teórica II": {
@@ -16027,7 +16055,14 @@
           "nombre": "Reyna Guadalupe Ramírez De la Torre",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Antonio Camacho Carrera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -16045,7 +16080,7 @@
         "nota": "Temas Selectos de Óptica I",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370274"
       }
     },
     "Temas Selectos de Óptica II": {
@@ -16066,7 +16101,7 @@
         "nota": "COLORIMETRÍA",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370275"
       }
     },
     "Temas Selectos de Relatividad, Cosmología y Gravitación I": {
@@ -16234,7 +16269,7 @@
         "nota": null,
         "salon": "P101",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369949"
       },
       "4323": {
         "grupo": "4323",
@@ -16265,7 +16300,7 @@
         "nota": null,
         "salon": "002 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369950"
       }
     },
     "Topología I": {

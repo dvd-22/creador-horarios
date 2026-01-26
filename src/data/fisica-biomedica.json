@@ -2157,7 +2157,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Cristhian Jaimes Martinez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "O131",
         "modalidad": "Presencial",
@@ -2353,7 +2360,7 @@
         "nota": null,
         "salon": "O129",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370029"
       },
       "8112": {
         "grupo": "8112",
@@ -2468,6 +2475,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Edith Auryn Téllez Guzmán",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2578,7 +2591,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Diego Antonio Villalba González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "O133",
         "modalidad": "Presencial",
@@ -3416,7 +3436,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370581"
       },
       "3010": {
         "grupo": "3010",
@@ -3533,10 +3553,10 @@
             "salon": null
           }
         ],
-        "nota": null,
-        "salon": "102 (Tlaltícpac)",
+        "nota": "El curso se impartirá en la Sala Ángel Dacal del Instituto de Física",
+        "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370041"
       },
       "8124": {
         "grupo": "8124",
@@ -4066,7 +4086,7 @@
         "nota": null,
         "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370138"
       },
       "8222": {
         "grupo": "8222",
@@ -4847,7 +4867,7 @@
         "nota": null,
         "salon": "P206",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370130"
       },
       "8386": {
         "grupo": "8386",
@@ -5357,7 +5377,7 @@
         "nota": null,
         "salon": "P115",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371287"
       }
     }
   },
@@ -5553,7 +5573,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371404"
       }
     },
     "Biomateriales": {
@@ -6420,7 +6440,7 @@
         "nota": null,
         "salon": "Anfiteatro Alfredo Barrera",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371436"
       }
     }
   }

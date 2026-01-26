@@ -1151,7 +1151,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Jesús Antonio Guerrero López",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
@@ -3093,7 +3100,7 @@
         "nota": null,
         "salon": "O218",
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369703"
       },
       "4094": {
         "grupo": "4094",
@@ -5136,7 +5143,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Lenin Pavón Alvarez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "O128",
         "modalidad": "Presencial",
@@ -5156,7 +5170,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Jairo Israel Valdez Olmos",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "101 (Tlaltícpac)",
         "modalidad": null,
@@ -8649,7 +8670,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Axel Vladimir Pérez Martínez",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -8680,7 +8701,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jean Marie Ailinne Nahomi Valencia Sánchez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -8692,7 +8713,7 @@
         "nota": null,
         "salon": "Aula T2",
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371400"
       }
     },
     "Inglés IV": {
@@ -9333,7 +9354,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Carlos Cuauhtémoc Gutiérrez Salazar",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -9407,7 +9428,7 @@
         "nota": "Asimilación de datos en la modelación numérica de la atmósfera II",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370801"
       },
       "6015": {
         "grupo": "6015",
@@ -9500,7 +9521,7 @@
         "nota": "Teoría Espectral de Gráficas",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370804"
       },
       "6018": {
         "grupo": "6018",
@@ -10715,7 +10736,7 @@
         "nota": "Teoría Espectral de Gráficas",
         "salon": "Taller de Geometría",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369895"
       },
       "4269": {
         "grupo": "4269",
@@ -11637,7 +11658,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Julio Andres Vez González",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -11670,7 +11691,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Javier Chaires Galindo",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",

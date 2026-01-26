@@ -127,7 +127,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369374"
       }
     },
     "Matemáticas I": {
@@ -1503,7 +1503,7 @@
         "nota": null,
         "salon": "B006",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369421"
       },
       "5051": {
         "grupo": "5051",
@@ -3664,7 +3664,7 @@
         "nota": "Bases moleculares del cáncer.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371433"
       }
     }
   },
@@ -3808,7 +3808,7 @@
         "nota": null,
         "salon": "010",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369455"
       },
       "5085": {
         "grupo": "5085",
@@ -5081,7 +5081,7 @@
         "nota": "Estudio de los patrones ecológicos y de divergencia genética de especies marinas en México",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371071"
       },
       "5451": {
         "grupo": "5451",
@@ -6443,6 +6443,148 @@
           }
         ],
         "nota": "De los genes a la función de las proteínas.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5606": {
+        "grupo": "5606",
+        "profesor": {
+          "nombre": "Alejandro Zaldívar Riverón",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "María del Pilar Benites",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Jovana Magdalena Jasso Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rubén Castañeda Osorio",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Estefany Karen López Estrada",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Herramientas genómicas para el estudio de la biodiversidad y evolución",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5608": {
+        "grupo": "5608",
+        "profesor": {
+          "nombre": "Sigifredo Pedraza Sánchez",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Heriberto Prado García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Alberto José Cabrera Quintero",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "La inmunología en el estudio de la biología de enfermedades humanas",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5609": {
+        "grupo": "5609",
+        "profesor": {
+          "nombre": "Ricardo Noguera Solano",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Víctor Rogelio Hernández Marroquín",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Carlos David Suárez Pascal",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Talia Cipactli Rosas Cabrera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rosaura Ruiz Gutiérrez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Estudios filosóficos, históricos y sociales sobre biología evolutiva.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5611": {
+        "grupo": "5611",
+        "profesor": {
+          "nombre": "Edna Naranjo García",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Jazmín Deneb Ortigosa Gutiérrez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Xochitl Guadalupe Vital Arriaga",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Jessica Raquel Hernández Pérez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Jazmín Aristeo Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Marisol Becerra González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Moluscos de México",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -10429,6 +10571,105 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5607": {
+        "grupo": "5607",
+        "profesor": {
+          "nombre": "Alejandro Zaldívar Riverón",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "María del Pilar Benites",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Jovana Magdalena Jasso Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rubén Castañeda Osorio",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Estefany Karen López Estrada",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Herramientas genómicas para el estudio de la biodiversidad y evolución",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5610": {
+        "grupo": "5610",
+        "profesor": {
+          "nombre": "Ricardo Noguera Solano",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Víctor Rogelio Hernández Marroquín",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Carlos David Suárez Pascal",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Talia Cipactli Rosas Cabrera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rosaura Ruiz Gutiérrez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Estudios filosóficos, históricos y sociales sobre biología evolutiva.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5612": {
+        "grupo": "5612",
+        "profesor": {
+          "nombre": "Karla Hernández Fonseca",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Lucía Alba Martínez Mota",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Tania Medina Sánchez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Drogas de abuso y trastornos afectivos.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -10454,7 +10695,7 @@
             "dias": [
               "Lu"
             ],
-            "salon": "Laboratorio de Prácticas de Biología de Animales III"
+            "salon": "Laboratorio de Prácticas de Biología de Procariontes"
           }
         ],
         "nota": null,
@@ -11911,7 +12152,7 @@
         "nota": null,
         "salon": "Anfiteatro Alfredo Barrera",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371436"
       }
     },
     "Microbiología": {
@@ -12053,7 +12294,7 @@
             "dias": [
               "Mi"
             ],
-            "salon": "Laboratorio de Prácticas de Biología de Animales III"
+            "salon": "Laboratorio de Prácticas de Biología de Animales II"
           }
         ],
         "nota": null,
@@ -12304,11 +12545,11 @@
             "dias": [
               "Vi"
             ],
-            "salon": "B006"
+            "salon": null
           }
         ],
         "nota": "Metodología de la investigación",
-        "salon": "B002",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369539"
       },
@@ -13059,7 +13300,7 @@
           }
         ],
         "nota": "Biologia de Mixomicetes",
-        "salon": "B005",
+        "salon": "Laboratorio de Prácticas de Biología de Hongos",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369556"
       },
@@ -13083,11 +13324,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": "B007"
+            "salon": "Laboratorio de Prácticas de Biología de Animales III"
           }
         ],
         "nota": "Tecnicas histológicas y su aplicación en tejido animal",
-        "salon": "B007",
+        "salon": "Laboratorio de Prácticas de Biología de Animales III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369557"
       },

@@ -3162,7 +3162,7 @@
         "nota": null,
         "salon": "O218",
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369703"
       },
       "4094": {
         "grupo": "4094",
@@ -6996,10 +6996,10 @@
             "salon": null
           }
         ],
-        "nota": null,
-        "salon": "102 (Tlaltícpac)",
+        "nota": "El curso se impartirá en la Sala Ángel Dacal del Instituto de Física",
+        "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370041"
       },
       "8124": {
         "grupo": "8124",
@@ -8577,7 +8577,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Cristhian Jaimes Martinez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "O131",
         "modalidad": "Presencial",
@@ -8773,7 +8780,7 @@
         "nota": null,
         "salon": "O129",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370029"
       },
       "8112": {
         "grupo": "8112",
@@ -9276,7 +9283,7 @@
         "nota": null,
         "salon": "P101",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369949"
       },
       "4323": {
         "grupo": "4323",
@@ -9307,7 +9314,7 @@
         "nota": null,
         "salon": "002 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369950"
       }
     },
     "Teoría de los Números II": {
@@ -10540,7 +10547,7 @@
         "nota": null,
         "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370137"
       },
       "8221": {
         "grupo": "8221",
@@ -11667,7 +11674,7 @@
         "nota": null,
         "salon": "P115",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371287"
       }
     },
     "Procesos Estocásticos I": {
@@ -12476,7 +12483,7 @@
         "nota": "Teoría Espectral de Gráficas",
         "salon": "Taller de Geometría",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369895"
       },
       "4269": {
         "grupo": "4269",
@@ -13240,11 +13247,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P108"
+            "salon": "Taller de Sistemas Complejos"
           }
         ],
         "nota": "Matemáticas en la Visión por Computadora: robots móviles e inteligencia artificial",
-        "salon": "P108",
+        "salon": "Taller de Sistemas Complejos",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369918"
       },
@@ -15262,7 +15269,7 @@
         "nota": null,
         "salon": "P206",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370130"
       },
       "8386": {
         "grupo": "8386",
@@ -15903,8 +15910,8 @@
             {
               "horario": "16:00 a 17:30",
               "dias": [
-                "Ma",
-                "Vi"
+                "Lu",
+                "Mi"
               ]
             }
           ]
@@ -15914,14 +15921,14 @@
             "nombre": "José Stefano Sánchez Sánchez",
             "horario": "16:00 a 17:00",
             "dias": [
-              "Lu",
-              "Ju"
+              "Ma",
+              "Vi"
             ],
-            "salon": "P204"
+            "salon": null
           }
         ],
         "nota": null,
-        "salon": "P204",
+        "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369860"
       }
@@ -16906,7 +16913,7 @@
         "nota": null,
         "salon": "Taller de Topología",
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371387"
       }
     },
     "Matemáticas Avanzadas de la Física": {
@@ -17244,7 +17251,7 @@
         "nota": null,
         "salon": "202 (Tlaltícpac)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370105"
       },
       "8188": {
         "grupo": "8188",
