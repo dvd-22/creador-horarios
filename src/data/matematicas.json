@@ -3958,11 +3958,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P203"
+            "salon": "Aula Magna P"
           }
         ],
         "nota": null,
-        "salon": "P203",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369727"
       },
@@ -3998,11 +3998,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "O130"
+            "salon": "Aula Magna II"
           }
         ],
         "nota": null,
-        "salon": "O130",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369728"
       },
@@ -4078,11 +4078,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "O128"
+            "salon": "Aula Magna P"
           }
         ],
         "nota": null,
-        "salon": "O128",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369730"
       },
@@ -6862,11 +6862,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Aula Magna I"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Aula Magna I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369843"
       }
@@ -8474,7 +8474,7 @@
           }
         ],
         "nota": null,
-        "salon": "011",
+        "salon": "106 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370019"
       },
@@ -8828,7 +8828,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Arturo Proudinat Pérez",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -9495,11 +9495,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Aula T2"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Aula T2",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369836"
       }
@@ -10292,7 +10292,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Enrique Reyes Romero",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -11907,7 +11907,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Mario Alejandro Molina Palma",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -13497,11 +13497,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P117"
+            "salon": "P104"
           }
         ],
         "nota": "Proyectos de matemática en la \"nueva escuela mexicana\"",
-        "salon": "P117",
+        "salon": "P104",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369926"
       }
@@ -14387,7 +14387,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Karla Ivonne de la Cruz de la Cruz",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -14834,7 +14834,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Karla Yeneri Ventre Guerrero",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -16442,7 +16442,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Emiliano Hernández Salazar",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -17851,7 +17851,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jesús Hermilo Candelas Mejía",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -18760,11 +18760,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "O130"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "O130",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369937"
       }
