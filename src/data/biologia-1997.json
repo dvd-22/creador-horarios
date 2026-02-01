@@ -81,7 +81,7 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Física General II"
           },
           {
             "nombre": "Diana Nahidally Martínez García",
@@ -91,7 +91,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Física General II",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -115,7 +115,7 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Física General III"
           },
           {
             "nombre": "Steve López Juárez",
@@ -125,7 +125,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Física General III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369374"
       }
@@ -157,7 +157,7 @@
         "nota": null,
         "salon": "B003",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369375"
       }
     },
     "Química": {
@@ -213,11 +213,11 @@
             "dias": [
               "Sa"
             ],
-            "salon": null
+            "salon": "B005"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Procariontes",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369377"
       }
@@ -451,7 +451,7 @@
               "Lu",
               "Mi"
             ],
-            "salon": null
+            "salon": "302 (Yelizcalli)"
           },
           {
             "nombre": "María Isabel Briseño Sánchez",
@@ -487,7 +487,7 @@
               "Lu",
               "Ju"
             ],
-            "salon": null
+            "salon": "302 (Yelizcalli)"
           },
           {
             "nombre": "Fernanda Aide Arreola Luna",
@@ -671,7 +671,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369392"
       }
@@ -821,7 +821,7 @@
         "nota": null,
         "salon": "S6",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369397"
       },
       "5027": {
         "grupo": "5027",
@@ -987,11 +987,11 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula III"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369403"
       },
@@ -1096,7 +1096,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Lourdes Gabriela Soid Raggi",
             "horario": "11:00 a 14:00",
             "dias": [
               "Sa"
@@ -1105,9 +1105,9 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Genética",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369407"
       },
       "5037": {
         "grupo": "5037",
@@ -1161,7 +1161,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Genética",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369409"
       },
@@ -1219,7 +1219,7 @@
         "nota": null,
         "salon": "201",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369411"
       }
     }
   },
@@ -1279,7 +1279,7 @@
         "nota": null,
         "salon": "B006",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369413"
       },
       "5043": {
         "grupo": "5043",
@@ -1419,7 +1419,7 @@
         "nota": null,
         "salon": "B006",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369418"
       },
       "5048": {
         "grupo": "5048",
@@ -1532,6 +1532,62 @@
         "salon": "B006",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369422"
+      },
+      "5619": {
+        "grupo": "5619",
+        "profesor": {
+          "nombre": "Germán Fernando Gutiérrez Aguilar",
+          "horarios": [
+            {
+              "horario": "18:00 a 21:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Fabiola Hernández Vázquez",
+            "horario": "18:00 a 21:00",
+            "dias": [
+              "Lu"
+            ],
+            "salon": "Laboratorio de Prácticas de Biología de Animales II"
+          }
+        ],
+        "nota": null,
+        "salon": "S5",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "5620": {
+        "grupo": "5620",
+        "profesor": {
+          "nombre": "José Luis Arreola Ramírez",
+          "horarios": [
+            {
+              "horario": "07:30 a 10:30",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Itzel Susana de la Rosa Lara",
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Ma"
+            ],
+            "salon": "Laboratorio de Prácticas de Biología de Animales II"
+          }
+        ],
+        "nota": null,
+        "salon": "006",
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Ecología I": {
@@ -1899,7 +1955,7 @@
         "nota": null,
         "salon": "003",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369435"
       },
       "5065": {
         "grupo": "5065",
@@ -2293,7 +2349,7 @@
         "nota": null,
         "salon": "Laboratorio de Prácticas de Paleobiología",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369449"
       },
       "5079": {
         "grupo": "5079",
@@ -2502,7 +2558,7 @@
         "nota": "Dinámica floral e interacciones bióticas en angiospermas fósiles y actuales",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371040"
       },
       "5426": {
         "grupo": "5426",
@@ -3145,7 +3201,7 @@
         "nota": "Investigación ecológica en poblaciones y comunidades.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371113"
       },
       "5494": {
         "grupo": "5494",
@@ -3665,6 +3721,43 @@
         "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371433"
+      },
+      "5616": {
+        "grupo": "5616",
+        "profesor": {
+          "nombre": "Marco Antonio Cervantes García",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Natalhie Beatriz Campos Reales Pineda",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Aldo Bernal Rojas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rosa Inés González Torres",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Sol Ortiz García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "La bioseguridad de los organismos genéticamente modificados desde la perspectiva del sector ambiental.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/372729"
       }
     }
   },
@@ -4791,7 +4884,7 @@
         "nota": "Diversidad y taxonomía de arácnidos",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371044"
       },
       "5425": {
         "grupo": "5425",
@@ -5587,7 +5680,7 @@
         "nota": "Modulación de los metabolitos neuroactivos derivados del Triptofano como blancos terapéuticos en enfermedades neurodegenerativas y desórdenes psiquiátricos",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371126"
       },
       "5509": {
         "grupo": "5509",
@@ -6408,7 +6501,7 @@
         "nota": "Biología integrativa de plantas y sus interactuantes",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371429"
       },
       "5604": {
         "grupo": "5604",
@@ -6544,7 +6637,7 @@
         "nota": "Estudios filosóficos, históricos y sociales sobre biología evolutiva.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/372396"
       },
       "5611": {
         "grupo": "5611",
@@ -6585,6 +6678,80 @@
           }
         ],
         "nota": "Moluscos de México",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5613": {
+        "grupo": "5613",
+        "profesor": {
+          "nombre": "Jesús Aguirre Linares",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Wilhelm Ludwig Hansberg y Torres",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Carlos Leonardo Peraza Reyes",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "José Francisco Torres Quiroz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Laura Kawasaki Watanabe",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Alma Olivia Sánchez González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Diferenciación celular en hongos",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5617": {
+        "grupo": "5617",
+        "profesor": {
+          "nombre": "Yolanda López Vidal",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Gonzalo Castillo Rojas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Luis José René Arredondo Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Patricia Orduña Estrada",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Inmunología molecular microbiana en salud",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -8085,6 +8252,49 @@
           }
         ],
         "nota": "Bases moleculares del cáncer.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5615": {
+        "grupo": "5615",
+        "profesor": {
+          "nombre": "Alejandro Córdoba Aguilar",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Mercedes del Pilar Rodríguez Moreno",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Manuel Edday Farfán Beltrán",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Angélica Selene Ensaldo Cárdenas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Eduardo Ulises Castillo Pérez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Luis Alberto Valencia López",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Ecología de insectos en un mundo cambiante",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -10459,7 +10669,7 @@
         "nota": "Biología integrativa de plantas y sus interactuantes",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371430"
       },
       "5599": {
         "grupo": "5599",
@@ -10644,7 +10854,7 @@
         "nota": "Estudios filosóficos, históricos y sociales sobre biología evolutiva.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/372397"
       },
       "5612": {
         "grupo": "5612",
@@ -10667,6 +10877,80 @@
           }
         ],
         "nota": "Drogas de abuso y trastornos afectivos.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5614": {
+        "grupo": "5614",
+        "profesor": {
+          "nombre": "Jesús Aguirre Linares",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Wilhelm Ludwig Hansberg y Torres",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Carlos Leonardo Peraza Reyes",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "José Francisco Torres Quiroz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Laura Kawasaki Watanabe",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Alma Olivia Sánchez González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Diferenciación celular en hongos",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5618": {
+        "grupo": "5618",
+        "profesor": {
+          "nombre": "Yolanda López Vidal",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Gonzalo Castillo Rojas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Luis José René Arredondo Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Patricia Orduña Estrada",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Inmunología molecular microbiana en salud",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -10755,11 +11039,11 @@
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "103 (Tlaltícpac)"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369486"
       }
@@ -10879,7 +11163,7 @@
           }
         ],
         "nota": null,
-        "salon": "B007",
+        "salon": "Laboratorio de Prácticas de Química Orgánica",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369490"
       }
@@ -11013,7 +11297,7 @@
             "dias": [
               "Mi"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Química I"
           }
         ],
         "nota": null,
@@ -11131,11 +11415,11 @@
             "dias": [
               "Mi"
             ],
-            "salon": "Laboratorio de Prácticas de Biología de Plantas I"
+            "salon": null
           }
         ],
         "nota": null,
-        "salon": "B004",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369498"
       }
@@ -11193,9 +11477,9 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Tlaltícpac)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371437"
       }
     },
     "Conducta Animal": {
@@ -11309,13 +11593,13 @@
             "dias": [
               "Ju"
             ],
-            "salon": "201"
+            "salon": "103 (Tlaltícpac)"
           }
         ],
         "nota": null,
-        "salon": "S2",
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369502"
       }
     },
     "Ecología de la Conducta": {
@@ -11429,7 +11713,7 @@
             "dias": [
               "Ju"
             ],
-            "salon": "Laboratorio de Prácticas de Química II"
+            "salon": "Laboratorio de Prácticas de Química I"
           }
         ],
         "nota": null,
@@ -11521,7 +11805,7 @@
         "nota": null,
         "salon": "S2",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369508"
       }
     },
     "Embriología Vegetal": {
@@ -11611,13 +11895,13 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "S2"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S2",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369511"
       }
     },
     "Etnofarmacología": {
@@ -11641,11 +11925,11 @@
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "103 (Tlaltícpac)"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369512"
       }
@@ -11795,7 +12079,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Química I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369516"
       }
@@ -11917,7 +12201,7 @@
         "nota": null,
         "salon": "B003",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369519"
       }
     },
     "Introducción a la Ecología Marina": {
@@ -11982,6 +12266,40 @@
         "salon": "B004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369521"
+      }
+    },
+    "Introducción Crítica a la Diplomacia de la Ciencia": {
+      "8400": {
+        "grupo": "8400",
+        "profesor": {
+          "nombre": "Parsifal Fidelio Islas Morales",
+          "horarios": [
+            {
+              "horario": "10:00 a 13:00",
+              "dias": [
+                "Ju"
+              ]
+            },
+            {
+              "horario": "10:00 a 13:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Yudy Liliana Tibaduiza Roa",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Malacología": {
@@ -12065,11 +12383,11 @@
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "303 (Tlaltícpac)"
           }
         ],
         "nota": null,
-        "salon": "B004",
+        "salon": "303 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371168"
       }
@@ -12131,7 +12449,7 @@
         "nota": null,
         "salon": "B003",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369525"
       }
     },
     "México: Nación Multicultural": {
@@ -12180,12 +12498,43 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "201",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369526"
       }
     },
     "Naturaleza y Sociedad": {
+      "4354": {
+        "grupo": "4354",
+        "profesor": {
+          "nombre": "Octavio Eduardo Vizcaya Xilotl",
+          "horarios": [
+            {
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Regina Ortiz Zamora",
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "P108"
+          }
+        ],
+        "nota": null,
+        "salon": "P108",
+        "modalidad": null,
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/372776"
+      },
       "5156": {
         "grupo": "5156",
         "profesor": {
@@ -12358,7 +12707,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Química Orgánica",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369532"
       }
@@ -12443,7 +12792,7 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "B004"
           }
         ],
         "nota": null,
@@ -12601,11 +12950,11 @@
             "dias": [
               "Mi"
             ],
-            "salon": "S4"
+            "salon": "103 (Tlaltícpac)"
           }
         ],
         "nota": "Ecología Política",
-        "salon": "S4",
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371302"
       }
@@ -12927,12 +13276,12 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "María del Carmen Miñana Solís",
             "horario": "11:00 a 13:00",
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "B006"
           }
         ],
         "nota": "Redacción científica",
@@ -13048,7 +13397,7 @@
             "dias": [
               "Lu"
             ],
-            "salon": "Sala de Cómputo II"
+            "salon": "B004"
           }
         ],
         "nota": "Vigilancia tecnológica para las ciencias biológicas",
@@ -13182,11 +13531,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "S2"
           }
         ],
         "nota": "Educación y comunicación ambiental para la sustentabilidad",
-        "salon": null,
+        "salon": "S3",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369554"
       },
@@ -13380,7 +13729,7 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "B007"
           }
         ],
         "nota": "Propiedad intelectual y el aprovechamiento",
@@ -13532,8 +13881,7 @@
             {
               "horario": "17:30 a 20:30",
               "dias": [
-                "Lu",
-                "Ju"
+                "Lu"
               ]
             }
           ]
@@ -13541,13 +13889,15 @@
         "ayudantes": [
           {
             "nombre": "Janikua Floritta Nelson Mora",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "17:30 a 20:30",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "B002"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371187"
       }
@@ -13579,7 +13929,7 @@
         "nota": null,
         "salon": "B004",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371190"
       }
     }
   }
