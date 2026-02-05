@@ -1587,7 +1587,7 @@
         "nota": null,
         "salon": "006",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/372822"
       }
     },
     "Ecología I": {
@@ -4408,6 +4408,34 @@
         "salon": "203 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369472"
+      },
+      "5621": {
+        "grupo": "5621",
+        "profesor": {
+          "nombre": "Rogelio Omar Corona Núñez",
+          "horarios": [
+            {
+              "horario": "07:30 a 10:30",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Julio Cesar Ramírez Martínez",
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Vi"
+            ],
+            "salon": "S2"
+          }
+        ],
+        "nota": null,
+        "salon": "S2",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/372870"
       }
     },
     "Taller Nivel 2": {
@@ -5254,7 +5282,7 @@
         "nota": "Etnobiología: aprovechamiento y conservación del patrimonio biocultural",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371074"
       },
       "5455": {
         "grupo": "5455",
@@ -6755,6 +6783,86 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5622": {
+        "grupo": "5622",
+        "profesor": {
+          "nombre": "Zenón Cano Santana",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Johnattan Hernández Cumplido",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Irene Pisanty Baruch",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Iván Israel Castellanos Vargas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "María Rosa Mancilla Ramírez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Linda Mariana Martínez Ramos",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Ecología terrestre y manejo de recursos bióticos.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5623": {
+        "grupo": "5623",
+        "profesor": {
+          "nombre": "Ana Rosa Barahona Echeverría",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Erica Torrens Rojas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "María Alicia Villela González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Marco David Ornelas Cruces",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Brian del Angel Becerra Bressant",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Problemas históricos y filosóficos de la Biología.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/372875"
       }
     }
   },
@@ -6943,7 +7051,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Alejandra Valero Méndez",
+            "nombre": "Edna Arévalo Marín",
             "horario": "14:30 a 17:30",
             "dias": [
               "Lu"
@@ -9287,7 +9395,7 @@
         "nota": "Etnobiología: aprovechamiento y conservación del patrimonio biocultural",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371075"
       },
       "5456": {
         "grupo": "5456",
@@ -11391,7 +11499,7 @@
         "nota": null,
         "salon": "B002",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369497"
       }
     },
     "Cactología": {
@@ -12297,7 +12405,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "104 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": null
       }
@@ -12353,7 +12461,7 @@
             "dias": [
               "Ju"
             ],
-            "salon": "B008"
+            "salon": null
           }
         ],
         "nota": null,
@@ -12816,7 +12924,7 @@
               "Lu",
               "Mi"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Química II"
           }
         ],
         "nota": "Bioetica I",
@@ -13054,7 +13162,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Fabiola Villela Cortes",
+            "nombre": "Lorena del Carmen Jiménez Naranjo",
             "horario": "07:30 a 10:30",
             "dias": [
               "Lu",
@@ -13311,11 +13419,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "Taller de Física de Radiaciones"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Física de Radiaciones",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369549"
       }
