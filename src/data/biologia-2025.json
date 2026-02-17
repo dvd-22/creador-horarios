@@ -2556,35 +2556,6 @@
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370894"
       },
-      "5274": {
-        "grupo": "5274",
-        "profesor": {
-          "nombre": "Carmen Maldonado Vargas",
-          "horarios": [
-            {
-              "horario": "14:00 a 16:00",
-              "dias": [
-                "Ma"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Mónica Araceli Canales Lizaola",
-            "horario": "15:00 a 17:00",
-            "dias": [
-              "Ju",
-              "Mi"
-            ],
-            "salon": "Sala de Cómputo I"
-          }
-        ],
-        "nota": null,
-        "salon": "004",
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370895"
-      },
       "5275": {
         "grupo": "5275",
         "profesor": {
@@ -2644,7 +2615,7 @@
           }
         ],
         "nota": null,
-        "salon": "Sala de Cómputo I",
+        "salon": "304 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370897"
       },

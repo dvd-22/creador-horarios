@@ -30,36 +30,6 @@
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369371"
       }
     },
-    "Filosofía e Historia de la Biología": {
-      "5001": {
-        "grupo": "5001",
-        "profesor": {
-          "nombre": "Ana Cristina Cervantes Arrioja",
-          "horarios": [
-            {
-              "horario": "11:00 a 14:00",
-              "dias": [
-                "Mi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Graciela Zamudio Varela",
-            "horario": "11:00 a 14:00",
-            "dias": [
-              "Sa"
-            ],
-            "salon": "B001"
-          }
-        ],
-        "nota": null,
-        "salon": "B001",
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369372"
-      }
-    },
     "Física": {
       "5002": {
         "grupo": "5002",
@@ -253,34 +223,6 @@
       }
     },
     "Matemáticas II": {
-      "5008": {
-        "grupo": "5008",
-        "profesor": {
-          "nombre": "Gloria López Chávez",
-          "horarios": [
-            {
-              "horario": "07:30 a 10:30",
-              "dias": [
-                "Ma"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "07:30 a 10:30",
-            "dias": [
-              "Vi"
-            ],
-            "salon": "B006"
-          }
-        ],
-        "nota": null,
-        "salon": "B006",
-        "modalidad": null,
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369379"
-      },
       "5009": {
         "grupo": "5009",
         "profesor": {
@@ -461,7 +403,7 @@
           }
         ],
         "nota": null,
-        "salon": "S3",
+        "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369385"
       },
@@ -815,11 +757,11 @@
             "dias": [
               "Mi"
             ],
-            "salon": "B002"
+            "salon": "Laboratorio de Prácticas de Biología de Procariontes"
           }
         ],
         "nota": null,
-        "salon": "S6",
+        "salon": "B004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369397"
       },
@@ -1081,34 +1023,6 @@
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369406"
       },
-      "5036": {
-        "grupo": "5036",
-        "profesor": {
-          "nombre": "Abril Navarrete Mena",
-          "horarios": [
-            {
-              "horario": "11:00 a 14:00",
-              "dias": [
-                "Mi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Lourdes Gabriela Soid Raggi",
-            "horario": "11:00 a 14:00",
-            "dias": [
-              "Sa"
-            ],
-            "salon": "Laboratorio de Prácticas de Biotecnología"
-          }
-        ],
-        "nota": null,
-        "salon": "Laboratorio de Prácticas de Genética",
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369407"
-      },
       "5037": {
         "grupo": "5037",
         "profesor": {
@@ -1164,34 +1078,6 @@
         "salon": "Laboratorio de Prácticas de Genética",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369409"
-      },
-      "5039": {
-        "grupo": "5039",
-        "profesor": {
-          "nombre": "Luz María Lazcano Arriola",
-          "horarios": [
-            {
-              "horario": "18:00 a 21:00",
-              "dias": [
-                "Ju"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Esther Zúñiga Sánchez",
-            "horario": "18:00 a 21:00",
-            "dias": [
-              "Ma"
-            ],
-            "salon": "Laboratorio de Prácticas de Biotecnología"
-          }
-        ],
-        "nota": null,
-        "salon": "201",
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369410"
       },
       "5040": {
         "grupo": "5040",
@@ -1417,7 +1303,7 @@
           }
         ],
         "nota": null,
-        "salon": "B006",
+        "salon": "B002",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369418"
       },
@@ -1532,34 +1418,6 @@
         "salon": "B006",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369422"
-      },
-      "5619": {
-        "grupo": "5619",
-        "profesor": {
-          "nombre": "Germán Fernando Gutiérrez Aguilar",
-          "horarios": [
-            {
-              "horario": "18:00 a 21:00",
-              "dias": [
-                "Ju"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Fabiola Hernández Vázquez",
-            "horario": "18:00 a 21:00",
-            "dias": [
-              "Lu"
-            ],
-            "salon": "Laboratorio de Prácticas de Biología de Animales II"
-          }
-        ],
-        "nota": null,
-        "salon": "S5",
-        "modalidad": "Presencial",
-        "presentacion": null
       },
       "5620": {
         "grupo": "5620",
@@ -2418,49 +2276,6 @@
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371016"
       },
-      "5404": {
-        "grupo": "5404",
-        "profesor": {
-          "nombre": "Laura Elena Sanvicente Añorve",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "Pablo Hernández Alcántara",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Mitzi Ariadna Sánchez Campos",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Luis Gabriel Aguilar Estrada",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Elia Lemus Santana",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Marco Antonio Violante Huerta",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "Biología y ecología de Invertebrados Marinos",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371025"
-      },
       "5408": {
         "grupo": "5408",
         "profesor": {
@@ -2529,37 +2344,6 @@
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371035"
       },
-      "5419": {
-        "grupo": "5419",
-        "profesor": {
-          "nombre": "Elia Ramírez Arriaga",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "Ana Lilia Hernández Damián",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Sandra Luz Gómez Acevedo",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Guadalupe Iriliana López Caballero",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "Dinámica floral e interacciones bióticas en angiospermas fósiles y actuales",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371040"
-      },
       "5426": {
         "grupo": "5426",
         "profesor": {
@@ -2584,74 +2368,6 @@
         "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371047"
-      },
-      "5431": {
-        "grupo": "5431",
-        "profesor": {
-          "nombre": "Arturo García Romero",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "Carlos Granados Peláez",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Gabriela Santibáñez Andrade",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "Ecología del paisaje de bosques templados: dinámica del cambio de cobertura y uso de suelo y sus efectos sobre la biodiversidad",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371052"
-      },
-      "5436": {
-        "grupo": "5436",
-        "profesor": {
-          "nombre": "Gabriela Parra Olea",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "Mirna Grisel Garcia Castillo",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Ángel Fernando Soto Pozos",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "José Daniel Lara Tufiño",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Carlos Omar Becerra Soria",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Susana Hernández Monasterio",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "Ecología, sistemática y conservación de anfibios",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371057"
       },
       "5438": {
         "grupo": "5438",
@@ -2745,37 +2461,6 @@
         "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371065"
-      },
-      "5448": {
-        "grupo": "5448",
-        "profesor": {
-          "nombre": "Salvador Uribe Carvajal",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "José de Jesús García Trejo",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Claudia Peña Segura",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Oscar Flores Herrera",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "Estudio de la mitocondria: Cadena transportadora de electrones, fosforilación oxidativa y síntesis de ATP",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": null
       },
       "5458": {
         "grupo": "5458",
@@ -2881,68 +2566,6 @@
         "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371088"
-      },
-      "5472": {
-        "grupo": "5472",
-        "profesor": {
-          "nombre": "Adriana Garay Arroyo",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "Ma. de la Paz Sánchez Jiménez",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "María Elena Álvarez-Buylla Roces",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Gastón Contreras Jiménez",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "Genética molecular, desarrollo y evolución de plantas. Enfoques experimentales y teóricos.",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": null
-      },
-      "5475": {
-        "grupo": "5475",
-        "profesor": {
-          "nombre": "Leticia Huidobro Campos",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "Christian Lámbarri Martínez",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Xavier Gilberto Valencia Díaz",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Sebastián Huacuja Barraza",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "Hidrobiología: plancton, parásitos, peces y pesquerías.",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371096"
       },
       "5478": {
         "grupo": "5478",
@@ -3060,37 +2683,6 @@
         "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371103"
-      },
-      "5484": {
-        "grupo": "5484",
-        "profesor": {
-          "nombre": "Adolfo Gracia Gasca",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "Ana Rosa Vázquez Bader",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "José Estuardo López Vera",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Octavio Quintanar Retama",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "Introducción a la ecología y paleobiología marina.",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371105"
       },
       "5487": {
         "grupo": "5487",
@@ -3228,37 +2820,6 @@
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371115"
       },
-      "5496": {
-        "grupo": "5496",
-        "profesor": {
-          "nombre": "José Luis Puente García",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "Patricia Ileana Joseph Bravo",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Jean-Louis Joseph Marie Charli Casalonga",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Alejandra Alicia Covarrubias Robles",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "La Biología a partir de las biomoléculas; nuevos paradigmas y aplicaciones.",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371117"
-      },
       "5501": {
         "grupo": "5501",
         "profesor": {
@@ -3283,86 +2844,6 @@
         "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371122"
-      },
-      "5507": {
-        "grupo": "5507",
-        "profesor": {
-          "nombre": "Edna Naranjo García",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "Jazmín Deneb Ortigosa Gutiérrez",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Xochitl Guadalupe Vital Arriaga",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Jessica Raquel Hernández Pérez",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Jazmín Aristeo Hernández",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Marisol Becerra González",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "Moluscos de México",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371128"
-      },
-      "5514": {
-        "grupo": "5514",
-        "profesor": {
-          "nombre": "José Martín García Varela",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "María Berenit Mendoza Garfias",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Mirza Patricia Ortega Olivares",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Ana Lucía Sereno Uribe",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Marcelo Tonatiuh González García",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "Parasitología de vertebrados",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371135"
       },
       "5519": {
         "grupo": "5519",
@@ -3394,43 +2875,6 @@
         "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371140"
-      },
-      "5520": {
-        "grupo": "5520",
-        "profesor": {
-          "nombre": "Jaime Humberto Urrutia Fucugauchi",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "Ligia Lucina Pérez Cruz",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Xinantecatl Antonio Nava Fernández",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Marysol Valdez Hernández",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Rafael Venegas Ferrer",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "Principios de paleoceanografía y paleoclimatología.",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": null
       },
       "5522": {
         "grupo": "5522",
@@ -3505,37 +2949,6 @@
         "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371146"
-      },
-      "5531": {
-        "grupo": "5531",
-        "profesor": {
-          "nombre": "Elsa Guadalupe Escamilla Chimal",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "Manuel Miranda Anaya",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Enrique Moreno Sáenz",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Cinthia Rocío Juárez Tapia",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "Ritmos biológicos en animales.",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371152"
       },
       "5535": {
         "grupo": "5535",
@@ -3696,68 +3109,6 @@
         "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371390"
-      },
-      "5601": {
-        "grupo": "5601",
-        "profesor": {
-          "nombre": "Marco Alonso Andonegui Elguera",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "José de la Luz Díaz Chávez",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Alejandro López Saavedra",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "Bases moleculares del cáncer.",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371433"
-      },
-      "5616": {
-        "grupo": "5616",
-        "profesor": {
-          "nombre": "Marco Antonio Cervantes García",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "Natalhie Beatriz Campos Reales Pineda",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Aldo Bernal Rojas",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Rosa Inés González Torres",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Sol Ortiz García",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "La bioseguridad de los organismos genéticamente modificados desde la perspectiva del sector ambiental.",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/372729"
       }
     }
   },
@@ -3923,7 +3274,7 @@
             "dias": [
               "Sa"
             ],
-            "salon": "Taller de Biología de Animales III"
+            "salon": "Laboratorio de Prácticas de Biología de Animales III"
           }
         ],
         "nota": null,
@@ -6863,6 +6214,136 @@
         "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/372875"
+      },
+      "5625": {
+        "grupo": "5625",
+        "profesor": {
+          "nombre": "Víctor Manuel Chávez Avila",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "José Ángel Jiménez Rodríguez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Octavio González Caballero",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "El cultivo de tejidos vegetales aplicados al estudio, conservación y aprovechamiento de especies mexicanas.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5626": {
+        "grupo": "5626",
+        "profesor": {
+          "nombre": "Jaime Humberto Urrutia Fucugauchi",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ligia Lucina Pérez Cruz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Xinantecatl Antonio Nava Fernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Marysol Valdez Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rafael Venegas Ferrer",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Principios de paleoceanografía y paleoclimatología.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5627": {
+        "grupo": "5627",
+        "profesor": {
+          "nombre": "Salvador Uribe Carvajal",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "José de Jesús García Trejo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Claudia Peña Segura",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Oscar Flores Herrera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Estudio de la mitocondria: Cadena transportadora de electrones, fosforilación oxidativa y síntesis de ATP",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5628": {
+        "grupo": "5628",
+        "profesor": {
+          "nombre": "Olivia Yáñez Ordóñez",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Regina Dorinda Montero Montoya",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Jesús Javier Espinosa Aguirre",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rafael Camacho Carranza",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Adriana Muñoz Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Introducción a la toxicología genética y ambiental.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -8403,6 +7884,80 @@
           }
         ],
         "nota": "Ecología de insectos en un mundo cambiante",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5624": {
+        "grupo": "5624",
+        "profesor": {
+          "nombre": "Ricardo Noguera Solano",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Víctor Rogelio Hernández Marroquín",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Carlos David Suárez Pascal",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Talia Cipactli Rosas Cabrera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rosaura Ruiz Gutiérrez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Estudios filosóficos, históricos y sociales sobre biología evolutiva.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5629": {
+        "grupo": "5629",
+        "profesor": {
+          "nombre": "Vianey Rodríguez Lara",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Marco Antonio Cerbón Cervantes",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Nidia Samara Rodríguez Rivera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Gala Cortés Ramírez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Griselda Rodríguez Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Participación de la hormonas sexuales en el cáncer",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -11467,7 +11022,7 @@
           }
         ],
         "nota": null,
-        "salon": "B001",
+        "salon": "S2",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369496"
       }
@@ -11795,7 +11350,7 @@
           }
         ],
         "nota": null,
-        "salon": "B002",
+        "salon": "B006",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369505"
       }
@@ -12243,7 +11798,7 @@
             "dias": [
               "Lu"
             ],
-            "salon": "B008"
+            "salon": "Laboratorio de Prácticas de Biología de Hongos"
           }
         ],
         "nota": null,
@@ -12465,7 +12020,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Química I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369523"
       }
@@ -12702,34 +12257,6 @@
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369529"
       }
     },
-    "Origen de la Vida": {
-      "5159": {
-        "grupo": "5159",
-        "profesor": {
-          "nombre": "Ricardo Hernández Morales",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "José Ervin Silva González",
-            "horario": "10:00 a 11:00",
-            "dias": [
-              "Lu",
-              "Ma",
-              "Mi",
-              "Ju",
-              "Vi",
-              "Sa"
-            ],
-            "salon": "204 (Yelizcalli)"
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/369530"
-      }
-    },
     "Ornitología": {
       "5542": {
         "grupo": "5542",
@@ -12811,7 +12338,7 @@
             "dias": [
               "Sa"
             ],
-            "salon": "Laboratorio de Prácticas de Biología de Animales III"
+            "salon": "Laboratorio de Prácticas de Química I"
           }
         ],
         "nota": null,
@@ -13139,7 +12666,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alejandro Cristin Ponciano",
             "horario": "11:00 a 14:00",
             "dias": [
               "Ju"
