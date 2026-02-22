@@ -11131,7 +11131,7 @@
           }
         ],
         "nota": null,
-        "salon": "103 (Tlaltícpac)",
+        "salon": "B004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373002"
       },
@@ -11702,11 +11702,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "P106"
           }
         ],
         "nota": "Complejidad y Redes",
-        "salon": null,
+        "salon": "P106",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370794"
       },
@@ -11778,11 +11778,9 @@
           "nombre": "Víctor Manuel García Guerrero",
           "horarios": [
             {
-              "horario": "11:00 a 12:00",
+              "horario": "16:00 a 19:00",
               "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
+                "Ju"
               ]
             }
           ]
@@ -11799,7 +11797,7 @@
           }
         ],
         "nota": "Temas selectos de demografía matemática aplicada",
-        "salon": null,
+        "salon": "P115",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370797"
       },
