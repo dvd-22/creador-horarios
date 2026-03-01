@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-02-22T08:51:59.233Z",
+  "lastUpdated": "2026-03-01T08:52:17.838Z",
   "totalProfessors": 3148,
-  "ratingsFound": 1387,
+  "ratingsFound": 1388,
   "foundPercentage": 44,
   "ratings": {
     "Aaron Ali Lozano Rocha": null,
@@ -922,7 +922,13 @@
     "Andrés Gonzalo Peña Montalvo": null,
     "Andrés Ildefonso Hernández Carapia": null,
     "Andrés Jiménez Lizárraga": null,
-    "Andrés Leonardo Hernández Bermúdez": null,
+    "Andrés Leonardo Hernández Bermúdez": {
+      "name": "Andrés Leonardo Hernández Bermúdez",
+      "rating": 2,
+      "commentCount": 1,
+      "id": "192477",
+      "url": "https://www.misprofesores.com/profesores/Andres-Hernandez-Bermudez_192477"
+    },
     "Andrés Oswaldo Rivera Hernández": null,
     "Andrés Villarreal González": null,
     "Andrés Álvarez Cid": null,
@@ -2301,8 +2307,8 @@
     },
     "Darío Rigoberto Rivera Calzadilla": {
       "name": "Darío Rigoberto Rivera",
-      "rating": 6.3,
-      "commentCount": 9,
+      "rating": 6.7,
+      "commentCount": 10,
       "id": "149789",
       "url": "https://www.misprofesores.com/profesores/Dario-Rivera-Calzadilla_149789"
     },
@@ -2417,8 +2423,8 @@
     "David Xochipiltecatl García": null,
     "Dayana Claudia Cruz Delgado": {
       "name": "Dayana  Claudia Cruz Delgado",
-      "rating": 10,
-      "commentCount": 1,
+      "rating": 9,
+      "commentCount": 2,
       "id": "183794",
       "url": "https://www.misprofesores.com/profesores/Dayana-Cruz-Delgado_183794"
     },
@@ -2667,7 +2673,7 @@
     "Dulce Yehimi López Miranda": {
       "name": "Dulce Yehimi López Miranda",
       "rating": 4.4,
-      "commentCount": 18,
+      "commentCount": 19,
       "id": "113240",
       "url": "https://www.misprofesores.com/profesores/Dulce-Lopez-Miranda_113240"
     },
@@ -4850,8 +4856,8 @@
     },
     "Jaime Ayala Pérez": {
       "name": "Jaime Ayala Pérez",
-      "rating": 6,
-      "commentCount": 5,
+      "rating": 5.3,
+      "commentCount": 6,
       "id": "105396",
       "url": "https://www.misprofesores.com/profesores/Jaime-Ayala-Perez_105396"
     },
@@ -7848,8 +7854,8 @@
     },
     "Marisol Ocampo Sandoval": {
       "name": "Marisol Ocampo Sandoval",
-      "rating": 9.3,
-      "commentCount": 28,
+      "rating": 9.2,
+      "commentCount": 29,
       "id": "125093",
       "url": "https://www.misprofesores.com/profesores/Marisol-Ocampo-Sandoval_125093"
     },
@@ -7859,8 +7865,8 @@
     "Marlen Mondragón Huerta": null,
     "Marlen Valdés Fuentes": {
       "name": "Marlen Valdés Fuentes",
-      "rating": 5.9,
-      "commentCount": 14,
+      "rating": 5.8,
+      "commentCount": 15,
       "id": "67926",
       "url": "https://www.misprofesores.com/profesores/Marlen-Valdes-Fuentes_67926"
     },
@@ -7954,8 +7960,8 @@
     "María Alexandra Rodríguez Sastre": null,
     "María Alicia Villela González": {
       "name": "María Alicia Villela González",
-      "rating": 7.8,
-      "commentCount": 19,
+      "rating": 8,
+      "commentCount": 20,
       "id": "79753",
       "url": "https://www.misprofesores.com/profesores/Maria-Villela-Gonzalez_79753"
     },
@@ -8343,8 +8349,8 @@
     },
     "María del Carmen Miñana Solís": {
       "name": "María del Carmen Miñana Solís",
-      "rating": 7.9,
-      "commentCount": 21,
+      "rating": 7.8,
+      "commentCount": 22,
       "id": "159939",
       "url": "https://www.misprofesores.com/profesores/Maria-Miñana-Solis_159939"
     },
@@ -9325,7 +9331,7 @@
     "Pactli Fernando Ortega González": {
       "name": "Pactli Fernando Ortega González",
       "rating": 9.3,
-      "commentCount": 19,
+      "commentCount": 20,
       "id": "178887",
       "url": "https://www.misprofesores.com/profesores/Pactli-Ortega-Gonzalez_178887"
     },
@@ -9633,8 +9639,8 @@
     },
     "Rafael Rodríguez Martínez": {
       "name": "Rafael Rodríguez Martínez",
-      "rating": 9.5,
-      "commentCount": 6,
+      "rating": 9.3,
+      "commentCount": 7,
       "id": "172523",
       "url": "https://www.misprofesores.com/profesores/Rafael-Rodriguez-Martinez_172523"
     },
@@ -9947,7 +9953,7 @@
     "Roberto Pichardo Mendoza": {
       "name": "Roberto Pichardo Mendoza",
       "rating": 8.1,
-      "commentCount": 97,
+      "commentCount": 98,
       "id": "49258",
       "url": "https://www.misprofesores.com/profesores/Roberto-Pichardo-Mendoza_49258"
     },
@@ -10976,7 +10982,7 @@
     "Verónica Noemí Zepeda Martínez": {
       "name": "Verónica Noemí Zepeda Martínez",
       "rating": 8.5,
-      "commentCount": 15,
+      "commentCount": 16,
       "id": "99398",
       "url": "https://www.misprofesores.com/profesores/Veronica-Zepeda-Martinez_99398"
     },
@@ -11477,11 +11483,11 @@
   },
   "statistics": {
     "processed": 3148,
-    "found": 1387,
-    "notFound": 1761,
+    "found": 1388,
+    "notFound": 1760,
     "foundWithFallback": 50,
-    "foundWithMainTemplate": 1337,
-    "keptExisting": 1323,
-    "upgraded": 48
+    "foundWithMainTemplate": 1338,
+    "keptExisting": 1375,
+    "upgraded": 12
   }
 }
