@@ -266,6 +266,12 @@
               "Vi"
             ],
             "salon": "O222"
+          },
+          {
+            "nombre": "Esteban Basave Olea",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1476,6 +1482,12 @@
               "Vi"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Irma Alexia Dezotti Apantenco",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2269,6 +2281,12 @@
               "Vi"
             ],
             "salon": "O121"
+          },
+          {
+            "nombre": "Liliana Flores Tamias",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2994,7 +3012,7 @@
             "salon": "P101"
           },
           {
-            "nombre": null,
+            "nombre": "Kenzil Owuen Rodriguez Figueroa",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
@@ -6545,6 +6563,12 @@
               "Ju"
             ],
             "salon": "102 (Yelizcalli)"
+          },
+          {
+            "nombre": "Carlos Urreta Moreno",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7120,6 +7144,12 @@
               "Ma",
               "Ju"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Karen Susana Villa Aguirre",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -9107,6 +9137,12 @@
         "ayudantes": [
           {
             "nombre": "David Nuñez de Jesus",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Roberto Eliseo Robles Bautista",
             "horario": null,
             "dias": [],
             "salon": null
@@ -11541,7 +11577,7 @@
             "salon": null
           },
           {
-            "nombre": "Donají Guadalupe Coello Escobar",
+            "nombre": "Hannia Lizbeth Pérez Vargas",
             "horario": null,
             "dias": [],
             "salon": null
@@ -14080,6 +14116,12 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Diego Alexander Ramirez Angarita",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -14328,7 +14370,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Levia Sefira Mendieta Noguez",
+            "nombre": "Maximiliano Rojas Zaputovich",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -14573,7 +14615,14 @@
           "nombre": "Margarita Eugenia del Socorro Rosado Solís",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Lorena Arias Montaño",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -16156,6 +16205,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Carlos Ruiz Jacobson",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -17020,7 +17075,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Erick Becerra Marín",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": "Simulación computacional de sistemas cristalinos",
         "salon": "P114",
         "modalidad": "Presencial",
@@ -17140,7 +17202,7 @@
       "8332": {
         "grupo": "8332",
         "profesor": {
-          "nombre": "José Guadalupe Pérez Ramírez",
+          "nombre": "J. Guadalupe Pérez Ramírez",
           "horarios": []
         },
         "ayudantes": [
@@ -17787,7 +17849,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Sasha Alexandra Zaldívar Corichi",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": "Cosmología Teórica",
         "salon": "P117",
         "modalidad": "Presencial",

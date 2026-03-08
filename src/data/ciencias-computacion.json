@@ -1743,6 +1743,12 @@
               "Ju"
             ],
             "salon": "P201"
+          },
+          {
+            "nombre": "Laura Daniela Zamudio Alcántar",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4754,7 +4760,7 @@
             "dias": [
               "Lu"
             ],
-            "salon": "Taller de Sistemas Operativos, Redes de Cómputo, Sistemas Distribuidos y Manejo de Información"
+            "salon": "301 (Yelizcalli)"
           }
         ],
         "nota": null,
@@ -5439,7 +5445,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Laboratorio de Ciencias de la Computación 3"
+            "salon": "Taller de Sistemas Operativos, Redes de Cómputo, Sistemas Distribuidos y Manejo de Información"
           },
           {
             "nombre": "Francisco Jesús Guadarrama Rodríguez",
@@ -5451,7 +5457,7 @@
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Ciencias de la Computación 3",
+        "salon": "Taller de Sistemas Operativos, Redes de Cómputo, Sistemas Distribuidos y Manejo de Información",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/370538"
       }

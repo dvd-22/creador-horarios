@@ -492,6 +492,12 @@
               "Vi"
             ],
             "salon": "O222"
+          },
+          {
+            "nombre": "Esteban Basave Olea",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2247,6 +2253,12 @@
               "Vi"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Irma Alexia Dezotti Apantenco",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3040,6 +3052,12 @@
               "Vi"
             ],
             "salon": "O121"
+          },
+          {
+            "nombre": "Liliana Flores Tamias",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3829,7 +3847,7 @@
             "salon": "P101"
           },
           {
-            "nombre": null,
+            "nombre": "Kenzil Owuen Rodriguez Figueroa",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
@@ -7636,6 +7654,12 @@
               "Ju"
             ],
             "salon": "102 (Yelizcalli)"
+          },
+          {
+            "nombre": "Carlos Urreta Moreno",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -8211,6 +8235,12 @@
               "Ma",
               "Ju"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Karen Susana Villa Aguirre",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -9272,6 +9302,12 @@
               "Ma",
               "Ju"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Diego Alexander Ramirez Angarita",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -11247,7 +11283,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O219"
+            "salon": "201 (Yelizcalli)"
           },
           {
             "nombre": "Fernando Alvarado Palacios",
@@ -11259,8 +11295,8 @@
             "salon": null
           }
         ],
-        "nota": null,
-        "salon": "O219",
+        "nota": "TRANSFORMACIÓN DIGITAL EN LA PROFESIÓN ACTUARIAL- FUNDAMENTOS Y ESTRATEGIAS EN LA NUBE  (AWS, AZURE, GOOGLE CLOUD COMPUTING, HUAWEI)",
+        "salon": "201 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/372968"
       },
@@ -11287,6 +11323,12 @@
               "Ma",
               "Ju"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Luis Mauricio Aguilar Munguía",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -11319,6 +11361,12 @@
               "Ju"
             ],
             "salon": "O122"
+          },
+          {
+            "nombre": "Paola Martínez Soriano",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -12106,8 +12154,15 @@
             }
           ]
         },
-        "ayudantes": [],
-        "nota": null,
+        "ayudantes": [
+          {
+            "nombre": "Sasha Alexandra Zaldívar Corichi",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Cosmología Teórica",
         "salon": "P117",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/372965"
@@ -14623,7 +14678,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Braulio Toledo Ramírez",
+            "nombre": "Elsa Patricia Mendoza Ballesteros",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",

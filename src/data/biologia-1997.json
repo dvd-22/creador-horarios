@@ -2845,6 +2845,49 @@
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371122"
       },
+      "5507": {
+        "grupo": "5507",
+        "profesor": {
+          "nombre": "Edna Naranjo García",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Jazmín Deneb Ortigosa Gutiérrez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Xochitl Guadalupe Vital Arriaga",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Jessica Raquel Hernández Pérez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Jazmín Aristeo Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Marisol Becerra González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Moluscos de México",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/371128"
+      },
       "5519": {
         "grupo": "5519",
         "profesor": {
@@ -10838,7 +10881,14 @@
           "nombre": "Margarita Eugenia del Socorro Rosado Solís",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Lorena Arias Montaño",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
