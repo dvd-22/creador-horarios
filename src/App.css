@@ -1,6 +1,42 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-} */
+/* Add visual highlight to overlapping subjects toggle */
+.overlapping-subjects-toggle {
+  position: relative;
+}
+.overlapping-subjects-toggle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #ffff00;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+/* Add tooltip to overlapping subjects toggle */
+.overlapping-subjects-toggle-tooltip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 10px;
+  font-size: 14px;
+  visibility: hidden;
+}
+.overlapping-subjects-toggle:hover .overlapping-subjects-toggle-tooltip {
+  visibility: visible;
+}
