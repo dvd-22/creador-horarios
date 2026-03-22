@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-03-15T08:56:24.348Z",
+  "lastUpdated": "2026-03-22T08:54:51.910Z",
   "totalProfessors": 3159,
-  "ratingsFound": 1391,
+  "ratingsFound": 1392,
   "foundPercentage": 44,
   "ratings": {
     "Aaron Ali Lozano Rocha": null,
@@ -349,7 +349,7 @@
     "Alejandra García García": {
       "name": "Alejandra García García",
       "rating": 5.1,
-      "commentCount": 41,
+      "commentCount": 42,
       "id": "41896",
       "url": "https://www.misprofesores.com/profesores/Alejandra-Garcia-Garcia_41896"
     },
@@ -1901,8 +1901,8 @@
     },
     "Claudia Sánchez Cárdenas": {
       "name": "Claudia Sánchez Cárdenas",
-      "rating": 9.7,
-      "commentCount": 20,
+      "rating": 9.4,
+      "commentCount": 21,
       "id": "113237",
       "url": "https://www.misprofesores.com/profesores/Claudia-Sanchez-Cardenas_113237"
     },
@@ -4858,9 +4858,9 @@
     "J. Guadalupe Pérez Ramírez": {
       "name": "José Guadalupe Pérez Ramírez",
       "rating": 8,
-      "commentCount": 1,
-      "id": "133741",
-      "url": "https://www.misprofesores.com/profesores/J.-Perez-Ramirez_133741"
+      "commentCount": 4,
+      "id": "134997",
+      "url": "https://www.misprofesores.com/profesores/J.-Perez-Ramirez_134997"
     },
     "Jael Alejandra Bonilla Salinas": null,
     "Jael Berenice Benítez Muñoz": null,
@@ -4925,8 +4925,8 @@
     },
     "Jair Israel Barrientos Lara": {
       "name": "Jair Israel Barrientos Lara",
-      "rating": 8.8,
-      "commentCount": 5,
+      "rating": 7.8,
+      "commentCount": 6,
       "id": "166414",
       "url": "https://www.misprofesores.com/profesores/Jair-Barrientos-Lara_166414"
     },
@@ -5111,8 +5111,8 @@
     },
     "Jessica Sarahi Méndez Rincón": {
       "name": "Jessica Sarahi Méndez Rincón",
-      "rating": 6.2,
-      "commentCount": 15,
+      "rating": 5.8,
+      "commentCount": 17,
       "id": "191048",
       "url": "https://www.misprofesores.com/profesores/Jessica-Mendez-Rincon_191048"
     },
@@ -5653,7 +5653,7 @@
     "José Alfredo Cobián Campos": {
       "name": "José Alfredo Cobián Campos",
       "rating": 7.3,
-      "commentCount": 51,
+      "commentCount": 52,
       "id": "51406",
       "url": "https://www.misprofesores.com/profesores/Jose-Cobian-Campos_51406"
     },
@@ -6234,8 +6234,8 @@
     "Juan Carlos Montero García": null,
     "Juan Carlos Peña Becerril": {
       "name": "Juan Carlos Peña Becerril",
-      "rating": 9,
-      "commentCount": 13,
+      "rating": 8.6,
+      "commentCount": 14,
       "id": "141692",
       "url": "https://www.misprofesores.com/profesores/Juan-Peña-Becerril_141692"
     },
@@ -9192,8 +9192,8 @@
     },
     "Omar de la Riva Torres": {
       "name": "Omar de la Riva Torres",
-      "rating": 3.2,
-      "commentCount": 51,
+      "rating": 3.3,
+      "commentCount": 52,
       "id": "64003",
       "url": "https://www.misprofesores.com/profesores/Omar-Riva-Torres_64003"
     },
@@ -9377,7 +9377,13 @@
     "Paola González Olguín": null,
     "Paola Jazmín Guadarrama Huerta": null,
     "Paola Martínez Soriano": null,
-    "Paola Quiroz Léon": null,
+    "Paola Quiroz León": {
+      "name": "Paola Quiroz León",
+      "rating": 10,
+      "commentCount": 1,
+      "id": "191818",
+      "url": "https://www.misprofesores.com/profesores/Paola-Quiroz-Leon_191818"
+    },
     "Paola Valtierra Campos": null,
     "Paris Olalde Estrada": null,
     "Parsifal Fidelio Islas Morales": null,
@@ -10116,8 +10122,8 @@
     },
     "Rogelio Omar Corona Núñez": {
       "name": "Rogelio Omar Corona Núñez",
-      "rating": 8.5,
-      "commentCount": 29,
+      "rating": 8.3,
+      "commentCount": 30,
       "id": "150087",
       "url": "https://www.misprofesores.com/profesores/Rogelio-Corona-Nuñez_150087"
     },
@@ -10504,7 +10510,7 @@
     "Saúl Noé Ramos Sánchez": {
       "name": "Saúl Noé Ramos Sánchez",
       "rating": 7.2,
-      "commentCount": 73,
+      "commentCount": 74,
       "id": "80430",
       "url": "https://www.misprofesores.com/profesores/Saul-Ramos-Sanchez_80430"
     },
@@ -11512,11 +11518,11 @@
   },
   "statistics": {
     "processed": 3159,
-    "found": 1391,
-    "notFound": 1768,
+    "found": 1392,
+    "notFound": 1767,
     "foundWithFallback": 50,
-    "foundWithMainTemplate": 1341,
-    "keptExisting": 1380,
+    "foundWithMainTemplate": 1342,
+    "keptExisting": 1381,
     "upgraded": 10
   }
 }
