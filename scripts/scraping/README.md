@@ -48,7 +48,7 @@ const MAJORS_CONFIG = {
 ### Semester Updates
 Update the URLs in `MAJORS_CONFIG` when semester changes:
 - Current: `20261` (2025-1)
-- Next: `20262` (2025-2)
+- Next: `20271` (2025-2)
 
 ## Files Generated
 - `materias.csv` - All subjects from all majors
