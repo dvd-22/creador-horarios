@@ -1121,7 +1121,7 @@
       "5222": {
         "grupo": "5222",
         "profesor": {
-          "nombre": "Francisco José Medina Soriano",
+          "nombre": "Othón Alcántara Ayala",
           "horarios": [
             {
               "horario": "16:00 a 18:00",
@@ -1748,7 +1748,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Ariana Zavala Moreno",
+            "nombre": "Miguel Ángel Rosas Paz",
             "horario": null,
             "dias": [],
             "salon": null
@@ -3739,7 +3739,7 @@
       "5316": {
         "grupo": "5316",
         "profesor": {
-          "nombre": "María Luisa Chavarría Arellano",
+          "nombre": "Oliver Ariel López Conde",
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -8206,6 +8206,34 @@
         "ayudantes": [
           {
             "nombre": "Sandra Castro Santiuste",
+            "horario": "12:00 a 15:00",
+            "dias": [
+              "Vi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5478": {
+        "grupo": "5478",
+        "profesor": {
+          "nombre": "Saddan Morales Saldaña",
+          "horarios": [
+            {
+              "horario": "07:30 a 10:30",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
             "horario": "12:00 a 15:00",
             "dias": [
               "Vi"

@@ -235,7 +235,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Félix Yael López Cayetano",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -588,7 +588,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373957"
       },
       "4019": {
         "grupo": "4019",
@@ -638,7 +638,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Francisco Arzola Galindo",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -1017,7 +1017,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373975"
       },
       "4032": {
         "grupo": "4032",
@@ -1087,7 +1087,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373979"
       },
       "4034": {
         "grupo": "4034",
@@ -1720,7 +1720,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Pablo Josué Peña Molina",
             "horario": "18:00 a 19:00",
             "dias": [
               "Lu",
@@ -2564,7 +2564,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374063"
       },
       "4076": {
         "grupo": "4076",
@@ -2814,7 +2814,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375257"
       },
       "6002": {
         "grupo": "6002",
@@ -3632,6 +3632,41 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4364": {
+        "grupo": "4364",
+        "profesor": {
+          "nombre": "José Antonio Gómez Ortega",
+          "horarios": [
+            {
+              "horario": "11:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Ma",
+                "Mi",
+                "Ju",
+                "Vi",
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Mixta",
         "presentacion": null
       }
     },
@@ -5461,7 +5496,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "José María Villagómez Quintos",
             "horario": "19:00 a 20:00",
             "dias": [
               "Lu",
@@ -5936,7 +5971,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Leonardo González Quiroz",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -6320,7 +6355,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374775"
       }
     },
     "Taller de Modelación I": {
@@ -6479,7 +6514,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374174"
       },
       "4170": {
         "grupo": "4170",
@@ -7930,7 +7965,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374226"
       },
       "4209": {
         "grupo": "4209",
@@ -9045,7 +9080,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Bryan Enrique Pérez Cervantes",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -9107,7 +9142,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jorge David López Maldonado",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -9878,23 +9913,11 @@
           },
           {
             "nombre": "Vianey Guadalupe Cortes Hernández",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Vianey Guadalupe Cortes Hernández",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
               "Ju"
             ],
-            "salon": null
-          },
-          {
-            "nombre": "Vianey Guadalupe Cortes Hernández",
-            "horario": null,
-            "dias": [],
             "salon": null
           }
         ],
@@ -9988,7 +10011,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Aldo Javier Ángeles Sánchez",
+            "nombre": "Teresa Becerril Torres",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -9997,24 +10020,12 @@
             "salon": null
           },
           {
-            "nombre": "Aldo Javier Ángeles Sánchez",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Aldo Javier Ángeles Sánchez",
+            "nombre": "Teresa Becerril Torres",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
               "Ju"
             ],
-            "salon": null
-          },
-          {
-            "nombre": "Aldo Javier Ángeles Sánchez",
-            "horario": null,
-            "dias": [],
             "salon": null
           }
         ],
@@ -10048,7 +10059,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Brenda Margarita Becerra Ruíz",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -10057,7 +10068,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Brenda Margarita Becerra Ruíz",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -10160,7 +10171,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374937"
       },
       "7065": {
         "grupo": "7065",
@@ -10237,7 +10248,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Enoc Pineda Aguirre",
             "horario": "12:00 a 14:00",
             "dias": [
               "Ma"
@@ -10254,7 +10265,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Enoc Pineda Aguirre",
             "horario": "12:00 a 14:00",
             "dias": [
               "Ma"
@@ -10617,7 +10628,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375251"
       }
     },
     "Teoría de Gráficas": {
@@ -11012,39 +11023,6 @@
         "presentacion": null
       }
     },
-    "Temas Selectos de Investigación de Operaciones": {
-      "9293": {
-        "grupo": "9293",
-        "profesor": {
-          "nombre": "Adrián Girard Islas",
-          "horarios": [
-            {
-              "horario": "08:00 a 09:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "08:00 a 09:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      }
-    },
     "Teoría de las Decisiones": {
       "4345": {
         "grupo": "4345",
@@ -11137,6 +11115,37 @@
           }
         ],
         "nota": "Problemas básicos de redes",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9295": {
+        "grupo": "9295",
+        "profesor": {
+          "nombre": "Adrián Girard Islas",
+          "horarios": [
+            {
+              "horario": "20:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Teoría de Redes",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null

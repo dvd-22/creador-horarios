@@ -591,7 +591,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373979"
       },
       "4034": {
         "grupo": "4034",
@@ -1224,7 +1224,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Pablo Josué Peña Molina",
             "horario": "18:00 a 19:00",
             "dias": [
               "Lu",
@@ -2811,7 +2811,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374063"
       },
       "4076": {
         "grupo": "4076",
@@ -3382,6 +3382,41 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "4364": {
+        "grupo": "4364",
+        "profesor": {
+          "nombre": "José Antonio Gómez Ortega",
+          "horarios": [
+            {
+              "horario": "11:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Ma",
+                "Mi",
+                "Ju",
+                "Vi",
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Mixta",
+        "presentacion": null
       }
     },
     "Geometría Analítica II": {
@@ -3739,7 +3774,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Emmanuel Moreno López",
             "horario": "15:00 a 18:00",
             "dias": [
               "Ma",
@@ -3804,7 +3839,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374458"
       },
       "8137": {
         "grupo": "8137",
@@ -3927,6 +3962,12 @@
           ]
         },
         "ayudantes": [
+          {
+            "nombre": "Roberto Guillermo Dehesa Borja",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
           {
             "nombre": "Camila Itzel Marín Gómez",
             "horario": null,
@@ -5396,7 +5437,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "José María Villagómez Quintos",
             "horario": "19:00 a 20:00",
             "dias": [
               "Lu",
@@ -5813,7 +5854,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374477"
       }
     },
     "Laboratorio de Fenómenos Colectivos": {
@@ -7801,7 +7842,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Miriam Marisol Tellez Cruz",
             "horario": "07:00 a 10:00",
             "dias": [
               "Ma",
@@ -9038,7 +9079,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Brayan Matias Rojo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
@@ -9236,7 +9284,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374564"
       }
     },
     "Termodinámica": {
@@ -9345,6 +9393,27 @@
           "horarios": [
             {
               "horario": "18:00 a 20:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "8427": {
+        "grupo": "8427",
+        "profesor": {
+          "nombre": "Rubén Santamaría Ortiz",
+          "horarios": [
+            {
+              "horario": "12:00 a 14:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -10398,6 +10467,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "Sergio Hernández Zapata",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Viridiana Ponce Juárez",
             "horario": null,
             "dias": [],
@@ -10794,6 +10869,12 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Sandra Hérnandez Ramos",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": "Laboratorio de Física Contemporánea I",
@@ -10828,7 +10909,7 @@
             "salon": null
           },
           {
-            "nombre": "Citlali Sánchez Aké",
+            "nombre": "Akshana Parameswaran Sreekala",
             "horario": null,
             "dias": [],
             "salon": null
@@ -10876,6 +10957,12 @@
           },
           {
             "nombre": "Claudio Narciso Ramírez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Citlali Sánchez Aké",
             "horario": null,
             "dias": [],
             "salon": null
@@ -11048,6 +11135,12 @@
           },
           {
             "nombre": "David Ley Domínguez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Alejandro Esparza García",
             "horario": null,
             "dias": [],
             "salon": null
@@ -11628,7 +11721,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374174"
       },
       "4170": {
         "grupo": "4170",
@@ -12568,7 +12661,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374226"
       },
       "4209": {
         "grupo": "4209",
@@ -13284,7 +13377,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374662"
       },
       "8341": {
         "grupo": "8341",
@@ -13394,7 +13487,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374669"
       }
     },
     "Física del Interior de la Tierra": {
@@ -13647,7 +13740,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374080"
       },
       "4086": {
         "grupo": "4086",
@@ -14146,7 +14239,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374675"
       },
       "8354": {
         "grupo": "8354",
@@ -14255,7 +14348,14 @@
         "grupo": "8359",
         "profesor": {
           "nombre": "Luis Efraín Moreles Vázquez",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "13:30 a 16:30",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -14265,7 +14365,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "El curso se impartirá en el Salón B, planta baja del edificio I del Instituto de Ciencias del Mar y Limnología",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -14344,7 +14444,14 @@
           "nombre": "Shunashi Guadalupe Castillo López",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Cristina Nieto Vasconcelos",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -14449,7 +14556,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374688"
       }
     },
     "Materia Interestelar": {
@@ -14884,7 +14991,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374695"
       }
     },
     "Técnicas de Crecimiento de Películas Delgadas y Recubrimientos en Vacío": {
@@ -15268,7 +15375,7 @@
         "nota": "SEMICONDUCTORES APLICADOS A REMEDIACIÓN AMBIENTAL",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374719"
       }
     },
     "Temas Selectos de Física de Partículas Elementales I": {

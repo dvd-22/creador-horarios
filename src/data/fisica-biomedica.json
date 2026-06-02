@@ -591,7 +591,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373980"
       },
       "8008": {
         "grupo": "8008",
@@ -1224,7 +1224,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Pablo Josué Peña Molina",
             "horario": "18:00 a 19:00",
             "dias": [
               "Lu",
@@ -2040,6 +2040,41 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "8428": {
+        "grupo": "8428",
+        "profesor": {
+          "nombre": "José Antonio Gómez Ortega",
+          "horarios": [
+            {
+              "horario": "11:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Ma",
+                "Mi",
+                "Ju",
+                "Vi",
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Mixta",
+        "presentacion": null
       }
     },
     "Geometría Analítica I": {
@@ -2630,7 +2665,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374064"
       },
       "8050": {
         "grupo": "8050",
@@ -2839,7 +2874,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374458"
       },
       "8137": {
         "grupo": "8137",
@@ -2962,6 +2997,12 @@
           ]
         },
         "ayudantes": [
+          {
+            "nombre": "Roberto Guillermo Dehesa Borja",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
           {
             "nombre": "Camila Itzel Marín Gómez",
             "horario": null,
@@ -3426,7 +3467,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374477"
       }
     },
     "Instrumentación y Calibración": {
@@ -5902,7 +5943,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375096"
       },
       "3048": {
         "grupo": "3048",

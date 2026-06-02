@@ -281,12 +281,9 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
-            "horario": "07:30 a 10:30",
-            "dias": [
-              "Lu",
-              "Ju"
-            ],
+            "nombre": "Nancy Contreras Moreno",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -1677,7 +1674,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Adriana Yanet Miranda Martínez",
+            "nombre": "Nitzerindany Alejandra López Pérez",
             "horario": "11:00 a 14:00",
             "dias": [
               "Vi"
@@ -1733,7 +1730,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Edwin Aldrin Juárez Aguilar",
+            "nombre": "Alejandro Cristin Ponciano",
             "horario": "14:30 a 17:30",
             "dias": [
               "Vi"
@@ -2845,7 +2842,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373854"
       }
     },
     "Anfibios y Reptiles": {
@@ -3967,7 +3964,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "José Ricardo Fernando Estradas Romero",
+            "nombre": "Alejandro Estradas Romero",
             "horario": "11:00 a 14:00",
             "dias": [
               "Mi"
@@ -4312,7 +4309,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373903"
       }
     },
     "Ornitología": {
@@ -4469,7 +4466,7 @@
       "5153": {
         "grupo": "5153",
         "profesor": {
-          "nombre": "Fabiola Villela Cortes",
+          "nombre": "Brenda Martínez Velasco",
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -5131,7 +5128,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Saddan Morales Saldaña",
+            "nombre": null,
             "horario": "11:00 a 14:00",
             "dias": [
               "Lu"
@@ -5280,7 +5277,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373937"
       }
     },
     "Virologia": {

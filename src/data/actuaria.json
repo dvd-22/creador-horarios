@@ -235,7 +235,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Félix Yael López Cayetano",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -588,7 +588,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373957"
       },
       "4019": {
         "grupo": "4019",
@@ -638,7 +638,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Francisco Arzola Galindo",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -1087,7 +1087,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373979"
       },
       "4034": {
         "grupo": "4034",
@@ -1720,7 +1720,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Pablo Josué Peña Molina",
             "horario": "18:00 a 19:00",
             "dias": [
               "Lu",
@@ -2564,7 +2564,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374063"
       },
       "4076": {
         "grupo": "4076",
@@ -3762,6 +3762,41 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4364": {
+        "grupo": "4364",
+        "profesor": {
+          "nombre": "José Antonio Gómez Ortega",
+          "horarios": [
+            {
+              "horario": "11:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Ma",
+                "Mi",
+                "Ju",
+                "Vi",
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Mixta",
         "presentacion": null
       }
     },
@@ -5630,7 +5665,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "José María Villagómez Quintos",
             "horario": "19:00 a 20:00",
             "dias": [
               "Lu",
@@ -6210,7 +6245,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374758"
       },
       "9011": {
         "grupo": "9011",
@@ -6355,7 +6390,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Leonardo González Quiroz",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -6739,7 +6774,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374775"
       }
     }
   },
@@ -8234,7 +8269,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374226"
       },
       "4209": {
         "grupo": "4209",
@@ -9443,7 +9478,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375165"
       },
       "9205": {
         "grupo": "9205",
@@ -9474,7 +9509,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375166"
       }
     },
     "Procesos Estocásticos I": {
@@ -9495,7 +9530,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Bryan Enrique Pérez Cervantes",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -9557,7 +9592,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jorge David López Maldonado",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -11018,7 +11053,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Mixta",
+        "modalidad": "Presencial",
         "presentacion": null
       },
       "9262": {
@@ -11653,7 +11688,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374174"
       },
       "4170": {
         "grupo": "4170",
@@ -12927,7 +12962,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374314"
       }
     },
     "Lógica Matemática III": {
@@ -13537,7 +13572,7 @@
         ],
         "nota": "Construcción de indicadores",
         "salon": null,
-        "modalidad": "Mixta",
+        "modalidad": "Presencial",
         "presentacion": null
       },
       "9279": {
@@ -13728,7 +13763,7 @@
         "nota": "El horario será de 8 a 9 hrs.",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375245"
       }
     },
     "Seminario de Finanzas II": {
@@ -13791,7 +13826,7 @@
         ],
         "nota": "Administración de Riesgo en crédito al consumo",
         "salon": null,
-        "modalidad": "Mixta",
+        "modalidad": "Presencial",
         "presentacion": null
       },
       "9287": {
@@ -13920,7 +13955,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375251"
       }
     },
     "Temas Selectos de Análisis Numérico": {
@@ -13976,39 +14011,6 @@
           {
             "nombre": "Victor Manuel Fuentes Olvera",
             "horario": "10:00 a 11:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      }
-    },
-    "Temas Selectos de Investigación de Operaciones": {
-      "9293": {
-        "grupo": "9293",
-        "profesor": {
-          "nombre": "Adrián Girard Islas",
-          "horarios": [
-            {
-              "horario": "08:00 a 09:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
               "Ju"
@@ -14211,6 +14213,37 @@
           }
         ],
         "nota": "Problemas básicos de redes",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9295": {
+        "grupo": "9295",
+        "profesor": {
+          "nombre": "Adrián Girard Islas",
+          "horarios": [
+            {
+              "horario": "20:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Teoría de Redes",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
