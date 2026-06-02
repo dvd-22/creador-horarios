@@ -6109,7 +6109,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alondra Aguilar Lopez",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -6359,7 +6359,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rodrigo Basaldud Ortega",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -6669,7 +6669,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Christian Alfredo Solís Calderón",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -7943,7 +7943,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alejandro Hérnandez Cuevas",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -8518,6 +8518,37 @@
         "salon": null,
         "modalidad": "Mixta",
         "presentacion": null
+      },
+      "4365": {
+        "grupo": "4365",
+        "profesor": {
+          "nombre": "José Humberto Arcos Velasco",
+          "horarios": [
+            {
+              "horario": "12:00 a 13:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Economía": {
@@ -8643,7 +8674,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375133"
       },
       "9174": {
         "grupo": "9174",
@@ -8736,7 +8767,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375139"
       },
       "9180": {
         "grupo": "9180",
@@ -8943,7 +8974,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Valery Rodríguez Hernández",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -9561,7 +9592,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Amílcar José Escobedo Pérez",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -9604,7 +9635,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374822"
       },
       "9076": {
         "grupo": "9076",
@@ -14097,9 +14128,9 @@
             {
               "horario": "13:00 a 14:00",
               "dias": [
-                "Lu",
+                "Ma",
                 "Mi",
-                "Vi"
+                "Ju"
               ]
             }
           ]
@@ -14109,8 +14140,8 @@
             "nombre": "Hugo Guadalupe Reyna Castañeda",
             "horario": "13:00 a 14:00",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Vi"
             ],
             "salon": null
           }
@@ -14151,7 +14182,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374363"
       },
       "4346": {
         "grupo": "4346",

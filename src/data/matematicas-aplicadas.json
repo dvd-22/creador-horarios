@@ -5940,7 +5940,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rodrigo Basaldud Ortega",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -7639,7 +7639,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alejandro Hérnandez Cuevas",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -8214,6 +8214,37 @@
         "salon": null,
         "modalidad": "Mixta",
         "presentacion": null
+      },
+      "4365": {
+        "grupo": "4365",
+        "profesor": {
+          "nombre": "José Humberto Arcos Velasco",
+          "horarios": [
+            {
+              "horario": "12:00 a 13:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Análisis Numérico": {
@@ -8515,7 +8546,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Valery Rodríguez Hernández",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -9608,7 +9639,7 @@
         "nota": "Modelos probabilísticos para variables latentes",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375272"
       }
     }
   },
@@ -9710,7 +9741,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374267"
       },
       "4250": {
         "grupo": "4250",
@@ -10822,7 +10853,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374361"
       }
     }
   },
@@ -11053,7 +11084,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374363"
       },
       "4346": {
         "grupo": "4346",
@@ -11228,17 +11259,17 @@
             {
               "horario": "13:00 a 14:00",
               "dias": [
-                "Lu",
+                "Ma",
                 "Mi",
-                "Vi"
+                "Ju"
               ]
             },
             {
               "horario": "13:00 a 14:00",
               "dias": [
-                "Lu",
+                "Ma",
                 "Mi",
-                "Vi"
+                "Ju"
               ]
             }
           ]
@@ -11248,8 +11279,8 @@
             "nombre": "Hugo Guadalupe Reyna Castañeda",
             "horario": "13:00 a 14:00",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Vi"
             ],
             "salon": null
           },
@@ -11257,8 +11288,8 @@
             "nombre": "Hugo Guadalupe Reyna Castañeda",
             "horario": "13:00 a 14:00",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Vi"
             ],
             "salon": null
           }

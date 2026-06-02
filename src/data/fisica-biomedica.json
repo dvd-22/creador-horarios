@@ -2653,7 +2653,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Emma Laura Guzman Garcia",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -3337,7 +3337,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Andrés Camacho López",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -3738,7 +3745,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374195"
       },
       "8070": {
         "grupo": "8070",
@@ -4038,13 +4045,19 @@
         },
         "ayudantes": [
           {
+            "nombre": "Eduardo Hernández Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Luis Gerardo Flores Roldán",
             "horario": null,
             "dias": [],
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "El curso se impartirá en la Sala Ángel Jacal del Instituto de Física",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -5891,7 +5904,7 @@
       "3044": {
         "grupo": "3044",
         "profesor": {
-          "nombre": "Santiago Burgos Puente",
+          "nombre": "Santiago Burgos Puentes",
           "horarios": []
         },
         "ayudantes": [],

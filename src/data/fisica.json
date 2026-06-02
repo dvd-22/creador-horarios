@@ -1647,7 +1647,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374427"
       },
       "8106": {
         "grupo": "8106",
@@ -2799,7 +2799,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Emma Laura Guzman Garcia",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -5724,7 +5724,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Andrés Camacho López",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -7121,13 +7128,19 @@
         },
         "ayudantes": [
           {
+            "nombre": "Eduardo Hernández Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Luis Gerardo Flores Roldán",
             "horario": null,
             "dias": [],
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "El curso se impartirá en la Sala Ángel Jacal del Instituto de Física",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -8415,7 +8428,20 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Ismael Velázquez Gómez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Oscar Eduardo Mani Cano",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -8883,7 +8909,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374541"
       },
       "8221": {
         "grupo": "8221",
@@ -9285,6 +9311,26 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374564"
+      },
+      "8429": {
+        "grupo": "8429",
+        "profesor": {
+          "nombre": "Jesús Cruz Rojas",
+          "horarios": [
+            {
+              "horario": "14:00 a 15:30",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     },
     "Termodinámica": {
@@ -9908,7 +9954,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374598"
       },
       "8277": {
         "grupo": "8277",
@@ -10520,7 +10566,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "José Samuel Rodríguez Olguín",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -10824,7 +10877,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374632"
       }
     },
     "Laboratorio de Física Contemporánea I": {
@@ -11070,6 +11123,12 @@
               "Ma",
               "Ju"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Diana Courcelle Chaparro",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -12909,6 +12968,37 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
+        "presentacion": null
+      },
+      "4365": {
+        "grupo": "4365",
+        "profesor": {
+          "nombre": "José Humberto Arcos Velasco",
+          "horarios": [
+            {
+              "horario": "12:00 a 13:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },

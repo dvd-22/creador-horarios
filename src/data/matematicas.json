@@ -588,7 +588,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373957"
       },
       "4019": {
         "grupo": "4019",
@@ -2552,7 +2552,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Emma Laura Guzman Garcia",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -7266,6 +7266,37 @@
         "salon": null,
         "modalidad": "Mixta",
         "presentacion": null
+      },
+      "4365": {
+        "grupo": "4365",
+        "profesor": {
+          "nombre": "José Humberto Arcos Velasco",
+          "horarios": [
+            {
+              "horario": "12:00 a 13:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Variable Compleja I": {
@@ -7982,13 +8013,19 @@
         },
         "ayudantes": [
           {
+            "nombre": "Eduardo Hernández Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Luis Gerardo Flores Roldán",
             "horario": null,
             "dias": [],
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "El curso se impartirá en la Sala Ángel Jacal del Instituto de Física",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -8373,7 +8410,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Andrés Camacho López",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -9823,7 +9867,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rodrigo Basaldud Ortega",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -10133,7 +10177,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Christian Alfredo Solís Calderón",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -10750,7 +10794,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374267"
       },
       "4250": {
         "grupo": "4250",
@@ -10977,7 +11021,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "José Samuel Rodríguez Olguín",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -11827,7 +11878,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374632"
       }
     },
     "Geometría Algebraica I": {
@@ -11893,7 +11944,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374283"
       }
     },
     "Geometría Riemanniana I": {
@@ -12115,7 +12166,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374383"
       }
     },
     "Introducción a las Funciones Recursivas y Computabilidad": {
@@ -12535,7 +12586,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Amílcar José Escobedo Pérez",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -13052,6 +13103,26 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374564"
+      },
+      "8429": {
+        "grupo": "8429",
+        "profesor": {
+          "nombre": "Jesús Cruz Rojas",
+          "horarios": [
+            {
+              "horario": "14:00 a 15:30",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     },
     "Seminario de Álgebra A": {
@@ -13575,7 +13646,7 @@
         "nota": "Geometría Fractal y Visualización",
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374332"
       }
     },
     "Seminario de Geometría B": {
@@ -14438,7 +14509,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374363"
       },
       "4346": {
         "grupo": "4346",
@@ -14502,7 +14573,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374365"
       }
     },
     "Teoría de los Conjuntos II": {
@@ -15353,7 +15424,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375134"
       },
       "9175": {
         "grupo": "9175",
@@ -15446,7 +15517,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375140"
       },
       "9181": {
         "grupo": "9181",
@@ -15942,7 +16013,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Valery Rodríguez Hernández",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -16689,7 +16760,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374306"
       }
     },
     "Investigación de Operaciones": {
@@ -17251,7 +17322,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374541"
       },
       "8221": {
         "grupo": "8221",
@@ -17783,7 +17854,20 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Ismael Velázquez Gómez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Oscar Eduardo Mani Cano",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -17867,7 +17951,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alejandro Hérnandez Cuevas",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -18192,7 +18276,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374356"
       },
       "4339": {
         "grupo": "4339",
@@ -18389,7 +18473,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374361"
       }
     },
     "Teoría de la Computación": {
@@ -18452,7 +18536,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374959"
       }
     },
     "Teoría de la Medida I": {
@@ -18464,9 +18548,9 @@
             {
               "horario": "13:00 a 14:00",
               "dias": [
-                "Lu",
+                "Ma",
                 "Mi",
-                "Vi"
+                "Ju"
               ]
             }
           ]
@@ -18476,8 +18560,8 @@
             "nombre": "Hugo Guadalupe Reyna Castañeda",
             "horario": "13:00 a 14:00",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Vi"
             ],
             "salon": null
           }
