@@ -1693,7 +1693,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374011"
       },
       "4050": {
         "grupo": "4050",
@@ -7819,6 +7819,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9307": {
+        "grupo": "9307",
+        "profesor": {
+          "nombre": "Gabriela García Verde",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     },
     "Matemáticas Actuariales del Seguro de Personas I": {
@@ -12064,7 +12095,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374263"
       },
       "4246": {
         "grupo": "4246",
@@ -12497,6 +12528,37 @@
           {
             "nombre": "Eric Garcia Bustamante",
             "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
+      },
+      "9310": {
+        "grupo": "9310",
+        "profesor": {
+          "nombre": "Benjamín Oliva Vázquez",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
               "Ju"
@@ -13662,6 +13724,37 @@
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": null
+      },
+      "9305": {
+        "grupo": "9305",
+        "profesor": {
+          "nombre": "Castor Mauricio Rueda García",
+          "horarios": [
+            {
+              "horario": "20:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Estudios actuariales en seguros de vida y no vida",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Seminario de Aplicaciones Actuariales II": {
@@ -13754,6 +13847,68 @@
           }
         ],
         "nota": "Métodos estadísticos para la medición de la violencia contra las mujeres",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9303": {
+        "grupo": "9303",
+        "profesor": {
+          "nombre": "Adriana Cruz Mejía",
+          "horarios": [
+            {
+              "horario": "09:00 a 10:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Mercados de Seguros - Nuevos Canales Insurtech",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9304": {
+        "grupo": "9304",
+        "profesor": {
+          "nombre": "Mario Medina Torres",
+          "horarios": [
+            {
+              "horario": "19:00 a 20:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Diseño y Fundamentos de los Seguros de Accidentes y Enfermedades",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null

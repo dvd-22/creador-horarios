@@ -1693,7 +1693,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374011"
       },
       "4050": {
         "grupo": "4050",
@@ -11122,6 +11122,37 @@
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": null
+      },
+      "9310": {
+        "grupo": "9310",
+        "profesor": {
+          "nombre": "Benjamín Oliva Vázquez",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
       }
     },
     "Economía II": {
@@ -15246,6 +15277,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9312": {
+        "grupo": "9312",
+        "profesor": {
+          "nombre": "Luis Alberto Vázquez Maisón",
+          "horarios": [
+            {
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Arquitectura de Computadoras": {
@@ -17021,6 +17083,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9307": {
+        "grupo": "9307",
+        "profesor": {
+          "nombre": "Gabriela García Verde",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     },
     "Lenguajes de Programación y sus Paradigmas": {
@@ -17139,44 +17232,6 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
-      },
-      "7125": {
-        "grupo": "7125",
-        "profesor": {
-          "nombre": "Mauricio Riva Palacio Orozco",
-          "horarios": [
-            {
-              "horario": "17:00 a 18:30",
-              "dias": [
-                "Ma",
-                "Ju"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "18:30 a 19:30",
-            "dias": [
-              "Lu",
-              "Mi"
-            ],
-            "salon": null
-          },
-          {
-            "nombre": null,
-            "horario": "14:00 a 16:00",
-            "dias": [
-              "Vi"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Virtual",
         "presentacion": null
       }
     },
@@ -18674,7 +18729,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374366"
       },
       "4349": {
         "grupo": "4349",

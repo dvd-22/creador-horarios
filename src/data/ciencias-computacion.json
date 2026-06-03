@@ -7083,6 +7083,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9307": {
+        "grupo": "9307",
+        "profesor": {
+          "nombre": "Gabriela García Verde",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     },
     "Lógica Computacional II": {
@@ -8445,7 +8476,7 @@
         "nota": "Seguridad Perimetral",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375034"
       },
       "7161": {
         "grupo": "7161",
@@ -8582,7 +8613,7 @@
         "nota": "Administración de proyectos",
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375038"
       },
       "7165": {
         "grupo": "7165",
@@ -9091,7 +9122,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374366"
       },
       "4349": {
         "grupo": "4349",

@@ -1693,7 +1693,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374011"
       },
       "4050": {
         "grupo": "4050",
@@ -7619,6 +7619,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9307": {
+        "grupo": "9307",
+        "profesor": {
+          "nombre": "Gabriela García Verde",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     },
     "Probabilidad II": {
@@ -8402,6 +8433,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9312": {
+        "grupo": "9312",
+        "profesor": {
+          "nombre": "Luis Alberto Vázquez Maisón",
+          "horarios": [
+            {
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Inferencia Estadística": {
@@ -8840,7 +8902,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374238"
       },
       "4221": {
         "grupo": "4221",
@@ -11416,7 +11478,7 @@
           "nombre": "Sofía Villers Gómez",
           "horarios": [
             {
-              "horario": "12:00 a 13:00",
+              "horario": "10:00 a 11:00",
               "dias": [
                 "Lu",
                 "Mi",
