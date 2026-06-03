@@ -111,7 +111,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alonso Alejandro Colín Cruz",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -297,7 +297,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Hugo Torres Vargas",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
@@ -1384,7 +1384,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rodrigo García Formentí Mendieta",
             "horario": "18:00 a 19:00",
             "dias": [
               "Lu",
@@ -1764,7 +1764,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374105"
       },
       "8059": {
         "grupo": "8059",
@@ -3486,8 +3486,8 @@
             {
               "horario": "07:00 a 10:00",
               "dias": [
-                "Lu",
-                "Mi"
+                "Ma",
+                "Ju"
               ]
             }
           ]
@@ -3519,8 +3519,8 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Lu",
-                "Mi"
+                "Ma",
+                "Ju"
               ]
             }
           ]
@@ -3552,8 +3552,8 @@
             {
               "horario": "15:00 a 18:00",
               "dias": [
-                "Lu",
-                "Mi"
+                "Ma",
+                "Ju"
               ]
             }
           ]
@@ -4328,7 +4328,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374581"
       },
       "8261": {
         "grupo": "8261",
@@ -4729,8 +4729,21 @@
             }
           ]
         },
-        "ayudantes": [],
-        "nota": null,
+        "ayudantes": [
+          {
+            "nombre": "André Sebastián García Ward",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ricardo Covarrubias Yeffal",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "El curso se impartirá en el Salón del Seminarios Sandoval Vallarta. Segundo Piso del edificio Marcos Moshinsky del Instituto de Física",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -5040,7 +5053,20 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Ismael Velázquez Gómez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Oscar Eduardo Mani Cano",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -6125,7 +6151,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375085"
       }
     },
     "Radiobiología": {
@@ -6231,6 +6257,29 @@
         "profesor": {
           "nombre": "Miguel Adán Jáurez Martínez",
           "horarios": []
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    }
+  },
+  "Optativas de Humanidades": {
+    "México: Nación Multicultural": {
+      "8430": {
+        "grupo": "8430",
+        "profesor": {
+          "nombre": "Carolina Sánchez García",
+          "horarios": [
+            {
+              "horario": "11:00 a 13:00",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
         },
         "ayudantes": [],
         "nota": null,

@@ -18,7 +18,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Gustavo Sandoval Joya",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -80,7 +80,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Daniel Rojas Mares",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -1806,7 +1806,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jesus Adrian Celis González",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -2201,7 +2201,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jorge Valle Peña",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -2759,7 +2759,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Adad Israel Gonzalez Castro",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -2926,7 +2926,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374149"
       },
       "4145": {
         "grupo": "4145",
@@ -4536,7 +4536,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Leslie Paola Sánchez Victoria",
             "horario": "14:00 a 16:00",
             "dias": [
               "Mi"
@@ -4803,7 +4803,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Javier Roberto Rubalcava Cortés",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -4812,7 +4812,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Alfonso Ortiz Avila",
             "horario": "14:00 a 16:00",
             "dias": [
               "Ma"
@@ -5578,7 +5578,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374177"
       }
     },
     "Álgebra Moderna I": {
@@ -5797,7 +5797,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374220"
       },
       "4203": {
         "grupo": "4203",
@@ -6186,6 +6186,34 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375011"
+      }
+    },
+    "Ciencia, Diversidad e Inclusión": {
+      "5480": {
+        "grupo": "5480",
+        "profesor": {
+          "nombre": "Ana Cristina Cervantes Arrioja",
+          "horarios": [
+            {
+              "horario": "10:00 a 13:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Diana Alethia Guerrero Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Computación Cuántica I": {
@@ -7057,6 +7085,39 @@
         "presentacion": null
       }
     },
+    "Lógica Computacional II": {
+      "7177": {
+        "grupo": "7177",
+        "profesor": {
+          "nombre": "Miguel Carrillo Barajas",
+          "horarios": [
+            {
+              "horario": "13:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "El horario será ma ju 16 a 17:30, Ayudante lu mi 15 a 16",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Lógica Matemática II": {
       "4295": {
         "grupo": "4295",
@@ -7491,7 +7552,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Amílcar José Escobedo Pérez",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -7534,7 +7595,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374821"
       },
       "9075": {
         "grupo": "9075",

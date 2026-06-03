@@ -928,7 +928,7 @@
       "5031": {
         "grupo": "5031",
         "profesor": {
-          "nombre": "Hugo Iván Cruz Rosas",
+          "nombre": null,
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -2706,7 +2706,7 @@
       "5094": {
         "grupo": "5094",
         "profesor": {
-          "nombre": "José Román Latournerié Cervera",
+          "nombre": "Rebeca María López Rivas",
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -2718,7 +2718,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Rebeca María López Rivas",
+            "nombre": "José Román Latournerié Cervera",
             "horario": "11:00 a 14:00",
             "dias": [
               "Ju"
@@ -3176,6 +3176,34 @@
         "presentacion": null
       }
     },
+    "Ciencia, Diversidad e Inclusión": {
+      "5480": {
+        "grupo": "5480",
+        "profesor": {
+          "nombre": "Ana Cristina Cervantes Arrioja",
+          "horarios": [
+            {
+              "horario": "10:00 a 13:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Diana Alethia Guerrero Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Conducta Animal": {
       "5109": {
         "grupo": "5109",
@@ -3374,6 +3402,37 @@
           {
             "nombre": "Ruth Cecilia Vanegas Pérez",
             "horario": "11:00 a 14:00",
+            "dias": [
+              "Vi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Ecología de Comunidades Litorales": {
+      "5479": {
+        "grupo": "5479",
+        "profesor": {
+          "nombre": "María Edith Ponce Márquez",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Nataly Quiroz González",
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Ma"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": null,
+            "horario": "14:30 a 17:30",
             "dias": [
               "Vi"
             ],
@@ -4218,6 +4277,27 @@
         "presentacion": null
       }
     },
+    "México: Nación Multicultural": {
+      "8430": {
+        "grupo": "8430",
+        "profesor": {
+          "nombre": "Carolina Sánchez García",
+          "horarios": [
+            {
+              "horario": "11:00 a 13:00",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Naturaleza y Sociedad": {
       "5144": {
         "grupo": "5144",
@@ -4279,9 +4359,11 @@
           "nombre": "Ricardo Hernández Morales",
           "horarios": [
             {
-              "horario": "10:00 a 11:00",
+              "horario": "11:00 a 13:00",
               "dias": [
-                "Ma"
+                "Lu",
+                "Mi",
+                "Vi"
               ]
             }
           ]
@@ -4289,20 +4371,8 @@
         "ayudantes": [
           {
             "nombre": "José Ervin Silva González",
-            "horario": "10:00 a 11:00",
-            "dias": [
-              "Lu",
-              "Ju"
-            ],
-            "salon": null
-          },
-          {
-            "nombre": null,
-            "horario": "10:00 a 11:00",
-            "dias": [
-              "Mi",
-              "Vi"
-            ],
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -4487,6 +4557,34 @@
           }
         ],
         "nota": "Bioética I",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "5481": {
+        "grupo": "5481",
+        "profesor": {
+          "nombre": "Adriana Gaytán Caballero",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Vilma Soledad Ardiles Gloria",
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Vi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Metodología de la investigación",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null

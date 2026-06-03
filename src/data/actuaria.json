@@ -18,7 +18,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Gustavo Sandoval Joya",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -80,7 +80,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Daniel Rojas Mares",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -1880,7 +1880,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rodrigo García Formentí Mendieta",
             "horario": "18:00 a 19:00",
             "dias": [
               "Lu",
@@ -2552,7 +2552,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Emma Laura Guzman Garcia",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -3337,7 +3337,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jesus Adrian Celis González",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -3487,7 +3487,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374104"
       },
       "4108": {
         "grupo": "4108",
@@ -4207,6 +4207,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9301": {
+        "grupo": "9301",
+        "profesor": {
+          "nombre": "Benjamín Figueroa Solano",
+          "horarios": [
+            {
+              "horario": "20:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -4229,7 +4260,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jorge Valle Peña",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -4787,7 +4818,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Adad Israel Gonzalez Castro",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -4954,7 +4985,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374149"
       },
       "4145": {
         "grupo": "4145",
@@ -6183,7 +6214,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374756"
       },
       "9009": {
         "grupo": "9009",
@@ -6251,6 +6282,37 @@
         "grupo": "9011",
         "profesor": {
           "nombre": "Ernesto Rosas García",
+          "horarios": [
+            {
+              "horario": "20:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374759"
+      },
+      "9298": {
+        "grupo": "9298",
+        "profesor": {
+          "nombre": "Cristian Axel Muñoz Flores",
           "horarios": [
             {
               "horario": "20:00 a 21:00",
@@ -7030,7 +7092,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Helios Farrell González",
             "horario": "15:00 a 16:00",
             "dias": [
               "Lu",
@@ -7289,7 +7351,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374194"
       },
       "4187": {
         "grupo": "4187",
@@ -8257,7 +8319,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Cristian Edimar Morales Encinos",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -10139,7 +10201,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375177"
       },
       "9217": {
         "grupo": "9217",
@@ -10861,7 +10923,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       },
       "9258": {
@@ -11304,7 +11366,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374851"
       },
       "9104": {
         "grupo": "9104",
@@ -11601,7 +11663,7 @@
           "nombre": "Yurguen Hugo Camargo Serafin",
           "horarios": [
             {
-              "horario": "19:00 a 20:00",
+              "horario": "14:00 a 15:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -11613,7 +11675,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "19:00 a 20:00",
+            "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
               "Ju"
@@ -11812,7 +11874,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374177"
       }
     },
     "Análisis Matemático II": {
@@ -11845,7 +11907,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374248"
       },
       "4231": {
         "grupo": "4231",
@@ -12125,7 +12187,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "El horario será de 10:00 a 11:00",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -12222,7 +12284,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },
@@ -12354,6 +12416,34 @@
         "presentacion": null
       }
     },
+    "Ciencia, Diversidad e Inclusión": {
+      "5480": {
+        "grupo": "5480",
+        "profesor": {
+          "nombre": "Ana Cristina Cervantes Arrioja",
+          "horarios": [
+            {
+              "horario": "10:00 a 13:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Diana Alethia Guerrero Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Demografía Avanzada": {
       "9268": {
         "grupo": "9268",
@@ -12469,7 +12559,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Brenda Abril Néquiz Guillén",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -12491,7 +12581,7 @@
           "nombre": "Raúl Rueda Díaz del Campo",
           "horarios": [
             {
-              "horario": "12:00 a 13:00",
+              "horario": "09:00 a 10:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -12503,7 +12593,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "12:00 a 13:00",
+            "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
               "Ju"
@@ -13413,7 +13503,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -13508,7 +13598,7 @@
         ],
         "nota": "Deep Learning",
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       },
       "9276": {
@@ -13707,7 +13797,7 @@
           "nombre": "Gonzalo Pérez de la Cruz",
           "horarios": [
             {
-              "horario": "16:00 a 17:00",
+              "horario": "13:00 a 14:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -13719,7 +13809,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "16:00 a 17:00",
+            "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
               "Ju"
@@ -13771,7 +13861,7 @@
           "nombre": "Héctor Miguel Ortíz Rangel",
           "horarios": [
             {
-              "horario": "07:00 a 08:00",
+              "horario": "08:00 a 09:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -13783,7 +13873,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "07:00 a 08:00",
+            "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
               "Ju"
@@ -13932,7 +14022,7 @@
           "nombre": "José Antonio Perusquía Cortés",
           "horarios": [
             {
-              "horario": "11:00 a 12:00",
+              "horario": "12:00 a 13:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -13944,7 +14034,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "11:00 a 12:00",
+            "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
               "Ju"
@@ -14052,6 +14142,37 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9299": {
+        "grupo": "9299",
+        "profesor": {
+          "nombre": "Nancy Pérez Cano",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     },
@@ -14403,6 +14524,37 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4366": {
+        "grupo": "4366",
+        "profesor": {
+          "nombre": "Sergey Antonyan",
+          "horarios": [
+            {
+              "horario": "09:00 a 10:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },
