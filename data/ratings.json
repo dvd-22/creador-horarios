@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-06-03T03:23:40.413Z",
-  "totalProfessors": 2122,
-  "ratingsFound": 1264,
+  "lastUpdated": "2026-06-03T16:13:23.333Z",
+  "totalProfessors": 2126,
+  "ratingsFound": 1267,
   "foundPercentage": 60,
   "ratings": {
     "Aaron Ali Lozano Rocha": null,
@@ -929,8 +929,8 @@
     "Araceli Ortega Díaz": null,
     "Aramis Arias Romero": {
       "name": "Aramis Arias Romero",
-      "rating": 7.5,
-      "commentCount": 13,
+      "rating": 7.6,
+      "commentCount": 14,
       "id": "172976",
       "url": "https://www.misprofesores.com/profesores/Aramis-Arias-Romero_172976"
     },
@@ -1121,6 +1121,7 @@
       "id": "84348",
       "url": "https://www.misprofesores.com/profesores/Benjamin-Figueroa-Solano_84348"
     },
+    "Benjamín Oliva Vázquez": null,
     "Benjamín Pablo Norman": {
       "name": "Benjamín Pablo Norman",
       "rating": 4.9,
@@ -1549,6 +1550,7 @@
     "Carolina Rivera Arredondo": null,
     "Carolina Rodríguez Ibarra": null,
     "Carolina Sánchez García": null,
+    "Castor Mauricio Rueda García": null,
     "Catalina Elizabeth Stern Forgach": {
       "name": "Catalina Elizabeth Stern Forgach",
       "rating": 7.8,
@@ -1918,7 +1920,13 @@
       "url": "https://www.misprofesores.com/profesores/Dalila-Fragoso-Tejas_62126"
     },
     "Damián Real Corrales": null,
-    "Danaí Montalván Sorrosa": null,
+    "Danaí Montalván Sorrosa": {
+      "name": "Danaí Montalván Sorrosa",
+      "rating": 7.8,
+      "commentCount": 4,
+      "id": "165984",
+      "url": "https://www.misprofesores.com/profesores/Danai-Montalvan-Sorrosa_165984"
+    },
     "Dania Sayuri Zaldívar Tanaka": null,
     "Daniel Alejandro Olvera Sule": {
       "name": "Daniel Alejandro Olvera Sule",
@@ -2515,7 +2523,7 @@
     "Eduardo Selim Martínez Mayorga": {
       "name": "Eduardo Selim Martínez Mayorga",
       "rating": 5.9,
-      "commentCount": 80,
+      "commentCount": 81,
       "id": "66951",
       "url": "https://www.misprofesores.com/profesores/Eduardo-Martinez-Mayorga_66951"
     },
@@ -3399,6 +3407,13 @@
       "commentCount": 12,
       "id": "150282",
       "url": "https://www.misprofesores.com/profesores/Gabriela-Frias-Villegas_150282"
+    },
+    "Gabriela García Verde": {
+      "name": "Gabriela García Verde",
+      "rating": 9,
+      "commentCount": 5,
+      "id": "165787",
+      "url": "https://www.misprofesores.com/profesores/Gabriela-Garcia-Verde_165787"
     },
     "Gabriela González González": null,
     "Gabriela Hernández Aguilar": null,
@@ -5904,6 +5919,13 @@
       "id": "75846",
       "url": "https://www.misprofesores.com/profesores/Luis-Ramirez-Bermudez_75846"
     },
+    "Luis Alberto Vázquez Maisón": {
+      "name": "Luis Alberto Vázquez Maisón",
+      "rating": 6.8,
+      "commentCount": 14,
+      "id": "64000",
+      "url": "https://www.misprofesores.com/profesores/Luis-Vazquez-Maison_64000"
+    },
     "Luis Angel Araiza Bautista": null,
     "Luis Antonio Cedeño Pérez": {
       "name": "Luis Antonio Cedeño Pérez",
@@ -5922,11 +5944,11 @@
       "url": "https://www.misprofesores.com/profesores/Luis-Paredes-Rivas_47864"
     },
     "Luis Antonio Pérez López": {
-      "name": "Jorge Luis Pérez López",
-      "rating": 8.5,
-      "commentCount": 2,
-      "id": "81050",
-      "url": "https://www.misprofesores.com/profesores/Luis-Perez-Lopez_81050"
+      "name": "Luis Antonio Pérez López",
+      "rating": 7,
+      "commentCount": 20,
+      "id": "56178",
+      "url": "https://www.misprofesores.com/profesores/Luis-Perez-Lopez_56178"
     },
     "Luis Antonio Rincón Solís": {
       "name": "Luis Antonio Rincón Solís",
@@ -6278,8 +6300,8 @@
     },
     "Manuel Soto Romero": {
       "name": "Manuel Soto Romero",
-      "rating": 10,
-      "commentCount": 7,
+      "rating": 9,
+      "commentCount": 8,
       "id": "159899",
       "url": "https://www.misprofesores.com/profesores/Manuel-Soto-Romero_159899"
     },
@@ -7751,7 +7773,7 @@
     "Omar de la Riva Torres": {
       "name": "Omar de la Riva Torres",
       "rating": 7.2,
-      "commentCount": 123,
+      "commentCount": 124,
       "id": "64003",
       "url": "https://www.misprofesores.com/profesores/Omar-Riva-Torres_64003"
     },
@@ -8103,8 +8125,8 @@
     "Quentin Edouard Gendron": null,
     "Radamés Ricardo Reynoso Manríquez": {
       "name": "Radames Ricardo Reynoso Manriquez",
-      "rating": 7,
-      "commentCount": 30,
+      "rating": 7.1,
+      "commentCount": 31,
       "id": "42351",
       "url": "https://www.misprofesores.com/profesores/Radames-Reynoso-Manriquez_42351"
     },
@@ -9712,12 +9734,12 @@
     }
   },
   "statistics": {
-    "processed": 2122,
-    "found": 1264,
-    "notFound": 858,
-    "foundWithFallback": 46,
-    "foundWithMainTemplate": 1218,
-    "keptExisting": 1245,
-    "upgraded": 14
+    "processed": 2126,
+    "found": 1267,
+    "notFound": 859,
+    "foundWithFallback": 44,
+    "foundWithMainTemplate": 1223,
+    "keptExisting": 1258,
+    "upgraded": 6
   }
 }
