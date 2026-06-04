@@ -899,7 +899,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Andrés Alonso Flores Marín",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -1039,7 +1039,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Aldo César Almazán Avilés",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -1332,7 +1332,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373993"
       },
       "4041": {
         "grupo": "4041",
@@ -1893,7 +1893,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374021"
       },
       "4055": {
         "grupo": "4055",
@@ -2197,7 +2197,7 @@
       "4064": {
         "grupo": "4064",
         "profesor": {
-          "nombre": "Tania Azucena Chicalote Jiménez",
+          "nombre": "Irving Daniel Calderón Camacho",
           "horarios": [
             {
               "horario": "10:00 a 11:00",
@@ -2907,7 +2907,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375260"
       },
       "6005": {
         "grupo": "6005",
@@ -4069,6 +4069,37 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "9315": {
+        "grupo": "9315",
+        "profesor": {
+          "nombre": "Víctor Manuel Carreón Calderón",
+          "horarios": [
+            {
+              "horario": "07:00 a 08:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Mixta",
+        "presentacion": null
       }
     }
   },
@@ -4556,7 +4587,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Joseph Howard Carmona Hernández",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
@@ -8306,7 +8337,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375631"
       }
     },
     "Análisis Numérico": {
@@ -9853,7 +9884,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Natalie Elizabeth Sánchez López",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -10192,19 +10223,17 @@
           "nombre": "María de Luz Gasca Soto",
           "horarios": [
             {
-              "horario": "12:00 a 13:00",
+              "horario": "15:30 a 17:00",
               "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
+                "Ma",
+                "Ju"
               ]
             },
             {
-              "horario": "12:00 a 13:00",
+              "horario": "15:30 a 17:00",
               "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
+                "Ma",
+                "Ju"
               ]
             }
           ]
@@ -10212,19 +10241,19 @@
         "ayudantes": [
           {
             "nombre": "Teresa Becerril Torres",
-            "horario": "12:00 a 13:00",
+            "horario": "14:30 a 15:30",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Mi"
             ],
             "salon": null
           },
           {
             "nombre": "Teresa Becerril Torres",
-            "horario": "12:00 a 13:00",
+            "horario": "14:30 a 15:30",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Mi"
             ],
             "salon": null
           }

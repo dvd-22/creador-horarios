@@ -2666,7 +2666,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Joseph Howard Carmona Hernández",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
@@ -2790,7 +2790,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ximena Estrada Zavaleta",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -2976,7 +2976,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Brenda Karytza Montiel Ramírez",
             "horario": "21:00 a 22:00",
             "dias": [
               "Ma",
@@ -4137,11 +4137,10 @@
           "nombre": "María de Luz Gasca Soto",
           "horarios": [
             {
-              "horario": "12:00 a 13:00",
+              "horario": "15:30 a 17:00",
               "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
+                "Ma",
+                "Ju"
               ]
             }
           ]
@@ -4149,10 +4148,10 @@
         "ayudantes": [
           {
             "nombre": "Teresa Becerril Torres",
-            "horario": "12:00 a 13:00",
+            "horario": "14:30 a 15:30",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Mi"
             ],
             "salon": null
           }
@@ -4318,7 +4317,7 @@
           "nombre": "Manuel Alcántara Juárez",
           "horarios": [
             {
-              "horario": "16:00 a 17:00",
+              "horario": "15:30 a 17:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -4330,7 +4329,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "16:00 a 17:00",
+            "horario": "14:30 a 15:30",
             "dias": [
               "Ma",
               "Ju"
@@ -4626,44 +4625,6 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
-      },
-      "7124": {
-        "grupo": "7124",
-        "profesor": {
-          "nombre": "Mauricio Riva Palacio Orozco",
-          "horarios": [
-            {
-              "horario": "17:00 a 18:30",
-              "dias": [
-                "Ma",
-                "Ju"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "18:30 a 19:30",
-            "dias": [
-              "Lu",
-              "Mi"
-            ],
-            "salon": null
-          },
-          {
-            "nombre": null,
-            "horario": "14:00 a 16:00",
-            "dias": [
-              "Vi"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": "Asignación sujeta a entrevista.",
-        "salon": null,
-        "modalidad": "Virtual",
-        "presentacion": null
       }
     }
   },
@@ -4714,7 +4675,7 @@
           "nombre": "Luis Rey Rutiaga Robles",
           "horarios": [
             {
-              "horario": "18:30 a 20:00",
+              "horario": "17:00 a 18:30",
               "dias": [
                 "Ma",
                 "Ju"
@@ -4725,7 +4686,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "18:30 a 19:30",
+            "horario": "16:00 a 17:00",
             "dias": [
               "Lu",
               "Mi"
@@ -5246,7 +5207,7 @@
           "nombre": "Diego Alejandro Velázquez Cervantes",
           "horarios": [
             {
-              "horario": "17:00 a 18:30",
+              "horario": "20:00 a 21:30",
               "dias": [
                 "Lu",
                 "Mi"
@@ -5257,7 +5218,7 @@
         "ayudantes": [
           {
             "nombre": "Rogelio Alcantar Arenas",
-            "horario": "16:00 a 17:00",
+            "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
               "Ju"
@@ -5266,14 +5227,14 @@
           },
           {
             "nombre": "Rogelio Alcantar Arenas",
-            "horario": "16:00 a 18:00",
+            "horario": "20:00 a 21:00",
             "dias": [
               "Vi"
             ],
             "salon": null
           }
         ],
-        "nota": "El  horario será de 20 a 21:30, Ayudante 20 a 21 h",
+        "nota": null,
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": null
@@ -5692,7 +5653,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Mariana Garduño Reyes",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -6147,6 +6108,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9312": {
+        "grupo": "9312",
+        "profesor": {
+          "nombre": "Luis Alberto Vázquez Maisón",
+          "horarios": [
+            {
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Animación por Computadora": {
@@ -6242,7 +6234,7 @@
             "salon": null
           },
           {
-            "nombre": "Héctor Miguel Mejía Díaz",
+            "nombre": "Benjamín Sánchez Hernández",
             "horario": null,
             "dias": [],
             "salon": null
@@ -6294,7 +6286,7 @@
           "nombre": "Dario Emmanuel Vázquez Ceballos",
           "horarios": [
             {
-              "horario": "17:30 a 19:00",
+              "horario": "18:30 a 20:00",
               "dias": [
                 "Ma",
                 "Ju"
@@ -6305,7 +6297,7 @@
         "ayudantes": [
           {
             "nombre": "María Fernanda Mendoza Castillo",
-            "horario": "19:00 a 20:00",
+            "horario": "17:30 a 18:30",
             "dias": [
               "Lu",
               "Mi"
@@ -6355,7 +6347,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375015"
       },
       "7142": {
         "grupo": "7142",
@@ -7123,11 +7115,10 @@
           "nombre": "Miguel Carrillo Barajas",
           "horarios": [
             {
-              "horario": "13:00 a 14:00",
+              "horario": "16:00 a 17:30",
               "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
+                "Ma",
+                "Ju"
               ]
             }
           ]
@@ -7135,10 +7126,10 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "13:00 a 14:00",
+            "horario": "15:00 a 16:00",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Mi"
             ],
             "salon": null
           }
@@ -7220,7 +7211,7 @@
           "nombre": "Fernando Javier Nuñez Rosales",
           "horarios": [
             {
-              "horario": "09:00 a 10:00",
+              "horario": "19:00 a 20:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -7232,7 +7223,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "09:00 a 10:00",
+            "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
               "Ju"
@@ -8123,7 +8114,7 @@
           "nombre": "Selene Marisol Martínez Ramírez",
           "horarios": [
             {
-              "horario": "17:30 a 19:00",
+              "horario": "10:00 a 11:00",
               "dias": [
                 "Ma",
                 "Ju"
@@ -8134,7 +8125,7 @@
         "ayudantes": [
           {
             "nombre": "Mariana Morayma Bernal Esquivel",
-            "horario": "19:00 a 20:00",
+            "horario": "10:00 a 11:00",
             "dias": [
               "Lu",
               "Mi"
@@ -8393,7 +8384,7 @@
           "nombre": "Joel Espinosa Longi",
           "horarios": [
             {
-              "horario": "14:00 a 15:00",
+              "horario": "09:00 a 10:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -8405,7 +8396,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "14:00 a 15:00",
+            "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
               "Ju"
@@ -8507,6 +8498,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "7179": {
+        "grupo": "7179",
+        "profesor": {
+          "nombre": "Daniel Ruelas Milanés",
+          "horarios": [
+            {
+              "horario": "12:00 a 13:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Algoritmos para Mapeo Volumétrico y Reconstrucción Espacial",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375658"
       }
     },
     "Seminario de Ciencias de la Computación B": {
@@ -8516,7 +8538,7 @@
           "nombre": "Víctor Mireles Chávez",
           "horarios": [
             {
-              "horario": "07:00 a 08:00",
+              "horario": "08:00 a 09:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -8528,7 +8550,7 @@
         "ayudantes": [
           {
             "nombre": "Sergio Hernández López",
-            "horario": "07:00 a 08:00",
+            "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
               "Ju"
@@ -8621,7 +8643,7 @@
           "nombre": "Manuel Cristóbal López Michelone",
           "horarios": [
             {
-              "horario": "10:00 a 11:00",
+              "horario": "09:00 a 10:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -8633,7 +8655,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "10:00 a 11:00",
+            "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
               "Ju"
@@ -8683,7 +8705,7 @@
           "nombre": "Canek Peláez Valdés",
           "horarios": [
             {
-              "horario": "12:00 a 13:00",
+              "horario": "13:00 a 14:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -8695,7 +8717,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "12:00 a 13:00",
+            "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
               "Ju"
@@ -8703,7 +8725,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 13:00 a 14:00 h",
+        "nota": "Heurísticas de Optimización Combinatoria",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -9196,7 +9218,7 @@
           "nombre": "Alejandro De Las Peñas Castaño",
           "horarios": [
             {
-              "horario": "08:00 a 09:00",
+              "horario": "13:00 a 14:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -9208,7 +9230,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "08:00 a 09:00",
+            "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
               "Ju"

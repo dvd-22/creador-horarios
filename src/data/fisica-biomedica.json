@@ -403,7 +403,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Andrés Alonso Flores Marín",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -543,7 +543,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Aldo César Almazán Avilés",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -788,7 +788,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Lorenzo Antonio Alvarado Cabrera",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -836,7 +836,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373994"
       },
       "8015": {
         "grupo": "8015",
@@ -1397,7 +1397,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374022"
       },
       "8029": {
         "grupo": "8029",
@@ -2298,7 +2298,7 @@
       "8038": {
         "grupo": "8038",
         "profesor": {
-          "nombre": "Tania Azucena Chicalote Jiménez",
+          "nombre": "Irving Daniel Calderón Camacho",
           "horarios": [
             {
               "horario": "10:00 a 11:00",
@@ -2933,7 +2933,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Isaac Romero Solano",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -5951,7 +5958,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375094"
       },
       "3046": {
         "grupo": "3046",
@@ -6137,7 +6144,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375084"
       }
     },
     "Física del Ultrasonido Médico": {

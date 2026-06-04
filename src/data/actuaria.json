@@ -899,7 +899,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Andrés Alonso Flores Marín",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -1039,7 +1039,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Aldo César Almazán Avilés",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -1284,7 +1284,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Lorenzo Antonio Alvarado Cabrera",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -1332,7 +1332,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373993"
       },
       "4041": {
         "grupo": "4041",
@@ -1893,7 +1893,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374021"
       },
       "4055": {
         "grupo": "4055",
@@ -2197,7 +2197,7 @@
       "4064": {
         "grupo": "4064",
         "profesor": {
-          "nombre": "Tania Azucena Chicalote Jiménez",
+          "nombre": "Irving Daniel Calderón Camacho",
           "horarios": [
             {
               "horario": "10:00 a 11:00",
@@ -3087,6 +3087,38 @@
           {
             "nombre": null,
             "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9314": {
+        "grupo": "9314",
+        "profesor": {
+          "nombre": "César Garnica Navarro",
+          "horarios": [
+            {
+              "horario": "07:00 a 08:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi",
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
               "Ju"
@@ -4725,7 +4757,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Joseph Howard Carmona Hernández",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
@@ -4849,7 +4881,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ximena Estrada Zavaleta",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -5035,7 +5067,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Brenda Karytza Montiel Ramírez",
             "horario": "21:00 a 22:00",
             "dias": [
               "Ma",
@@ -8641,7 +8673,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375631"
       }
     },
     "Economía": {
@@ -9446,6 +9478,38 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9309": {
+        "grupo": "9309",
+        "profesor": {
+          "nombre": "Blanca Dulce Miriam Benítez Pérez",
+          "horarios": [
+            {
+              "horario": "08:00 a 09:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi",
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Mercados Financieros y Valuación de Instrumentos": {
@@ -10043,6 +10107,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9312": {
+        "grupo": "9312",
+        "profesor": {
+          "nombre": "Luis Alberto Vázquez Maisón",
+          "horarios": [
+            {
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Demografía": {
@@ -10220,7 +10315,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Adrián Téllez Mora",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -10580,7 +10675,7 @@
         ],
         "nota": "Asignación sujeta a entrevista.",
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       },
       "9234": {
@@ -10631,7 +10726,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luz Elena Hernández Maldonado",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -10797,7 +10892,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },
@@ -10923,7 +11018,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Mixta",
+        "modalidad": "Virtual",
         "presentacion": null
       },
       "9256": {
@@ -10985,7 +11080,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },
@@ -11177,7 +11272,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       },
       "9262": {
@@ -11303,7 +11398,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       },
       "9101": {
@@ -11334,7 +11429,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       },
       "9102": {
@@ -11396,7 +11491,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Mixta",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374851"
       },
       "9104": {
@@ -11544,6 +11639,37 @@
           {
             "nombre": null,
             "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
+      },
+      "9311": {
+        "grupo": "9311",
+        "profesor": {
+          "nombre": "Vicente Ángel Soriano Ramírez",
+          "horarios": [
+            {
+              "horario": "10:00 a 11:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
               "Ju"
@@ -12198,7 +12324,7 @@
           "nombre": "Sofía Villers Gómez",
           "horarios": [
             {
-              "horario": "12:00 a 13:00",
+              "horario": "10:00 a 11:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -12569,6 +12695,39 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
+        "presentacion": null
+      }
+    },
+    "Econometría II": {
+      "9306": {
+        "grupo": "9306",
+        "profesor": {
+          "nombre": "Araceli Ortega Díaz",
+          "horarios": [
+            {
+              "horario": "11:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -13155,7 +13314,7 @@
           "nombre": "Fernando Javier Nuñez Rosales",
           "horarios": [
             {
-              "horario": "09:00 a 10:00",
+              "horario": "19:00 a 20:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -13167,7 +13326,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "09:00 a 10:00",
+            "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
               "Ju"
@@ -14710,6 +14869,37 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375641"
+      },
+      "4369": {
+        "grupo": "4369",
+        "profesor": {
+          "nombre": "Jesús Manuel Mayorquín García",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     },
