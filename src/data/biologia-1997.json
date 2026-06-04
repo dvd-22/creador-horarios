@@ -76,8 +76,7 @@
             {
               "horario": "14:30 a 17:30",
               "dias": [
-                "Ma",
-                "Sa"
+                "Ma"
               ]
             }
           ]
@@ -148,6 +147,34 @@
             "horario": "14:30 a 17:30",
             "dias": [
               "Ma"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "5482": {
+        "grupo": "5482",
+        "profesor": {
+          "nombre": "Ponciano García Gutiérrez",
+          "horarios": [
+            {
+              "horario": "07:30 a 10:30",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Susana Méndez Vázquez",
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Sa"
             ],
             "salon": null
           }
@@ -243,7 +270,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Ángel Fernando Soto Pozos",
+            "nombre": "María Guadalupe Camacho Sánchez",
             "horario": "18:00 a 20:00",
             "dias": [
               "Ma",
@@ -1476,7 +1503,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Cristina Isabel Guzmán Gónzalez",
+            "nombre": "Rubi Evangelista Casimiro",
             "horario": "14:30 a 17:30",
             "dias": [
               "Ju"
@@ -3610,7 +3637,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Alinka Vanessa Olea y Wagner",
+            "nombre": "Katia Aimeé Olea y Wagner",
             "horario": null,
             "dias": [],
             "salon": null

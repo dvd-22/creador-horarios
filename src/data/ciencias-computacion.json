@@ -1547,10 +1547,10 @@
         "modalidad": "Presencial",
         "presentacion": null
       },
-      "7061": {
-        "grupo": "7061",
+      "7182": {
+        "grupo": "7182",
         "profesor": {
-          "nombre": "Pedro Eduardo Miramontes Vidal",
+          "nombre": "Guillermo Abraham Quintana Silva",
           "horarios": [
             {
               "horario": "14:00 a 16:00",
@@ -3088,6 +3088,27 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "7180": {
+        "grupo": "7180",
+        "profesor": {
+          "nombre": "Pedro Eduardo Miramontes Vidal",
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },
@@ -8141,7 +8162,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 10:00 a 11:00 h Lab ma 12:00 a 14:00 h.  El curso se impartirá en el ICAT",
+        "nota": "El curso se impartirá en el ICAT",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null

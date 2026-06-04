@@ -2912,7 +2912,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Monserrat Negrete Derramadero",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -2970,7 +2977,7 @@
       "8141": {
         "grupo": "8141",
         "profesor": {
-          "nombre": "Lorea Chaos Cador",
+          "nombre": "Jacqueline Quintana Hinojosa",
           "horarios": [
             {
               "horario": "16:00 a 18:00",
@@ -3938,7 +3945,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374207"
       },
       "8076": {
         "grupo": "8076",
@@ -4371,7 +4378,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "David Angel de Jesus Luna",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",

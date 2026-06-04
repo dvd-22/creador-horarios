@@ -1284,7 +1284,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Lorenzo Antonio Alvarado Cabrera",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -4711,7 +4711,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ximena Estrada Zavaleta",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -4897,7 +4897,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Brenda Karytza Montiel Ramírez",
             "horario": "21:00 a 22:00",
             "dias": [
               "Ma",
@@ -7368,7 +7368,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374206"
       },
       "4193": {
         "grupo": "4193",
@@ -7934,7 +7934,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374222"
       },
       "4205": {
         "grupo": "4205",
@@ -9654,6 +9654,37 @@
           }
         ],
         "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4370": {
+        "grupo": "4370",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "11:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Este grupo estará a cargo del Dr. Víctor Alfonso Vicente Benítez",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null

@@ -899,7 +899,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Andrés Alonso Flores Marín",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -1284,7 +1284,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Lorenzo Antonio Alvarado Cabrera",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -1893,7 +1893,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374021"
       },
       "4055": {
         "grupo": "4055",
@@ -6515,7 +6515,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374206"
       },
       "4193": {
         "grupo": "4193",
@@ -6724,7 +6724,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Mariana Garduño Reyes",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -9711,7 +9711,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Monserrat Negrete Derramadero",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -9769,7 +9776,7 @@
       "8141": {
         "grupo": "8141",
         "profesor": {
-          "nombre": "Lorea Chaos Cador",
+          "nombre": "Jacqueline Quintana Hinojosa",
           "horarios": [
             {
               "horario": "16:00 a 18:00",
@@ -10499,7 +10506,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rodrigo Domínguez López",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -11701,7 +11708,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "David Angel de Jesus Luna",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -13252,7 +13266,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375632"
       }
     },
     "Seminario de Álgebra A": {
@@ -13574,7 +13588,7 @@
         "nota": "Criticalidad, transiciones sistémicas y tecnociencias",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374326"
       }
     },
     "Seminario de Filosofía de la Ciencia I": {
@@ -14222,7 +14236,7 @@
         "nota": "Modelación y análisis de datos en redes complejas multicapa",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374346"
       }
     },
     "Seminario sobre Enseñanza de las Matemáticas I": {
@@ -14480,7 +14494,7 @@
         "nota": "“Comunicación pública de la ciencia”",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374353"
       },
       "4336": {
         "grupo": "4336",
@@ -16629,7 +16643,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374301"
       }
     },
     "Historia de las Matemáticas II": {
@@ -19047,7 +19061,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374376"
       },
       "4359": {
         "grupo": "4359",

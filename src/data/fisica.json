@@ -1553,7 +1553,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374423"
       },
       "8102": {
         "grupo": "8102",
@@ -1692,7 +1692,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Arturo Alejandro Arvizu Velazquez",
+            "nombre": "Ian Israel García Vázquez",
             "horario": null,
             "dias": [],
             "salon": null
@@ -7028,7 +7028,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374206"
       },
       "4193": {
         "grupo": "4193",
@@ -8164,7 +8164,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374528"
       },
       "8207": {
         "grupo": "8207",
@@ -8212,7 +8212,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Maureen Galindo Cabrera",
             "horario": "18:00 a 21:00",
             "dias": [
               "Ma",
@@ -14379,6 +14379,27 @@
         "presentacion": null
       }
     },
+    "Introducción a la Física Atómica y Molecular": {
+      "8434": {
+        "grupo": "8434",
+        "profesor": {
+          "nombre": "Freddy Jackson Poveda Cuevas",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Stephanie Dondé Rodríguez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      }
+    },
     "Introducción a la Física de los Materiales": {
       "8353": {
         "grupo": "8353",
@@ -15118,7 +15139,7 @@
         "nota": "“Comunicación pública de la ciencia”",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374353"
       },
       "4336": {
         "grupo": "4336",
@@ -15451,6 +15472,18 @@
         },
         "ayudantes": [],
         "nota": "Introducción a Deep Learning",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "8433": {
+        "grupo": "8433",
+        "profesor": {
+          "nombre": "Juan Carlos Del Valle Rosales",
+          "horarios": []
+        },
+        "ayudantes": [],
+        "nota": "Métodos Numéricos para Simulaciones de Sistemas Cuánticos: Teoría e Implementación Computacional",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
