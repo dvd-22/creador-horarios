@@ -525,7 +525,7 @@
       "5016": {
         "grupo": "5016",
         "profesor": {
-          "nombre": null,
+          "nombre": "Luis Antonio Sánchez González",
           "horarios": [
             {
               "horario": "07:30 a 10:30",
@@ -553,7 +553,7 @@
       "5017": {
         "grupo": "5017",
         "profesor": {
-          "nombre": "Luis Antonio Sánchez González",
+          "nombre": "César Antonio Ríos Muñoz",
           "horarios": [
             {
               "horario": "18:00 a 21:00",
@@ -583,7 +583,7 @@
       "5018": {
         "grupo": "5018",
         "profesor": {
-          "nombre": "María del Carmen Guzmán Cornejo",
+          "nombre": "Rogelio Aguilar Aguilar",
           "horarios": [
             {
               "horario": "07:30 a 10:30",
@@ -2943,7 +2943,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374656"
       },
       "8336": {
         "grupo": "8336",
@@ -3683,7 +3683,7 @@
       "5123": {
         "grupo": "5123",
         "profesor": {
-          "nombre": "Santiago Jaume Schinkel",
+          "nombre": "Margarita Ojeda Carrasco",
           "horarios": [
             {
               "horario": "14:30 a 17:30",
@@ -5225,7 +5225,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jorge Fernando Rojas Gutiérrez",
             "horario": "11:00 a 14:00",
             "dias": [
               "Lu"
@@ -5293,6 +5293,34 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "5484": {
+        "grupo": "5484",
+        "profesor": {
+          "nombre": "Miriam Erandi Reyna Fabián",
+          "horarios": [
+            {
+              "horario": "14:30 a 17:30",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Luz Vianney Cortés González",
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Bases biológicas y diagnóstico molecular de las enfermedades genéticas en el humano",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Temas Selectos de Biología IV": {
@@ -5342,6 +5370,34 @@
           }
         ],
         "nota": "Neurobioquímica",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "5483": {
+        "grupo": "5483",
+        "profesor": {
+          "nombre": "Rafael de Villa Magallón",
+          "horarios": [
+            {
+              "horario": "07:30 a 10:30",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Karla Yadira Olalde Estrada",
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Ma"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null

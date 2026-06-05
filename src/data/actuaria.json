@@ -297,7 +297,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Roxana Jiménez Jiménez",
+            "nombre": "Montserrat Arias Basilio",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -328,7 +328,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Alberto Jiménez Ramírez",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -514,7 +514,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jesús Villagómez Chávez",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -969,7 +969,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Luis Alberto Hernández Pérez",
+            "nombre": "José Francisco Pérez Barragán",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -1972,7 +1972,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Mixta",
         "presentacion": null
       }
     },
@@ -2197,7 +2197,7 @@
       "4064": {
         "grupo": "4064",
         "profesor": {
-          "nombre": "Irving Daniel Calderón Camacho",
+          "nombre": "Juan Manuel Estrada Rivera",
           "horarios": [
             {
               "horario": "10:00 a 11:00",
@@ -2751,6 +2751,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "4375": {
+        "grupo": "4375",
+        "profesor": {
+          "nombre": "Norberto Javier Rivas González",
+          "horarios": [
+            {
+              "horario": "20:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Mixta",
+        "presentacion": null
       }
     },
     "Teoría del Seguro": {
@@ -2781,7 +2812,7 @@
             "salon": null
           }
         ],
-        "nota": "Asignación sujeta a entrevista",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -2848,7 +2879,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374778"
       },
       "9031": {
         "grupo": "9031",
@@ -3152,7 +3183,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Arturo López González",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -3163,7 +3194,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": null
       },
       "4097": {
@@ -3256,7 +3287,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": null
       },
       "4100": {
@@ -3319,7 +3350,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374096"
       },
       "4102": {
         "grupo": "4102",
@@ -3411,7 +3442,38 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Mixta",
+        "presentacion": null
+      },
+      "4376": {
+        "grupo": "4376",
+        "profesor": {
+          "nombre": "Miguel Angel Guadarrama García",
+          "horarios": [
+            {
+              "horario": "19:00 a 20:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -3520,41 +3582,6 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374104"
-      },
-      "4108": {
-        "grupo": "4108",
-        "profesor": {
-          "nombre": "Jefferson Edwin King Dávalos",
-          "horarios": [
-            {
-              "horario": "11:00 a 12:00",
-              "dias": [
-                "Lu",
-                "Ma",
-                "Mi",
-                "Ju",
-                "Vi",
-                "Sa"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Erika Lucero Ramos Meléndez",
-            "horario": "12:00 a 13:00",
-            "dias": [
-              "Lu",
-              "Mi",
-              "Vi"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
       },
       "4109": {
         "grupo": "4109",
@@ -3799,7 +3826,7 @@
       "4364": {
         "grupo": "4364",
         "profesor": {
-          "nombre": "José Antonio Gómez Ortega",
+          "nombre": "Rodrigo Perusquía Cortés",
           "horarios": [
             {
               "horario": "11:00 a 12:00",
@@ -4080,7 +4107,69 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Mixta",
+        "presentacion": null
+      },
+      "4377": {
+        "grupo": "4377",
+        "profesor": {
+          "nombre": "Jorge Alonso Santos Mellado",
+          "horarios": [
+            {
+              "horario": "08:00 a 09:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Mixta",
+        "presentacion": null
+      },
+      "4378": {
+        "grupo": "4378",
+        "profesor": {
+          "nombre": "Luis David Reyes Sáenz",
+          "horarios": [
+            {
+              "horario": "21:00 a 22:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "21:00 a 22:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Mixta",
         "presentacion": null
       }
     },
@@ -4268,7 +4357,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": null
       },
       "9315": {
@@ -4288,7 +4377,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Belen Cruz Montoya",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -4678,37 +4767,6 @@
         "modalidad": "Presencial",
         "presentacion": null
       },
-      "4133": {
-        "grupo": "4133",
-        "profesor": {
-          "nombre": "Alberto León Kushner Schnur",
-          "horarios": [
-            {
-              "horario": "10:00 a 11:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Diego Adrián Barrera Hernández",
-            "horario": "10:00 a 11:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
       "4134": {
         "grupo": "4134",
         "profesor": {
@@ -4738,7 +4796,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374139"
       },
       "4135": {
         "grupo": "4135",
@@ -5078,7 +5136,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Mixta",
         "presentacion": null
       },
       "4146": {
@@ -5100,6 +5158,68 @@
           {
             "nombre": "Brenda Karytza Montiel Ramírez",
             "horario": "21:00 a 22:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Mixta",
+        "presentacion": null
+      },
+      "4373": {
+        "grupo": "4373",
+        "profesor": {
+          "nombre": "Jesús David Carrillo Santamaría",
+          "horarios": [
+            {
+              "horario": "16:00 a 17:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "4374": {
+        "grupo": "4374",
+        "profesor": {
+          "nombre": "Alma Violeta García López",
+          "horarios": [
+            {
+              "horario": "10:00 a 11:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Isvi René Aguilar Sánchez",
+            "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
               "Ju"
@@ -5187,7 +5307,7 @@
       "4149": {
         "grupo": "4149",
         "profesor": {
-          "nombre": "Natalia Bárbara Mantilla Beniers",
+          "nombre": "Tomás Antonio Valencia Pérez",
           "horarios": [
             {
               "horario": "11:00 a 12:00",
@@ -5449,7 +5569,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Teresita Lucila Luna Zaragoza",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -5483,6 +5603,12 @@
           ]
         },
         "ayudantes": [
+          {
+            "nombre": "Natalia Bárbara Mantilla Beniers",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
           {
             "nombre": "Gustavo Sandoval Joya",
             "horario": "12:00 a 13:00",
@@ -5651,7 +5777,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Mixta",
         "presentacion": null
       },
       "4162": {
@@ -6050,7 +6176,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375123"
       },
       "9163": {
         "grupo": "9163",
@@ -6670,39 +6796,8 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Angela Lemus Torres",
             "horario": "10:00 a 11:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
-      "9021": {
-        "grupo": "9021",
-        "profesor": {
-          "nombre": "María Asunción Begoña Fernández Fernández",
-          "horarios": [
-            {
-              "horario": "13:00 a 14:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
               "Ju"
@@ -6900,6 +6995,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374775"
+      },
+      "9317": {
+        "grupo": "9317",
+        "profesor": {
+          "nombre": "Isaías Manuel Ramírez Bañales",
+          "horarios": [
+            {
+              "horario": "13:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -7475,7 +7601,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": null
       },
       "4189": {
@@ -7911,7 +8037,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -8144,37 +8270,6 @@
         "modalidad": "Presencial",
         "presentacion": null
       },
-      "9045": {
-        "grupo": "9045",
-        "profesor": {
-          "nombre": "María Asunción Begoña Fernández Fernández",
-          "horarios": [
-            {
-              "horario": "12:00 a 13:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "12:00 a 13:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
       "9046": {
         "grupo": "9046",
         "profesor": {
@@ -8267,6 +8362,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9318": {
+        "grupo": "9318",
+        "profesor": {
+          "nombre": "Isaías Manuel Ramírez Bañales",
+          "horarios": [
+            {
+              "horario": "12:00 a 13:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -8337,7 +8463,7 @@
       "4206": {
         "grupo": "4206",
         "profesor": {
-          "nombre": "Alberto León Kushner Schnur",
+          "nombre": "Hugo Guadalupe Reyna Castañeda",
           "horarios": [
             {
               "horario": "12:00 a 13:00",
@@ -8351,7 +8477,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Rodrigo Perusquía Cortés",
+            "nombre": null,
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -9333,7 +9459,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374811"
       },
       "9064": {
         "grupo": "9064",
@@ -9365,7 +9491,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374812"
       },
       "9065": {
         "grupo": "9065",
@@ -10156,7 +10282,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jonathan Ramírez Ramírez",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
@@ -10704,7 +10830,7 @@
             "salon": null
           }
         ],
-        "nota": "Asignación sujeta a entrevista.",
+        "nota": null,
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": null
@@ -10859,7 +10985,7 @@
             "salon": null
           }
         ],
-        "nota": "Asignación sujeta a entrevista.",
+        "nota": null,
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": null
@@ -11257,7 +11383,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Humberto Plata Gallegos",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -11871,7 +11997,7 @@
             "salon": null
           }
         ],
-        "nota": "El curso será de 14:00 a 15:00 horas",
+        "nota": null,
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": null
@@ -12367,7 +12493,7 @@
         "ayudantes": [
           {
             "nombre": "Carlos Fernando Vásquez Guerra",
-            "horario": "12:00 a 13:00",
+            "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
               "Ju"
@@ -12375,7 +12501,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 10:00 a 11:00",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -12844,7 +12970,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Héctor Fernando Carrada Rodríguez",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -12853,7 +12979,7 @@
             "salon": null
           }
         ],
-        "nota": "El  horario será de 9:00 a 10:00 h",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -13019,7 +13145,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374873"
       }
     },
     "Legislación en Seguro Privado y Social": {
@@ -13116,37 +13242,6 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
-      },
-      "4290": {
-        "grupo": "4290",
-        "profesor": {
-          "nombre": "Rafael Rojas Barbachano",
-          "horarios": [
-            {
-              "horario": "12:00 a 13:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Naim Nuñez Morales",
-            "horario": "12:00 a 13:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Virtual",
         "presentacion": null
       },
       "4291": {
@@ -13305,37 +13400,6 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
-      },
-      "4296": {
-        "grupo": "4296",
-        "profesor": {
-          "nombre": "María de Lourdes Guerrero Zarco",
-          "horarios": [
-            {
-              "horario": "16:00 a 17:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Víctor Leonardo Castañeda Rivas",
-            "horario": "16:00 a 17:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374314"
       }
     },
     "Lógica Matemática III": {
@@ -14162,7 +14226,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 13:00 a 14:00 h",
+        "nota": "Aprendizaje estadístico automatizado",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -14195,7 +14259,7 @@
         ],
         "nota": "Introducción a la Ciencia de Datos con Spark",
         "salon": null,
-        "modalidad": "Mixta",
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -14226,7 +14290,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 8 a 9 hrs.",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375245"
@@ -14387,7 +14451,7 @@
             "salon": null
           }
         ],
-        "nota": "El horario será de 12:00 a 13:00 h",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -14517,7 +14581,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -14615,6 +14679,37 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4371": {
+        "grupo": "4371",
+        "profesor": {
+          "nombre": "Jonathan Cancino Manríquez",
+          "horarios": [
+            {
+              "horario": "17:00 a 18:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Mixta",
         "presentacion": null
       }
     },
@@ -14812,7 +14907,7 @@
       "4359": {
         "grupo": "4359",
         "profesor": {
-          "nombre": "Jorge Marcos Martínez Montejano",
+          "nombre": "Grissel Santiago González",
           "horarios": [
             {
               "horario": "13:00 a 14:00",
@@ -14826,7 +14921,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Rodrigo Iván Rodríguez Barrera",
+            "nombre": null,
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -14888,7 +14983,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Elie Macario Peña Ruiz",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -14919,7 +15014,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Susana Alejandra Barrera Ávalos",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
