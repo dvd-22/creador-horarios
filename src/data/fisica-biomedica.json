@@ -49,7 +49,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Dailer Rolando Fontisiella Morell",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -142,7 +142,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Cristina Angélica Núñez Rodríguez",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -753,7 +753,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Dianadalia Bernal González",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -1077,7 +1077,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374006"
       },
       "8021": {
         "grupo": "8021",
@@ -2165,7 +2165,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374034"
       },
       "8035": {
         "grupo": "8035",
@@ -2985,7 +2985,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "José Elías Camarillo Sánchez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -3200,7 +3207,20 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Jessica Paola Sánchez Toro",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rafael Mendoza García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
@@ -3326,7 +3346,20 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Ivonne Judith Hernández Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Kenia Lolbeg Juayerk Herrera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -3544,6 +3577,12 @@
           },
           {
             "nombre": "Sergio Enrique Solís Nájera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Oscar Eduardo Morales Toledo",
             "horario": null,
             "dias": [],
             "salon": null
@@ -3848,7 +3887,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374201"
       },
       "8073": {
         "grupo": "8073",
@@ -4559,6 +4598,12 @@
           ]
         },
         "ayudantes": [
+          {
+            "nombre": "Pedro Antonio Quinto Su",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
           {
             "nombre": "Carlos Javier Cureño Ayluardo",
             "horario": null,
@@ -6243,6 +6288,18 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
+        "presentacion": null
+      },
+      "3057": {
+        "grupo": "3057",
+        "profesor": {
+          "nombre": "Marco Antonio Zaragoza Campillo",
+          "horarios": []
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },

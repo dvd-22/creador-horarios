@@ -669,7 +669,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Marco Alejandro Corrales Avalos",
+            "nombre": null,
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -681,7 +681,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373960"
       },
       "4022": {
         "grupo": "4022",
@@ -1280,7 +1280,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Dianadalia Bernal González",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -1604,7 +1604,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374005"
       },
       "4047": {
         "grupo": "4047",
@@ -2130,7 +2130,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374033"
       },
       "4061": {
         "grupo": "4061",
@@ -2895,7 +2895,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Gasde Augusto Hunedy López",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
@@ -3017,7 +3017,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Sebastián Urbina Romo",
             "horario": "13:00 a 15:00",
             "dias": [
               "Ma",
@@ -3724,7 +3724,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Mixta",
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -3969,7 +3969,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375689"
       },
       "4378": {
         "grupo": "4378",
@@ -4021,7 +4021,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Johana Cristal López Hernández",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -4597,37 +4597,6 @@
         "modalidad": "Presencial",
         "presentacion": null
       },
-      "4133": {
-        "grupo": "4133",
-        "profesor": {
-          "nombre": "Alberto León Kushner Schnur",
-          "horarios": [
-            {
-              "horario": "10:00 a 11:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Diego Adrián Barrera Hernández",
-            "horario": "10:00 a 11:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
       "4134": {
         "grupo": "4134",
         "profesor": {
@@ -4843,7 +4812,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374145"
       },
       "4141": {
         "grupo": "4141",
@@ -4997,7 +4966,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Mixta",
         "presentacion": null
       },
       "4146": {
@@ -5019,6 +4988,68 @@
           {
             "nombre": "Brenda Karytza Montiel Ramírez",
             "horario": "21:00 a 22:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Mixta",
+        "presentacion": null
+      },
+      "4373": {
+        "grupo": "4373",
+        "profesor": {
+          "nombre": "Jesús David Carrillo Santamaría",
+          "horarios": [
+            {
+              "horario": "16:00 a 17:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "4374": {
+        "grupo": "4374",
+        "profesor": {
+          "nombre": "Alma Violeta García López",
+          "horarios": [
+            {
+              "horario": "10:00 a 11:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Isvi René Aguilar Sánchez",
+            "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
               "Ju"
@@ -5576,7 +5607,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Mixta",
         "presentacion": null
       },
       "4162": {
@@ -5950,7 +5981,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Ingrid Chávez Cisneros",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -6221,7 +6259,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Eduardo Lince Gómez",
+            "nombre": null,
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -6542,7 +6580,69 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9320": {
+        "grupo": "9320",
+        "profesor": {
+          "nombre": "Rodrigo Iván Rodríguez Barrera",
+          "horarios": [
+            {
+              "horario": "09:00 a 10:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9321": {
+        "grupo": "9321",
+        "profesor": {
+          "nombre": "Eduardo Lince Gómez",
+          "horarios": [
+            {
+              "horario": "16:00 a 17:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -7369,7 +7469,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": null
       },
       "4189": {
@@ -7401,7 +7501,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374200"
       },
       "4190": {
         "grupo": "4190",
@@ -7920,7 +8020,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Guillermo Enrique Hernández Sánchez",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -8024,7 +8124,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     }
@@ -8110,7 +8210,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jeanett Monroy Anzueto",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -9578,7 +9678,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Guillermo Enrique Hernández Sánchez",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -9756,7 +9856,7 @@
       "4370": {
         "grupo": "4370",
         "profesor": {
-          "nombre": null,
+          "nombre": "Víctor Alfonso Vicente Benítez",
           "horarios": [
             {
               "horario": "11:00 a 12:00",
@@ -9779,7 +9879,7 @@
             "salon": null
           }
         ],
-        "nota": "Este grupo estará a cargo del Dr. Víctor Alfonso Vicente Benítez",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -11330,7 +11430,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Francisco Javier Alvarado Cabrera",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -11991,6 +12091,39 @@
         "modalidad": "Presencial",
         "presentacion": null
       }
+    },
+    "Seminario de Probabilidad": {
+      "6024": {
+        "grupo": "6024",
+        "profesor": {
+          "nombre": "Alma Saraí Hernández Torres",
+          "horarios": [
+            {
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Probabilidad en Estructuras Discretas",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
     }
   },
   "Optativas Requeridas": {
@@ -12021,7 +12154,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Este curso no se abrirá.",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -12111,7 +12244,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Alberto Hernández Pérez",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",

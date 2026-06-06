@@ -669,7 +669,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Marco Alejandro Corrales Avalos",
+            "nombre": null,
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -681,7 +681,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373960"
       },
       "4022": {
         "grupo": "4022",
@@ -1261,7 +1261,7 @@
             "salon": null
           }
         ],
-        "nota": "Asignación  sujeta a entrevista.",
+        "nota": null,
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -1399,7 +1399,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ángel Renato Zamudio Malagón",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -1408,7 +1408,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Rodrigo Alejandro Sánchez Morales",
             "horario": "14:00 a 16:00",
             "dias": [
               "Ma",
@@ -1597,7 +1597,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375669"
       }
     }
   },
@@ -2024,7 +2024,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374292"
       },
       "4275": {
         "grupo": "4275",
@@ -2198,7 +2198,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Marco Alejandro Corrales Avalos",
+            "nombre": null,
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -2210,7 +2210,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374298"
       }
     },
     "Matemáticas para las Ciencias Aplicadas II": {
@@ -2833,7 +2833,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374145"
       },
       "4141": {
         "grupo": "4141",
@@ -2987,7 +2987,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Mixta",
         "presentacion": null
       },
       "4146": {
@@ -3574,7 +3574,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Eduardo Lince Gómez",
+            "nombre": null,
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -3895,7 +3895,69 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9320": {
+        "grupo": "9320",
+        "profesor": {
+          "nombre": "Rodrigo Iván Rodríguez Barrera",
+          "horarios": [
+            {
+              "horario": "09:00 a 10:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9321": {
+        "grupo": "9321",
+        "profesor": {
+          "nombre": "Eduardo Lince Gómez",
+          "horarios": [
+            {
+              "horario": "16:00 a 17:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     }
@@ -4441,7 +4503,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ricchy Alain Pérez Chevanier",
             "horario": "14:30 a 15:30",
             "dias": [
               "Ma",
@@ -6426,7 +6488,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },
@@ -7468,7 +7530,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Guillermo Enrique Hernández Sánchez",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -7572,7 +7634,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -7911,7 +7973,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Guillermo Enrique Hernández Sánchez",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -8326,7 +8388,7 @@
             "salon": null
           }
         ],
-        "nota": "Asignación sujeta a entrevista",
+        "nota": "Lógica Difusa",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -8669,12 +8731,18 @@
         },
         "ayudantes": [
           {
-            "nombre": "Sergio Hernández López",
+            "nombre": "Tamara Donají Valencia López",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
               "Ju"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Sergio Hernández López",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -9060,7 +9128,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Alberto Hernández Pérez",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
