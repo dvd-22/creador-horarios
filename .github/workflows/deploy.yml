@@ -14,7 +14,7 @@ jobs:
 
         steps:
             - name: Checkout repo
-              uses: actions/checkout@v4
+              uses: actions/checkout@v5
               with:
                   fetch-depth: 0
 
@@ -24,7 +24,7 @@ jobs:
                   git reset --hard origin/${{ github.ref_name }}
 
             - name: Setup Node
-              uses: actions/setup-node@v4
+              uses: actions/setup-node@v5
 
             - name: Install dependencies
               uses: bahmutov/npm-install@v1
@@ -33,7 +33,7 @@ jobs:
               run: npm run build
 
             - name: Upload production-ready build files
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v5
               with:
                   name: production-files
                   path: ./dist
@@ -46,7 +46,7 @@ jobs:
 
         steps:
             - name: Download artifact
-              uses: actions/download-artifact@v4
+              uses: actions/download-artifact@v5
               with:
                   name: production-files
                   path: ./dist
