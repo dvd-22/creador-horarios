@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-07T10:44:07.508Z",
-  "totalProfessors": 2200,
+  "lastUpdated": "2026-06-07T23:48:23.315Z",
+  "totalProfessors": 2201,
   "ratingsFound": 1290,
   "foundPercentage": 59,
   "ratings": {
@@ -2634,8 +2634,8 @@
     "Elsa Patricia Mendoza Ballesteros": null,
     "Elsa Puente Vázquez": {
       "name": "Elsa Puente Vázquez",
-      "rating": 6,
-      "commentCount": 23,
+      "rating": 6.1,
+      "commentCount": 24,
       "id": "99208",
       "url": "https://www.misprofesores.com/profesores/Elsa-Puente-Vazquez_99208"
     },
@@ -2877,8 +2877,8 @@
     "Erin Christy McKiernan": null,
     "Ernesto Alejandro Vázquez Navarro": {
       "name": "Ernesto Alejandro Vázquez Navarro",
-      "rating": 8.3,
-      "commentCount": 32,
+      "rating": 8.2,
+      "commentCount": 33,
       "id": "36141",
       "url": "https://www.misprofesores.com/profesores/Ernesto-Vazquez-Navarro_36141"
     },
@@ -4540,7 +4540,7 @@
     "Jesús Ángel Núñez Zimbrón": {
       "name": "Jesús Núñez Zimbrón",
       "rating": 8.8,
-      "commentCount": 59,
+      "commentCount": 60,
       "id": "42777",
       "url": "https://www.misprofesores.com/profesores/Jesus-Nuñez-Zimbron_42777"
     },
@@ -5242,7 +5242,7 @@
     "José Roberto Torres Bello": {
       "name": "Jose Roberto Torres Bello",
       "rating": 8.6,
-      "commentCount": 36,
+      "commentCount": 37,
       "id": "135405",
       "url": "https://www.misprofesores.com/profesores/Jose-Torres-Bello_135405"
     },
@@ -7555,6 +7555,7 @@
       "url": "https://www.misprofesores.com/profesores/Mirza-Ortega-Olivares_108279"
     },
     "Misael Salvador Pedraza": null,
+    "Misael Saúl Ávila López": null,
     "Moises Olaf Rosas Tavera": {
       "name": "Moises Olaf Rosas Tavera",
       "rating": 10,
@@ -7936,7 +7937,7 @@
     "Omar de la Riva Torres": {
       "name": "Omar de la Riva Torres",
       "rating": 7.3,
-      "commentCount": 127,
+      "commentCount": 128,
       "id": "64003",
       "url": "https://www.misprofesores.com/profesores/Omar-Riva-Torres_64003"
     },
@@ -8436,7 +8437,7 @@
     "Raúl Rodríguez Barrera": {
       "name": "Raúl Rodriguez Barrera",
       "rating": 9.3,
-      "commentCount": 18,
+      "commentCount": 19,
       "id": "155338",
       "url": "https://www.misprofesores.com/profesores/Raul-Rodriguez-Barrera_155338"
     },
@@ -9149,7 +9150,7 @@
     "Saúl Noé Ramos Sánchez": {
       "name": "Saúl Noé Ramos Sánchez",
       "rating": 7.4,
-      "commentCount": 77,
+      "commentCount": 78,
       "id": "80430",
       "url": "https://www.misprofesores.com/profesores/Saul-Ramos-Sanchez_80430"
     },
@@ -9946,12 +9947,12 @@
     }
   },
   "statistics": {
-    "processed": 2200,
+    "processed": 2201,
     "found": 1290,
-    "notFound": 910,
-    "foundWithFallback": 47,
-    "foundWithMainTemplate": 1243,
-    "keptExisting": 1279,
-    "upgraded": 11
+    "notFound": 911,
+    "foundWithFallback": 46,
+    "foundWithMainTemplate": 1244,
+    "keptExisting": 1283,
+    "upgraded": 7
   }
 }
