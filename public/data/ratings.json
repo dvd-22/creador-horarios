@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-06T21:19:51.772Z",
+  "lastUpdated": "2026-06-07T10:44:07.508Z",
   "totalProfessors": 2200,
   "ratingsFound": 1290,
   "foundPercentage": 59,
@@ -410,7 +410,7 @@
     "Alejandro Reyes Coronado": {
       "name": "Alejandro Reyes Coronado",
       "rating": 8.5,
-      "commentCount": 78,
+      "commentCount": 79,
       "id": "63744",
       "url": "https://www.misprofesores.com/profesores/Alejandro-Reyes-Coronado_63744"
     },
@@ -1150,8 +1150,8 @@
     },
     "Berenice Martínez Barona": {
       "name": "Berenice Martínez Barona",
-      "rating": 6.5,
-      "commentCount": 8,
+      "rating": 6.8,
+      "commentCount": 9,
       "id": "62192",
       "url": "https://www.misprofesores.com/profesores/Berenice-Martinez-Barona_62192"
     },
@@ -1946,7 +1946,7 @@
     "Daniel Cervantes Filoteo": {
       "name": "Daniel Cervantes Filoteo",
       "rating": 8.2,
-      "commentCount": 170,
+      "commentCount": 171,
       "id": "74000",
       "url": "https://www.misprofesores.com/profesores/Daniel-Cervantes-Filoteo_74000"
     },
@@ -2425,7 +2425,7 @@
     "Edith Corina Sáenz Valadez": {
       "name": "Edith Corina Edith Corina Sáenz Valadez",
       "rating": 8.7,
-      "commentCount": 34,
+      "commentCount": 35,
       "id": "95434",
       "url": "https://www.misprofesores.com/profesores/Edith-Saenz-Valadez_95434"
     },
@@ -3537,8 +3537,8 @@
     },
     "Gerardo Avilés Rosas": {
       "name": "Gerardo Avilés Rosas",
-      "rating": 9.1,
-      "commentCount": 96,
+      "rating": 9.2,
+      "commentCount": 97,
       "id": "42955",
       "url": "https://www.misprofesores.com/profesores/Gerardo-Aviles-Rosas_42955"
     },
@@ -4016,7 +4016,7 @@
     "Héctor Méndez Lango": {
       "name": "Héctor Méndez Lango",
       "rating": 8.3,
-      "commentCount": 56,
+      "commentCount": 57,
       "id": "72666",
       "url": "https://www.misprofesores.com/profesores/Hector-Mendez-Lango_72666"
     },
@@ -6209,8 +6209,8 @@
     "Luis Gutiérrez Melgarejo": null,
     "Luis Jesús Turcio Cuevas": {
       "name": "luis jesus turcio cuevas",
-      "rating": 9.4,
-      "commentCount": 52,
+      "rating": 9.5,
+      "commentCount": 53,
       "id": "55970",
       "url": "https://www.misprofesores.com/profesores/Luis-Turcio-Cuevas_55970"
     },
@@ -6280,8 +6280,8 @@
     },
     "Luisa Fernanda Higueras Montaño": {
       "name": "Luisa Fernanda Higueras Montaño",
-      "rating": 7.9,
-      "commentCount": 12,
+      "rating": 8,
+      "commentCount": 13,
       "id": "185554",
       "url": "https://www.misprofesores.com/profesores/Luisa-Higueras-Montaño_185554"
     },
@@ -6817,8 +6817,8 @@
     },
     "Martín Romero Martínez": {
       "name": "Martín Romero Martínez",
-      "rating": 6.3,
-      "commentCount": 35,
+      "rating": 6.1,
+      "commentCount": 37,
       "id": "36119",
       "url": "https://www.misprofesores.com/profesores/Martin-Romero-Martinez_36119"
     },
@@ -7503,7 +7503,7 @@
     "Mindy Yaneli Huerta Pérez": {
       "name": "Mindy Yaneli Huerta Pérez",
       "rating": 8.6,
-      "commentCount": 33,
+      "commentCount": 34,
       "id": "100667",
       "url": "https://www.misprofesores.com/profesores/Mindy-Huerta-Perez_100667"
     },
@@ -9607,7 +9607,7 @@
     "Vinicio Antonio Gómez Gutiérrez": {
       "name": "Vinicio Antonio Gómez Gutiérrez",
       "rating": 8.2,
-      "commentCount": 54,
+      "commentCount": 55,
       "id": "51810",
       "url": "https://www.misprofesores.com/profesores/Vinicio-Gomez-Gutierrez_51810"
     },
@@ -9949,9 +9949,9 @@
     "processed": 2200,
     "found": 1290,
     "notFound": 910,
-    "foundWithFallback": 46,
-    "foundWithMainTemplate": 1244,
-    "keptExisting": 1266,
-    "upgraded": 16
+    "foundWithFallback": 47,
+    "foundWithMainTemplate": 1243,
+    "keptExisting": 1279,
+    "upgraded": 11
   }
 }
