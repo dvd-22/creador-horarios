@@ -836,7 +836,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375691"
       }
     },
     "Cálculo Diferencial e Integral I": {
@@ -7828,6 +7828,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "4383": {
+        "grupo": "4383",
+        "profesor": {
+          "nombre": "César Geovanni Reyes Pérez",
+          "horarios": [
+            {
+              "horario": "11:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -9389,7 +9420,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374922"
       }
     },
     "Introducción a Ciencias de la Computación II": {
@@ -10865,7 +10896,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374260"
       }
     },
     "Análisis de Fourier I": {
@@ -12277,7 +12308,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374631"
       },
       "8310": {
         "grupo": "8310",
@@ -12941,8 +12972,29 @@
               "horario": "12:00 a 14:00",
               "dias": [
                 "Lu",
-                "Ma",
-                "Ju"
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "8441": {
+        "grupo": "8441",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "10:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
               ]
             }
           ]
@@ -17015,7 +17067,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Alfredo López Castillo",
+            "nombre": null,
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -18299,6 +18351,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "María Fernanda Ramírez Ayala",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Luis Daniel Pérez Sámano",
             "horario": null,
             "dias": [],
@@ -18680,7 +18738,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Daniela Colmenares Sierra",
+            "nombre": null,
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -19290,7 +19348,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Adán Carrizales Mancilla",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",

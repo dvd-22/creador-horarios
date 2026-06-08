@@ -5012,6 +5012,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "María Fernanda Ramírez Ayala",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Luis Daniel Pérez Sámano",
             "horario": null,
             "dias": [],
@@ -5755,8 +5761,29 @@
               "horario": "12:00 a 14:00",
               "dias": [
                 "Lu",
-                "Ma",
-                "Ju"
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "8441": {
+        "grupo": "8441",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "10:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
               ]
             }
           ]
@@ -6052,7 +6079,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375095"
       },
       "3047": {
         "grupo": "3047",

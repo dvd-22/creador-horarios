@@ -2086,7 +2086,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374445"
       },
       "8124": {
         "grupo": "8124",
@@ -4137,7 +4137,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374127"
       },
       "4123": {
         "grupo": "4123",
@@ -9047,6 +9047,37 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "4383": {
+        "grupo": "4383",
+        "profesor": {
+          "nombre": "César Geovanni Reyes Pérez",
+          "horarios": [
+            {
+              "horario": "11:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -9559,7 +9590,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Adán Carrizales Mancilla",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -10669,8 +10707,29 @@
               "horario": "12:00 a 14:00",
               "dias": [
                 "Lu",
-                "Ma",
-                "Ju"
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "8441": {
+        "grupo": "8441",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "10:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
               ]
             }
           ]
@@ -11066,7 +11125,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374631"
       },
       "8310": {
         "grupo": "8310",
@@ -11998,7 +12057,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374172"
       },
       "4168": {
         "grupo": "4168",
@@ -14899,7 +14958,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374685"
       }
     },
     "Introducción a los Sistemas Químicos y Biológicos": {
@@ -15106,7 +15165,14 @@
           "nombre": "Dahi Ludim Hernández Roa",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Arturo Reyes Almanza",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -15131,7 +15197,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374694"
       }
     },
     "Seminario de Álgebra B": {
@@ -16283,6 +16349,20 @@
         "nota": "Solitones Ópticos",
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Temas Selectos de Óptica III": {
+      "8442": {
+        "grupo": "8442",
+        "profesor": {
+          "nombre": "Jorge Alberto Peralta Ángeles",
+          "horarios": []
+        },
+        "ayudantes": [],
+        "nota": "Introducción a la fotónica computacional.",
+        "salon": null,
+        "modalidad": "Mixta",
         "presentacion": null
       }
     },

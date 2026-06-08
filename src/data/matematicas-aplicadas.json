@@ -836,7 +836,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375691"
       }
     },
     "Cálculo Diferencial e Integral I": {
@@ -4285,7 +4285,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374127"
       },
       "4123": {
         "grupo": "4123",
@@ -6259,7 +6259,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "César Baltazar Morales Mendoza",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -6740,7 +6740,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374172"
       },
       "4168": {
         "grupo": "4168",
@@ -7801,7 +7801,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Yahir Solares Tenorio",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -9407,6 +9407,37 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4383": {
+        "grupo": "4383",
+        "profesor": {
+          "nombre": "César Geovanni Reyes Pérez",
+          "horarios": [
+            {
+              "horario": "11:00 a 12:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     }
@@ -11333,7 +11364,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Daniela Colmenares Sierra",
+            "nombre": null,
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -11560,7 +11591,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Yahir Solares Tenorio",
+            "nombre": null,
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",

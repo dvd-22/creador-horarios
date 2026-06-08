@@ -1796,7 +1796,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373816"
       }
     }
   },
@@ -2073,34 +2073,6 @@
             "horario": "18:00 a 21:00",
             "dias": [
               "Ma"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
-      "5071": {
-        "grupo": "5071",
-        "profesor": {
-          "nombre": null,
-          "horarios": [
-            {
-              "horario": "18:00 a 21:00",
-              "dias": [
-                "Mi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Juan Carlos Campuzano Caballero",
-            "horario": "18:00 a 21:00",
-            "dias": [
-              "Vi"
             ],
             "salon": null
           }
@@ -3397,7 +3369,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Yasmin Vázquez Santos",
+            "nombre": null,
             "horario": "14:00 a 17:00",
             "dias": [
               "Ma"
@@ -4121,7 +4093,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373893"
       }
     },
     "Introducción a la Oceanografía": {
@@ -4952,7 +4924,7 @@
         "nota": "Biologia celular de las bacterias",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373922"
       },
       "5167": {
         "grupo": "5167",

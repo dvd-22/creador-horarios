@@ -836,7 +836,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375691"
       }
     },
     "Estructuras Discretas": {
@@ -1420,7 +1420,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374921"
       }
     },
     "Matemáticas para las Ciencias Aplicadas I": {
@@ -2306,7 +2306,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374127"
       },
       "4123": {
         "grupo": "4123",
@@ -3574,7 +3574,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "César Baltazar Morales Mendoza",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -5597,7 +5597,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374172"
       },
       "4168": {
         "grupo": "4168",
@@ -7213,7 +7213,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Yahir Solares Tenorio",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -8078,7 +8078,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Daniela Colmenares Sierra",
+            "nombre": null,
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -8194,36 +8194,6 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375019"
-      },
-      "7146": {
-        "grupo": "7146",
-        "profesor": {
-          "nombre": "Sergio Hernández López",
-          "horarios": [
-            {
-              "horario": "17:30 a 19:00",
-              "dias": [
-                "Lu",
-                "Mi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Rafael López Martínez",
-            "horario": "19:00 a 20:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
       }
     },
     "Redes Neuronales": {
@@ -8679,7 +8649,7 @@
         "nota": "Fundamentos y Arquitectura de Motores de Videojuegos 2D en C++ (SDL)",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375035"
       },
       "7179": {
         "grupo": "7179",
@@ -8916,7 +8886,7 @@
         "nota": "Heurísticas de Optimización Combinatoria",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375041"
       },
       "7168": {
         "grupo": "7168",
@@ -9545,7 +9515,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Yahir Solares Tenorio",
+            "nombre": null,
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -9660,7 +9630,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374400"
       }
     }
   }

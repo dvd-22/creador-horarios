@@ -3347,7 +3347,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Juan Carlos Campuzano Caballero",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -6012,7 +6019,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Alin Patricia Acuña Alonzo",
+            "nombre": "Óscar Romero Báez",
             "horario": null,
             "dias": [],
             "salon": null
@@ -6932,7 +6939,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Silvia Guadalupe Zumaya Mendoza",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -8006,7 +8020,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375567"
       },
       "5471": {
         "grupo": "5471",
@@ -8034,7 +8048,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375568"
       },
       "5472": {
         "grupo": "5472",
