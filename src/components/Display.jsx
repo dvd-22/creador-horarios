@@ -498,7 +498,7 @@ const Display = () => {
                         if (newSlot.day === spacerDay &&
                             hasTimeOverlap(newSlot.start, newSlot.end, spacerStart, spacerEnd)) {
                             return {
-                                conflictWith: { subject: spacer.name, group: '(Horario Personal)' },
+                                conflictWith: { subject: spacer.name, group: '(Actividad Personal)' },
                                 day: newSlot.day,
                                 newTime: `${Math.floor(newSlot.start / 60)}:${String(newSlot.start % 60).padStart(2, '0')} - ${Math.floor(newSlot.end / 60)}:${String(newSlot.end % 60).padStart(2, '0')}`,
                                 existingTime: spacerSched.startTime + ' - ' + spacerSched.endTime
@@ -1056,7 +1056,7 @@ const Display = () => {
         // Process each spacer
         for (const spacer of spacers) {
             if (spacerHasConflict(spacer)) {
-                conflicts.add(`${spacer.name} (Horario Personal)`);
+                conflicts.add(`${spacer.name} (Actividad Personal)`);
             } else {
                 spacersToKeep.push(spacer);
             }

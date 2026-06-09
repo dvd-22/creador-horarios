@@ -259,7 +259,7 @@ const SpacerModal = ({ isOpen, onClose, onSave, onDelete, editingSpacer = null }
                 {/* Header */}
                 <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-700">
                     <h2 className="text-lg sm:text-xl font-semibold text-gray-100">
-                        {editingSpacer ? 'Editar Horario Personal' : 'Agregar Horario Personal'}
+                        {editingSpacer ? 'Editar Actividad Personal' : 'Agregar Actividad Personal'}
                     </h2>
                     <button
                         onClick={onClose}
@@ -435,7 +435,7 @@ const SpacerModal = ({ isOpen, onClose, onSave, onDelete, editingSpacer = null }
                         <button
                             onClick={handleDelete}
                             className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg transition-colors flex items-center gap-2"
-                            title="Eliminar horario personal"
+                            title="Eliminar actividad personal"
                         >
                             <Trash2 size={16} />
                         </button>

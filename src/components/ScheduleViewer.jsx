@@ -354,7 +354,7 @@ const ScheduleViewer = ({ selectedGroups, spacers = [], onRemoveGroup, onEditSpa
                                 onRevealGroup(slot.majorId, slot.studyPlanId, slot.semester, slot.subject, slot.group);
                               }
                             }}
-                            title={slot.isSpacer ? "Editar horario personal" : "Ver en selector de materias"}
+                            title={slot.isSpacer ? "Editar actividad personal" : "Ver en selector de materias"}
                           >
                             <div className="flex flex-col h-full overflow-hidden relative">
                               <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate flex-shrink-0 ${slot.isSpacer && !isExport ? 'pr-5' : ''}`}>
@@ -423,7 +423,7 @@ const ScheduleViewer = ({ selectedGroups, spacers = [], onRemoveGroup, onEditSpa
                                       onRevealGroup(slot.majorId, slot.studyPlanId, slot.semester, slot.subject, slot.group);
                                     }
                                   }}
-                                  title={slot.isSpacer ? "Editar horario personal" : "Ver en selector de materias"}
+                                  title={slot.isSpacer ? "Editar actividad personal" : "Ver en selector de materias"}
                                 >
                                   <div className="flex flex-col h-full overflow-hidden relative">
                                     <div className={`font-medium ${isMobile ? 'text-xs' : 'text-xs'} leading-4 text-white truncate flex-shrink-0 ${slot.isSpacer && !isExport ? 'pr-5' : ''}`}>
