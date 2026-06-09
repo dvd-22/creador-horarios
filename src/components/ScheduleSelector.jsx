@@ -98,6 +98,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
     if (filters.startTime || filters.endTime) count++;
     if (filters.blockedHours && filters.blockedHours.length > 0) count++;
     if (filters.modalities && filters.modalities.length < 2) count++;
+    if (filters.excludeAssistants) count++;
     return count;
   }, [filters]);
 
@@ -261,7 +262,8 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
       filters.exactTimes.length === 0 &&
       (!filters.days || filters.days.length === 6) &&
       (!filters.blockedHours || filters.blockedHours.length === 0) &&
-      (!filters.modalities || filters.modalities.length === 2);
+      (!filters.modalities || filters.modalities.length === 2) &&
+      !filters.excludeAssistants;
 
     if (noFiltersApplied) return orderedData;
 
@@ -288,7 +290,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
             ) || false;
 
             let assistantsMatch = true;
-            if (groupData?.ayudantes && groupData.ayudantes.length > 0) {
+            if (!filters.excludeAssistants && groupData?.ayudantes && groupData.ayudantes.length > 0) {
               assistantsMatch = groupData.ayudantes.every(ayudante => {
                 if (!ayudante.horario || !ayudante.dias) return true;
                 const assistantSchedule = {

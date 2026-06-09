@@ -29,6 +29,7 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
     const [selectedDays, setSelectedDays] = useState(['L', 'M', 'I', 'J', 'V', 'S']);
     const [selectedModalities, setSelectedModalities] = useState(['Presencial', 'Virtual']);
     const [blockedHours, setBlockedHours] = useState([]);
+    const [excludeAssistants, setExcludeAssistants] = useState(false);
     const [newBlockStart, setNewBlockStart] = useState(0);
     const [newBlockEnd, setNewBlockEnd] = useState(1);
 
@@ -65,6 +66,8 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
             } else {
                 setSelectedModalities(['Presencial', 'Virtual']);
             }
+
+            setExcludeAssistants(Boolean(filters.excludeAssistants));
         }
     }, [isOpen, filters]);
 
@@ -161,7 +164,8 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
             exactTimes: [],
             days: selectedDays,
             blockedHours: blockedHours,
-            modalities: selectedModalities
+            modalities: selectedModalities,
+            excludeAssistants
         });
         onClose();
     };
@@ -173,6 +177,7 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
         setSelectedDays(['L', 'M', 'I', 'J', 'V', 'S']);
         setSelectedModalities(['Presencial', 'Virtual']);
         setBlockedHours([]);
+        setExcludeAssistants(false);
 
         // Apply cleared filters
         onApplyFilters({
@@ -182,7 +187,8 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
             exactTimes: [],
             days: ['L', 'M', 'I', 'J', 'V', 'S'],
             blockedHours: [],
-            modalities: ['Presencial', 'Virtual']
+            modalities: ['Presencial', 'Virtual'],
+            excludeAssistants: false
         });
         // Don't close the modal
     }; if (!isOpen) return null;
@@ -212,9 +218,10 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
                 <div className="px-4 sm:px-6 pt-4 pb-2 border-b border-gray-700 bg-gray-900/50">
                     <div className="bg-blue-900/20 border border-blue-700/50 rounded-lg p-3">
                         <p className="text-xs text-blue-200">
+                            {excludeAssistants ? 'Se mostrarán solo horarios de profesores que ' : 'Se mostrarán clases que '}
                             {selectedDays.length === 6 ? (
                                 <>
-                                    Se mostrarán clases que se impartan todos los días de {HOURS[startIndex]} a {HOURS[endIndex]}
+                                    se impartan todos los días de {HOURS[startIndex]} a {HOURS[endIndex]}
                                     {blockedHours.length > 0 && (
                                         <> excepto de {blockedHours.map((block, index) => {
                                             if (index === blockedHours.length - 1 && blockedHours.length > 1) {
@@ -229,7 +236,7 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
                                 </>
                             ) : (
                                 <>
-                                    Se mostrarán clases que se impartan el{' '}
+                                    se impartan el{' '}
                                     {selectedDays.map((dayId, index) => {
                                         const day = DAYS.find(d => d.id === dayId);
                                         const dayLabel = day?.label.toLowerCase() || dayId;
@@ -257,6 +264,29 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
 
                 {/* Content */}
                 <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-4 sm:space-y-6">
+                    {/* Assistant Filter Toggle */}
+                    <div>
+                        <button
+                            type="button"
+                            onClick={() => setExcludeAssistants(prev => !prev)}
+                            className={`w-full flex items-center justify-between gap-3 px-3 py-3 rounded-lg border transition-colors text-left ${excludeAssistants
+                                ? 'bg-blue-600/20 border-blue-500 text-blue-100'
+                                : 'bg-gray-700 border-gray-600 text-gray-200 hover:bg-gray-600'
+                                }`}
+                            aria-pressed={excludeAssistants}
+                        >
+                            <div>
+                                <div className="text-sm font-medium">Excluir ayudantes del filtro</div>
+                                <div className="text-xs text-gray-400">
+                                    El rango de horas solo se aplica al horario del profesor
+                                </div>
+                            </div>
+                            <div className={`w-11 h-6 rounded-full p-1 transition-colors ${excludeAssistants ? 'bg-blue-500' : 'bg-gray-500'}`}>
+                                <div className={`w-4 h-4 rounded-full bg-white transition-transform ${excludeAssistants ? 'translate-x-5' : 'translate-x-0'}`} />
+                            </div>
+                        </button>
+                    </div>
+
                     {/* Day Toggles */}
                     <div>
                         <label className="block text-sm font-medium text-gray-300 mb-3">
