@@ -71,7 +71,7 @@
       "5002": {
         "grupo": "5002",
         "profesor": {
-          "nombre": "Enrique Macario Herrera Medina",
+          "nombre": "Gethsemany García Guerrero",
           "horarios": [
             {
               "horario": "14:30 a 17:30",
@@ -1107,7 +1107,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Dafne Estefany Bonilla Cerquedo",
+            "nombre": "Teresa Antonia Meléndez Victoria",
             "horario": "14:30 a 17:30",
             "dias": [
               "Lu"
@@ -5176,6 +5176,34 @@
           }
         ],
         "nota": "Biología de plantas epífitas",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "5485": {
+        "grupo": "5485",
+        "profesor": {
+          "nombre": "Saraí Montes Recinas",
+          "horarios": [
+            {
+              "horario": "17:30 a 20:30",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "17:30 a 20:30",
+            "dias": [
+              "Lu"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Producción de especies en vivero con fines de reforestación",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null

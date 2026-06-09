@@ -61,7 +61,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374403"
       },
       "8083": {
         "grupo": "8083",
@@ -92,7 +92,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374405"
       },
       "8085": {
         "grupo": "8085",
@@ -438,7 +438,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Aldo Jahir Hernández Palacios",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -1031,7 +1031,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374003"
       },
       "4046": {
         "grupo": "4046",
@@ -1627,7 +1627,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374426"
       },
       "8105": {
         "grupo": "8105",
@@ -1835,6 +1835,26 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "8444": {
+        "grupo": "8444",
+        "profesor": {
+          "nombre": "Omar Vázquez Rueda",
+          "horarios": [
+            {
+              "horario": "15:30 a 17:00",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     },
@@ -2577,7 +2597,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374047"
       },
       "4068": {
         "grupo": "4068",
@@ -3888,7 +3908,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374457"
       }
     },
     "Mecánica Vectorial": {
@@ -4385,7 +4405,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374135"
       },
       "4131": {
         "grupo": "4131",
@@ -4416,7 +4436,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374136"
       },
       "4132": {
         "grupo": "4132",
@@ -4850,7 +4870,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374151"
       },
       "4373": {
         "grupo": "4373",
@@ -6910,7 +6930,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Araceli León Estrada",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -7015,7 +7035,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374196"
       },
       "4188": {
         "grupo": "4188",
@@ -8500,6 +8520,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "María Fernanda Ramírez Ayala",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Luis Daniel Pérez Sámano",
             "horario": null,
             "dias": [],
@@ -9188,7 +9214,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374549"
       },
       "8229": {
         "grupo": "8229",
@@ -10368,7 +10394,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374604"
       },
       "8283": {
         "grupo": "8283",
@@ -12369,7 +12395,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374218"
       },
       "4201": {
         "grupo": "4201",
@@ -13121,7 +13147,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374227"
       },
       "4210": {
         "grupo": "4210",
@@ -13140,7 +13166,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Sergio Jorge Rodríguez Sánchez",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
@@ -13586,7 +13612,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374659"
       }
     },
     "Dinámica del Clima": {
@@ -14290,7 +14316,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Victor Jesús Segundo Gutiérrez",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -14775,7 +14801,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374677"
       }
     },
     "Introducción a la Física de Radiaciones": {
@@ -14939,7 +14965,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374684"
       },
       "8363": {
         "grupo": "8363",
@@ -15289,10 +15315,10 @@
             "salon": null
           }
         ],
-        "nota": "Matroides",
+        "nota": "Teoría de Matroides",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375699"
       }
     },
     "Seminario de Geometría B": {
@@ -15687,7 +15713,7 @@
         "nota": "Cambio Climático",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374703"
       },
       "8382": {
         "grupo": "8382",
@@ -15699,6 +15725,20 @@
         "nota": "Física de Nubes",
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Temas Selectos de Ciencias de la Tierra II": {
+      "8445": {
+        "grupo": "8445",
+        "profesor": {
+          "nombre": "Mónica Borunda Pacheco",
+          "horarios": []
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     },
@@ -15732,7 +15772,7 @@
         "nota": "Instrumentación y control con LabVIEW",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375701"
       }
     },
     "Temas Selectos de Estado Sólido I": {
@@ -15888,7 +15928,7 @@
         "nota": "El curso se impartirá en el salón 111 del Instituto de Física",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375671"
       }
     },
     "Temas Selectos de Física de Materiales I": {
@@ -16024,6 +16064,26 @@
         "nota": "Curso de Introducción a la Teoría Cuántica de Campos I",
         "salon": null,
         "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "8443": {
+        "grupo": "8443",
+        "profesor": {
+          "nombre": "Omar Vázquez Rueda",
+          "horarios": [
+            {
+              "horario": "11:00 a 12:30",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": "Física de iones pesados en el experimento ALICE del LHC",
+        "salon": null,
+        "modalidad": null,
         "presentacion": null
       }
     },

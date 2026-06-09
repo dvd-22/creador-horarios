@@ -1843,7 +1843,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375344"
       },
       "5248": {
         "grupo": "5248",
@@ -4216,7 +4216,7 @@
       "5333": {
         "grupo": "5333",
         "profesor": {
-          "nombre": "Yasmin Vázquez Santos",
+          "nombre": "Maira Sarai Montejo Cruz",
           "horarios": [
             {
               "horario": "07:30 a 10:30",
@@ -4266,7 +4266,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Maira Sarai Montejo Cruz",
+            "nombre": "Felipe Campos Cerda",
             "horario": null,
             "dias": [],
             "salon": null
@@ -4457,7 +4457,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Felipe Campos Cerda",
+            "nombre": "Daniela Abigail Guzmán Ramírez",
             "horario": null,
             "dias": [],
             "salon": null
@@ -5209,7 +5209,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375465"
       },
       "5369": {
         "grupo": "5369",
@@ -6372,7 +6372,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Cinthia Rocío Juárez Tapia",
+            "nombre": "Perla Eugenia Ugalde Muñiz",
             "horario": null,
             "dias": [],
             "salon": null
@@ -7335,7 +7335,7 @@
       "5446": {
         "grupo": "5446",
         "profesor": {
-          "nombre": "Evelia Lorena Coss Navarrete",
+          "nombre": "Olga Andrea Hernández Miranda",
           "horarios": [
             {
               "horario": "07:30 a 10:30",
@@ -7448,7 +7448,7 @@
       "5450": {
         "grupo": "5450",
         "profesor": {
-          "nombre": "Betsy Anaid Peña Ocaña",
+          "nombre": "Raquel Cossio Ramírez",
           "horarios": [
             {
               "horario": "09:00 a 12:00",
@@ -7653,7 +7653,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Betsy Anaid Peña Ocaña",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",

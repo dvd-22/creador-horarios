@@ -61,7 +61,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374404"
       },
       "8084": {
         "grupo": "8084",
@@ -92,7 +92,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374406"
       },
       "8086": {
         "grupo": "8086",
@@ -438,7 +438,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Aldo Jahir Hernández Palacios",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -1031,7 +1031,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374004"
       },
       "8020": {
         "grupo": "8020",
@@ -2382,7 +2382,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374048"
       },
       "8042": {
         "grupo": "8042",
@@ -3429,7 +3429,20 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Patricia Salas Casales",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Emilio Izcoatl Guerrero Cruz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -3720,7 +3733,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Araceli León Estrada",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -3825,7 +3838,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374197"
       },
       "8071": {
         "grupo": "8071",
@@ -5928,7 +5941,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375079"
       }
     },
     "Dinámica de Biofluidos": {
@@ -6015,7 +6028,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375090"
       },
       "3042": {
         "grupo": "3042",
