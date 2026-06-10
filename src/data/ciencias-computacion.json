@@ -576,7 +576,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Gabriel Ocelotl Salazar Cruz",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -894,7 +894,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Fernando Cruz Pineda",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -903,7 +903,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Ramsés Antonio López Soto",
             "horario": "12:00 a 14:00",
             "dias": [
               "Vi"
@@ -970,7 +970,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Gilberto Barranco Sánchez",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -979,7 +979,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "José Canek García Aguilar",
             "horario": "12:00 a 14:00",
             "dias": [
               "Vi"
@@ -1478,7 +1478,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374925"
       },
       "7053": {
         "grupo": "7053",
@@ -1593,7 +1593,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Juan Carlos Alva Pacheco",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -1682,7 +1689,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Emma Turrubiartes Avila",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -3424,20 +3431,20 @@
             {
               "horario": "09:00 a 10:00",
               "dias": [
-                "Lu",
+                "Ma",
                 "Mi",
-                "Vi"
+                "Ju"
               ]
             }
           ]
         },
         "ayudantes": [
           {
-            "nombre": "Jorge Emiliano Alvarez Gil Leyva",
+            "nombre": "Sebastian Rosas Ayala",
             "horario": "09:00 a 10:00",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Vi"
             ],
             "salon": null
           }
@@ -4874,7 +4881,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Manuel Martínez Damaso",
             "horario": "16:00 a 17:00",
             "dias": [
               "Lu",
@@ -4883,7 +4890,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Zaide Esther Aguilar Valenzuela",
             "horario": "14:00 a 16:00",
             "dias": [
               "Lu"
@@ -5083,7 +5090,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Adrián Martínez Manzo",
             "horario": "14:00 a 16:00",
             "dias": [
               "Ju"
@@ -8844,12 +8851,18 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Yessica Martínez Reyes",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
               "Ju"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "César Hernández Solís",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -8875,12 +8888,18 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Yessica Martínez Reyes",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
               "Ju"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "César Hernández Solís",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],

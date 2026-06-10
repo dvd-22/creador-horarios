@@ -1424,7 +1424,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "José Juan Zacarías",
             "horario": "18:00 a 19:00",
             "dias": [
               "Lu",
@@ -2227,7 +2227,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374038"
       },
       "8037": {
         "grupo": "8037",
@@ -3493,6 +3493,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "Hugo Leonardo González Domínguez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Juan Pablo Sánchez Soriano",
             "horario": null,
             "dias": [],
@@ -3857,7 +3863,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Arturo Alonso Santaella Ortega",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
@@ -5106,7 +5112,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Yassar Emanuel Pérez Evaristo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -5162,6 +5175,12 @@
           ]
         },
         "ayudantes": [
+          {
+            "nombre": "Nadia Estefania Álvarez Chávez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
           {
             "nombre": "Alexander Pérez Degante",
             "horario": null,

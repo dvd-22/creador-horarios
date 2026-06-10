@@ -576,7 +576,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Gabriel Ocelotl Salazar Cruz",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -1951,7 +1951,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "José Juan Zacarías",
             "horario": "18:00 a 19:00",
             "dias": [
               "Lu",
@@ -2192,7 +2192,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374037"
       },
       "4063": {
         "grupo": "4063",
@@ -2864,7 +2864,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Boris Uriel Belmont Ceballos",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
@@ -3114,7 +3114,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Emma Turrubiartes Avila",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -4114,7 +4114,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Julio César Clemente González",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -4126,7 +4126,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375112"
       },
       "9153": {
         "grupo": "9153",
@@ -6041,7 +6041,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375124"
       },
       "9164": {
         "grupo": "9164",
@@ -6095,20 +6095,20 @@
             {
               "horario": "09:00 a 10:00",
               "dias": [
-                "Lu",
+                "Ma",
                 "Mi",
-                "Vi"
+                "Ju"
               ]
             }
           ]
         },
         "ayudantes": [
           {
-            "nombre": "Jorge Emiliano Alvarez Gil Leyva",
+            "nombre": "Sebastian Rosas Ayala",
             "horario": "09:00 a 10:00",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Vi"
             ],
             "salon": null
           }
@@ -6116,7 +6116,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374760"
       },
       "9013": {
         "grupo": "9013",
@@ -7458,7 +7458,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Arturo Alonso Santaella Ortega",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
@@ -8294,9 +8294,9 @@
             {
               "horario": "12:00 a 13:00",
               "dias": [
-                "Lu",
+                "Ma",
                 "Mi",
-                "Vi"
+                "Ju"
               ]
             }
           ]
@@ -8306,8 +8306,8 @@
             "nombre": "Sebastian Rosas Ayala",
             "horario": "12:00 a 13:00",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Vi"
             ],
             "salon": null
           }
@@ -8834,7 +8834,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Enrique Reyes Romero",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -9283,7 +9283,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374244"
       },
       "4227": {
         "grupo": "4227",
@@ -10476,7 +10476,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374974"
       },
       "7102": {
         "grupo": "7102",
@@ -11119,6 +11119,31 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375251"
+      }
+    },
+    "Solución Numérica de Ecuaciones Diferenciales Parciales": {
+      "6026": {
+        "grupo": "6026",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu",
+                "Ma",
+                "Mi",
+                "Ju",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Teoría de Gráficas": {
@@ -11967,7 +11992,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375232"
       }
     },
     "Modelos no Paramétricos y de Regresión": {
