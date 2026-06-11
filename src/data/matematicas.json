@@ -185,7 +185,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373944"
       },
       "4006": {
         "grupo": "4006",
@@ -3944,7 +3944,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375624"
       }
     },
     "Geometría Analítica II": {
@@ -4415,7 +4415,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374132"
       },
       "4128": {
         "grupo": "4128",
@@ -9329,7 +9329,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374916"
       },
       "7044": {
         "grupo": "7044",
@@ -9641,7 +9641,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Patricio Ordóñez Blanco",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -9650,7 +9650,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Karyme Ivette Azpeitia García",
             "horario": "12:00 a 14:00",
             "dias": [
               "Vi"
@@ -12852,7 +12852,20 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Xareni Durán Ramírez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Eduardo López Lima",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -13011,7 +13024,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Manuel Emiliano Monreal Cancino",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": null,
@@ -13181,7 +13201,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jesús Santiago Ramírez Gómez",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -15377,7 +15397,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374380"
       },
       "4363": {
         "grupo": "4363",
@@ -17705,7 +17725,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Ernesto Yahir Rivera Hernández",
             "horario": "14:00 a 16:00",
             "dias": [
               "Mi"
@@ -18299,6 +18319,12 @@
           ]
         },
         "ayudantes": [
+          {
+            "nombre": "Martín Jiménez Rodríguez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
           {
             "nombre": "Osvaldo Ponce Hernández",
             "horario": null,

@@ -2039,7 +2039,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375625"
       }
     },
     "Geometría Analítica I": {
@@ -3408,7 +3408,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "David Nuñez de Jesus",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -3562,6 +3569,12 @@
             "salon": null
           },
           {
+            "nombre": "Edgar Adán Jiménez Díaz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Giselle Alejandra Román Chong",
             "horario": null,
             "dias": [],
@@ -3576,26 +3589,18 @@
       "3011": {
         "grupo": "3011",
         "profesor": {
-          "nombre": "Edgar Adán Jiménez Díaz",
-          "horarios": [
-            {
-              "horario": "11:00 a 14:00",
-              "dias": [
-                "Ma",
-                "Ju"
-              ]
-            }
-          ]
+          "nombre": "José Eduardo Chairez Veloz",
+          "horarios": []
         },
         "ayudantes": [
           {
-            "nombre": "José Eduardo Chairez Veloz",
+            "nombre": "Sergio Enrique Solís Nájera",
             "horario": null,
             "dias": [],
             "salon": null
           },
           {
-            "nombre": "Sergio Enrique Solís Nájera",
+            "nombre": "Miguel Adán Jáurez Martínez",
             "horario": null,
             "dias": [],
             "salon": null
@@ -3616,15 +3621,7 @@
         "grupo": "3012",
         "profesor": {
           "nombre": "Osvaldo Uriel Calderón Dorantes",
-          "horarios": [
-            {
-              "horario": "15:00 a 18:00",
-              "dias": [
-                "Ma",
-                "Ju"
-              ]
-            }
-          ]
+          "horarios": []
         },
         "ayudantes": [
           {
@@ -4947,6 +4944,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "Martín Jiménez Rodríguez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Osvaldo Ponce Hernández",
             "horario": null,
             "dias": [],
@@ -5640,7 +5643,20 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Xareni Durán Ramírez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Eduardo López Lima",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -5799,7 +5815,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Manuel Emiliano Monreal Cancino",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": null,

@@ -185,7 +185,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373944"
       },
       "4006": {
         "grupo": "4006",
@@ -856,7 +856,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Patricio Ordóñez Blanco",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -865,7 +865,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Karyme Ivette Azpeitia García",
             "horario": "12:00 a 14:00",
             "dias": [
               "Vi"
@@ -1303,7 +1303,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374915"
       },
       "7043": {
         "grupo": "7043",
@@ -2468,7 +2468,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374132"
       },
       "4128": {
         "grupo": "4128",
@@ -4326,7 +4326,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374974"
       },
       "7102": {
         "grupo": "7102",
@@ -4770,7 +4770,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Ernesto Yahir Rivera Hernández",
             "horario": "14:00 a 16:00",
             "dias": [
               "Mi"
@@ -5573,7 +5573,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Cinthya Paola Palafox García",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -6617,7 +6617,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375016"
       }
     },
     "Estadística I": {
@@ -7876,7 +7876,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jesús Santiago Ramírez Gómez",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -8051,7 +8051,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375018"
       }
     },
     "Programación Entera": {
@@ -8456,7 +8456,7 @@
         "nota": "Modelación y simulación computacional basada en agentes",
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375028"
       },
       "7155": {
         "grupo": "7155",
@@ -8616,6 +8616,12 @@
               "Ma",
               "Ju"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Sergio Mejía Caballero",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -8968,7 +8974,7 @@
         "nota": "Estructuras de Datos Avanzadas",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375042"
       },
       "7169": {
         "grupo": "7169",

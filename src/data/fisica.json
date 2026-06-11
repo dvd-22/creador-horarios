@@ -1549,7 +1549,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "José Antonio López Aranda",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -3783,7 +3790,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Samuel Puente Mancilla",
             "horario": "11:00 a 14:00",
             "dias": [
               "Lu",
@@ -3855,7 +3862,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374455"
       },
       "8134": {
         "grupo": "8134",
@@ -4319,7 +4326,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374132"
       },
       "4128": {
         "grupo": "4128",
@@ -5935,7 +5942,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "David Nuñez de Jesus",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -6443,7 +6457,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Oscar Arturo Romero Flores",
             "horario": "18:00 a 21:00",
             "dias": [
               "Lu",
@@ -8462,6 +8476,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "Martín Jiménez Rodríguez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Osvaldo Ponce Hernández",
             "horario": null,
             "dias": [],
@@ -9554,7 +9574,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374563"
       },
       "8242": {
         "grupo": "8242",
@@ -11116,7 +11136,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Andrés Álvarez Cid",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -11739,6 +11766,12 @@
               "Lu",
               "Mi"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Hannia Lizbeth Pérez Vargas",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -16831,7 +16864,14 @@
           "nombre": "Ana Gabriela Flores Delgado",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Cristo Igor Vázquez Mota",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -16868,7 +16908,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374380"
       },
       "4363": {
         "grupo": "4363",

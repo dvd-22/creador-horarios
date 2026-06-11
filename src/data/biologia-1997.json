@@ -2584,7 +2584,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373845"
       },
       "5090": {
         "grupo": "5090",
@@ -3671,6 +3671,42 @@
             "horario": "14:30 a 17:30",
             "dias": [
               "Ma"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Epigenética": {
+      "5486": {
+        "grupo": "5486",
+        "profesor": {
+          "nombre": "Rodrigo González Barrios de la Parra",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Marco Antonio Espina Ordoñez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": null,
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Vi"
             ],
             "salon": null
           }
@@ -5269,7 +5305,7 @@
       "5178": {
         "grupo": "5178",
         "profesor": {
-          "nombre": "Ximena Delgado Villegas",
+          "nombre": "Stefania Galván Romero",
           "horarios": [
             {
               "horario": "14:30 a 17:30",
