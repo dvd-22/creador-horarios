@@ -86,7 +86,7 @@ const SelectedGroupsPanel = ({
         ) {
           try {
             const result = await professorRatingService.getProfessorRating(
-              group.professor.nombre
+              group.professor.nombre,
             );
             if (result) {
               ratings[group.professor.nombre] = result;
@@ -95,7 +95,7 @@ const SelectedGroupsPanel = ({
             console.error(
               "Error fetching rating for",
               group.professor.nombre,
-              error
+              error,
             );
           }
         }
@@ -167,7 +167,7 @@ const SelectedGroupsPanel = ({
       uniqueSubjects.map((subject, index) => [
         subject,
         colorPalette[index % colorPalette.length],
-      ])
+      ]),
     );
   }, [selectedGroups, colorPalette]);
 
@@ -252,13 +252,13 @@ const SelectedGroupsPanel = ({
                 Math.floor(timeRange.start / 60),
                 timeRange.start % 60,
                 0,
-                0
+                0,
               );
               endDateTime.setHours(
                 Math.floor(timeRange.end / 60),
                 timeRange.end % 60,
                 0,
-                0
+                0,
               );
 
               events.push({
@@ -272,8 +272,8 @@ const SelectedGroupsPanel = ({
                   startDateTime.getHours(),
                   startDateTime.getMinutes(),
                 ],
-                startInputType: 'local',
-                startOutputType: 'utc',
+                startInputType: "local",
+                startOutputType: "utc",
                 end: [
                   endDateTime.getFullYear(),
                   endDateTime.getMonth() + 1,
@@ -281,8 +281,8 @@ const SelectedGroupsPanel = ({
                   endDateTime.getHours(),
                   endDateTime.getMinutes(),
                 ],
-                endInputType: 'local',
-                endOutputType: 'utc',
+                endInputType: "local",
+                endOutputType: "utc",
                 location: group.salon || group.modalidad || "",
                 categories: [group.subject],
                 status: "CONFIRMED",
@@ -311,13 +311,13 @@ const SelectedGroupsPanel = ({
                 Math.floor(timeRange.start / 60),
                 timeRange.start % 60,
                 0,
-                0
+                0,
               );
               endDateTime.setHours(
                 Math.floor(timeRange.end / 60),
                 timeRange.end % 60,
                 0,
-                0
+                0,
               );
 
               events.push({
@@ -330,8 +330,8 @@ const SelectedGroupsPanel = ({
                   startDateTime.getHours(),
                   startDateTime.getMinutes(),
                 ],
-                startInputType: 'local',
-                startOutputType: 'utc',
+                startInputType: "local",
+                startOutputType: "utc",
                 end: [
                   endDateTime.getFullYear(),
                   endDateTime.getMonth() + 1,
@@ -339,8 +339,8 @@ const SelectedGroupsPanel = ({
                   endDateTime.getHours(),
                   endDateTime.getMinutes(),
                 ],
-                endInputType: 'local',
-                endOutputType: 'utc',
+                endInputType: "local",
+                endOutputType: "utc",
                 location: assistant.salon || "",
                 categories: [group.subject],
                 status: "CONFIRMED",
@@ -358,15 +358,19 @@ const SelectedGroupsPanel = ({
       const dayOffsets = { L: 0, M: 1, I: 2, J: 3, V: 4, S: 5 };
 
       // Handle both old format (single schedule) and new format (multiple schedules)
-      const spacerSchedules = spacer.schedules || [{
-        days: spacer.days,
-        startTime: spacer.startTime,
-        endTime: spacer.endTime,
-        location: spacer.location
-      }];
+      const spacerSchedules = spacer.schedules || [
+        {
+          days: spacer.days,
+          startTime: spacer.startTime,
+          endTime: spacer.endTime,
+          location: spacer.location,
+        },
+      ];
 
       spacerSchedules.forEach((schedule) => {
-        const timeRange = parseTimeString(`${schedule.startTime} a ${schedule.endTime}`);
+        const timeRange = parseTimeString(
+          `${schedule.startTime} a ${schedule.endTime}`,
+        );
 
         if (timeRange && schedule.days) {
           schedule.days.forEach((day) => {
@@ -382,13 +386,13 @@ const SelectedGroupsPanel = ({
                 Math.floor(timeRange.start / 60),
                 timeRange.start % 60,
                 0,
-                0
+                0,
               );
               endDateTime.setHours(
                 Math.floor(timeRange.end / 60),
                 timeRange.end % 60,
                 0,
-                0
+                0,
               );
 
               events.push({
@@ -401,8 +405,8 @@ const SelectedGroupsPanel = ({
                   startDateTime.getHours(),
                   startDateTime.getMinutes(),
                 ],
-                startInputType: 'local',
-                startOutputType: 'utc',
+                startInputType: "local",
+                startOutputType: "utc",
                 end: [
                   endDateTime.getFullYear(),
                   endDateTime.getMonth() + 1,
@@ -410,8 +414,8 @@ const SelectedGroupsPanel = ({
                   endDateTime.getHours(),
                   endDateTime.getMinutes(),
                 ],
-                endInputType: 'local',
-                endOutputType: 'utc',
+                endInputType: "local",
+                endOutputType: "utc",
                 location: schedule.location || "",
                 categories: [spacer.name],
                 status: "CONFIRMED",
@@ -695,55 +699,57 @@ const SelectedGroupsPanel = ({
           )}
 
           {/* Clear Confirmation Modal */}
-          {showClearModal && createPortal(
-            <div
-              className="fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/50 backdrop-blur-sm"
-              onClick={() => setShowClearModal(false)}
-            >
+          {showClearModal &&
+            createPortal(
               <div
-                className="bg-gray-800 rounded-lg shadow-xl w-full max-w-md border border-gray-700"
-                onClick={(e) => e.stopPropagation()}
-                onTouchEnd={(e) => e.stopPropagation()}
+                className="fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/50 backdrop-blur-sm"
+                onClick={() => setShowClearModal(false)}
               >
-                {/* Header */}
-                <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-700">
-                  <h2 className="text-lg sm:text-xl font-semibold text-gray-100">
-                    Limpiar horario
-                  </h2>
-                  <button
-                    onClick={() => setShowClearModal(false)}
-                    className="p-1 hover:bg-gray-700 rounded transition-colors text-gray-400 hover:text-gray-100 flex items-center justify-center"
-                    aria-label="Cerrar"
-                  >
-                    <X size={20} />
-                  </button>
-                </div>
-
-                {/* Content */}
-                <div className="p-4 sm:p-6">
-                  <p className="text-gray-300 text-sm mb-6">
-                    ¿Estás seguro de que quieres eliminar todas las {selectedGroups.length} materias seleccionadas?
-                  </p>
-
-                  <div className="flex gap-3">
+                <div
+                  className="bg-gray-800 rounded-lg shadow-xl w-full max-w-md border border-gray-700"
+                  onClick={(e) => e.stopPropagation()}
+                  onTouchEnd={(e) => e.stopPropagation()}
+                >
+                  {/* Header */}
+                  <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-700">
+                    <h2 className="text-lg sm:text-xl font-semibold text-gray-100">
+                      Limpiar horario
+                    </h2>
                     <button
                       onClick={() => setShowClearModal(false)}
-                      className="flex-1 bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-lg transition-colors"
+                      className="p-1 hover:bg-gray-700 rounded transition-colors text-gray-400 hover:text-gray-100 flex items-center justify-center"
+                      aria-label="Cerrar"
                     >
-                      Cancelar
-                    </button>
-                    <button
-                      onClick={handleConfirmClear}
-                      className="flex-1 bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-lg transition-colors"
-                    >
-                      Limpiar
+                      <X size={20} />
                     </button>
                   </div>
+
+                  {/* Content */}
+                  <div className="p-4 sm:p-6">
+                    <p className="text-gray-300 text-sm mb-6">
+                      ¿Estás seguro de que quieres eliminar todas las{" "}
+                      {selectedGroups.length} materias seleccionadas?
+                    </p>
+
+                    <div className="flex gap-3">
+                      <button
+                        onClick={() => setShowClearModal(false)}
+                        className="flex-1 bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-lg transition-colors"
+                      >
+                        Cancelar
+                      </button>
+                      <button
+                        onClick={handleConfirmClear}
+                        className="flex-1 bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-lg transition-colors"
+                      >
+                        Limpiar
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>,
-            document.body
-          )}
+              </div>,
+              document.body,
+            )}
         </>
       );
     }
@@ -781,7 +787,7 @@ const SelectedGroupsPanel = ({
                           group.studyPlanId,
                           group.semester,
                           group.subject,
-                          group.group
+                          group.group,
                         )
                       }
                       className="text-gray-400 hover:text-gray-300 ml-1 transition-colors"
@@ -802,15 +808,15 @@ const SelectedGroupsPanel = ({
                             window.open(
                               ratingData.url,
                               "_blank",
-                              "noopener,noreferrer"
+                              "noopener,noreferrer",
                             );
                           }
                         }}
                         className={`text-white text-[10px] h-4 px-1 flex items-center justify-center flex-shrink-0 rounded font-medium ${professorRatings[group.professor.nombre]?.rating
-                          ? professorRatingService.getRatingBgColor(
-                            professorRatings[group.professor.nombre].rating
-                          )
-                          : "bg-gray-600"
+                            ? professorRatingService.getRatingBgColor(
+                              professorRatings[group.professor.nombre].rating,
+                            )
+                            : "bg-gray-600"
                           }`}
                         title={
                           professorRatings[group.professor.nombre]?.rating
@@ -830,7 +836,7 @@ const SelectedGroupsPanel = ({
                           window.open(
                             group.presentacion,
                             "_blank",
-                            "noopener,noreferrer"
+                            "noopener,noreferrer",
                           )
                         }
                         className="bg-blue-600 hover:bg-blue-700 text-white text-xs h-4 w-4 flex items-center justify-center flex-shrink-0 rounded"
@@ -849,7 +855,7 @@ const SelectedGroupsPanel = ({
                           {
                             profesor: group.professor,
                             ayudantes: group.assistants,
-                          }
+                          },
                         )
                       }
                       className="text-red-400 hover:text-red-300 text-xs h-4 w-4 flex items-center justify-center flex-shrink-0"
@@ -958,7 +964,7 @@ const SelectedGroupsPanel = ({
                               group.studyPlanId,
                               group.semester,
                               group.subject,
-                              group.group
+                              group.group,
                             )
                           }
                           className="text-gray-400 hover:text-gray-300 ml-1 transition-colors"
@@ -988,7 +994,7 @@ const SelectedGroupsPanel = ({
                           {
                             profesor: group.professor,
                             ayudantes: group.assistants,
-                          }
+                          },
                         )
                       }
                       className="text-red-400 hover:text-red-300 text-xs h-6 w-6 flex items-center justify-center flex-shrink-0 ml-2"
@@ -1161,7 +1167,7 @@ const SelectedGroupsPanel = ({
         </div>
         {selectedGroups.map((group, index) => {
           const majorInfo = Object.values(availableMajors).find(
-            (m) => m.id === group.semester
+            (m) => m.id === group.semester,
           );
           const colorClass = subjectColors[group.subject];
           const colorHex = getColorFromClass(colorClass);
@@ -1203,7 +1209,7 @@ const SelectedGroupsPanel = ({
                           {
                             profesor: group.professor,
                             ayudantes: group.assistants,
-                          }
+                          },
                         )
                       }
                       className="text-red-400 hover:text-red-300 text-xs h-5 w-5 flex items-center justify-center rounded-full hover:bg-gray-700 ml-2"
@@ -1227,7 +1233,7 @@ const SelectedGroupsPanel = ({
                             group.studyPlanId,
                             group.semester,
                             group.subject,
-                            group.group
+                            group.group,
                           )
                         }
                         className="bg-gray-700 hover:bg-gray-600 px-2 py-1 h-[26px] rounded text-gray-300 text-xs transition-colors cursor-pointer inline-flex items-center"
@@ -1249,7 +1255,7 @@ const SelectedGroupsPanel = ({
                           window.open(
                             group.presentacion,
                             "_blank",
-                            "noopener,noreferrer"
+                            "noopener,noreferrer",
                           )
                         }
                         className="inline-flex items-center px-2 py-1 h-[26px] bg-blue-600 hover:bg-blue-700 text-white text-xs rounded transition-colors"
@@ -1357,55 +1363,57 @@ const SelectedGroupsPanel = ({
       )}
 
       {/* Clear Confirmation Modal */}
-      {showClearModal && createPortal(
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/50 backdrop-blur-sm"
-          onClick={() => setShowClearModal(false)}
-        >
+      {showClearModal &&
+        createPortal(
           <div
-            className="bg-gray-800 rounded-lg shadow-xl w-full max-w-md border border-gray-700"
-            onClick={(e) => e.stopPropagation()}
-            onTouchEnd={(e) => e.stopPropagation()}
+            className="fixed inset-0 z-50 flex items-center justify-center p-3 bg-black/50 backdrop-blur-sm"
+            onClick={() => setShowClearModal(false)}
           >
-            {/* Header */}
-            <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-700">
-              <h2 className="text-lg sm:text-xl font-semibold text-gray-100">
-                Limpiar horario
-              </h2>
-              <button
-                onClick={() => setShowClearModal(false)}
-                className="p-1 hover:bg-gray-700 rounded transition-colors text-gray-400 hover:text-gray-100 flex items-center justify-center"
-                aria-label="Cerrar"
-              >
-                <X size={20} />
-              </button>
-            </div>
-
-            {/* Content */}
-            <div className="p-4 sm:p-6">
-              <p className="text-gray-300 text-sm mb-6">
-                ¿Estás seguro de que quieres eliminar todas las {selectedGroups.length} materias seleccionadas?
-              </p>
-
-              <div className="flex gap-3">
+            <div
+              className="bg-gray-800 rounded-lg shadow-xl w-full max-w-md border border-gray-700"
+              onClick={(e) => e.stopPropagation()}
+              onTouchEnd={(e) => e.stopPropagation()}
+            >
+              {/* Header */}
+              <div className="flex items-center justify-between p-4 sm:p-6 border-b border-gray-700">
+                <h2 className="text-lg sm:text-xl font-semibold text-gray-100">
+                  Limpiar horario
+                </h2>
                 <button
                   onClick={() => setShowClearModal(false)}
-                  className="flex-1 bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-lg transition-colors"
+                  className="p-1 hover:bg-gray-700 rounded transition-colors text-gray-400 hover:text-gray-100 flex items-center justify-center"
+                  aria-label="Cerrar"
                 >
-                  Cancelar
-                </button>
-                <button
-                  onClick={handleConfirmClear}
-                  className="flex-1 bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-lg transition-colors"
-                >
-                  Limpiar
+                  <X size={20} />
                 </button>
               </div>
+
+              {/* Content */}
+              <div className="p-4 sm:p-6">
+                <p className="text-gray-300 text-sm mb-6">
+                  ¿Estás seguro de que quieres eliminar todas las{" "}
+                  {selectedGroups.length} materias seleccionadas?
+                </p>
+
+                <div className="flex gap-3">
+                  <button
+                    onClick={() => setShowClearModal(false)}
+                    className="flex-1 bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-lg transition-colors"
+                  >
+                    Cancelar
+                  </button>
+                  <button
+                    onClick={handleConfirmClear}
+                    className="flex-1 bg-red-600 hover:bg-red-700 text-white py-2 px-4 rounded-lg transition-colors"
+                  >
+                    Limpiar
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>,
-        document.body
-      )}
+          </div>,
+          document.body,
+        )}
     </div>
   );
 };
