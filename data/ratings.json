@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-11T05:48:56.684Z",
-  "totalProfessors": 2284,
+  "lastUpdated": "2026-06-12T07:10:09.109Z",
+  "totalProfessors": 2283,
   "ratingsFound": 1296,
   "foundPercentage": 57,
   "ratings": {
@@ -1085,7 +1085,6 @@
       "id": "92488",
       "url": "https://www.misprofesores.com/profesores/Athziri-Hernandez-Jimenez_92488"
     },
-    "Atzi Merino": null,
     "Augusto Cabrera Becerril": {
       "name": "Augusto Cabrera Becerril",
       "rating": 7.5,
@@ -4672,8 +4671,8 @@
     },
     "Jorge Alonso Santos Mellado": {
       "name": "Jorge Alonso Santos Mellado",
-      "rating": 8.7,
-      "commentCount": 38,
+      "rating": 8.6,
+      "commentCount": 39,
       "id": "60846",
       "url": "https://www.misprofesores.com/profesores/Jorge-Santos-Mellado_60846"
     },
@@ -7366,7 +7365,7 @@
     "Max Neumann Coto": {
       "name": "Max Neumann Coto",
       "rating": 8,
-      "commentCount": 59,
+      "commentCount": 60,
       "id": "74728",
       "url": "https://www.misprofesores.com/profesores/Max-Neumann-Coto_74728"
     },
@@ -8026,7 +8025,7 @@
     "Omar de la Riva Torres": {
       "name": "Omar de la Riva Torres",
       "rating": 7.4,
-      "commentCount": 131,
+      "commentCount": 132,
       "id": "64003",
       "url": "https://www.misprofesores.com/profesores/Omar-Riva-Torres_64003"
     },
@@ -8309,7 +8308,7 @@
     "Pedro Luis Soto Tejeda": {
       "name": "Pedro Luis Soto Tejeda",
       "rating": 9.4,
-      "commentCount": 57,
+      "commentCount": 58,
       "id": "51226",
       "url": "https://www.misprofesores.com/profesores/Pedro-Soto-Tejeda_51226"
     },
@@ -10066,12 +10065,12 @@
     "Óscar Romero Báez": null
   },
   "statistics": {
-    "processed": 2284,
+    "processed": 2283,
     "found": 1296,
-    "notFound": 988,
+    "notFound": 987,
     "foundWithFallback": 48,
     "foundWithMainTemplate": 1248,
-    "keptExisting": 1290,
-    "upgraded": 5
+    "keptExisting": 1292,
+    "upgraded": 4
   }
 }
