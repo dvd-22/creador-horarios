@@ -7,8 +7,8 @@ const isShareSupported = !!(
 async function handleShareSchedule(
   event,
   title,
-  showDownloadModal,
   showDisclaimer,
+  showDownloadModal,
 ) {
   const url = window.location.href;
   if (!isShareSupported) {
