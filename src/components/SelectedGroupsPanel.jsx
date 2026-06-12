@@ -233,13 +233,8 @@ const SelectedGroupsPanel = ({
     const events = [];
     const dayOffsets = { Lu: 0, Ma: 1, Mi: 2, Ju: 3, Vi: 4, Sa: 5 };
 
-    // Semester 2026-2: February 3, 2026 to May 29, 2026
-    // February 3, 2026 is a Tuesday, so we need to find the Monday before it (February 2)
-    const semesterStartMonday = new Date(2026, 1, 2); // February 2, 2026 (month is 0-indexed)
-    const semesterEnd = new Date(2026, 4, 29); // May 29, 2026
-
-    // Calculate number of weeks in semester (17 weeks from Feb 2 to May 29)
-    const weekCount = 17;
+    // Semester: August 10, 2026 to December 4, 2026
+    const semesterStartMonday = new Date(2026, 7, 10); // August 10, 2026 (month is 0-indexed)
 
     selectedGroups.forEach((group, groupIndex) => {
       const color = subjectColors[group.subject];
@@ -296,7 +291,7 @@ const SelectedGroupsPanel = ({
                 categories: [group.subject],
                 status: "CONFIRMED",
                 busyStatus: "BUSY",
-                recurrenceRule: `FREQ=WEEKLY;UNTIL=20260530T055959Z`,
+                recurrenceRule: `FREQ=WEEKLY;UNTIL=20261205T055959Z`,
               });
             }
           });
@@ -354,7 +349,7 @@ const SelectedGroupsPanel = ({
                 categories: [group.subject],
                 status: "CONFIRMED",
                 busyStatus: "BUSY",
-                recurrenceRule: `FREQ=WEEKLY;UNTIL=20260530T055959Z`,
+                recurrenceRule: `FREQ=WEEKLY;UNTIL=20261205T055959Z`,
               });
             }
           });
@@ -429,7 +424,7 @@ const SelectedGroupsPanel = ({
                 categories: [spacer.name],
                 status: "CONFIRMED",
                 busyStatus: "BUSY",
-                recurrenceRule: `FREQ=WEEKLY;UNTIL=20260530T055959Z`,
+                recurrenceRule: `FREQ=WEEKLY;UNTIL=20261205T055959Z`,
               });
             }
           });
