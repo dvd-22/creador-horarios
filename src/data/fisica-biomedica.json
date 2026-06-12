@@ -3096,7 +3096,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375056"
       }
     },
     "Cálculo Avanzado": {
@@ -3590,7 +3590,15 @@
         "grupo": "3011",
         "profesor": {
           "nombre": "José Eduardo Chairez Veloz",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -3621,7 +3629,15 @@
         "grupo": "3012",
         "profesor": {
           "nombre": "Osvaldo Uriel Calderón Dorantes",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "15:00 a 18:00",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {

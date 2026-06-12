@@ -3460,7 +3460,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375624"
       }
     },
     "Geometría Analítica II": {
@@ -9253,7 +9253,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374547"
       },
       "8227": {
         "grupo": "8227",
@@ -10639,7 +10639,20 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Xareni Durán Ramírez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Eduardo López Lima",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -10798,7 +10811,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Manuel Emiliano Monreal Cancino",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": null,
@@ -14187,7 +14207,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374285"
       }
     },
     "Geometría Moderna I": {
@@ -14580,7 +14600,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Atzi Merino",
+            "nombre": null,
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
