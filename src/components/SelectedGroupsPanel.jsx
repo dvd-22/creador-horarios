@@ -2,9 +2,18 @@ import React, { useState, useMemo, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { createEvents } from "ics";
 import { useMajorContext } from "../contexts/MajorContext";
-import { Edit2, Download, X, Trash2, Save } from "lucide-react";
+import {
+  Edit2,
+  Download,
+  X,
+  Trash2,
+  Save,
+  ImageDown,
+  CalendarRange,
+} from "lucide-react";
 import ProfessorRating from "./ProfessorRating";
 import { professorRatingService } from "../services/professorRatingService";
+import { ShareBtn } from "./Share/Share";
 
 const GOOGLE_COLORS = {
   LAVENDER: 1,
@@ -450,69 +459,6 @@ const SelectedGroupsPanel = ({
     });
   };
 
-  const handleShareSchedule = () => {
-    const url = window.location.href;
-
-    console.log("handleShareSchedule called", {
-      isMobile,
-      hasNavigatorShare: !!navigator.share,
-    });
-
-    // First, always try to copy to clipboard
-    navigator.clipboard
-      .writeText(url)
-      .then(() => {
-        console.log("Copied to clipboard successfully");
-
-        // Then show native share if available on mobile
-        if (navigator.share && isMobile) {
-          console.log("Attempting native share...");
-          navigator
-            .share({
-              title: scheduleTitle,
-              text: `Mira mi horario: ${scheduleTitle}`,
-              url: url,
-            })
-            .then(() => {
-              console.log("Share successful");
-            })
-            .catch((err) => {
-              console.log("Share error or cancelled:", err);
-            })
-            .finally(() => {
-              // Always show modal after share attempt
-              setShowDownloadModal(false);
-              setShowSavePopup(true);
-            });
-        } else {
-          // Desktop: just show modal
-          console.log("Desktop mode - showing modal");
-          setShowDownloadModal(false);
-          setShowSavePopup(true);
-        }
-      })
-      .catch((err) => {
-        console.error("Error copying to clipboard:", err);
-        // Fallback for older browsers
-        const textArea = document.createElement("textarea");
-        textArea.value = url;
-        textArea.style.position = "fixed";
-        textArea.style.opacity = "0";
-        document.body.appendChild(textArea);
-        textArea.select();
-        try {
-          document.execCommand("copy");
-          console.log("Copied using fallback method");
-          setShowDownloadModal(false);
-          setShowSavePopup(true);
-        } catch (e) {
-          console.error("Fallback copy failed:", e);
-          alert("Error al copiar el link");
-        }
-        document.body.removeChild(textArea);
-      });
-  };
-
   const copyToClipboard = (text) => {
     navigator.clipboard
       .writeText(text)
@@ -660,26 +606,16 @@ const SelectedGroupsPanel = ({
 
                   <div className="space-y-3">
                     <button
-                      onClick={handleCopyLink}
-                      onTouchEnd={(e) => {
-                        e.preventDefault();
-                        handleCopyLink();
-                      }}
-                      className="w-full bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
-                      style={{ touchAction: "manipulation" }}
-                    >
-                      Copiar Link
-                    </button>
-                    <button
                       onClick={handleSave}
                       onTouchEnd={(e) => {
                         e.preventDefault();
                         handleSave();
                       }}
-                      className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
+                      className="flex justify-center items-center gap-3 w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
                       style={{ touchAction: "manipulation" }}
                     >
-                      Guardar como PNG
+                      Guardar PNG
+                      <ImageDown size={16} />
                     </button>
                     <button
                       onClick={handleExportICS}
@@ -687,11 +623,17 @@ const SelectedGroupsPanel = ({
                         e.preventDefault();
                         handleExportICS();
                       }}
-                      className="w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
+                      className="flex justify-center items-center gap-3 w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
                       style={{ touchAction: "manipulation" }}
                     >
                       Exportar .ics
+                      <CalendarRange size={16} />
                     </button>
+                    <ShareBtn
+                      title={scheduleTitle}
+                      showDisclaimer={setShowSavePopup}
+                      showDownloadModal={setShowDownloadModal}
+                    />
                   </div>
                 </div>
               </div>
@@ -1051,17 +993,6 @@ const SelectedGroupsPanel = ({
 
                 <div className="space-y-3">
                   <button
-                    onClick={handleCopyLink}
-                    onTouchEnd={(e) => {
-                      e.preventDefault();
-                      handleCopyLink();
-                    }}
-                    className="w-full bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
-                    style={{ touchAction: "manipulation" }}
-                  >
-                    Copiar Link
-                  </button>
-                  <button
                     onClick={handleSave}
                     onTouchEnd={(e) => {
                       e.preventDefault();
@@ -1083,6 +1014,11 @@ const SelectedGroupsPanel = ({
                   >
                     Exportar .ics
                   </button>
+                  <ShareBtn
+                    title={scheduleTitle}
+                    showDisclaimer={setShowSavePopup}
+                    showDownloadModal={setShowDownloadModal}
+                  />
                 </div>
               </div>
             </div>
@@ -1324,26 +1260,16 @@ const SelectedGroupsPanel = ({
 
               <div className="space-y-3">
                 <button
-                  onClick={handleCopyLink}
-                  onTouchEnd={(e) => {
-                    e.preventDefault();
-                    handleCopyLink();
-                  }}
-                  className="w-full bg-purple-600 hover:bg-purple-700 active:bg-purple-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
-                  style={{ touchAction: "manipulation" }}
-                >
-                  Copiar Link
-                </button>
-                <button
                   onClick={handleSave}
                   onTouchEnd={(e) => {
                     e.preventDefault();
                     handleSave();
                   }}
-                  className="w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
+                  className="flex justify-center items-center gap-3 w-full bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
                   style={{ touchAction: "manipulation" }}
                 >
-                  Guardar como PNG
+                  Guardar PNG
+                  <ImageDown size={16} />
                 </button>
                 <button
                   onClick={handleExportICS}
@@ -1351,11 +1277,17 @@ const SelectedGroupsPanel = ({
                     e.preventDefault();
                     handleExportICS();
                   }}
-                  className="w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
+                  className="flex justify-center items-center gap-3 w-full bg-green-600 hover:bg-green-700 active:bg-green-800 text-white py-2 px-4 rounded-lg transition-colors touch-manipulation"
                   style={{ touchAction: "manipulation" }}
                 >
                   Exportar .ics
+                  <CalendarRange size={16} />
                 </button>
+                <ShareBtn
+                  title={scheduleTitle}
+                  showDisclaimer={setShowSavePopup}
+                  showDownloadModal={setShowDownloadModal}
+                />
               </div>
             </div>
           </div>
