@@ -1869,7 +1869,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375709"
       }
     },
     "Física Contemporánea": {
@@ -2116,7 +2116,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Ana Beatriz Salazar Arriaga",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -2241,33 +2248,6 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
-      },
-      "8426": {
-        "grupo": "8426",
-        "profesor": {
-          "nombre": "José Luis Rosas Huerta",
-          "horarios": [
-            {
-              "horario": "19:00 a 20:30",
-              "dias": [
-                "Lu",
-                "Mi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Nelly Michelle Solano Pinelo",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": null,
-        "modalidad": null,
         "presentacion": null
       }
     },
@@ -2506,7 +2486,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Mario Alberto Farfan Landa",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -2816,7 +2796,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Edder Yair Valeriano Reyes",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -3064,7 +3044,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Nestor Alexis Peña Montes",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
@@ -3574,7 +3554,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Mario Alberto Hernández Serrano",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -3700,6 +3680,37 @@
           {
             "nombre": null,
             "horario": "21:00 a 22:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Mixta",
+        "presentacion": null
+      },
+      "4384": {
+        "grupo": "4384",
+        "profesor": {
+          "nombre": "Iván Favela Mendoza",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Sergio Ángel Sánchez Chávez",
+            "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
               "Ju"
@@ -5454,7 +5465,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374165"
       },
       "4161": {
         "grupo": "4161",
@@ -5614,7 +5625,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374169"
       },
       "4165": {
         "grupo": "4165",
@@ -7855,7 +7866,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374510"
       },
       "8189": {
         "grupo": "8189",
@@ -8606,27 +8617,6 @@
             "salon": null
           }
         ],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
-      "8215": {
-        "grupo": "8215",
-        "profesor": {
-          "nombre": "Enrique López Moreno",
-          "horarios": [
-            {
-              "horario": "12:00 a 14:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -9731,7 +9721,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Rodrigo Aurelio Anaya Sánchez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -9875,7 +9872,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Erubey Morales Teofilo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -9907,7 +9911,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374575"
       },
       "8254": {
         "grupo": "8254",
@@ -11105,7 +11109,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Jorge Andrés Robles Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -11457,6 +11468,12 @@
             "salon": null
           },
           {
+            "nombre": "Antonio Ortiz Velásquez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Diego Fenoglio Huergo",
             "horario": "11:00 a 14:00",
             "dias": [
@@ -11541,6 +11558,12 @@
         "ayudantes": [
           {
             "nombre": "Georgina Marisol Molina Granados",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Pooja Raveendran Nair",
             "horario": null,
             "dias": [],
             "salon": null
@@ -11698,7 +11721,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Francisco Hernández Morelos",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -11908,6 +11938,12 @@
             "salon": null
           },
           {
+            "nombre": "Enrique López Moreno",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": null,
             "horario": "11:00 a 14:00",
             "dias": [
@@ -11992,6 +12028,12 @@
           },
           {
             "nombre": "Héctor de Jesús Cruz-Manjarrez Flores-Alonso",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ángel Ramírez Luna",
             "horario": null,
             "dias": [],
             "salon": null
@@ -12388,7 +12430,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Victor Jesús Segundo Gutiérrez",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -12574,7 +12616,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Erick Fabián Pérez Léon",
+            "nombre": "Erick Fabián Pérez León",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
@@ -12745,7 +12787,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374091"
       },
       "4097": {
         "grupo": "4097",
@@ -12826,7 +12868,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Roxana Jiménez Jiménez",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -12981,7 +13023,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jonathan López Ruiz",
             "horario": "21:00 a 22:00",
             "dias": [
               "Ma",
@@ -12993,7 +13035,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374099"
       },
       "4376": {
         "grupo": "4376",
@@ -13526,7 +13568,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374249"
       },
       "4232": {
         "grupo": "4232",
@@ -15092,8 +15134,15 @@
           "nombre": "Octavio Manero Brito",
           "horarios": []
         },
-        "ayudantes": [],
-        "nota": null,
+        "ayudantes": [
+          {
+            "nombre": "Marcela Angola Bañuelos Cedano",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "El curso se impartirá en el Instituto de Investigaciones en Materiales",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
@@ -15214,7 +15263,14 @@
           "nombre": "Andrea Burgos Cuevas",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Sandra Porras Reza",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -15627,7 +15683,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Karla Genoveva Bassols Bello",
+            "nombre": "Alejandra Medellín Equihua",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -15727,10 +15783,17 @@
           "nombre": "Jorge Karolt Barrera Ballesteros",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Carlos Crispin Espinosa Ponce",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": "Astroinformática con Inteligencia Artificial: de archivos masivos a agentes autónomos",
         "salon": null,
-        "modalidad": "Mixta",
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -16261,7 +16324,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Mixta",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374727"
       }
     },
@@ -16592,7 +16655,14 @@
           "nombre": "Carlos Francisco Betancourt Moreno",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Manuel Sifuentes Ortega",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": "Ciencia de redes",
         "salon": null,
         "modalidad": "Presencial",
@@ -16719,7 +16789,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374375"
       },
       "4358": {
         "grupo": "4358",

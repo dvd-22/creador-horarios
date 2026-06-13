@@ -1884,7 +1884,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373819"
       },
       "5064": {
         "grupo": "5064",
@@ -4623,6 +4623,34 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375638"
+      },
+      "5487": {
+        "grupo": "5487",
+        "profesor": {
+          "nombre": "Aarón Rodríguez Caballero",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Perla María del Carmen Acevedo Ramírez",
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Vi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": "Zoonosis y enfermedades emergentes y reemergentes, epidemias y pandemias.",
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Seminario de Biología II": {
@@ -5044,7 +5072,7 @@
         "nota": "Manejo de datos y estadística univariada con R",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373925"
       },
       "5170": {
         "grupo": "5170",

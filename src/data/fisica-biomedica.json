@@ -2277,7 +2277,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Mario Alberto Farfan Landa",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -2587,7 +2587,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Edder Yair Valeriano Reyes",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -2835,7 +2835,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Nestor Alexis Peña Montes",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
@@ -4674,7 +4674,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374510"
       },
       "8189": {
         "grupo": "8189",
@@ -5095,27 +5095,6 @@
         "modalidad": "Presencial",
         "presentacion": null
       },
-      "8215": {
-        "grupo": "8215",
-        "profesor": {
-          "nombre": "Enrique López Moreno",
-          "horarios": [
-            {
-              "horario": "12:00 a 14:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [],
-        "nota": null,
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
       "8216": {
         "grupo": "8216",
         "profesor": {
@@ -5308,7 +5287,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Erubey Morales Teofilo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -5340,7 +5326,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374575"
       },
       "8254": {
         "grupo": "8254",
@@ -5533,6 +5519,12 @@
         "ayudantes": [
           {
             "nombre": "José Agustín Pérez Ahumada",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Valentina Bastida Montiel",
             "horario": null,
             "dias": [],
             "salon": null
@@ -5962,7 +5954,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375076"
       }
     },
     "Sistemas Dinámicos de la Fisiología": {
@@ -6271,7 +6263,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Erick Cisneros Linares",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
