@@ -774,7 +774,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373963"
       },
       "4025": {
         "grupo": "4025",
@@ -1083,7 +1083,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373977"
       },
       "4033": {
         "grupo": "4033",
@@ -2846,7 +2846,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374776"
       },
       "9029": {
         "grupo": "9029",
@@ -4202,6 +4202,37 @@
         "salon": null,
         "modalidad": "Mixta",
         "presentacion": null
+      },
+      "4384": {
+        "grupo": "4384",
+        "profesor": {
+          "nombre": "Iván Favela Mendoza",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Sergio Ángel Sánchez Chávez",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Mixta",
+        "presentacion": null
       }
     },
     "Programación": {
@@ -4420,7 +4451,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375665"
       }
     }
   },
