@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-06-13T22:04:28.953Z",
+  "lastUpdated": "2026-06-14T11:04:49.964Z",
   "totalProfessors": 2317,
-  "ratingsFound": 1302,
+  "ratingsFound": 1303,
   "foundPercentage": 56,
   "ratings": {
     "Aaron Ali Lozano Rocha": null,
@@ -994,8 +994,8 @@
     },
     "Ariadna Olvera Sampieri": {
       "name": "Ariadna Olvera Sampieri",
-      "rating": 8.3,
-      "commentCount": 8,
+      "rating": 8,
+      "commentCount": 9,
       "id": "176158",
       "url": "https://www.misprofesores.com/profesores/Ariadna-Olvera-Sampieri_176158"
     },
@@ -1539,7 +1539,7 @@
     "Carlos Prieto López": {
       "name": "Carlos Prieto López",
       "rating": 8.1,
-      "commentCount": 50,
+      "commentCount": 51,
       "id": "36126",
       "url": "https://www.misprofesores.com/profesores/Carlos-Prieto-Lopez_36126"
     },
@@ -1927,8 +1927,8 @@
     "César Hernández Solís": null,
     "César Ismael Corral Rojas": {
       "name": "César Ismael Corral Rojas",
-      "rating": 9.5,
-      "commentCount": 2,
+      "rating": 9.7,
+      "commentCount": 3,
       "id": "189918",
       "url": "https://www.misprofesores.com/profesores/Cesar-Corral-Rojas_189918"
     },
@@ -3480,7 +3480,7 @@
     "Gabriela Campero Arena": {
       "name": "Gabriela Campero Arena",
       "rating": 7.7,
-      "commentCount": 120,
+      "commentCount": 121,
       "id": "35716",
       "url": "https://www.misprofesores.com/profesores/Gabriela-Campero-Arena_35716"
     },
@@ -4510,8 +4510,8 @@
     },
     "Jessica Sarahi Méndez Rincón": {
       "name": "Jessica Sarahi Méndez Rincón",
-      "rating": 5.3,
-      "commentCount": 24,
+      "rating": 5.7,
+      "commentCount": 27,
       "id": "191048",
       "url": "https://www.misprofesores.com/profesores/Jessica-Mendez-Rincon_191048"
     },
@@ -4946,8 +4946,8 @@
     },
     "José Adrián Gallardo Quiróz": {
       "name": "José Adrián Gallardo Quiróz",
-      "rating": 8.4,
-      "commentCount": 12,
+      "rating": 8.3,
+      "commentCount": 13,
       "id": "109061",
       "url": "https://www.misprofesores.com/profesores/Jose-Gallardo-Quiroz_109061"
     },
@@ -7938,8 +7938,8 @@
     "Octavio Abraham Bureos Lecona": null,
     "Octavio Baltasar Zapata Fonseca": {
       "name": "Octavio Baltasar Zapata Fonseca",
-      "rating": 7.1,
-      "commentCount": 7,
+      "rating": 7.5,
+      "commentCount": 8,
       "id": "146071",
       "url": "https://www.misprofesores.com/profesores/Octavio-Zapata-Fonseca_146071"
     },
@@ -8436,7 +8436,13 @@
       "url": "https://www.misprofesores.com/profesores/Ponciano-Garcia-Gutierrez_67043"
     },
     "Pooja Raveendran Nair": null,
-    "Quentin Edouard Gendron": null,
+    "Quentin Edouard Gendron": {
+      "name": "Quentin Edouard Gendron",
+      "rating": 7,
+      "commentCount": 1,
+      "id": "194579",
+      "url": "https://www.misprofesores.com/profesores/Quentin-Edouard-Gendron_194579"
+    },
     "Radamés Ricardo Reynoso Manríquez": {
       "name": "Radames Ricardo Reynoso Manriquez",
       "rating": 7.1,
@@ -9279,8 +9285,8 @@
     },
     "Saúl Arce Rocha": {
       "name": "Saúl Arce Rocha",
-      "rating": 6,
-      "commentCount": 24,
+      "rating": 6.1,
+      "commentCount": 25,
       "id": "43066",
       "url": "https://www.misprofesores.com/profesores/Saul-Arce-Rocha_43066"
     },
@@ -10136,11 +10142,11 @@
   },
   "statistics": {
     "processed": 2317,
-    "found": 1302,
-    "notFound": 1015,
+    "found": 1303,
+    "notFound": 1014,
     "foundWithFallback": 48,
-    "foundWithMainTemplate": 1254,
-    "keptExisting": 1276,
-    "upgraded": 19
+    "foundWithMainTemplate": 1255,
+    "keptExisting": 1294,
+    "upgraded": 8
   }
 }
