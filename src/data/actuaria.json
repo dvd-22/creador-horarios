@@ -2915,6 +2915,156 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9329": {
+        "grupo": "9329",
+        "profesor": {
+          "nombre": "Diana Aguilar Vázquez",
+          "horarios": [
+            {
+              "horario": "07:00 a 09:00",
+              "dias": [
+                "Lu"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9330": {
+        "grupo": "9330",
+        "profesor": {
+          "nombre": "Diana Aguilar Vázquez",
+          "horarios": [
+            {
+              "horario": "07:00 a 09:00",
+              "dias": [
+                "Ju"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9331": {
+        "grupo": "9331",
+        "profesor": {
+          "nombre": "Lidia Fabiola Quevedo Rojas",
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Ma"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9332": {
+        "grupo": "9332",
+        "profesor": {
+          "nombre": "Lidia Fabiola Quevedo Rojas",
+          "horarios": [
+            {
+              "horario": "18:00 a 20:00",
+              "dias": [
+                "Mi"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9333": {
+        "grupo": "9333",
+        "profesor": {
+          "nombre": "Lidia Fabiola Quevedo Rojas",
+          "horarios": [
+            {
+              "horario": "18:00 a 20:00",
+              "dias": [
+                "Ju"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9334": {
+        "grupo": "9334",
+        "profesor": {
+          "nombre": "Lidia Fabiola Quevedo Rojas",
+          "horarios": [
+            {
+              "horario": "15:00 a 17:00",
+              "dias": [
+                "Lu"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Teoría del Seguro": {
@@ -3076,7 +3226,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374780"
       },
       "9033": {
         "grupo": "9033",
@@ -4179,7 +4329,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374123"
       },
       "4119": {
         "grupo": "4119",
@@ -4334,6 +4484,33 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
+        "presentacion": null
+      }
+    },
+    "Inglés II": {
+      "9335": {
+        "grupo": "9335",
+        "profesor": {
+          "nombre": "Diana Aguilar Vázquez",
+          "horarios": [
+            {
+              "horario": "07:00 a 09:00",
+              "dias": [
+                "Ma"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     },
@@ -6195,6 +6372,81 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "9336": {
+        "grupo": "9336",
+        "profesor": {
+          "nombre": "Silvia Loera Rivera",
+          "horarios": [
+            {
+              "horario": "07:00 a 09:00",
+              "dias": [
+                "Vi"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9337": {
+        "grupo": "9337",
+        "profesor": {
+          "nombre": "María Teresa Pozos Delgado",
+          "horarios": [
+            {
+              "horario": "12:00 a 14:00",
+              "dias": [
+                "Lu"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9338": {
+        "grupo": "9338",
+        "profesor": {
+          "nombre": "María Azucena Rivera Vidal",
+          "horarios": [
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Ju"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Manejo de Datos": {
@@ -6821,7 +7073,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374761"
       },
       "9014": {
         "grupo": "9014",
@@ -7546,7 +7798,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374183"
       },
       "4179": {
         "grupo": "4179",
@@ -8108,6 +8360,58 @@
             "salon": null
           }
         ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Inglés IV": {
+      "9339": {
+        "grupo": "9339",
+        "profesor": {
+          "nombre": "Gabriel Iturralde Villalobos",
+          "horarios": [
+            {
+              "horario": "11:00 a 13:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9340": {
+        "grupo": "9340",
+        "profesor": {
+          "nombre": "Emma Alejandra Razo Arroyo",
+          "horarios": [
+            {
+              "horario": "09:00 a 11:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -9688,7 +9992,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374810"
       },
       "9063": {
         "grupo": "9063",
@@ -10493,7 +10797,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374839"
       },
       "9093": {
         "grupo": "9093",
@@ -10619,7 +10923,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375169"
       },
       "9210": {
         "grupo": "9210",
@@ -10709,6 +11013,58 @@
             "salon": null
           }
         ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Inglés V": {
+      "9341": {
+        "grupo": "9341",
+        "profesor": {
+          "nombre": "Emma Alejandra Razo Arroyo",
+          "horarios": [
+            {
+              "horario": "11:00 a 13:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9342": {
+        "grupo": "9342",
+        "profesor": {
+          "nombre": "Olga Nelly Sánchez Cárdenas",
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Ju"
+              ]
+            },
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -11314,6 +11670,48 @@
         "presentacion": null
       }
     },
+    "Inglés VI": {
+      "9343": {
+        "grupo": "9343",
+        "profesor": {
+          "nombre": "Jorge Mauricio Medina Casimiro",
+          "horarios": [
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "9344": {
+        "grupo": "9344",
+        "profesor": {
+          "nombre": "Olga Nelly Sánchez Cárdenas",
+          "horarios": [
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Modelos de Supervivencia y de Series de Tiempo": {
       "9248": {
         "grupo": "9248",
@@ -11848,7 +12246,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374849"
       },
       "9102": {
         "grupo": "9102",
@@ -14017,7 +14415,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374883"
       }
     },
     "Reaseguro": {
@@ -14207,7 +14605,7 @@
         "nota": "Machine Learning y Business Intelligence en Seguro Automotriz",
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375238"
       },
       "9305": {
         "grupo": "9305",

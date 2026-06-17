@@ -1066,7 +1066,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374903"
       },
       "7031": {
         "grupo": "7031",
@@ -1106,6 +1106,108 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374905"
+      }
+    },
+    "Inglés I": {
+      "7185": {
+        "grupo": "7185",
+        "profesor": {
+          "nombre": "Gabriel Iturralde Villalobos",
+          "horarios": [
+            {
+              "horario": "13:00 a 15:00",
+              "dias": [
+                "Ma"
+              ]
+            },
+            {
+              "horario": "07:00 a 09:00",
+              "dias": [
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
+      },
+      "7186": {
+        "grupo": "7186",
+        "profesor": {
+          "nombre": "María Teresa Pozos Delgado",
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Ju"
+              ]
+            },
+            {
+              "horario": "07:00 a 09:00",
+              "dias": [
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
+      },
+      "7187": {
+        "grupo": "7187",
+        "profesor": {
+          "nombre": "María Teresa Pozos Delgado",
+          "horarios": [
+            {
+              "horario": "18:00 a 20:00",
+              "dias": [
+                "Ju"
+              ]
+            },
+            {
+              "horario": "09:00 a 11:00",
+              "dias": [
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
+      },
+      "7188": {
+        "grupo": "7188",
+        "profesor": {
+          "nombre": "Lidia Fabiola Quevedo Rojas",
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Ju"
+              ]
+            },
+            {
+              "horario": "09:00 a 11:00",
+              "dias": [
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
       }
     },
     "Introducción a Ciencias de la Computación": {
@@ -2220,6 +2322,33 @@
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374298"
       }
     },
+    "Inglés II": {
+      "7189": {
+        "grupo": "7189",
+        "profesor": {
+          "nombre": "Lidia Fabiola Quevedo Rojas",
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Mi"
+              ]
+            },
+            {
+              "horario": "07:00 a 09:00",
+              "dias": [
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
+      }
+    },
     "Matemáticas para las Ciencias Aplicadas II": {
       "7067": {
         "grupo": "7067",
@@ -2499,7 +2628,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374133"
       },
       "4129": {
         "grupo": "4129",
@@ -3091,6 +3220,58 @@
         "presentacion": null
       }
     },
+    "Inglés III": {
+      "7190": {
+        "grupo": "7190",
+        "profesor": {
+          "nombre": "Manuel Enrique Camargo Coronel",
+          "horarios": [
+            {
+              "horario": "07:00 a 09:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "12:00 a 14:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
+      },
+      "7191": {
+        "grupo": "7191",
+        "profesor": {
+          "nombre": "Olga Nelly Sánchez Cárdenas",
+          "horarios": [
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Ma"
+              ]
+            },
+            {
+              "horario": "12:00 a 14:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
+      }
+    },
     "Matemáticas para las Ciencias Aplicadas III": {
       "7069": {
         "grupo": "7069",
@@ -3483,7 +3664,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374761"
       },
       "9014": {
         "grupo": "9014",
@@ -4045,6 +4226,33 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374958"
+      }
+    },
+    "Inglés IV": {
+      "7192": {
+        "grupo": "7192",
+        "profesor": {
+          "nombre": "María Azucena Rivera Vidal",
+          "horarios": [
+            {
+              "horario": "14:00 a 16:00",
+              "dias": [
+                "Vi"
+              ]
+            },
+            {
+              "horario": "09:00 a 11:00",
+              "dias": [
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
       }
     },
     "Lógica Computacional": {
@@ -4698,6 +4906,58 @@
             "salon": null
           }
         ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
+    "Inglés V": {
+      "7193": {
+        "grupo": "7193",
+        "profesor": {
+          "nombre": "Cristian Diego Iván López Barrera",
+          "horarios": [
+            {
+              "horario": "18:00 a 20:00",
+              "dias": [
+                "Ju"
+              ]
+            },
+            {
+              "horario": "17:00 a 19:00",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
+      },
+      "7194": {
+        "grupo": "7194",
+        "profesor": {
+          "nombre": "Lidia Fabiola Quevedo Rojas",
+          "horarios": [
+            {
+              "horario": "11:00 a 13:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "15:00 a 17:00",
+              "dias": [
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -5552,6 +5812,33 @@
         "modalidad": "Presencial",
         "presentacion": null
       }
+    },
+    "Inglés VI": {
+      "7195": {
+        "grupo": "7195",
+        "profesor": {
+          "nombre": "César Vásquez Lima",
+          "horarios": [
+            {
+              "horario": "09:00 a 11:00",
+              "dias": [
+                "Sa"
+              ]
+            },
+            {
+              "horario": "15:00 a 17:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
+      }
     }
   },
   "Optativas": {
@@ -6316,7 +6603,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374839"
       },
       "9093": {
         "grupo": "9093",
@@ -7731,7 +8018,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374398"
       }
     },
     "Procesos Estocásticos": {
@@ -8181,7 +8468,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374883"
       }
     },
     "Reconocimiento de Patrones y Aprendizaje Automatizado": {
@@ -8283,7 +8570,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375023"
       }
     },
     "Riesgo Tecnológico": {

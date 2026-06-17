@@ -278,7 +278,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374418"
       },
       "8098": {
         "grupo": "8098",
@@ -1477,6 +1477,33 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
+        "presentacion": null
+      }
+    },
+    "Inglés": {
+      "3059": {
+        "grupo": "3059",
+        "profesor": {
+          "nombre": "Gabriel Iturralde Villalobos",
+          "horarios": [
+            {
+              "horario": "15:00 a 17:00",
+              "dias": [
+                "Ma"
+              ]
+            },
+            {
+              "horario": "09:00 a 11:00",
+              "dias": [
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
         "presentacion": null
       }
     },
@@ -3363,7 +3390,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374471"
       },
       "8150": {
         "grupo": "8150",
@@ -3544,6 +3571,33 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374477"
+      }
+    },
+    "Inglés": {
+      "3060": {
+        "grupo": "3060",
+        "profesor": {
+          "nombre": "Silvia Loera Rivera",
+          "horarios": [
+            {
+              "horario": "09:00 a 11:00",
+              "dias": [
+                "Vi"
+              ]
+            },
+            {
+              "horario": "09:00 a 11:00",
+              "dias": [
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
       }
     },
     "Instrumentación y Calibración": {
@@ -4613,6 +4667,28 @@
         "presentacion": null
       }
     },
+    "Inglés": {
+      "3061": {
+        "grupo": "3061",
+        "profesor": {
+          "nombre": "Silvia Loera Rivera",
+          "horarios": [
+            {
+              "horario": "11:00 a 13:00",
+              "dias": [
+                "Mi",
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
+      }
+    },
     "Introducción a la Física Cuántica": {
       "8187": {
         "grupo": "8187",
@@ -4737,7 +4813,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374513"
       },
       "8192": {
         "grupo": "8192",
@@ -4848,7 +4924,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374518"
       },
       "8437": {
         "grupo": "8437",
@@ -6495,7 +6571,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375634"
       }
     }
   }

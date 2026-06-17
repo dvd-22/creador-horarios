@@ -295,7 +295,7 @@
       "5008": {
         "grupo": "5008",
         "profesor": {
-          "nombre": "Silvia Bautista Hernández",
+          "nombre": "Sammy Israel Gutiérrez Terrazas",
           "horarios": [
             {
               "horario": "07:30 a 10:30",
@@ -569,6 +569,34 @@
             "horario": "18:00 a 21:00",
             "dias": [
               "Ma"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "5488": {
+        "grupo": "5488",
+        "profesor": {
+          "nombre": "Mercedes Isolda Luna Vega",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Ju"
             ],
             "salon": null
           }
@@ -4330,7 +4358,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375634"
       }
     },
     "Naturaleza y Sociedad": {
@@ -4967,6 +4995,35 @@
         "presentacion": null
       }
     },
+    "Técnicas de Radioisotopos": {
+      "5489": {
+        "grupo": "5489",
+        "profesor": {
+          "nombre": "Allan Canek Chavarría Sánchez",
+          "horarios": [
+            {
+              "horario": "14:30 a 17:30",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Miguel Ángel Zúñiga Pérez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
+      }
+    },
     "Temas Selectos de Biología I": {
       "5166": {
         "grupo": "5166",
@@ -5524,7 +5581,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373938"
       }
     }
   }
