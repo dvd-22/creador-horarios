@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-06-23T06:08:40.295Z",
-  "totalProfessors": 2334,
-  "ratingsFound": 1320,
+  "lastUpdated": "2026-06-24T02:08:05.732Z",
+  "totalProfessors": 2336,
+  "ratingsFound": 1321,
   "foundPercentage": 57,
   "ratings": {
     "Aaron Ali Lozano Rocha": null,
@@ -4073,8 +4073,8 @@
     },
     "Héctor Bustos Castro": {
       "name": "Héctor Bustos Castro",
-      "rating": 6.7,
-      "commentCount": 25,
+      "rating": 6.8,
+      "commentCount": 26,
       "id": "56444",
       "url": "https://www.misprofesores.com/profesores/Hector-Bustos-Castro_56444"
     },
@@ -5070,6 +5070,13 @@
     },
     "José Angel Arévalo Avalos": null,
     "José Antonio De Diego Onsurbe": null,
+    "José Antonio Gómez Ortega": {
+      "name": "José Antonio Gómez Ortega",
+      "rating": 7.1,
+      "commentCount": 40,
+      "id": "51191",
+      "url": "https://www.misprofesores.com/profesores/Jose-Gomez-Ortega_51191"
+    },
     "José Antonio López Aranda": null,
     "José Antonio Morales Álvarez": {
       "name": "José Antonio Morales Álvarez",
@@ -5764,8 +5771,8 @@
     },
     "Karen Susana Villa Aguirre": {
       "name": "Karen Susana Villa Aguirre",
-      "rating": 6.2,
-      "commentCount": 26,
+      "rating": 6,
+      "commentCount": 27,
       "id": "99063",
       "url": "https://www.misprofesores.com/profesores/Karen-Villa-Aguirre_99063"
     },
@@ -7096,6 +7103,7 @@
       "url": "https://www.misprofesores.com/profesores/Maria-Garcia-Granados_52357"
     },
     "María Elena Martínez Pérez": null,
+    "María Emilia Caballero Acosta": null,
     "María Esther Sánchez Coronado": {
       "name": "María Esther Sánchez Coronado",
       "rating": 5,
@@ -7145,8 +7153,8 @@
     },
     "María Guadalupe Guzmán Bárcenas": {
       "name": "María Guadalupe Guzmán Bárcenas",
-      "rating": 7.8,
-      "commentCount": 9,
+      "rating": 7.6,
+      "commentCount": 10,
       "id": "99392",
       "url": "https://www.misprofesores.com/profesores/Maria-Guzman-Barcenas_99392"
     },
@@ -8136,7 +8144,7 @@
     "Omar Patricio Juárez Álvarez": {
       "name": "Omar Patricio Juárez Álvarez",
       "rating": 9.8,
-      "commentCount": 21,
+      "commentCount": 22,
       "id": "140227",
       "url": "https://www.misprofesores.com/profesores/Omar-Juarez-Alvarez_140227"
     },
@@ -8166,7 +8174,7 @@
     "Omar de la Riva Torres": {
       "name": "Omar de la Riva Torres",
       "rating": 7.6,
-      "commentCount": 144,
+      "commentCount": 145,
       "id": "64003",
       "url": "https://www.misprofesores.com/profesores/Omar-Riva-Torres_64003"
     },
@@ -9858,7 +9866,7 @@
     "Verónica Martínez de la Vega y Mansilla": {
       "name": "Veronica Martínez de la Vega y Mansilla",
       "rating": 6.2,
-      "commentCount": 55,
+      "commentCount": 56,
       "id": "62898",
       "url": "https://www.misprofesores.com/profesores/Veronica-y-Mansilla_62898"
     },
@@ -10260,12 +10268,12 @@
     "Óscar Romero Báez": null
   },
   "statistics": {
-    "processed": 2334,
-    "found": 1320,
-    "notFound": 1014,
+    "processed": 2336,
+    "found": 1321,
+    "notFound": 1015,
     "foundWithFallback": 47,
-    "foundWithMainTemplate": 1273,
-    "keptExisting": 1299,
-    "upgraded": 20
+    "foundWithMainTemplate": 1274,
+    "keptExisting": 1314,
+    "upgraded": 6
   }
 }
