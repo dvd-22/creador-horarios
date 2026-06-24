@@ -2467,7 +2467,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374039"
       },
       "4064": {
         "grupo": "4064",
@@ -3843,7 +3843,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374454"
       },
       "8133": {
         "grupo": "8133",
@@ -10171,7 +10171,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374590"
       },
       "8270": {
         "grupo": "8270",
@@ -14686,6 +14686,37 @@
         "salon": null,
         "modalidad": "Mixta",
         "presentacion": null
+      },
+      "4385": {
+        "grupo": "4385",
+        "profesor": {
+          "nombre": "José Antonio Gómez Ortega",
+          "horarios": [
+            {
+              "horario": "13:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Geometría Moderna II": {
@@ -15632,6 +15663,27 @@
         "salon": null,
         "modalidad": "Mixta",
         "presentacion": null
+      },
+      "4386": {
+        "grupo": "4386",
+        "profesor": {
+          "nombre": "Mariana Martínez González",
+          "horarios": [
+            {
+              "horario": "10:00 a 11:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375806"
       }
     },
     "Seminario sobre Enseñanza de las Matemáticas IV": {
@@ -17018,7 +17070,7 @@
           "nombre": "Santiago López de Medrano Sánchez",
           "horarios": [
             {
-              "horario": "11:00 a 12:00",
+              "horario": "10:00 a 11:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -17030,7 +17082,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "11:00 a 12:00",
+            "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
               "Ju"

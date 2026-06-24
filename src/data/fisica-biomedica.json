@@ -2285,7 +2285,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374040"
       },
       "8038": {
         "grupo": "8038",
@@ -4590,7 +4590,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374591"
       },
       "8271": {
         "grupo": "8271",
@@ -6275,10 +6275,16 @@
           "nombre": "Manuel Silva Hernández",
           "horarios": [
             {
-              "horario": "14:00 a 17:00",
+              "horario": "14:00 a 16:00",
               "dias": [
                 "Ma",
                 "Ju"
+              ]
+            },
+            {
+              "horario": "12:00 a 14:00",
+              "dias": [
+                "Sa"
               ]
             }
           ]

@@ -247,7 +247,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373946"
       },
       "4008": {
         "grupo": "4008",
@@ -2223,7 +2223,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374039"
       },
       "4064": {
         "grupo": "4064",
@@ -3248,6 +3248,37 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
+        "presentacion": null
+      },
+      "4385": {
+        "grupo": "4385",
+        "profesor": {
+          "nombre": "José Antonio Gómez Ortega",
+          "horarios": [
+            {
+              "horario": "13:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
         "presentacion": null
       }
     }
@@ -10173,10 +10204,10 @@
       "9014": {
         "grupo": "9014",
         "profesor": {
-          "nombre": "Jaime Vázquez Alamilla",
+          "nombre": "María Emilia Caballero Acosta",
           "horarios": [
             {
-              "horario": "09:00 a 10:00",
+              "horario": "11:00 a 12:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -10187,8 +10218,8 @@
         },
         "ayudantes": [
           {
-            "nombre": "Rodrigo Basaldud Ortega",
-            "horario": "09:00 a 10:00",
+            "nombre": null,
+            "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
               "Ju"
@@ -12170,7 +12201,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374590"
       },
       "8270": {
         "grupo": "8270",
@@ -14135,39 +14166,6 @@
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374329"
       }
     },
-    "Seminario de Filosofía de la Ciencia III": {
-      "4312": {
-        "grupo": "4312",
-        "profesor": {
-          "nombre": "Mariana Martínez González",
-          "horarios": [
-            {
-              "horario": "10:00 a 11:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "10:00 a 11:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": null
-          }
-        ],
-        "nota": "El surgiemiento de las Matemáticas no Arquimedeanas y las raíces de una falsa idea I:  El surgimiento de sistemas de magnitudes no Arquimedeanos",
-        "salon": null,
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374330"
-      }
-    },
     "Seminario de Filosofía de la Ciencia IV": {
       "4313": {
         "grupo": "4313",
@@ -14496,6 +14494,27 @@
         "salon": null,
         "modalidad": "Mixta",
         "presentacion": null
+      },
+      "4386": {
+        "grupo": "4386",
+        "profesor": {
+          "nombre": "Mariana Martínez González",
+          "horarios": [
+            {
+              "horario": "10:00 a 11:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375806"
       }
     },
     "Seminario Matemáticas Aplicadas I": {
@@ -15436,7 +15455,7 @@
           "nombre": "Santiago López de Medrano Sánchez",
           "horarios": [
             {
-              "horario": "11:00 a 12:00",
+              "horario": "10:00 a 11:00",
               "dias": [
                 "Lu",
                 "Mi",
@@ -15448,7 +15467,7 @@
         "ayudantes": [
           {
             "nombre": null,
-            "horario": "11:00 a 12:00",
+            "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
               "Ju"
