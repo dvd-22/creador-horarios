@@ -2249,6 +2249,26 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "8447": {
+        "grupo": "8447",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "19:00 a 20:30",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     },
     "Geometría Analítica I": {
@@ -12254,7 +12274,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374173"
       },
       "4169": {
         "grupo": "4169",
@@ -12880,7 +12900,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374094"
       },
       "4100": {
         "grupo": "4100",
@@ -16730,7 +16750,7 @@
         "nota": "Sistemas físicos con capacidad computacional colectiva emergente",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374746"
       }
     },
     "Temas Selectos de Termodinámica y Física Estadística II": {
