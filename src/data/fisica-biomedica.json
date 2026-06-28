@@ -216,7 +216,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374414"
       },
       "8094": {
         "grupo": "8094",
@@ -381,7 +381,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373968"
       },
       "8002": {
         "grupo": "8002",
@@ -951,7 +951,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374000"
       },
       "8018": {
         "grupo": "8018",
@@ -1487,9 +1487,9 @@
           "nombre": "Gabriel Iturralde Villalobos",
           "horarios": [
             {
-              "horario": "15:00 a 17:00",
+              "horario": "13:00 a 15:00",
               "dias": [
-                "Ma"
+                "Sa"
               ]
             },
             {
@@ -2031,7 +2031,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374119"
       },
       "8428": {
         "grupo": "8428",
@@ -3217,7 +3217,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374465"
       },
       "8144": {
         "grupo": "8144",
@@ -3677,7 +3677,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375060"
       },
       "3012": {
         "grupo": "3012",
@@ -5940,7 +5940,7 @@
       "3023": {
         "grupo": "3023",
         "profesor": {
-          "nombre": null,
+          "nombre": "Héctor Alva Sánchez",
           "horarios": [
             {
               "horario": "10:00 a 12:00",
@@ -5953,12 +5953,6 @@
           ]
         },
         "ayudantes": [
-          {
-            "nombre": "Héctor Alva Sánchez",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
           {
             "nombre": "Rodrigo Alfonso Martín Salas",
             "horario": null,
@@ -6447,7 +6441,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375098"
       },
       "3050": {
         "grupo": "3050",
