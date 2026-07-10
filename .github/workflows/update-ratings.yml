@@ -34,14 +34,24 @@ jobs:
             - name: Fetch professor ratings
               run: npm run fetch-ratings
 
-            - name: Commit and push if changes
+            - name: Checkout gh-pages branch
+              uses: actions/checkout@v5
+              with:
+                  ref: gh-pages
+                  path: gh-pages
+
+            - name: Publish ratings data to gh-pages
               run: |
+                  mkdir -p gh-pages/data
+                  cp public/data/professors.json gh-pages/data/
+                  cp public/data/ratings.json gh-pages/data/
+                  cd gh-pages
                   git config --local user.email "action@github.com"
                   git config --local user.name "GitHub Action"
-                  git add public/data/professors.json public/data/ratings.json
+                  git add data/professors.json data/ratings.json
                   if ! git diff --staged --quiet; then
                     git commit -m "Update professor ratings - $(date '+%Y-%m-%d %H:%M:%S')"
-                    git push
+                    git push origin gh-pages
                   else
                     echo "No changes to commit"
                   fi

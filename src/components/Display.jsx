@@ -10,38 +10,12 @@ import { saveScheduleAsPng } from '../utils/scheduleUtils';
 import SavePopup from './SavePopup';
 import { MajorProvider } from '../contexts/MajorContext';
 import { encodeScheduleToURL, decodeScheduleFromURL } from '../utils/urlEncoder';
+import { loadScrapedMajorData } from '../utils/scrapedData';
 
 // Function to load full group data from JSON files
 const loadGroupData = async (majorId, studyPlanId, groupId) => {
     try {
-        let dataModule;
-
-        // Map majorId to data file
-        const majorDataMap = {
-            'cs': () => import('../data/ciencias-computacion.json'),
-            'math': () => import('../data/matematicas.json'),
-            'physics': () => import('../data/fisica.json'),
-            'ap-math': () => import('../data/matematicas-aplicadas.json'),
-            'actuary': () => import('../data/actuaria.json'),
-            'bio-physics': () => import('../data/fisica-biomedica.json'),
-            'biology-1997': () => import('../data/biologia-1997.json'),
-            'biology-2025': () => import('../data/biologia-2025.json'),
-        };
-
-        // Handle biology with study plans
-        let dataKey = majorId;
-        if (majorId === 'biology' && studyPlanId) {
-            dataKey = `biology-${studyPlanId}`;
-        }
-
-        const dataLoader = majorDataMap[dataKey];
-        if (!dataLoader) {
-            console.error(`No data loader found for ${dataKey}`);
-            return null;
-        }
-
-        dataModule = await dataLoader();
-        const data = dataModule.default;
+        const data = await loadScrapedMajorData(majorId, studyPlanId);
 
         // Search for the group across all semesters
         for (const semester of Object.keys(data)) {

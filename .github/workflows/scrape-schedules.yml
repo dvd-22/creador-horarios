@@ -27,14 +27,23 @@ jobs:
               run: npm run scrape:test
               timeout-minutes: 25
 
-            - name: Commit and push if changes
+            - name: Checkout gh-pages branch
+              uses: actions/checkout@v5
+              with:
+                  ref: gh-pages
+                  path: gh-pages
+
+            - name: Publish scraped data to gh-pages
               run: |
+                  mkdir -p gh-pages/data
+                  cp src/data/*.json gh-pages/data/
+                  cd gh-pages
                   git config --local user.email "action@github.com"
                   git config --local user.name "GitHub Action"
-                  git add src/data/*.json
+                  git add data/*.json
                   if ! git diff --staged --quiet; then
                     git commit -m "🔄 Update schedule data - $(date '+%Y-%m-%d %H:%M:%S')"
-                    git push
+                    git push origin gh-pages
                   else
                     echo "No changes to commit"
                   fi

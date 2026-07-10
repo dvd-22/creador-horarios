@@ -1,40 +1,41 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
+import { fetchScrapedJson } from '../utils/scrapedData';
 
 const AVAILABLE_MAJORS = {
     'cs': {
         id: 'cs',
         name: 'Ciencias de la Computación',
-        dataLoader: () => import('../data/ciencias-computacion.json'),
+        dataFile: 'data/ciencias-computacion.json',
         color: 'gray-600'
     },
     'math': {
         id: 'math',
         name: 'Matemáticas',
-        dataLoader: () => import('../data/matematicas.json'),
+        dataFile: 'data/matematicas.json',
         color: 'purple-500'
     },
     'physics': {
         id: 'physics',
         name: 'Física',
-        dataLoader: () => import('../data/fisica.json'),
+        dataFile: 'data/fisica.json',
         color: 'yellow-500'
     },
     'ap-math': {
         id: 'ap-math',
         name: 'Matemáticas Aplicadas',
-        dataLoader: () => import('../data/matematicas-aplicadas.json'),
+        dataFile: 'data/matematicas-aplicadas.json',
         color: 'orange-500'
     },
     'actuary': {
         id: 'actuary',
         name: 'Actuaría',
-        dataLoader: () => import('../data/actuaria.json'),
+        dataFile: 'data/actuaria.json',
         color: 'blue-500'
     },
     'bio-physics': {
         id: 'bio-physics',
         name: 'Física Biomédica',
-        dataLoader: () => import('../data/fisica-biomedica.json'),
+        dataFile: 'data/fisica-biomedica.json',
         color: 'red-500'
     },
     'biology': {
@@ -46,12 +47,12 @@ const AVAILABLE_MAJORS = {
             '1997': {
                 id: '1997',
                 name: 'Plan 1997',
-                dataLoader: () => import('../data/biologia-1997.json')
+                dataFile: 'data/biologia-1997.json'
             },
             '2025': {
                 id: '2025',
                 name: 'Plan 2025',
-                dataLoader: () => import('../data/biologia-2025.json')
+                dataFile: 'data/biologia-2025.json'
             }
         }
     }
@@ -95,14 +96,14 @@ export const MajorProvider = ({ children }) => {
 
             // Determine cache key and data loader
             let cacheKey = selectedMajorId;
-            let dataLoader = majorConfig.dataLoader;
+            let dataFile = majorConfig.dataFile;
 
             if (majorConfig.hasStudyPlans) {
                 const studyPlanId = selectedStudyPlan || Object.keys(majorConfig.studyPlans)[0];
                 cacheKey = `${selectedMajorId}-${studyPlanId}`;
-                dataLoader = majorConfig.studyPlans[studyPlanId]?.dataLoader;
+                dataFile = majorConfig.studyPlans[studyPlanId]?.dataFile;
 
-                if (!dataLoader) {
+                if (!dataFile) {
                     setLoadError(`Study plan not found: ${studyPlanId}`);
                     return;
                 }
@@ -124,8 +125,7 @@ export const MajorProvider = ({ children }) => {
             setLoadError(null);
 
             try {
-                const dataModule = await dataLoader();
-                const data = dataModule.default;
+                const data = await fetchScrapedJson(dataFile);
 
                 // Cache the loaded data
                 setMajorDataCache(prev => ({

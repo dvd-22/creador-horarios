@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { ArrowLeft, Clock3, DoorOpen, Filter, ScanSearch } from 'lucide-react'
+import { loadAllScrapedData } from '../utils/scrapedData'
 
 const dayOptions = [
 	{ id: 'Lu', label: 'Lu' },
@@ -15,9 +16,6 @@ const categoryOptions = [
 	{ id: 'P', label: 'P' },
 	{ id: 'others', label: 'Otros' },
 ]
-
-const scrapedDataModules = import.meta.glob('../data/*.json', { eager: true })
-const scrapedDataSets = Object.values(scrapedDataModules).map((module) => module.default)
 
 const timeToMinutes = (time) => {
 	if (!time) return null
@@ -63,7 +61,7 @@ const getDayLabels = (selectedDays) => {
 		.join(', ')
 }
 
-const buildRoomInventory = () => {
+const buildRoomInventory = (scrapedDataSets) => {
 	const roomMap = new Map()
 
 	const registerUsage = ({ roomName, day, start, end, label }) => {
@@ -141,12 +139,42 @@ const EmptyClassroomFinder = () => {
 	const [selectedCategories, setSelectedCategories] = useState(['O', 'P', 'others'])
 	const [startTime, setStartTime] = useState('17:30')
 	const [endTime, setEndTime] = useState('18:30')
+	const [roomInventory, setRoomInventory] = useState([])
+	const [isLoadingRooms, setIsLoadingRooms] = useState(true)
+	const [loadError, setLoadError] = useState(null)
 
 	useEffect(() => {
 		document.title = 'Papas con pan · Creador de horarios'
 	}, [])
 
-	const roomInventory = useMemo(() => buildRoomInventory(), [])
+	useEffect(() => {
+		let cancelled = false
+
+		const loadRooms = async () => {
+			setIsLoadingRooms(true)
+			setLoadError(null)
+
+			try {
+				const scrapedDataSets = await loadAllScrapedData()
+				if (cancelled) return
+				setRoomInventory(buildRoomInventory(scrapedDataSets))
+			} catch (error) {
+				if (cancelled) return
+				setLoadError(error.message)
+				setRoomInventory([])
+			} finally {
+				if (!cancelled) {
+					setIsLoadingRooms(false)
+				}
+			}
+		}
+
+		loadRooms()
+
+		return () => {
+			cancelled = true
+		}
+	}, [])
 
 	const searchWindow = useMemo(() => {
 		const start = timeToMinutes(startTime)
@@ -222,11 +250,11 @@ const EmptyClassroomFinder = () => {
 						<div className="grid gap-3 rounded-2xl border border-gray-700 bg-gray-850 px-4 py-3 text-sm text-gray-200 sm:grid-cols-3 sm:px-5">
 							<div>
 								<div className="text-xs uppercase tracking-[0.25em] text-gray-400">Salones detectados</div>
-								<div className="mt-1 text-2xl font-bold">{roomInventory.length}</div>
+								<div className="mt-1 text-2xl font-bold">{isLoadingRooms ? '...' : roomInventory.length}</div>
 							</div>
 							<div>
 								<div className="text-xs uppercase tracking-[0.25em] text-gray-400">Disponibles</div>
-								<div className="mt-1 text-2xl font-bold">{availableRooms.length}</div>
+								<div className="mt-1 text-2xl font-bold">{isLoadingRooms ? '...' : availableRooms.length}</div>
 							</div>
 							<div>
 								<div className="text-xs uppercase tracking-[0.25em] text-gray-400">Rango</div>
@@ -237,6 +265,12 @@ const EmptyClassroomFinder = () => {
 						</div>
 					</div>
 				</header>
+
+				{loadError && (
+					<div className="rounded-2xl border border-red-500/40 bg-red-950/30 px-4 py-3 text-sm text-red-200">
+						No se pudieron cargar los datos de salones: {loadError}
+					</div>
+				)}
 
 				<section className="grid gap-4 rounded-2xl border border-gray-700 bg-gray-800 p-4 lg:grid-cols-[1.2fr_1fr_1fr]">
 					<div className="space-y-3">

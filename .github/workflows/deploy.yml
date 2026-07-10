@@ -32,6 +32,9 @@ jobs:
             - name: Build project
               run: npm run build
 
+            - name: Remove published data from build output
+              run: rm -rf dist/data
+
             - name: Upload production-ready build files
               uses: actions/upload-artifact@v5
               with:
@@ -56,3 +59,4 @@ jobs:
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
                   publish_dir: ./dist
+                  keep_files: true
