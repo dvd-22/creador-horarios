@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-10T00:36:58.054Z",
+  "lastUpdated": "2026-07-12T10:07:48.643Z",
   "totalProfessors": 2672,
   "ratingsFound": 1394,
   "foundPercentage": 52,
@@ -349,8 +349,8 @@
     "Alejandra Danae Gómez Hernández": null,
     "Alejandra García García": {
       "name": "Alejandra García García",
-      "rating": 4.9,
-      "commentCount": 49,
+      "rating": 4.8,
+      "commentCount": 50,
       "id": "41896",
       "url": "https://www.misprofesores.com/profesores/Alejandra-Garcia-Garcia_41896"
     },
@@ -1498,7 +1498,7 @@
     "Carlos Contreras Cruz": {
       "name": "Carlos Contreras Cruz",
       "rating": 7.1,
-      "commentCount": 68,
+      "commentCount": 69,
       "id": "42150",
       "url": "https://www.misprofesores.com/profesores/Carlos-Contreras-Cruz_42150"
     },
@@ -3379,8 +3379,8 @@
     },
     "Federico Sánchez Bringas": {
       "name": "Federico Sánchez Bringas",
-      "rating": 5.7,
-      "commentCount": 80,
+      "rating": 5.6,
+      "commentCount": 81,
       "id": "43324",
       "url": "https://www.misprofesores.com/profesores/Federico-Sanchez-Bringas_43324"
     },
@@ -4793,10 +4793,10 @@
     "Javier Eduardo Rodríguez Gónzalez": null,
     "Javier León Cotonieto": {
       "name": "Javier León Cotonieto",
-      "rating": 6.5,
-      "commentCount": 2,
-      "id": "173235",
-      "url": "https://www.misprofesores.com/profesores/Javier-Leon-Cotonieto_173235"
+      "rating": 9,
+      "commentCount": 3,
+      "id": "164911",
+      "url": "https://www.misprofesores.com/profesores/Javier-Leon-Cotonieto_164911"
     },
     "Javier Mas Ruiz": {
       "name": "Javier Mas Ruiz",
@@ -6535,11 +6535,11 @@
       "url": "https://www.misprofesores.com/profesores/Lisette-Chavez-Garcia_113227"
     },
     "Livia Socorro León Paniagua": {
-      "name": "Livia Socorro Leon Paniagua",
-      "rating": 9,
-      "commentCount": 1,
-      "id": "104209",
-      "url": "https://www.misprofesores.com/profesores/Livia-Leon-Paniagua_104209"
+      "name": "Livia León Paniagua",
+      "rating": 9.9,
+      "commentCount": 13,
+      "id": "52324",
+      "url": "https://www.misprofesores.com/profesores/Livia-Leon-Paniagua_52324"
     },
     "Lizbeth Naranjo Albarrán": {
       "name": "Lizbeth Naranjo",
@@ -6675,7 +6675,7 @@
     "Luis Antonio Paredes Rivas": {
       "name": "Luis Antonio Paredes Rivas",
       "rating": 9.1,
-      "commentCount": 61,
+      "commentCount": 62,
       "id": "47864",
       "url": "https://www.misprofesores.com/profesores/Luis-Paredes-Rivas_47864"
     },
@@ -7101,8 +7101,8 @@
     },
     "Manuel Soto Romero": {
       "name": "Manuel Soto Romero",
-      "rating": 9,
-      "commentCount": 8,
+      "rating": 8.2,
+      "commentCount": 9,
       "id": "159899",
       "url": "https://www.misprofesores.com/profesores/Manuel-Soto-Romero_159899"
     },
@@ -8802,7 +8802,7 @@
     "Omar de la Riva Torres": {
       "name": "Omar de la Riva Torres",
       "rating": 7.8,
-      "commentCount": 161,
+      "commentCount": 163,
       "id": "64003",
       "url": "https://www.misprofesores.com/profesores/Omar-Riva-Torres_64003"
     },
@@ -10524,8 +10524,8 @@
     "Ulisses Jesús Gutiérrez Hernández": null,
     "Uri Nimrod Ramírez Jarquín": {
       "name": "Uri Nimrod Ramírez Jarquin",
-      "rating": 4.8,
-      "commentCount": 13,
+      "rating": 5.1,
+      "commentCount": 14,
       "id": "99385",
       "url": "https://www.misprofesores.com/profesores/Uri-Ramirez-Jarquin_99385"
     },
@@ -11045,9 +11045,9 @@
     "processed": 2672,
     "found": 1394,
     "notFound": 1278,
-    "foundWithFallback": 54,
-    "foundWithMainTemplate": 1340,
-    "keptExisting": 1386,
-    "upgraded": 8
+    "foundWithFallback": 52,
+    "foundWithMainTemplate": 1342,
+    "keptExisting": 1378,
+    "upgraded": 16
   }
 }
