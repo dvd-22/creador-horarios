@@ -93,7 +93,7 @@
             "dias": [
               "Vi"
             ],
-            "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula III"
+            "salon": "Laboratorio de Prácticas de Biotecnología"
           }
         ],
         "nota": null,
@@ -293,7 +293,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373763"
       }
     },
     "Biología de Hongos": {
@@ -325,7 +325,7 @@
           }
         ],
         "nota": null,
-        "salon": "201",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373764"
       },
@@ -504,7 +504,7 @@
         "nota": null,
         "salon": "Laboratorio de Prácticas de Ciencias de la Tierra",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373770"
       },
       "5015": {
         "grupo": "5015",
@@ -553,7 +553,7 @@
         "ayudantes": [
           {
             "nombre": "Roxana Acosta Gutiérrez",
-            "horario": "07:30 a 10:30",
+            "horario": "08:30 a 10:30",
             "dias": [
               "Sa"
             ],
@@ -571,7 +571,7 @@
           "nombre": "César Antonio Ríos Muñoz",
           "horarios": [
             {
-              "horario": "18:00 a 21:00",
+              "horario": "18:00 a 20:00",
               "dias": [
                 "Vi"
               ]
@@ -609,15 +609,15 @@
         "ayudantes": [
           {
             "nombre": "Georgina Santos Barrera",
-            "horario": "11:00 a 14:00",
+            "horario": "11:00 a 13:00",
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biogeografía I"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biogeografía I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375764"
       }
@@ -677,7 +677,7 @@
         "nota": null,
         "salon": "009",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373775"
       }
     },
     "Biología de Plantas II": {
@@ -711,7 +711,7 @@
         "nota": null,
         "salon": "S3",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373776"
       },
       "5021": {
         "grupo": "5021",
@@ -1681,7 +1681,7 @@
         "nota": null,
         "salon": "Laboratorio de Prácticas de Paleobiología",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373810"
       },
       "5055": {
         "grupo": "5055",
@@ -1737,7 +1737,7 @@
         "nota": null,
         "salon": "Laboratorio de Prácticas de Paleobiología",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373812"
       },
       "5057": {
         "grupo": "5057",
@@ -1765,7 +1765,7 @@
         "nota": null,
         "salon": "Laboratorio de Prácticas de Paleobiología",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373813"
       },
       "5058": {
         "grupo": "5058",
@@ -1821,7 +1821,7 @@
         "nota": null,
         "salon": "Laboratorio de Prácticas de Paleobiología",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373815"
       },
       "5060": {
         "grupo": "5060",
@@ -2554,7 +2554,7 @@
         "nota": "Bases moleculares de la infección de la célula hospedero por el parásito Leishmania",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375870"
       },
       "5554": {
         "grupo": "5554",
@@ -2653,7 +2653,7 @@
         "nota": "Biología celular y molecular de la reproducción sexual.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375876"
       },
       "5560": {
         "grupo": "5560",
@@ -3490,12 +3490,6 @@
             "salon": null
           },
           {
-            "nombre": "Virginia Rodríguez Amador",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
             "nombre": "Alexis Itamar Rios Ruiz",
             "horario": null,
             "dias": [],
@@ -3585,7 +3579,7 @@
         "nota": "Paleontología de vertebrados",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375981"
       },
       "5665": {
         "grupo": "5665",
@@ -3743,6 +3737,43 @@
           }
         ],
         "nota": "Genes y ambiente",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5679": {
+        "grupo": "5679",
+        "profesor": {
+          "nombre": "Pablo Padilla Longoria",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "José Antonio Alonso Pavón",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Mario Sánchez Domínguez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ricardo Munguía Díaz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Sergio Javier Martínez García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Biología sintética.",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -4143,7 +4174,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373831"
       },
       "5076": {
         "grupo": "5076",
@@ -5416,6 +5447,49 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5677": {
+        "grupo": "5677",
+        "profesor": {
+          "nombre": "Gabriela Parra Olea",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Mirna Grisel García Castillo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Raquel Hernández Austria",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "José Daniel Lara Tufiño",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Carlos Omar Becerra Soria",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Marisol Eliut Vega Orihuela",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Ecología, sistemática y conservación de anfibios",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -6481,7 +6555,7 @@
         "nota": "Bases moleculares de la infección de la célula hospedero por el parásito Leishmania",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375871"
       },
       "5557": {
         "grupo": "5557",
@@ -6617,7 +6691,7 @@
         "nota": "Biología de la Reproducción en Mamíferos",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375880"
       },
       "5565": {
         "grupo": "5565",
@@ -6901,7 +6975,7 @@
         "nota": "Estrategias inmunoterapéuticas para tumores cerebrales.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375904"
       },
       "5587": {
         "grupo": "5587",
@@ -7997,12 +8071,6 @@
             "salon": null
           },
           {
-            "nombre": "Virginia Rodríguez Amador",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
             "nombre": "Alexis Itamar Rios Ruiz",
             "horario": null,
             "dias": [],
@@ -8086,7 +8154,7 @@
         "nota": "Estudios filosóficos, históricos y sociales sobre biología evolutiva.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375976"
       },
       "5660": {
         "grupo": "5660",
@@ -8232,6 +8300,43 @@
           }
         ],
         "nota": "Sistemática molecular, filogeografía y genética de la conservación de vertebrados y plantas.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5680": {
+        "grupo": "5680",
+        "profesor": {
+          "nombre": "Pablo Padilla Longoria",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "José Antonio Alonso Pavón",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Mario Sánchez Domínguez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ricardo Munguía Díaz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Sergio Javier Martínez García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Biología sintética.",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -8818,7 +8923,7 @@
         "nota": "Biología de la Reproducción en Mamíferos",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375881"
       },
       "5566": {
         "grupo": "5566",
@@ -9380,7 +9485,7 @@
         "nota": "Estudios filosóficos, históricos y sociales sobre biología evolutiva.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375977"
       },
       "5664": {
         "grupo": "5664",
@@ -9514,6 +9619,49 @@
           }
         ],
         "nota": "Biología del cáncer: importancia de las uniones intercelulares.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5678": {
+        "grupo": "5678",
+        "profesor": {
+          "nombre": "Gabriela Parra Olea",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Mirna Grisel García Castillo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Raquel Hernández Austria",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "José Daniel Lara Tufiño",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Carlos Omar Becerra Soria",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Marisol Eliut Vega Orihuela",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Ecología, sistemática y conservación de anfibios",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -10110,7 +10258,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373867"
       }
     },
     "Deuterostomados": {
@@ -10674,7 +10822,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Cristian Cuevas Morales",
+            "nombre": null,
             "horario": "14:30 a 17:30",
             "dias": [
               "Ju"
@@ -10829,7 +10977,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373889"
       }
     },
     "Introducción a la Citogenética Humana": {
@@ -11148,7 +11296,7 @@
         },
         "ayudantes": [],
         "nota": null,
-        "salon": null,
+        "salon": "011",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375634"
       }
@@ -11264,7 +11412,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373904"
       }
     },
     "Paleobiología de Dinosaurios": {
@@ -11384,7 +11532,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373908"
       }
     },
     "Seminario de Biología I": {
@@ -11528,7 +11676,7 @@
         "nota": "Seminario de Biología II (Modelado de Nicho Ecológico)",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373911"
       },
       "5157": {
         "grupo": "5157",
@@ -12149,7 +12297,7 @@
         "nota": "Taxonomía vegetal",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373932"
       },
       "5177": {
         "grupo": "5177",

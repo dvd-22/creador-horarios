@@ -167,7 +167,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375285"
       },
       "5189": {
         "grupo": "5189",
@@ -1279,7 +1279,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S5",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375324"
       },
@@ -1307,7 +1307,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S6",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -1320,7 +1320,7 @@
               "horario": "07:30 a 09:30",
               "dias": [
                 "Ma",
-                "Mi",
+                "Vi",
                 "Sa"
               ]
             }
@@ -1335,7 +1335,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S6",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375326"
       },
@@ -1363,7 +1363,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S5",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375327"
       },
@@ -1391,7 +1391,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S5",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -1419,7 +1419,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S6",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375329"
       },
@@ -1447,7 +1447,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S5",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375330"
       },
@@ -1475,7 +1475,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S6",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375331"
       },
@@ -1503,7 +1503,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S5",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -1531,7 +1531,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S6",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375333"
       },
@@ -1544,7 +1544,6 @@
               "horario": "12:00 a 14:00",
               "dias": [
                 "Ma",
-                "Vi",
                 "Sa"
               ]
             }
@@ -1553,13 +1552,15 @@
         "ayudantes": [
           {
             "nombre": "Julio César García Zebadúa",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "12:00 a 14:00",
+            "dias": [
+              "Vi"
+            ],
+            "salon": "S2"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S6",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375334"
       },
@@ -1572,7 +1573,6 @@
               "horario": "12:00 a 14:00",
               "dias": [
                 "Ma",
-                "Vi",
                 "Sa"
               ]
             }
@@ -1581,13 +1581,15 @@
         "ayudantes": [
           {
             "nombre": "Perla Eugenia Ugalde Muñiz",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "12:00 a 14:00",
+            "dias": [
+              "Vi"
+            ],
+            "salon": "S3"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S5",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -1671,7 +1673,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S5",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375338"
       },
@@ -1699,7 +1701,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S6",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375339"
       },
@@ -1711,9 +1713,7 @@
             {
               "horario": "14:00 a 16:00",
               "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
+                "Lu"
               ]
             }
           ]
@@ -1721,13 +1721,16 @@
         "ayudantes": [
           {
             "nombre": "María Laura González Resendiz",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "14:00 a 16:00",
+            "dias": [
+              "Mi",
+              "Vi"
+            ],
+            "salon": "S5"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -1739,9 +1742,7 @@
             {
               "horario": "14:00 a 16:00",
               "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
+                "Lu"
               ]
             }
           ]
@@ -1749,13 +1750,16 @@
         "ayudantes": [
           {
             "nombre": "Miguel Ángel Rosas Paz",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "14:00 a 16:00",
+            "dias": [
+              "Mi",
+              "Vi"
+            ],
+            "salon": "S6"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "010",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375341"
       },
@@ -1780,18 +1784,18 @@
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "009"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375342"
       },
       "5246": {
         "grupo": "5246",
         "profesor": {
-          "nombre": "Ponciano García Gutiérrez",
+          "nombre": "David Garciadiego Cázares",
           "horarios": [
             {
               "horario": "16:00 a 18:00",
@@ -1804,16 +1808,16 @@
         },
         "ayudantes": [
           {
-            "nombre": "David Garciadiego Cázares",
+            "nombre": "Wilmer Esteban Vallejo Narváez",
             "horario": "13:00 a 15:00",
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "002"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "002",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -1841,14 +1845,14 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S6",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375344"
       },
       "5248": {
         "grupo": "5248",
         "profesor": {
-          "nombre": "Sara Rosario Cruz Morales",
+          "nombre": "Giovanni Aldana Gutiérrez",
           "horarios": [
             {
               "horario": "18:00 a 20:00",
@@ -1869,9 +1873,9 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "002",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375345"
       }
     },
     "Fundamentos de ecología": {
@@ -1898,7 +1902,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375346"
       },
@@ -1925,7 +1929,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -1952,7 +1956,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375348"
       },
@@ -1979,7 +1983,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375349"
       },
@@ -2006,7 +2010,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -2033,7 +2037,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375351"
       },
@@ -2060,9 +2064,9 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "005",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375352"
       },
       "5256": {
         "grupo": "5256",
@@ -2092,7 +2096,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375353"
       },
@@ -2124,7 +2128,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375354"
       },
@@ -2151,7 +2155,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375355"
       },
@@ -2178,7 +2182,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375356"
       }
@@ -3220,7 +3224,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375393"
       }
     },
     "Modelos biomatemáticos I": {
@@ -3550,7 +3554,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375405"
       },
       "5309": {
         "grupo": "5309",
@@ -3604,7 +3608,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375407"
       },
       "5311": {
         "grupo": "5311",
@@ -5728,7 +5732,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Plantas I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375483"
       }
