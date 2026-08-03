@@ -805,7 +805,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "O125",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373964"
       },
       "4379": {
         "grupo": "4379",
@@ -2573,7 +2573,7 @@
         "nota": null,
         "salon": "003 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374131"
       },
       "4127": {
         "grupo": "4127",
@@ -6137,7 +6137,7 @@
         "nota": null,
         "salon": "P118",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374216"
       },
       "4199": {
         "grupo": "4199",
@@ -7849,11 +7849,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P202"
+            "salon": "306 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "P202",
+        "salon": "306 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374791"
       },
@@ -8116,11 +8116,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "303 (Tlaltícpac)"
+            "salon": "004 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "303 (Tlaltícpac)",
+        "salon": "004 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374817"
       },
@@ -8302,11 +8302,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Aula Magna II"
+            "salon": "O218"
           }
         ],
         "nota": null,
-        "salon": "Aula Magna II",
+        "salon": "O218",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374829"
       },
@@ -9882,7 +9882,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Víctor Leonardo Castañeda Rivas",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
