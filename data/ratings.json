@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-02T10:12:57.128Z",
+  "lastUpdated": "2026-08-03T00:38:13.623Z",
   "totalProfessors": 2672,
-  "ratingsFound": 1396,
+  "ratingsFound": 1397,
   "foundPercentage": 52,
   "ratings": {
     "Aaron Ali Lozano Rocha": null,
@@ -848,7 +848,13 @@
       "url": "https://www.misprofesores.com/profesores/Ana-Pineda-Rios_182097"
     },
     "Ana Valeria Beltrán Sánchez": null,
-    "Ana Valeria Martínez Silva": null,
+    "Ana Valeria Martínez Silva": {
+      "name": "Ana Valeria Martínez Silva",
+      "rating": 9,
+      "commentCount": 1,
+      "id": "195722",
+      "url": "https://www.misprofesores.com/profesores/Ana-Martinez-Silva_195722"
+    },
     "Anabel Jáuregui Hernández": {
       "name": "Anabel Jáuregui Hernández",
       "rating": 9,
@@ -1049,8 +1055,8 @@
     "Antonio de Jesús Santillán Jiménez": null,
     "Araceli Eugenia Mercado Fernández": {
       "name": "Araceli Eugenia Mercado Fernández",
-      "rating": 6.5,
-      "commentCount": 31,
+      "rating": 6.8,
+      "commentCount": 33,
       "id": "64291",
       "url": "https://www.misprofesores.com/profesores/Araceli-Mercado-Fernandez_64291"
     },
@@ -2037,7 +2043,7 @@
     "César Antonio Ortiz Martínez": {
       "name": "cesar antonio ortiz martinez",
       "rating": 6.5,
-      "commentCount": 40,
+      "commentCount": 41,
       "id": "90657",
       "url": "https://www.misprofesores.com/profesores/Cesar-Ortiz-Martinez_90657"
     },
@@ -2071,7 +2077,7 @@
     "César Garnica Navarro": {
       "name": "César Garnica Navarro",
       "rating": 9.1,
-      "commentCount": 16,
+      "commentCount": 17,
       "id": "135365",
       "url": "https://www.misprofesores.com/profesores/Cesar-Garnica-Navarro_135365"
     },
@@ -3074,8 +3080,8 @@
     "Enrique Vega Castillo": null,
     "Enrique Vega Ramírez": {
       "name": "Enrique Vega Ramírez",
-      "rating": 7.4,
-      "commentCount": 47,
+      "rating": 7.6,
+      "commentCount": 46,
       "id": "51415",
       "url": "https://www.misprofesores.com/profesores/Enrique-Vega-Ramirez_51415"
     },
@@ -3273,15 +3279,15 @@
     },
     "Esther Zúñiga Sánchez": {
       "name": "Esther Zúñiga Sánchez",
-      "rating": 8.9,
-      "commentCount": 8,
+      "rating": 8.1,
+      "commentCount": 9,
       "id": "63031",
       "url": "https://www.misprofesores.com/profesores/Esther-Zuñiga-Sanchez_63031"
     },
     "Eugenia Marmolejo Rivas": {
       "name": "Eugenia Marmolejo Rivas",
-      "rating": 7.4,
-      "commentCount": 44,
+      "rating": 7.5,
+      "commentCount": 45,
       "id": "36096",
       "url": "https://www.misprofesores.com/profesores/Eugenia-Marmolejo-Rivas_36096"
     },
@@ -3505,7 +3511,7 @@
     "Fernando Rojas Linares": {
       "name": "Fernando Rojas Linares",
       "rating": 8.6,
-      "commentCount": 26,
+      "commentCount": 27,
       "id": "156635",
       "url": "https://www.misprofesores.com/profesores/Fernando-Rojas-Linares_156635"
     },
@@ -4210,7 +4216,7 @@
     "Helena Socorro Hernández Rosales": {
       "name": "Helena Socorro Hernández Rosales",
       "rating": 10,
-      "commentCount": 2,
+      "commentCount": 3,
       "id": "113436",
       "url": "https://www.misprofesores.com/profesores/Helena-Hernandez-Rosales_113436"
     },
@@ -4648,7 +4654,7 @@
     "Iván Axell Gómez Ramos": {
       "name": "Iván Axell Gómez Ramos",
       "rating": 8.4,
-      "commentCount": 9,
+      "commentCount": 10,
       "id": "146896",
       "url": "https://www.misprofesores.com/profesores/Ivan-Gomez-Ramos_146896"
     },
@@ -4853,8 +4859,8 @@
     "Jeanett Monroy Anzueto": null,
     "Jehú López Aparicio": {
       "name": "Jehú López Aparicio",
-      "rating": 6.3,
-      "commentCount": 20,
+      "rating": 6.1,
+      "commentCount": 21,
       "id": "94740",
       "url": "https://www.misprofesores.com/profesores/Jehu-Lopez-Aparicio_94740"
     },
@@ -4887,7 +4893,7 @@
     "Jessica Sarahi Méndez Rincón": {
       "name": "Jessica Sarahi Méndez Rincón",
       "rating": 8,
-      "commentCount": 128,
+      "commentCount": 119,
       "id": "191048",
       "url": "https://www.misprofesores.com/profesores/Jessica-Mendez-Rincon_191048"
     },
@@ -5445,7 +5451,7 @@
     "José Antonio Gómez Ortega": {
       "name": "José Antonio Gómez Ortega",
       "rating": 6.9,
-      "commentCount": 43,
+      "commentCount": 44,
       "id": "51191",
       "url": "https://www.misprofesores.com/profesores/Jose-Gomez-Ortega_51191"
     },
@@ -5656,8 +5662,8 @@
     },
     "José Julián Pavón Español": {
       "name": "José Julián Pavón Español",
-      "rating": 8,
-      "commentCount": 10,
+      "rating": 8.2,
+      "commentCount": 11,
       "id": "154595",
       "url": "https://www.misprofesores.com/profesores/Jose-Pavon-Español_154595"
     },
@@ -6768,7 +6774,7 @@
     "Luis Enrique Serrano Gutiérrez": {
       "name": "Luis Enrique Serrano Gutiérrez",
       "rating": 6.9,
-      "commentCount": 34,
+      "commentCount": 35,
       "id": "104321",
       "url": "https://www.misprofesores.com/profesores/Luis-Serrano-Gutierrez_104321"
     },
@@ -7944,8 +7950,8 @@
     },
     "María del Carmen Fernández García": {
       "name": "María del Carmen Fernández García",
-      "rating": 6.6,
-      "commentCount": 32,
+      "rating": 6.5,
+      "commentCount": 33,
       "id": "61559",
       "url": "https://www.misprofesores.com/profesores/Maria-Fernandez-Garcia_61559"
     },
@@ -8093,7 +8099,7 @@
     "Max Neumann Coto": {
       "name": "Max Neumann Coto",
       "rating": 8,
-      "commentCount": 60,
+      "commentCount": 61,
       "id": "74728",
       "url": "https://www.misprofesores.com/profesores/Max-Neumann-Coto_74728"
     },
@@ -8462,8 +8468,8 @@
     "Mónica Miranda Mijangos": null,
     "Mónica Ramírez Vázquez": {
       "name": "Mónica Ramirez Vázquez",
-      "rating": 8.1,
-      "commentCount": 17,
+      "rating": 8.3,
+      "commentCount": 15,
       "id": "80282",
       "url": "https://www.misprofesores.com/profesores/Monica-Ramirez-Vazquez_80282"
     },
@@ -9106,7 +9112,7 @@
     "Pedro Luis Soto Tejeda": {
       "name": "Pedro Luis Soto Tejeda",
       "rating": 9.4,
-      "commentCount": 58,
+      "commentCount": 59,
       "id": "51226",
       "url": "https://www.misprofesores.com/profesores/Pedro-Soto-Tejeda_51226"
     },
@@ -9767,8 +9773,8 @@
     },
     "Rogelio Omar Corona Núñez": {
       "name": "Rogelio Omar Corona Núñez",
-      "rating": 7.9,
-      "commentCount": 37,
+      "rating": 7.7,
+      "commentCount": 35,
       "id": "150087",
       "url": "https://www.misprofesores.com/profesores/Rogelio-Corona-Nuñez_150087"
     },
@@ -10572,8 +10578,8 @@
     "Valentina Rascón Barajas": null,
     "Valeria Montesinos Chica": {
       "name": "Valeria Montesinos Chica",
-      "rating": 7.8,
-      "commentCount": 19,
+      "rating": 7.5,
+      "commentCount": 22,
       "id": "160081",
       "url": "https://www.misprofesores.com/profesores/Valeria-Montesinos-Chica_160081"
     },
@@ -11055,11 +11061,11 @@
   },
   "statistics": {
     "processed": 2672,
-    "found": 1396,
-    "notFound": 1276,
-    "foundWithFallback": 52,
+    "found": 1397,
+    "notFound": 1275,
+    "foundWithFallback": 53,
     "foundWithMainTemplate": 1344,
-    "keptExisting": 1247,
-    "upgraded": 147
+    "keptExisting": 1239,
+    "upgraded": 155
   }
 }
