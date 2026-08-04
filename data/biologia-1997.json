@@ -419,7 +419,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373767"
       },
       "5012": {
         "grupo": "5012",
@@ -1386,7 +1386,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Yajaira García Feria",
+            "nombre": "María Ivonne Reyes Ortega",
             "horario": "18:00 a 21:00",
             "dias": [
               "Ma"
@@ -3419,7 +3419,7 @@
         "nota": "Parásitos de organismos acuáticos",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375964"
       },
       "5649": {
         "grupo": "5649",
@@ -3770,7 +3770,7 @@
         "nota": "Biología sintética.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375998"
       },
       "5681": {
         "grupo": "5681",
@@ -3795,7 +3795,7 @@
         "nota": "Fisiopatología del asma y de la lesión renal aguda desde el punto de vista celular e inmunológico.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/376000"
       },
       "5686": {
         "grupo": "5686",
@@ -3827,6 +3827,43 @@
         "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/376013"
+      },
+      "5687": {
+        "grupo": "5687",
+        "profesor": {
+          "nombre": "Paul Carrillo Mora",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Laura Sánchez Chapul",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Antonio Bueno Nava",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Alexandra Berenice Luna Angulo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Berenice Márquez Valadez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Neurobiología de la neuroplasticidad y la neurorrehabilitación en el daño cerebral.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/376880"
       }
     }
   },
@@ -5781,7 +5818,7 @@
       "5090": {
         "grupo": "5090",
         "profesor": {
-          "nombre": "Mariana Susana Hernández Leal",
+          "nombre": "Edna Arévalo Marín",
           "horarios": [
             {
               "horario": "14:30 a 17:30",
@@ -7358,7 +7395,7 @@
         "nota": "La medicina regenerativa y la ingeniería tisular en la generación de tejidos de novo.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375923"
       },
       "5607": {
         "grupo": "5607",
@@ -8449,6 +8486,37 @@
           }
         ],
         "nota": "Fisiopatología del asma y de la lesión renal aguda desde el punto de vista celular e inmunológico.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5688": {
+        "grupo": "5688",
+        "profesor": {
+          "nombre": "Jaime Humberto Urrutia Fucugauchi",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ligia Lucina Pérez Cruz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Marysol Valdez Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rafael Venegas Ferrer",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Principios de paleoceanografía y paleoclimatología.",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -9599,37 +9667,6 @@
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375977"
       },
-      "5664": {
-        "grupo": "5664",
-        "profesor": {
-          "nombre": "Jaime Humberto Urrutia Fucugauchi",
-          "horarios": []
-        },
-        "ayudantes": [
-          {
-            "nombre": "Ligia Lucina Pérez Cruz",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Marysol Valdez Hernández",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
-            "nombre": "Rafael Venegas Ferrer",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "Principios de paleoceanografía y paleoclimatología.",
-        "salon": null,
-        "modalidad": null,
-        "presentacion": null
-      },
       "5668": {
         "grupo": "5668",
         "profesor": {
@@ -9891,7 +9928,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373853"
       }
     },
     "Anatomía Animal": {
@@ -9999,7 +10036,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "El curso se impartirá en el Instituto de Astronomía",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374658"
@@ -10448,7 +10485,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373870"
       }
     },
     "Ecofisiología Animal": {
@@ -10576,7 +10613,7 @@
       "5118": {
         "grupo": "5118",
         "profesor": {
-          "nombre": "Angel Eduardo Herrera Mares",
+          "nombre": "Omar Lagunas Calvo",
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -12396,7 +12433,7 @@
         "nota": "Biología de plantas epífitas",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373931"
       },
       "5485": {
         "grupo": "5485",

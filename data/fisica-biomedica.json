@@ -871,7 +871,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "P101",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373996"
       },
       "8016": {
         "grupo": "8016",
@@ -1317,7 +1317,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "O122",
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374018"
       },
       "8027": {
         "grupo": "8027",
@@ -2644,7 +2644,7 @@
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374062"
       },
       "8049": {
@@ -3212,7 +3212,7 @@
         "nota": null,
         "salon": "202 (Tlaltícpac)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375058"
       }
     },
     "Fenómenos Colectivos": {
@@ -3293,7 +3293,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Diego Mora de la Fuente",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "011",
         "modalidad": "Presencial",
@@ -3572,7 +3579,7 @@
         ],
         "nota": null,
         "salon": "O131",
-        "modalidad": "Mixta",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374476"
       },
       "8155": {
@@ -4581,7 +4588,7 @@
         "nota": null,
         "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374585"
       },
       "8265": {
         "grupo": "8265",
@@ -4936,7 +4943,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "El curso se impartirá en el Instituto de Investigaciones en Materiales",
         "salon": "P205",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374514"
@@ -5113,7 +5120,7 @@
         "nota": null,
         "salon": "301 (Tlaltícpac)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375067"
       }
     },
     "Óptica": {
@@ -5167,6 +5174,12 @@
           ]
         },
         "ayudantes": [
+          {
+            "nombre": "Gersain Gabriel Quiroz Sánchez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
           {
             "nombre": "José Roberto Alonso Garduza",
             "horario": null,
@@ -5388,7 +5401,7 @@
         },
         "ayudantes": [],
         "nota": null,
-        "salon": null,
+        "salon": "011",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/376007"
       },
@@ -5409,7 +5422,7 @@
         },
         "ayudantes": [],
         "nota": null,
-        "salon": null,
+        "salon": "011",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/376009"
       }
@@ -5794,7 +5807,7 @@
         "nota": null,
         "salon": "Taller Interdisciplinario de Física y Biomedicina III",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375070"
       }
     },
     "Introducción a la Oncología": {
@@ -5902,7 +5915,7 @@
         "nota": null,
         "salon": "O133",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374610"
       },
       "8289": {
         "grupo": "8289",
@@ -5987,7 +6000,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Carlos Alejandro Ávila Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "103",
         "modalidad": "Presencial",
@@ -6114,29 +6134,8 @@
         ],
         "nota": null,
         "salon": "P206",
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375676"
-      },
-      "8441": {
-        "grupo": "8441",
-        "profesor": {
-          "nombre": null,
-          "horarios": [
-            {
-              "horario": "10:00 a 12:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [],
-        "nota": null,
-        "salon": "P209",
-        "modalidad": null,
-        "presentacion": null
       }
     }
   },
@@ -6174,7 +6173,7 @@
         "nota": null,
         "salon": "301 (Tlaltícpac)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375072"
       }
     },
     "Seguridad Radiológica": {
@@ -6379,7 +6378,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375091"
       },
       "3043": {
         "grupo": "3043",

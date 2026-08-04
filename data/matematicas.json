@@ -1398,7 +1398,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "P101",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373995"
       },
       "4042": {
         "grupo": "4042",
@@ -1844,7 +1844,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "O122",
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374017"
       },
       "4053": {
         "grupo": "4053",
@@ -2563,7 +2563,7 @@
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374061"
       },
       "4075": {
@@ -4446,7 +4446,7 @@
         "nota": null,
         "salon": "003 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374131"
       },
       "4127": {
         "grupo": "4127",
@@ -4564,11 +4564,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "004 (Yelizcalli)"
+            "salon": "303 (Tlaltícpac)"
           }
         ],
         "nota": null,
-        "salon": "004 (Yelizcalli)",
+        "salon": "303 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374135"
       },
@@ -5060,11 +5060,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O218"
+            "salon": "Aula Magna II"
           }
         ],
         "nota": null,
-        "salon": "O218",
+        "salon": "Aula Magna II",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375684"
       },
@@ -6924,7 +6924,7 @@
         "nota": null,
         "salon": "P118",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374216"
       },
       "4199": {
         "grupo": "4199",
@@ -7734,7 +7734,7 @@
         "nota": null,
         "salon": "P212",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374243"
       },
       "4226": {
         "grupo": "4226",
@@ -8077,11 +8077,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Finanzas"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Finanzas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374252"
       }
@@ -8547,7 +8547,7 @@
         "nota": null,
         "salon": "Salón de Seminarios 429",
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374466"
       },
       "8145": {
         "grupo": "8145",
@@ -8564,7 +8564,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Diego Mora de la Fuente",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "011",
         "modalidad": "Presencial",
@@ -8843,7 +8850,7 @@
         ],
         "nota": null,
         "salon": "O131",
-        "modalidad": "Mixta",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374476"
       },
       "8155": {
@@ -9089,11 +9096,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Sistemas Complejos"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Sistemas Complejos",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374294"
       },
@@ -9120,11 +9127,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Topología"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Topología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374295"
       },
@@ -9703,11 +9710,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Geometría"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Geometría",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375693"
       }
@@ -10715,7 +10722,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "César Baltazar Morales Mendoza",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -10915,11 +10922,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Topología"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Topología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374257"
       },
@@ -11010,11 +11017,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Geometría"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Geometría",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374260"
       }
@@ -11107,11 +11114,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "P202"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P202",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374263"
       },
@@ -11200,11 +11207,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Álgebra"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Álgebra",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374266"
       }
@@ -11264,11 +11271,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "P207"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P104",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374268"
       }
@@ -11615,11 +11622,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Topología"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Topología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375649"
       }
@@ -11648,11 +11655,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Demografía"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Demografía",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375253"
       },
@@ -11712,11 +11719,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Geometría"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Geometría",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374276"
       },
@@ -11805,11 +11812,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "O124"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "O124",
         "modalidad": "Presencial",
         "presentacion": null
       }
@@ -12179,7 +12186,7 @@
         "nota": null,
         "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374584"
       },
       "8264": {
         "grupo": "8264",
@@ -12361,6 +12368,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "Juan Valentín Escobar Sotomayor",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "María Izabel Morales Amador",
             "horario": null,
             "dias": [],
@@ -12370,7 +12383,7 @@
         "nota": null,
         "salon": "P116",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374627"
       },
       "8306": {
         "grupo": "8306",
@@ -12596,11 +12609,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Finanzas"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Finanzas",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -12913,11 +12926,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Investigación de Operaciones"
           }
         ],
         "nota": "Este curso se ofrecerá de 17 a 18 horas",
-        "salon": null,
+        "salon": "Taller de Investigación de Operaciones",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374315"
       }
@@ -13005,7 +13018,7 @@
         "nota": null,
         "salon": "O133",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374610"
       },
       "8289": {
         "grupo": "8289",
@@ -13090,7 +13103,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Carlos Alejandro Ávila Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "103",
         "modalidad": "Presencial",
@@ -13217,29 +13237,8 @@
         ],
         "nota": null,
         "salon": "P206",
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375676"
-      },
-      "8441": {
-        "grupo": "8441",
-        "profesor": {
-          "nombre": null,
-          "horarios": [
-            {
-              "horario": "10:00 a 12:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [],
-        "nota": null,
-        "salon": "P209",
-        "modalidad": null,
-        "presentacion": null
       }
     },
     "Procesos Estocásticos I": {
@@ -13266,11 +13265,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "303 (Tlaltícpac)"
+            "salon": "004 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "303 (Tlaltícpac)",
+        "salon": "004 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374818"
       },
@@ -13297,11 +13296,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Análisis Numérico"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Análisis Numérico",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374820"
       },
@@ -13328,11 +13327,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Demografía"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Demografía",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374822"
       },
@@ -13452,11 +13451,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Aula Magna II"
+            "salon": "O218"
           }
         ],
         "nota": null,
-        "salon": "Aula Magna II",
+        "salon": "O218",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374830"
       },
@@ -13547,11 +13546,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Salón de Seminarios S-102"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Salón de Seminarios S-102",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374880"
       }
@@ -13580,11 +13579,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374883"
       }
@@ -13833,7 +13832,7 @@
         ],
         "nota": null,
         "salon": "P209",
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375632"
       }
     },
@@ -13923,11 +13922,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Topología"
           }
         ],
         "nota": "Introducción a las categorías abelianas",
-        "salon": null,
+        "salon": "Taller de Topología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374318"
       }
@@ -13956,11 +13955,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Álgebra"
           }
         ],
         "nota": "Introducción al Algebra Homológica",
-        "salon": null,
+        "salon": "Taller de Álgebra",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374319"
       },
@@ -14018,11 +14017,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Investigación de Operaciones"
           }
         ],
         "nota": "Teoría de Matroides",
-        "salon": null,
+        "salon": "Taller de Investigación de Operaciones",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375699"
       }
@@ -14148,11 +14147,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Investigación de Operaciones"
           }
         ],
         "nota": "Teoría de distribuciones y aplicaciones",
-        "salon": null,
+        "salon": "Taller de Investigación de Operaciones",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374324"
       }
@@ -14181,11 +14180,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Geometría"
           }
         ],
         "nota": "Criticalidad, transiciones sistémicas y tecnociencias",
-        "salon": null,
+        "salon": "Taller de Geometría",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374326"
       }
@@ -14245,11 +14244,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "P103"
           }
         ],
         "nota": "“Aproximaciones históricas a la filosofía de la ciencia y la tecnología\"",
-        "salon": null,
+        "salon": "P103",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374328"
       }
@@ -14317,11 +14316,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Investigación de Operaciones"
           }
         ],
         "nota": "Matemáticas y Literatura",
-        "salon": null,
+        "salon": "Taller de Investigación de Operaciones",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374331"
       }
@@ -14420,7 +14419,7 @@
         "nota": "Introducción a la geometría de superficies de Riemann compactas",
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374334"
       },
       "4317": {
         "grupo": "4317",
@@ -14445,11 +14444,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Análisis Numérico"
           }
         ],
         "nota": "Temas selectos de geometría semi-riemanniana",
-        "salon": null,
+        "salon": "Taller de Análisis Numérico",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374335"
       },
@@ -14476,11 +14475,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Álgebra"
           }
         ],
         "nota": "Introducción a la teoría de gavillas y cohomología de gavillas",
-        "salon": null,
+        "salon": "Taller de Álgebra",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374336"
       }
@@ -14734,11 +14733,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Álgebra"
           }
         ],
         "nota": "Modelos matemáticos de neuronas y redes neuronales artificiales",
-        "salon": null,
+        "salon": "Taller de Álgebra",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374342"
       },
@@ -15118,11 +15117,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Sistemas Complejos"
           }
         ],
         "nota": "“Comunicación pública de la ciencia”",
-        "salon": null,
+        "salon": "Taller de Sistemas Complejos",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374353"
       },
@@ -15279,11 +15278,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Topología"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Topología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374890"
       }
@@ -15376,11 +15375,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Finanzas"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Finanzas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374365"
       }
@@ -15442,11 +15441,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Salón de Seminarios S-102"
           }
         ],
         "nota": "Problemas básicos de redes",
-        "salon": null,
+        "salon": "Salón de Seminarios S-102",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374891"
       },
@@ -15603,11 +15602,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Sistemas Complejos"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Sistemas Complejos",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374381"
       }
@@ -15669,11 +15668,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Álgebra"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Álgebra",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374254"
       },
@@ -16899,11 +16898,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O124"
+            "salon": "306 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "O124",
+        "salon": "306 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375154"
       },
@@ -17182,11 +17181,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Finanzas"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Finanzas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374284"
       },
@@ -17308,11 +17307,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Demografía"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Demografía",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374301"
       }
@@ -17335,7 +17334,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Cristina Angélica Núñez Rodríguez",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -17492,7 +17491,7 @@
           }
         ],
         "nota": null,
-        "salon": "301 (Tlaltícpac)",
+        "salon": "106 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374513"
       },
@@ -17519,8 +17518,8 @@
             "salon": null
           }
         ],
-        "nota": null,
-        "salon": "P205",
+        "nota": "El curso se impartirá en el Instituto de Investigaciones en Materiales",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374514"
       },
@@ -17638,7 +17637,7 @@
         "ayudantes": [],
         "nota": null,
         "salon": "P205",
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375678"
       }
     },
@@ -18130,11 +18129,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "P103"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P103",
         "modalidad": "Mixta",
         "presentacion": null
       },
@@ -18167,7 +18166,7 @@
         "nota": null,
         "salon": "P118",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374312"
       }
     },
     "Matemáticas Avanzadas de la Física": {
@@ -18396,7 +18395,7 @@
         "nota": null,
         "salon": "P112",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374555"
       },
       "8234": {
         "grupo": "8234",
@@ -18424,7 +18423,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374556"
       },
       "8235": {
         "grupo": "8235",
@@ -18518,7 +18517,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Rivaldo Hernández Magdaleno",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "O133",
         "modalidad": "Presencial",
@@ -18609,6 +18615,12 @@
           ]
         },
         "ayudantes": [
+          {
+            "nombre": "Gersain Gabriel Quiroz Sánchez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
           {
             "nombre": "José Roberto Alonso Garduza",
             "horario": null,
@@ -18830,7 +18842,7 @@
         },
         "ayudantes": [],
         "nota": null,
-        "salon": null,
+        "salon": "011",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/376007"
       },
@@ -18851,7 +18863,7 @@
         },
         "ayudantes": [],
         "nota": null,
-        "salon": null,
+        "salon": "011",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/376009"
       }
@@ -18874,7 +18886,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Samuel Joaquin Jacobo",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -18911,11 +18923,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P202"
+            "salon": "306 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "P202",
+        "salon": "306 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374791"
       },
@@ -19099,11 +19111,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Sistemas Complejos"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Sistemas Complejos",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374881"
       },
@@ -19130,11 +19142,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Análisis Numérico"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Análisis Numérico",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374882"
       }
@@ -19163,11 +19175,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Geometría"
           }
         ],
         "nota": "Cienciometría, Complejidad y Ciencia de la Ciencia",
-        "salon": null,
+        "salon": "Taller de Geometría",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374325"
       },
@@ -19286,11 +19298,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Sistemas Complejos"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Sistemas Complejos",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374357"
       }
@@ -19687,7 +19699,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375994"
       }
     },
     "Termodinámica": {
@@ -19908,11 +19920,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Demografía"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Demografía",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374376"
       },

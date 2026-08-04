@@ -871,7 +871,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "P101",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373995"
       },
       "4042": {
         "grupo": "4042",
@@ -1317,7 +1317,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "O122",
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374017"
       },
       "4053": {
         "grupo": "4053",
@@ -1796,7 +1796,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "Aula 1 de Computación en Física",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374432"
       },
       "8111": {
         "grupo": "8111",
@@ -2876,7 +2876,7 @@
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": null,
-        "modalidad": "Virtual",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374061"
       },
       "4075": {
@@ -3810,7 +3810,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Erick Emmanuel Pérez Franco",
             "horario": "07:00 a 10:00",
             "dias": [
               "Ma",
@@ -3900,7 +3900,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "José Luis Meza Cabañas",
             "horario": "11:00 a 14:00",
             "dias": [
               "Ma",
@@ -4381,7 +4381,7 @@
         "nota": null,
         "salon": "003 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374131"
       },
       "4127": {
         "grupo": "4127",
@@ -4499,11 +4499,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "004 (Yelizcalli)"
+            "salon": "303 (Tlaltícpac)"
           }
         ],
         "nota": null,
-        "salon": "004 (Yelizcalli)",
+        "salon": "303 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374135"
       },
@@ -4995,11 +4995,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O218"
+            "salon": "Aula Magna II"
           }
         ],
         "nota": null,
-        "salon": "O218",
+        "salon": "Aula Magna II",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375684"
       },
@@ -5844,7 +5844,7 @@
         "nota": null,
         "salon": "Salón de Seminarios 429",
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374466"
       },
       "8145": {
         "grupo": "8145",
@@ -5861,7 +5861,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Diego Mora de la Fuente",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "011",
         "modalidad": "Presencial",
@@ -6381,7 +6388,7 @@
         "nota": null,
         "salon": "Laboratorio de Calor, Ondas y Fluidos II",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374484"
       },
       "8163": {
         "grupo": "8163",
@@ -7769,7 +7776,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Luis Antonio Madrigal Butrón",
+            "nombre": "Valente Vázquez Velázquez",
             "horario": "11:00 a 14:00",
             "dias": [
               "Ma",
@@ -8075,7 +8082,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "El curso se impartirá en el Instituto de Investigaciones en Materiales",
         "salon": "P205",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374514"
@@ -8425,7 +8432,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Jennyfer Guadalupe Moreno Moreno",
+            "nombre": "Diana Evelyn Moreno Medrano",
             "horario": "11:00 a 14:00",
             "dias": [
               "Mi",
@@ -8642,6 +8649,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "Gersain Gabriel Quiroz Sánchez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "José Roberto Alonso Garduza",
             "horario": null,
             "dias": [],
@@ -8685,7 +8698,7 @@
         "nota": null,
         "salon": "202 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374534"
       },
       "8213": {
         "grupo": "8213",
@@ -8862,8 +8875,8 @@
         },
         "ayudantes": [],
         "nota": null,
-        "salon": null,
-        "modalidad": null,
+        "salon": "011",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/376007"
       },
       "8452": {
@@ -8881,9 +8894,16 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Minerva Alvarez García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
-        "salon": null,
+        "salon": "011",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/376009"
       }
@@ -9135,7 +9155,7 @@
         "nota": null,
         "salon": "P212",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374243"
       },
       "4226": {
         "grupo": "4226",
@@ -9552,7 +9572,7 @@
         "nota": null,
         "salon": "P112",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374555"
       },
       "8234": {
         "grupo": "8234",
@@ -9580,7 +9600,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374556"
       },
       "8235": {
         "grupo": "8235",
@@ -9674,7 +9694,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Rivaldo Hernández Magdaleno",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "O133",
         "modalidad": "Presencial",
@@ -10322,7 +10349,7 @@
         "nota": null,
         "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374584"
       },
       "8264": {
         "grupo": "8264",
@@ -10901,7 +10928,7 @@
         "nota": null,
         "salon": "O133",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374610"
       },
       "8289": {
         "grupo": "8289",
@@ -11115,27 +11142,6 @@
         "salon": "P206",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375676"
-      },
-      "8441": {
-        "grupo": "8441",
-        "profesor": {
-          "nombre": null,
-          "horarios": [
-            {
-              "horario": "10:00 a 12:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [],
-        "nota": null,
-        "salon": "P209",
-        "modalidad": null,
-        "presentacion": null
       }
     }
   },
@@ -11353,7 +11359,7 @@
         "nota": null,
         "salon": "105 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374623"
       },
       "8302": {
         "grupo": "8302",
@@ -11455,6 +11461,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "Juan Valentín Escobar Sotomayor",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "María Izabel Morales Amador",
             "horario": null,
             "dias": [],
@@ -11464,7 +11476,7 @@
         "nota": null,
         "salon": "P116",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374627"
       },
       "8306": {
         "grupo": "8306",
@@ -12223,12 +12235,18 @@
             "salon": null
           },
           {
-            "nombre": "Fernando Velázquez Carreón",
+            "nombre": "Luis Eduardo Cabezas Montiel",
             "horario": "08:00 a 14:00",
             "dias": [
               "Sa"
             ],
             "salon": "Laboratorio de Física Moderna II"
+          },
+          {
+            "nombre": "Judith Mónica Néquiz Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": "Laboratorio de Física Contemporanea II",
@@ -12304,13 +12322,19 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Erica Guadalupe Terán Morales",
             "horario": "11:00 a 14:00",
             "dias": [
               "Lu",
               "Mi"
             ],
             "salon": "Laboratorio de Física Moderna II"
+          },
+          {
+            "nombre": "Jesús Aaron Flores Prudente",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": "Técncias espectroscópicas en el visble, RMN, RME. Ciencias de materiales, Radiación, entro otras.",
@@ -12541,7 +12565,7 @@
             "salon": null
           },
           {
-            "nombre": "Angel Israel Ortega Pazos",
+            "nombre": "Luis Antonio Madrigal Butrón",
             "horario": null,
             "dias": [],
             "salon": null
@@ -12833,7 +12857,7 @@
         "nota": null,
         "salon": "P118",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374216"
       },
       "4199": {
         "grupo": "4199",
@@ -13046,11 +13070,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Álgebra"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Álgebra",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374254"
       },
@@ -14106,7 +14130,7 @@
         },
         "ayudantes": [],
         "nota": null,
-        "salon": null,
+        "salon": "P115",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374659"
       }
@@ -14253,11 +14277,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Geometría"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Geometría",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374276"
       },
@@ -14484,7 +14508,14 @@
         "grupo": "8346",
         "profesor": {
           "nombre": "Federico Ricalde Sánchez",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "16:00 a 19:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -14567,7 +14598,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374672"
       }
     },
     "Geometría Diferencial I": {
@@ -14594,11 +14625,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Finanzas"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Finanzas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374284"
       },
@@ -15189,11 +15220,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Finanzas"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Finanzas",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -15307,7 +15338,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375673"
       }
     },
@@ -15383,7 +15414,15 @@
         "grupo": "8356",
         "profesor": {
           "nombre": "Guerda Massillon Jacques-Louis",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "12:00 a 13:30",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -15486,7 +15525,16 @@
         "grupo": "8360",
         "profesor": {
           "nombre": "Víctor Manuel Velázquez Aguilar",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "12:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -15538,7 +15586,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374683"
       }
     },
     "Introducción al Estado Sólido": {
@@ -15584,7 +15632,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P117",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374685"
       }
@@ -15702,19 +15750,19 @@
         },
         "ayudantes": [
           {
-            "nombre": "José Luis del Río Valdés",
+            "nombre": "Juan Carlos Velázquez Díaz",
             "horario": null,
             "dias": [],
             "salon": null
           },
           {
-            "nombre": "Marlen Mondragón Huerta",
+            "nombre": "Jesús Antonio Rosas Gutiérrez",
             "horario": null,
             "dias": [],
             "salon": null
           },
           {
-            "nombre": "Marlen Mondragón Huerta",
+            "nombre": "Juan Roberto Gúzman Alvarado",
             "horario": null,
             "dias": [],
             "salon": null
@@ -15794,7 +15842,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374691"
       },
       "8370": {
         "grupo": "8370",
@@ -15840,7 +15888,7 @@
         },
         "ayudantes": [],
         "nota": null,
-        "salon": null,
+        "salon": "Anfiteatro Alfredo Barrera",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375634"
       }
@@ -15919,11 +15967,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Álgebra"
           }
         ],
         "nota": "Introducción al Algebra Homológica",
-        "salon": null,
+        "salon": "Taller de Álgebra",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374319"
       },
@@ -15981,11 +16029,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Investigación de Operaciones"
           }
         ],
         "nota": "Teoría de Matroides",
-        "salon": null,
+        "salon": "Taller de Investigación de Operaciones",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375699"
       }
@@ -16014,11 +16062,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Aula Magna II"
+            "salon": null
           }
         ],
         "nota": "Este seminario se ofrecerá en el Instituto de Matemáticas",
-        "salon": "Aula Magna II",
+        "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374333"
       },
@@ -16051,7 +16099,7 @@
         "nota": "Introducción a la geometría de superficies de Riemann compactas",
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374334"
       },
       "4317": {
         "grupo": "4317",
@@ -16076,11 +16124,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Análisis Numérico"
           }
         ],
         "nota": "Temas selectos de geometría semi-riemanniana",
-        "salon": null,
+        "salon": "Taller de Análisis Numérico",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374335"
       },
@@ -16107,11 +16155,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Álgebra"
           }
         ],
         "nota": "Introducción a la teoría de gavillas y cohomología de gavillas",
-        "salon": null,
+        "salon": "Taller de Álgebra",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374336"
       }
@@ -16235,11 +16283,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Sistemas Complejos"
           }
         ],
         "nota": "“Comunicación pública de la ciencia”",
-        "salon": null,
+        "salon": "Taller de Sistemas Complejos",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374353"
       },
@@ -16527,7 +16575,14 @@
         "grupo": "8387",
         "profesor": {
           "nombre": "Silvia Ivonne San Miguel Rodríguez",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "15:00 a 18:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -16537,7 +16592,7 @@
             "salon": null
           }
         ],
-        "nota": "Ciencia Aplicada a la Industria: Laboratorio de Innovación y Emprendimiento",
+        "nota": "El curso se impartirá en el Instituto de Investigaciones en Matemáticas Aplicadas y Sistemas",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374709"
@@ -16612,11 +16667,19 @@
         "grupo": "8392",
         "profesor": {
           "nombre": "Jorge Pilo González",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "17:00 a 18:30",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
         },
         "ayudantes": [],
         "nota": "Modelado computacional de sistemas Físicos",
-        "salon": null,
+        "salon": "Aula 2 de Computación en Física",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374714"
       }
@@ -16645,7 +16708,15 @@
         "grupo": "8453",
         "profesor": {
           "nombre": "Jaime Octavio Guerra Pulido",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "09:00 a 10:30",
+              "dias": [
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -16655,8 +16726,8 @@
             "salon": null
           }
         ],
-        "nota": null,
-        "salon": null,
+        "nota": "Introducción a la ciencia de datos",
+        "salon": "304 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/376010"
       }
@@ -16741,7 +16812,15 @@
         "grupo": "8397",
         "profesor": {
           "nombre": "Karen Valencia García",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "14:00 a 15:30",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -16882,7 +16961,14 @@
           "nombre": "Alejandra López Suárez",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Aylin Junueth Jiménez Ramírez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": "Técnicas nucleares para el análisis y modificación de materiales",
         "salon": null,
         "modalidad": "Presencial",
@@ -16979,7 +17065,15 @@
         "grupo": "8408",
         "profesor": {
           "nombre": "Elías Okón Gurvich",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "12:00 a 13:30",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -17054,7 +17148,15 @@
         "grupo": "8413",
         "profesor": {
           "nombre": "José Ramón Hernández Balanzar",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "16:30 a 18:00",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -17065,7 +17167,7 @@
           }
         ],
         "nota": "Laboratorio de divulgación de la ciencia",
-        "salon": null,
+        "salon": "P115",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374735"
       }
@@ -17081,7 +17183,7 @@
         "nota": "TALLER DE PROCESAMIENTO DE IMÁGENES DIGITALES",
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374736"
       },
       "8415": {
         "grupo": "8415",
@@ -17235,7 +17337,15 @@
         "grupo": "8422",
         "profesor": {
           "nombre": "Marcelo Del Castillo Mussot",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "14:15 a 15:45",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -17245,7 +17355,7 @@
             "salon": null
           }
         ],
-        "nota": "Sociofísica y econofísica",
+        "nota": "El curso se impartirá en el Salón de Seminarios \"Ruiz Mejía\" del primer piso del Instituto de Física",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374744"
@@ -17273,11 +17383,24 @@
         "grupo": "8424",
         "profesor": {
           "nombre": "Francisco Javier Sevilla Pérez",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "09:30 a 11:00",
+              "dias": [
+                "Vi"
+              ]
+            },
+            {
+              "horario": "09:30 a 11:00",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
         },
         "ayudantes": [],
         "nota": "Sistemas físicos con capacidad computacional colectiva emergente",
-        "salon": null,
+        "salon": "P109",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374746"
       }
@@ -17435,11 +17558,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Demografía"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Demografía",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374376"
       },
