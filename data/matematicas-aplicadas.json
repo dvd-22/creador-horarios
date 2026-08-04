@@ -2939,7 +2939,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375259"
       },
       "6004": {
         "grupo": "6004",
@@ -3213,11 +3213,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "102 (Yelizcalli)"
+            "salon": "204 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "102 (Yelizcalli)",
+        "salon": "204 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374096"
       },
@@ -6224,6 +6224,15 @@
               "Vi"
             ],
             "salon": "O219"
+          },
+          {
+            "nombre": "Itzel Abigail Ramírez González",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Lu",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6472,6 +6481,15 @@
               "Ju"
             ],
             "salon": "001 (Yelizcalli)"
+          },
+          {
+            "nombre": "Guillermo Rolando Rosas Figueroa",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7800,7 +7818,7 @@
         "nota": null,
         "salon": "O124",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374212"
       }
     },
     "Inglés III": {
@@ -7885,11 +7903,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P107"
+            "salon": "O124"
           }
         ],
         "nota": null,
-        "salon": "P107",
+        "salon": "O124",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374799"
       },
@@ -8098,7 +8116,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Alejandro Hérnandez Cuevas",
+            "nombre": "Rodrigo Basaldud Ortega",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -8567,7 +8585,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rodrigo Francisco Gómez Ruiz",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -9629,11 +9647,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "P116"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P116",
         "modalidad": null,
         "presentacion": null
       }
@@ -10129,11 +10147,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "P107"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P107",
         "modalidad": "Presencial",
         "presentacion": null
       }
@@ -10548,7 +10566,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P117",
         "modalidad": "Presencial",
         "presentacion": null
       }
@@ -10774,7 +10792,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Ingrid Aylen Martínez Marcelo",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -10789,7 +10807,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Ingrid Aylen Martínez Marcelo",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -11374,7 +11392,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Aaron Mauricio Gómez Jiménez",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -11383,7 +11401,7 @@
             "salon": "303 (Yelizcalli)"
           },
           {
-            "nombre": null,
+            "nombre": "Aaron Mauricio Gómez Jiménez",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -11428,7 +11446,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Taller de Demografía"
+            "salon": "303 (Yelizcalli)"
           },
           {
             "nombre": null,
@@ -11437,11 +11455,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Taller de Demografía"
+            "salon": "303 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "Taller de Demografía",
+        "salon": "303 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375251"
       }

@@ -1523,7 +1523,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Alison Celeste Morales Jaramillo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "102 (Tlaltícpac)",
         "modalidad": "Presencial",
@@ -2937,7 +2944,7 @@
         "nota": null,
         "salon": "P112",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374459"
       },
       "8138": {
         "grupo": "8138",
@@ -3020,7 +3027,7 @@
         "nota": null,
         "salon": "P110",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374462"
       },
       "8141": {
         "grupo": "8141",
@@ -3169,7 +3176,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Tomás Ricardo Basile Álvarez",
             "horario": "07:00 a 09:00",
             "dias": [
               "Ma",
@@ -3484,7 +3491,7 @@
         "nota": null,
         "salon": "O129",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374473"
       },
       "8152": {
         "grupo": "8152",
@@ -4210,7 +4217,7 @@
         "nota": null,
         "salon": "O124",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374213"
       }
     },
     "Electromagnetismo I": {
@@ -4244,7 +4251,7 @@
           }
         ],
         "nota": "El curso se impartirá en la Sala Ángel Jacal del Instituto de Física",
-        "salon": "P113",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374493"
       },
@@ -4890,7 +4897,7 @@
         "nota": null,
         "salon": "P206",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374512"
       },
       "8191": {
         "grupo": "8191",
@@ -4916,7 +4923,7 @@
           }
         ],
         "nota": null,
-        "salon": "301 (Tlaltícpac)",
+        "salon": "106 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374513"
       },
@@ -4944,7 +4951,7 @@
           }
         ],
         "nota": "El curso se impartirá en el Instituto de Investigaciones en Materiales",
-        "salon": "P205",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374514"
       },
@@ -5062,7 +5069,7 @@
         "ayudantes": [],
         "nota": null,
         "salon": "P205",
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375678"
       }
     },
@@ -5224,7 +5231,7 @@
         "nota": null,
         "salon": "202 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374534"
       },
       "8213": {
         "grupo": "8213",
@@ -5281,6 +5288,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Ricardo González Campuzano",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5314,7 +5327,7 @@
         "nota": null,
         "salon": "105 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374538"
       },
       "8217": {
         "grupo": "8217",
@@ -5402,7 +5415,7 @@
         "ayudantes": [],
         "nota": null,
         "salon": "011",
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/376007"
       },
       "8452": {
@@ -5420,7 +5433,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Minerva Alvarez García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "011",
         "modalidad": "Presencial",
@@ -6037,7 +6057,7 @@
           }
         ],
         "nota": null,
-        "salon": "102",
+        "salon": "106 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -6165,6 +6185,12 @@
           },
           {
             "nombre": "Sarahí Rosas González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ingrid Johana Trejo Berber",
             "horario": null,
             "dias": [],
             "salon": null
@@ -6391,6 +6417,18 @@
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
+      },
+      "3062": {
+        "grupo": "3062",
+        "profesor": {
+          "nombre": "Ricardo Alfaro Fuentes",
+          "horarios": []
+        },
+        "ayudantes": [],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Temas Selectos en Cómputo de Alto Desempeño": {
@@ -6471,7 +6509,14 @@
           "nombre": "Adriano Valdés Gómez",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Andrea Guadalupe Gómez Leyva",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -6806,7 +6851,7 @@
         },
         "ayudantes": [],
         "nota": null,
-        "salon": null,
+        "salon": "Anfiteatro Alfredo Barrera",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375634"
       }

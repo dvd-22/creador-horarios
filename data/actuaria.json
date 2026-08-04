@@ -3627,11 +3627,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "102 (Yelizcalli)"
+            "salon": "204 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "102 (Yelizcalli)",
+        "salon": "204 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374096"
       },
@@ -7058,6 +7058,15 @@
               "Vi"
             ],
             "salon": "O219"
+          },
+          {
+            "nombre": "Itzel Abigail Ramírez González",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Lu",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7306,6 +7315,15 @@
               "Ju"
             ],
             "salon": "001 (Yelizcalli)"
+          },
+          {
+            "nombre": "Guillermo Rolando Rosas Figueroa",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7886,7 +7904,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Bulmaro Castillo Palacios",
             "horario": "17:00 a 18:00",
             "dias": [
               "Lu",
@@ -8384,7 +8402,7 @@
         "nota": null,
         "salon": "O124",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374212"
       }
     },
     "Inglés IV": {
@@ -8494,11 +8512,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P107"
+            "salon": "O124"
           }
         ],
         "nota": null,
-        "salon": "P107",
+        "salon": "O124",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374799"
       },
@@ -8741,7 +8759,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Miguel Angel Gómez Delgado",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -8842,7 +8860,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Alejandro Hérnandez Cuevas",
+            "nombre": "Rodrigo Basaldud Ortega",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -9311,7 +9329,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rodrigo Francisco Gómez Ruiz",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -11970,7 +11988,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "José Alberto Sánchez Gutiérrez",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -13433,7 +13451,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P117",
         "modalidad": "Presencial",
         "presentacion": null
       }

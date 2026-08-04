@@ -1345,7 +1345,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Geovani Martínez Martínez",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -1897,11 +1897,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "102 (Yelizcalli)"
+            "salon": "204 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "102 (Yelizcalli)",
+        "salon": "204 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374096"
       },
@@ -3642,6 +3642,15 @@
               "Vi"
             ],
             "salon": "O219"
+          },
+          {
+            "nombre": "Itzel Abigail Ramírez González",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Lu",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3890,6 +3899,15 @@
               "Ju"
             ],
             "salon": "001 (Yelizcalli)"
+          },
+          {
+            "nombre": "Guillermo Rolando Rosas Figueroa",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4162,7 +4180,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "César Baltazar Morales Mendoza",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -6724,7 +6742,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P117",
         "modalidad": "Presencial",
         "presentacion": null
       }
@@ -7524,11 +7542,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P107"
+            "salon": "O124"
           }
         ],
         "nota": null,
-        "salon": "P107",
+        "salon": "O124",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374799"
       },
@@ -7843,7 +7861,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Alejandro Hérnandez Cuevas",
+            "nombre": "Rodrigo Basaldud Ortega",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -9888,11 +9906,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "102 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "102 (Yelizcalli)",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375994"
       }

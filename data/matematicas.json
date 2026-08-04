@@ -3463,11 +3463,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "102 (Yelizcalli)"
+            "salon": "204 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "102 (Yelizcalli)",
+        "salon": "204 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374096"
       },
@@ -6827,7 +6827,7 @@
         "nota": null,
         "salon": "O124",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374212"
       }
     }
   },
@@ -7379,7 +7379,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rodrigo Francisco Gómez Ruiz",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -8109,7 +8109,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P117",
         "modalidad": "Presencial",
         "presentacion": null
       }
@@ -8239,7 +8239,7 @@
         "nota": null,
         "salon": "O221",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374273"
       }
     },
     "Electromagnetismo I": {
@@ -8273,7 +8273,7 @@
           }
         ],
         "nota": "El curso se impartirá en la Sala Ángel Jacal del Instituto de Física",
-        "salon": "P113",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374493"
       },
@@ -8755,7 +8755,7 @@
         "nota": null,
         "salon": "O129",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374473"
       },
       "8152": {
         "grupo": "8152",
@@ -10029,7 +10029,7 @@
         "nota": null,
         "salon": "P112",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374459"
       },
       "8138": {
         "grupo": "8138",
@@ -10112,7 +10112,7 @@
         "nota": null,
         "salon": "P110",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374462"
       },
       "8141": {
         "grupo": "8141",
@@ -10202,6 +10202,15 @@
               "Vi"
             ],
             "salon": "O219"
+          },
+          {
+            "nombre": "Itzel Abigail Ramírez González",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Lu",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -10450,6 +10459,15 @@
               "Ju"
             ],
             "salon": "001 (Yelizcalli)"
+          },
+          {
+            "nombre": "Guillermo Rolando Rosas Figueroa",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -11812,11 +11830,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O124"
+            "salon": "P107"
           }
         ],
         "nota": null,
-        "salon": "O124",
+        "salon": "P107",
         "modalidad": "Presencial",
         "presentacion": null
       }
@@ -12041,7 +12059,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375216"
       },
       "9257": {
         "grupo": "9257",
@@ -12460,7 +12478,7 @@
         "nota": null,
         "salon": "P115",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374630"
       },
       "8309": {
         "grupo": "8309",
@@ -12634,7 +12652,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Irving Hernández Rosas",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
@@ -13140,7 +13158,7 @@
           }
         ],
         "nota": null,
-        "salon": "102",
+        "salon": "106 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -14382,11 +14400,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Aula Magna II"
+            "salon": null
           }
         ],
         "nota": "Este seminario se ofrecerá en el Instituto de Matemáticas",
-        "salon": "Aula Magna II",
+        "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374333"
       },
@@ -15181,11 +15199,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "P211"
           }
         ],
         "nota": "Modelización en Matemática Educativa: Horizontes para la Justicia Social y la Socioecología",
-        "salon": null,
+        "salon": "P105",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374355"
       }
@@ -15414,7 +15432,7 @@
         "nota": null,
         "salon": "O220",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374368"
       }
     },
     "Teoría de Redes": {
@@ -15596,7 +15614,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Carisa Cano Figueroa",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -15794,7 +15812,7 @@
             "salon": null
           },
           {
-            "nombre": null,
+            "nombre": "Ingrid Aylen Martínez Marcelo",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -17444,7 +17462,7 @@
         "nota": null,
         "salon": "P205",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374511"
       },
       "8190": {
         "grupo": "8190",
@@ -17465,7 +17483,7 @@
         "nota": null,
         "salon": "P206",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374512"
       },
       "8191": {
         "grupo": "8191",
@@ -17729,11 +17747,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P107"
+            "salon": "O124"
           }
         ],
         "nota": null,
-        "salon": "P107",
+        "salon": "O124",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374799"
       },
@@ -18665,7 +18683,7 @@
         "nota": null,
         "salon": "202 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374534"
       },
       "8213": {
         "grupo": "8213",
@@ -18722,6 +18740,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Ricardo González Campuzano",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -18755,7 +18779,7 @@
         "nota": null,
         "salon": "105 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374538"
       },
       "8217": {
         "grupo": "8217",
@@ -18843,7 +18867,7 @@
         "ayudantes": [],
         "nota": null,
         "salon": "011",
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/376007"
       },
       "8452": {
@@ -18861,7 +18885,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Minerva Alvarez García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "011",
         "modalidad": "Presencial",
@@ -18917,7 +18948,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Alejandro Hérnandez Cuevas",
+            "nombre": "Rodrigo Basaldud Ortega",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -19362,7 +19393,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jose Manuel Evangelista Tiburcio",
             "horario": "18:30 a 19:30",
             "dias": [
               "Ma",
@@ -19371,7 +19402,7 @@
             "salon": "P211"
           },
           {
-            "nombre": null,
+            "nombre": "Adrián Martínez Manzo",
             "horario": "14:00 a 16:00",
             "dias": [
               "Ma"
@@ -19693,11 +19724,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "102 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "102 (Yelizcalli)",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375994"
       }
@@ -19852,6 +19883,12 @@
           ]
         },
         "ayudantes": [
+          {
+            "nombre": "Oscar Javier Gutiérrez Varela",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
           {
             "nombre": "Andrés Pérez Caballero",
             "horario": null,

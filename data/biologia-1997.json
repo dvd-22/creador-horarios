@@ -1341,7 +1341,7 @@
         "nota": null,
         "salon": "006",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373798"
       },
       "5043": {
         "grupo": "5043",
@@ -2338,7 +2338,7 @@
         "nota": "Introducción a la ecología y paleobiología marina.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375848"
       },
       "5531": {
         "grupo": "5531",
@@ -2406,7 +2406,7 @@
         "nota": "Métodos avanzados del manejo forestal.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375857"
       },
       "5542": {
         "grupo": "5542",
@@ -7760,7 +7760,7 @@
         "nota": "Variabilidad genética e inmunopatología de Mycobacterium tuberculosis en un modelo de tuberculosis murina.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375944"
       },
       "5628": {
         "grupo": "5628",
@@ -8499,6 +8499,18 @@
         "ayudantes": [
           {
             "nombre": "Ligia Lucina Pérez Cruz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "María Adela Monreal Gómez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "David Alberto Salas de León",
             "horario": null,
             "dias": [],
             "salon": null
@@ -9667,6 +9679,49 @@
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375977"
       },
+      "5664": {
+        "grupo": "5664",
+        "profesor": {
+          "nombre": "Jaime Humberto Urrutia Fucugauchi",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Ligia Lucina Pérez Cruz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "María Adela Monreal Gómez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "David Alberto Salas de León",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Marysol Valdez Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rafael Venegas Ferrer",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Principios de paleoceanografía y paleoclimatología.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
       "5668": {
         "grupo": "5668",
         "profesor": {
@@ -9814,6 +9869,49 @@
         "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375997"
+      },
+      "5689": {
+        "grupo": "5689",
+        "profesor": {
+          "nombre": "María de la Luz Navarro Angulo",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Marina Martínez Vargas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Sylvia Leticia Verdugo Díaz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Perla Eugenia Ugalde Muñiz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Adán Pérez Arredondo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Roxana Isela Noriega Navarro",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Fisiopatología cerebral y neuroprotección",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -10303,7 +10401,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "P117",
         "modalidad": "Presencial",
         "presentacion": null
       }
@@ -11462,7 +11560,7 @@
         },
         "ayudantes": [],
         "nota": null,
-        "salon": null,
+        "salon": "Anfiteatro Alfredo Barrera",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375634"
       }
