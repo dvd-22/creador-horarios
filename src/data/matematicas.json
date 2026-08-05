@@ -3279,7 +3279,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "002 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375805"
       }
     }
   },
@@ -4930,7 +4930,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alfredo López Castillo",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -5156,7 +5156,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Yadira Teodosio Procopio",
             "horario": "10:00 a 11:00",
             "dias": [
               "Lu",
@@ -5632,7 +5632,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jhaziel Estrada Castellon",
             "horario": "17:00 a 18:00",
             "dias": [
               "Lu",
@@ -6329,7 +6329,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Bulmaro Castillo Palacios",
             "horario": "17:00 a 18:00",
             "dias": [
               "Lu",
@@ -7106,11 +7106,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O134"
+            "salon": "Aula Magna I"
           }
         ],
         "nota": null,
-        "salon": "O134",
+        "salon": "Aula Magna I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374222"
       },
@@ -7354,11 +7354,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "206 (Yelizcalli)"
+            "salon": "O215"
           }
         ],
         "nota": null,
-        "salon": "206 (Yelizcalli)",
+        "salon": "O215",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374230"
       },
@@ -7416,11 +7416,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O215"
+            "salon": "206 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "O215",
+        "salon": "206 (Yelizcalli)",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374232"
       },
@@ -7846,7 +7846,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rodolfo Lorenzo Chico",
             "horario": "21:00 a 22:00",
             "dias": [
               "Ma",
@@ -7908,7 +7908,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Arturo González Hernández",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -9364,7 +9364,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Geovani Martínez Martínez",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -11961,6 +11961,15 @@
               "Ju"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "Sofía Levy Escobar Súarez",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -12365,7 +12374,7 @@
         "nota": null,
         "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374596"
       }
     },
     "Física Estadística": {
@@ -14040,7 +14049,7 @@
         ],
         "nota": "Teoría de Matroides",
         "salon": "Taller de Investigación de Operaciones",
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375699"
       }
     },
@@ -14289,7 +14298,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ricardo Muciño Gómez",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
@@ -14683,7 +14692,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Rodrigo Perusquía Cortés",
+            "nombre": null,
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -16793,6 +16802,15 @@
               "Ju"
             ],
             "salon": "O222"
+          },
+          {
+            "nombre": "Cristián Michelle Calvario Reza",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -18276,7 +18294,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Adán Díaz Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "P206",
         "modalidad": "Presencial",

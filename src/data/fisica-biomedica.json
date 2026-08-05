@@ -4756,7 +4756,7 @@
         "nota": null,
         "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374597"
       }
     },
     "Inglés": {
@@ -4876,7 +4876,7 @@
         "nota": null,
         "salon": "P205",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374511"
       },
       "8190": {
         "grupo": "8190",
@@ -5741,6 +5741,12 @@
           },
           {
             "nombre": "Pablo Alberto Álvarez Pérez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Brenda Michelle Molina Mendoza",
             "horario": null,
             "dias": [],
             "salon": null
