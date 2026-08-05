@@ -179,10 +179,10 @@ const EmptyClassroomFinder = () => {
 
 	const toggleDay = (dayId) => {
 		setSelectedDays((currentDays) => {
+			// Single-select: clicking the active day deselects it, otherwise select only this day
 			if (currentDays.includes(dayId)) {
 				return []
 			}
-
 			return [dayId]
 		})
 	}
