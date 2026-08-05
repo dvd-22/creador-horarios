@@ -1,11 +1,17 @@
+import React, { lazy, Suspense } from 'react'
 import Display from './components/Display'
-import EmptyClassroomFinder from './components/EmptyClassroomFinder'
+
+const EmptyClassroomFinder = lazy(() => import('./components/EmptyClassroomFinder'))
 
 function App() {
   const pathname = window.location.pathname.replace(/\/+$/, '') || '/'
 
   if (pathname.endsWith('/papas-con-pan')) {
-    return <EmptyClassroomFinder />
+    return (
+      <Suspense fallback={<div className="flex items-center justify-center h-screen bg-gray-900 text-white">Cargando...</div>}>
+        <EmptyClassroomFinder />
+      </Suspense>
+    )
   }
 
   return (

@@ -8,6 +8,8 @@ import FilterModal from './FilterModal';
 import SpacerModal from './SpacerModal';
 import { professorRatingService } from '../services/professorRatingService';
 
+import { DAY_MAP_SHORT_TO_LONG } from '../utils/scheduleUtils';
+
 const normalizeText = (text) => {
   if (!text) return '';
   return text.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -23,10 +25,9 @@ const scheduleMatchesFilter = (horario, filters) => {
   if (!horario) return false;
 
   if (filters.days && filters.days.length < 6 && horario.dias) {
-    const dayMap = { 'L': 'Lu', 'M': 'Ma', 'I': 'Mi', 'J': 'Ju', 'V': 'Vi', 'S': 'Sa' };
     const scheduleDays = horario.dias;
     const allDaysAllowed = scheduleDays.every(day => {
-      const filterId = Object.keys(dayMap).find(key => dayMap[key] === day);
+      const filterId = Object.keys(DAY_MAP_SHORT_TO_LONG).find(key => DAY_MAP_SHORT_TO_LONG[key] === day);
       return filterId && filters.days.includes(filterId);
     });
     if (!allDaysAllowed) return false;
@@ -56,10 +57,13 @@ const scheduleMatchesFilter = (horario, filters) => {
   if (filters.mode === 'exact') {
     return filters.exactTimes.includes(scheduleStartTime);
   } else {
-    if (!filters.startTime || !filters.endTime) return true;
-    const filterStart = timeToMinutes(filters.startTime);
-    const filterEnd = timeToMinutes(filters.endTime);
-    return scheduleStart >= filterStart && scheduleEnd <= filterEnd;
+    if (!filters.startTime && !filters.endTime) return true;
+    const filterStart = filters.startTime ? timeToMinutes(filters.startTime) : null;
+    const filterEnd = filters.endTime ? timeToMinutes(filters.endTime) : null;
+
+    if (filterStart !== null && scheduleStart < filterStart) return false;
+    if (filterEnd !== null && scheduleEnd > filterEnd) return false;
+    return true;
   }
 };
 

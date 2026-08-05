@@ -135,7 +135,7 @@ const isRoomAvailable = (room, selectedDays, start, end) => {
 }
 
 const EmptyClassroomFinder = () => {
-	const [selectedDays, setSelectedDays] = useState(dayOptions.map((day) => day.id))
+	const [selectedDays, setSelectedDays] = useState([])
 	const [selectedCategories, setSelectedCategories] = useState(['O', 'P', 'others'])
 	const [startTime, setStartTime] = useState('17:30')
 	const [endTime, setEndTime] = useState('18:30')
@@ -207,11 +207,11 @@ const EmptyClassroomFinder = () => {
 
 	const toggleDay = (dayId) => {
 		setSelectedDays((currentDays) => {
+			// Single-select: clicking the active day deselects it, otherwise select only this day
 			if (currentDays.includes(dayId)) {
-				return currentDays.filter((day) => day !== dayId)
+				return []
 			}
-
-			return [...currentDays, dayId]
+			return [dayId]
 		})
 	}
 

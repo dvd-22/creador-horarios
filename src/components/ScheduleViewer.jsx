@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { Edit2 } from 'lucide-react';
+import { DAY_MAP_SHORT_TO_LONG } from '../utils/scheduleUtils';
 
 const parseTimeString = (timeStr) => {
   if (!timeStr || timeStr === 'Horario no especificado') return null;
@@ -175,15 +176,7 @@ const ScheduleViewer = ({ selectedGroups, spacers = [], onRemoveGroup, onEditSpa
         if (timeRange.start !== null && timeRange.end !== null) {
           schedule.days.forEach(day => {
             // Convert day ID to display format
-            const dayMap = {
-              'L': 'Lu',
-              'M': 'Ma',
-              'I': 'Mi',
-              'J': 'Ju',
-              'V': 'Vi',
-              'S': 'Sa'
-            };
-            const displayDay = dayMap[day];
+            const displayDay = DAY_MAP_SHORT_TO_LONG[day];
 
             slots.push({
               day: displayDay,
