@@ -5,8 +5,7 @@ import ScheduleViewer from './ScheduleViewer';
 import SelectedGroupsPanel from './SelectedGroupsPanel';
 import ResizablePanels from './ResizablePanels';
 import ResponsiveDisplay from './ResponsiveDisplay';
-import SpacerModal from './SpacerModal';
-import { saveScheduleAsPng } from '../utils/scheduleUtils';
+import { saveScheduleAsPng, DAY_MAP_SHORT_TO_LONG, DAY_MAP_SHORT_TO_FULL } from '../utils/scheduleUtils';
 import SavePopup from './SavePopup';
 import { MajorProvider } from '../contexts/MajorContext';
 import { encodeScheduleToURL, decodeScheduleFromURL } from '../utils/urlEncoder';
@@ -475,15 +474,6 @@ const Display = () => {
         }
 
         // Check against spacers
-        const dayMap = {
-            'L': 'Lu',
-            'M': 'Ma',
-            'I': 'Mi',
-            'J': 'Ju',
-            'V': 'Vi',
-            'S': 'Sa'
-        };
-
         for (const spacer of spacers) {
             // Handle both old format (single schedule) and new format (multiple schedules)
             const spacerSchedules = spacer.schedules || [{ days: spacer.days, startTime: spacer.startTime, endTime: spacer.endTime }];
@@ -494,7 +484,7 @@ const Display = () => {
 
                 for (const newSlot of newSlots) {
                     for (const spacerDayId of spacerSched.days) {
-                        const spacerDay = dayMap[spacerDayId];
+                        const spacerDay = DAY_MAP_SHORT_TO_LONG[spacerDayId];
                         if (newSlot.day === spacerDay &&
                             hasTimeOverlap(newSlot.start, newSlot.end, spacerStart, spacerEnd)) {
                             return {
@@ -574,15 +564,6 @@ const Display = () => {
         }
 
         // Check for overlaps between groups and spacers
-        const dayMap = {
-            'L': 'Lu',
-            'M': 'Ma',
-            'I': 'Mi',
-            'J': 'Ju',
-            'V': 'Vi',
-            'S': 'Sa'
-        };
-
         for (const spacer of spacers) {
             // Handle both old format (single schedule) and new format (multiple schedules)
             const spacerSchedules = spacer.schedules || [{ days: spacer.days, startTime: spacer.startTime, endTime: spacer.endTime }];
@@ -593,7 +574,7 @@ const Display = () => {
 
                 for (const slot of allSlots) {
                     for (const spacerDayId of spacerSched.days) {
-                        const spacerDay = dayMap[spacerDayId];
+                        const spacerDay = DAY_MAP_SHORT_TO_LONG[spacerDayId];
                         if (slot.day === spacerDay &&
                             hasTimeOverlap(slot.start, slot.end, spacerStart, spacerEnd)) {
                             return true;
@@ -728,15 +709,6 @@ const Display = () => {
     };
 
     const checkSpacerConflicts = (newSpacer) => {
-        const dayMap = {
-            'L': 'Lu',
-            'M': 'Ma',
-            'I': 'Mi',
-            'J': 'Ju',
-            'V': 'Vi',
-            'S': 'Sa'
-        };
-
         const newSpacerSchedules = newSpacer.schedules || [{ days: newSpacer.days, startTime: newSpacer.startTime, endTime: newSpacer.endTime }];
 
         // Check against all selected groups
@@ -753,7 +725,7 @@ const Display = () => {
                             const spacerEnd = timeToMinutes(spacerSched.endTime);
 
                             for (const spacerDayId of spacerSched.days) {
-                                const spacerDay = dayMap[spacerDayId];
+                                const spacerDay = DAY_MAP_SHORT_TO_LONG[spacerDayId];
                                 if (spacerDay === scheduleDay && hasTimeOverlap(spacerStart, spacerEnd, profStart, profEnd)) {
                                     return `El espacio "${newSpacer.name}" se superpone con ${group.subject} (${group.group}) el día ${scheduleDay}`;
                                 }
@@ -777,7 +749,7 @@ const Display = () => {
                             const spacerEnd = timeToMinutes(spacerSched.endTime);
 
                             for (const spacerDayId of spacerSched.days) {
-                                const spacerDay = dayMap[spacerDayId];
+                                const spacerDay = DAY_MAP_SHORT_TO_LONG[spacerDayId];
                                 if (spacerDay === scheduleDay && hasTimeOverlap(spacerStart, spacerEnd, astStart, astEnd)) {
                                     return `El espacio "${newSpacer.name}" se superpone con ${group.subject} (${group.group}) - Ayudantía el día ${scheduleDay}`;
                                 }
@@ -805,15 +777,7 @@ const Display = () => {
                     for (const existingDayId of existingSched.days) {
                         for (const newDayId of newSched.days) {
                             if (existingDayId === newDayId && hasTimeOverlap(newStart, newEnd, existingStart, existingEnd)) {
-                                const dayMap2 = {
-                                    'L': 'Lunes',
-                                    'M': 'Martes',
-                                    'I': 'Miércoles',
-                                    'J': 'Jueves',
-                                    'V': 'Viernes',
-                                    'S': 'Sábado'
-                                };
-                                return `El espacio "${newSpacer.name}" se superpone con otro espacio "${existingSpacer.name}" el día ${dayMap2[existingDayId]}`;
+                                return `El espacio "${newSpacer.name}" se superpone con otro espacio "${existingSpacer.name}" el día ${DAY_MAP_SHORT_TO_FULL[existingDayId]}`;
                             }
                         }
                     }
@@ -862,20 +826,11 @@ const Display = () => {
     };
 
     // Confirm turning off overlap and remove conflicting subjects
-    const handleConfirmDisableOverlap = () => {
+        const handleConfirmDisableOverlap = () => {
         // First, create a list of non-conflicting groups to keep
         const groupsToKeep = [];
         const spacersToKeep = [];
         const conflicts = new Set();
-
-        const dayMap = {
-            'L': 'Lu',
-            'M': 'Ma',
-            'I': 'Mi',
-            'J': 'Ju',
-            'V': 'Vi',
-            'S': 'Sa'
-        };
 
         // Function to check if a group conflicts with any group in groupsToKeep or spacersToKeep
         const hasConflict = (group) => {
@@ -972,7 +927,7 @@ const Display = () => {
                 // Check for conflicts
                 for (const slot of newSlots) {
                     for (const spacerDayId of spacer.days) {
-                        const spacerDay = dayMap[spacerDayId];
+                        const spacerDay = DAY_MAP_SHORT_TO_LONG[spacerDayId];
                         if (slot.day === spacerDay &&
                             hasTimeOverlap(slot.start, slot.end, spacerStart, spacerEnd)) {
                             return true;
@@ -999,7 +954,7 @@ const Display = () => {
                     if (start !== null && end !== null) {
                         for (const scheduleDay of days) {
                             for (const spacerDayId of spacer.days) {
-                                const spacerDay = dayMap[spacerDayId];
+                                const spacerDay = DAY_MAP_SHORT_TO_LONG[spacerDayId];
                                 if (spacerDay === scheduleDay && hasTimeOverlap(spacerStart, spacerEnd, start, end)) {
                                     return true;
                                 }
@@ -1017,7 +972,7 @@ const Display = () => {
                     if (start !== null && end !== null) {
                         for (const scheduleDay of days) {
                             for (const spacerDayId of spacer.days) {
-                                const spacerDay = dayMap[spacerDayId];
+                                const spacerDay = DAY_MAP_SHORT_TO_LONG[spacerDayId];
                                 if (spacerDay === scheduleDay && hasTimeOverlap(spacerStart, spacerEnd, start, end)) {
                                     return true;
                                 }

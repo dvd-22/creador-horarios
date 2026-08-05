@@ -1,4 +1,35 @@
 /**
+ * Day mapping dictionaries
+ * Single letter codes used in spacers & filters <-> 2-letter codes used in class JSON data
+ */
+export const DAY_MAP_SHORT_TO_LONG = {
+	L: "Lu",
+	M: "Ma",
+	I: "Mi",
+	J: "Ju",
+	V: "Vi",
+	S: "Sa",
+};
+
+export const DAY_MAP_SHORT_TO_FULL = {
+	L: "Lunes",
+	M: "Martes",
+	I: "Miércoles",
+	J: "Jueves",
+	V: "Viernes",
+	S: "Sábado",
+};
+
+export const DAY_MAP_LONG_TO_SHORT = {
+	Lu: "L",
+	Ma: "M",
+	Mi: "I",
+	Ju: "J",
+	Vi: "V",
+	Sa: "S",
+};
+
+/**
  * Sanitizes filename by removing invalid characters
  * @param {string} name - Original filename
  * @returns {string} Sanitized filename

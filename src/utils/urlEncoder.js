@@ -112,13 +112,35 @@ export const decompressScheduleData = (compressed) => {
 	return decompressed;
 };
 
+// Helper to safely convert UTF-8 string to base64
+const utf8ToBase64 = (str) => {
+	return btoa(
+		encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (_, p1) =>
+			String.fromCharCode("0x" + p1)
+		)
+	);
+};
+
+// Helper to safely convert base64 to UTF-8 string
+const base64ToUtf8 = (str) => {
+	try {
+		return decodeURIComponent(
+			Array.from(atob(str))
+				.map((c) => "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2))
+				.join("")
+		);
+	} catch {
+		return atob(str);
+	}
+};
+
 // Encode schedule data to URL-safe string
 export const encodeScheduleToURL = (scheduleData) => {
 	try {
 		const compressed = compressScheduleData(scheduleData);
 		const jsonString = JSON.stringify(compressed);
-		// Use base64url encoding (URL-safe)
-		const base64 = btoa(jsonString)
+		// Use base64url encoding (URL-safe) with UTF-8 support
+		const base64 = utf8ToBase64(jsonString)
 			.replace(/\+/g, "-")
 			.replace(/\//g, "_")
 			.replace(/=+$/, ""); // Remove padding
@@ -140,7 +162,7 @@ export const decodeScheduleFromURL = (encodedString) => {
 			base64 += "=";
 		}
 
-		const jsonString = atob(base64);
+		const jsonString = base64ToUtf8(base64);
 		const compressed = JSON.parse(jsonString);
 		return decompressScheduleData(compressed);
 	} catch (error) {
