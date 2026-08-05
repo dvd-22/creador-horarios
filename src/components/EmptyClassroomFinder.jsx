@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { ArrowLeft, Clock3, DoorOpen, Filter, ScanSearch } from 'lucide-react'
+import { Clock3, DoorOpen, Filter, ScanSearch } from 'lucide-react'
 
 const dayOptions = [
 	{ id: 'Lu', label: 'Lu' },
@@ -24,12 +24,6 @@ const timeToMinutes = (time) => {
 	const [hours, minutes] = time.split(':').map(Number)
 	if (Number.isNaN(hours) || Number.isNaN(minutes)) return null
 	return hours * 60 + minutes
-}
-
-const minutesToLabel = (minutes) => {
-	const hours = Math.floor(minutes / 60)
-	const mins = String(minutes % 60).padStart(2, '0')
-	return `${String(hours).padStart(2, '0')}:${mins}`
 }
 
 const parseTimeRange = (timeText) => {
@@ -200,44 +194,6 @@ const EmptyClassroomFinder = () => {
 	return (
 		<div className="h-full overflow-y-auto bg-gray-900 text-white">
 			<div className="mx-auto flex min-h-full w-full max-w-7xl flex-col gap-6 px-4 py-4 sm:px-6 lg:px-8">
-				<header className="rounded-2xl border border-gray-700 bg-gray-800 p-4 sm:p-5">
-					<div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-						<div className="space-y-3">
-							<a
-								href={`${import.meta.env.BASE_URL}`}
-								className="inline-flex items-center gap-2 rounded-full border border-gray-600 bg-gray-700 px-3 py-1 text-xs font-medium text-gray-200 transition hover:bg-gray-600"
-							>
-								<ArrowLeft size={14} />
-								Volver al creador
-							</a>
-							<div>
-								<p className="text-xs font-semibold uppercase tracking-[0.25em] text-gray-400">Sub app secreta</p>
-								<h1 className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Papas con pan</h1>
-								<p className="mt-3 max-w-3xl text-sm text-gray-300 sm:text-base">
-									Busca salones libres en una franja de tiempo usando los horarios scrapeados de la Facultad de Ciencias. Filtra por salones O, P u otros.
-								</p>
-							</div>
-						</div>
-
-						<div className="grid gap-3 rounded-2xl border border-gray-700 bg-gray-850 px-4 py-3 text-sm text-gray-200 sm:grid-cols-3 sm:px-5">
-							<div>
-								<div className="text-xs uppercase tracking-[0.25em] text-gray-400">Salones detectados</div>
-								<div className="mt-1 text-2xl font-bold">{roomInventory.length}</div>
-							</div>
-							<div>
-								<div className="text-xs uppercase tracking-[0.25em] text-gray-400">Disponibles</div>
-								<div className="mt-1 text-2xl font-bold">{availableRooms.length}</div>
-							</div>
-							<div>
-								<div className="text-xs uppercase tracking-[0.25em] text-gray-400">Rango</div>
-								<div className="mt-1 text-base font-semibold">
-									{searchWindow ? `${minutesToLabel(searchWindow.start)} - ${minutesToLabel(searchWindow.end)}` : 'Rango inválido'}
-								</div>
-							</div>
-						</div>
-					</div>
-				</header>
-
 				<section className="grid gap-4 rounded-2xl border border-gray-700 bg-gray-800 p-4 lg:grid-cols-[1.2fr_1fr_1fr]">
 					<div className="space-y-3">
 						<label className="flex items-center gap-2 text-sm font-semibold text-gray-200">
@@ -320,17 +276,12 @@ const EmptyClassroomFinder = () => {
 					</div>
 				</section>
 
-					<section className="rounded-2xl border border-gray-700 bg-gray-800 p-4">
-					<div className="flex flex-col gap-3 border-b border-white/10 pb-4 sm:flex-row sm:items-center sm:justify-between">
-						<div>
-							<h2 className="text-xl font-bold text-white">Resultados</h2>
-								<p className="mt-1 text-sm text-gray-300">
-								{selectedDays.length > 0 ? `Días seleccionados: ${getDayLabels(selectedDays)}` : 'Selecciona al menos un día'}
-							</p>
-						</div>
-							<div className="rounded-full border border-gray-600 bg-gray-700 px-4 py-2 text-sm text-gray-100">
-							{availableRooms.length} salones libres
-						</div>
+<section className="rounded-2xl border border-gray-700 bg-gray-800 p-3">
+					<div className="mb-3 flex flex-wrap items-center justify-between gap-2 border-b border-white/10 pb-2">
+						<h2 className="text-base font-semibold text-white">Resultados</h2>
+						<p className="text-xs text-gray-400">
+							{selectedDays.length > 0 ? `${getDayLabels(selectedDays)}` : 'Selecciona un día'}
+						</p>
 					</div>
 
 					{!searchWindow || selectedDays.length === 0 || selectedCategories.length === 0 ? (
@@ -349,7 +300,7 @@ const EmptyClassroomFinder = () => {
 								<p className="mt-2 text-sm text-gray-400">Prueba cambiar la hora, quitar un día o activar otra categoría.</p>
 						</div>
 					) : (
-						<div className="space-y-8 pt-5">
+						<div className="space-y-4">
 							{categoryOptions.map((category) => {
 								const rooms = roomsByCategory[category.id] || []
 								if (!selectedCategories.includes(category.id) || rooms.length === 0) return null
@@ -359,28 +310,12 @@ const EmptyClassroomFinder = () => {
 										<div className="flex items-end justify-between gap-3">
 											<div>
 												<h3 className="text-lg font-bold text-white">{category.label}</h3>
-														<p className="text-sm text-gray-400">{rooms.length} salones disponibles</p>
-											</div>
-													<span className="rounded-full border border-gray-600 bg-gray-700 px-3 py-1 text-xs uppercase tracking-[0.2em] text-gray-200">
-												{category.id === 'others' ? 'Misceláneos' : `Tipo ${category.id}`}
-											</span>
+										</div>
 										</div>
 										<div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
 											{rooms.map((room) => (
-														<div key={room.room} className="rounded-lg border border-gray-700 bg-gray-900 p-4 transition hover:border-gray-500 hover:bg-gray-850">
-													<div className="flex items-start justify-between gap-3">
-														<div>
-															<div className="text-lg font-bold text-white">{room.room}</div>
-																	<div className="mt-1 text-sm text-gray-400">Libre en {getDayLabels(selectedDays)}</div>
-														</div>
-																<span className="rounded-full border border-gray-600 bg-gray-800 px-3 py-1 text-xs font-medium uppercase tracking-[0.15em] text-gray-200">
-															{room.category === 'others' ? 'Otros' : room.category}
-														</span>
-													</div>
-															<div className="mt-4 flex items-center gap-2 text-sm text-gray-300">
-																<span className="inline-flex h-2.5 w-2.5 rounded-full bg-blue-500" />
-														Disponible para el rango buscado
-													</div>
+											<div key={room.room} className="rounded-md border border-gray-700 bg-gray-900 px-3 py-2 text-center transition hover:border-gray-500 hover:bg-gray-850">
+												<div className="text-sm font-semibold tracking-wide text-white">{room.room}</div>
 												</div>
 											))}
 										</div>
