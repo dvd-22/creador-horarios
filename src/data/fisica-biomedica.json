@@ -1844,7 +1844,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ninive Atenea Tello Arcos",
             "horario": "15:00 a 16:00",
             "dias": [
               "Lu",
@@ -3023,7 +3023,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Dulce Angélica Zugasti Fernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "P110",
         "modalidad": "Presencial",
@@ -3241,6 +3248,12 @@
         "ayudantes": [
           {
             "nombre": "Ana Valeria Beltrán Sánchez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Fernando Ballesteros Flores",
             "horario": null,
             "dias": [],
             "salon": null
@@ -3895,7 +3908,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Miguel Angel Hernández Segura",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -4205,7 +4218,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jaime Hernández López",
             "horario": "21:00 a 22:00",
             "dias": [
               "Ma",
@@ -4590,6 +4603,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Alam Pérez Aguiar Montes de Oca",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4700,7 +4719,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Rodrígo Vega Vilchis",
+            "nombre": "Rodrigo Vega Vilchis",
             "horario": null,
             "dias": [],
             "salon": null
@@ -4837,6 +4856,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Erick Alberto Gutiérrez Rivas",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4893,7 +4918,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Víctor Axayácatl Ramos Sánchez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "P206",
         "modalidad": "Presencial",
@@ -4917,6 +4949,12 @@
         "ayudantes": [
           {
             "nombre": "Sebastián Calderón Alba",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Edgar Ladxidua Saynes Rueda",
             "horario": null,
             "dias": [],
             "salon": null
@@ -5066,7 +5104,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "José Andrés Carlos López",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "P205",
         "modalidad": "Presencial",
@@ -5123,7 +5168,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Jesús Felipe Martínez García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "301 (Tlaltícpac)",
         "modalidad": "Presencial",
@@ -5192,6 +5244,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Angel Saturnino Estrada Román",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5226,6 +5284,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Christian Daniel Terrazas Pablo",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5257,6 +5321,12 @@
           },
           {
             "nombre": "Luis Daniel Pérez Sámano",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Maricruz Naranjo Cano",
             "horario": null,
             "dias": [],
             "salon": null
@@ -5412,7 +5482,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "José Armando Robles Sánchez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "011",
         "modalidad": "Presencial",
@@ -6032,6 +6109,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Daniel Miguel Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6093,7 +6176,7 @@
         "nota": null,
         "salon": "O129",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374615"
       },
       "8294": {
         "grupo": "8294",
@@ -6422,7 +6505,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375092"
       },
       "3062": {
         "grupo": "3062",
@@ -6676,7 +6759,20 @@
           "nombre": "Sarahí Rosas González",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Paola Jazmín Guadarrama Huerta",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Diana Laura Méndez Ramírez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -6751,7 +6847,14 @@
           "nombre": "Karina Robles Martínez",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Jennifer Alejandra Alba González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
@@ -6800,7 +6903,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375101"
       },
       "3053": {
         "grupo": "3053",
