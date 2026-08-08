@@ -10277,21 +10277,27 @@
         "grupo": "5096",
         "profesor": {
           "nombre": "Yajaira García Feria",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "07:30 a 10:30",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
             "nombre": "Leobardo Terpán Acuña",
             "horario": "07:30 a 10:30",
             "dias": [
-              "Mi",
               "Sa"
             ],
-            "salon": null
+            "salon": "B005"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B005",
         "modalidad": "Presencial",
         "presentacion": null
       }
@@ -10457,11 +10463,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "B002"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B002",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373857"
       }
@@ -10609,7 +10615,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Plantas I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373862"
       }
@@ -10639,7 +10645,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Plantas I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373863"
       }
@@ -10665,11 +10671,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "B001"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B001",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373864"
       }
@@ -10723,11 +10729,11 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "B002"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B002",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373865"
       }
@@ -10753,11 +10759,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "B002"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B002",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373866"
       }
@@ -10873,11 +10879,11 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "B001"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B001",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373870"
       }
@@ -10903,11 +10909,11 @@
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "B007"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B007",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373871"
       }
@@ -10926,7 +10932,7 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "B002"
           },
           {
             "nombre": null,
@@ -10934,7 +10940,7 @@
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "B001"
           }
         ],
         "nota": null,
@@ -10964,11 +10970,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "B002"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B001",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373872"
       }
@@ -11058,7 +11064,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373875"
       }
@@ -11084,11 +11090,11 @@
             "dias": [
               "Mi"
             ],
-            "salon": null
+            "salon": "S3"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373876"
       },
@@ -11141,11 +11147,11 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología de Plantas I"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Plantas I",
         "modalidad": "Presencial",
         "presentacion": null
       }
@@ -11171,7 +11177,7 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología de Animales I"
           }
         ],
         "nota": null,
@@ -11298,7 +11304,7 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología de Animales I"
           }
         ],
         "nota": null,
@@ -11328,11 +11334,11 @@
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Protistas y Algas"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Protistas y Algas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373883"
       }
@@ -11362,7 +11368,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Plantas II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373884"
       }
@@ -11532,11 +11538,11 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Genética"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Genética",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373890"
       }
@@ -11652,11 +11658,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "B001"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B001",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373894"
       }
@@ -11745,7 +11751,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B007",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373896"
       }
@@ -11882,11 +11888,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "B002"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B002",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373900"
       }
@@ -12086,7 +12092,7 @@
             "dias": [
               "Mi"
             ],
-            "salon": null
+            "salon": "S2"
           }
         ],
         "nota": null,
@@ -12116,11 +12122,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "B003"
           }
         ],
         "nota": "Bioética I",
-        "salon": null,
+        "salon": "B003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373909"
       },
@@ -12172,11 +12178,11 @@
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula III"
           }
         ],
         "nota": "Zoonosis y enfermedades emergentes y reemergentes, epidemias y pandemias.",
-        "salon": null,
+        "salon": "B003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375755"
       }
@@ -12202,11 +12208,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "B003"
           }
         ],
         "nota": "Derecho y Gestión Ambiental",
-        "salon": null,
+        "salon": "B001",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373910"
       },
@@ -12230,11 +12236,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología de Plantas I"
           }
         ],
         "nota": "Seminario de Biología II (Modelado de Nicho Ecológico)",
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Plantas I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373911"
       },
@@ -12258,11 +12264,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "B008"
           }
         ],
         "nota": "SOCIOECOSISTEMAS Y SERVICIOS ECOSISTÉMICOS",
-        "salon": null,
+        "salon": "B008",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373913"
       },
@@ -12797,7 +12803,7 @@
           }
         ],
         "nota": "Técnicas de reproducción asistida",
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Animales III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373930"
       },

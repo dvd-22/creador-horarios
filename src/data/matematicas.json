@@ -3581,7 +3581,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Minerva Ortíz Pérez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -3887,7 +3887,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Juan Manuel Muro Delgado Ontiveros",
             "horario": "19:00 a 20:00",
             "dias": [
               "Lu",
@@ -3962,7 +3962,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Diego Adrián Barrera Hernández",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -4353,7 +4353,7 @@
         "nota": null,
         "salon": "003 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374128"
       },
       "4124": {
         "grupo": "4124",
@@ -5054,7 +5054,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Carmen Dení Martínez Gómez",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -6101,11 +6101,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P106"
+            "salon": "O216"
           }
         ],
         "nota": null,
-        "salon": "P106",
+        "salon": "O216",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -9220,7 +9220,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alberto Rincón Galeana",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -9827,7 +9827,7 @@
             "salon": "O127"
           },
           {
-            "nombre": null,
+            "nombre": "Andrés Daniel López Molina",
             "horario": "12:00 a 14:00",
             "dias": [
               "Vi"
@@ -10756,6 +10756,15 @@
               "Ju"
             ],
             "salon": "O122"
+          },
+          {
+            "nombre": "Silhi Deneb Bernabé Rodríguez",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -11363,6 +11372,15 @@
               "Ju"
             ],
             "salon": "P207"
+          },
+          {
+            "nombre": "Malinali Gónzalez Lara",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -11876,7 +11894,7 @@
         "nota": null,
         "salon": "P107",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375672"
       }
     },
     "Ecuaciones Diferenciales Parciales II": {
@@ -13251,6 +13269,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Lucía Guadalupe Arellano Sartorius",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -13376,9 +13400,9 @@
             {
               "horario": "10:00 a 11:00",
               "dias": [
-                "Lu",
+                "Ma",
                 "Mi",
-                "Vi"
+                "Ju"
               ]
             }
           ]
@@ -13388,14 +13412,14 @@
             "nombre": "Amílcar José Escobedo Pérez",
             "horario": "10:00 a 11:00",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Vi"
             ],
-            "salon": "Taller de Análisis Numérico"
+            "salon": null
           }
         ],
-        "nota": null,
-        "salon": "Taller de Análisis Numérico",
+        "nota": "El curso se impartirá en el Salón Graciela Salicrup del Instituto de Matemáticas",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374820"
       },
@@ -13749,12 +13773,20 @@
             "salon": "P208"
           },
           {
-            "nombre": null,
+            "nombre": "Juan Angeles Hernández",
             "horario": "14:00 a 16:00",
             "dias": [
               "Lu"
             ],
             "salon": "Taller de Ingeniería de Software"
+          },
+          {
+            "nombre": "Francisco Jesús Guadarrama Rodríguez",
+            "horario": "14:00 a 16:00",
+            "dias": [
+              "Lu"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -13843,7 +13875,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Jose Carlos Joaquin Altamirano",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "P209",
         "modalidad": "Presencial",
@@ -15148,7 +15187,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Josué Trinidad Juárez",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -15201,11 +15240,10 @@
           "nombre": "Paloma Zubieta Lopez",
           "horarios": [
             {
-              "horario": "16:00 a 17:00",
+              "horario": "16:00 a 18:30",
               "dias": [
                 "Lu",
-                "Mi",
-                "Vi"
+                "Mi"
               ]
             }
           ]
@@ -15218,11 +15256,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Taller de Sistemas Complejos"
+            "salon": null
           }
         ],
-        "nota": "“Comunicación pública de la ciencia”",
-        "salon": "Taller de Sistemas Complejos",
+        "nota": "El curso se impartirá en el Salón 3 del IMATE",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374353"
       },
@@ -16539,7 +16577,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Alberto Hernández Pérez",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -16845,6 +16883,15 @@
               "Ju"
             ],
             "salon": "P201"
+          },
+          {
+            "nombre": "Claudia Yali Tello Hérnandez",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -17487,6 +17534,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "José Luis Camarillo Tafoya",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -17641,6 +17694,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "Flor Beatriz Quiroga Bañuelos",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Joel Serralde Vázquez",
             "horario": null,
             "dias": [],
@@ -17676,6 +17735,12 @@
           },
           {
             "nombre": "Ricardo Covarrubias Yeffal",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ángel Jikmé López Cruz",
             "horario": null,
             "dias": [],
             "salon": null
@@ -18056,12 +18121,29 @@
             "salon": "003 (Yelizcalli)"
           },
           {
+            "nombre": "José Alejandro Pérez Márquez",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
             "nombre": "Leslie Paola Sánchez Victoria",
             "horario": "14:00 a 16:00",
             "dias": [
               "Mi"
             ],
             "salon": "Laboratorio de Ciencias de la Computación 1"
+          },
+          {
+            "nombre": "Erick Daniel Arroyo Martínez",
+            "horario": "14:00 a 16:00",
+            "dias": [
+              "Mi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -20018,7 +20100,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "César Eduardo Romero Alejandre",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "P109",
         "modalidad": "Presencial",

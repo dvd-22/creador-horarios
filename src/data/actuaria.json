@@ -3745,7 +3745,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Minerva Ortíz Pérez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -4051,7 +4051,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Juan Manuel Muro Delgado Ontiveros",
             "horario": "19:00 a 20:00",
             "dias": [
               "Lu",
@@ -4126,7 +4126,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Diego Adrián Barrera Hernández",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -5528,7 +5528,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Carmen Dení Martínez Gómez",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -6146,7 +6146,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Miguel Angel Salas Chio",
             "horario": "17:00 a 18:00",
             "dias": [
               "Lu",
@@ -6471,6 +6471,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Diego Alberto Magallanes Ramírez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6583,6 +6589,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Huitzil Sánchez Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6664,6 +6676,12 @@
         "ayudantes": [
           {
             "nombre": "Karla Adriana Esquivel Guzmán",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Maricruz Alvarado Hernández",
             "horario": null,
             "dias": [],
             "salon": null
@@ -7606,6 +7624,15 @@
               "Ju"
             ],
             "salon": "O122"
+          },
+          {
+            "nombre": "Silhi Deneb Bernabé Rodríguez",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -9746,6 +9773,15 @@
               "Ju"
             ],
             "salon": "P201"
+          },
+          {
+            "nombre": "Claudia Yali Tello Hérnandez",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -10562,9 +10598,9 @@
             {
               "horario": "10:00 a 11:00",
               "dias": [
-                "Lu",
+                "Ma",
                 "Mi",
-                "Vi"
+                "Ju"
               ]
             }
           ]
@@ -10574,14 +10610,14 @@
             "nombre": "Amílcar José Escobedo Pérez",
             "horario": "10:00 a 11:00",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Vi"
             ],
-            "salon": "Taller de Análisis Numérico"
+            "salon": null
           }
         ],
-        "nota": null,
-        "salon": "Taller de Análisis Numérico",
+        "nota": "El curso se impartirá en el Salón Graciela Salicrup del Instituto de Matemáticas",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374820"
       },
@@ -11284,7 +11320,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Gustavo Marín Arriaga",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -12790,6 +12826,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Miranda Monserrat Quintero González",
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -13192,7 +13237,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Hugo Guadalupe Reyna Castañeda",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -13577,11 +13622,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O216"
+            "salon": "P106"
           }
         ],
         "nota": null,
-        "salon": "O216",
+        "salon": "P106",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375229"
       }
@@ -13996,11 +14041,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Aula Magna I"
+            "salon": "P116"
           }
         ],
         "nota": null,
-        "salon": "Aula Magna I",
+        "salon": "P116",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374874"
       },
@@ -14759,6 +14804,15 @@
         "ayudantes": [
           {
             "nombre": null,
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Elsa Patricia Mendoza Ballesteros",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
