@@ -47,5 +47,8 @@
   "allowScripts": {
     "esbuild@0.25.6": true,
     "puppeteer@24.14.0": true
+  },
+  "overrides": {
+    "js-yaml": "4.3.1"
   }
 }
