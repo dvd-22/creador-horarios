@@ -3229,13 +3229,12 @@
       "5296": {
         "grupo": "5296",
         "profesor": {
-          "nombre": "Daniel León Álvarez",
+          "nombre": "Luz María Lazcano Arriola",
           "horarios": [
             {
               "horario": "15:00 a 18:00",
               "dias": [
-                "Lu",
-                "Ju"
+                "Lu"
               ]
             }
           ]
@@ -3243,9 +3242,11 @@
         "ayudantes": [
           {
             "nombre": "José Javier García-Figueroa Morales",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "Laboratorio de Prácticas de Protistas y Algas"
           }
         ],
         "nota": null,

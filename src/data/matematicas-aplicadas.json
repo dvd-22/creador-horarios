@@ -3662,7 +3662,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Minerva Ortíz Pérez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -4417,6 +4417,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Diego Alberto Magallanes Ramírez",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4705,7 +4714,7 @@
         "nota": null,
         "salon": "003 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374128"
       },
       "4124": {
         "grupo": "4124",
@@ -6024,7 +6033,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Miguel Angel Salas Chio",
             "horario": "17:00 a 18:00",
             "dias": [
               "Lu",
@@ -6249,6 +6258,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Diego Alberto Magallanes Ramírez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6361,6 +6376,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Huitzil Sánchez Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6420,7 +6441,7 @@
           }
         ],
         "nota": null,
-        "salon": "Taller de Finanzas",
+        "salon": "Laboratorio de Enseñanza de Cómputo de Matemáticas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375122"
       },
@@ -9294,7 +9315,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O222"
+            "salon": "101 (Yelizcalli)"
           },
           {
             "nombre": "Cristián Michelle Calvario Reza",
@@ -9307,7 +9328,7 @@
           }
         ],
         "nota": null,
-        "salon": "O222",
+        "salon": "101 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375145"
       },
@@ -13045,7 +13066,7 @@
         "nota": null,
         "salon": "P106",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375277"
       }
     },
     "Optimización Numérica": {

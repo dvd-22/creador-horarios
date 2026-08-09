@@ -837,6 +837,99 @@
         "salon": "206 (Yelizcalli)",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375691"
+      },
+      "4388": {
+        "grupo": "4388",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "08:00 a 09:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "Aula Magna II"
+          }
+        ],
+        "nota": null,
+        "salon": "Aula Magna II",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4389": {
+        "grupo": "4389",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "Aula Magna II"
+          }
+        ],
+        "nota": null,
+        "salon": "Aula Magna II",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4390": {
+        "grupo": "4390",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "20:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "Aula Magna II"
+          }
+        ],
+        "nota": null,
+        "salon": "Aula Magna II",
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Cálculo Diferencial e Integral I": {
@@ -2005,6 +2098,151 @@
         "salon": "003 (Yelizcalli)",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374025"
+      },
+      "4391": {
+        "grupo": "4391",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "07:00 a 08:00",
+              "dias": [
+                "Lu",
+                "Ma",
+                "Mi",
+                "Ju",
+                "Vi",
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": "102"
+          }
+        ],
+        "nota": null,
+        "salon": "102",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4392": {
+        "grupo": "4392",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "14:00 a 15:00",
+              "dias": [
+                "Lu",
+                "Ma",
+                "Mi",
+                "Ju",
+                "Vi",
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": "O222"
+          }
+        ],
+        "nota": null,
+        "salon": "O222",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4393": {
+        "grupo": "4393",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "19:00 a 20:00",
+              "dias": [
+                "Lu",
+                "Ma",
+                "Mi",
+                "Ju",
+                "Vi"
+              ]
+            },
+            {
+              "horario": "08:00 a 09:00",
+              "dias": [
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": "106 (Yelizcalli)"
+          }
+        ],
+        "nota": null,
+        "salon": "106 (Yelizcalli)",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4397": {
+        "grupo": "4397",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "13:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Ma",
+                "Mi",
+                "Ju",
+                "Vi",
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": "Aula Magna I"
+          }
+        ],
+        "nota": null,
+        "salon": "Aula Magna I",
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Geometría Analítica I": {
@@ -2813,6 +3051,99 @@
         "salon": "206 (Yelizcalli)",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375686"
+      },
+      "4394": {
+        "grupo": "4394",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "07:00 a 08:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "O215"
+          }
+        ],
+        "nota": null,
+        "salon": "O215",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4395": {
+        "grupo": "4395",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "14:00 a 15:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "004 (Yelizcalli)"
+          }
+        ],
+        "nota": null,
+        "salon": "004 (Yelizcalli)",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4396": {
+        "grupo": "4396",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "21:00 a 22:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "21:00 a 22:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "Aula Magna II"
+          }
+        ],
+        "nota": null,
+        "salon": "Aula Magna II",
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Inglés I": {
@@ -4539,6 +4870,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Diego Alberto Magallanes Ramírez",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4827,7 +5167,7 @@
         "nota": null,
         "salon": "003 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374128"
       },
       "4124": {
         "grupo": "4124",
@@ -6654,7 +6994,7 @@
           }
         ],
         "nota": null,
-        "salon": "Taller de Finanzas",
+        "salon": "Laboratorio de Enseñanza de Cómputo de Matemáticas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375122"
       },
@@ -7737,11 +8077,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P106"
+            "salon": "O216"
           }
         ],
         "nota": null,
-        "salon": "P106",
+        "salon": "O216",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -9812,7 +10152,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O222"
+            "salon": "101 (Yelizcalli)"
           },
           {
             "nombre": "Cristián Michelle Calvario Reza",
@@ -9825,7 +10165,7 @@
           }
         ],
         "nota": null,
-        "salon": "O222",
+        "salon": "101 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375145"
       },
@@ -10478,11 +10818,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P101"
+            "salon": "Aula Magna P"
           }
         ],
         "nota": null,
-        "salon": "P101",
+        "salon": "Aula Magna P",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375164"
       },
@@ -11704,11 +12044,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Aula Magna P"
+            "salon": "P101"
           }
         ],
         "nota": null,
-        "salon": "Aula Magna P",
+        "salon": "P101",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375201"
       },
@@ -12052,6 +12392,37 @@
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375219"
+      },
+      "9346": {
+        "grupo": "9346",
+        "profesor": {
+          "nombre": "Carlos Díaz Ávalos",
+          "horarios": [
+            {
+              "horario": "17:00 a 18:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
       }
     },
     "Seguridad Social": {
@@ -13777,7 +14148,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Alberto Hernández Pérez",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -13979,11 +14350,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O216"
+            "salon": "P106"
           }
         ],
         "nota": null,
-        "salon": "O216",
+        "salon": "P106",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374873"
       }
@@ -14496,6 +14867,37 @@
         "salon": "003 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375233"
+      },
+      "9345": {
+        "grupo": "9345",
+        "profesor": {
+          "nombre": "Eduardo Selim Martínez Mayorga",
+          "horarios": [
+            {
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
       }
     },
     "Programación Entera": {

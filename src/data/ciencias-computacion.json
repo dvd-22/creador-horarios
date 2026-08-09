@@ -1199,6 +1199,44 @@
         "salon": "Aula T1",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374905"
+      },
+      "7196": {
+        "grupo": "7196",
+        "profesor": {
+          "nombre": "Ulises Rodríguez Domínguez",
+          "horarios": [
+            {
+              "horario": "16:00 a 17:30",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "P204"
+          },
+          {
+            "nombre": null,
+            "horario": "12:00 a 14:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "Taller de Computación Visual e Innovación Tecnológica"
+          }
+        ],
+        "nota": null,
+        "salon": "P204",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377312"
       }
     },
     "Inglés I": {
@@ -2108,7 +2146,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Minerva Ortíz Pérez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -4758,6 +4796,15 @@
               "Mi"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Rodrigo Fernando Velázquez Cruz",
+            "horario": "14:40 a 15:30",
+            "dias": [
+              "Lu",
+              "Mi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5765,12 +5812,20 @@
             "salon": "P208"
           },
           {
-            "nombre": null,
+            "nombre": "Juan Angeles Hernández",
             "horario": "14:00 a 16:00",
             "dias": [
               "Lu"
             ],
             "salon": "Taller de Ingeniería de Software"
+          },
+          {
+            "nombre": "Francisco Jesús Guadarrama Rodríguez",
+            "horario": "14:00 a 16:00",
+            "dias": [
+              "Lu"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7175,7 +7230,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O222"
+            "salon": "101 (Yelizcalli)"
           },
           {
             "nombre": "Cristián Michelle Calvario Reza",
@@ -7188,7 +7243,7 @@
           }
         ],
         "nota": null,
-        "salon": "O222",
+        "salon": "101 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375146"
       },

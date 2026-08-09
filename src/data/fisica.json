@@ -30,7 +30,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "106 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374401"
       },
       "8081": {
         "grupo": "8081",
@@ -4326,7 +4326,7 @@
         "nota": null,
         "salon": "Salón de Seminarios 330",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374460"
       },
       "8139": {
         "grupo": "8139",
@@ -6961,11 +6961,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P106"
+            "salon": "O216"
           }
         ],
         "nota": null,
-        "salon": "P106",
+        "salon": "O216",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -8366,6 +8366,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "Flor Beatriz Quiroga Bañuelos",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Joel Serralde Vázquez",
             "horario": null,
             "dias": [],
@@ -8401,6 +8407,12 @@
           },
           {
             "nombre": "Ricardo Covarrubias Yeffal",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Ángel Jikmé López Cruz",
             "horario": null,
             "dias": [],
             "salon": null
@@ -13863,7 +13875,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Minerva Ortíz Pérez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -14672,7 +14684,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Alberto Hernández Pérez",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -14810,7 +14822,7 @@
         "nota": null,
         "salon": "P107",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375672"
       }
     },
     "Ecuaciones Diferenciales Parciales II": {
@@ -16683,7 +16695,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Carolina Rivera Arredondo",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -17453,7 +17465,14 @@
           "nombre": "Armando Antillón Díaz",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Harim Josafat Villarreal Miranda",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": "Introducción a la Física de Aceleradores",
         "salon": null,
         "modalidad": "Virtual",
