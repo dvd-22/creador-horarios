@@ -95,6 +95,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
   const [searchQuery, setSearchQuery] = useState('');
   const [isFilterModalOpen, setIsFilterModalOpen] = useState(false);
   const [isSpacerModalOpen, setIsSpacerModalOpen] = useState(false);
+  const [ratingsReady, setRatingsReady] = useState(false);
 
   const activeFilterCount = useMemo(() => {
     let count = 0;
@@ -103,8 +104,13 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
     if (filters.blockedHours && filters.blockedHours.length > 0) count++;
     if (filters.modalities && filters.modalities.length < 2) count++;
     if (filters.excludeAssistants) count++;
+    if (filters.minRating != null || filters.maxRating != null) count++;
     return count;
   }, [filters]);
+
+  useEffect(() => {
+    professorRatingService.loadStaticRatings().then(() => setRatingsReady(true));
+  }, []);
 
   useEffect(() => {
     if (onRevealGroup) {
@@ -267,7 +273,9 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
       (!filters.days || filters.days.length === 6) &&
       (!filters.blockedHours || filters.blockedHours.length === 0) &&
       (!filters.modalities || filters.modalities.length === 2) &&
-      !filters.excludeAssistants;
+      !filters.excludeAssistants &&
+      filters.minRating == null &&
+      filters.maxRating == null;
 
     if (noFiltersApplied) return orderedData;
 
@@ -313,6 +321,18 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
           if (filters.modalities && filters.modalities.length < 2) {
             const modalidad = groupData?.modalidad;
             if (modalidad && !filters.modalities.includes(modalidad)) return;
+          }
+
+          if ((filters.minRating != null || filters.maxRating != null) && ratingsReady) {
+            const ratingInfo = professorRatingService.getProfessorRatingSync(groupData?.profesor?.nombre);
+            const rating = ratingInfo?.rating;
+
+            if (rating === undefined || rating === null) {
+              if (!filters.includeUnrated) return;
+            } else {
+              if (filters.minRating != null && rating < filters.minRating) return;
+              if (filters.maxRating != null && rating > filters.maxRating) return;
+            }
           }
 
           if (searchQuery.trim()) {
@@ -363,7 +383,7 @@ const ScheduleSelector = ({ onGroupSelect, selectedGroups, onRevealGroup, overla
     });
 
     return filtered;
-  }, [searchQuery, majorData, filters]);
+  }, [searchQuery, majorData, filters, ratingsReady]);
 
   useEffect(() => {
     const loadVisibleProfessorRatings = async () => { };
