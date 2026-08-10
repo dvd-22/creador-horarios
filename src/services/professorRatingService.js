@@ -72,6 +72,12 @@ class ProfessorRatingService {
 		return rating || null;
 	}
 
+	// Sync lookup, only reliable after loadStaticRatings() has resolved
+	getProfessorRatingSync(professorName) {
+		if (!professorName || !this.isLoaded || !this.ratingsData) return null;
+		return this.ratingsData.ratings[professorName] || null;
+	}
+
 	async fetchProfessorRatings(professorNames) {
 		if (!professorNames || professorNames.length === 0) return [];
 
