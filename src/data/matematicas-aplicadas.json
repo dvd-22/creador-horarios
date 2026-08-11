@@ -4132,7 +4132,7 @@
         "nota": null,
         "salon": "101 (Yelizcalli)",
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374120"
       },
       "4116": {
         "grupo": "4116",
@@ -8817,6 +8817,24 @@
               "Ju"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "Fabio Giuseppe Calo Dizy",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Sergio Rosado Zúñiga",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -9003,6 +9021,15 @@
               "Ju"
             ],
             "salon": "001 (Yelizcalli)"
+          },
+          {
+            "nombre": "Rey Arturo Arellanes Ríos",
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -12581,7 +12608,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "César Daniel Alejándrez García",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",

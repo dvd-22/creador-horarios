@@ -3514,6 +3514,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Patricia Silva Guevara",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5427,6 +5433,45 @@
         "salon": null,
         "modalidad": "Virtual",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374386"
+      },
+      "7199": {
+        "grupo": "7199",
+        "profesor": {
+          "nombre": "Daniel Ruelas Milanés",
+          "horarios": [
+            {
+              "horario": "18:00 a 19:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": null,
+            "horario": "14:00 a 16:00",
+            "dias": [
+              "Mi"
+            ],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": null,
+        "modalidad": "Virtual",
+        "presentacion": null
       }
     },
     "Inteligencia Artificial": {
@@ -5980,7 +6025,7 @@
         "nota": null,
         "salon": "Laboratorio de Ciencias de la Computación 1",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377368"
       }
     }
   },
@@ -9477,45 +9522,6 @@
         "salon": "P103",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375035"
-      },
-      "7179": {
-        "grupo": "7179",
-        "profesor": {
-          "nombre": "Daniel Ruelas Milanés",
-          "horarios": [
-            {
-              "horario": "12:00 a 13:00",
-              "dias": [
-                "Lu",
-                "Mi",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "12:00 a 13:00",
-            "dias": [
-              "Ma",
-              "Ju"
-            ],
-            "salon": "P204"
-          },
-          {
-            "nombre": "Oscar Tadeo Leal Villegas",
-            "horario": "16:00 a 18:00",
-            "dias": [
-              "Ma"
-            ],
-            "salon": "Laboratorio de Ciencias de la Computación 1"
-          }
-        ],
-        "nota": "Algoritmos para Mapeo Volumétrico y Reconstrucción Espacial",
-        "salon": "P204",
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375658"
       }
     },
     "Seminario de Ciencias de la Computación B": {
@@ -10484,7 +10490,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "César Daniel Alejándrez García",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",

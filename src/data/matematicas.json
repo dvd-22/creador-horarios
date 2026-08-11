@@ -4318,11 +4318,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P106"
+            "salon": "Aula Magna II"
           }
         ],
         "nota": null,
-        "salon": "P106",
+        "salon": "Aula Magna II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375624"
       }
@@ -4357,7 +4357,7 @@
         "nota": null,
         "salon": "101 (Yelizcalli)",
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374120"
       },
       "4116": {
         "grupo": "4116",
@@ -4728,6 +4728,15 @@
               "Ju"
             ],
             "salon": "O215"
+          },
+          {
+            "nombre": "Jonathan Pérez Juárez",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4851,11 +4860,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P101"
+            "salon": "Aula Magna I"
           }
         ],
         "nota": null,
-        "salon": "P101",
+        "salon": "Aula Magna I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374133"
       },
@@ -5007,6 +5016,15 @@
               "Ju"
             ],
             "salon": "O124"
+          },
+          {
+            "nombre": "Emma Turrubiartes Avila",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5410,6 +5428,24 @@
               "Ju"
             ],
             "salon": "Aula Magna II"
+          },
+          {
+            "nombre": "Omar Alejandro Díaz Caballero",
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Gabriela Rueda de la Cruz",
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -9022,7 +9058,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Diego Antonio Villalba González",
+            "nombre": "Mariana Itzel Martínez Hernández",
             "horario": null,
             "dias": [],
             "salon": null
@@ -13482,7 +13518,7 @@
         ],
         "nota": null,
         "salon": "P115",
-        "modalidad": "Presencial",
+        "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374305"
       }
     },
@@ -14417,7 +14453,7 @@
         "nota": null,
         "salon": "Laboratorio de Ciencias de la Computación 1",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377368"
       }
     },
     "Relatividad": {
@@ -15677,7 +15713,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Fabián Elizalde Hernández",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -15689,7 +15725,7 @@
         "nota": "Matemáticas en niños superdotados",
         "salon": "P201",
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374349"
       },
       "4332": {
         "grupo": "4332",
@@ -15720,7 +15756,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374350"
       },
       "4333": {
         "grupo": "4333",
@@ -20804,6 +20840,15 @@
               "Ju"
             ],
             "salon": "Taller de Demografía"
+          },
+          {
+            "nombre": "Fidel Haziel Sánchez Caraveo",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
