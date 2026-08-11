@@ -2231,11 +2231,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P106"
+            "salon": "Aula Magna II"
           }
         ],
         "nota": null,
-        "salon": "P106",
+        "salon": "Aula Magna II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375625"
       }
@@ -2599,7 +2599,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Pedro Gabriel Estrada Gallegos",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -2895,7 +2895,7 @@
       "8052": {
         "grupo": "8052",
         "profesor": {
-          "nombre": "Ramón Reyes Carrión",
+          "nombre": "Pedro Romero Moreno",
           "horarios": [
             {
               "horario": "19:00 a 20:00",
@@ -2909,7 +2909,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Emmanuel Ismael González Celio",
+            "nombre": null,
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -3529,6 +3529,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Diana Itzel Romero Márquez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3652,7 +3658,7 @@
         "nota": null,
         "salon": "O129",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374470"
       },
       "8149": {
         "grupo": "8149",
@@ -5716,6 +5722,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Francisco Alejandro Reyes Pérez Montañez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5891,6 +5903,12 @@
         "ayudantes": [
           {
             "nombre": "Erubey Morales Teofilo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Andre Julián Paz Huezo",
             "horario": null,
             "dias": [],
             "salon": null

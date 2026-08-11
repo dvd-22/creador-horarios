@@ -2838,7 +2838,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Pedro Gabriel Estrada Gallegos",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -3134,7 +3134,7 @@
       "4078": {
         "grupo": "4078",
         "profesor": {
-          "nombre": "Ramón Reyes Carrión",
+          "nombre": "Pedro Romero Moreno",
           "horarios": [
             {
               "horario": "19:00 a 20:00",
@@ -3148,7 +3148,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Emmanuel Ismael González Celio",
+            "nombre": null,
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -3755,11 +3755,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P106"
+            "salon": "Aula Magna II"
           }
         ],
         "nota": null,
-        "salon": "P106",
+        "salon": "Aula Magna II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375624"
       }
@@ -4696,11 +4696,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P101"
+            "salon": "Aula Magna I"
           }
         ],
         "nota": null,
-        "salon": "P101",
+        "salon": "Aula Magna I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374133"
       },
@@ -6104,6 +6104,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Diana Itzel Romero Márquez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6227,7 +6233,7 @@
         "nota": null,
         "salon": "O129",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374470"
       },
       "8149": {
         "grupo": "8149",
@@ -9184,6 +9190,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Francisco Alejandro Reyes Pérez Montañez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -9809,7 +9821,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Jesús Alfonso Segura Landa",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "O129",
         "modalidad": "Presencial",
@@ -9999,7 +10018,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Josué David Osorio Sánchez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "P113",
         "modalidad": "Presencial",
@@ -10492,6 +10518,12 @@
         "ayudantes": [
           {
             "nombre": "Erubey Morales Teofilo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Andre Julián Paz Huezo",
             "horario": null,
             "dias": [],
             "salon": null
@@ -12963,7 +12995,7 @@
         "nota": null,
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375700"
       }
     }
   },
@@ -13634,6 +13666,15 @@
               "Ju"
             ],
             "salon": "P211"
+          },
+          {
+            "nombre": "José Antonio Barrientos Sánchez",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -13758,6 +13799,15 @@
               "Ju"
             ],
             "salon": "204 (Yelizcalli)"
+          },
+          {
+            "nombre": "Mirian Leon Faro",
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -15789,7 +15839,16 @@
         "grupo": "8434",
         "profesor": {
           "nombre": "Freddy Jackson Poveda Cuevas",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "08:00 a 10:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -15800,7 +15859,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "O131",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375673"
       }
@@ -16054,7 +16113,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Salón de Seminarios 436",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374682"
       }
@@ -16074,13 +16133,13 @@
             "salon": null
           },
           {
-            "nombre": "Beatríz Santiago Ramírez",
+            "nombre": "Beatriz Santiago Ramirez",
             "horario": null,
             "dias": [],
             "salon": null
           },
           {
-            "nombre": "Beatríz Santiago Ramírez",
+            "nombre": "Beatriz Santiago Ramirez",
             "horario": null,
             "dias": [],
             "salon": null
@@ -16740,7 +16799,7 @@
         "nota": "Fundamentos de las Matemáticas",
         "salon": "P117",
         "modalidad": "Mixta",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374339"
       },
       "4386": {
         "grupo": "4386",
@@ -17299,7 +17358,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Andrea Fernanda Rodríguez Rojas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": "El curso se impartirá en el salón 111 del Instituto de Física",
         "salon": null,
         "modalidad": "Presencial",
@@ -17734,7 +17800,7 @@
           "horarios": []
         },
         "ayudantes": [],
-        "nota": "Herramientas cuantitativas modernas: RMT y aprendizaje profundo en Econofísica/Econometría",
+        "nota": "Cita para definir horario: lunes 17 de agosto a las 12 hrs en el Aula 2 de computación en Física",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374731"
@@ -18092,7 +18158,14 @@
           "nombre": "Ricardo Atahualpa Solórzano Kraemer",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Román Tamez Vidal Tamayo Tamez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": null,
@@ -18219,6 +18292,15 @@
               "Ju"
             ],
             "salon": "Taller de Demografía"
+          },
+          {
+            "nombre": "Fidel Haziel Sánchez Caraveo",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,

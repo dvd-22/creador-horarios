@@ -3340,7 +3340,7 @@
           }
         ],
         "nota": null,
-        "salon": "003",
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375396"
       },
@@ -3395,7 +3395,7 @@
           }
         ],
         "nota": null,
-        "salon": "003",
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375398"
       },
@@ -7201,7 +7201,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Plantas II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375532"
       },
@@ -7221,15 +7221,15 @@
         "ayudantes": [
           {
             "nombre": "Verónica Monserrat Rodríguez Sánchez",
-            "horario": "18:00 a 21:00",
+            "horario": "15:00 a 18:00",
             "dias": [
               "Ma"
             ],
-            "salon": "Laboratorio de Prácticas de Biología de Plantas II"
+            "salon": "Laboratorio de Prácticas de Biología de Plantas I"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Plantas I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375533"
       },
@@ -7411,8 +7411,7 @@
             {
               "horario": "07:30 a 10:30",
               "dias": [
-                "Lu",
-                "Ju"
+                "Lu"
               ]
             }
           ]
@@ -7420,13 +7419,15 @@
         "ayudantes": [
           {
             "nombre": "Daniel Pérez Calixto",
-            "horario": null,
-            "dias": [],
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Ju"
+            ],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375540"
       },
@@ -7438,7 +7439,6 @@
             {
               "horario": "07:30 a 10:30",
               "dias": [
-                "Lu",
                 "Ju"
               ]
             }
@@ -7447,9 +7447,11 @@
         "ayudantes": [
           {
             "nombre": "Juan José Leal García",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Lu"
+            ],
+            "salon": "304 (Yelizcalli)"
           }
         ],
         "nota": null,
@@ -7465,8 +7467,7 @@
             {
               "horario": "07:30 a 10:30",
               "dias": [
-                "Ma",
-                "Vi"
+                "Ma"
               ]
             }
           ]
@@ -7474,9 +7475,11 @@
         "ayudantes": [
           {
             "nombre": "Ricardo López López",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Vi"
+            ],
+            "salon": "303 (Yelizcalli)"
           }
         ],
         "nota": null,
@@ -7504,7 +7507,7 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "305 (Yelizcalli)"
           }
         ],
         "nota": null,
@@ -7520,8 +7523,7 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Lu",
-                "Ju"
+                "Lu"
               ]
             }
           ]
@@ -7529,13 +7531,15 @@
         "ayudantes": [
           {
             "nombre": "Edgardo Galán Vásquez",
-            "horario": null,
-            "dias": [],
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Ju"
+            ],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "305 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375544"
       },
@@ -7547,7 +7551,6 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Lu",
                 "Ju"
               ]
             }
@@ -7556,13 +7559,15 @@
         "ayudantes": [
           {
             "nombre": "Sandra Antonio Bueno",
-            "horario": null,
-            "dias": [],
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Lu"
+            ],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "305 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375545"
       },
@@ -7626,7 +7631,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375547"
       },
@@ -7638,8 +7643,7 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Mi",
-                "Sa"
+                "Mi"
               ]
             }
           ]
@@ -7647,9 +7651,11 @@
         "ayudantes": [
           {
             "nombre": "Marco Fabio Ortiz Ramírez",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Sa"
+            ],
+            "salon": "305 (Yelizcalli)"
           }
         ],
         "nota": null,
@@ -7665,7 +7671,6 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Mi",
                 "Sa"
               ]
             }
@@ -7674,13 +7679,15 @@
         "ayudantes": [
           {
             "nombre": "Carlos Moisés Arriaga Osante",
-            "horario": null,
-            "dias": [],
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Mi"
+            ],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375549"
       },
@@ -7692,8 +7699,7 @@
             {
               "horario": "15:00 a 18:00",
               "dias": [
-                "Lu",
-                "Mi"
+                "Lu"
               ]
             }
           ]
@@ -7701,13 +7707,15 @@
         "ayudantes": [
           {
             "nombre": "Elvia María Ramírez Carrillo",
-            "horario": null,
-            "dias": [],
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Mi"
+            ],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375550"
       },
@@ -7719,7 +7727,6 @@
             {
               "horario": "15:00 a 18:00",
               "dias": [
-                "Lu",
                 "Mi"
               ]
             }
@@ -7728,13 +7735,15 @@
         "ayudantes": [
           {
             "nombre": "Claudia Elizabeth Ruiz Rodríguez",
-            "horario": null,
-            "dias": [],
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Lu"
+            ],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375551"
       },
@@ -7746,8 +7755,7 @@
             {
               "horario": "15:00 a 18:00",
               "dias": [
-                "Ma",
-                "Vi"
+                "Ma"
               ]
             }
           ]
@@ -7755,13 +7763,15 @@
         "ayudantes": [
           {
             "nombre": "Juan Carlos Gómez Verjan",
-            "horario": null,
-            "dias": [],
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Vi"
+            ],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375552"
       },
@@ -7773,7 +7783,6 @@
             {
               "horario": "15:00 a 18:00",
               "dias": [
-                "Ma",
                 "Vi"
               ]
             }
@@ -7782,13 +7791,15 @@
         "ayudantes": [
           {
             "nombre": "José Alberto Santiago De la Cruz",
-            "horario": null,
-            "dias": [],
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Ma"
+            ],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375553"
       },
@@ -7800,8 +7811,7 @@
             {
               "horario": "18:00 a 21:00",
               "dias": [
-                "Lu",
-                "Mi"
+                "Lu"
               ]
             }
           ]
@@ -7809,13 +7819,15 @@
         "ayudantes": [
           {
             "nombre": "Betsy Anaid Peña Ocaña",
-            "horario": null,
-            "dias": [],
+            "horario": "18:00 a 21:00",
+            "dias": [
+              "Mi"
+            ],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375554"
       },
@@ -7827,7 +7839,6 @@
             {
               "horario": "18:00 a 21:00",
               "dias": [
-                "Lu",
                 "Mi"
               ]
             }
@@ -7836,13 +7847,15 @@
         "ayudantes": [
           {
             "nombre": "Antonio Cruz Peralta",
-            "horario": null,
-            "dias": [],
+            "horario": "18:00 a 21:00",
+            "dias": [
+              "Lu"
+            ],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375555"
       },
@@ -7854,8 +7867,7 @@
             {
               "horario": "18:00 a 21:00",
               "dias": [
-                "Ma",
-                "Ju"
+                "Ma"
               ]
             }
           ]
@@ -7863,13 +7875,15 @@
         "ayudantes": [
           {
             "nombre": "Juan José Leal García",
-            "horario": null,
-            "dias": [],
+            "horario": "18:00 a 21:00",
+            "dias": [
+              "Ju"
+            ],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375556"
       },
@@ -7881,7 +7895,6 @@
             {
               "horario": "18:00 a 21:00",
               "dias": [
-                "Ma",
                 "Ju"
               ]
             }
@@ -7890,13 +7903,15 @@
         "ayudantes": [
           {
             "nombre": "Luis Gerardo Romero Chora",
-            "horario": null,
-            "dias": [],
+            "horario": "18:00 a 21:00",
+            "dias": [
+              "Ma"
+            ],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375557"
       }
