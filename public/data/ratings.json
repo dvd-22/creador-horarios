@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-08-11T02:12:21.686Z",
-  "totalProfessors": 3040,
+  "lastUpdated": "2026-08-11T14:33:51.243Z",
+  "totalProfessors": 3045,
   "ratingsFound": 1428,
   "foundPercentage": 47,
   "ratings": {
@@ -1319,7 +1319,7 @@
     "Belén Espinosa Lucio": {
       "name": "Belén Espinosa Lucio",
       "rating": 8.8,
-      "commentCount": 72,
+      "commentCount": 73,
       "id": "60184",
       "url": "https://www.misprofesores.com/profesores/Belen-Espinosa-Lucio_60184"
     },
@@ -4289,8 +4289,8 @@
     "Gregorio Ruiz Chavarría": null,
     "Griselda Adriana Cruz Priego": {
       "name": "Griselda Adriana Cruz Priego",
-      "rating": 7.3,
-      "commentCount": 11,
+      "rating": 6.9,
+      "commentCount": 12,
       "id": "120582",
       "url": "https://www.misprofesores.com/profesores/Griselda-Cruz-Priego_120582"
     },
@@ -5392,7 +5392,7 @@
     "Jorge Alonso Santos Mellado": {
       "name": "Jorge Alonso Santos Mellado",
       "rating": 8.5,
-      "commentCount": 40,
+      "commentCount": 41,
       "id": "60846",
       "url": "https://www.misprofesores.com/profesores/Jorge-Santos-Mellado_60846"
     },
@@ -6469,6 +6469,7 @@
       "url": "https://www.misprofesores.com/profesores/Julieta-Jujnovsky-Orlandini_135144"
     },
     "Julieta Melina Flores Morán": null,
+    "Julietta Maia Vicente Santes": null,
     "Julio Alfonso Pérez Flores": null,
     "Julio Cesar Ramírez Martínez": {
       "name": "Julio Cesar Ramírez Martinez",
@@ -6485,6 +6486,7 @@
       "url": "https://www.misprofesores.com/profesores/Julio-Cedillo-Sanchez_36009"
     },
     "Julio César Clemente González": null,
+    "Julio César Collado Morales": null,
     "Julio César Cruz Cárdenas": {
       "name": "Julio César Cruz Cárdenas",
       "rating": 10,
@@ -7763,6 +7765,7 @@
       "id": "171957",
       "url": "https://www.misprofesores.com/profesores/Mariana-Gomez-Garcia_171957"
     },
+    "Mariana Itzel Martínez Hernández": null,
     "Mariana Martínez González": {
       "name": "Mariana Martínez Gonzalez",
       "rating": 6.4,
@@ -9503,6 +9506,7 @@
     },
     "Patricia Salas Casales": null,
     "Patricia Segura Medina": null,
+    "Patricia Silva Guevara": null,
     "Patricio Ordóñez Blanco": null,
     "Patricio Ricardo Garcia Vázquez": {
       "name": "Patricio Ricardo Garcia Vázquez",
@@ -11387,6 +11391,7 @@
       "id": "135481",
       "url": "https://www.misprofesores.com/profesores/Ximena-Estrada-Zavaleta_135481"
     },
+    "Ximena Fernández de Cordoba Montenegro": null,
     "Ximena de la Luz Contreras Mendoza": null,
     "Xochitl Guadalupe Vital Arriaga": null,
     "Yadira Teodosio Procopio": null,
@@ -11614,12 +11619,12 @@
     "Óscar Romero Báez": null
   },
   "statistics": {
-    "processed": 3040,
+    "processed": 3045,
     "found": 1428,
-    "notFound": 1612,
-    "foundWithFallback": 60,
-    "foundWithMainTemplate": 1368,
-    "keptExisting": 1413,
-    "upgraded": 12
+    "notFound": 1617,
+    "foundWithFallback": 58,
+    "foundWithMainTemplate": 1370,
+    "keptExisting": 1425,
+    "upgraded": 3
   }
 }
