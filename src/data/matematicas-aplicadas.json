@@ -837,6 +837,99 @@
         "salon": "206 (Yelizcalli)",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375691"
+      },
+      "4388": {
+        "grupo": "4388",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "08:00 a 09:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "Aula Magna II"
+          }
+        ],
+        "nota": null,
+        "salon": "Aula Magna II",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4389": {
+        "grupo": "4389",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "Aula Magna II"
+          }
+        ],
+        "nota": null,
+        "salon": "Aula Magna II",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4390": {
+        "grupo": "4390",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "20:00 a 21:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "Aula Magna II"
+          }
+        ],
+        "nota": null,
+        "salon": "Aula Magna II",
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Cálculo Diferencial e Integral I": {
@@ -2005,6 +2098,151 @@
         "salon": "003 (Yelizcalli)",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374025"
+      },
+      "4391": {
+        "grupo": "4391",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "07:00 a 08:00",
+              "dias": [
+                "Lu",
+                "Ma",
+                "Mi",
+                "Ju",
+                "Vi",
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": "102"
+          }
+        ],
+        "nota": null,
+        "salon": "102",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4392": {
+        "grupo": "4392",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "14:00 a 15:00",
+              "dias": [
+                "Lu",
+                "Ma",
+                "Mi",
+                "Ju",
+                "Vi",
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": "O222"
+          }
+        ],
+        "nota": null,
+        "salon": "O222",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4393": {
+        "grupo": "4393",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "19:00 a 20:00",
+              "dias": [
+                "Lu",
+                "Ma",
+                "Mi",
+                "Ju",
+                "Vi"
+              ]
+            },
+            {
+              "horario": "08:00 a 09:00",
+              "dias": [
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": "106 (Yelizcalli)"
+          }
+        ],
+        "nota": null,
+        "salon": "106 (Yelizcalli)",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4397": {
+        "grupo": "4397",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "13:00 a 14:00",
+              "dias": [
+                "Lu",
+                "Ma",
+                "Mi",
+                "Ju",
+                "Vi",
+                "Sa"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": "Aula Magna I"
+          }
+        ],
+        "nota": null,
+        "salon": "Aula Magna I",
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Geometría Analítica I": {
@@ -2813,6 +3051,99 @@
         "salon": "206 (Yelizcalli)",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375686"
+      },
+      "4394": {
+        "grupo": "4394",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "07:00 a 08:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "O215"
+          }
+        ],
+        "nota": null,
+        "salon": "O215",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4395": {
+        "grupo": "4395",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "14:00 a 15:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "004 (Yelizcalli)"
+          }
+        ],
+        "nota": null,
+        "salon": "004 (Yelizcalli)",
+        "modalidad": "Presencial",
+        "presentacion": null
+      },
+      "4396": {
+        "grupo": "4396",
+        "profesor": {
+          "nombre": null,
+          "horarios": [
+            {
+              "horario": "21:00 a 22:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": null,
+            "horario": "21:00 a 22:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "Aula Magna II"
+          }
+        ],
+        "nota": null,
+        "salon": "Aula Magna II",
+        "modalidad": "Presencial",
+        "presentacion": null
       }
     },
     "Introducción a las Matemáticas Discretas": {
@@ -2844,7 +3175,7 @@
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "003 (Yelizcalli)",
-        "modalidad": "Mixta",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375256"
       },
       "6001": {
@@ -2957,7 +3288,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Karla Elsa Calva Cano",
             "horario": "07:00 a 09:00",
             "dias": [
               "Ma",
@@ -3331,7 +3662,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Minerva Ortíz Pérez",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -3477,7 +3808,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ninive Atenea Tello Arcos",
             "horario": "15:00 a 16:00",
             "dias": [
               "Lu",
@@ -3637,7 +3968,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Juan Manuel Muro Delgado Ontiveros",
             "horario": "19:00 a 20:00",
             "dias": [
               "Lu",
@@ -3712,7 +4043,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Diego Adrián Barrera Hernández",
             "horario": "12:00 a 13:00",
             "dias": [
               "Lu",
@@ -3988,7 +4319,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Roman Josué Armenta Rico",
             "horario": "21:00 a 22:00",
             "dias": [
               "Ma",
@@ -4086,6 +4417,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Diego Alberto Magallanes Ramírez",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4141,7 +4481,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Yanahi Demetrio Torres",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -4374,7 +4714,7 @@
         "nota": null,
         "salon": "003 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374128"
       },
       "4124": {
         "grupo": "4124",
@@ -4951,7 +5291,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alfredo López Castillo",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -5075,7 +5415,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Carmen Dení Martínez Gómez",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -5177,7 +5517,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Yadira Teodosio Procopio",
             "horario": "10:00 a 11:00",
             "dias": [
               "Lu",
@@ -5653,7 +5993,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jhaziel Estrada Castellon",
             "horario": "17:00 a 18:00",
             "dias": [
               "Lu",
@@ -5693,7 +6033,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Miguel Angel Salas Chio",
             "horario": "17:00 a 18:00",
             "dias": [
               "Lu",
@@ -5918,6 +6258,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Diego Alberto Magallanes Ramírez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6030,10 +6376,16 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Huitzil Sánchez Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Enseñanza de Cómputo de Matemáticas",
+        "salon": "301 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375120"
       },
@@ -6089,7 +6441,7 @@
           }
         ],
         "nota": null,
-        "salon": "Taller de Finanzas",
+        "salon": "Laboratorio de Enseñanza de Cómputo de Matemáticas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375122"
       },
@@ -6111,6 +6463,12 @@
         "ayudantes": [
           {
             "nombre": "Karla Adriana Esquivel Guzmán",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Maricruz Alvarado Hernández",
             "horario": null,
             "dias": [],
             "salon": null
@@ -6192,7 +6550,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "David Velázquez Portilla",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "Taller de Finanzas",
         "modalidad": "Presencial",
@@ -6326,6 +6691,15 @@
               "Ju"
             ],
             "salon": "Aula Magna P"
+          },
+          {
+            "nombre": "Gisela Amanalli Espinosa Saucedo",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6357,6 +6731,15 @@
               "Ju"
             ],
             "salon": "O123"
+          },
+          {
+            "nombre": "Guadalupe Jiménez Villanueva",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6480,7 +6863,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "001 (Yelizcalli)"
+            "salon": "Aula Magna Juan de Oyarzabal"
           },
           {
             "nombre": "Guillermo Rolando Rosas Figueroa",
@@ -6493,7 +6876,7 @@
           }
         ],
         "nota": null,
-        "salon": "001 (Yelizcalli)",
+        "salon": "Aula Magna Juan de Oyarzabal",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374768"
       },
@@ -6552,6 +6935,15 @@
               "Ju"
             ],
             "salon": "O215"
+          },
+          {
+            "nombre": "Cristian Josué Núñez Serna",
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6613,11 +7005,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O220"
+            "salon": "101 (Tlaltícpac)"
           }
         ],
         "nota": null,
-        "salon": "O220",
+        "salon": "101 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374773"
       },
@@ -6738,6 +7130,15 @@
               "Ju"
             ],
             "salon": "O122"
+          },
+          {
+            "nombre": "Silhi Deneb Bernabé Rodríguez",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6794,7 +7195,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Natalia Edith Mejía Bautista",
             "horario": "13:00 a 15:00",
             "dias": [
               "Ma",
@@ -6824,7 +7225,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Claudia Eréndira Galaviz Leñero",
             "horario": "14:00 a 16:00",
             "dias": [
               "Ma",
@@ -7092,11 +7493,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P106"
+            "salon": "O216"
           }
         ],
         "nota": null,
-        "salon": "P106",
+        "salon": "O216",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -7320,7 +7721,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Bulmaro Castillo Palacios",
             "horario": "17:00 a 18:00",
             "dias": [
               "Lu",
@@ -7496,7 +7897,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Miguel Angel Hernández Segura",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -7806,7 +8207,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jaime Hernández López",
             "horario": "21:00 a 22:00",
             "dias": [
               "Ma",
@@ -8052,7 +8453,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Néstor Enrique Calvillo Chávez",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -8153,11 +8554,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O130"
+            "salon": "P208"
           }
         ],
         "nota": null,
-        "salon": "O130",
+        "salon": "P208",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374792"
       },
@@ -8312,11 +8713,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O134"
+            "salon": "Aula Magna I"
           }
         ],
         "nota": null,
-        "salon": "O134",
+        "salon": "Aula Magna I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374222"
       },
@@ -8374,11 +8775,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P203"
+            "salon": "Taller de Topología"
           }
         ],
         "nota": null,
-        "salon": "P203",
+        "salon": "Taller de Topología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374224"
       },
@@ -8560,11 +8961,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "206 (Yelizcalli)"
+            "salon": "O215"
           }
         ],
         "nota": null,
-        "salon": "206 (Yelizcalli)",
+        "salon": "O215",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374230"
       },
@@ -8622,11 +9023,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O215"
+            "salon": "206 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "O215",
+        "salon": "206 (Yelizcalli)",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374232"
       },
@@ -8875,6 +9276,15 @@
               "Ju"
             ],
             "salon": "P201"
+          },
+          {
+            "nombre": "Claudia Yali Tello Hérnandez",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -8905,11 +9315,20 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O222"
+            "salon": "101 (Yelizcalli)"
+          },
+          {
+            "nombre": "Cristián Michelle Calvario Reza",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
-        "salon": "O222",
+        "salon": "101 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375145"
       },
@@ -9054,7 +9473,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Diego León Luna",
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -9148,7 +9567,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rebeca Sarai Aragón Castro",
             "horario": "13:00 a 15:00",
             "dias": [
               "Ma",
@@ -9544,7 +9963,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Rodolfo Lorenzo Chico",
             "horario": "21:00 a 22:00",
             "dias": [
               "Ma",
@@ -9575,7 +9994,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Tomás Ricardo Basile Álvarez",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -9606,17 +10025,17 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Arturo González Hernández",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
               "Ju"
             ],
-            "salon": "P208"
+            "salon": "O130"
           }
         ],
         "nota": null,
-        "salon": "P208",
+        "salon": "O130",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375704"
       }
@@ -9641,19 +10060,19 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Javier Chaires Galindo",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
               "Ju"
             ],
-            "salon": "P116"
+            "salon": "Taller de Topología"
           }
         ],
         "nota": null,
-        "salon": "P116",
+        "salon": "Taller de Topología",
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/376012"
       }
     },
     "Inglés IV": {
@@ -9708,6 +10127,15 @@
               "Ju"
             ],
             "salon": "004 (Yelizcalli)"
+          },
+          {
+            "nombre": "Rodrígo Dolores Ibarra",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -9723,9 +10151,9 @@
             {
               "horario": "10:00 a 11:00",
               "dias": [
-                "Lu",
+                "Ma",
                 "Mi",
-                "Vi"
+                "Ju"
               ]
             }
           ]
@@ -9735,14 +10163,14 @@
             "nombre": "Amílcar José Escobedo Pérez",
             "horario": "10:00 a 11:00",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Vi"
             ],
-            "salon": "Taller de Análisis Numérico"
+            "salon": null
           }
         ],
-        "nota": null,
-        "salon": "Taller de Análisis Numérico",
+        "nota": "El curso se impartirá en el Salón Graciela Salicrup del Instituto de Matemáticas",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374820"
       },
@@ -10122,7 +10550,7 @@
         "nota": null,
         "salon": "P203",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374278"
       },
       "4370": {
         "grupo": "4370",
@@ -10141,7 +10569,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Arturo Ureña Casarrubias",
             "horario": "11:00 a 12:00",
             "dias": [
               "Ma",
@@ -10153,7 +10581,7 @@
         "nota": null,
         "salon": "P107",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375672"
       }
     },
     "Inglés V": {
@@ -10230,8 +10658,11 @@
         "ayudantes": [
           {
             "nombre": "Jorge Luis Tamaya Domínguez",
-            "horario": null,
-            "dias": [],
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
             "salon": null
           }
         ],
@@ -10283,7 +10714,17 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Daniel Alfredo García Sánchez",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
         "nota": "Modelos probabilísticos para variables latentes",
         "salon": null,
         "modalidad": "Presencial",
@@ -10414,15 +10855,23 @@
               "horario": "10:00 a 11:00",
               "dias": [
                 "Lu",
-                "Ma",
                 "Mi",
-                "Ju",
                 "Vi"
               ]
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Eduardo Jacobo Villegas",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": null,
@@ -10455,11 +10904,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "101 (Yelizcalli)"
+            "salon": "O222"
           }
         ],
         "nota": null,
-        "salon": "101 (Yelizcalli)",
+        "salon": "O222",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374267"
       },
@@ -10901,8 +11350,26 @@
             "salon": null
           },
           {
+            "nombre": "Rodrigo Fernando Velázquez Cruz",
+            "horario": "14:40 a 15:30",
+            "dias": [
+              "Lu",
+              "Mi"
+            ],
+            "salon": null
+          },
+          {
             "nombre": "Brenda Margarita Becerra Ruíz",
             "horario": "14:30 a 15:30",
+            "dias": [
+              "Lu",
+              "Mi"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Rodrigo Fernando Velázquez Cruz",
+            "horario": "14:40 a 15:30",
             "dias": [
               "Lu",
               "Mi"
@@ -11326,7 +11793,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alvaro Ramírez López",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
@@ -11335,7 +11802,7 @@
             "salon": "P211"
           },
           {
-            "nombre": null,
+            "nombre": "Gael García Aguilera",
             "horario": "16:00 a 18:00",
             "dias": [
               "Ju"
@@ -11343,7 +11810,7 @@
             "salon": "Laboratorio de Ciencias de la Computación 1"
           },
           {
-            "nombre": null,
+            "nombre": "Alvaro Ramírez López",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
@@ -11352,7 +11819,7 @@
             "salon": "P211"
           },
           {
-            "nombre": null,
+            "nombre": "Gael García Aguilera",
             "horario": "16:00 a 18:00",
             "dias": [
               "Ju"
@@ -11468,21 +11935,29 @@
       "6026": {
         "grupo": "6026",
         "profesor": {
-          "nombre": null,
+          "nombre": "Eduardo Lince Gómez",
           "horarios": [
             {
               "horario": "15:00 a 16:00",
               "dias": [
                 "Lu",
-                "Ma",
                 "Mi",
-                "Ju",
                 "Vi"
               ]
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Diego Peña Angeles",
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "P107",
         "modalidad": "Presencial",
@@ -12203,7 +12678,7 @@
         "nota": null,
         "salon": "P116",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/376003"
       }
     }
   },
@@ -12360,11 +12835,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Enseñanza de Cómputo de Actuaría",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375232"
       }
@@ -12393,11 +12868,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Aula Magna Juan de Oyarzabal"
+            "salon": "001 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "Aula Magna Juan de Oyarzabal",
+        "salon": "001 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375183"
       },
@@ -12544,7 +13019,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jorge Emiliano Alvarez Gil Leyva",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
@@ -12579,19 +13054,19 @@
         },
         "ayudantes": [
           {
-            "nombre": "Ilse Gema Peña Bernardino",
+            "nombre": "Brayan Guerra López",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
               "Ju"
             ],
-            "salon": "P203"
+            "salon": "P106"
           }
         ],
         "nota": null,
-        "salon": "P203",
+        "salon": "P106",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375277"
       }
     },
     "Optimización Numérica": {
@@ -12612,7 +13087,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jean Marie Ailinne Nahomi Valencia Sánchez",
             "horario": "07:00 a 09:00",
             "dias": [
               "Ma",
@@ -12678,7 +13153,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Luis Alberto Hernández Pérez",
+            "nombre": "Ilse Gema Peña Bernardino",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",

@@ -23,6 +23,8 @@ const MODALITIES = [
     { id: 'Virtual', label: 'Virtual' }
 ];
 
+const RATINGS = Array.from({ length: 21 }, (_, i) => i * 0.5);
+
 const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
     const [startIndex, setStartIndex] = useState(0);
     const [endIndex, setEndIndex] = useState(HOURS.length - 1);
@@ -30,6 +32,9 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
     const [selectedModalities, setSelectedModalities] = useState(['Presencial', 'Virtual']);
     const [blockedHours, setBlockedHours] = useState([]);
     const [excludeAssistants, setExcludeAssistants] = useState(false);
+    const [ratingStartIndex, setRatingStartIndex] = useState(0);
+    const [ratingEndIndex, setRatingEndIndex] = useState(RATINGS.length - 1);
+    const [includeUnrated, setIncludeUnrated] = useState(false);
     const [newBlockStart, setNewBlockStart] = useState(0);
     const [newBlockEnd, setNewBlockEnd] = useState(1);
 
@@ -68,6 +73,22 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
             }
 
             setExcludeAssistants(Boolean(filters.excludeAssistants));
+
+            if (filters.minRating != null) {
+                const idx = RATINGS.indexOf(filters.minRating);
+                setRatingStartIndex(idx !== -1 ? idx : 0);
+            } else {
+                setRatingStartIndex(0);
+            }
+
+            if (filters.maxRating != null) {
+                const idx = RATINGS.indexOf(filters.maxRating);
+                setRatingEndIndex(idx !== -1 ? idx : RATINGS.length - 1);
+            } else {
+                setRatingEndIndex(RATINGS.length - 1);
+            }
+
+            setIncludeUnrated(Boolean(filters.includeUnrated));
         }
     }, [isOpen, filters]);
 
@@ -93,6 +114,16 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
         } else {
             setEndIndex(minAllowedEnd);
         }
+    };
+
+    const handleRatingStartChange = (e) => {
+        const newStart = parseInt(e.target.value);
+        setRatingStartIndex(Math.min(newStart, ratingEndIndex));
+    };
+
+    const handleRatingEndChange = (e) => {
+        const newEnd = parseInt(e.target.value);
+        setRatingEndIndex(Math.max(newEnd, ratingStartIndex));
     };
 
     const toggleDay = (dayId) => {
@@ -156,6 +187,7 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
     const handleApply = () => {
         // Only set startTime/endTime if they're not at default positions
         const isDefaultTimeRange = startIndex === 0 && endIndex === HOURS.length - 1;
+        const isDefaultRatingRange = ratingStartIndex === 0 && ratingEndIndex === RATINGS.length - 1;
 
         onApplyFilters({
             mode: 'range',
@@ -165,7 +197,10 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
             days: selectedDays,
             blockedHours: blockedHours,
             modalities: selectedModalities,
-            excludeAssistants
+            excludeAssistants,
+            minRating: isDefaultRatingRange ? null : RATINGS[ratingStartIndex],
+            maxRating: isDefaultRatingRange ? null : RATINGS[ratingEndIndex],
+            includeUnrated
         });
         onClose();
     };
@@ -178,6 +213,9 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
         setSelectedModalities(['Presencial', 'Virtual']);
         setBlockedHours([]);
         setExcludeAssistants(false);
+        setRatingStartIndex(0);
+        setRatingEndIndex(RATINGS.length - 1);
+        setIncludeUnrated(false);
 
         // Apply cleared filters
         onApplyFilters({
@@ -188,7 +226,10 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
             days: ['L', 'M', 'I', 'J', 'V', 'S'],
             blockedHours: [],
             modalities: ['Presencial', 'Virtual'],
-            excludeAssistants: false
+            excludeAssistants: false,
+            minRating: null,
+            maxRating: null,
+            includeUnrated: false
         });
         // Don't close the modal
     }; if (!isOpen) return null;
@@ -233,6 +274,12 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
                                     {selectedModalities.length === 1 && (
                                         <> en modalidad {selectedModalities[0].toLowerCase()}</>
                                     )}
+                                    {!(ratingStartIndex === 0 && ratingEndIndex === RATINGS.length - 1) && (
+                                        <>
+                                            {' '}con profesor calificado entre {RATINGS[ratingStartIndex]} y {RATINGS[ratingEndIndex]}
+                                            {includeUnrated && ' (incluyendo sin calificación)'}
+                                        </>
+                                    )}
                                 </>
                             ) : (
                                 <>
@@ -255,6 +302,12 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
                                     )}
                                     {selectedModalities.length === 1 && (
                                         <> en modalidad {selectedModalities[0].toLowerCase()}</>
+                                    )}
+                                    {!(ratingStartIndex === 0 && ratingEndIndex === RATINGS.length - 1) && (
+                                        <>
+                                            {' '}con profesor calificado entre {RATINGS[ratingStartIndex]} y {RATINGS[ratingEndIndex]}
+                                            {includeUnrated && ' (incluyendo sin calificación)'}
+                                        </>
                                     )}
                                 </>
                             )}
@@ -281,8 +334,8 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
                                     El rango de horas solo se aplica al horario del profesor
                                 </div>
                             </div>
-                            <div className={`w-11 h-6 rounded-full p-1 transition-colors ${excludeAssistants ? 'bg-blue-500' : 'bg-gray-500'}`}>
-                                <div className={`w-4 h-4 rounded-full bg-white transition-transform ${excludeAssistants ? 'translate-x-5' : 'translate-x-0'}`} />
+                            <div className={`relative w-11 h-6 shrink-0 rounded-full transition-colors ${excludeAssistants ? 'bg-blue-500' : 'bg-gray-500'}`}>
+                                <div className={`absolute top-1 size-4 rounded-full bg-white transition-all duration-200 ${excludeAssistants ? 'left-[calc(100%-1.25rem)]' : 'left-1'}`} />
                             </div>
                         </button>
                     </div>
@@ -328,6 +381,78 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
                                 </button>
                             ))}
                         </div>
+                    </div>
+
+                    {/* Rating Filter */}
+                    <div>
+                        <label className="block text-sm font-medium text-gray-300 mb-4">
+                            Calificación del profesor
+                        </label>
+
+                        {/* Rating Display */}
+                        <div className="flex items-center justify-between mb-2">
+                            <div className="text-center">
+                                <div className="text-xs text-gray-400 mb-1">Mínimo</div>
+                                <div className="text-base font-bold text-blue-400">{RATINGS[ratingStartIndex].toFixed(1)}</div>
+                            </div>
+                            <div className="text-gray-500 text-sm">—</div>
+                            <div className="text-center">
+                                <div className="text-xs text-gray-400 mb-1">Máximo</div>
+                                <div className="text-base font-bold text-blue-400">{RATINGS[ratingEndIndex].toFixed(1)}</div>
+                            </div>
+                        </div>
+
+                        {/* Dual Handle Range Slider */}
+                        <div className="relative h-10 mb-3">
+                            <div className="absolute top-1/2 -translate-y-1/2 w-full h-2 bg-gray-700 rounded-lg"></div>
+
+                            <div
+                                className="absolute top-1/2 -translate-y-1/2 h-2 bg-blue-500 rounded-lg pointer-events-none"
+                                style={{
+                                    left: `${(ratingStartIndex / (RATINGS.length - 1)) * 100}%`,
+                                    right: `${100 - (ratingEndIndex / (RATINGS.length - 1)) * 100}%`
+                                }}
+                            ></div>
+
+                            <input
+                                type="range"
+                                min="0"
+                                max={RATINGS.length - 1}
+                                value={ratingStartIndex}
+                                onChange={handleRatingStartChange}
+                                className="absolute top-1/2 -translate-y-1/2 w-full appearance-none bg-transparent cursor-pointer slider-thumb pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-moz-range-thumb]:pointer-events-auto"
+                            />
+
+                            <input
+                                type="range"
+                                min="0"
+                                max={RATINGS.length - 1}
+                                value={ratingEndIndex}
+                                onChange={handleRatingEndChange}
+                                className="absolute top-1/2 -translate-y-1/2 w-full appearance-none bg-transparent cursor-pointer slider-thumb pointer-events-none [&::-webkit-slider-thumb]:pointer-events-auto [&::-moz-range-thumb]:pointer-events-auto"
+                            />
+                        </div>
+
+                        {/* Include Unrated Toggle */}
+                        <button
+                            type="button"
+                            onClick={() => setIncludeUnrated(prev => !prev)}
+                            className={`w-full flex items-center justify-between gap-3 px-3 py-3 rounded-lg border transition-colors text-left ${includeUnrated
+                                ? 'bg-blue-600/20 border-blue-500 text-blue-100'
+                                : 'bg-gray-700 border-gray-600 text-gray-200 hover:bg-gray-600'
+                                }`}
+                            aria-pressed={includeUnrated}
+                        >
+                            <div>
+                                <div className="text-sm font-medium">Incluir N/A</div>
+                                <div className="text-xs text-gray-400">
+                                    Muestra también profesores sin calificación, sin importar el rango
+                                </div>
+                            </div>
+                            <div className={`relative w-11 h-6 shrink-0 rounded-full transition-colors ${includeUnrated ? 'bg-blue-500' : 'bg-gray-500'}`}>
+                                <div className={`absolute top-1 size-4 rounded-full bg-white transition-all duration-200 ${includeUnrated ? 'left-[calc(100%-1.25rem)]' : 'left-1'}`} />
+                            </div>
+                        </button>
                     </div>
 
                     <div>

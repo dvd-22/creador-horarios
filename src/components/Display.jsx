@@ -5,6 +5,7 @@ import ScheduleViewer from './ScheduleViewer';
 import SelectedGroupsPanel from './SelectedGroupsPanel';
 import ResizablePanels from './ResizablePanels';
 import ResponsiveDisplay from './ResponsiveDisplay';
+import SpacerModal from './SpacerModal';
 import { saveScheduleAsPng, DAY_MAP_SHORT_TO_LONG, DAY_MAP_SHORT_TO_FULL } from '../utils/scheduleUtils';
 import SavePopup from './SavePopup';
 import { MajorProvider } from '../contexts/MajorContext';

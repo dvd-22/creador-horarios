@@ -82,7 +82,10 @@ export const MajorProvider = ({ children }) => {
         days: ['L', 'M', 'I', 'J', 'V', 'S'],
         blockedHours: [],
         modalities: ['Presencial', 'Virtual'],
-        excludeAssistants: false
+        excludeAssistants: false,
+        minRating: null,
+        maxRating: null,
+        includeUnrated: false
     });
 
     // Load major data when selected major or study plan changes
