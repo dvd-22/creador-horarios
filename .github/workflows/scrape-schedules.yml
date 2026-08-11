@@ -12,12 +12,12 @@ jobs:
 
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v5
+              uses: actions/checkout@v7
 
             - name: Setup Node.js
-              uses: actions/setup-node@v5
+              uses: actions/setup-node@v7
               with:
-                  node-version: "18"
+                  node-version: "22"
                   cache: "npm"
 
             - name: Install dependencies
@@ -33,7 +33,7 @@ jobs:
                   git config --local user.name "GitHub Action"
                   git add src/data/*.json
                   if ! git diff --staged --quiet; then
-                    git commit -m "🔄 Update schedule data - $(date '+%Y-%m-%d %H:%M:%S')"
+                    git commit -m "Update schedule data - $(date '+%Y-%m-%d %H:%M:%S')"
                     git push
                   else
                     echo "No changes to commit"
