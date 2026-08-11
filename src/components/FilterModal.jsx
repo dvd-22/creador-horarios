@@ -334,8 +334,8 @@ const FilterModal = ({ isOpen, onClose, filters, onApplyFilters }) => {
                                     El rango de horas solo se aplica al horario del profesor
                                 </div>
                             </div>
-                            <div className={`w-11 h-6 rounded-full p-1 transition-colors ${excludeAssistants ? 'bg-blue-500' : 'bg-gray-500'}`}>
-                                <div className={`w-4 h-4 rounded-full bg-white transition-transform ${excludeAssistants ? 'translate-x-5' : 'translate-x-0'}`} />
+                            <div className={`relative w-11 h-6 shrink-0 rounded-full transition-colors ${excludeAssistants ? 'bg-blue-500' : 'bg-gray-500'}`}>
+                                <div className={`absolute top-1 size-4 rounded-full bg-white transition-all duration-200 ${excludeAssistants ? 'left-[calc(100%-1.25rem)]' : 'left-1'}`} />
                             </div>
                         </button>
                     </div>
