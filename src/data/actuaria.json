@@ -841,7 +841,7 @@
       "4388": {
         "grupo": "4388",
         "profesor": {
-          "nombre": null,
+          "nombre": "Fernando Cornejo Montaño",
           "horarios": [
             {
               "horario": "08:00 a 09:00",
@@ -872,7 +872,7 @@
       "4389": {
         "grupo": "4389",
         "profesor": {
-          "nombre": null,
+          "nombre": "Edgar Omar Velasco Páez",
           "horarios": [
             {
               "horario": "15:00 a 16:00",
@@ -898,12 +898,12 @@
         "nota": null,
         "salon": "Aula Magna II",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377318"
       },
       "4390": {
         "grupo": "4390",
         "profesor": {
-          "nombre": null,
+          "nombre": "María del Carmen Fernández García",
           "horarios": [
             {
               "horario": "20:00 a 21:00",
@@ -929,7 +929,7 @@
         "nota": null,
         "salon": "Aula Magna II",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377319"
       }
     },
     "Cálculo Diferencial e Integral I": {
@@ -2102,7 +2102,7 @@
       "4391": {
         "grupo": "4391",
         "profesor": {
-          "nombre": null,
+          "nombre": "Araceli León Estrada",
           "horarios": [
             {
               "horario": "07:00 a 08:00",
@@ -2132,12 +2132,12 @@
         "nota": null,
         "salon": "102",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377320"
       },
       "4392": {
         "grupo": "4392",
         "profesor": {
-          "nombre": null,
+          "nombre": "Noé Francisco Verde Martínez",
           "horarios": [
             {
               "horario": "14:00 a 15:00",
@@ -2167,12 +2167,12 @@
         "nota": null,
         "salon": "O222",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377322"
       },
       "4393": {
         "grupo": "4393",
         "profesor": {
-          "nombre": null,
+          "nombre": "Jorge Calderón Espinosa de los Monteros",
           "horarios": [
             {
               "horario": "19:00 a 20:00",
@@ -2212,7 +2212,7 @@
       "4397": {
         "grupo": "4397",
         "profesor": {
-          "nombre": null,
+          "nombre": "Arturo Carranza Melgarejo",
           "horarios": [
             {
               "horario": "13:00 a 14:00",
@@ -2242,7 +2242,7 @@
         "nota": null,
         "salon": "Aula Magna I",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377333"
       }
     },
     "Geometría Analítica I": {
@@ -3055,7 +3055,7 @@
       "4394": {
         "grupo": "4394",
         "profesor": {
-          "nombre": null,
+          "nombre": "Edgar Sánchez Santos",
           "horarios": [
             {
               "horario": "07:00 a 08:00",
@@ -3081,12 +3081,12 @@
         "nota": null,
         "salon": "O215",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377326"
       },
       "4395": {
         "grupo": "4395",
         "profesor": {
-          "nombre": null,
+          "nombre": "Rocío del Pilar Aguilar Benítez",
           "horarios": [
             {
               "horario": "14:00 a 15:00",
@@ -3117,7 +3117,7 @@
       "4396": {
         "grupo": "4396",
         "profesor": {
-          "nombre": null,
+          "nombre": "Noel Jaramillo Arce",
           "horarios": [
             {
               "horario": "21:00 a 22:00",
@@ -3143,7 +3143,7 @@
         "nota": null,
         "salon": "Aula Magna II",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377330"
       }
     },
     "Inglés I": {
@@ -5344,6 +5344,15 @@
               "Ju"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "Daniel Fernando Castillo Tovilla",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5570,6 +5579,15 @@
               "Ju"
             ],
             "salon": "O216"
+          },
+          {
+            "nombre": "Joel Gómez Uribe",
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6172,6 +6190,16 @@
               "Vi"
             ],
             "salon": "O214"
+          },
+          {
+            "nombre": "Lucía Monserrat de Jesús Chimal Súarez",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6212,7 +6240,7 @@
         "nota": null,
         "salon": "O222",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374158"
       },
       "4154": {
         "grupo": "4154",
@@ -7707,6 +7735,15 @@
               "Ju"
             ],
             "salon": "O223"
+          },
+          {
+            "nombre": "José Antonio Espinoza Santamaría",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7944,7 +7981,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jimmy Hernández Morales",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -7982,6 +8019,15 @@
               "Ju"
             ],
             "salon": "O123"
+          },
+          {
+            "nombre": "José Angel Garduño Sánchez",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -8571,7 +8617,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Araceli León Estrada",
+            "nombre": null,
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -8726,13 +8772,22 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Gerardo Zago Yáñez",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
               "Ju"
             ],
             "salon": "102 (Yelizcalli)"
+          },
+          {
+            "nombre": "Paolo Eugenio Petit Valdés Villarreal",
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -8888,6 +8943,15 @@
               "Ju"
             ],
             "salon": "P212"
+          },
+          {
+            "nombre": "Oscar Iván De Jesús Munguía",
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -10434,6 +10498,15 @@
               "Ju"
             ],
             "salon": "306 (Yelizcalli)"
+          },
+          {
+            "nombre": "Alejandro Hérnandez Cuevas",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -11591,6 +11664,15 @@
               "Ju"
             ],
             "salon": "O125"
+          },
+          {
+            "nombre": "Abimael González García",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -12080,7 +12162,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Julietta Maia Vicente Santes",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -12316,6 +12398,15 @@
         "ayudantes": [
           {
             "nombre": "Fernando Sánchez Castillo",
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Viviana Estefanía Vega Arriaga",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
@@ -12597,7 +12688,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377314"
       }
     },
     "Seguridad Social": {
@@ -12696,6 +12787,15 @@
               "Ju"
             ],
             "salon": "P212"
+          },
+          {
+            "nombre": "Elizabeth Damayanthi López Márquez",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -13998,6 +14098,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Jonathan Eduardo Valdez Almanza",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -15078,7 +15187,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Enrique Villalon Pineda",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",

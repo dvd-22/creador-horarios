@@ -853,11 +853,11 @@
             "dias": [
               "Mi"
             ],
-            "salon": "Laboratorio de Prácticas de Biotecnología"
+            "salon": "B002"
           }
         ],
         "nota": null,
-        "salon": "B002",
+        "salon": "Laboratorio de Prácticas de Biotecnología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373781"
       },
@@ -4196,11 +4196,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": "Laboratorio de Prácticas de Biología de Animales III"
+            "salon": "Laboratorio de Prácticas de Biología de Animales I"
           }
         ],
         "nota": null,
-        "salon": "010",
+        "salon": "Laboratorio de Prácticas de Biología de Animales III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373824"
       },
@@ -4224,11 +4224,11 @@
             "dias": [
               "Vi"
             ],
-            "salon": "Laboratorio de Prácticas de Biología de Animales III"
+            "salon": "Sala de Cómputo II"
           }
         ],
         "nota": null,
-        "salon": "010",
+        "salon": "Laboratorio de Prácticas de Biología de Animales III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373825"
       },
@@ -4370,7 +4370,7 @@
           }
         ],
         "nota": null,
-        "salon": "004",
+        "salon": "203 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373831"
       },
@@ -4422,11 +4422,11 @@
             "dias": [
               "Sa"
             ],
-            "salon": "104 (Yelizcalli)"
+            "salon": "302 (Tlaltícpac)"
           }
         ],
         "nota": null,
-        "salon": "104 (Yelizcalli)",
+        "salon": "302 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373833"
       },
@@ -4456,7 +4456,7 @@
         "nota": null,
         "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373834"
       },
       "5079": {
         "grupo": "5079",
@@ -4681,7 +4681,7 @@
         "nota": "Ecología terrestre y manejo de recursos bióticos.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375833"
       },
       "5526": {
         "grupo": "5526",
@@ -6512,7 +6512,7 @@
         "nota": "Ecología terrestre y manejo de recursos bióticos.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375834"
       },
       "5518": {
         "grupo": "5518",
@@ -8754,6 +8754,62 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5699": {
+        "grupo": "5699",
+        "profesor": {
+          "nombre": "Ricardo Reyes Chilpa",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Silvia Laura Guzmán Gutiérrez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Lucía Yoscelina Centeno Betanzos",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Investigación en plantas medicinales: de la etnobotánica a los fitofarmacos.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5700": {
+        "grupo": "5700",
+        "profesor": {
+          "nombre": "Salvador Uribe Carvajal",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "José de Jesús García Trejo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Claudia Peña Segura",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Oscar Flores Herrera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Estudio de la mitocondria: Cadena transportadora de electrones, fosforilación oxidativa y síntesis de ATP",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -8800,7 +8856,7 @@
         "nota": "Adaptaciones fisiológicas de animales acuáticos de interés comercial y para la conservación",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375809"
       },
       "5494": {
         "grupo": "5494",
@@ -8966,7 +9022,7 @@
         "nota": "Ecología terrestre y manejo de recursos bióticos.",
         "salon": null,
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375835"
       },
       "5527": {
         "grupo": "5527",
@@ -10208,6 +10264,37 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5698": {
+        "grupo": "5698",
+        "profesor": {
+          "nombre": "Martha Torres Rojas",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Yolanda González Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "María Teresa Herrera Barrios",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Esmeralda Juárez Carvajal",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Bases moleculares y bioquímicas de la respuesta inmune hacia M. tuberculosis.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -10299,7 +10386,7 @@
         "nota": null,
         "salon": "B005",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373852"
       }
     },
     "Análisis Socioambiental y Gestión de Recursos Naturales": {
@@ -10311,8 +10398,7 @@
             {
               "horario": "14:30 a 17:30",
               "dias": [
-                "Ma",
-                "Ju"
+                "Ma"
               ]
             }
           ]
@@ -10320,13 +10406,15 @@
         "ayudantes": [
           {
             "nombre": "Lydia Ramírez Martínez",
-            "horario": null,
-            "dias": [],
+            "horario": "14:30 a 17:30",
+            "dias": [
+              "Ju"
+            ],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biotecnología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373853"
       }
@@ -10497,7 +10585,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B007",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373858"
       }
@@ -10523,11 +10611,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biotecnología"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biotecnología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373859"
       }
@@ -10553,11 +10641,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología de Animales I"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373860"
       },
@@ -10581,11 +10669,11 @@
             "dias": [
               "Mi"
             ],
-            "salon": null
+            "salon": "B001"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B008",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373861"
       }
@@ -10611,7 +10699,7 @@
             "dias": [
               "Mi"
             ],
-            "salon": null
+            "salon": "B002"
           }
         ],
         "nota": null,
@@ -10641,7 +10729,7 @@
             "dias": [
               "Mi"
             ],
-            "salon": null
+            "salon": "B002"
           }
         ],
         "nota": null,
@@ -11030,11 +11118,11 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología de Plantas II"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B008",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373874"
       }
@@ -11060,7 +11148,7 @@
             "dias": [
               "Mi"
             ],
-            "salon": null
+            "salon": "B005"
           }
         ],
         "nota": null,
@@ -11121,7 +11209,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373877"
       }
@@ -11181,7 +11269,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373879"
       }
@@ -11217,7 +11305,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biotecnología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375718"
       }
@@ -11247,7 +11335,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373880"
       }
@@ -11269,16 +11357,15 @@
         "ayudantes": [
           {
             "nombre": "Gerardo Mata Torres Valle",
-            "horario": "12:00 a 14:00",
+            "horario": "11:00 a 14:00",
             "dias": [
-              "Ma",
               "Ma"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula III"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373881"
       }
@@ -11308,7 +11395,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Animales III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373882"
       }
@@ -11364,7 +11451,7 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "Química II (antes Laboratorio de Prácticas de Química II)"
           }
         ],
         "nota": null,
@@ -11394,11 +11481,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "Sala de Cómputo II"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373885"
       }
@@ -11424,11 +11511,11 @@
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología de Animales III"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Animales III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373886"
       }
@@ -11478,11 +11565,11 @@
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "B002"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B002",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373888"
       }
@@ -11508,11 +11595,11 @@
             "dias": [
               "Sa"
             ],
-            "salon": null
+            "salon": "B002"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B001",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373889"
       }
@@ -11598,7 +11685,7 @@
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "B001"
           }
         ],
         "nota": null,
@@ -11628,11 +11715,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "Sala de Cómputo II"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Sala de Cómputo II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373893"
       }
@@ -11777,7 +11864,7 @@
             "dias": [
               "Ma"
             ],
-            "salon": "Laboratorio de Prácticas de Biología de Animales III"
+            "salon": "B003"
           }
         ],
         "nota": null,
@@ -12096,7 +12183,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biotecnología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373908"
       }
@@ -12292,7 +12379,7 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "B003"
           }
         ],
         "nota": "Biologia de las células troncales",
@@ -12322,11 +12409,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "B002"
           }
         ],
         "nota": "Seminario de Biología III -  Gestión del Conocimiento Científico y la Innovación Tecnológica",
-        "salon": null,
+        "salon": "B006",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373915"
       },
@@ -12350,11 +12437,11 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "B005"
           }
         ],
         "nota": "Divulgación científica (Comunicación Pública de la Biología",
-        "salon": null,
+        "salon": "B004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373916"
       },
@@ -12378,11 +12465,11 @@
             "dias": [
               "Mi"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula III"
           }
         ],
         "nota": "Señalización Celular",
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula III",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373917"
       },
@@ -12406,11 +12493,11 @@
             "dias": [
               "Mi"
             ],
-            "salon": null
+            "salon": "Sala de Cómputo II"
           }
         ],
         "nota": "Diseño Experimental y Estadística",
-        "salon": null,
+        "salon": "Sala de Cómputo II",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373918"
       },
@@ -12438,7 +12525,7 @@
           }
         ],
         "nota": "Bioética II",
-        "salon": null,
+        "salon": "B007",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373919"
       }
@@ -12464,11 +12551,11 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "B008"
           }
         ],
         "nota": "Cambio climático, ciudad y adaptación",
-        "salon": null,
+        "salon": "B005",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373920"
       },
@@ -12496,7 +12583,7 @@
           }
         ],
         "nota": "Nanobiología Celular",
-        "salon": null,
+        "salon": "B005",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -12553,7 +12640,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Taller de Física de Radiaciones",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375765"
       }
@@ -12605,7 +12692,7 @@
           }
         ],
         "nota": "Biologia molecular en el diseño de nuevas vacunas",
-        "salon": null,
+        "salon": "B004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373923"
       },
@@ -12629,11 +12716,11 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "B005"
           }
         ],
         "nota": "Parasitologia molecular",
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Animales I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373924"
       },
@@ -12657,11 +12744,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": "Sala de Cómputo II"
+            "salon": "Sala de Cómputo III"
           }
         ],
         "nota": "Manejo de datos y estadística univariada con R",
-        "salon": "Sala de Cómputo II",
+        "salon": "Sala de Cómputo III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373925"
       },
@@ -12715,11 +12802,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Protistas y Algas"
           }
         ],
         "nota": "Hongos entomopatógenos",
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Protistas y Algas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373927"
       },
@@ -12743,11 +12830,11 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "Química II (antes Laboratorio de Prácticas de Química II)"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Química II (antes Laboratorio de Prácticas de Química II)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373928"
       },
@@ -12775,7 +12862,7 @@
           }
         ],
         "nota": "La otra química de las plantas: metabolismo secundario",
-        "salon": null,
+        "salon": "B005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373929"
       },
@@ -12827,11 +12914,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "B005"
           }
         ],
         "nota": "Biología de plantas epífitas",
-        "salon": null,
+        "salon": "B005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373931"
       },
@@ -12855,11 +12942,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "B007"
           }
         ],
         "nota": "Producción de especies en vivero con fines de reforestación",
-        "salon": null,
+        "salon": "B006",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375707"
       },
@@ -12913,11 +13000,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología de Plantas I"
           }
         ],
         "nota": "Taxonomía vegetal",
-        "salon": null,
+        "salon": "B007",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373932"
       },
@@ -12969,11 +13056,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "Sala de Cómputo I"
           }
         ],
         "nota": "Propiedad intelectual y el aprovechamiento",
-        "salon": null,
+        "salon": "Química II (antes Laboratorio de Prácticas de Química II)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373934"
       },
@@ -13077,11 +13164,11 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "B007"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B007",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375674"
       }
@@ -13137,11 +13224,11 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "B007"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "B007",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373938"
       }

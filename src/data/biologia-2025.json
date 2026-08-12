@@ -2271,7 +2271,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "103 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375358"
       },
       "5262": {
         "grupo": "5262",
@@ -3435,8 +3435,7 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Mi",
-                "Ju"
+                "Mi"
               ]
             }
           ]
@@ -3444,13 +3443,15 @@
         "ayudantes": [
           {
             "nombre": "María Guadalupe Guzmán Bárcenas",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "004"
           }
         ],
         "nota": null,
-        "salon": "003",
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375400"
       },
@@ -3892,7 +3893,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375415"
       },
@@ -4040,7 +4041,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Paleobiología",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375420"
       },
@@ -4165,8 +4166,7 @@
             {
               "horario": "07:30 a 10:30",
               "dias": [
-                "Ma",
-                "Vi"
+                "Ma"
               ]
             }
           ]
@@ -4174,13 +4174,15 @@
         "ayudantes": [
           {
             "nombre": "Luz María Sil Berra",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Vi"
+            ],
+            "salon": "203 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375425"
       },
@@ -4204,11 +4206,11 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "010"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Protistas y Algas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375426"
       },
@@ -4232,11 +4234,11 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "004"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375427"
       },
@@ -4248,8 +4250,7 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Lu",
-                "Ju"
+                "Lu"
               ]
             }
           ]
@@ -4257,13 +4258,15 @@
         "ayudantes": [
           {
             "nombre": "Jorge Arturo Martínez Villegas",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "003"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375428"
       },
@@ -4275,8 +4278,7 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Lu",
-                "Ju"
+                "Lu"
               ]
             }
           ]
@@ -4284,13 +4286,15 @@
         "ayudantes": [
           {
             "nombre": "Juan Carlos Peña Becerril",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "Sala de Cómputo III"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375429"
       },
@@ -4322,7 +4326,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375430"
       },
@@ -4354,7 +4358,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Protistas y Algas",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375431"
       },
@@ -4366,8 +4370,7 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Mi",
-                "Sa"
+                "Mi"
               ]
             }
           ]
@@ -4375,13 +4378,15 @@
         "ayudantes": [
           {
             "nombre": "Ángel Fernando Soto Pozos",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Sa"
+            ],
+            "salon": "103 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375432"
       },
@@ -4393,8 +4398,7 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Mi",
-                "Sa"
+                "Mi"
               ]
             }
           ]
@@ -4402,13 +4406,15 @@
         "ayudantes": [
           {
             "nombre": "Luisa Alejandra Granados Hernández",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Sa"
+            ],
+            "salon": "Laboratorio de Prácticas de Protistas y Algas"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "010",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375433"
       },
@@ -4432,11 +4438,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "003"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375434"
       },
@@ -4460,11 +4466,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología de Plantas I"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Plantas II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375435"
       },
@@ -4476,8 +4482,7 @@
             {
               "horario": "15:00 a 18:00",
               "dias": [
-                "Lu",
-                "Ju"
+                "Lu"
               ]
             }
           ]
@@ -4485,9 +4490,11 @@
         "ayudantes": [
           {
             "nombre": "Octavio Quintanar Retama",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "S3"
           }
         ],
         "nota": null,
@@ -4503,8 +4510,7 @@
             {
               "horario": "15:00 a 18:00",
               "dias": [
-                "Lu",
-                "Ju"
+                "Lu"
               ]
             }
           ]
@@ -4512,13 +4518,15 @@
         "ayudantes": [
           {
             "nombre": "Claudia Velázquez Cervantes",
-            "horario": null,
-            "dias": [],
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Ju"
+            ],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375437"
       },
@@ -4530,8 +4538,7 @@
             {
               "horario": "15:00 a 18:00",
               "dias": [
-                "Ma",
-                "Vi"
+                "Ma"
               ]
             }
           ]
@@ -4539,13 +4546,15 @@
         "ayudantes": [
           {
             "nombre": "Daniela Abigail Guzmán Ramírez",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Vi"
+            ],
+            "salon": "004"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375438"
       },
@@ -4569,11 +4578,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "009"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375439"
       },
@@ -4597,11 +4606,11 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "S2"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375440"
       },
@@ -4613,8 +4622,7 @@
             {
               "horario": "18:00 a 21:00",
               "dias": [
-                "Lu",
-                "Mi"
+                "Lu"
               ]
             }
           ]
@@ -4622,13 +4630,15 @@
         "ayudantes": [
           {
             "nombre": "Cristina Jasso Del Toro",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "18:00 a 21:00",
+            "dias": [
+              "Mi"
+            ],
+            "salon": "003"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S3",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375441"
       },
@@ -4640,8 +4650,7 @@
             {
               "horario": "18:00 a 21:00",
               "dias": [
-                "Lu",
-                "Mi"
+                "Lu"
               ]
             }
           ]
@@ -4649,13 +4658,15 @@
         "ayudantes": [
           {
             "nombre": "Claudia Velázquez Cervantes",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "18:00 a 21:00",
+            "dias": [
+              "Mi"
+            ],
+            "salon": "009"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375442"
       }
@@ -5271,7 +5282,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375463"
       },
@@ -5299,7 +5310,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375464"
       },
@@ -5327,7 +5338,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375465"
       },
@@ -5355,7 +5366,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375466"
       },
@@ -5383,7 +5394,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375467"
       },
@@ -5411,7 +5422,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Sala de Cómputo I",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375468"
       },
@@ -5439,7 +5450,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375469"
       },
@@ -5463,7 +5474,7 @@
             "dias": [
               "Sa"
             ],
-            "salon": null
+            "salon": "005"
           }
         ],
         "nota": null,
@@ -5519,7 +5530,7 @@
             "dias": [
               "Sa"
             ],
-            "salon": null
+            "salon": "203 (Yelizcalli)"
           }
         ],
         "nota": null,
@@ -5551,7 +5562,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375473"
       },
@@ -5579,7 +5590,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S5",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375474"
       },
@@ -5607,7 +5618,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S6",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375475"
       },
@@ -5635,7 +5646,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "S6",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375476"
       },
@@ -5659,7 +5670,7 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "S6"
           }
         ],
         "nota": null,
@@ -5691,7 +5702,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375478"
       },
@@ -5715,7 +5726,7 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "201"
           }
         ],
         "nota": null,
@@ -5747,7 +5758,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375480"
       }
@@ -5940,7 +5951,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biogeografía I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375486"
       },
@@ -5952,8 +5963,7 @@
             {
               "horario": "07:30 a 10:30",
               "dias": [
-                "Lu",
-                "Ju"
+                "Lu"
               ]
             }
           ]
@@ -5961,9 +5971,11 @@
         "ayudantes": [
           {
             "nombre": "Felipe Campos Cerda",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "203 (Yelizcalli)"
           }
         ],
         "nota": null,
@@ -6007,8 +6019,7 @@
             {
               "horario": "07:30 a 10:30",
               "dias": [
-                "Ma",
-                "Vi"
+                "Ma"
               ]
             }
           ]
@@ -6016,13 +6027,15 @@
         "ayudantes": [
           {
             "nombre": "Alberto Vladimir Cachón Guillén",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Vi"
+            ],
+            "salon": "Laboratorio de Prácticas de Biogeografía I"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375489"
       },
@@ -6088,8 +6101,7 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Lu",
-                "Ju"
+                "Lu"
               ]
             }
           ]
@@ -6097,13 +6109,15 @@
         "ayudantes": [
           {
             "nombre": "Lev Orlando Jardón Barbolla",
-            "horario": null,
-            "dias": [],
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Ju"
+            ],
             "salon": null
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375492"
       },
@@ -6142,8 +6156,7 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Mi",
-                "Sa"
+                "Mi"
               ]
             }
           ]
@@ -6151,13 +6164,15 @@
         "ayudantes": [
           {
             "nombre": "Óscar Romero Báez",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Sa"
+            ],
+            "salon": "Laboratorio de Prácticas de Biogeografía I"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Sistemática I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375494"
       },
@@ -6196,8 +6211,7 @@
             {
               "horario": "15:00 a 18:00",
               "dias": [
-                "Lu",
-                "Ju"
+                "Lu"
               ]
             }
           ]
@@ -6205,13 +6219,15 @@
         "ayudantes": [
           {
             "nombre": "Carlos Alberto Ochoa Olmos",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "010"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biogeografía I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375496"
       },
@@ -6223,8 +6239,7 @@
             {
               "horario": "15:00 a 18:00",
               "dias": [
-                "Lu",
-                "Ju"
+                "Lu"
               ]
             }
           ]
@@ -6232,13 +6247,15 @@
         "ayudantes": [
           {
             "nombre": "Miguel Fernando Romero Gutiérrez",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "Laboratorio de Prácticas de Biogeografía I"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Sistemática I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375497"
       },
@@ -6250,8 +6267,7 @@
             {
               "horario": "15:00 a 18:00",
               "dias": [
-                "Mi",
-                "Vi"
+                "Mi"
               ]
             }
           ]
@@ -6259,13 +6275,15 @@
         "ayudantes": [
           {
             "nombre": "Víctor Rogelio Hernández Marroquín",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Vi"
+            ],
+            "salon": "003"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "006",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375498"
       },
@@ -6277,8 +6295,7 @@
             {
               "horario": "15:00 a 18:00",
               "dias": [
-                "Mi",
-                "Vi"
+                "Mi"
               ]
             }
           ]
@@ -6286,13 +6303,15 @@
         "ayudantes": [
           {
             "nombre": "Gala Cortés Ramírez",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Vi"
+            ],
+            "salon": "009"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375499"
       },
@@ -6304,8 +6323,7 @@
             {
               "horario": "18:00 a 21:00",
               "dias": [
-                "Lu",
-                "Mi"
+                "Lu"
               ]
             }
           ]
@@ -6313,13 +6331,15 @@
         "ayudantes": [
           {
             "nombre": "Marco Fabio Ortiz Ramírez",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "18:00 a 21:00",
+            "dias": [
+              "Mi"
+            ],
+            "salon": "201"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "103 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375500"
       },
@@ -6331,8 +6351,7 @@
             {
               "horario": "18:00 a 21:00",
               "dias": [
-                "Lu",
-                "Mi"
+                "Lu"
               ]
             }
           ]
@@ -6340,13 +6359,15 @@
         "ayudantes": [
           {
             "nombre": "Oscar Eduardo Hernández Cervantes",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "18:00 a 21:00",
+            "dias": [
+              "Mi"
+            ],
+            "salon": "004"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Sistemática I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375501"
       },
@@ -6358,8 +6379,7 @@
             {
               "horario": "18:00 a 21:00",
               "dias": [
-                "Ma",
-                "Ju"
+                "Ma"
               ]
             }
           ]
@@ -6367,13 +6387,15 @@
         "ayudantes": [
           {
             "nombre": "Carlos Israel Román Aguilera",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "18:00 a 21:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "Laboratorio de Prácticas de Biogeografía I"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375502"
       },
@@ -6385,8 +6407,7 @@
             {
               "horario": "18:00 a 21:00",
               "dias": [
-                "Ma",
-                "Ju"
+                "Ma"
               ]
             }
           ]
@@ -6394,13 +6415,15 @@
         "ayudantes": [
           {
             "nombre": "Nancy Galvez Reyes",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "18:00 a 21:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "003"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Genética",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375503"
       }
@@ -6453,7 +6476,7 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología de Animales II"
           }
         ],
         "nota": null,
@@ -6577,8 +6600,7 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Lu",
-                "Ju"
+                "Lu"
               ]
             }
           ]
@@ -6586,9 +6608,11 @@
         "ayudantes": [
           {
             "nombre": "María Luisa Durán Pastén",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "Laboratorio de Prácticas de Biología de Animales II"
           }
         ],
         "nota": null,
@@ -6619,7 +6643,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "006",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375511"
       },
@@ -6782,7 +6806,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375517"
       },
@@ -7369,7 +7393,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología de Plantas II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375538"
       },
@@ -7535,7 +7559,7 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "Sala de Cómputo I"
           }
         ],
         "nota": null,
@@ -7599,7 +7623,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Sala de Cómputo I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375546"
       },
@@ -7711,7 +7735,7 @@
             "dias": [
               "Mi"
             ],
-            "salon": null
+            "salon": "009"
           }
         ],
         "nota": null,
@@ -7739,7 +7763,7 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "Sala de Cómputo I"
           }
         ],
         "nota": null,
@@ -7795,7 +7819,7 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "010"
           }
         ],
         "nota": null,
@@ -7851,7 +7875,7 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "103 (Yelizcalli)"
           }
         ],
         "nota": null,
@@ -7879,7 +7903,7 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "103 (Yelizcalli)"
           }
         ],
         "nota": null,
@@ -7907,7 +7931,7 @@
             "dias": [
               "Ma"
             ],
-            "salon": null
+            "salon": "103 (Yelizcalli)"
           }
         ],
         "nota": null,

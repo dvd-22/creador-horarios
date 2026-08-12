@@ -841,7 +841,7 @@
       "4388": {
         "grupo": "4388",
         "profesor": {
-          "nombre": null,
+          "nombre": "Fernando Cornejo Montaño",
           "horarios": [
             {
               "horario": "08:00 a 09:00",
@@ -872,7 +872,7 @@
       "4389": {
         "grupo": "4389",
         "profesor": {
-          "nombre": null,
+          "nombre": "Edgar Omar Velasco Páez",
           "horarios": [
             {
               "horario": "15:00 a 16:00",
@@ -898,12 +898,12 @@
         "nota": null,
         "salon": "Aula Magna II",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377318"
       },
       "4390": {
         "grupo": "4390",
         "profesor": {
-          "nombre": null,
+          "nombre": "María del Carmen Fernández García",
           "horarios": [
             {
               "horario": "20:00 a 21:00",
@@ -929,7 +929,7 @@
         "nota": null,
         "salon": "Aula Magna II",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377319"
       }
     },
     "Estructuras Discretas": {
@@ -1121,7 +1121,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "O127",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374901"
       },
       "7029": {
         "grupo": "7029",
@@ -1225,7 +1225,7 @@
             "salon": "P204"
           },
           {
-            "nombre": null,
+            "nombre": "Rodrigo Alejandro Sánchez Morales",
             "horario": "12:00 a 14:00",
             "dias": [
               "Ju"
@@ -1491,7 +1491,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Taller de Ingeniería de Software"
+            "salon": "Taller de Lenguajes de Programación"
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
@@ -2788,6 +2788,15 @@
               "Ju"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "Daniel Fernando Castillo Tovilla",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3014,6 +3023,15 @@
               "Ju"
             ],
             "salon": "O216"
+          },
+          {
+            "nombre": "Joel Gómez Uribe",
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3675,7 +3693,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Aula T2"
+            "salon": "306 (Yelizcalli)"
           },
           {
             "nombre": "José Eduardo Cruz Campos",
@@ -3687,7 +3705,7 @@
           }
         ],
         "nota": null,
-        "salon": "Aula T2",
+        "salon": "306 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374952"
       },
@@ -4015,6 +4033,15 @@
               "Ju"
             ],
             "salon": "O223"
+          },
+          {
+            "nombre": "José Antonio Espinoza Santamaría",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4252,7 +4279,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jimmy Hernández Morales",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -4290,6 +4317,15 @@
               "Ju"
             ],
             "salon": "O123"
+          },
+          {
+            "nombre": "José Angel Garduño Sánchez",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6014,7 +6050,7 @@
             "salon": "Laboratorio de Ciencias de la Computación 1"
           },
           {
-            "nombre": null,
+            "nombre": "Michelle Paulina Benítez Pérez",
             "horario": "14:00 a 16:00",
             "dias": [
               "Ma"
@@ -6052,6 +6088,14 @@
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Kevin Isaac Alcántara Estrada",
+            "horario": "14:00 a 16:00",
+            "dias": [
               "Ju"
             ],
             "salon": null
@@ -6241,11 +6285,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P105"
+            "salon": "Taller de Ingeniería de Software"
           }
         ],
         "nota": null,
-        "salon": "P105",
+        "salon": "Taller de Ingeniería de Software",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375006"
       }
@@ -6879,7 +6923,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P104"
+            "salon": "Laboratorio de Ciencias de la Computación 1"
           },
           {
             "nombre": "Emma Alicia Jiménez Sánchez",
@@ -6891,7 +6935,7 @@
           }
         ],
         "nota": null,
-        "salon": "P104",
+        "salon": "Laboratorio de Ciencias de la Computación 1",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375009"
       }
@@ -7529,6 +7573,15 @@
               "Ju"
             ],
             "salon": "306 (Yelizcalli)"
+          },
+          {
+            "nombre": "Alejandro Hérnandez Cuevas",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -9078,7 +9131,7 @@
               "Lu",
               "Mi"
             ],
-            "salon": "P103"
+            "salon": null
           },
           {
             "nombre": "Víctor Fidel Rodríguez Torres",
@@ -9090,7 +9143,7 @@
           }
         ],
         "nota": "El curso se impartirá en el  Aula del Futuro del ICAT",
-        "salon": "P103",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375025"
       }
@@ -9510,7 +9563,7 @@
             "salon": "P103"
           },
           {
-            "nombre": null,
+            "nombre": "Antonio Sebastián Dromundo Escobedo",
             "horario": "14:00 a 16:00",
             "dias": [
               "Ju"
@@ -9609,11 +9662,10 @@
           "nombre": "Germán Ernesto Zapata Ledesma",
           "horarios": [
             {
-              "horario": "09:00 a 10:00",
+              "horario": "16:00 a 17:30",
               "dias": [
                 "Lu",
-                "Mi",
-                "Vi"
+                "Mi"
               ]
             }
           ]
@@ -9621,7 +9673,7 @@
         "ayudantes": [
           {
             "nombre": "Miguel Mireles Padilla",
-            "horario": "09:00 a 10:00",
+            "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
               "Ju"
@@ -9630,9 +9682,9 @@
           },
           {
             "nombre": "Miguel Mireles Padilla",
-            "horario": "12:00 a 14:00",
+            "horario": "16:00 a 17:00",
             "dias": [
-              "Ju"
+              "Vi"
             ],
             "salon": null
           }
@@ -9976,7 +10028,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P105"
+            "salon": "Laboratorio de Ciencias de la Computación 3"
           },
           {
             "nombre": "Mónica Miranda Mijangos",
@@ -9988,7 +10040,7 @@
           }
         ],
         "nota": null,
-        "salon": "P105",
+        "salon": "Laboratorio de Ciencias de la Computación 3",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375047"
       }
@@ -10570,7 +10622,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P204"
+            "salon": "Taller de Computación Visual e Innovación Tecnológica"
           },
           {
             "nombre": "Jorge Barragán Argüero",
@@ -10582,7 +10634,7 @@
           }
         ],
         "nota": null,
-        "salon": "P204",
+        "salon": "Taller de Computación Visual e Innovación Tecnológica",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374400"
       }
