@@ -3279,6 +3279,15 @@
               "Ju"
             ],
             "salon": "206 (Yelizcalli)"
+          },
+          {
+            "nombre": "Mariana De la Rosa Juárez",
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3445,11 +3454,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P118"
+            "salon": "P201"
           }
         ],
         "nota": null,
-        "salon": "P118",
+        "salon": "P201",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374102"
       },
@@ -3944,6 +3953,15 @@
               "Ju"
             ],
             "salon": "002 (Yelizcalli)"
+          },
+          {
+            "nombre": "Ana Luisa Acua Morales",
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4922,6 +4940,15 @@
               "Ju"
             ],
             "salon": "O122"
+          },
+          {
+            "nombre": "Pedro Damián Jara Palma",
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7404,11 +7431,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P204"
+            "salon": "O218"
           }
         ],
         "nota": null,
-        "salon": "P204",
+        "salon": "O218",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374187"
       }
@@ -7664,6 +7691,15 @@
               "Ju"
             ],
             "salon": "P213"
+          },
+          {
+            "nombre": "Luis Enrique Alcantar Villegas",
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7725,11 +7761,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P106"
+            "salon": "P212"
           }
         ],
         "nota": null,
-        "salon": "P106",
+        "salon": "P212",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374206"
       },
@@ -9262,6 +9298,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "David Cortés Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -9883,6 +9925,12 @@
         "ayudantes": [
           {
             "nombre": "Esteban Alonso Franco Fuentes",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Diego Hérnandez García",
             "horario": null,
             "dias": [],
             "salon": null
@@ -10791,6 +10839,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Jesús Diego Gómez Garnica",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -10995,6 +11049,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Jennyfer Guadalupe Moreno Moreno",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -11019,6 +11079,12 @@
         "ayudantes": [
           {
             "nombre": "Rodrigo Vega Vilchis",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Joel Gómez Uribe",
             "horario": null,
             "dias": [],
             "salon": null
@@ -11614,6 +11680,12 @@
         "ayudantes": [
           {
             "nombre": "Karime Alejandra Pérez Campos",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Juan de Dios de Luna Santillán",
             "horario": null,
             "dias": [],
             "salon": null
@@ -14394,7 +14466,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Daniel Cantó González",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
@@ -16615,17 +16687,26 @@
         "grupo": "8369",
         "profesor": {
           "nombre": "David Parra Guevara",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "09:00 a 11:00",
+              "dias": [
+                "Lu"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
             "nombre": "Yuri Nikolaevich Skiba",
-            "horario": null,
-            "dias": [],
+            "horario": "09:00 a 11:00",
+            "dias": [
+              "Mi"
+            ],
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "El curso se impartirá en el Salón 2, Edificio 2 (Planta Baja) del Instituto de Ciencias de la Atmósfera y Cambio Climático (ICAyCC)",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374691"
@@ -16821,7 +16902,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Mariana Elena Pérez",
+            "nombre": "Katherinne Sadahy Cortés Piza",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -17252,7 +17333,7 @@
           }
         ],
         "nota": "Temas Selectos de Astrofísica III",
-        "salon": null,
+        "salon": "O132",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374701"
       },
@@ -17494,7 +17575,14 @@
           "nombre": "Moises Zeleny Mora",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Valery Mireles Yañez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": "Computo simbólico con git y github",
         "salon": null,
         "modalidad": "Presencial",
@@ -17508,7 +17596,14 @@
           "nombre": "Tomás Antonio Valencia Pérez",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Juan Felipe Jiménez Román",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": "Del Modelo Estándar a Python: Simulación, Datos y Machine Learning en Física de Partículas",
         "salon": null,
         "modalidad": "Presencial",
@@ -17908,7 +18003,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Derian Leonel Serrano Juárez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": "El curso se impartirá en la sala Ángel Dacal, Edificio Colisur, Instituto de Física",
         "salon": null,
         "modalidad": "Presencial",

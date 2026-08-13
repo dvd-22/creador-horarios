@@ -1927,11 +1927,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P118"
+            "salon": "P201"
           }
         ],
         "nota": null,
-        "salon": "P118",
+        "salon": "P201",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374103"
       },
@@ -3046,6 +3046,15 @@
               "Ju"
             ],
             "salon": "206 (Yelizcalli)"
+          },
+          {
+            "nombre": "Mariana De la Rosa Juárez",
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4408,11 +4417,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P106"
+            "salon": "P212"
           }
         ],
         "nota": null,
-        "salon": "P106",
+        "salon": "P212",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374207"
       },
@@ -5696,6 +5705,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "David Cortés Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6069,6 +6084,12 @@
         "ayudantes": [
           {
             "nombre": "Rodrigo de Jesús Pacheco Aké",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Jesús Diego Gómez Garnica",
             "horario": null,
             "dias": [],
             "salon": null
@@ -6466,6 +6487,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Juan de Dios de Luna Santillán",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6580,10 +6607,101 @@
       "3063": {
         "grupo": "3063",
         "profesor": {
-          "nombre": "Rodrigo Alfonso Martín Salas",
+          "nombre": "René Ledesma Alonso",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Lía Natsuko Rivera Yoshida",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rodrigo Alfonso Martín Salas",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Héctor Alva Sánchez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Edgar Alvarez Zauco",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Itzel Marisol Garnica Palafox",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Jhonatan Carrasco Hérnandez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Erika Rubí Luis García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Saraí Gisel De León Rodríguez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Griselda Adriana Cruz Priego",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Manuel Campos García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "José Eduardo Chairez Veloz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "José Alfredo Herrera González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Verena Margitta Moock",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Sergio Enrique Solís Nájera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rosalinda Ortiz Sosa",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",

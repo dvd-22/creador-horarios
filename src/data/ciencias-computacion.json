@@ -867,7 +867,7 @@
         "nota": null,
         "salon": "Aula Magna II",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377317"
       },
       "4389": {
         "grupo": "4389",
@@ -3891,6 +3891,15 @@
               "Ju"
             ],
             "salon": "O216"
+          },
+          {
+            "nombre": "Mario Alejandro Molina Palma",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4583,7 +4592,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P212"
+            "salon": "P106"
           },
           {
             "nombre": "Jesús Daniel Verdugo Rodríguez",
@@ -4595,7 +4604,7 @@
           }
         ],
         "nota": null,
-        "salon": "P212",
+        "salon": "P106",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374960"
       },
@@ -5108,6 +5117,14 @@
               "Lu"
             ],
             "salon": "Laboratorio de Ciencias de la Computación 3"
+          },
+          {
+            "nombre": "Oscar José Hernández Sánchez",
+            "horario": "14:00 a 16:00",
+            "dias": [
+              "Lu"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5343,6 +5360,14 @@
               "Mi"
             ],
             "salon": "Laboratorio de Ciencias de la Computación 2"
+          },
+          {
+            "nombre": "Miguel Agustín Martínez Herrera",
+            "horario": "14:00 a 16:00",
+            "dias": [
+              "Mi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5687,7 +5712,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alejandro Espino Gutiérrez",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -6047,7 +6072,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Laboratorio de Ciencias de la Computación 1"
+            "salon": "003 (Yelizcalli)"
           },
           {
             "nombre": "Michelle Paulina Benítez Pérez",
@@ -6059,7 +6084,7 @@
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Ciencias de la Computación 1",
+        "salon": "003 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377368"
       }
@@ -7794,7 +7819,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alan Alberto Flores Moreno",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -8716,6 +8741,15 @@
               "Ju"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "José Angel Garduño Sánchez",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,

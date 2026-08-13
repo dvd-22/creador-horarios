@@ -867,7 +867,7 @@
         "nota": null,
         "salon": "Aula Magna II",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377317"
       },
       "4389": {
         "grupo": "4389",
@@ -3045,6 +3045,15 @@
               "Ju"
             ],
             "salon": "206 (Yelizcalli)"
+          },
+          {
+            "nombre": "Mariana De la Rosa Juárez",
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4008,11 +4017,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P118"
+            "salon": "P201"
           }
         ],
         "nota": null,
-        "salon": "P118",
+        "salon": "P201",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374102"
       },
@@ -6869,11 +6878,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P204"
+            "salon": "O218"
           }
         ],
         "nota": null,
-        "salon": "P204",
+        "salon": "O218",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374187"
       }
@@ -7129,6 +7138,15 @@
               "Ju"
             ],
             "salon": "P213"
+          },
+          {
+            "nombre": "Luis Enrique Alcantar Villegas",
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7190,11 +7208,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P106"
+            "salon": "P212"
           }
         ],
         "nota": null,
-        "salon": "P106",
+        "salon": "P212",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374206"
       },
@@ -7815,7 +7833,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Daniel Cantó González",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
@@ -10312,44 +10330,6 @@
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374896"
       },
-      "7024": {
-        "grupo": "7024",
-        "profesor": {
-          "nombre": "Luis Ricardo López Villafán",
-          "horarios": [
-            {
-              "horario": "13:00 a 14:30",
-              "dias": [
-                "Ma",
-                "Ju"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": null,
-            "horario": "12:00 a 13:00",
-            "dias": [
-              "Lu",
-              "Mi"
-            ],
-            "salon": "O127"
-          },
-          {
-            "nombre": "Andrés Daniel López Molina",
-            "horario": "12:00 a 14:00",
-            "dias": [
-              "Vi"
-            ],
-            "salon": "Taller de Lenguajes de Programación"
-          }
-        ],
-        "nota": "Grupo reservado para primer ingreso 2027",
-        "salon": "O127",
-        "modalidad": "Presencial",
-        "presentacion": null
-      },
       "7026": {
         "grupo": "7026",
         "profesor": {
@@ -10815,6 +10795,15 @@
               "Ju"
             ],
             "salon": "O216"
+          },
+          {
+            "nombre": "Mario Alejandro Molina Palma",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -12986,6 +12975,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Jennyfer Guadalupe Moreno Moreno",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -13010,6 +13005,12 @@
         "ayudantes": [
           {
             "nombre": "Rodrigo Vega Vilchis",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Joel Gómez Uribe",
             "horario": null,
             "dias": [],
             "salon": null
@@ -13913,6 +13914,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Juan de Dios de Luna Santillán",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -14212,6 +14219,15 @@
               "Ju"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "José Angel Garduño Sánchez",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -14527,7 +14543,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Laboratorio de Ciencias de la Computación 1"
+            "salon": "003 (Yelizcalli)"
           },
           {
             "nombre": "Michelle Paulina Benítez Pérez",
@@ -14539,7 +14555,7 @@
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Ciencias de la Computación 1",
+        "salon": "003 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377368"
       }
@@ -15781,6 +15797,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Emma Itzhel López Mata",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": "Enseñar matemáticas en la era de la IA: retos, estrategias y posibilidades",
@@ -15813,11 +15838,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P201"
+            "salon": "P118"
           }
         ],
         "nota": "Matemáticas en niños superdotados",
-        "salon": "P201",
+        "salon": "P118",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374349"
       },
@@ -18018,7 +18043,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alan Alberto Flores Moreno",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -18147,6 +18172,15 @@
         "ayudantes": [
           {
             "nombre": "Marco Antonio Oliveros Hérnandez",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Ariadna Amayrani Ferrari Pardiño",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -18933,6 +18967,14 @@
               "Mi"
             ],
             "salon": "Laboratorio de Ciencias de la Computación 2"
+          },
+          {
+            "nombre": "Miguel Agustín Martínez Herrera",
+            "horario": "14:00 a 16:00",
+            "dias": [
+              "Mi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,

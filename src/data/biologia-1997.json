@@ -4568,7 +4568,7 @@
         "nota": null,
         "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373838"
       }
     },
     "Taller Nivel 2": {
@@ -5728,6 +5728,43 @@
           }
         ],
         "nota": "Inmunomodulación y agentes patógenos",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5701": {
+        "grupo": "5701",
+        "profesor": {
+          "nombre": "Martha Verónica Ponce Castañeda",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Adriana Hernández Ángeles",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "María Antonieta Chávez González",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "María Guadalupe Gordillo Pérez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Félix Ernestino Matadamas Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Herramientas genómicas en el estudio y búsqueda de biomarcadores.",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -10611,11 +10648,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": "Laboratorio de Prácticas de Biotecnología"
+            "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula II"
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Prácticas de Biotecnología",
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373859"
       }
@@ -11148,7 +11185,7 @@
             "dias": [
               "Mi"
             ],
-            "salon": "B005"
+            "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula III"
           }
         ],
         "nota": null,
@@ -11565,11 +11602,11 @@
             "dias": [
               "Vi"
             ],
-            "salon": "B002"
+            "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula II"
           }
         ],
         "nota": null,
-        "salon": "B002",
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373888"
       }
@@ -13084,11 +13121,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula II"
           }
         ],
         "nota": "Bases biológicas y diagnóstico molecular de las enfermedades genéticas en el humano",
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375683"
       }
@@ -13194,11 +13231,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula I"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373937"
       }
@@ -13224,11 +13261,11 @@
             "dias": [
               "Ma"
             ],
-            "salon": "B007"
+            "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula I"
           }
         ],
         "nota": null,
-        "salon": "B007",
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373938"
       }

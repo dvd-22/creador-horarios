@@ -867,7 +867,7 @@
         "nota": null,
         "salon": "Aula Magna II",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377317"
       },
       "4389": {
         "grupo": "4389",
@@ -3045,6 +3045,15 @@
               "Ju"
             ],
             "salon": "206 (Yelizcalli)"
+          },
+          {
+            "nombre": "Mariana De la Rosa Juárez",
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3758,11 +3767,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P118"
+            "salon": "P201"
           }
         ],
         "nota": null,
-        "salon": "P118",
+        "salon": "P201",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374102"
       },
@@ -6741,6 +6750,15 @@
               "Ju"
             ],
             "salon": "O216"
+          },
+          {
+            "nombre": "Mario Alejandro Molina Palma",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7957,11 +7975,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P204"
+            "salon": "O218"
           }
         ],
         "nota": null,
-        "salon": "P204",
+        "salon": "O218",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374187"
       }
@@ -8278,11 +8296,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P106"
+            "salon": "P212"
           }
         ],
         "nota": null,
-        "salon": "P106",
+        "salon": "P212",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374206"
       },
@@ -9118,7 +9136,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Daniel Cantó González",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
@@ -10503,6 +10521,15 @@
               "Ju"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "José Angel Garduño Sánchez",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -13119,7 +13146,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alan Alberto Flores Moreno",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
