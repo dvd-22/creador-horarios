@@ -3985,7 +3985,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "O132",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375418"
       },
@@ -4480,7 +4480,13 @@
           "nombre": "Omar Ávalos Hernández",
           "horarios": [
             {
-              "horario": "15:00 a 18:00",
+              "horario": "15:00 a 16:00",
+              "dias": [
+                "Lu"
+              ]
+            },
+            {
+              "horario": "16:00 a 18:00",
               "dias": [
                 "Lu"
               ]
@@ -4498,7 +4504,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375436"
       },
@@ -4522,7 +4528,7 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "P109"
           }
         ],
         "nota": null,
@@ -5019,7 +5025,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Silvia Bautista Hernández",
+            "nombre": "Mariana Guadalupe Cartajena Alcántara",
             "horario": "11:00 a 14:00",
             "dias": [
               "Sa"
@@ -5502,7 +5508,7 @@
             "dias": [
               "Sa"
             ],
-            "salon": null
+            "salon": "303 (Tlaltícpac)"
           }
         ],
         "nota": null,
@@ -5558,7 +5564,7 @@
             "dias": [
               "Sa"
             ],
-            "salon": null
+            "salon": "303 (Yelizcalli)"
           }
         ],
         "nota": null,
@@ -5979,7 +5985,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375487"
       },
@@ -6047,8 +6053,7 @@
             {
               "horario": "07:30 a 10:30",
               "dias": [
-                "Mi",
-                "Sa"
+                "Mi"
               ]
             }
           ]
@@ -6056,13 +6061,15 @@
         "ayudantes": [
           {
             "nombre": "Verónica Alejandra Rincón Rubio",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Sa"
+            ],
+            "salon": "003"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Genética",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375490"
       },
@@ -6113,7 +6120,7 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "303 (Tlaltícpac)"
           }
         ],
         "nota": null,
@@ -6129,8 +6136,7 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Lu",
-                "Ju"
+                "Lu"
               ]
             }
           ]
@@ -6138,13 +6144,15 @@
         "ayudantes": [
           {
             "nombre": "César Augusto Domínguez Pérez-Tejada",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Ju"
+            ],
+            "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula II"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375493"
       },
@@ -6734,10 +6742,15 @@
           "nombre": "Hugo Iván Cruz Rosas",
           "horarios": [
             {
-              "horario": "15:00 a 18:00",
+              "horario": "15:00 a 16:00",
               "dias": [
-                "Lu",
-                "Ju"
+                "Lu"
+              ]
+            },
+            {
+              "horario": "16:00 a 18:00",
+              "dias": [
+                "Lu"
               ]
             }
           ]
@@ -6745,13 +6758,16 @@
         "ayudantes": [
           {
             "nombre": "Jesús Alquicira Mireles",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ju",
+              "Ju"
+            ],
+            "salon": "S2"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "002",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375515"
       },
@@ -7143,7 +7159,7 @@
         "nota": null,
         "salon": "003",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375529"
       },
       "5433": {
         "grupo": "5433",
@@ -7447,7 +7463,7 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "304 (Yelizcalli)"
           }
         ],
         "nota": null,
@@ -7479,7 +7495,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "302 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375541"
       },
@@ -7507,7 +7523,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375542"
       },
@@ -7535,7 +7551,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "305 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375543"
       },
@@ -7587,7 +7603,7 @@
             "dias": [
               "Lu"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula I"
           }
         ],
         "nota": null,
@@ -7683,7 +7699,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "305 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375548"
       },
@@ -7707,7 +7723,7 @@
             "dias": [
               "Mi"
             ],
-            "salon": null
+            "salon": "302 (Yelizcalli)"
           }
         ],
         "nota": null,
@@ -7735,7 +7751,7 @@
             "dias": [
               "Mi"
             ],
-            "salon": "009"
+            "salon": "304 (Yelizcalli)"
           }
         ],
         "nota": null,
@@ -7791,7 +7807,7 @@
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "304 (Yelizcalli)"
           }
         ],
         "nota": null,

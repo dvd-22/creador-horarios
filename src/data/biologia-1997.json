@@ -21,7 +21,7 @@
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "Laboratorio de Física General II"
           },
           {
             "nombre": "Diana Nahidally Martínez García",
@@ -31,9 +31,9 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Física General II",
         "modalidad": null,
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373756"
       }
     },
     "Química": {
@@ -1537,7 +1537,7 @@
           }
         ],
         "nota": null,
-        "salon": "003",
+        "salon": "B001",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373805"
       },
@@ -4400,7 +4400,7 @@
         "nota": null,
         "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373832"
       },
       "5077": {
         "grupo": "5077",
@@ -4540,7 +4540,7 @@
         "nota": null,
         "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373837"
       },
       "5082": {
         "grupo": "5082",
@@ -10447,7 +10447,7 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "003"
           }
         ],
         "nota": null,
@@ -10618,7 +10618,7 @@
             "dias": [
               "Ju"
             ],
-            "salon": null
+            "salon": "P111"
           }
         ],
         "nota": null,
@@ -11338,7 +11338,7 @@
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "P109"
           }
         ],
         "nota": null,
@@ -11992,6 +11992,37 @@
       }
     },
     "Naturaleza y Sociedad": {
+      "4398": {
+        "grupo": "4398",
+        "profesor": {
+          "nombre": "Ricardo Arencibia Jorge",
+          "horarios": [
+            {
+              "horario": "17:00 a 18:00",
+              "dias": [
+                "Lu",
+                "Mi",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "María Victoria Guzmán Sánchez",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": "Taller de Geometría"
+          }
+        ],
+        "nota": null,
+        "salon": "Taller de Geometría",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377413"
+      },
       "5144": {
         "grupo": "5144",
         "profesor": {

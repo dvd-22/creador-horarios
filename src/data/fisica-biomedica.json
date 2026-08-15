@@ -909,7 +909,7 @@
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
-        "salon": "O216",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -1235,7 +1235,7 @@
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
-        "salon": "O134",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374014"
       },
@@ -1609,7 +1609,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Jorge Luis Arroyo Leonor",
             "horario": "14:00 a 15:00",
             "dias": [
               "Lu",
@@ -3110,7 +3110,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Sergio Ulises Arellano Barrera",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
@@ -3172,7 +3172,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Pablo Enrique Gutiérrez Ávila",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "P111",
         "modalidad": "Presencial",
@@ -3193,7 +3200,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Irma Alexia Dezotti Apantenco",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "P112",
         "modalidad": "Presencial",
@@ -4154,7 +4168,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Vanessa Leonor Bustos Manríquez",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -4356,6 +4370,15 @@
               "Ju"
             ],
             "salon": "P213"
+          },
+          {
+            "nombre": "Luis Enrique Alcantar Villegas",
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4871,6 +4894,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Agustín Castillo Ham",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4991,6 +5020,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Jennyfer Guadalupe Moreno Moreno",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5018,6 +5053,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Joel Gómez Uribe",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5039,7 +5080,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Eduardo Calep Velázquez López",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "Laboratorio de Enseñanza en Cómputo en Física",
         "modalidad": "Presencial",
@@ -6557,7 +6605,7 @@
             "salon": null
           },
           {
-            "nombre": "Luis Eduardo Ramos Solís",
+            "nombre": "Brahayam Ríos Sánchez",
             "horario": null,
             "dias": [],
             "salon": null
@@ -6887,7 +6935,7 @@
           ]
         },
         "ayudantes": [],
-        "nota": null,
+        "nota": "lu, mi, Laboratorio de Biofísica y Física Médica en el Edificio de Física, Facultad de Ciencias, labo 431",
         "salon": "P116",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375082"
@@ -6918,7 +6966,15 @@
         "grupo": "3039",
         "profesor": {
           "nombre": "Erin Christy McKiernan",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "15:00 a 16:30",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -6928,8 +6984,8 @@
             "salon": null
           }
         ],
-        "nota": null,
-        "salon": null,
+        "nota": "lunes y miércoles 15.00 a 16.30 h, Laboratorio de Biofísica y Física Médica en el Edificio de Física, Facultad de Ciencias, labo 431",
+        "salon": "Laboratorio de Biofísica 431",
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375088"
       },
@@ -7001,11 +7057,25 @@
         "grupo": "3044",
         "profesor": {
           "nombre": "Santiago Burgos Puentes",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "10:00 a 13:00",
+              "dias": [
+                "Ju"
+              ]
+            }
+          ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Antonio Joseph Alcántara López",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Física General II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375093"
       }
@@ -7017,7 +7087,14 @@
           "nombre": "Nara Sharline Alvarado Cervantes",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "María Belén Gutiérrez Romero",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
