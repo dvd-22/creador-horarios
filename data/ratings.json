@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-15T18:36:13.911Z",
-  "totalProfessors": 3135,
-  "ratingsFound": 1434,
+  "lastUpdated": "2026-08-16T08:45:48.257Z",
+  "totalProfessors": 3139,
+  "ratingsFound": 1435,
   "foundPercentage": 46,
   "ratings": {
     "Aaron Ali Lozano Rocha": null,
@@ -2449,6 +2449,13 @@
     "David Antonio Alencaste Desachy": null,
     "David Armando Silva de Paz": null,
     "David Bañuelos Solórzano": null,
+    "David Chaffrey Moreno Fernández": {
+      "name": "David Chaffrey Moreno Fernández",
+      "rating": 6.7,
+      "commentCount": 42,
+      "id": "36143",
+      "url": "https://www.misprofesores.com/profesores/David-Moreno-Fernandez_36143"
+    },
     "David Cortés Martínez": null,
     "David Eduardo Martínez Lara": {
       "name": "David Martínez Lara",
@@ -2583,6 +2590,7 @@
       "id": "60034",
       "url": "https://www.misprofesores.com/profesores/Deyanira-Perez-Morales_60034"
     },
+    "Dharma Aditi Valencia Miguel": null,
     "Diana Aguilar Vázquez": null,
     "Diana Alethia Guerrero Hernández": {
       "name": "Diana Alethia Guerrero Hernández",
@@ -7260,6 +7268,7 @@
     "Luis Efraín Moreles Vázquez": null,
     "Luis Enrique Alcantar Villegas": null,
     "Luis Enrique Conrado Alarcón": null,
+    "Luis Enrique López Espindola": null,
     "Luis Enrique Nava García": null,
     "Luis Enrique Quintanar Cortés": {
       "name": "Luis Enrique Quintanar Cortés",
@@ -7593,7 +7602,7 @@
     "Manuel Gerardo Quintana García": {
       "name": "Manuel Guerardo Quintana Garcia",
       "rating": 6.9,
-      "commentCount": 45,
+      "commentCount": 46,
       "id": "41706",
       "url": "https://www.misprofesores.com/profesores/Manuel-Quintana-Garcia_41706"
     },
@@ -9615,6 +9624,7 @@
       "url": "https://www.misprofesores.com/profesores/Patricia-Aviles-Mandujano_42122"
     },
     "Patricia Salas Casales": null,
+    "Patricia Sandoval Ancira": null,
     "Patricia Segura Medina": null,
     "Patricia Silva Guevara": null,
     "Patricio Ordóñez Blanco": null,
@@ -11745,12 +11755,12 @@
     "Óscar Romero Báez": null
   },
   "statistics": {
-    "processed": 3135,
-    "found": 1434,
-    "notFound": 1701,
-    "foundWithFallback": 58,
+    "processed": 3139,
+    "found": 1435,
+    "notFound": 1704,
+    "foundWithFallback": 59,
     "foundWithMainTemplate": 1376,
-    "keptExisting": 1422,
-    "upgraded": 9
+    "keptExisting": 1433,
+    "upgraded": 1
   }
 }
