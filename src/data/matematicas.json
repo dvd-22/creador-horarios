@@ -9567,7 +9567,7 @@
         "nota": null,
         "salon": "O122",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374287"
       }
     },
     "Geometría Proyectiva": {
@@ -12883,12 +12883,18 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Juan Pablo Rodríguez Villagrán",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
               "Ju"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Guadalupe Jiménez Villanueva",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],

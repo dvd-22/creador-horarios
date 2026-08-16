@@ -11224,6 +11224,18 @@
               "Ju"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "Dharma Aditi Valencia Miguel",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Patricia Sandoval Ancira",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -12803,12 +12815,18 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Juan Pablo Rodríguez Villagrán",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
               "Ju"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "Guadalupe Jiménez Villanueva",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
@@ -15652,12 +15670,18 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Enrique López Espindola",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
               "Ju"
             ],
+            "salon": null
+          },
+          {
+            "nombre": "David Chaffrey Moreno Fernández",
+            "horario": null,
+            "dias": [],
             "salon": null
           }
         ],
