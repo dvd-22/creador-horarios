@@ -2530,6 +2530,15 @@
               "Ju"
             ],
             "salon": "002 (Yelizcalli)"
+          },
+          {
+            "nombre": "Patricia Silva Guevara",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2759,6 +2768,15 @@
           },
           {
             "nombre": "Daniel Fernando Castillo Tovilla",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Mariana Yoselin Hérnandez Flores",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -5419,7 +5437,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P213"
+            "salon": "301 (Yelizcalli)"
           },
           {
             "nombre": "Karyme Ivette Azpeitia García",
@@ -5439,7 +5457,7 @@
           }
         ],
         "nota": null,
-        "salon": "P213",
+        "salon": "301 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374996"
       }
@@ -5561,7 +5579,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377371"
       }
     },
     "Inteligencia Artificial": {
@@ -7636,6 +7654,15 @@
               "Ju"
             ],
             "salon": "P102"
+          },
+          {
+            "nombre": "Seani Noemí Rodríguez Gómez",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,

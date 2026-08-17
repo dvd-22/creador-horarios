@@ -578,6 +578,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "José Antonio Gómez Ortega",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Víctor Leonardo Castañeda Rivas",
             "horario": "12:00 a 13:00",
             "dias": [
@@ -876,7 +882,7 @@
       "8016": {
         "grupo": "8016",
         "profesor": {
-          "nombre": "Héctor Méndez Lango",
+          "nombre": "Herminio Suárez Quiroz",
           "horarios": [
             {
               "horario": "07:00 a 08:00",
@@ -1587,7 +1593,7 @@
         "nota": null,
         "salon": "106 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377325"
       },
       "8462": {
         "grupo": "8462",
@@ -6235,12 +6241,6 @@
         },
         "ayudantes": [
           {
-            "nombre": "Gustavo Pacheco Santiago",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
-          {
             "nombre": "Alejandro Villarreal López",
             "horario": null,
             "dias": [],
@@ -7021,7 +7021,14 @@
           "nombre": "Griselda Adriana Cruz Priego",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Pamela Ixchel Torres Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
@@ -7308,7 +7315,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375080"
       }
     },
     "Física de la Radioterapia": {

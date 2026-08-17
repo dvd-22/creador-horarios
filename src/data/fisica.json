@@ -578,6 +578,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "José Antonio Gómez Ortega",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Víctor Leonardo Castañeda Rivas",
             "horario": "12:00 a 13:00",
             "dias": [
@@ -876,7 +882,7 @@
       "4042": {
         "grupo": "4042",
         "profesor": {
-          "nombre": "Héctor Méndez Lango",
+          "nombre": "Herminio Suárez Quiroz",
           "horarios": [
             {
               "horario": "07:00 a 08:00",
@@ -1587,7 +1593,7 @@
         "nota": null,
         "salon": "106 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377324"
       },
       "4397": {
         "grupo": "4397",
@@ -4540,6 +4546,15 @@
               "Ju"
             ],
             "salon": "002 (Yelizcalli)"
+          },
+          {
+            "nombre": "Patricia Silva Guevara",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4769,6 +4784,15 @@
           },
           {
             "nombre": "Daniel Fernando Castillo Tovilla",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Mariana Yoselin Hérnandez Flores",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -5500,6 +5524,16 @@
               "Vi"
             ],
             "salon": "O221"
+          },
+          {
+            "nombre": "Rodrigo Serafín Adame Ibarra",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5946,6 +5980,16 @@
               "Vi"
             ],
             "salon": "O223"
+          },
+          {
+            "nombre": "Arturo Arroyo Nuñez",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6066,6 +6110,16 @@
               "Vi"
             ],
             "salon": "O214"
+          },
+          {
+            "nombre": "Liliana Flores Tamias",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -9684,7 +9738,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Xavier Oded Espinosa Guerrero",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -10543,6 +10597,12 @@
         "ayudantes": [
           {
             "nombre": "César Alberto Díaz Hérnandez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Antonio Rodríguez Escalante",
             "horario": null,
             "dias": [],
             "salon": null
@@ -14526,6 +14586,15 @@
               "Vi"
             ],
             "salon": "P201"
+          },
+          {
+            "nombre": "José Antonio Pulido Pérez",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -14951,7 +15020,7 @@
         "nota": null,
         "salon": "001 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374269"
       }
     },
     "Ciencia, Diversidad e Inclusión": {
@@ -15917,7 +15986,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alejandro Melchor Galván",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
@@ -16766,6 +16835,12 @@
         "ayudantes": [
           {
             "nombre": "Lesly Corina Castañeda Carlos",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Alondra Vega Pastrana",
             "horario": null,
             "dias": [],
             "salon": null
@@ -17670,11 +17745,31 @@
         "grupo": "8449",
         "profesor": {
           "nombre": "Cristian Adán Mojica Casique",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "10:00 a 11:30",
+              "dias": [
+                "Vi"
+              ]
+            },
+            {
+              "horario": "08:00 a 09:30",
+              "dias": [
+                "Ma"
+              ]
+            }
+          ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Gersain Gabriel Quiroz Sánchez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Electromagnetismo II",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/376006"
       }
@@ -18031,8 +18126,8 @@
             "salon": null
           }
         ],
-        "nota": "Curso de Introducción a la Teoría Cuántica de Campos I",
-        "salon": "P117",
+        "nota": "El curso se impartirá en la Sala Ángel Dacal del Instituto de Física",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374722"
       },
@@ -18256,11 +18351,18 @@
         "grupo": "8409",
         "profesor": {
           "nombre": "Manan Vyas",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
         },
         "ayudantes": [],
         "nota": "Cita para definir horario: lunes 17 de agosto a las 12 hrs en el Aula 2 de computación en Física",
-        "salon": null,
+        "salon": "Aula 3 de Computación en Física",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374731"
       }
@@ -18547,7 +18649,7 @@
             "salon": null
           }
         ],
-        "nota": "El curso se impartirá en el Salón de Seminarios \"Ruiz Mejía\" del primer piso del Instituto de Física",
+        "nota": "El curso se impartirá en el Salón de Posgrado 2 del Instituto de Física",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374744"

@@ -1198,6 +1198,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "José Antonio Gómez Ortega",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Víctor Leonardo Castañeda Rivas",
             "horario": "12:00 a 13:00",
             "dias": [
@@ -1496,7 +1502,7 @@
       "4042": {
         "grupo": "4042",
         "profesor": {
-          "nombre": "Héctor Méndez Lango",
+          "nombre": "Herminio Suárez Quiroz",
           "horarios": [
             {
               "horario": "07:00 a 08:00",
@@ -2207,7 +2213,7 @@
         "nota": null,
         "salon": "106 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377324"
       },
       "4397": {
         "grupo": "4397",
@@ -5151,6 +5157,15 @@
               "Ju"
             ],
             "salon": "002 (Yelizcalli)"
+          },
+          {
+            "nombre": "Patricia Silva Guevara",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5380,6 +5395,15 @@
           },
           {
             "nombre": "Daniel Fernando Castillo Tovilla",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Mariana Yoselin Hérnandez Flores",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -6111,6 +6135,16 @@
               "Vi"
             ],
             "salon": "O221"
+          },
+          {
+            "nombre": "Rodrigo Serafín Adame Ibarra",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6557,6 +6591,16 @@
               "Vi"
             ],
             "salon": "O223"
+          },
+          {
+            "nombre": "Arturo Arroyo Nuñez",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -9933,6 +9977,15 @@
               "Vi"
             ],
             "salon": "P201"
+          },
+          {
+            "nombre": "José Antonio Pulido Pérez",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -10593,6 +10646,15 @@
               "Ju"
             ],
             "salon": "P102"
+          },
+          {
+            "nombre": "Seani Noemí Rodríguez Gómez",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -10952,6 +11014,15 @@
               "Ju"
             ],
             "salon": "O220"
+          },
+          {
+            "nombre": "Roberto Osciel Romero Obispo",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -11227,14 +11298,20 @@
           },
           {
             "nombre": "Dharma Aditi Valencia Miguel",
-            "horario": null,
-            "dias": [],
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
             "salon": null
           },
           {
             "nombre": "Patricia Sandoval Ancira",
-            "horario": null,
-            "dias": [],
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
             "salon": null
           }
         ],
@@ -11810,6 +11887,15 @@
         "ayudantes": [
           {
             "nombre": "Bernice Anaid Mendoza Serrano",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Noemi Hernández Santiago",
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -12825,8 +12911,11 @@
           },
           {
             "nombre": "Guadalupe Jiménez Villanueva",
-            "horario": null,
-            "dias": [],
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
             "salon": null
           }
         ],
@@ -12883,7 +12972,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Manuel Alejandro Zúñiga Pérez",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -15680,8 +15769,11 @@
           },
           {
             "nombre": "David Chaffrey Moreno Fernández",
-            "horario": null,
-            "dias": [],
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
             "salon": null
           }
         ],
@@ -15822,7 +15914,7 @@
         ],
         "nota": "Construcción de indicadores",
         "salon": "O217",
-        "modalidad": "Presencial",
+        "modalidad": "Virtual",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375239"
       },
       "9279": {
@@ -16556,6 +16648,15 @@
         "ayudantes": [
           {
             "nombre": "Dania Sayuri Zaldívar Tanaka",
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Adriana Esperon Romero",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",

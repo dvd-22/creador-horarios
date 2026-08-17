@@ -1198,6 +1198,12 @@
         },
         "ayudantes": [
           {
+            "nombre": "José Antonio Gómez Ortega",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
             "nombre": "Víctor Leonardo Castañeda Rivas",
             "horario": "12:00 a 13:00",
             "dias": [
@@ -1496,7 +1502,7 @@
       "4042": {
         "grupo": "4042",
         "profesor": {
-          "nombre": "Héctor Méndez Lango",
+          "nombre": "Herminio Suárez Quiroz",
           "horarios": [
             {
               "horario": "07:00 a 08:00",
@@ -2207,7 +2213,7 @@
         "nota": null,
         "salon": "106 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377324"
       },
       "4397": {
         "grupo": "4397",
@@ -3514,7 +3520,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alejandro Melchor Galván",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
@@ -4668,6 +4674,15 @@
               "Ju"
             ],
             "salon": "002 (Yelizcalli)"
+          },
+          {
+            "nombre": "Patricia Silva Guevara",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4897,6 +4912,15 @@
           },
           {
             "nombre": "Daniel Fernando Castillo Tovilla",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Mariana Yoselin Hérnandez Flores",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -5628,6 +5652,16 @@
               "Vi"
             ],
             "salon": "O221"
+          },
+          {
+            "nombre": "Rodrigo Serafín Adame Ibarra",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6074,6 +6108,16 @@
               "Vi"
             ],
             "salon": "O223"
+          },
+          {
+            "nombre": "Arturo Arroyo Nuñez",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6194,6 +6238,16 @@
               "Vi"
             ],
             "salon": "O214"
+          },
+          {
+            "nombre": "Liliana Flores Tamias",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7841,6 +7895,15 @@
               "Vi"
             ],
             "salon": "P201"
+          },
+          {
+            "nombre": "José Antonio Pulido Pérez",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -8248,7 +8311,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Xavier Oded Espinosa Guerrero",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -10297,7 +10360,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Juan Carlos Montero García",
             "horario": "19:00 a 20:00",
             "dias": [
               "Ma",
@@ -12893,8 +12956,11 @@
           },
           {
             "nombre": "Guadalupe Jiménez Villanueva",
-            "horario": null,
-            "dias": [],
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
             "salon": null
           }
         ],
@@ -12951,7 +13017,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Manuel Alejandro Zúñiga Pérez",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -13668,7 +13734,7 @@
         "nota": null,
         "salon": null,
         "modalidad": "Virtual",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377371"
       }
     },
     "Inteligencia Artificial": {
@@ -15923,6 +15989,15 @@
               "Ju"
             ],
             "salon": "O221"
+          },
+          {
+            "nombre": "Brayan Guerra López",
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": "Modelación y análisis de datos en redes complejas multicapa",
@@ -16377,6 +16452,15 @@
         "ayudantes": [
           {
             "nombre": "Dania Sayuri Zaldívar Tanaka",
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Adriana Esperon Romero",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -17234,7 +17318,7 @@
         "nota": null,
         "salon": "001 (Yelizcalli)",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374269"
       }
     },
     "Economía I": {
@@ -18005,6 +18089,15 @@
               "Ju"
             ],
             "salon": "P102"
+          },
+          {
+            "nombre": "Seani Noemí Rodríguez Gómez",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -19237,7 +19330,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P213"
+            "salon": "301 (Yelizcalli)"
           },
           {
             "nombre": "Karyme Ivette Azpeitia García",
@@ -19257,7 +19350,7 @@
           }
         ],
         "nota": null,
-        "salon": "P213",
+        "salon": "301 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374997"
       }
@@ -21036,6 +21129,12 @@
         "ayudantes": [
           {
             "nombre": "César Alberto Díaz Hérnandez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Antonio Rodríguez Escalante",
             "horario": null,
             "dias": [],
             "salon": null
