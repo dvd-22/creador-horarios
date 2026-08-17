@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-16T08:45:48.257Z",
-  "totalProfessors": 3139,
-  "ratingsFound": 1435,
+  "lastUpdated": "2026-08-17T18:56:55.884Z",
+  "totalProfessors": 3147,
+  "ratingsFound": 1434,
   "foundPercentage": 46,
   "ratings": {
     "Aaron Ali Lozano Rocha": null,
@@ -110,6 +110,7 @@
     },
     "Adriana Elizabeth González Villalva": null,
     "Adriana Esmeralda Corona Mundo": null,
+    "Adriana Esperon Romero": null,
     "Adriana García Alarcón": {
       "name": "Adriana García Alarcón",
       "rating": 5.1,
@@ -472,6 +473,7 @@
       "url": "https://www.misprofesores.com/profesores/Alejandro-Legaspe-Serrano_149886"
     },
     "Alejandro López Saavedra": null,
+    "Alejandro Melchor Galván": null,
     "Alejandro Piña Vargas": null,
     "Alejandro Pérez Muñoz": null,
     "Alejandro Ramírez Buenrostro": {
@@ -703,6 +705,7 @@
     },
     "Alom Antonio Paz Jiménez": null,
     "Alondra Aguilar Lopez": null,
+    "Alondra Vega Pastrana": null,
     "Alonso Alejandro Colín Cruz": null,
     "Alonso Martínez Canabal": {
       "name": "Alonso Martínez Canabal",
@@ -1090,6 +1093,7 @@
       "url": "https://www.misprofesores.com/profesores/Antonio-Ortiz-Rodriguez_120590"
     },
     "Antonio Ortiz Velásquez": null,
+    "Antonio Rodríguez Escalante": null,
     "Antonio Romero Téllez": {
       "name": "Antonio Romero Téllez",
       "rating": 8.5,
@@ -1219,6 +1223,7 @@
     },
     "Arturo Alejandro Arvizu Velazquez": null,
     "Arturo Alonso Santaella Ortega": null,
+    "Arturo Arroyo Nuñez": null,
     "Arturo Avendaño Estrada": null,
     "Arturo Carlos II Becerra Bracho": {
       "name": "Arturo Carlos II Becerra Bracho",
@@ -3819,7 +3824,7 @@
     "Francisco Giovanni López Sánchez": {
       "name": "Francisco Giovanni López Sánchez",
       "rating": 8.8,
-      "commentCount": 85,
+      "commentCount": 86,
       "id": "99382",
       "url": "https://www.misprofesores.com/profesores/Francisco-Lopez-Sanchez_99382"
     },
@@ -4474,7 +4479,6 @@
     "Gustavo Ignacio Vázquez Cervantes": null,
     "Gustavo Marín Arriaga": null,
     "Gustavo Meléndez Valentin": null,
-    "Gustavo Pacheco Santiago": null,
     "Gustavo Sandoval Joya": null,
     "Gustavo Sánchez Chávez": null,
     "Hannia Lizbeth Pérez Vargas": null,
@@ -4519,6 +4523,13 @@
     },
     "Helios Farrell González": null,
     "Heriberto Prado García": null,
+    "Herminio Suárez Quiroz": {
+      "name": "Herminio Suárez Quiroz",
+      "rating": 5.7,
+      "commentCount": 50,
+      "id": "41663",
+      "url": "https://www.misprofesores.com/profesores/Herminio-Suarez-Quiroz_41663"
+    },
     "Hernán Alvarado Sizzo": null,
     "Hilda Angélica Martínez Becerril": null,
     "Hilde Posadas Lira": null,
@@ -4695,13 +4706,6 @@
       "commentCount": 16,
       "id": "95064",
       "url": "https://www.misprofesores.com/profesores/Hector-Ortiz-Rangel_95064"
-    },
-    "Héctor Méndez Lango": {
-      "name": "Héctor Méndez Lango",
-      "rating": 8.3,
-      "commentCount": 57,
-      "id": "72666",
-      "url": "https://www.misprofesores.com/profesores/Hector-Mendez-Lango_72666"
     },
     "Héctor de Jesús Cruz-Manjarrez Flores-Alonso": {
       "name": "Héctor de Jesús Cruz-Manjarrez Flores-Alonso",
@@ -5116,13 +5120,6 @@
       "id": "108129",
       "url": "https://www.misprofesores.com/profesores/Javier-Alcocer-Durand_108129"
     },
-    "Javier Andrés Juárez Díaz": {
-      "name": "Javier Andres Juarez Diaz",
-      "rating": 5.9,
-      "commentCount": 9,
-      "id": "79170",
-      "url": "https://www.misprofesores.com/profesores/Javier-Juarez-Diaz_79170"
-    },
     "Javier Axosco Marin": {
       "name": "Javier Axosco Marin",
       "rating": 9.9,
@@ -5199,8 +5196,8 @@
     "Jeanett Monroy Anzueto": null,
     "Jehú López Aparicio": {
       "name": "Jehú López Aparicio",
-      "rating": 6.1,
-      "commentCount": 21,
+      "rating": 5.9,
+      "commentCount": 22,
       "id": "94740",
       "url": "https://www.misprofesores.com/profesores/Jehu-Lopez-Aparicio_94740"
     },
@@ -5865,6 +5862,7 @@
       "id": "171686",
       "url": "https://www.misprofesores.com/profesores/Jose-Perusquia-Cortes_171686"
     },
+    "José Antonio Pulido Pérez": null,
     "José Antonio Reyes León": {
       "name": "José Antonio Reyes León",
       "rating": 5.8,
@@ -6377,6 +6375,7 @@
       "id": "194848",
       "url": "https://www.misprofesores.com/profesores/Juan-Gomez-Verjan_194848"
     },
+    "Juan Carlos Montero García": null,
     "Juan Carlos Peña Becerril": {
       "name": "Juan Carlos Peña Becerril",
       "rating": 8.6,
@@ -7010,6 +7009,7 @@
       "id": "134569",
       "url": "https://www.misprofesores.com/profesores/Lilian-Valencia-Turcotte_134569"
     },
+    "Liliana Flores Tamias": null,
     "Liliana Gaytán Cruz": null,
     "Liliana Itzé López Olmedo": {
       "name": "Liliana Itze López Olmedo",
@@ -7898,6 +7898,7 @@
       "id": "195655",
       "url": "https://www.misprofesores.com/profesores/Mariana-Vargas-Sanchez_195655"
     },
+    "Mariana Yoselin Hérnandez Flores": null,
     "Mariana Zareth Nava López": {
       "name": "Mariana Zareth Nava López",
       "rating": 9.6,
@@ -11514,6 +11515,7 @@
       "id": "99061",
       "url": "https://www.misprofesores.com/profesores/Xavier-Valencia-Diaz_99061"
     },
+    "Xavier Oded Espinosa Guerrero": null,
     "Ximena Cecilia Rodríguez Ruíz": null,
     "Ximena Delgado Villegas": null,
     "Ximena Estrada Zavaleta": {
@@ -11755,12 +11757,12 @@
     "Óscar Romero Báez": null
   },
   "statistics": {
-    "processed": 3139,
-    "found": 1435,
-    "notFound": 1704,
+    "processed": 3147,
+    "found": 1434,
+    "notFound": 1713,
     "foundWithFallback": 59,
-    "foundWithMainTemplate": 1376,
-    "keptExisting": 1433,
-    "upgraded": 1
+    "foundWithMainTemplate": 1375,
+    "keptExisting": 1431,
+    "upgraded": 2
   }
 }
