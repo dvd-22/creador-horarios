@@ -1580,7 +1580,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alicia Dorantes Bravo",
             "horario": "20:00 a 21:00",
             "dias": [
               "Lu",
@@ -2089,6 +2089,26 @@
               "Vi"
             ],
             "salon": "Aula Magna P"
+          },
+          {
+            "nombre": "Erick Javier Vargas Ruiz",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Johan Eduardo Pérez Ramírez",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2623,7 +2643,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "P201",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374050"
       },
       "8043": {
         "grupo": "8043",
@@ -4116,7 +4136,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Brenda Selene Torres Ortiz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "102 (Tlaltícpac)",
         "modalidad": "Presencial",
@@ -4150,6 +4177,15 @@
               "Ju"
             ],
             "salon": "O220"
+          },
+          {
+            "nombre": "Daniela Torija Sánchez",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4243,6 +4279,15 @@
               "Ju"
             ],
             "salon": "002 (Yelizcalli)"
+          },
+          {
+            "nombre": "Edgar Yarid Bermúdez Álvarez",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4267,13 +4312,22 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "José Mario Martínez Alfaro",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
               "Ju"
             ],
             "salon": "003 (Yelizcalli)"
+          },
+          {
+            "nombre": "Manuel Alfredo Cadena Loces",
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4818,7 +4872,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Emilio Sánchez Olivares",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "O132",
         "modalidad": "Presencial",
@@ -5895,6 +5956,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Christian Sebastián Hernández Canales",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6076,6 +6143,12 @@
         "ayudantes": [
           {
             "nombre": "Yesai Antonio Garza Valencia",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Fernando Gabriel Ortíz Vega",
             "horario": null,
             "dias": [],
             "salon": null
@@ -6512,7 +6585,7 @@
         "nota": null,
         "salon": "103",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374613"
       },
       "8292": {
         "grupo": "8292",
@@ -6854,7 +6927,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Olga Sagrario Torres Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "O133",
         "modalidad": "Presencial",
@@ -7381,7 +7461,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "Debido a circunstancias externas a la coordinación el grupo se cerrara, contactar al profesor.",
         "salon": null,
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375085"

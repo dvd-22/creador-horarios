@@ -3312,7 +3312,7 @@
           }
         ],
         "nota": null,
-        "salon": "103 (Tlaltícpac)",
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375395"
       },
@@ -3367,7 +3367,7 @@
           }
         ],
         "nota": null,
-        "salon": "103 (Tlaltícpac)",
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375397"
       },
@@ -3391,7 +3391,7 @@
             "dias": [
               "Vi"
             ],
-            "salon": "103 (Tlaltícpac)"
+            "salon": "004"
           }
         ],
         "nota": null,
@@ -3419,11 +3419,11 @@
             "dias": [
               "Vi"
             ],
-            "salon": "103 (Tlaltícpac)"
+            "salon": "104 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "103 (Tlaltícpac)",
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375399"
       },
@@ -3463,7 +3463,6 @@
             {
               "horario": "15:00 a 18:00",
               "dias": [
-                "Lu",
                 "Ju"
               ]
             }
@@ -3472,13 +3471,15 @@
         "ayudantes": [
           {
             "nombre": "Leda Carolina Torres Maldonado",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "15:00 a 18:00",
+            "dias": [
+              "Lu"
+            ],
+            "salon": "104 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "103 (Tlaltícpac)",
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375401"
       },
@@ -3505,7 +3506,7 @@
           }
         ],
         "nota": null,
-        "salon": "103 (Tlaltícpac)",
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375402"
       },
@@ -3532,7 +3533,7 @@
           }
         ],
         "nota": null,
-        "salon": "103 (Tlaltícpac)",
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375403"
       },
@@ -3559,7 +3560,7 @@
           }
         ],
         "nota": null,
-        "salon": "103 (Tlaltícpac)",
+        "salon": "104 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375404"
       }
@@ -6081,8 +6082,7 @@
             {
               "horario": "07:30 a 10:30",
               "dias": [
-                "Mi",
-                "Sa"
+                "Mi"
               ]
             }
           ]
@@ -6090,13 +6090,15 @@
         "ayudantes": [
           {
             "nombre": "Karen Yazmín Ruíz Mondragón",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Sa"
+            ],
+            "salon": "101"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "101",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375491"
       },
@@ -6192,8 +6194,7 @@
             {
               "horario": "11:00 a 14:00",
               "dias": [
-                "Mi",
-                "Sa"
+                "Mi"
               ]
             }
           ]
@@ -6201,13 +6202,15 @@
         "ayudantes": [
           {
             "nombre": "Francisco Parraguirre Sánchez",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Sa"
+            ],
+            "salon": "003"
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Genética",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375495"
       },
@@ -7325,7 +7328,7 @@
           }
         ],
         "nota": null,
-        "salon": "009",
+        "salon": "B006",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375535"
       },
@@ -7863,7 +7866,7 @@
             "dias": [
               "Mi"
             ],
-            "salon": null
+            "salon": "302 (Tlaltícpac)"
           }
         ],
         "nota": null,
@@ -8100,7 +8103,7 @@
       "5466": {
         "grupo": "5466",
         "profesor": {
-          "nombre": "Rodrigo Muñoz Avilés",
+          "nombre": null,
           "horarios": [
             {
               "horario": "11:00 a 14:00",

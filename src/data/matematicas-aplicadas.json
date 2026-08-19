@@ -2200,7 +2200,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alicia Dorantes Bravo",
             "horario": "20:00 a 21:00",
             "dias": [
               "Lu",
@@ -2622,7 +2622,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "P201",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374049"
       },
       "4069": {
         "grupo": "4069",
@@ -3935,6 +3935,26 @@
               "Vi"
             ],
             "salon": "Aula Magna P"
+          },
+          {
+            "nombre": "Erick Javier Vargas Ruiz",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Johan Eduardo Pérez Ramírez",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5081,6 +5101,12 @@
               "Ju"
             ],
             "salon": "O134"
+          },
+          {
+            "nombre": "Luis Augusto Martínez Sánchez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5449,6 +5475,12 @@
               "Ju"
             ],
             "salon": "O222"
+          },
+          {
+            "nombre": "Luis Adrián Pedroza Rojas",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5573,7 +5605,7 @@
         ],
         "nota": null,
         "salon": "Aula Magna II",
-        "modalidad": null,
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375684"
       },
       "4374": {
@@ -6358,6 +6390,16 @@
               "Vi"
             ],
             "salon": "O124"
+          },
+          {
+            "nombre": "Daniela Torija Sánchez",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6906,6 +6948,15 @@
               "Ju"
             ],
             "salon": "P201"
+          },
+          {
+            "nombre": "Atzi Merino",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7389,11 +7440,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O122"
+            "salon": "O134"
           }
         ],
         "nota": null,
-        "salon": "O122",
+        "salon": "O134",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375679"
       },
@@ -8153,6 +8204,15 @@
               "Ju"
             ],
             "salon": "O220"
+          },
+          {
+            "nombre": "Daniela Torija Sánchez",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -8246,6 +8306,15 @@
               "Ju"
             ],
             "salon": "002 (Yelizcalli)"
+          },
+          {
+            "nombre": "Edgar Yarid Bermúdez Álvarez",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -8270,13 +8339,22 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "José Mario Martínez Alfaro",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
               "Ju"
             ],
             "salon": "003 (Yelizcalli)"
+          },
+          {
+            "nombre": "Manuel Alfredo Cadena Loces",
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -8643,6 +8721,15 @@
               "Ju"
             ],
             "salon": "O124"
+          },
+          {
+            "nombre": "Perla Andrea Candela Flores",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -9298,7 +9385,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Axel Sael Blanco Olivares",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
@@ -9391,13 +9478,22 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ariadna Amayrani Ferrari Pardiño",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
               "Ju"
             ],
             "salon": "206 (Yelizcalli)"
+          },
+          {
+            "nombre": "Marco Antonio Oliveros Hérnandez",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -9739,6 +9835,15 @@
               "Ju"
             ],
             "salon": "102 (Yelizcalli)"
+          },
+          {
+            "nombre": "Juan Morales Velasco",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -9911,11 +10016,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "101 (Tlaltícpac)"
+            "salon": "206 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "101 (Tlaltícpac)",
+        "salon": "206 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375157"
       },
@@ -9996,7 +10101,7 @@
       "6035": {
         "grupo": "6035",
         "profesor": {
-          "nombre": "Ana Gabriela Rojas Hernández",
+          "nombre": "Verónica Yael Escalante Hernández",
           "horarios": [
             {
               "horario": "14:00 a 16:00",
@@ -10063,7 +10168,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Francisco Javier Alvarado Cabrera",
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -10871,11 +10976,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "104 (Tlaltícpac)"
+            "salon": "P213"
           }
         ],
         "nota": null,
-        "salon": "104 (Tlaltícpac)",
+        "salon": "P213",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375267"
       },
@@ -11472,7 +11577,7 @@
         "nota": null,
         "salon": "P117",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375635"
       }
     },
     "Teoría de Juegos I": {
@@ -11651,6 +11756,15 @@
             "salon": "P213"
           },
           {
+            "nombre": "José Antonio Barrientos Sánchez",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
             "nombre": "Vianey Guadalupe Cortes Hernández",
             "horario": "12:00 a 13:00",
             "dias": [
@@ -11658,6 +11772,15 @@
               "Ju"
             ],
             "salon": "P213"
+          },
+          {
+            "nombre": "José Antonio Barrientos Sánchez",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -11962,7 +12085,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Jonathan Olivera Flores",
+            "nombre": "José Manuel Madrigal Ramírez",
             "horario": "18:00 a 19:00",
             "dias": [
               "Ma",
@@ -12094,6 +12217,14 @@
           },
           {
             "nombre": "Brenda Ayala Flores",
+            "horario": "12:00 a 14:00",
+            "dias": [
+              "Ma"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Brenda Ayala Flores",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -12108,6 +12239,14 @@
               "Ma"
             ],
             "salon": "Taller de Sistemas Operativos, Redes de Cómputo, Sistemas Distribuidos y Manejo de Información"
+          },
+          {
+            "nombre": "Brenda Ayala Flores",
+            "horario": "12:00 a 14:00",
+            "dias": [
+              "Ma"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -12428,11 +12567,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "305 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "P107",
+        "salon": "305 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": null
       }
@@ -13436,6 +13575,15 @@
               "Ju"
             ],
             "salon": "Aula Magna P"
+          },
+          {
+            "nombre": "José Oscar Rosales Vergara",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
