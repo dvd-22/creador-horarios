@@ -197,7 +197,7 @@
           "nombre": "Marysol Trujano Ortega",
           "horarios": [
             {
-              "horario": "07:30 a 09:30",
+              "horario": "07:30 a 10:30",
               "dias": [
                 "Mi"
               ]
@@ -3969,6 +3969,31 @@
         "salon": null,
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377203"
+      },
+      "5705": {
+        "grupo": "5705",
+        "profesor": {
+          "nombre": "Brenda Noemí Marquina Castillo",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Constanza Estefanía Martínez Olivares",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Mayra Silva Miranda",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Análisis del papel de miRNAs en la infección tuberculosa",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -10425,6 +10450,49 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5706": {
+        "grupo": "5706",
+        "profesor": {
+          "nombre": "Claudia Patricia Ornelas García",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Eloisa Torres Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Morelia Camacho Cervantes",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Carlos Salvador Pedraza Lara",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Jesús Alberto Díaz Cruz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Fernando Córdova Tapia",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Diversidad y evolución animal en ecosistemas de agua dulce",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -11127,7 +11195,7 @@
             "dias": [
               "Vi"
             ],
-            "salon": "B007"
+            "salon": "B008"
           }
         ],
         "nota": null,

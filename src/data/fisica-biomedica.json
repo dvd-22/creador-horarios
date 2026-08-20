@@ -376,6 +376,16 @@
               "Vi"
             ],
             "salon": "206 (Yelizcalli)"
+          },
+          {
+            "nombre": "Carlos Saidt Fernández Naser",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -551,6 +561,16 @@
               "Vi"
             ],
             "salon": "206 (Yelizcalli)"
+          },
+          {
+            "nombre": "Francisco Arzola Galindo",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
@@ -1821,6 +1841,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Lesly Paola Montaño Gómez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
@@ -2264,6 +2290,26 @@
               "Vi"
             ],
             "salon": "Aula Magna II"
+          },
+          {
+            "nombre": "Anayeli Karina Sainos García",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Luis Enrique Guerra Camacho",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3661,6 +3707,12 @@
         "ayudantes": [
           {
             "nombre": "Mariana Itzel Martínez Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "José Andrés Galicia Hernández",
             "horario": null,
             "dias": [],
             "salon": null
@@ -6821,6 +6873,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Alvaro Daniel Cruz Cortes",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6927,14 +6985,7 @@
             }
           ]
         },
-        "ayudantes": [
-          {
-            "nombre": "Olga Sagrario Torres Martínez",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
+        "ayudantes": [],
         "nota": null,
         "salon": "O133",
         "modalidad": "Presencial",
@@ -7450,18 +7501,11 @@
       "3036": {
         "grupo": "3036",
         "profesor": {
-          "nombre": "Alejandro Villarreal López",
+          "nombre": "Saúl Lobato Santana",
           "horarios": []
         },
-        "ayudantes": [
-          {
-            "nombre": "Saúl Lobato Santana",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": "Debido a circunstancias externas a la coordinación el grupo se cerrara, contactar al profesor.",
+        "ayudantes": [],
+        "nota": "Se acordará con el profesor el salón y horario",
         "salon": null,
         "modalidad": "Mixta",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375085"

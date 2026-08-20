@@ -855,7 +855,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Octavio David Plata Baldovinos",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
@@ -996,6 +996,16 @@
               "Vi"
             ],
             "salon": "206 (Yelizcalli)"
+          },
+          {
+            "nombre": "Carlos Saidt Fernández Naser",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1171,6 +1181,16 @@
               "Vi"
             ],
             "salon": "206 (Yelizcalli)"
+          },
+          {
+            "nombre": "Francisco Arzola Galindo",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
@@ -4867,6 +4887,15 @@
               "Ju"
             ],
             "salon": "003 (Yelizcalli)"
+          },
+          {
+            "nombre": "Luis Angel de la Riva Canseco",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5283,7 +5312,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Adad Israel Gonzalez Castro",
+            "nombre": null,
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -5602,6 +5631,15 @@
               "Ju"
             ],
             "salon": "002 (Yelizcalli)"
+          },
+          {
+            "nombre": "Adad Israel Gonzalez Castro",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5809,6 +5847,16 @@
               "Vi"
             ],
             "salon": "O215"
+          },
+          {
+            "nombre": "Alonso Alejandro Colín Cruz",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6054,11 +6102,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "300 (Tlaltícpac)"
+            "salon": "204 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "300 (Tlaltícpac)",
+        "salon": "204 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374162"
       },
@@ -6230,6 +6278,12 @@
               "Vi"
             ],
             "salon": "102 (Yelizcalli)"
+          },
+          {
+            "nombre": "Yanh Vissuet Oliver",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6312,7 +6366,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ricardo Domínguez Soto",
             "horario": "17:00 a 18:00",
             "dias": [
               "Lu",
@@ -8201,7 +8255,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Xalik Ortiz Hernández",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -9360,6 +9414,12 @@
         "ayudantes": [
           {
             "nombre": "Mariana Itzel Martínez Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "José Andrés Galicia Hernández",
             "horario": null,
             "dias": [],
             "salon": null
@@ -11138,6 +11198,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Jesús Ismael Garduño Maldonado",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -11289,6 +11358,15 @@
               "Ju"
             ],
             "salon": "P212"
+          },
+          {
+            "nombre": "Angélica Reyes Arellano",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -11582,6 +11660,15 @@
               "Ju"
             ],
             "salon": "O134"
+          },
+          {
+            "nombre": "Mario Alejandro Molina Palma",
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -11686,6 +11773,15 @@
               "Ju"
             ],
             "salon": "O214"
+          },
+          {
+            "nombre": "Lorenzo Antonio Alvarado Cabrera",
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -12332,7 +12428,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Andrés Daniel López Molina",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -12678,6 +12774,15 @@
               "Ju"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "Nicole Lissette González Vázquez",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -12943,6 +13048,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Fernando Martínez Mosqueda",
+            "horario": "09:00 a 10:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -13030,6 +13144,15 @@
         "ayudantes": [
           {
             "nombre": "Rodrigo Basaldud Ortega",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Brenda Lizeth Ramírez Arista",
             "horario": "17:00 a 18:00",
             "dias": [
               "Ma",
@@ -14019,7 +14142,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Hugo Víctor García Martínez",
             "horario": "13:00 a 14:00",
             "dias": [
               "Ma",
@@ -14607,6 +14730,15 @@
               "Ju"
             ],
             "salon": null
+          },
+          {
+            "nombre": "Rodrígo Enrique Camacho Juárez",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -14638,6 +14770,15 @@
               "Ju"
             ],
             "salon": "O218"
+          },
+          {
+            "nombre": "María Renee de Jesús Domínguez Aguilar",
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -14940,6 +15081,14 @@
               "Ma"
             ],
             "salon": "Laboratorio de Ciencias de la Computación 3"
+          },
+          {
+            "nombre": "José Eduardo Cruz Campos",
+            "horario": "14:00 a 16:00",
+            "dias": [
+              "Ma"
+            ],
+            "salon": "Taller de Sistemas Operativos, Redes de Cómputo, Sistemas Distribuidos y Manejo de Información"
           }
         ],
         "nota": null,
@@ -17280,6 +17429,15 @@
               "Ju"
             ],
             "salon": "303 (Yelizcalli)"
+          },
+          {
+            "nombre": "Agustín Alberto Rosas Medina",
+            "horario": "16:00 a 17:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -17700,6 +17858,15 @@
               "Ju"
             ],
             "salon": "O215"
+          },
+          {
+            "nombre": "Rodrigo Arellano García",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -18185,7 +18352,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Cristián Jesús Torres Lozada",
+            "nombre": null,
             "horario": "09:00 a 10:00",
             "dias": [
               "Ma",
@@ -18447,6 +18614,15 @@
               "Ju"
             ],
             "salon": "001 (Yelizcalli)"
+          },
+          {
+            "nombre": "Pablo Josué Peña Molina",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -18471,7 +18647,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Cristián Jesús Torres Lozada",
+            "nombre": null,
             "horario": "10:00 a 11:00",
             "dias": [
               "Ma",
@@ -19534,6 +19710,15 @@
             "salon": "301 (Yelizcalli)"
           },
           {
+            "nombre": "Seldon Sautto Ramírez",
+            "horario": "11:00 a 12:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
             "nombre": "Karyme Ivette Azpeitia García",
             "horario": "14:00 a 16:00",
             "dias": [
@@ -20570,6 +20755,12 @@
               "Ju"
             ],
             "salon": "306 (Yelizcalli)"
+          },
+          {
+            "nombre": "Aldo Ramírez Alanis",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -20631,11 +20822,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P118"
+            "salon": "Taller de Análisis Numérico"
           }
         ],
         "nota": null,
-        "salon": "P118",
+        "salon": "Taller de Análisis Numérico",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374794"
       },
@@ -20788,11 +20979,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Taller de Análisis Numérico"
+            "salon": "P118"
           }
         ],
         "nota": null,
-        "salon": "Taller de Análisis Numérico",
+        "salon": "P118",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374882"
       }

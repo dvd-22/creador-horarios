@@ -376,6 +376,16 @@
               "Vi"
             ],
             "salon": "206 (Yelizcalli)"
+          },
+          {
+            "nombre": "Carlos Saidt Fernández Naser",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3798,6 +3808,26 @@
               "Vi"
             ],
             "salon": "Aula Magna II"
+          },
+          {
+            "nombre": "Anayeli Karina Sainos García",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Luis Enrique Guerra Camacho",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4212,7 +4242,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "José Luis Meza Cabañas",
+            "nombre": null,
             "horario": "11:00 a 14:00",
             "dias": [
               "Ma",
@@ -4739,6 +4769,15 @@
               "Ju"
             ],
             "salon": "003 (Yelizcalli)"
+          },
+          {
+            "nombre": "Luis Angel de la Riva Canseco",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5155,7 +5194,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Adad Israel Gonzalez Castro",
+            "nombre": null,
             "horario": "16:00 a 17:00",
             "dias": [
               "Ma",
@@ -5474,6 +5513,15 @@
               "Ju"
             ],
             "salon": "002 (Yelizcalli)"
+          },
+          {
+            "nombre": "Adad Israel Gonzalez Castro",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5681,6 +5729,16 @@
               "Vi"
             ],
             "salon": "O215"
+          },
+          {
+            "nombre": "Alonso Alejandro Colín Cruz",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5926,11 +5984,11 @@
               "Mi",
               "Vi"
             ],
-            "salon": "300 (Tlaltícpac)"
+            "salon": "204 (Yelizcalli)"
           }
         ],
         "nota": null,
-        "salon": "300 (Tlaltícpac)",
+        "salon": "204 (Yelizcalli)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374162"
       },
@@ -6102,6 +6160,12 @@
               "Vi"
             ],
             "salon": "102 (Yelizcalli)"
+          },
+          {
+            "nombre": "Yanh Vissuet Oliver",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6184,7 +6248,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ricardo Domínguez Soto",
             "horario": "17:00 a 18:00",
             "dias": [
               "Lu",
@@ -6457,6 +6521,12 @@
         "ayudantes": [
           {
             "nombre": "Mariana Itzel Martínez Hernández",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "José Andrés Galicia Hernández",
             "horario": null,
             "dias": [],
             "salon": null
@@ -13079,6 +13149,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Lucero Angélica Salazar Rodríguez",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -14904,7 +14980,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Xalik Ortiz Hernández",
             "horario": "12:00 a 13:00",
             "dias": [
               "Ma",
@@ -15156,7 +15232,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Mario Atzin Nataren Elizalde",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "P115",
         "modalidad": "Presencial",
@@ -17931,7 +18014,14 @@
         "grupo": "8390",
         "profesor": {
           "nombre": "Tomás Antonio Valencia Pérez",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "15:00 a 18:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -18600,7 +18690,14 @@
           "nombre": "Jorge Fuentes Fernández",
           "horarios": []
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Luz Belén Pérez García",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": "Instrumentación Astrofísica",
         "salon": null,
         "modalidad": "Presencial",
@@ -18690,7 +18787,7 @@
           }
         ],
         "nota": "Introducción a la fotónica computacional.",
-        "salon": null,
+        "salon": "P209",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375706"
       }
@@ -18788,7 +18885,7 @@
           }
         ],
         "nota": "Ciencia de redes",
-        "salon": null,
+        "salon": "P110",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374745"
       },
@@ -18811,7 +18908,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Jesús Omar Franco Franco",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": "Sistemas físicos con capacidad computacional colectiva emergente",
         "salon": "P109",
         "modalidad": "Presencial",
@@ -18884,6 +18988,15 @@
               "Ju"
             ],
             "salon": "O214"
+          },
+          {
+            "nombre": "Lorenzo Antonio Alvarado Cabrera",
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
