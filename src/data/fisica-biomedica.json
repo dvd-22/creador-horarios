@@ -1525,7 +1525,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Diana Aurora Santiago Ruíz",
             "horario": "08:00 a 09:00",
             "dias": [
               "Lu",
@@ -1560,7 +1560,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Alberto Bucio Nava",
             "horario": "15:00 a 16:00",
             "dias": [
               "Lu",
@@ -1960,6 +1960,16 @@
               "Vi"
             ],
             "salon": "P201"
+          },
+          {
+            "nombre": "María Adelina Torres Ochoa",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3151,7 +3161,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Luis Manuel Venegas Grajales",
             "horario": "07:00 a 08:00",
             "dias": [
               "Ma",
@@ -3213,7 +3223,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Salvador López Valdés",
             "horario": "21:00 a 22:00",
             "dias": [
               "Ma",
@@ -4269,6 +4279,15 @@
               "Ju"
             ],
             "salon": "102 (Yelizcalli)"
+          },
+          {
+            "nombre": "Alejandra Zenil Cruz",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,

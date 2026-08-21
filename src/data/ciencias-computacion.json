@@ -412,9 +412,9 @@
             {
               "horario": "13:00 a 14:00",
               "dias": [
-                "Lu",
+                "Ma",
                 "Mi",
-                "Vi"
+                "Ju"
               ]
             }
           ]
@@ -424,10 +424,19 @@
             "nombre": "Moises Olaf Rosas Tavera",
             "horario": "13:00 a 14:00",
             "dias": [
-              "Ma",
-              "Ju"
+              "Lu",
+              "Vi"
             ],
             "salon": "004 (Yelizcalli)"
+          },
+          {
+            "nombre": "Claudia Marlene De la Cruz Torres",
+            "horario": "13:00 a 14:00",
+            "dias": [
+              "Lu",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1692,7 +1701,7 @@
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
-        "salon": "Aula T1",
+        "salon": "P211",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374927"
       },
@@ -2040,6 +2049,15 @@
               "Ju"
             ],
             "salon": "004 (Yelizcalli)"
+          },
+          {
+            "nombre": "Fernando Daniel Carrasco Ponce",
+            "horario": "15:00 a 16:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2832,6 +2850,15 @@
               "Ju"
             ],
             "salon": "O121"
+          },
+          {
+            "nombre": "Carlos Emiliano Sandoval Amador",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3237,6 +3264,15 @@
               "Ju"
             ],
             "salon": "P208"
+          },
+          {
+            "nombre": "Armando Reyes Casas",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3336,6 +3372,15 @@
               "Ju"
             ],
             "salon": "102 (Yelizcalli)"
+          },
+          {
+            "nombre": "Stephanie Nicole Cabello Fragoso",
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3783,7 +3828,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P211"
+            "salon": "Aula T1"
           },
           {
             "nombre": "Miriam Torres Bucio",
@@ -3795,7 +3840,7 @@
           }
         ],
         "nota": null,
-        "salon": "P211",
+        "salon": "Aula T1",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374953"
       },
@@ -4280,6 +4325,24 @@
               "Ju"
             ],
             "salon": "Aula Magna P"
+          },
+          {
+            "nombre": "José Jorge Martínez de la Cruz",
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Sebastián Velázquez Valderrama",
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5113,7 +5176,7 @@
               "Ma",
               "Ju"
             ],
-            "salon": "P211"
+            "salon": "Aula T1"
           },
           {
             "nombre": "Kevin Jair Torres Valencia",
@@ -5125,7 +5188,7 @@
           }
         ],
         "nota": null,
-        "salon": "P211",
+        "salon": "Aula T1",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374981"
       },
@@ -5797,7 +5860,7 @@
             "salon": "P102"
           },
           {
-            "nombre": null,
+            "nombre": "Diana Laura Luciano Paniagua",
             "horario": "14:00 a 16:00",
             "dias": [
               "Mi"
@@ -5978,6 +6041,14 @@
               "Vi"
             ],
             "salon": "Taller de Lenguajes de Programación"
+          },
+          {
+            "nombre": "Erick Bernal Márquez",
+            "horario": "15:00 a 17:00",
+            "dias": [
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6120,11 +6191,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": null
+            "salon": "Taller de Análisis Numérico"
           }
         ],
-        "nota": "La ayudantía se impartirá en el salón O127",
-        "salon": "Taller de Computación Visual e Innovación Tecnológica",
+        "nota": null,
+        "salon": "Taller de Análisis Numérico",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377402"
       }
@@ -8753,6 +8824,15 @@
               "Ju"
             ],
             "salon": "Taller de Análisis Numérico"
+          },
+          {
+            "nombre": "Miguel Angel Cortés Ortiz",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -9222,6 +9302,15 @@
               "Ju"
             ],
             "salon": "Aula Magna Juan de Oyarzabal"
+          },
+          {
+            "nombre": "Miguel Angel Cortés Ortiz",
+            "horario": "18:00 a 19:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
