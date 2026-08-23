@@ -1643,6 +1643,12 @@
               "Vi"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "Uri Manuel Jiménez Mendoza",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -2537,6 +2543,24 @@
               "Ju"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "Vania Victoria Villegas Martínez",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Erick Tovar Venegas",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3881,6 +3905,12 @@
               "Ju"
             ],
             "salon": "101 (Yelizcalli)"
+          },
+          {
+            "nombre": "Nefthali Cerecedo Cruz",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4069,13 +4099,22 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Sajid Daniel García Franco",
             "horario": "08:00 a 09:00",
             "dias": [
               "Ma",
               "Ju"
             ],
             "salon": "101 (Yelizcalli)"
+          },
+          {
+            "nombre": "Nancy Daniela Arroyo Martínez",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4271,7 +4310,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Ulises Rosales Gallegos",
             "horario": "11:00 a 14:00",
             "dias": [
               "Ma",
@@ -4665,6 +4704,24 @@
               "Ju"
             ],
             "salon": "Aula Magna P"
+          },
+          {
+            "nombre": "Christian Díaz Ojeda",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Zoe Aracely Ortega Velázquez",
+            "horario": "07:00 a 08:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4767,6 +4824,15 @@
               "Ju"
             ],
             "salon": "P213"
+          },
+          {
+            "nombre": "Diego Flores Rodríguez",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4838,6 +4904,15 @@
               "Ju"
             ],
             "salon": "O220"
+          },
+          {
+            "nombre": "Omar Cruz Razgado",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -5750,6 +5825,16 @@
               "Vi"
             ],
             "salon": "P210"
+          },
+          {
+            "nombre": "Angel Daniel Rodríguez Castilla",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -6291,7 +6376,7 @@
               "Mi",
               "Vi"
             ],
-            "salon": "O214"
+            "salon": "Aula Magna I"
           },
           {
             "nombre": "Liliana Flores Tamias",
@@ -6305,7 +6390,7 @@
           }
         ],
         "nota": null,
-        "salon": "O214",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374167"
       },
@@ -6675,6 +6760,12 @@
         "ayudantes": [
           {
             "nombre": "Diego Acosta Tovar",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Antonio Joseph Alcántara López",
             "horario": null,
             "dias": [],
             "salon": null
@@ -7463,6 +7554,16 @@
               "Vi"
             ],
             "salon": "102 (Yelizcalli)"
+          },
+          {
+            "nombre": "Esteban Librado Hernández Escamilla",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7502,7 +7603,7 @@
               "Mi",
               "Vi"
             ],
-            "salon": "P203"
+            "salon": "O215"
           }
         ],
         "nota": null,
@@ -7642,7 +7743,7 @@
               "Mi",
               "Vi"
             ],
-            "salon": "O215"
+            "salon": "P203"
           }
         ],
         "nota": null,
@@ -7737,7 +7838,7 @@
         ],
         "nota": null,
         "salon": null,
-        "modalidad": "Mixta",
+        "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374186"
       },
       "4182": {
@@ -7773,6 +7874,16 @@
               "Vi"
             ],
             "salon": "O218"
+          },
+          {
+            "nombre": "Jorge Luis Arroyo Leonor",
+            "horario": "21:00 a 22:00",
+            "dias": [
+              "Lu",
+              "Mi",
+              "Vi"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -7997,6 +8108,15 @@
               "Ju"
             ],
             "salon": "O124"
+          },
+          {
+            "nombre": "Gerardo Zago Yáñez",
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -8139,6 +8259,15 @@
               "Ju"
             ],
             "salon": "P212"
+          },
+          {
+            "nombre": "Kevin Arath Garrido Galindo",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -10196,6 +10325,15 @@
               "Ju"
             ],
             "salon": "P207"
+          },
+          {
+            "nombre": "Susana Alejandra Barrera Ávalos",
+            "horario": "19:00 a 20:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -12605,8 +12743,8 @@
             "salon": null
           }
         ],
-        "nota": null,
-        "salon": "P116",
+        "nota": "El curso se impartirá en el salón Monges López del tercer piso del edificio Marcos Moshinsky del Instituto de Física",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374627"
       },
@@ -13125,6 +13263,12 @@
               "Ju"
             ],
             "salon": "Laboratorio de Física Moderna I"
+          },
+          {
+            "nombre": "Cristo Fernando Sánchez Nicolás",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": "Laboratorio de Física contemporánea I",
@@ -13779,6 +13923,15 @@
               "Ju"
             ],
             "salon": "O214"
+          },
+          {
+            "nombre": "Axel Leonardo Alcántara Pérez",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -13834,7 +13987,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Victoria Alejandra García Ortega",
+            "nombre": "Frida Mariela Rosas Calva",
             "horario": "14:00 a 15:00",
             "dias": [
               "Ma",
@@ -13871,11 +14024,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Aula Magna I"
+            "salon": "O214"
           }
         ],
         "nota": null,
-        "salon": "Aula Magna I",
+        "salon": "O214",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374175"
       },
@@ -13934,6 +14087,15 @@
               "Ju"
             ],
             "salon": "O220"
+          },
+          {
+            "nombre": "Hugo Antonio García Márquez",
+            "horario": "20:00 a 21:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -14770,6 +14932,15 @@
               "Ju"
             ],
             "salon": "102 (Yelizcalli)"
+          },
+          {
+            "nombre": "Daniela Itzel Valencia Mejía",
+            "horario": "10:00 a 11:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -14800,11 +14971,20 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Taller de Topología"
+            "salon": "008"
+          },
+          {
+            "nombre": "Michel Gabriel Magaña Heredia",
+            "horario": "12:00 a 13:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
-        "salon": "Taller de Topología",
+        "salon": "008",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374224"
       },
@@ -15291,6 +15471,15 @@
               "Ju"
             ],
             "salon": "Taller de Topología"
+          },
+          {
+            "nombre": "Eleazar Gómez Espinoza",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -15920,7 +16109,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Jonathan Alexis Gónzalez Gallegos",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "P117",
         "modalidad": "Presencial",
@@ -16507,7 +16703,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Christopher Villagra Piña",
+            "nombre": "Luis Manuel Venegas Grajales",
             "horario": "20:00 a 21:00",
             "dias": [
               "Ma",
@@ -17288,14 +17484,7 @@
             }
           ]
         },
-        "ayudantes": [
-          {
-            "nombre": "Ilse Gema Peña Bernardino",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
+        "ayudantes": [],
         "nota": null,
         "salon": "P109",
         "modalidad": "Presencial",
@@ -17434,7 +17623,7 @@
         },
         "ayudantes": [
           {
-            "nombre": null,
+            "nombre": "Zeus Caballero Pérez",
             "horario": "15:00 a 16:00",
             "dias": [
               "Ma",
@@ -17566,11 +17755,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "Taller de Análisis Numérico"
+            "salon": "P103"
           }
         ],
         "nota": "Temas selectos de geometría semi-riemanniana",
-        "salon": "Taller de Análisis Numérico",
+        "salon": "P103",
         "modalidad": null,
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374335"
       },
@@ -17968,7 +18157,14 @@
             }
           ]
         },
-        "ayudantes": [],
+        "ayudantes": [
+          {
+            "nombre": "Ana Rosaura Fischer Meza",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
         "nota": null,
         "salon": "O133",
         "modalidad": "Presencial",
@@ -18152,7 +18348,15 @@
         "grupo": "8388",
         "profesor": {
           "nombre": "Huziel Enoc Sauceda Félix",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "13:00 a 14:30",
+              "dias": [
+                "Ma",
+                "Ju"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -18162,7 +18366,7 @@
             "salon": null
           }
         ],
-        "nota": null,
+        "nota": "El curso se impartirá en la Sala Ruiz Mejía del Instituto de Física",
         "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374710"
@@ -18171,7 +18375,15 @@
         "grupo": "8389",
         "profesor": {
           "nombre": "Moises Zeleny Mora",
-          "horarios": []
+          "horarios": [
+            {
+              "horario": "14:30 a 16:00",
+              "dias": [
+                "Lu",
+                "Mi"
+              ]
+            }
+          ]
         },
         "ayudantes": [
           {
@@ -18182,7 +18394,7 @@
           }
         ],
         "nota": "Computo simbólico con git y github",
-        "salon": null,
+        "salon": "Aula 3 de Computación en Física",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374711"
       }
@@ -19206,6 +19418,12 @@
               "Ju"
             ],
             "salon": "O221"
+          },
+          {
+            "nombre": "Yuliett Tatiana Contreras González",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,

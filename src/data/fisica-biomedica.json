@@ -1643,6 +1643,12 @@
               "Vi"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "Uri Manuel Jiménez Mendoza",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -1813,7 +1819,7 @@
         "nota": "Grupo reservado para primer ingreso 2027",
         "salon": "Taller Interdisciplinario de Física y Biomedicina III",
         "modalidad": "Presencial",
-        "presentacion": null
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375052"
       },
       "3004": {
         "grupo": "3004",
@@ -2353,6 +2359,24 @@
               "Ju"
             ],
             "salon": "Aula Magna I"
+          },
+          {
+            "nombre": "Vania Victoria Villegas Martínez",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
+          },
+          {
+            "nombre": "Erick Tovar Venegas",
+            "horario": "08:00 a 09:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -3788,6 +3812,12 @@
             "horario": null,
             "dias": [],
             "salon": null
+          },
+          {
+            "nombre": "Antonio Joseph Alcántara López",
+            "horario": null,
+            "dias": [],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4041,24 +4071,10 @@
       "3010": {
         "grupo": "3010",
         "profesor": {
-          "nombre": "Jehú López Aparicio",
-          "horarios": [
-            {
-              "horario": "07:00 a 10:00",
-              "dias": [
-                "Ma",
-                "Ju"
-              ]
-            }
-          ]
+          "nombre": "Marco Gustavo Serna Estrada",
+          "horarios": []
         },
         "ayudantes": [
-          {
-            "nombre": "Marco Gustavo Serna Estrada",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          },
           {
             "nombre": "Edgar Adán Jiménez Díaz",
             "horario": null,
@@ -4073,7 +4089,7 @@
           }
         ],
         "nota": null,
-        "salon": "Taller Interdisciplinario de Física y Biomedicina III",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -4430,6 +4446,15 @@
               "Ju"
             ],
             "salon": "O124"
+          },
+          {
+            "nombre": "Gerardo Zago Yáñez",
+            "horario": "14:00 a 15:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,
@@ -4572,6 +4597,15 @@
               "Ju"
             ],
             "salon": "P212"
+          },
+          {
+            "nombre": "Kevin Arath Garrido Galindo",
+            "horario": "17:00 a 18:00",
+            "dias": [
+              "Ma",
+              "Ju"
+            ],
+            "salon": null
           }
         ],
         "nota": null,

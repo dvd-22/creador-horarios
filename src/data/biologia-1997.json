@@ -1481,7 +1481,7 @@
           }
         ],
         "nota": null,
-        "salon": "003",
+        "salon": "B004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373803"
       },
@@ -4529,7 +4529,7 @@
           }
         ],
         "nota": null,
-        "salon": "103 (Tlaltícpac)",
+        "salon": "B008",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373836"
       },
@@ -5827,6 +5827,37 @@
           }
         ],
         "nota": "Biodiversidad de los vertebrados terrestres de México.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5708": {
+        "grupo": "5708",
+        "profesor": {
+          "nombre": "Leticia Huidobro Campos",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Christian Lámbarri Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Xavier Gilberto Valencia Díaz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Sebastián Huacuja Barraza",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Hidrobiología: plancton, parásitos, peces y pesquerías.",
         "salon": null,
         "modalidad": null,
         "presentacion": null
@@ -8900,6 +8931,49 @@
           }
         ],
         "nota": "Estudio de la mitocondria: Cadena transportadora de electrones, fosforilación oxidativa y síntesis de ATP",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
+      },
+      "5707": {
+        "grupo": "5707",
+        "profesor": {
+          "nombre": "Mercedes Isolda Luna Vega",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Hernán Alvarado Sizzo",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Julio Cesar Ramírez Martínez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Celia Esperanza Sanginés Franco",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Othón Alcántara Ayala",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "César Antonio Ríos Muñoz",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Sistemática y biogeografía de la flora de ecosistemas templados de Mesoamérica",
         "salon": null,
         "modalidad": null,
         "presentacion": null
