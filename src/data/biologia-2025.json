@@ -4411,7 +4411,7 @@
             "dias": [
               "Sa"
             ],
-            "salon": "Laboratorio de Prácticas de Protistas y Algas"
+            "salon": "302 (Tlaltícpac)"
           }
         ],
         "nota": null,
@@ -4835,7 +4835,7 @@
           }
         ],
         "nota": null,
-        "salon": "201",
+        "salon": "S3",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375447"
       },
@@ -5922,11 +5922,11 @@
             "dias": [
               "Ju"
             ],
-            "salon": "B008"
+            "salon": "P111"
           }
         ],
         "nota": null,
-        "salon": "B008",
+        "salon": "P111",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375485"
       }
@@ -7328,7 +7328,7 @@
           }
         ],
         "nota": null,
-        "salon": "B006",
+        "salon": "S3",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375535"
       },
@@ -7508,7 +7508,7 @@
           "nombre": "Coral Cruz González Luna",
           "horarios": [
             {
-              "horario": "07:30 a 10:30",
+              "horario": "08:00 a 11:00",
               "dias": [
                 "Ma"
               ]
@@ -7526,7 +7526,7 @@
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula I",
+        "salon": "Sala de Cómputo I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375542"
       },
@@ -7606,7 +7606,7 @@
             "dias": [
               "Lu"
             ],
-            "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula I"
+            "salon": "003"
           }
         ],
         "nota": null,
@@ -7838,7 +7838,7 @@
             "dias": [
               "Ma"
             ],
-            "salon": "010"
+            "salon": "Sala de Cómputo II"
           }
         ],
         "nota": null,
@@ -7866,7 +7866,7 @@
             "dias": [
               "Mi"
             ],
-            "salon": "302 (Tlaltícpac)"
+            "salon": null
           }
         ],
         "nota": null,
@@ -8103,7 +8103,7 @@
       "5466": {
         "grupo": "5466",
         "profesor": {
-          "nombre": null,
+          "nombre": "Diego García Meza",
           "horarios": [
             {
               "horario": "11:00 a 14:00",
@@ -8115,7 +8115,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Diego García Meza",
+            "nombre": "Valentina Sandoval Granillo",
             "horario": "12:00 a 15:00",
             "dias": [
               "Vi"
@@ -8236,7 +8236,7 @@
           }
         ],
         "nota": null,
-        "salon": "203 (Yelizcalli)",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375567"
       },
