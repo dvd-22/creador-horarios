@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30T13:55:12.109Z",
+  "lastUpdated": "2026-09-06T12:17:59.555Z",
   "totalProfessors": 3240,
   "ratingsFound": 1428,
   "foundPercentage": 44,
@@ -1826,8 +1826,8 @@
     },
     "Carlos Prieto López": {
       "name": "Carlos Prieto López",
-      "rating": 8.1,
-      "commentCount": 54,
+      "rating": 8,
+      "commentCount": 55,
       "id": "36126",
       "url": "https://www.misprofesores.com/profesores/Carlos-Prieto-Lopez_36126"
     },
@@ -2707,7 +2707,7 @@
     "Diana Pineda Vázquez": {
       "name": "Diana Pineda Vázquez",
       "rating": 9.8,
-      "commentCount": 4,
+      "commentCount": 5,
       "id": "173333",
       "url": "https://www.misprofesores.com/profesores/Diana-Pineda-Vazquez_173333"
     },
@@ -3235,8 +3235,8 @@
     "Emilio Sánchez Olivares": null,
     "Emma Alejandra Razo Arroyo": {
       "name": "Emma Alejandra Razo Arroyo",
-      "rating": 9,
-      "commentCount": 6,
+      "rating": 8,
+      "commentCount": 7,
       "id": "154351",
       "url": "https://www.misprofesores.com/profesores/Emma-Razo-Arroyo_154351"
     },
@@ -3324,7 +3324,7 @@
     "Enrique López Moreno": {
       "name": "Enrique López Moreno",
       "rating": 5,
-      "commentCount": 108,
+      "commentCount": 109,
       "id": "42433",
       "url": "https://www.misprofesores.com/profesores/Enrique-Lopez-Moreno_42433"
     },
@@ -3694,8 +3694,8 @@
     },
     "Felipe Campos Cerda": {
       "name": "Felipe Campos Cerda",
-      "rating": 10,
-      "commentCount": 1,
+      "rating": 8,
+      "commentCount": 2,
       "id": "194847",
       "url": "https://www.misprofesores.com/profesores/Felipe-Campos-Cerda_194847"
     },
@@ -6585,7 +6585,7 @@
     "Julio César Cedillo Sánchez": {
       "name": "Julio César Cedillo Sánchez",
       "rating": 8.8,
-      "commentCount": 107,
+      "commentCount": 108,
       "id": "36009",
       "url": "https://www.misprofesores.com/profesores/Julio-Cedillo-Sanchez_36009"
     },
@@ -6783,7 +6783,7 @@
       "id": "49760",
       "url": "https://www.misprofesores.com/profesores/Karla-Ramirez-Pulido_49760"
     },
-    "Karla Ruíz de la Luz": null,
+    "Karla Ruiz de la Luz": null,
     "Karla Saori Herrera Morales": null,
     "Karla Yadira Olalde Estrada": null,
     "Karla Yeneri Ventre Guerrero": {
@@ -7566,7 +7566,7 @@
       "id": "41701",
       "url": "https://www.misprofesores.com/profesores/Magali-Folch-Gabayet_41701"
     },
-    "Magdiel Joshua Angel Galván": null,
+    "Magdiel Joshua Angel Galvan": null,
     "Maira Sarai Montejo Cruz": {
       "name": "Maira Sarai Montejo Cruz",
       "rating": 9.7,
@@ -10429,8 +10429,8 @@
     "Rogelio Enrique Hernández Pando": null,
     "Rogelio Fragoso Ramírez": {
       "name": "Rogelio Fragoso Ramírez",
-      "rating": 5.8,
-      "commentCount": 14,
+      "rating": 5.5,
+      "commentCount": 15,
       "id": "52390",
       "url": "https://www.misprofesores.com/profesores/Rogelio-Fragoso-Ramirez_52390"
     },
@@ -11817,9 +11817,9 @@
     "processed": 3240,
     "found": 1428,
     "notFound": 1812,
-    "foundWithFallback": 59,
-    "foundWithMainTemplate": 1369,
-    "keptExisting": 1406,
-    "upgraded": 20
+    "foundWithFallback": 60,
+    "foundWithMainTemplate": 1368,
+    "keptExisting": 1421,
+    "upgraded": 7
   }
 }
