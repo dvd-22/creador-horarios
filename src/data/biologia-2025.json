@@ -389,7 +389,7 @@
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
-        "salon": null,
+        "salon": "101",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375293"
       },
@@ -1613,7 +1613,7 @@
           "nombre": "Katya Dafne Guadarrama Orozco",
           "horarios": [
             {
-              "horario": "13:00 a 15:00",
+              "horario": "13:00 a 14:00",
               "dias": [
                 "Lu"
               ]
@@ -1622,6 +1622,12 @@
               "horario": "13:00 a 15:00",
               "dias": [
                 "Ma"
+              ]
+            },
+            {
+              "horario": "14:00 a 15:00",
+              "dias": [
+                "Lu"
               ]
             }
           ]
@@ -1637,7 +1643,7 @@
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
-        "salon": null,
+        "salon": "009",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375336"
       },
@@ -1671,7 +1677,7 @@
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
-        "salon": null,
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula I",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375337"
       },
@@ -1839,7 +1845,7 @@
             "dias": [
               "Vi"
             ],
-            "salon": null
+            "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula I"
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
@@ -1955,7 +1961,7 @@
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
-        "salon": "005",
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": null
       },
@@ -2036,7 +2042,7 @@
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
-        "salon": "005",
+        "salon": "004",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375350"
       },
@@ -3391,7 +3397,7 @@
             "dias": [
               "Vi"
             ],
-            "salon": "004"
+            "salon": "005"
           }
         ],
         "nota": null,
@@ -4098,7 +4104,7 @@
           }
         ],
         "nota": null,
-        "salon": "S3",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375422"
       },
@@ -4126,7 +4132,7 @@
           }
         ],
         "nota": null,
-        "salon": "S6",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375423"
       }
@@ -4235,7 +4241,7 @@
             "dias": [
               "Ma"
             ],
-            "salon": "004"
+            "salon": "005"
           }
         ],
         "nota": null,
@@ -5289,7 +5295,7 @@
           }
         ],
         "nota": null,
-        "salon": "005",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375463"
       },
@@ -5317,7 +5323,7 @@
           }
         ],
         "nota": null,
-        "salon": "005",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375464"
       },
@@ -5345,7 +5351,7 @@
           }
         ],
         "nota": null,
-        "salon": "004",
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375465"
       },
@@ -5481,7 +5487,7 @@
             "dias": [
               "Sa"
             ],
-            "salon": "005"
+            "salon": null
           }
         ],
         "nota": null,
@@ -6042,7 +6048,7 @@
           }
         ],
         "nota": null,
-        "salon": "004",
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375489"
       },
@@ -6210,7 +6216,7 @@
           }
         ],
         "nota": null,
-        "salon": "Laboratorio de Prácticas de Genética",
+        "salon": "302 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375495"
       },
@@ -6503,8 +6509,7 @@
             {
               "horario": "07:30 a 10:30",
               "dias": [
-                "Ma",
-                "Vi"
+                "Ma"
               ]
             }
           ]
@@ -6512,9 +6517,11 @@
         "ayudantes": [
           {
             "nombre": "Diana Pardo De la Rosa",
-            "horario": null,
-            "dias": [],
-            "salon": null
+            "horario": "07:30 a 10:30",
+            "dias": [
+              "Vi"
+            ],
+            "salon": "B005"
           }
         ],
         "nota": null,
@@ -8008,11 +8015,11 @@
             "dias": [
               "Vi"
             ],
-            "salon": "302 (Tlaltícpac)"
+            "salon": null
           }
         ],
         "nota": null,
-        "salon": "302 (Tlaltícpac)",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375559"
       },
@@ -8152,7 +8159,7 @@
           }
         ],
         "nota": null,
-        "salon": "302 (Tlaltícpac)",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375564"
       },
@@ -8208,7 +8215,7 @@
           }
         ],
         "nota": null,
-        "salon": "302 (Tlaltícpac)",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375566"
       },
@@ -8292,7 +8299,7 @@
           }
         ],
         "nota": null,
-        "salon": "203 (Yelizcalli)",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375569"
       },
@@ -8404,7 +8411,7 @@
           }
         ],
         "nota": null,
-        "salon": "203 (Yelizcalli)",
+        "salon": null,
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375573"
       },
