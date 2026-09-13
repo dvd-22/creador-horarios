@@ -3385,11 +3385,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O215"
+            "salon": "O125"
           }
         ],
         "nota": null,
-        "salon": "O215",
+        "salon": "O125",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/377326"
       },
@@ -6946,7 +6946,7 @@
         },
         "ayudantes": [
           {
-            "nombre": "Sara Eunice Olivares Hérnandez",
+            "nombre": "Sara Eunice Olivares Hernández",
             "horario": "07:00 a 10:00",
             "dias": [
               "Lu",
@@ -7874,11 +7874,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "O220"
+            "salon": "O125"
           }
         ],
         "nota": null,
-        "salon": "O220",
+        "salon": "O125",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374192"
       },
@@ -16376,11 +16376,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "101 (Tlaltícpac)"
+            "salon": "O129"
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
-        "salon": "101 (Tlaltícpac)",
+        "salon": "O129",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374090"
       },
@@ -16742,35 +16742,6 @@
         "salon": "P110",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374676"
-      }
-    },
-    "Introducción a la Física de Partículas Elementales I": {
-      "8355": {
-        "grupo": "8355",
-        "profesor": {
-          "nombre": "Eleazar Cuautle Flores",
-          "horarios": [
-            {
-              "horario": "14:00 a 15:30",
-              "dias": [
-                "Ma",
-                "Vi"
-              ]
-            }
-          ]
-        },
-        "ayudantes": [
-          {
-            "nombre": "Rodrigo García Formentí Mendieta",
-            "horario": null,
-            "dias": [],
-            "salon": null
-          }
-        ],
-        "nota": null,
-        "salon": "O132",
-        "modalidad": "Presencial",
-        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374677"
       }
     },
     "Introducción a la Física de Radiaciones": {

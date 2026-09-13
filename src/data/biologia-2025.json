@@ -1613,7 +1613,7 @@
           "nombre": "Katya Dafne Guadarrama Orozco",
           "horarios": [
             {
-              "horario": "13:00 a 14:00",
+              "horario": "13:00 a 15:00",
               "dias": [
                 "Lu"
               ]
@@ -1622,12 +1622,6 @@
               "horario": "13:00 a 15:00",
               "dias": [
                 "Ma"
-              ]
-            },
-            {
-              "horario": "14:00 a 15:00",
-              "dias": [
-                "Lu"
               ]
             }
           ]
@@ -1643,7 +1637,7 @@
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
-        "salon": "009",
+        "salon": "104 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375336"
       },
@@ -5295,7 +5289,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "203 (Tlaltícpac)",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375463"
       },
@@ -7873,7 +7867,7 @@
             "dias": [
               "Mi"
             ],
-            "salon": null
+            "salon": "303 (Yelizcalli)"
           }
         ],
         "nota": null,

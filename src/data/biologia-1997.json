@@ -4395,6 +4395,43 @@
         "salon": null,
         "modalidad": null,
         "presentacion": null
+      },
+      "5709": {
+        "grupo": "5709",
+        "profesor": {
+          "nombre": "Ricardo Noguera Solano",
+          "horarios": []
+        },
+        "ayudantes": [
+          {
+            "nombre": "Víctor Rogelio Hernández Marroquín",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Carlos David Suárez Pascal",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Talia Cipactli Rosas Cabrera",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          },
+          {
+            "nombre": "Rosaura Ruiz Gutiérrez",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": "Estudios filosóficos, históricos y sociales sobre biología evolutiva.",
+        "salon": null,
+        "modalidad": null,
+        "presentacion": null
       }
     }
   },
@@ -9211,7 +9248,7 @@
           }
         ],
         "nota": null,
-        "salon": "Química II (antes Laboratorio de Prácticas de Química II)",
+        "salon": "Laboratorio de Prácticas de Biología Molecular de la Célula III",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373861"
       }
