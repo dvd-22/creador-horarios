@@ -50,6 +50,18 @@ const classifyRoom = (roomName) => {
 
 const normalizeRoomName = (roomName) => String(roomName || '').trim()
 
+const getInitialSearch = () => {
+	const now = new Date()
+	const currentHour = now.getHours()
+	const dayId = ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'][now.getDay()]
+
+	return {
+		selectedDays: dayOptions.some((day) => day.id === dayId) ? [dayId] : [],
+		startTime: `${String(currentHour).padStart(2, '0')}:00`,
+		endTime: `${String(currentHour + 1).padStart(2, '0')}:00`,
+	}
+}
+
 const getDayLabels = (selectedDays) => {
 	return dayOptions
 		.filter((day) => selectedDays.includes(day.id))
@@ -131,10 +143,11 @@ const isRoomAvailable = (room, selectedDays, start, end) => {
 }
 
 const EmptyClassroomFinder = () => {
-	const [selectedDays, setSelectedDays] = useState([])
+	const initialSearch = useMemo(() => getInitialSearch(), [])
+	const [selectedDays, setSelectedDays] = useState(initialSearch.selectedDays)
 	const [selectedCategories, setSelectedCategories] = useState(['O', 'P', 'others'])
-	const [startTime, setStartTime] = useState('17:30')
-	const [endTime, setEndTime] = useState('18:30')
+	const [startTime, setStartTime] = useState(initialSearch.startTime)
+	const [endTime, setEndTime] = useState(initialSearch.endTime)
 
 	useEffect(() => {
 		document.title = 'Papas con pan · Creador de horarios'
