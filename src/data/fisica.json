@@ -16252,11 +16252,11 @@
               "Ma",
               "Ju"
             ],
-            "salon": "300 (Tlaltícpac)"
+            "salon": "P209"
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
-        "salon": "300 (Tlaltícpac)",
+        "salon": "P209",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374086"
       },
@@ -16742,6 +16742,35 @@
         "salon": "P110",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374676"
+      }
+    },
+    "Introducción a la Física de Partículas Elementales I": {
+      "8355": {
+        "grupo": "8355",
+        "profesor": {
+          "nombre": "Eleazar Cuautle Flores",
+          "horarios": [
+            {
+              "horario": "14:00 a 15:30",
+              "dias": [
+                "Ma",
+                "Vi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Rodrigo García Formentí Mendieta",
+            "horario": null,
+            "dias": [],
+            "salon": null
+          }
+        ],
+        "nota": null,
+        "salon": "O132",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/374677"
       }
     },
     "Introducción a la Física de Radiaciones": {

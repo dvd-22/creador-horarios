@@ -10119,6 +10119,36 @@
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373888"
       }
     },
+    "Inmunoparasitología": {
+      "5133": {
+        "grupo": "5133",
+        "profesor": {
+          "nombre": "Laura Enedina Soto Serna",
+          "horarios": [
+            {
+              "horario": "11:00 a 14:00",
+              "dias": [
+                "Mi"
+              ]
+            }
+          ]
+        },
+        "ayudantes": [
+          {
+            "nombre": "Laura del Carmen Vargas Parada",
+            "horario": "11:00 a 14:00",
+            "dias": [
+              "Sa"
+            ],
+            "salon": "B002"
+          }
+        ],
+        "nota": null,
+        "salon": "B001",
+        "modalidad": "Presencial",
+        "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/373889"
+      }
+    },
     "Introducción a la Citogenética Humana": {
       "5134": {
         "grupo": "5134",
