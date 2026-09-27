@@ -1095,7 +1095,7 @@
           }
         ],
         "nota": "Grupo reservado para primer ingreso 2027",
-        "salon": "Laboratorio de Prácticas de Biogeografía I",
+        "salon": "B003",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375317"
       },
@@ -5317,7 +5317,7 @@
           }
         ],
         "nota": null,
-        "salon": null,
+        "salon": "005",
         "modalidad": "Presencial",
         "presentacion": "https://www.fciencias.unam.mx/docencia/horarios/presentacion/375464"
       },
@@ -5451,9 +5451,9 @@
             "nombre": "Karla Genoveva Bassols Bello",
             "horario": "11:00 a 14:00",
             "dias": [
-              "Mi"
+              "Ma"
             ],
-            "salon": "Sala de Cómputo III"
+            "salon": "Sala de Cómputo I"
           }
         ],
         "nota": null,
@@ -5481,7 +5481,7 @@
             "dias": [
               "Sa"
             ],
-            "salon": null
+            "salon": "S3"
           }
         ],
         "nota": null,
