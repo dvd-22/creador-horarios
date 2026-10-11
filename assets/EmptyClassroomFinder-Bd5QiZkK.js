@@ -1,4 +1,4 @@
-import{_ as S}from"./actuaria-Dx1VN7Pe.js";import{_ as M}from"./biologia-1997-Dz5PAVHL.js";import{_ as k}from"./biologia-2025-B3qw4Kl-.js";import{_ as O}from"./ciencias-computacion-DxRFGFp0.js";import{_ as C}from"./fisica-biomedica-Bg3GpGeu.js";import{_ as E}from"./fisica-DCwVuMZH.js";import{_ as z}from"./matematicas-aplicadas-CNHy2sFH.js";import{_ as $}from"./matematicas-Chmup1Sc.js";import{c as N,r as u,j as e,F as P}from"./main-B-yIIk19.js";/**
+import{_ as S}from"./actuaria-CkcgQg-6.js";import{_ as M}from"./biologia-1997-Dz5PAVHL.js";import{_ as k}from"./biologia-2025-B3qw4Kl-.js";import{_ as O}from"./ciencias-computacion-2Op-stnJ.js";import{_ as C}from"./fisica-biomedica-S8SXiHRn.js";import{_ as E}from"./fisica-BZCrWlqL.js";import{_ as z}from"./matematicas-aplicadas-CuWEDjGD.js";import{_ as $}from"./matematicas-CYh9M1CR.js";import{c as N,r as u,j as e,F as P}from"./main-De-D39uy.js";/**
  * @license lucide-react v0.469.0 - ISC
  *
  * This source code is licensed under the ISC license.
