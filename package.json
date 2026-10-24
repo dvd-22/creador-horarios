@@ -17,7 +17,7 @@
     "fetch-ratings": "node scripts/fetch-ratings.js"
   },
   "dependencies": {
-    "axios": "^1.10.0",
+    "axios": "^1.18.0",
     "csv-writer": "^1.6.0",
     "html2canvas": "^1.4.1",
     "ics": "^3.8.1",
