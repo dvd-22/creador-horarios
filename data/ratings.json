@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-11-01T15:08:02.395Z",
-  "totalProfessors": 3282,
-  "ratingsFound": 1436,
+  "lastUpdated": "2026-11-08T15:09:44.698Z",
+  "totalProfessors": 3283,
+  "ratingsFound": 1437,
   "foundPercentage": 44,
   "ratings": {
     "Aaron Ali Lozano Rocha": null,
@@ -1008,6 +1008,7 @@
       "id": "103037",
       "url": "https://www.misprofesores.com/profesores/Andres-Castell-Rodriguez_103037"
     },
+    "Andrés Felipe Álvarez García": null,
     "Andrés Gonzalo Peña Montalvo": null,
     "Andrés Ildefonso Hernández Carapia": null,
     "Andrés Jiménez Lizárraga": null,
@@ -2914,6 +2915,13 @@
       "commentCount": 15,
       "id": "93700",
       "url": "https://www.misprofesores.com/profesores/Edgar-Colin-Cruz_93700"
+    },
+    "Edgar Díaz Ordóñez": {
+      "name": "Edgar Díaz Ordóñez",
+      "rating": 7.8,
+      "commentCount": 10,
+      "id": "82826",
+      "url": "https://www.misprofesores.com/profesores/Edgar-Diaz-Ordoñez_82826"
     },
     "Edgar Gasperín García": null,
     "Edgar Gerardo Alarcón González": {
@@ -5307,7 +5315,7 @@
     "Jessica Sarahi Méndez Rincón": {
       "name": "Jessica Sarahi Méndez Rincón",
       "rating": 8.1,
-      "commentCount": 139,
+      "commentCount": 140,
       "id": "191048",
       "url": "https://www.misprofesores.com/profesores/Jessica-Mendez-Rincon_191048"
     },
@@ -5835,7 +5843,6 @@
       "id": "124921",
       "url": "https://www.misprofesores.com/profesores/Jose-Sanchez-Gutierrez_124921"
     },
-    "José Alejandro Butanda Mejía": null,
     "José Alejandro Dosal Trujillo": null,
     "José Alejandro Jiménez Acosta": {
       "name": "José Alejandro Jiménez Acosta",
@@ -8543,8 +8550,8 @@
     "María de los Remedios Josefina Ramírez Rangel": null,
     "María de los Ángeles Cancino Rodezno": {
       "name": "María de los Ángeles Cancino Rodezno",
-      "rating": 3.4,
-      "commentCount": 99,
+      "rating": 3.5,
+      "commentCount": 100,
       "id": "120047",
       "url": "https://www.misprofesores.com/profesores/Maria-Cancino-Rodezno_120047"
     },
@@ -9375,8 +9382,8 @@
     "Octavio Salazar Garcia": null,
     "Odín Miguel Escorza Soria": {
       "name": "Odín Miguel Escorza Soria",
-      "rating": 6.2,
-      "commentCount": 66,
+      "rating": 6.1,
+      "commentCount": 67,
       "id": "73503",
       "url": "https://www.misprofesores.com/profesores/Odin-Escorza-Soria_73503"
     },
@@ -9465,8 +9472,8 @@
     },
     "Omar Patricio Juárez Álvarez": {
       "name": "Omar Patricio Juárez Álvarez",
-      "rating": 9.8,
-      "commentCount": 22,
+      "rating": 9.7,
+      "commentCount": 23,
       "id": "140227",
       "url": "https://www.misprofesores.com/profesores/Omar-Juarez-Alvarez_140227"
     },
@@ -11833,7 +11840,7 @@
     "Zeus Alberto Valtierra Quintal": {
       "name": "Zeus Alberto Valtierra Quintal",
       "rating": 6.6,
-      "commentCount": 15,
+      "commentCount": 16,
       "id": "89788",
       "url": "https://www.misprofesores.com/profesores/Zeus-Valtierra-Quintal_89788"
     },
@@ -11904,12 +11911,12 @@
     "Óscar Romero Báez": null
   },
   "statistics": {
-    "processed": 3282,
-    "found": 1436,
+    "processed": 3283,
+    "found": 1437,
     "notFound": 1846,
-    "foundWithFallback": 65,
-    "foundWithMainTemplate": 1371,
-    "keptExisting": 1402,
-    "upgraded": 31
+    "foundWithFallback": 64,
+    "foundWithMainTemplate": 1373,
+    "keptExisting": 1431,
+    "upgraded": 5
   }
 }
