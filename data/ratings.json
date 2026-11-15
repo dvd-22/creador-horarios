@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-11-08T15:09:44.698Z",
+  "lastUpdated": "2026-11-15T15:45:16.737Z",
   "totalProfessors": 3283,
-  "ratingsFound": 1437,
+  "ratingsFound": 1438,
   "foundPercentage": 44,
   "ratings": {
     "Aaron Ali Lozano Rocha": null,
@@ -2597,8 +2597,8 @@
     },
     "David Meza Alcántara": {
       "name": "David Meza Alcántara",
-      "rating": 5.9,
-      "commentCount": 40,
+      "rating": 5.8,
+      "commentCount": 41,
       "id": "75408",
       "url": "https://www.misprofesores.com/profesores/David-Meza-Alcantara_75408"
     },
@@ -3525,8 +3525,8 @@
     "Erin Christy McKiernan": null,
     "Ernesto Alejandro Vázquez Navarro": {
       "name": "Ernesto Alejandro Vázquez Navarro",
-      "rating": 8,
-      "commentCount": 35,
+      "rating": 7.9,
+      "commentCount": 36,
       "id": "36141",
       "url": "https://www.misprofesores.com/profesores/Ernesto-Vazquez-Navarro_36141"
     },
@@ -5657,8 +5657,8 @@
     "Jorge Iván Castillo Arellano": null,
     "Jorge Iván Reyes Hernández": {
       "name": "Jorge Iván Reyes Hernández",
-      "rating": 6,
-      "commentCount": 8,
+      "rating": 5.6,
+      "commentCount": 9,
       "id": "186101",
       "url": "https://www.misprofesores.com/profesores/Jorge-Reyes-Hernandez_186101"
     },
@@ -5728,7 +5728,13 @@
     "Jorge Valle Peña": null,
     "Jose Carlos Joaquin Altamirano": null,
     "Jose Guillermo Guerrero Mojica": null,
-    "Jose Manuel Evangelista Tiburcio": null,
+    "Jose Manuel Evangelista Tiburcio": {
+      "name": "Jose Manuel Evangelista Tiburcio",
+      "rating": 2,
+      "commentCount": 2,
+      "id": "199941",
+      "url": "https://www.misprofesores.com/profesores/Jose-Evangelista-Tiburcio_199941"
+    },
     "Josefina Cortés Eslava": null,
     "Josefina Herrera Santoyo": {
       "name": "Josefina Herrera Santoyo",
@@ -6379,8 +6385,8 @@
     },
     "Juan Carlos Campuzano Caballero": {
       "name": "Juan Carlos Campuzano Caballero",
-      "rating": 6.9,
-      "commentCount": 8,
+      "rating": 6.3,
+      "commentCount": 9,
       "id": "135040",
       "url": "https://www.misprofesores.com/profesores/Juan-Campuzano-Caballero_135040"
     },
@@ -9173,8 +9179,8 @@
     "Nancy Ortiz Mendoza": null,
     "Nancy Pérez Cano": {
       "name": "Nancy Pérez Cano",
-      "rating": 8.5,
-      "commentCount": 6,
+      "rating": 7.6,
+      "commentCount": 7,
       "id": "159405",
       "url": "https://www.misprofesores.com/profesores/Nancy-Perez-Cano_159405"
     },
@@ -9717,8 +9723,8 @@
     },
     "Patricia Guevara Fefer": {
       "name": "Patricia Guevara Fefer",
-      "rating": 5,
-      "commentCount": 4,
+      "rating": 4.4,
+      "commentCount": 5,
       "id": "176074",
       "url": "https://www.misprofesores.com/profesores/Patricia-Guevara-Fefer_176074"
     },
@@ -10515,8 +10521,8 @@
     },
     "Rogelio Omar Corona Núñez": {
       "name": "Rogelio Omar Corona Núñez",
-      "rating": 7.7,
-      "commentCount": 38,
+      "rating": 7.6,
+      "commentCount": 39,
       "id": "150087",
       "url": "https://www.misprofesores.com/profesores/Rogelio-Corona-Nuñez_150087"
     },
@@ -10672,8 +10678,8 @@
     "Rubén Castañeda Osorio": null,
     "Rubén Cruz Vázquez": {
       "name": "Rubén Cruz Vázquez",
-      "rating": 8.6,
-      "commentCount": 14,
+      "rating": 8.3,
+      "commentCount": 15,
       "id": "109351",
       "url": "https://www.misprofesores.com/profesores/Ruben-Cruz-Vazquez_109351"
     },
@@ -10717,7 +10723,7 @@
     "Salvador López Mendoza": {
       "name": "Salvador López Mendoza",
       "rating": 5,
-      "commentCount": 69,
+      "commentCount": 70,
       "id": "42806",
       "url": "https://www.misprofesores.com/profesores/Salvador-Lopez-Mendoza_42806"
     },
@@ -11057,8 +11063,8 @@
     "Shunashi Guadalupe Castillo López": null,
     "Sigfrido Sierra Galván": {
       "name": "Sigfrido Sierra Galvan",
-      "rating": 7.8,
-      "commentCount": 9,
+      "rating": 7.7,
+      "commentCount": 10,
       "id": "111492",
       "url": "https://www.misprofesores.com/profesores/Sigfrido-Sierra-Galvan_111492"
     },
@@ -11299,8 +11305,8 @@
     },
     "Tomás Antonio Valencia Pérez": {
       "name": "Tomás Antonio Valencia Pérez",
-      "rating": 9,
-      "commentCount": 1,
+      "rating": 5.5,
+      "commentCount": 2,
       "id": "181863",
       "url": "https://www.misprofesores.com/profesores/Tomas-Valencia-Perez_181863"
     },
@@ -11912,11 +11918,11 @@
   },
   "statistics": {
     "processed": 3283,
-    "found": 1437,
-    "notFound": 1846,
-    "foundWithFallback": 64,
-    "foundWithMainTemplate": 1373,
-    "keptExisting": 1431,
-    "upgraded": 5
+    "found": 1438,
+    "notFound": 1845,
+    "foundWithFallback": 67,
+    "foundWithMainTemplate": 1371,
+    "keptExisting": 1426,
+    "upgraded": 11
   }
 }
