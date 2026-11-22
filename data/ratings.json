@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-15T15:45:16.737Z",
+  "lastUpdated": "2026-11-22T16:18:42.812Z",
   "totalProfessors": 3283,
   "ratingsFound": 1438,
   "foundPercentage": 44,
@@ -4014,8 +4014,8 @@
     "Francisco Parraguirre Sánchez": null,
     "Francisco Páez Pérez": {
       "name": "Francisco Paez Pérez",
-      "rating": 9,
-      "commentCount": 38,
+      "rating": 8.9,
+      "commentCount": 39,
       "id": "94731",
       "url": "https://www.misprofesores.com/profesores/Francisco-Paez-Perez_94731"
     },
@@ -4235,8 +4235,8 @@
     },
     "Georgina Nieto Castañeda": {
       "name": "Georgina Nieto Castañeda",
-      "rating": 6.7,
-      "commentCount": 47,
+      "rating": 6.6,
+      "commentCount": 48,
       "id": "52386",
       "url": "https://www.misprofesores.com/profesores/Georgina-Nieto-Castañeda_52386"
     },
@@ -4852,7 +4852,7 @@
     "Irene Guadalupe Nava Ruíz": {
       "name": "Irene Guadalupe Nava Ruíz",
       "rating": 9.9,
-      "commentCount": 12,
+      "commentCount": 13,
       "id": "171348",
       "url": "https://www.misprofesores.com/profesores/Irene-Nava-Ruiz_171348"
     },
@@ -5550,10 +5550,10 @@
     },
     "Jorge Antonio Cruz Chapital": {
       "name": "Jorge Antonio Cruz Chapital",
-      "rating": 9,
-      "commentCount": 2,
-      "id": "147957",
-      "url": "https://www.misprofesores.com/profesores/Jorge-Cruz-Chapital_147957"
+      "rating": 10,
+      "commentCount": 3,
+      "id": "149920",
+      "url": "https://www.misprofesores.com/profesores/Jorge-Cruz-Chapital_149920"
     },
     "Jorge Antonio García Alvarez": {
       "name": "Jorge Antonio García Alvarez",
@@ -8557,7 +8557,7 @@
     "María de los Ángeles Cancino Rodezno": {
       "name": "María de los Ángeles Cancino Rodezno",
       "rating": 3.5,
-      "commentCount": 100,
+      "commentCount": 101,
       "id": "120047",
       "url": "https://www.misprofesores.com/profesores/Maria-Cancino-Rodezno_120047"
     },
@@ -9027,8 +9027,8 @@
     },
     "Mirna Villavicencio Torres": {
       "name": "Mirna Villavicencio Torres",
-      "rating": 7.6,
-      "commentCount": 68,
+      "rating": 7.7,
+      "commentCount": 69,
       "id": "36087",
       "url": "https://www.misprofesores.com/profesores/Mirna-Villavicencio-Torres_36087"
     },
@@ -10235,7 +10235,7 @@
     "Ricardo García Sandoval": {
       "name": "Ricardo García Sandoval",
       "rating": 6.6,
-      "commentCount": 19,
+      "commentCount": 20,
       "id": "135501",
       "url": "https://www.misprofesores.com/profesores/Ricardo-Garcia-Sandoval_135501"
     },
@@ -11233,8 +11233,8 @@
     "Tamara Irais Lara Sandoval": null,
     "Tania Azucena Chicalote Jiménez": {
       "name": "Tania Azucena Chicalote Jimenez",
-      "rating": 8,
-      "commentCount": 38,
+      "rating": 7.9,
+      "commentCount": 39,
       "id": "95117",
       "url": "https://www.misprofesores.com/profesores/Tania-Chicalote-Jimenez_95117"
     },
@@ -11920,9 +11920,9 @@
     "processed": 3283,
     "found": 1438,
     "notFound": 1845,
-    "foundWithFallback": 67,
-    "foundWithMainTemplate": 1371,
-    "keptExisting": 1426,
-    "upgraded": 11
+    "foundWithFallback": 64,
+    "foundWithMainTemplate": 1374,
+    "keptExisting": 1430,
+    "upgraded": 8
   }
 }
